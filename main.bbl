@@ -1,0 +1,100 @@
+\begin{thebibliography}{\uppercase{MPWSH16}}
+
+\bibitem[BP12]{bhole2012automated}
+\textsc{Bhole C., Pal C.}:
+\newblock Automated person segmentation in videos.
+\newblock In \emph{Pattern Recognition (ICPR), 2012 21st International
+  Conference on} (2012), IEEE, pp.~3672--3675.
+
+\bibitem[BTVG06]{bay2006surf}
+\textsc{Bay H., Tuytelaars T., Van~Gool L.}:
+\newblock Surf: Speeded up robust features.
+\newblock \emph{Computer vision--ECCV 2006} (2006), 404--417.
+
+\bibitem[BVD09]{barnich2009vibe}
+\textsc{Barnich O., Van~Droogenbroeck M.}:
+\newblock Vibe: a powerful random technique to estimate the background in video
+  sequences.
+\newblock In \emph{Acoustics, Speech and Signal Processing, 2009. ICASSP 2009.
+  IEEE International Conference on} (2009), IEEE, pp.~945--948.
+
+\bibitem[BVD11]{barnich2011vibe}
+\textsc{Barnich O., Van~Droogenbroeck M.}:
+\newblock Vibe: A universal background subtraction algorithm for video
+  sequences.
+\newblock \emph{IEEE Transactions on Image processing 20}, 6 (2011),
+  1709--1724.
+
+\bibitem[DG13]{duffner2013pixeltrack}
+\textsc{Duffner S., Garcia C.}:
+\newblock Pixeltrack: a fast adaptive algorithm for tracking non-rigid objects.
+\newblock In \emph{Proceedings of the IEEE international conference on computer
+  vision} (2013), pp.~2480--2487.
+
+\bibitem[EHD00]{elgammal2000non}
+\textsc{Elgammal A., Harwood D., Davis L.}:
+\newblock Non-parametric model for background subtraction.
+\newblock \emph{Computer Vision—ECCV 2000} (2000), 751--767.
+
+\bibitem[FW06]{fleet2006optical}
+\textsc{Fleet D., Weiss Y.}:
+\newblock Optical flow estimation.
+\newblock In \emph{Handbook of mathematical models in computer vision}.
+  Springer, 2006, pp.~237--257.
+
+\bibitem[GM06]{guo2006projection}
+\textsc{Guo P., Miao Z.}:
+\newblock Projection histogram based human posture recognition.
+\newblock In \emph{Signal Processing, 2006 8th International Conference on}
+  (2006), vol.~2, IEEE.
+
+\bibitem[GRB13]{godec2013hough}
+\textsc{Godec M., Roth P.~M., Bischof H.}:
+\newblock Hough-based tracking of non-rigid objects.
+\newblock \emph{Computer Vision and Image Understanding 117}, 10 (2013),
+  1245--1256.
+
+\bibitem[HHD98]{haritaoglu1998ghost}
+\textsc{Haritaoglu I., Harwood D., Davis L.~S.}:
+\newblock Ghost: A human body part labeling system using silhouettes.
+\newblock In \emph{Pattern Recognition, 1998. Proceedings. Fourteenth
+  International Conference on} (1998), vol.~1, IEEE, pp.~77--82.
+
+\bibitem[KHD05]{kim2005background}
+\textsc{Kim K., Harwood D., Davis L.~S.}:
+\newblock Background updating for visual surveillance.
+\newblock In \emph{International Symposium on Visual Computing} (2005),
+  Springer, pp.~337--346.
+
+\bibitem[MPWSH16]{marki2016bilateral}
+\textsc{M{\"a}rki N., Perazzi F., Wang O., Sorkine-Hornung A.}:
+\newblock Bilateral space video segmentation.
+\newblock In \emph{Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition} (2016), pp.~743--751.
+
+\bibitem[Pic04]{piccardi2004background}
+\textsc{Piccardi M.}:
+\newblock Background subtraction techniques: a review.
+\newblock In \emph{Systems, man and cybernetics, 2004 IEEE international
+  conference on} (2004), vol.~4, IEEE, pp.~3099--3104.
+
+\bibitem[PS02]{power2002understanding}
+\textsc{Power P.~W., Schoonees J.~A.}:
+\newblock Understanding background mixture models for foreground segmentation.
+\newblock In \emph{Proceedings image and vision computing New Zealand} (2002),
+  vol.~2002, pp.~10--11.
+
+\bibitem[SG99]{784637}
+\textsc{Stauffer C., Grimson W. E.~L.}:
+\newblock Adaptive background mixture models for real-time tracking.
+\newblock In \emph{Proceedings. 1999 IEEE Computer Society Conference on
+  Computer Vision and Pattern Recognition (Cat. No PR00149)} (1999), vol.~2,
+  p.~252 Vol. 2.
+
+\bibitem[ZVDH06]{zivkovic2006efficient}
+\textsc{Zivkovic Z., Van Der~Heijden F.}:
+\newblock Efficient adaptive density estimation per image pixel for the task of
+  background subtraction.
+\newblock \emph{Pattern recognition letters 27}, 7 (2006), 773--780.
+
+\end{thebibliography}

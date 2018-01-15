@@ -1,0 +1,65 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdftex 2018.1.14)  14 JAN 2018 17:18
+entering extended mode
+**C:/Users/qwert/Documents/MA_Doc/Literaturverzeichnis.bib
+(C:/Users/qwert/Documents/MA_Doc/Literaturverzeichnis.bib
+Overfull \hbox (11.93114pt too wide) in paragraph at lines 1--14
+\tenrm Com-puter So-ci-ety Con-fer-ence on Com-puter Vi-sion and Pat-tern Recog
+-ni-tion (Cat. No PR00149), ti-tle=Adaptive|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\tenrm C
+.\tenrm o
+.\tenrm m
+.\discretionary
+..\tenrm -
+.\tenrm p
+.etc.
+
+
+Overfull \hbox (132.14893pt too wide) in paragraph at lines 1--14
+\tenrm sys-tems;Artificial in-tel-li-gence;Gaussian dis-tri-bu-tion;Image seg-m
+en-ta-tion;Image se-quences;Laboratories;Layout;Robustness;Tracking;Vehicle|
+
+\hbox(6.94444+1.94444)x469.75499, glue set - 1.0
+.\tenrm s
+.\tenrm y
+.\tenrm s
+.\discretionary
+..\tenrm -
+.\tenrm t
+.etc.
+
+
+Overfull \hbox (5.6627pt too wide) in paragraph at lines 15--23
+[]\tenrm @inproceedingspower2002understanding, ti-tle=Understanding back-ground
+ mix-ture mod-els for fore-ground|
+
+\hbox(6.94444+1.94444)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm @
+.\tenrm i
+.\tenrm n
+.\tenrm p
+.etc.
+
+
+Overfull \hbox (27.19048pt too wide) in paragraph at lines 24--33
+[]\tenrm @inproceedingspiccardi2004background, ti-tle=Background sub-trac-tion 
+tech-niques: a re-view, au-thor=Piccardi,|
+
+\hbox(6.94444+1.94444)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm @
+.\tenrm i
+.\tenrm n
+.\tenrm p
+.etc.
+
+)
+*
+! Emergency stop.
+<*> ...t/Documents/MA_Doc/Literaturverzeichnis.bib
+                                                  
+End of file on the terminal!
+
+!  ==> Fatal error occurred, no output PDF file produced!

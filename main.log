@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.9)  15 JAN 2018 13:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.9)  23 JAN 2018 00:24
 entering extended mode
 **./main.tex
 (main.tex
@@ -582,6 +582,14 @@ Package scrpage2 Warning: usage of obsolete package!
 (scrpage2)                by `scrlayer-scrpage' on input line 52.
 
 LaTeX Info: Redefining \pagemark on input line 180.
+) ("D:\Program Files\MiKTeX 2.9\tex\latex\koma-script\scrextend.sty"
+
+Package scrextend Warning: This package was made to extend other classes but
+(scrextend)                KOMA-Script classes by some features of the
+(scrextend)                KOMA-Script classes.
+(scrextend)                It should never be used with a KOMA-Script class.
+(scrextend)                Loading of the package will be aborted.
+
 ) (main.aux)
 \openout1 = `main.aux'.
 
@@ -633,7 +641,7 @@ LaTeX Info: Redefining \nameref on input line 103.
 \everyMPtoPDFconversion=\toks27
 )
 \c@lstlisting=\count147
- <fig/unilogo.pdf, id=135, 489.4512pt x 167.33328pt>
+ <fig/unilogo.pdf, id=139, 489.4512pt x 167.33328pt>
 File: fig/unilogo.pdf Graphic file (type pdf)
  <use fig/unilogo.pdf>
 Package pdftex.def Info: fig/unilogo.pdf used on input line 111.
@@ -711,21 +719,15 @@ been already used, duplicate ignored
 l.34 \subsubsection
                    {K�rperhaltungserkennung basiert auf Histogrammanalyse}
 [2]
-Overfull \hbox (21.23541pt too wide) in paragraph at lines 35--39
+Overfull \hbox (21.23541pt too wide) in paragraph at lines 35--38
 \OT1/cmr/m/n/10.95 Histogrammanalyse ist ei-ne ein-fa-che und schnel-le Me-tho-
 de zur Er-ken-nung der K[]orperhaltung.
  []
 
 
-Overfull \hbox (13.8758pt too wide) in paragraph at lines 35--39
+Overfull \hbox (13.8758pt too wide) in paragraph at lines 35--38
 \OT1/cmr/m/n/10.95 Es gibt vie-le wis-sen-schaft-li-che Ar-bei-te, die []uber H
 i-sto-gram-m-ana-ly-se stu-diert und pr[]asentiert
- []
-
-
-Overfull \hbox (19.51808pt too wide) in paragraph at lines 35--39
-\OT1/cmr/m/n/10.95 In [[]GM06[]] wird das Pro-jek-ti-ons-hi-sto-gramm ver-wen-d
-et, um un-ter-schied-li-che K[]orperhaltungen
  []
 
 )pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has
@@ -740,37 +742,76 @@ ame{page.4}) has been already used, duplicate ignored
 l.12 ...e\thispagestyle{empty}\hspace{1em}\newpage
                                                    [4] (Grundlagen.tex
 chapter 2.
-)pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has
- been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.14 \newpage
-              [5
 
-]pdfTeX warning (ext4): destination with the same identifier (name{page.6}) has
- been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.15 ...e\thispagestyle{empty}\hspace{1em}\newpage
-                                                   [6] (EigenesVerfahren.tex
-chapter 3.
-pdfTeX warning (ext4): destination with the same identifier (name{page.7}) has 
+Overfull \hbox (6.179pt too wide) in paragraph at lines 5--7
+\OT1/cmr/m/n/10.95 den 1990er um-fas-send un-ter-sucht und haupts[]achlich f[]u
+r Vi-deo[]uberwachungsanwendungen,
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 9.
+("D:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 9.
+
+Overfull \hbox (0.40355pt too wide) in paragraph at lines 11--12
+[]\OT1/cmr/m/n/10.95 Initialisierung des Hin-ter-grun-des: W[]ahrend die-ses Er
+-fas-sungs-pro-zes-ses wer-den auch
+ []
+
+<fig/BS_Example.png, id=272, 356.0803pt x 188.20313pt>
+File: fig/BS_Example.png Graphic file (type png)
+
+<use fig/BS_Example.png>
+Package pdftex.def Info: fig/BS_Example.png used on input line 16.
+(pdftex.def)             Requested size: 376.42744pt x 198.96594pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--24
+
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.42 \end{eqnarray}
-                    [7
+l.24 \begin{equation}
+                      [5
 
 ]
-<fig/vectordrawing.pdf, id=290, 383.55988pt x 238.25188pt>
+Underfull \hbox (badness 10000) in paragraph at lines 26--28
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--32
+
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.6}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.34 \end{equation}
+                    [6 <./fig/BS_Example.png>])pdfTeX warning (ext4): destinati
+on with the same identifier (name{page.7}) has been already used, duplicate ign
+ored
+<to be read again> 
+                   \relax 
+l.14 \newpage
+              [7] [8] (EigenesVerfahren.tex
+chapter 3.
+[9
+
+] <fig/vectordrawing.pdf, id=328, 383.55988pt x 238.25188pt>
 File: fig/vectordrawing.pdf Graphic file (type pdf)
 
 <use fig/vectordrawing.pdf>
 Package pdftex.def Info: fig/vectordrawing.pdf used on input line 76.
 (pdftex.def)             Requested size: 125.47794pt x 77.9399pt.
- [8 <./fig/vectordrawing.pdf>]
+ [10 <./fig/vectordrawing.pdf>]
 (fig/vectordrawingSymbol.pdf_tex
-<./fig/vectordrawingSymbol.pdf, id=313, 383.55988pt x 238.25188pt>
+<./fig/vectordrawingSymbol.pdf, id=347, 383.55988pt x 238.25188pt>
 File: ./fig/vectordrawingSymbol.pdf Graphic file (type pdf)
 
 <use ./fig/vectordrawingSymbol.pdf>
@@ -781,28 +822,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
  []
 
-<fig/Buddha2.png, id=315, 1927.2pt x 1084.05pt>
+<fig/Buddha2.png, id=349, 1927.2pt x 1084.05pt>
 File: fig/Buddha2.png Graphic file (type png)
  <use fig/Buddha2.png>
 Package pdftex.def Info: fig/Buddha2.png used on input line 100.
 (pdftex.def)             Requested size: 334.60571pt x 188.20633pt.
- [9 <./fig/vectordrawingSymbol.pdf> <./fig/Buddha2.png (PNG copy)>]
+ [11 <./fig/vectordrawingSymbol.pdf> <./fig/Buddha2.png (PNG copy)>]
 
-LaTeX Warning: Citation `bib:SCAN' on page 10 undefined on input line 124.
+LaTeX Warning: Citation `bib:SCAN' on page 12 undefined on input line 124.
 
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 133.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 134.
-
-("D:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 134.
 LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 145
 .
 LaTeX Font Info:    No file OMScmtt.fd. on input line 145.
-
 
 LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
@@ -813,13 +848,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 149--150
 
  []
 
-[10]
+[12]
 Underfull \hbox (badness 10000) in paragraph at lines 157--158
 
  []
 
 
-LaTeX Warning: Citation `bib:hoppePM' on page 11 undefined on input line 159.
+LaTeX Warning: Citation `bib:hoppePM' on page 13 undefined on input line 159.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 159--160
@@ -831,13 +866,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 162--163
 
  []
 
-) [11] [12] (Ergebnisse.tex
+) [13] [14] (Ergebnisse.tex
 chapter 4.
-) [13
-
-] [14] (ZusammenfassungAusblick.tex
-chapter 5.
 ) [15
+
+] [16] (ZusammenfassungAusblick.tex
+chapter 5.
+) [17
 
 ] (main.bbl
 
@@ -847,40 +882,40 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.37 \newblock \emph{Computer Vision—ECCV 2000}
+l.48 \newblock \emph{Computer Vision—ECCV 2000}
                                                   (2000), 751--767.
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[16
+[18
 
-]) [17] [18] (Abkurzungen.tex) [19
+]) [19] [20] (Abkurzungen.tex) [21
 
-] [20] (main.lof)
+] [22] (main.lof)
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
- [21
+ [23
 
 ] (main.lot)
 \tf@lot=\write7
 \openout7 = `main.lot'.
 
- [22
+ [24
 
 ]
-[23] (main.loa
+[25] (main.loa
 
-LaTeX Warning: Citation `bib:SCAN' on page 24 undefined on input line 4.
+LaTeX Warning: Citation `bib:SCAN' on page 26 undefined on input line 4.
 
 )
 \tf@loa=\write8
 \openout8 = `main.loa'.
 
- [24
+ [26
 
-] [25]
+] [27]
 
 Class scrreprt Warning: \float@listhead detected!
 (scrreprt)              Implementation of \float@listhead became
@@ -899,15 +934,15 @@ Class scrreprt Warning: \float@listhead detected!
 \tf@lol=\write9
 \openout9 = `main.lol'.
 
- [26
+ [28
 
-] [27] (Anhang.tex
+] [29] (Anhang.tex
 chapter A.
-) (Danksagung.tex [28
+) (Danksagung.tex [30
 
 ])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 58.
- [29
+ [31
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 58.
@@ -915,7 +950,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 58.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 58.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 58.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 929C1F92DBA719B1E71AD4619A6A3237;2213.
+(rerunfilecheck)             Checksum: 61195EC90B6F015F36E9CC5AB511EECA;2320.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -926,32 +961,34 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 58.
  ) 
 Here is how much of TeX's memory you used:
- 12989 strings out of 493634
- 197223 string characters out of 3143745
+ 13026 strings out of 493634
+ 198017 string characters out of 3143745
  426659 words of memory out of 3000000
- 16011 multiletter control sequences out of 15000+200000
+ 16034 multiletter control sequences out of 15000+200000
  16295 words of font info for 62 fonts, out of 3000000 for 9000
  1026 hyphenation exceptions out of 8191
- 44i,17n,66p,8832b,1523s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,17n,66p,8832b,1328s stack positions out of 5000i,500n,10000p,200000b,50000s
 <D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><D:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><D:/Program Files/MiK
 TeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/Program Files/MiKTeX 2.9/
 fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmmi8.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmr10.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmr12.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6
-.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><D:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><D:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmsy8.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmti10.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmtt10.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
-/symbols/msbm10.pfb>
-Output written on main.pdf (40 pages, 2023060 bytes).
+pe1/public/amsfonts/cm/cmmi6.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmmi8.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmr10.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr1
+2.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><D:/
+Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><D:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><D:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmsy6.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmsy8.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmti10.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10
+.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pf
+b>
+Output written on main.pdf (42 pages, 2127259 bytes).
 PDF statistics:
- 527 PDF objects out of 1000 (max. 8388607)
- 112 named destinations out of 1000 (max. 500000)
- 285 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 569 PDF objects out of 1000 (max. 8388607)
+ 122 named destinations out of 1000 (max. 500000)
+ 298 words of extra memory for PDF output out of 10000 (max. 10000000)
 

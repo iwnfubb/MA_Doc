@@ -1,5 +1,16 @@
 \begin{thebibliography}{\uppercase{MPWSH16}}
 
+\bibitem[AMFT11]{aziz2011pedestrian}
+\textsc{Aziz K.-E., Merad D., Fertil B., Thome N.}:
+\newblock Pedestrian head detection and tracking using skeleton graph for
+  people counting in crowded environments.
+\newblock In \emph{MVA} (2011), pp.~516--519.
+
+\bibitem[BJEL10]{benezeth2010comparative}
+\textsc{Benezeth Y., Jodoin P.-M., Emile B., Laurent Rosenberger C.}:
+\newblock Comparative study of background subtraction algorithms.
+\newblock \emph{Journal of Electronic Imaging 19}, 3 (2010), 033003--033003.
+
 \bibitem[BP12]{bhole2012automated}
 \textsc{Bhole C., Pal C.}:
 \newblock Automated person segmentation in videos.
@@ -59,6 +70,12 @@
 \newblock Ghost: A human body part labeling system using silhouettes.
 \newblock In \emph{Pattern Recognition, 1998. Proceedings. Fourteenth
   International Conference on} (1998), vol.~1, IEEE, pp.~77--82.
+
+\bibitem[KB02]{kaewtrakulpong2002improved}
+\textsc{KaewTraKulPong P., Bowden R.}:
+\newblock An improved adaptive background mixture model for real-time tracking
+  with shadow detection.
+\newblock \emph{Video-based surveillance systems 1} (2002), 135--144.
 
 \bibitem[KHD05]{kim2005background}
 \textsc{Kim K., Harwood D., Davis L.~S.}:

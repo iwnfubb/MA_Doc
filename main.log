@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.9)  23 JAN 2018 03:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.9)  23 JAN 2018 22:50
 entering extended mode
 **./main.tex
 (main.tex
@@ -641,7 +641,7 @@ LaTeX Info: Redefining \nameref on input line 103.
 \everyMPtoPDFconversion=\toks27
 )
 \c@lstlisting=\count147
- <fig/unilogo.pdf, id=143, 489.4512pt x 167.33328pt>
+ <fig/unilogo.pdf, id=147, 489.4512pt x 167.33328pt>
 File: fig/unilogo.pdf Graphic file (type pdf)
  <use fig/unilogo.pdf>
 Package pdftex.def Info: fig/unilogo.pdf used on input line 111.
@@ -760,7 +760,7 @@ Overfull \hbox (0.40355pt too wide) in paragraph at lines 11--12
 -fas-sungs-pro-zes-ses wer-den auch
  []
 
-<fig/BS_Example.png, id=277, 356.0803pt x 188.20313pt>
+<fig/BS_Example.png, id=282, 356.0803pt x 188.20313pt>
 File: fig/BS_Example.png Graphic file (type png)
 
 <use fig/BS_Example.png>
@@ -814,24 +814,34 @@ l.70 ...1}{2} \frac{(x_t_j - x_i_j)^2}{\sigma^2_j}
                                                   }
 I treat `x_1_2' essentially like `x_1{}_2'.
 
+<fig/vibe.pdf, id=323, 544.84946pt x 388.5365pt>
+File: fig/vibe.pdf Graphic file (type pdf)
+ <use fig/vibe.pdf>
+Package pdftex.def Info: fig/vibe.pdf used on input line 84.
+(pdftex.def)             Requested size: 167.29967pt x 119.30084pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--73
-
+Underfull \hbox (badness 2245) in paragraph at lines 85--85
+[][][]\OT1/cmr/m/n/10.95 Klassifizierung von $\OML/cmm/m/it/10.95 p[]\OT1/cmr/m
+/n/10.95 (\OML/cmm/m/it/10.95 x\OT1/cmr/m/n/10.95 )$ ba-siert auf []Uberschneid
+ung von Ku-gel
  []
 
-) [8] [9] (EigenesVerfahren.tex
-chapter 3.
-[10
 
-] <fig/vectordrawing.pdf, id=342, 383.55988pt x 238.25188pt>
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[8]) [9 <./fig/vibe.pdf>] [10] (EigenesVerfahren.tex
+chapter 3.
+[11
+
+] <fig/vectordrawing.pdf, id=378, 383.55988pt x 238.25188pt>
 File: fig/vectordrawing.pdf Graphic file (type pdf)
 
 <use fig/vectordrawing.pdf>
 Package pdftex.def Info: fig/vectordrawing.pdf used on input line 76.
 (pdftex.def)             Requested size: 125.47794pt x 77.9399pt.
- [11 <./fig/vectordrawing.pdf>]
+ [12 <./fig/vectordrawing.pdf>]
 (fig/vectordrawingSymbol.pdf_tex
-<./fig/vectordrawingSymbol.pdf, id=361, 383.55988pt x 238.25188pt>
+<./fig/vectordrawingSymbol.pdf, id=397, 383.55988pt x 238.25188pt>
 File: ./fig/vectordrawingSymbol.pdf Graphic file (type pdf)
 
 <use ./fig/vectordrawingSymbol.pdf>
@@ -842,14 +852,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
  []
 
-<fig/Buddha2.png, id=363, 1927.2pt x 1084.05pt>
+<fig/Buddha2.png, id=399, 1927.2pt x 1084.05pt>
 File: fig/Buddha2.png Graphic file (type png)
  <use fig/Buddha2.png>
 Package pdftex.def Info: fig/Buddha2.png used on input line 100.
 (pdftex.def)             Requested size: 334.60571pt x 188.20633pt.
- [12 <./fig/vectordrawingSymbol.pdf> <./fig/Buddha2.png (PNG copy)>]
+ [13 <./fig/vectordrawingSymbol.pdf> <./fig/Buddha2.png (PNG copy)>]
 
-LaTeX Warning: Citation `bib:SCAN' on page 13 undefined on input line 124.
+LaTeX Warning: Citation `bib:SCAN' on page 14 undefined on input line 124.
 
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 133.
@@ -868,13 +878,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 149--150
 
  []
 
-[13]
+[14]
 Underfull \hbox (badness 10000) in paragraph at lines 157--158
 
  []
 
 
-LaTeX Warning: Citation `bib:hoppePM' on page 14 undefined on input line 159.
+LaTeX Warning: Citation `bib:hoppePM' on page 15 undefined on input line 159.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 159--160
@@ -886,13 +896,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 162--163
 
  []
 
-) [14] [15] (Ergebnisse.tex
+) [15] [16] (Ergebnisse.tex
 chapter 4.
-) [16
+) [17
 
-] [17] (ZusammenfassungAusblick.tex
+] [18] (ZusammenfassungAusblick.tex
 chapter 5.
-) [18
+) [19
 
 ] (main.bbl
 
@@ -908,34 +918,34 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[19
+[20
 
-]) [20] [21] (Abkurzungen.tex) [22
+]) [21] [22] (Abkurzungen.tex) [23
 
-] [23] (main.lof)
+] [24] (main.lof)
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
- [24
+ [25
 
 ] (main.lot)
 \tf@lot=\write7
 \openout7 = `main.lot'.
 
- [25
+ [26
 
 ]
-[26] (main.loa
+[27] (main.loa
 
-LaTeX Warning: Citation `bib:SCAN' on page 27 undefined on input line 4.
+LaTeX Warning: Citation `bib:SCAN' on page 28 undefined on input line 4.
 
 )
 \tf@loa=\write8
 \openout8 = `main.loa'.
 
- [27
+ [28
 
-] [28]
+] [29]
 
 Class scrreprt Warning: \float@listhead detected!
 (scrreprt)              Implementation of \float@listhead became
@@ -954,15 +964,15 @@ Class scrreprt Warning: \float@listhead detected!
 \tf@lol=\write9
 \openout9 = `main.lol'.
 
- [29
+ [30
 
-] [30] (Anhang.tex
+] [31] (Anhang.tex
 chapter A.
-) (Danksagung.tex [31
+) (Danksagung.tex [32
 
 ])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 58.
- [32
+ [33
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 58.
@@ -970,7 +980,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 58.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 58.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 58.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F33D35E9DA9E7BF51C8D9996B8D4C82F;2400.
+(rerunfilecheck)             Checksum: CF49122EF376185B3868F2326FA7A93F;2459.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -981,10 +991,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 58.
  ) 
 Here is how much of TeX's memory you used:
- 13032 strings out of 493634
- 198102 string characters out of 3143745
+ 13057 strings out of 493634
+ 198407 string characters out of 3143745
  426659 words of memory out of 3000000
- 16035 multiletter control sequences out of 15000+200000
+ 16053 multiletter control sequences out of 15000+200000
  16295 words of font info for 62 fonts, out of 3000000 for 9000
  1026 hyphenation exceptions out of 8191
  44i,17n,66p,8832b,1328s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1006,9 +1016,9 @@ msfonts/cm/cmsy8.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmti10.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10
 .pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pf
 b>
-Output written on main.pdf (43 pages, 2135757 bytes).
+Output written on main.pdf (44 pages, 2153895 bytes).
 PDF statistics:
- 585 PDF objects out of 1000 (max. 8388607)
- 127 named destinations out of 1000 (max. 500000)
- 306 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 627 PDF objects out of 1000 (max. 8388607)
+ 133 named destinations out of 1000 (max. 500000)
+ 319 words of extra memory for PDF output out of 10000 (max. 10000000)
 

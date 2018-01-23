@@ -1,0 +1,83 @@
+%% Creator: Inkscape 0.91_64bit, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'vibe.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{542.8138841bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.71310802)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{vibe.pdf}}%
+    \put(0.48173266,0.47716686){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Rp}}}%
+    \put(0.44941623,0.09268468){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{6}}}%
+    \put(0.52287268,0.21597102){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{p}}}%
+    \put(0.53992486,0.21064189){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{4}}}%
+    \put(0.25957247,0.40133744){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{p}}}%
+    \put(0.27662466,0.39600533){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{3}}}%
+    \put(0.16083526,0.55299925){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{p}}}%
+    \put(0.17788744,0.54766714){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{1}}}%
+    \put(0.15260958,0.17384323){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{p}}}%
+    \put(0.16966176,0.1685141){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{5}}}%
+    \put(0.44059263,0.28337726){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{p}}}%
+    \put(0.45764482,0.27804813){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{2}}}%
+    \put(0.62160989,0.3507835){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{p}}}%
+    \put(0.63866207,0.3454514){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{t}}}%
+    \put(0.64898336,0.3507835){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{(}}}%
+    \put(0.66219554,0.3507835){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{x}}}%
+    \put(0.68150296,0.3507835){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{)}}}%
+    \put(0.75325854,0.62040252){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{S}}}%
+    \put(0.77415363,0.61507338){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{R}}}%
+    \put(0.79425634,0.62040252){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{(}}}%
+    \put(0.80746852,0.62040252){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{p}}}%
+    \put(0.8245207,0.61507338){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{t}}}%
+    \put(0.83484199,0.62040252){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{(}}}%
+    \put(0.84805706,0.62040252){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{x}}}%
+    \put(0.86736449,0.62040252){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{))}}}%
+    \put(0.02095802,0.61197637){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{C}}}%
+    \put(0.04526645,0.60664723){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{2}}}%
+    \put(0.90136436,0.00533209){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{C}}}%
+    \put(0.92567279,-0.00000001){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{1}}}%
+  \end{picture}%
+\endgroup%

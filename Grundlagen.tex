@@ -69,13 +69,26 @@ dann wird die Dichtefunktion wie folgt geschrieben:
 \begin{equation}
 P(x_t) = \frac{1}{N} \sum \limits_{i=1}^N \prod \limits_{j=1}^d \frac{1}{\sqrt{2\pi\sigma^2_j}} \mathrm{e} ^ {-\frac{1}{2} \frac{(x_t_j - x_i_j)^2}{\sigma^2_j}}
 \end{equation}
-Unter Verwendung dieser Wahrscheinlichkeitsschätzung wird das Pixel als ein Vordergrundpixel betrachtet, wenn $P(x_t)<T$, wobei der Schwellenwert $T$ ein globaler Schwellenwert über das gesamte Bild ist, der eingestellt werden kann, um einen gewünschten Prozentsatz von Falsch-Positiven zu erreichen.\\
+Unter Verwendung dieser Wahrscheinlichkeitsschätzung wird das Pixel als ein Vordergrundpixel betrachtet, wenn $P(x_t)<T$, wobei $T$ ein globaler Schwellenwert über das gesamte Bild ist, der eingestellt werden kann, um einen gewünschten Prozentsatz von Falsch-Positiven zu erreichen.\\
+Angenommen $m$ ist Median von $|x_i - x_{i+1}|$ für jedes Paar $(x_i, x_{i+1})$ in der Stichprobe. Nach \cite{elgammal2000non} wird die Standardabweichung der erste Verteilung wie folgt geschätzt: 
+\begin{equation}
+\sigma = \frac{m}{0,68 \sqrt{2}}
+\end{equation}
+Bei KDE gibt es zwei Alternative für Update des Hintergrundes, nämlich ``Selective Update"\ und ``Blind Update". Die erste Alternative fügt neue Stichprobe in Modell hinzu, genau dann wenn es als Hintergrund klassifiziert ist. Die zweite Alternative fügt einfach neue Stichprobe in Modell hinzu.  Im Allgemein funktioniert KDE draußen besser als GMM Methode. Für meine Masterarbeit wurden mehre Methode ausprobiert, verglichen und ausgewertet, damit eine bessere Anwendung benutzt werden kann.  
 
+\subsection{Vibe}
+In \cite{barnich2009vibe} wurde ein Verfahren beschrieben, das ersten Ansatz von zufälliger Aggregation in Hintergrundsubtraktion ist. Das Verfahren ist ``ViBe" genannt. Sei $p_t(x)$ ein Pixelwert $x$ in Zeit $t$. Bei GMM oder KDE Modell wird ein Pixelwert $p_t(x)$ als Hinter- oder Vordergrund klassifiziert, abhängig davon, wie das Pixel mit Dichtefunktion des Modells passt. In ``ViBe" wird aber eine Menge von Stichprobewerte als Pixelmodell benutzt. Um ein Wert $p_t(x)$ zu klassifizieren, wird das Wert mit seinen nächsten Werten in der Menge der Stichproben, in dem wie eine Kugel $S_R(p_t(x))$ mit Radius $R$ und Punkt $p_t(x)$ definiert wird. Ein Pixel ist genau dann als Background klassifiziert, wenn die Überschneidung $\sharp$ von Kugel $S_R(p_t(x))$ und Menge von Punkte ${p_1,p_2, ..., p_n}$ mehr als Schwellwert $\sharp_min$ ist (siehe Abbildung ~\ref{fig:vibe}).
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.4\textwidth]{fig/vibe.pdf}
+	\caption{Klassifizierung von $p_t(x)$ basiert auf Überschneidung von Kugel $S_R(p_t(x))$ mit Menge der Stichproben \cite{barnich2009vibe}.}
+	\label{fig:vibe}
+\end{figure}
  
-
+Im nächsten Kapitel wird ein Vergleichen von dem vier oben genannte Verfahren und meine eigene Methode beschrieben.
 
 \section{Histogrammanalyse}
-Wie schon in Kapitel~\ref{sec:Grundlage1} beschrieben ...
+Ein Histogramm eines Bildes ist graphische Darstellung der Tonwertverteilung in einem digitalen Bild. Ein Histogramm zeichnet die Anzahl der Pixel für jeden Tonwert auf. Auf dem Gebiet der Computervision können Bildhistogramme nützliche Werkzeuge für $Thresholding$ sein. 
 \section{OpenCV Framework}\label{sec:OpenCV}
 text

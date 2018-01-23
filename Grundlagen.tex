@@ -47,6 +47,30 @@ wobei $w_k$ die k-ten Gaußschen Komponente und $\frac{1}{\alpha}$ definiert die 
 
 \subsection{Adaptive Gaußschen Mixture Modell}
 In \cite{zivkovic2006efficient} wurde eine interessante Erweiterung von GMM vorgeschlagen. Normales GMM wird mit eine bestimmte Anzahl von Gaußschen Modell, aber AGMM wird automatisch die Anzahl der Gaußschen Variablen angepasst, die zur Modellierung eines gegebenen Pixels verwendet werden. Die Erweiterung reduziert die Speicheranforderung des Algorithmus, erhöht die Recheneffizienz und kann die Leistung verbessern, wenn der Hintergrund stark sich ändert.
+\subsection{Kernel Density Estimation}
+Ein Nachteil von GMM ist, dieses Modell kann keine empfindliche Detektion erreichen, wenn der Hintergrund sehr hohe Frequenzvariation aufweist. Dieser Nachteil kann mit KDE Modell , das in \cite{elgammal2000non} beschrieben wurde, gelöst werden.\\
+Sei $x_1, x_2,..., x_n$ eine aktuelle Stichprobe von Intensitätswerten für ein Pixel. Unter Verwendung dieses Stichprobe kann die Dichtefunktion, dass dieses Pixel einen Intensitätswert $x_t$ zur Zeit $t$ haben wird, unter Verwendung des Kernschätzers $K$ als nicht-parametrisch geschätzt werden \cite{elgammal2000non}.
+\begin{equation}
+P(x_t) = \frac{1}{n} \sum \limits_{i=1}^N K (x_t - x_i) 
+\end{equation}
+Wenn wir unsere Kernschätzfunktion $K$ als Normalfunktion $N (0;\sigma)$ wählen, wobei $\sigma$ die Kernelfunktionsbandbreite darstellt. Wenn verschiedene Farbkanäle mit unterschiedlichen Kernel-Bandbreite $\sigma^2_j$ für den j-ten Farbkanal:
+
+\begin{gather}
+\sigma
+=
+\begin{pmatrix}
+\sigma^2_1 & 0 & 0 \\
+0 & \sigma^2_2 & 0 \\
+0 & 0 & \sigma^2_3 \\
+\end{pmatrix}
+\end{gather}
+
+dann wird die Dichtefunktion wie folgt geschrieben:
+\begin{equation}
+P(x_t) = \frac{1}{N} \sum \limits_{i=1}^N \prod \limits_{j=1}^d \frac{1}{\sqrt{2\pi\sigma^2_j}} \mathrm{e} ^ {-\frac{1}{2} \frac{(x_t_j - x_i_j)^2}{\sigma^2_j}}
+\end{equation}
+Unter Verwendung dieser Wahrscheinlichkeitsschätzung wird das Pixel als ein Vordergrundpixel betrachtet, wenn $P(x_t)<T$, wobei der Schwellenwert $T$ ein globaler Schwellenwert über das gesamte Bild ist, der eingestellt werden kann, um einen gewünschten Prozentsatz von Falsch-Positiven zu erreichen.\\
+
 
  
 

@@ -77,11 +77,11 @@ Angenommen $m$ ist Median von $|x_i - x_{i+1}|$ für jedes Paar $(x_i, x_{i+1})$ 
 Bei KDE gibt es zwei Alternative für Update des Hintergrundes, nämlich ``Selective Update"\ und ``Blind Update". Die erste Alternative fügt neue Stichprobe in Modell hinzu, genau dann wenn es als Hintergrund klassifiziert ist. Die zweite Alternative fügt einfach neue Stichprobe in Modell hinzu.  Im Allgemein funktioniert KDE draußen besser als GMM Methode. Für meine Masterarbeit wurden mehre Methode ausprobiert, verglichen und ausgewertet, damit eine bessere Anwendung benutzt werden kann.  
 
 \subsection{Vibe}
-In \cite{barnich2009vibe} wurde ein Verfahren beschrieben, das ersten Ansatz von zufälliger Aggregation in Hintergrundsubtraktion ist. Das Verfahren ist ``ViBe" genannt. Sei $p_t(x)$ ein Pixelwert $x$ in Zeit $t$. Bei GMM oder KDE Modell wird ein Pixelwert $p_t(x)$ als Hinter- oder Vordergrund klassifiziert, abhängig davon, wie das Pixel mit Dichtefunktion des Modells passt. In ``ViBe" wird aber eine Menge von Stichprobewerte als Pixelmodell benutzt. Um ein Wert $p_t(x)$ zu klassifizieren, wird das Wert mit seinen nächsten Werten in der Menge der Stichproben, in dem wie eine Kugel $S_R(p_t(x))$ mit Radius $R$ und Punkt $p_t(x)$ definiert wird. Ein Pixel ist genau dann als Background klassifiziert, wenn die Überschneidung $\sharp$ von Kugel $S_R(p_t(x))$ und Menge von Punkte ${p_1,p_2, ..., p_n}$ mehr als Schwellwert $\sharp_min$ ist (siehe Abbildung ~\ref{fig:vibe}).
+In \cite{barnich2009vibe} wurde ein Verfahren beschrieben, das ersten Ansatz von zufälliger Aggregation in Hintergrundsubtraktion ist. Das Verfahren ist ``ViBe" genannt. Sei $p_t(x)$ ein Pixelwert $x$ in Zeit $t$. Bei GMM oder KDE Modell wird ein Pixelwert $p_t(x)$ als Hinter- oder Vordergrund klassifiziert, abhängig davon, wie das Pixel mit Dichtefunktion des Modells passt. In ``ViBe" wird aber eine Menge von Stichprobewerte als Pixelmodell benutzt. Um einen Wert $p_t(x)$ zu klassifizieren, wird der Wert mit seinen nächsten Werten in der Menge der Stichproben, in dem wie eine Kugel $S_R(p_t(x))$ mit Radius $R$ und Punkt $p_t(x)$ definiert wird. Ein Pixel ist genau dann als Background klassifiziert, wenn die Überschneidung $\sharp$ von Kugel $S_R(p_t(x))$ und Menge von Punkte ${p_1,p_2, ..., p_n}$ mehr als Schwellwert $\sharp_min$ ist (siehe Abbildung ~\ref{fig:vibe}).
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.4\textwidth]{fig/vibe.pdf}
+	\includegraphics[width=0.3\textwidth]{fig/vibe.pdf}
 	\caption{Klassifizierung von $p_t(x)$ basiert auf Überschneidung von Kugel $S_R(p_t(x))$ mit Menge der Stichproben \cite{barnich2009vibe}.}
 	\label{fig:vibe}
 \end{figure}
@@ -89,6 +89,49 @@ In \cite{barnich2009vibe} wurde ein Verfahren beschrieben, das ersten Ansatz von
 Im nächsten Kapitel wird ein Vergleichen von dem vier oben genannte Verfahren und meine eigene Methode beschrieben.
 
 \section{Histogrammanalyse}
-Ein Histogramm eines Bildes ist graphische Darstellung der Tonwertverteilung in einem digitalen Bild. Ein Histogramm zeichnet die Anzahl der Pixel für jeden Tonwert auf. Auf dem Gebiet der Computervision können Bildhistogramme nützliche Werkzeuge für $Thresholding$ sein. 
+Ein Histogramm eines Bildes ist graphische Darstellung der Tonwertverteilung in einem digitalen Bild. Ein Histogramm zeichnet die Anzahl der Pixel für jeden Tonwert auf. Auf dem Gebiet der Computervision können Bildhistogramme nützliche Werkzeuge für $Thresholding$ sein. Da die in dem Graphen enthaltene Information eine Darstellung der Pixelverteilung als eine Funktion der Tonvariation ist, können sich Bildhistogramme auf Spitze und Täler analysieren lassen.\\
+Da eine unterschiedliche Körperhaltung ein unterschiedliches Muster von Projektionshistogramm aufweist, kann das Projektionshistogramm als eines der Merkmale verwendet werden, um unterschiedliche Körperhaltungen zu unterscheiden. Nach der Hintergrundsubtraktion wird eine Silhouette des Vordergrundes als ein Binärbild erstellt. Eine Körperhaltungsanalyse wird auf die Silhouette angewendet, um die Ähnlichkeiten der horizontalen und vertikalen Projektionshistogramme der erkannten Silhouette und der Haupthaltungen zu berechnen. Die Normalisierung des durchschnittlichen Histogramm erfolgt durch Skalierung der Silhouette in eine vertikale Länge unter Beibehaltung des ursprünglichen Seitenverhältnisses \cite{haritaoglu1998ghost}. Normalisierte horizontale und vertikale Projektionsvorlagen für jede Körperhalterung (nämlich: Stehen, Krabbeln, Legen und Sitzen) wurden experimentell unter Verwendung von 4500 Silhouette von 7 verschiedenen Personen berechnet (siehe Abbildung ~\ref{fig:histogramm}).   
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\textwidth]{fig/histogramm.pdf}
+	\caption{Normalisierte horizontale und vertikale Projektionsvorlagen für jede Körperhalterung \cite{haritaoglu1998ghost}.}
+	\label{fig:histogramm}
+\end{figure}
+
+Diese Methode werden verwendet, um die Ähnlichkeit der gegebenen Körperhaltung mit einer der vier Haupthaltungen zu bestimmen. Die erstellte Silhouette durch Hintergrundsubtraktion wird mit den durchschnittlichen Projektionshistogramme verglichen, wobei die Summe der absoluten Differenz verwendet wird, um die ähnlichste Körperhaltung zu schätzen. Angenommen ist $S_i$ die Ähnlichkeit zwischen der erkannter Silhouette und i-ten Hauptkörper. Seien $H_i$ und $V_i$ die horizontalen und vertikalen durchschnittlichen Projektionshistogramme, $P$ und $R$ die horizontalen und vertikalen Histogramme der erkannten Silhouette. $S_i$ wird wie folgt berechnet: 
+\begin{equation}
+S_i = -\log(\sum \limits_{h}^{128} \sum \limits_{v}^{128} |H_h^i - P_h| + |V_v^i - R_v|) 
+\end{equation}
+Die Körperhaltung, die das höchste Ähnlichkeitsmaß ergibt, wird als geschätzte Haltung genommen.  
+
+\section{Fuzzylogik}
+Mit Hilfe von Hintergrundsubtraktion und Histogrammanalyse wird erstmal nur eine sich bewegte Person erkannt, aber zum Unterschied zwischen täglichen Bewegungen und ungewöhnlichen Situationen kommt Fuzzylogik zum Einsatz. In Jahr 1971 wurde die erste Forschung über Fuzzy-Algebra beschrieben ~\cite{rosenfeld1971fuzzy}. Fuzzylogik geht um eine unscharfe logische Menge, wobei eine Fuzzymenge seinen Mitglieder ermöglicht, Mitgliedschaftsgrade zu haben. Wenn der Wert 1 an Objekten zugewiesen ist, die vollständig innerhalb der Menge liegen, und Objekten außerhalb der Menge eine 0 zugewiesen wird, hat jedes Objekt, das teilweise in der Menge ist, einen Wert zwischen 0 und 1. Der Prozess der Fuzzylogik wird wie folgt erläutert ~\cite{dingle2011artificial}:
+\begin{itemize}
+\item Zuerst wird ein scharfer Menge von Eingabedaten gesammelt und unter Verwendung von Zugehörigkeitsfunktionen in einen Fuzzymenge umgewandelt.
+\item  Eine Schlussfolgerung wird basierend auf ein oder mehre ($IF-THEN$) Regeln getroffen.
+\item  Schließlich wird die Fuzzy-Ausgabe unter Verwendung der Zugehörigkeitsfunktionen in dem Defuzzifizierungsschritt auf eine scharfe Ausgabe abgebildet.
+\end{itemize}
+
+Beispielweise gibt es ein Smart-Thermostat in einem Raum und der Thermostat soll sich an der Raumtemperatur anpassen. Eine Fuzzylogik wird erstellt, wobei die Temperatur Eingabe ist und Einstellung des Thermostates is Ausgabe (siehe Abbildung ~\ref{fig:Fuzzy_Example}) und der Regel wird wie in Algorithmus ~\ref{algo:fuzzy} definiert: \\
+\begin{figure}[htpb]
+	\centering
+	\includegraphics[width=0.8\textwidth]{fig/fuzzy.png}
+	\caption{Ein Beispiel für Fuzzylogik }
+	\label{fig:Fuzzy_Example}
+\end{figure}
+\begin{algorithm}[htpb]
+	\texttt{IF temperature IS low}\\
+	\hspace{5mm}\texttt{THEN thermostat IS high;}\\
+	\texttt{IF temperature IS medium}\\
+	\hspace{5mm}\texttt{THEN thermostat IS medium;}\\
+	\texttt{IF temperature IS high}\\
+	\hspace{5mm}\texttt{THEN thermostat IS low;}\\
+	\caption{Regel für Raumtemperatur und Einstellung des Thermostates.}
+	\label{algo:fuzzy}
+\end{algorithm}
+  
+
+
+
 \section{OpenCV Framework}\label{sec:OpenCV}
 text

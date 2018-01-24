@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.9)  23 JAN 2018 22:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.9)  24 JAN 2018 22:44
 entering extended mode
 **./main.tex
 (main.tex
@@ -641,7 +641,7 @@ LaTeX Info: Redefining \nameref on input line 103.
 \everyMPtoPDFconversion=\toks27
 )
 \c@lstlisting=\count147
- <fig/unilogo.pdf, id=147, 489.4512pt x 167.33328pt>
+ <fig/unilogo.pdf, id=151, 489.4512pt x 167.33328pt>
 File: fig/unilogo.pdf Graphic file (type pdf)
  <use fig/unilogo.pdf>
 Package pdftex.def Info: fig/unilogo.pdf used on input line 111.
@@ -760,7 +760,7 @@ Overfull \hbox (0.40355pt too wide) in paragraph at lines 11--12
 -fas-sungs-pro-zes-ses wer-den auch
  []
 
-<fig/BS_Example.png, id=282, 356.0803pt x 188.20313pt>
+<fig/BS_Example.png, id=287, 356.0803pt x 188.20313pt>
 File: fig/BS_Example.png Graphic file (type png)
 
 <use fig/BS_Example.png>
@@ -814,11 +814,11 @@ l.70 ...1}{2} \frac{(x_t_j - x_i_j)^2}{\sigma^2_j}
                                                   }
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-<fig/vibe.pdf, id=323, 544.84946pt x 388.5365pt>
+<fig/vibe.pdf, id=328, 544.84946pt x 388.5365pt>
 File: fig/vibe.pdf Graphic file (type pdf)
  <use fig/vibe.pdf>
 Package pdftex.def Info: fig/vibe.pdf used on input line 84.
-(pdftex.def)             Requested size: 167.29967pt x 119.30084pt.
+(pdftex.def)             Requested size: 125.47794pt x 89.47415pt.
 
 Underfull \hbox (badness 2245) in paragraph at lines 85--85
 [][][]\OT1/cmr/m/n/10.95 Klassifizierung von $\OML/cmm/m/it/10.95 p[]\OT1/cmr/m
@@ -829,19 +829,50 @@ ung von Ku-gel
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[8]) [9 <./fig/vibe.pdf>] [10] (EigenesVerfahren.tex
-chapter 3.
-[11
+<fig/histogramm.pdf, id=333, 224.76166pt x 77.82076pt>
+File: fig/histogramm.pdf Graphic file (type pdf)
 
-] <fig/vectordrawing.pdf, id=378, 383.55988pt x 238.25188pt>
+<use fig/histogramm.pdf>
+Package pdftex.def Info: fig/histogramm.pdf used on input line 96.
+(pdftex.def)             Requested size: 292.7776pt x 101.37474pt.
+ [8] [9 <./fig/vibe.pdf> <./fig/histogramm.pdf
+
+pdfTeX warning: pdflatex.exe (file ./fig/histogramm.pdf): PDF inclusion: multip
+le pdfs with page group included in a single page
+>]
+
+LaTeX Warning: Citation `rosenfeld1971fuzzy' on page 10 undefined on input line
+ 108.
+
+
+LaTeX Warning: Citation `dingle2011artificial' on page 10 undefined on input li
+ne 108.
+
+
+Overfull \hbox (3.44162pt too wide) in paragraph at lines 112--113
+[]\OT1/cmr/m/n/10.95 Schlielich wird die Fuzzy-Ausgabe un-ter Ver-wen-dung der
+ Zu-geh[]origkeitsfunktionen
+ []
+
+<fig/fuzzy.png, id=379, 490.08093pt x 815.29594pt>
+File: fig/fuzzy.png Graphic file (type png)
+ <use fig/fuzzy.png>
+Package pdftex.def Info: fig/fuzzy.png used on input line 118.
+(pdftex.def)             Requested size: 334.60571pt x 556.65807pt.
+)
+[10] [11 <./fig/fuzzy.png>] [12] (EigenesVerfahren.tex
+chapter 3.
+[13
+
+] <fig/vectordrawing.pdf, id=412, 383.55988pt x 238.25188pt>
 File: fig/vectordrawing.pdf Graphic file (type pdf)
 
 <use fig/vectordrawing.pdf>
 Package pdftex.def Info: fig/vectordrawing.pdf used on input line 76.
 (pdftex.def)             Requested size: 125.47794pt x 77.9399pt.
- [12 <./fig/vectordrawing.pdf>]
+ [14 <./fig/vectordrawing.pdf>]
 (fig/vectordrawingSymbol.pdf_tex
-<./fig/vectordrawingSymbol.pdf, id=397, 383.55988pt x 238.25188pt>
+<./fig/vectordrawingSymbol.pdf, id=431, 383.55988pt x 238.25188pt>
 File: ./fig/vectordrawingSymbol.pdf Graphic file (type pdf)
 
 <use ./fig/vectordrawingSymbol.pdf>
@@ -852,14 +883,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
  []
 
-<fig/Buddha2.png, id=399, 1927.2pt x 1084.05pt>
+<fig/Buddha2.png, id=433, 1927.2pt x 1084.05pt>
 File: fig/Buddha2.png Graphic file (type png)
  <use fig/Buddha2.png>
 Package pdftex.def Info: fig/Buddha2.png used on input line 100.
 (pdftex.def)             Requested size: 334.60571pt x 188.20633pt.
- [13 <./fig/vectordrawingSymbol.pdf> <./fig/Buddha2.png (PNG copy)>]
+ [15 <./fig/vectordrawingSymbol.pdf> <./fig/Buddha2.png (PNG copy)>]
 
-LaTeX Warning: Citation `bib:SCAN' on page 14 undefined on input line 124.
+LaTeX Warning: Citation `bib:SCAN' on page 16 undefined on input line 124.
 
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 133.
@@ -878,13 +909,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 149--150
 
  []
 
-[14]
+[16]
 Underfull \hbox (badness 10000) in paragraph at lines 157--158
 
  []
 
 
-LaTeX Warning: Citation `bib:hoppePM' on page 15 undefined on input line 159.
+LaTeX Warning: Citation `bib:hoppePM' on page 17 undefined on input line 159.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 159--160
@@ -896,13 +927,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 162--163
 
  []
 
-) [15] [16] (Ergebnisse.tex
+) [17] [18] (Ergebnisse.tex
 chapter 4.
-) [17
-
-] [18] (ZusammenfassungAusblick.tex
-chapter 5.
 ) [19
+
+] [20] (ZusammenfassungAusblick.tex
+chapter 5.
+) [21
 
 ] (main.bbl
 
@@ -918,34 +949,39 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[20
+[22
 
-]) [21] [22] (Abkurzungen.tex) [23
+]) [23] [24] (Abkurzungen.tex) [25
 
-] [24] (main.lof)
+] [26] (main.lof
+Overfull \hbox (51.53062pt too wide) in paragraph at lines 8--8
+ [][] [][]\OT1/cmr/m/n/10.95 Normalisierte ho-ri-zon-ta-le und ver-ti-ka-le Pro
+-jek-ti-ons-vor-la-gen f[]ur je-de K[]orperhalterung 
+ []
+
+)
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
- [25
+ [27
 
 ] (main.lot)
 \tf@lot=\write7
 \openout7 = `main.lot'.
 
- [26
+ [28
 
-]
-[27] (main.loa
+] [29] (main.loa
 
-LaTeX Warning: Citation `bib:SCAN' on page 28 undefined on input line 4.
+LaTeX Warning: Citation `bib:SCAN' on page 30 undefined on input line 5.
 
 )
 \tf@loa=\write8
 \openout8 = `main.loa'.
 
- [28
+ [30
 
-] [29]
+] [31]
 
 Class scrreprt Warning: \float@listhead detected!
 (scrreprt)              Implementation of \float@listhead became
@@ -964,15 +1000,15 @@ Class scrreprt Warning: \float@listhead detected!
 \tf@lol=\write9
 \openout9 = `main.lol'.
 
- [30
+ [32
 
-] [31] (Anhang.tex
+] [33] (Anhang.tex
 chapter A.
-) (Danksagung.tex [32
+) (Danksagung.tex [34
 
 ])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 58.
- [33
+ [35
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 58.
@@ -980,7 +1016,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 58.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 58.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 58.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: CF49122EF376185B3868F2326FA7A93F;2459.
+(rerunfilecheck)             Checksum: F741EB20D760C8F21CF60DF6612BB7F1;2517.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -991,10 +1027,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 58.
  ) 
 Here is how much of TeX's memory you used:
- 13057 strings out of 493634
- 198407 string characters out of 3143745
+ 13084 strings out of 493634
+ 198821 string characters out of 3143745
  426659 words of memory out of 3000000
- 16053 multiletter control sequences out of 15000+200000
+ 16070 multiletter control sequences out of 15000+200000
  16295 words of font info for 62 fonts, out of 3000000 for 9000
  1026 hyphenation exceptions out of 8191
  44i,17n,66p,8832b,1328s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1016,9 +1052,9 @@ msfonts/cm/cmsy8.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmti10.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10
 .pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pf
 b>
-Output written on main.pdf (44 pages, 2153895 bytes).
+Output written on main.pdf (46 pages, 2238124 bytes).
 PDF statistics:
- 627 PDF objects out of 1000 (max. 8388607)
- 133 named destinations out of 1000 (max. 500000)
- 319 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 666 PDF objects out of 1000 (max. 8388607)
+ 141 named destinations out of 1000 (max. 500000)
+ 337 words of extra memory for PDF output out of 10000 (max. 10000000)
 

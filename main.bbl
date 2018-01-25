@@ -11,6 +11,11 @@
 \newblock Comparative study of background subtraction algorithms.
 \newblock \emph{Journal of Electronic Imaging 19}, 3 (2010), 033003--033003.
 
+\bibitem[BK08]{bradski2008learning}
+\textsc{Bradski G., Kaehler A.}:
+\newblock \emph{Learning OpenCV: Computer vision with the OpenCV library}.
+\newblock " O'Reilly Media, Inc.", 2008.
+
 \bibitem[BP12]{bhole2012automated}
 \textsc{Bhole C., Pal C.}:
 \newblock Automated person segmentation in videos.

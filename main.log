@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.25)  25 JAN 2018 11:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.25)  25 JAN 2018 11:10
 entering extended mode
 **./main.tex
 (main.tex
@@ -652,7 +652,7 @@ G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
 \c@lstlisting=\count143
-<fig/unilogo.pdf, id=151, pagebox=cropbox, 489.4512pt x 167.33328pt>
+<fig/unilogo.pdf, id=135, pagebox=cropbox, 489.4512pt x 167.33328pt>
 File: fig/unilogo.pdf Graphic file (type pdf)
 <use fig/unilogo.pdf>
 Package pdftex.def Info: fig/unilogo.pdf  used on input line 108. on input line
@@ -773,7 +773,7 @@ Overfull \hbox (0.40355pt too wide) in paragraph at lines 11--12
 -fas-sungs-pro-zes-ses wer-den auch
  []
 
-<fig/BS_Example.png, id=287, 356.0803pt x 188.20313pt>
+<fig/BS_Example.png, id=266, 356.0803pt x 188.20313pt>
 File: fig/BS_Example.png Graphic file (type png)
 <use fig/BS_Example.png>
 Package pdftex.def Info: fig/BS_Example.png  used on input line 16. on input li
@@ -814,7 +814,7 @@ red
                    \relax 
 l.57 
       [7]
-<fig/vibe.pdf, id=328, pagebox=cropbox, 544.84946pt x 388.5365pt>
+<fig/vibe.pdf, id=307, pagebox=cropbox, 544.84946pt x 388.5365pt>
 File: fig/vibe.pdf Graphic file (type pdf)
 <use fig/vibe.pdf>
 Package pdftex.def Info: fig/vibe.pdf  used on input line 84. on input line 84.
@@ -831,7 +831,7 @@ ung von Ku-gel
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<fig/histogramm.pdf, id=333, pagebox=cropbox, 224.76166pt x 77.82076pt>
+<fig/histogramm.pdf, id=312, pagebox=cropbox, 224.76166pt x 77.82076pt>
 File: fig/histogramm.pdf Graphic file (type pdf)
 <use fig/histogramm.pdf>
 Package pdftex.def Info: fig/histogramm.pdf  used on input line 96. on input li
@@ -848,7 +848,7 @@ Overfull \hbox (3.44162pt too wide) in paragraph at lines 112--113
  Zu-geh[]origkeitsfunktionen
  []
 
-<fig/fuzzy.png, id=381, 490.08093pt x 815.29594pt>
+<fig/fuzzy.png, id=360, 490.08093pt x 815.29594pt>
 File: fig/fuzzy.png Graphic file (type png)
 <use fig/fuzzy.png>
 Package pdftex.def Info: fig/fuzzy.png  used on input line 118. on input line 1
@@ -857,89 +857,21 @@ Package pdftex.def Info: Requested size: 334.60571pt x 556.65807pt on input lin
 e 118.
 ) [10] [11 <./fig/fuzzy.png>] [12] (EigenesVerfahren.tex
 chapter 3.
-[13
+) [13
 
-]
-<fig/vectordrawing.pdf, id=416, pagebox=cropbox, 383.55988pt x 238.25188pt>
-File: fig/vectordrawing.pdf Graphic file (type pdf)
-<use fig/vectordrawing.pdf>
-Package pdftex.def Info: fig/vectordrawing.pdf  used on input line 76. on input
- line 76.
-Package pdftex.def Info: Requested size: 125.47794pt x 77.9399pt on input line 
-76.
- [14 <./fig/vectordrawing.pdf>] (fig/vectordrawingSymbol.pdf_tex
-<./fig/vectordrawingSymbol.pdf, id=436, pagebox=cropbox, 383.55988pt x 238.2518
-8pt>
-File: ./fig/vectordrawingSymbol.pdf Graphic file (type pdf)
-<use ./fig/vectordrawingSymbol.pdf>
-Package pdftex.def Info: ./fig/vectordrawingSymbol.pdf  used on input line 52. 
-on input line 52.
-Package pdftex.def Info: Requested size: 125.47794pt x 77.9399pt on input line 
-52.
-)
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
-
- []
-
-<fig/Buddha2.png, id=438, 1927.2pt x 1084.05pt>
-File: fig/Buddha2.png Graphic file (type png)
-<use fig/Buddha2.png>
-Package pdftex.def Info: fig/Buddha2.png  used on input line 100. on input line
- 100.
-Package pdftex.def Info: Requested size: 334.60571pt x 188.20633pt on input lin
-e 100.
-[15 <./fig/vectordrawingSymbol.pdf> <./fig/Buddha2.png (PNG copy)>]
-
-LaTeX Warning: Citation `bib:SCAN' on page 16 undefined on input line 124.
-
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 133.
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 134.
-LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 145
-.
-LaTeX Font Info:    No file OMScmtt.fd. on input line 145.
-
-LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
-(Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbackslash' on input line 145.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 149--150
-
- []
-
-[16]
-Underfull \hbox (badness 10000) in paragraph at lines 157--158
-
- []
-
-
-LaTeX Warning: Citation `bib:hoppePM' on page 17 undefined on input line 159.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 159--160
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 162--163
-
- []
-
-) [17] [18] (Ergebnisse.tex
+] [14] (Ergebnisse.tex
 chapter 4.
-) [19
+) [15
 
-] [20] (ZusammenfassungAusblick.tex
+] [16] (ZusammenfassungAusblick.tex
 chapter 5.
-) [21
+) [17
 
-] (main.bbl [22
+] (main.bbl [18
 
-]) [23] [24] (Abkurzungen.tex) [25
+]) [19] [20] (Abkurzungen.tex) [21
 
-] [26] (main.lof
+] [22] (main.lof
 Overfull \hbox (51.53062pt too wide) in paragraph at lines 8--8
  [][] [][]\OT1/cmr/m/n/10.95 Normalisierte ho-ri-zon-ta-le und ver-ti-ka-le Pro
 -jek-ti-ons-vor-la-gen f[]ur je-de K[]orperhalterung 
@@ -949,25 +881,21 @@ Overfull \hbox (51.53062pt too wide) in paragraph at lines 8--8
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
- [27
+ [23
 
 ] (main.lot)
 \tf@lot=\write7
 \openout7 = `main.lot'.
 
- [28
+ [24
 
-] [29] (main.loa
-
-LaTeX Warning: Citation `bib:SCAN' on page 30 undefined on input line 5.
-
-)
+] [25] (main.loa)
 \tf@loa=\write8
 \openout8 = `main.loa'.
 
- [30
+ [26
 
-] [31]
+] [27]
 
 Class scrreprt Warning: \float@listhead detected!
 (scrreprt)              Implementation of \float@listhead became
@@ -986,15 +914,15 @@ Class scrreprt Warning: \float@listhead detected!
 \tf@lol=\write9
 \openout9 = `main.lol'.
 
- [32
+ [28
 
-] [33] (Anhang.tex
+] [29] (Anhang.tex
 chapter A.
-) (Danksagung.tex [34
+) (Danksagung.tex [30
 
 ])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 58.
- [35
+ [31
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 58.
@@ -1002,24 +930,17 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 58.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 58.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 58.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F741EB20D760C8F21CF60DF6612BB7F1;2517.
-
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-
-LaTeX Warning: There were undefined references.
-
+(rerunfilecheck)             Checksum: 828A37E261D8893FFC9D245747B5C208;2169.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 58.
  ) 
 Here is how much of TeX's memory you used:
- 13191 strings out of 493312
- 202199 string characters out of 3138893
- 413769 words of memory out of 3000000
- 16326 multiletter control sequences out of 15000+200000
- 16295 words of font info for 62 fonts, out of 3000000 for 9000
+ 12694 strings out of 493312
+ 197068 string characters out of 3138893
+ 402109 words of memory out of 3000000
+ 15878 multiletter control sequences out of 15000+200000
+ 11720 words of font info for 43 fonts, out of 3000000 for 9000
  1142 hyphenation exceptions out of 8191
- 44i,17n,66p,8832b,1328s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,15n,66p,8832b,504s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiK
@@ -1030,17 +951,14 @@ c/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr1
 2.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/
 Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pf
-b>
-Output written on main.pdf (46 pages, 2237018 bytes).
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmti10.pfb>
+Output written on main.pdf (42 pages, 511966 bytes).
 PDF statistics:
- 670 PDF objects out of 1000 (max. 8388607)
- 143 named destinations out of 1000 (max. 500000)
- 337 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 563 PDF objects out of 1000 (max. 8388607)
+ 117 named destinations out of 1000 (max. 500000)
+ 290 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -67,7 +67,7 @@ Wenn wir unsere Kernschätzfunktion $K$ als Normalfunktion $N (0;\sigma)$ wählen,
 
 dann wird die Dichtefunktion wie folgt geschrieben:
 \begin{equation}
-P(x_t) = \frac{1}{N} \sum \limits_{i=1}^N \prod \limits_{j=1}^d \frac{1}{\sqrt{2\pi\sigma^2_j}} \mathrm{e} ^ {-\frac{1}{2} \frac{(x_t_j - x_i_j)^2}{\sigma^2_j}}
+P(x_t) = \frac{1}{N} \sum \limits_{i=1}^N \prod \limits_{j=1}^d \frac{1}{\sqrt{2\pi\sigma^2_j}} \mathrm{e} ^ {-\frac{1}{2} \frac{({x_t}_j - {x_i}_j)^2}{\sigma^2_j}}
 \end{equation}
 Unter Verwendung dieser Wahrscheinlichkeitsschätzung wird das Pixel als ein Vordergrundpixel betrachtet, wenn $P(x_t)<T$, wobei $T$ ein globaler Schwellenwert über das gesamte Bild ist, der eingestellt werden kann, um einen gewünschten Prozentsatz von Falsch-Positiven zu erreichen.\\
 Angenommen $m$ ist Median von $|x_i - x_{i+1}|$ für jedes Paar $(x_i, x_{i+1})$ in der Stichprobe. Nach \cite{elgammal2000non} wird die Standardabweichung der erste Verteilung wie folgt geschätzt: 
@@ -120,14 +120,11 @@ Beispielweise gibt es ein Smart-Thermostat in einem Raum und der Thermostat soll
 	\label{fig:Fuzzy_Example}
 \end{figure}
 \begin{algorithm}[htpb]
-	\texttt{IF temperature IS low}\\
-	\hspace{5mm}\texttt{THEN thermostat IS high;}\\
-	\texttt{IF temperature IS medium}\\
-	\hspace{5mm}\texttt{THEN thermostat IS medium;}\\
-	\texttt{IF temperature IS high}\\
-	\hspace{5mm}\texttt{THEN thermostat IS low;}\\
-	\caption{Regel für Raumtemperatur und Einstellung des Thermostates.}
-	\label{algo:fuzzy}
+\caption{Regel für Raumtemperatur und Einstellung des Thermostates.	}
+\label{algo:fuzzy}
+\If{temperature IS low}{thermostat IS high;}
+\If{temperature IS medium}{thermostat IS medium;}
+\If{temperature IS high}{thermostat IS low;}
 \end{algorithm}
   
 

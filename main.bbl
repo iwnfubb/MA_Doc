@@ -42,10 +42,15 @@
 \newblock In \emph{Proceedings of the IEEE international conference on computer
   vision} (2013), pp.~2480--2487.
 
+\bibitem[Din11]{dingle2011artificial}
+\textsc{Dingle N.}:
+\newblock Artificial intelligence: Fuzzy logic explained.
+\newblock \emph{Retrieved October 6} (2011), 2014.
+
 \bibitem[EHD00]{elgammal2000non}
 \textsc{Elgammal A., Harwood D., Davis L.}:
 \newblock Non-parametric model for background subtraction.
-\newblock \emph{Computer Vision—ECCV 2000} (2000), 751--767.
+\newblock \emph{Computer Vision-ECCV 2000} (2000), 751--767.
 
 \bibitem[FW06]{fleet2006optical}
 \textsc{Fleet D., Weiss Y.}:
@@ -100,6 +105,12 @@
 \newblock Understanding background mixture models for foreground segmentation.
 \newblock In \emph{Proceedings image and vision computing New Zealand} (2002),
   vol.~2002, pp.~10--11.
+
+\bibitem[Ros71]{rosenfeld1971fuzzy}
+\textsc{Rosenfeld A.}:
+\newblock Fuzzy groups.
+\newblock \emph{Journal of mathematical analysis and applications 35}, 3
+  (1971), 512--517.
 
 \bibitem[SG99]{784637}
 \textsc{Stauffer C., Grimson W. E.~L.}:

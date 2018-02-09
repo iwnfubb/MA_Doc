@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.25)  25 JAN 2018 16:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.25)  9 FEB 2018 14:40
 entering extended mode
 **./main.tex
 (main.tex
@@ -589,7 +589,11 @@ Package scrextend Warning: This package was made to extend other classes but
 (scrextend)                It should never be used with a KOMA-Script class.
 (scrextend)                Loading of the package will be aborted.
 
-) (main.aux)
+) (main.aux
+
+LaTeX Warning: Label `fig:Fuzzy_Example' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 100.
@@ -652,7 +656,7 @@ G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
 \c@lstlisting=\count143
-<fig/unilogo.pdf, id=135, pagebox=cropbox, 489.4512pt x 167.33328pt>
+<fig/unilogo.pdf, id=143, pagebox=cropbox, 489.4512pt x 167.33328pt>
 File: fig/unilogo.pdf Graphic file (type pdf)
 <use fig/unilogo.pdf>
 Package pdftex.def Info: fig/unilogo.pdf  used on input line 108. on input line
@@ -729,8 +733,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.34 \subsubsection
-                   {Körperhaltungserkennung basiert auf Histogrammanalyse}
+l.34 \subsection
+                {Körperhaltungserkennung basiert auf Histogrammanalyse}
 [2]
 Overfull \hbox (21.23541pt too wide) in paragraph at lines 35--38
 \OT1/cmr/m/n/10.95 Histogrammanalyse ist ei-ne ein-fa-che und schnel-le Me-tho-
@@ -773,7 +777,7 @@ Overfull \hbox (0.40355pt too wide) in paragraph at lines 11--12
 -fas-sungs-pro-zes-ses wer-den auch
  []
 
-<fig/BS_Example.png, id=266, 356.0803pt x 188.20313pt>
+<fig/BS_Example.png, id=275, 356.0803pt x 188.20313pt>
 File: fig/BS_Example.png Graphic file (type png)
 <use fig/BS_Example.png>
 Package pdftex.def Info: fig/BS_Example.png  used on input line 16. on input li
@@ -814,7 +818,7 @@ red
                    \relax 
 l.57 
       [7]
-<fig/vibe.pdf, id=307, pagebox=cropbox, 544.84946pt x 388.5365pt>
+<fig/vibe.pdf, id=328, pagebox=cropbox, 544.84946pt x 388.5365pt>
 File: fig/vibe.pdf Graphic file (type pdf)
 <use fig/vibe.pdf>
 Package pdftex.def Info: fig/vibe.pdf  used on input line 84. on input line 84.
@@ -831,7 +835,7 @@ ung von Ku-gel
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<fig/histogramm.pdf, id=312, pagebox=cropbox, 224.76166pt x 77.82076pt>
+<fig/histogramm.pdf, id=333, pagebox=cropbox, 224.76166pt x 77.82076pt>
 File: fig/histogramm.pdf Graphic file (type pdf)
 <use fig/histogramm.pdf>
 Package pdftex.def Info: fig/histogramm.pdf  used on input line 96. on input li
@@ -848,30 +852,43 @@ Overfull \hbox (3.44162pt too wide) in paragraph at lines 112--113
  Zu-geh[]origkeitsfunktionen
  []
 
-<fig/fuzzy.png, id=360, 490.08093pt x 815.29594pt>
+<fig/fuzzy.png, id=381, 490.08093pt x 815.29594pt>
 File: fig/fuzzy.png Graphic file (type png)
 <use fig/fuzzy.png>
 Package pdftex.def Info: fig/fuzzy.png  used on input line 118. on input line 1
 18.
 Package pdftex.def Info: Requested size: 334.60571pt x 556.65807pt on input lin
 e 118.
-) [10] [11 <./fig/fuzzy.png>] [12] [13] (EigenesVerfahren.tex
+[10] [11 <./fig/fuzzy.png>]) [12] [13] (EigenesVerfahren.tex
 chapter 3.
+
+Overfull \hbox (10.52876pt too wide) in paragraph at lines 2--3
+\OT1/cmr/m/n/10.95 Sch[]atzung der K[]orperhalterung mit Hi-sto-gram-m-ana-ly-s
+e und Er-ken-nung au-er-gew[]ohnlicher
+ []
+
+<fig/motiondetrection7.png, id=415, 621.82312pt x 639.13782pt>
+File: fig/motiondetrection7.png Graphic file (type png)
+<use fig/motiondetrection7.png>
+Package pdftex.def Info: fig/motiondetrection7.png  used on input line 9. on in
+put line 9.
+Package pdftex.def Info: Requested size: 418.25555pt x 429.90729pt on input lin
+e 9.
 ) [14
 
-] [15] (Ergebnisse.tex
+] [15 <./fig/motiondetrection7.png>] [16] (Ergebnisse.tex
 chapter 4.
-) [16
+) [17
 
-] [17] (ZusammenfassungAusblick.tex
+] [18] (ZusammenfassungAusblick.tex
 chapter 5.
-) [18
+) [19
 
-] (main.bbl [19
+] (main.bbl [20
 
-]) [20] [21] (Abkurzungen.tex) [22
+]) [21] [22] (Abkurzungen.tex) [23
 
-] [23] (main.lof
+] [24] (main.lof
 Overfull \hbox (51.53062pt too wide) in paragraph at lines 8--8
  [][] [][]\OT1/cmr/m/n/10.95 Normalisierte ho-ri-zon-ta-le und ver-ti-ka-le Pro
 -jek-ti-ons-vor-la-gen f[]ur je-de K[]orperhalterung 
@@ -881,21 +898,21 @@ Overfull \hbox (51.53062pt too wide) in paragraph at lines 8--8
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
- [24
+ [25
 
 ] (main.lot)
 \tf@lot=\write7
 \openout7 = `main.lot'.
 
- [25
+ [26
 
-] [26] (main.loa)
+] [27] (main.loa)
 \tf@loa=\write8
 \openout8 = `main.loa'.
 
- [27
+ [28
 
-] [28]
+] [29]
 
 Class scrreprt Warning: \float@listhead detected!
 (scrreprt)              Implementation of \float@listhead became
@@ -914,15 +931,15 @@ Class scrreprt Warning: \float@listhead detected!
 \tf@lol=\write9
 \openout9 = `main.lol'.
 
- [29
+ [30
 
-] [30] (Anhang.tex
+] [31] (Anhang.tex
 chapter A.
-) (Danksagung.tex [31
+) (Danksagung.tex [32
 
 ])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 58.
- [32
+ [33
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 58.
@@ -930,14 +947,18 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 58.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 58.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 58.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 828A37E261D8893FFC9D245747B5C208;2169.
+(rerunfilecheck)             Checksum: 6CE2E12911BF697279824262E49ED8C9;2359.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 58.
  ) 
 Here is how much of TeX's memory you used:
- 12699 strings out of 493312
- 197156 string characters out of 3138893
- 403188 words of memory out of 3000000
- 15881 multiletter control sequences out of 15000+200000
+ 12712 strings out of 493312
+ 197395 string characters out of 3138893
+ 403264 words of memory out of 3000000
+ 15890 multiletter control sequences out of 15000+200000
  11720 words of font info for 43 fonts, out of 3000000 for 9000
  1142 hyphenation exceptions out of 8191
  44i,15n,66p,8832b,503s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -956,9 +977,9 @@ eX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/f
 onts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
 amsfonts/cm/cmti10.pfb>
-Output written on main.pdf (43 pages, 514048 bytes).
+Output written on main.pdf (44 pages, 952348 bytes).
 PDF statistics:
- 570 PDF objects out of 1000 (max. 8388607)
- 119 named destinations out of 1000 (max. 500000)
- 290 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 604 PDF objects out of 1000 (max. 8388607)
+ 122 named destinations out of 1000 (max. 500000)
+ 311 words of extra memory for PDF output out of 10000 (max. 10000000)
 

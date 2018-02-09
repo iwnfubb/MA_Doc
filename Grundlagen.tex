@@ -20,7 +20,7 @@ In der Arbeit \cite{benezeth2010comparative} wird eine vergleichende Studie vers
 Im nächsten Teil werden verschiedene state-of-art Verfahren beschrieben, um dies Verfahren genauer zu verstehen, wie die Hintergrundsubtraktion funktionieren soll.
 \subsection{Gaußschen Mixture Modell}
 In \cite{kaewtrakulpong2002improved} ist das entwickelte Hintergrundmodell auf der Grundlage der Gauß'schen Mischung präsentiert, das ein meist gebräuchliche Weg ist. Es verwendet eine Methode, um jedes Hintergrundpixel durch eine Mischung von K-Gaußschen Verteilung (normalerweise K = 3 bis 5) zu modellieren. Die Gewichte der Mischung stellen die Zeitanteile dar, die diese Farbe in der Szene verbleiben. Die wahrscheinlichen Hintergrundfarben sind diejenigen, die länger und statischer bleiben \cite{kaewtrakulpong2002improved}.\\
-Jedes Pixel in der Szene wird durch eine Mi schung von K-Gaußschen Verteilung modelliert. Die Wahrscheinlichkeit, dass ein bestimmtes Pixel zum Zeitpunkt $N$ einen Wert von $\mathrm{x}_{n}$ hat, kann wie folgt geschrieben werden:\\
+Jedes Pixel in der Szene wird durch eine Mischung von K-Gaußschen Verteilung modelliert. Die Wahrscheinlichkeit, dass ein bestimmtes Pixel zum Zeitpunkt $N$ einen Wert von $\mathrm{x}_{n}$ hat, kann wie folgt geschrieben werden:\\
 \begin{equation}
 p(\mathrm{x}_{n}) = \sum \limits_{j=1}^K w_j \eta(\mathrm{x}_{n};\theta_j)
 \end{equation}
@@ -46,9 +46,9 @@ Und das Schwellwert $T$ ist Mindestanteil des Hintergrundmodells, nämlich ist $T
 wobei $w_k$ die k-ten Gaußschen Komponente und $\frac{1}{\alpha}$ definiert die Zeitkonstante, die die Änderung bestimmt. Wenn keine der K-Verteilung mit diesem Pixelwert übereinstimmt, wird die unwahrscheinliche Komponente durch eine Verteilung mit dem aktuellen Wert als Mittelwert ersetzt.
 
 \subsection{Adaptive Gaußschen Mixture Modell}
-In \cite{zivkovic2006efficient} wurde eine interessante Erweiterung von GMM vorgeschlagen. Normales GMM wird mit eine bestimmte Anzahl von Gaußschen Modell, aber AGMM wird automatisch die Anzahl der Gaußschen Variablen angepasst, die zur Modellierung eines gegebenen Pixels verwendet werden. Die Erweiterung reduziert die Speicheranforderung des Algorithmus, erhöht die Recheneffizienz und kann die Leistung verbessern, wenn der Hintergrund stark sich ändert.
+In \cite{zivkovic2006efficient} wurde eine interessante Erweiterung von \acs{GMM} vorgeschlagen. Normales \acs{GMM} wird mit eine bestimmte Anzahl von Gaußschen Modell, aber \acs{AGMM} wird automatisch die Anzahl der Gaußschen Variablen angepasst, die zur Modellierung eines gegebenen Pixels verwendet werden. Die Erweiterung reduziert die Speicheranforderung des Algorithmus, erhöht die Recheneffizienz und kann die Leistung verbessern, wenn der Hintergrund stark sich ändert.
 \subsection{Kernel Density Estimation}
-Ein Nachteil von GMM ist, dieses Modell kann keine empfindliche Detektion erreichen, wenn der Hintergrund sehr hohe Frequenzvariation aufweist. Dieser Nachteil kann mit KDE Modell , das in \cite{elgammal2000non} beschrieben wurde, gelöst werden.\\
+Ein Nachteil von \acs{GMM} ist, dieses Modell kann keine empfindliche Detektion erreichen, wenn der Hintergrund sehr hohe Frequenzvariation aufweist. Dieser Nachteil kann mit \acs{KDE} Modell , das in \cite{elgammal2000non} beschrieben wurde, gelöst werden.\\
 Sei $x_1, x_2,..., x_n$ eine aktuelle Stichprobe von Intensitätswerten für ein Pixel. Unter Verwendung dieses Stichprobe kann die Dichtefunktion, dass dieses Pixel einen Intensitätswert $x_t$ zur Zeit $t$ haben wird, unter Verwendung des Kernschätzers $K$ als nicht-parametrisch geschätzt werden \cite{elgammal2000non}.
 \begin{equation}
 P(x_t) = \frac{1}{n} \sum \limits_{i=1}^N K (x_t - x_i) 
@@ -74,10 +74,10 @@ Angenommen $m$ ist Median von $|x_i - x_{i+1}|$ für jedes Paar $(x_i, x_{i+1})$ 
 \begin{equation}
 \sigma = \frac{m}{0,68 \sqrt{2}}
 \end{equation}
-Bei KDE gibt es zwei Alternative für Update des Hintergrundes, nämlich ``Selective Update"\ und ``Blind Update". Die erste Alternative fügt neue Stichprobe in Modell hinzu, genau dann wenn es als Hintergrund klassifiziert ist. Die zweite Alternative fügt einfach neue Stichprobe in Modell hinzu.  Im Allgemein funktioniert KDE draußen besser als GMM Methode. Für meine Masterarbeit wurden mehre Methode ausprobiert, verglichen und ausgewertet, damit eine bessere Anwendung benutzt werden kann.  
+Bei \acs{KDE} gibt es zwei Alternative für Update des Hintergrundes, nämlich ``Selective Update"\ und ``Blind Update". Die erste Alternative fügt neue Stichprobe in Modell hinzu, genau dann wenn es als Hintergrund klassifiziert ist. Die zweite Alternative fügt einfach neue Stichprobe in Modell hinzu.  Im Allgemein funktioniert \acs{KDE} draußen besser als \acs{GMM} Methode. Für meine Masterarbeit wurden mehre Methode ausprobiert, verglichen und ausgewertet, damit eine bessere Anwendung benutzt werden kann.  
 
 \subsection{Vibe}
-In \cite{barnich2009vibe} wurde ein Verfahren beschrieben, das ersten Ansatz von zufälliger Aggregation in Hintergrundsubtraktion ist. Das Verfahren ist ``ViBe" genannt. Sei $p_t(x)$ ein Pixelwert $x$ in Zeit $t$. Bei GMM oder KDE Modell wird ein Pixelwert $p_t(x)$ als Hinter- oder Vordergrund klassifiziert, abhängig davon, wie das Pixel mit Dichtefunktion des Modells passt. In ``ViBe" wird aber eine Menge von Stichprobewerte als Pixelmodell benutzt. Um einen Wert $p_t(x)$ zu klassifizieren, wird der Wert mit seinen nächsten Werten in der Menge der Stichproben, in dem wie eine Kugel $S_R(p_t(x))$ mit Radius $R$ und Punkt $p_t(x)$ definiert wird. Ein Pixel ist genau dann als Background klassifiziert, wenn die Überschneidung $\sharp$ von Kugel $S_R(p_t(x))$ und Menge von Punkte ${p_1,p_2, ..., p_n}$ mehr als Schwellwert $\sharp_min$ ist (siehe Abbildung ~\ref{fig:vibe}).
+In \cite{barnich2009vibe} wurde ein Verfahren beschrieben, das ersten Ansatz von zufälliger Aggregation in Hintergrundsubtraktion ist. Das Verfahren ist ``ViBe" genannt. Sei $p_t(x)$ ein Pixelwert $x$ in Zeit $t$. Bei \acs{GMM} oder \acs{KDE} Modell wird ein Pixelwert $p_t(x)$ als Hinter- oder Vordergrund klassifiziert, abhängig davon, wie das Pixel mit Dichtefunktion des Modells passt. In ``ViBe" wird aber eine Menge von Stichprobewerte als Pixelmodell benutzt. Um einen Wert $p_t(x)$ zu klassifizieren, wird der Wert mit seinen nächsten Werten in der Menge der Stichproben, in dem wie eine Kugel $S_R(p_t(x))$ mit Radius $R$ und Punkt $p_t(x)$ definiert wird. Ein Pixel ist genau dann als Background klassifiziert, wenn die Überschneidung $\sharp$ von Kugel $S_R(p_t(x))$ und Menge von Punkte ${p_1,p_2, ..., p_n}$ mehr als Schwellwert $\sharp_min$ ist (siehe Abbildung ~\ref{fig:vibe}).
 
 \begin{figure}[h]
 	\centering
@@ -131,4 +131,6 @@ Beispielweise gibt es ein Smart-Thermostat in einem Raum und der Thermostat soll
 
 
 \section{OpenCV Framework}\label{sec:OpenCV}
-OpenCV ist eine Open-Source-Computer-Vision-Bibliothek, die in C und C++ programmiert wird und unter Linux, Windows, MacOS läuft. OpenCV ist auch auf Schnittstelle für Java, Python, Ruby, Mathlab... entwickelt. OpenCV wurde für Recheneffizienz und mit einem starken Fokus auf Echtzeitanwendungen entwickelt. Diese Bibliothek enthält über 500 Funktionen, die viele Bereiche in der Vision einschließlich Bildverarbeitung, maschinelles Lernen, neuronale Netze... umfassen ~\cite{bradski2008learning}. Da die Arbeit um ein Echtzeitanwendung zur Erkennung der abnormalen Situationen geht, deswegen kommt OpenCV hier zum Einsatz.   
+OpenCV ist eine Open-Source-Computer-Vision-Bibliothek, die in C und C++ programmiert wird und unter Linux, Windows, MacOS läuft. OpenCV ist auch auf Schnittstelle für Java, Python, Ruby, Mathlab... entwickelt. OpenCV wurde für Recheneffizienz und mit einem starken Fokus auf Echtzeitanwendungen entwickelt. Diese Bibliothek enthält über 500 Funktionen, die viele Bereiche in der Vision einschließlich Bildverarbeitung, maschinelles Lernen, neuronale Netze... umfassen ~\cite{bradski2008learning}. Da die Arbeit um ein Echtzeitanwendung zur Erkennung der abnormalen Situationen geht, deswegen kommt OpenCV hier zum Einsatz.  
+
+\section{Bosch Smart Home und Innenkamera}

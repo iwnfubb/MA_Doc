@@ -36,7 +36,7 @@ Erosion wird in diesem Fall angewendet, um Rausch nach dem Hintergrundsubtraktio
 \end{figure}
 
 \subsection{Eine Verbesserung für Hintergrundsubtraktion}
-Im Allgemein wird jeder Pixel von aktuellem Bild erst berechnet, ob er zu Hintergrund oder Vordergrund gehört, und dann wird den Pixel wieder nach jedem Frame in Hintergrundmodell hinzugefügt. Das bedeutet, wenn ein Mensch sich bewegt von $A$ nach $B$ und auf $B$ so lang zum Stillstand kommt, wird der Mensch wieder in Hintergrund zugeordnet. Und das Problem muss unbedingt gelöst werden, weil die Arbeit um Erkennung einer außergewöhnlichen Situation geht, indem ein Unfall passieren kann und Person kann wahrscheinlich auf dem Boden lang liegen. 
+Im Allgemein wird jeder Pixel von aktuellem Bild erst berechnet, ob er zu Hintergrund oder Vordergrund gehört, und dann wird den Pixel wieder nach jedem Frame in Hintergrundmodell hinzugefügt. Das bedeutet, wenn ein Mensch sich bewegt von $A$ nach $B$ und auf $B$ so lang zum Stillstand kommt, wird der Mensch wieder in Hintergrund zugeordnet. Und das Problem muss unbedingt gelöst werden, weil die Arbeit um Erkennung einer außergewöhnlichen Situation geht, indem ein Unfall passieren kann und Person kann wahrscheinlich auf dem Boden lang liegen. Das Problem liegt an Aktualisierung des Hintergrundmodells, deshalb wird eine Methode in diese Stelle erstellt, um das Problem zu vermeiden. Das erste Frame wird als eine Hintergrundbild in Schwarzweiß abgelagert. Der Unterschied zwischen aktuellem Bild in Schwarzweiß und dem abgelagerten Hintergrundbild wird pixelweise gerechnet.
 
 
 

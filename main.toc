@@ -20,21 +20,21 @@
 \contentsline {section}{\numberline {2.2}Histogrammanalyse}{9}{section.2.2}
 \contentsline {section}{\numberline {2.3}Fuzzylogik}{10}{section.2.3}
 \contentsline {section}{\numberline {2.4}OpenCV Framework}{10}{section.2.4}
-\contentsline {section}{\numberline {2.5}Bosch Smart Home und Innenkamera}{12}{section.2.5}
+\contentsline {section}{\numberline {2.5}Bosch Innenkamera}{12}{section.2.5}
 \contentsline {chapter}{\numberline {3}Eigenes Verfahren}{14}{chapter.3}
 \contentsline {section}{\numberline {3.1}Hintergrundsubtraktion}{14}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Vergleichen verschiedener Methoden}{14}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Eigene Methode}{14}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Ergebnisse der eigene Hintergrundsubtraktion}{14}{subsection.3.1.3}
-\contentsline {section}{\numberline {3.2}Sch\"atzung der K\"orperhalterung mit Histogrammanalyse}{14}{section.3.2}
-\contentsline {section}{\numberline {3.3}Erkennung au\IeC {\ss }ergew\"ohnlicher Situation}{14}{section.3.3}
-\contentsline {chapter}{\numberline {4}Ergebnisse und Evaluation}{17}{chapter.4}
-\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{19}{chapter.5}
-\contentsline {chapter}{Literaturverzeichnis}{20}{chapter*.5}
-\contentsline {chapter}{Abk\"urzungsverzeichnis}{23}{chapter*.6}
-\contentsline {chapter}{Abbildungsverzeichnis}{25}{chapter*.7}
-\contentsline {chapter}{Tabellenverzeichnis}{26}{chapter*.8}
-\contentsline {chapter}{Liste der Algorithmen}{28}{section*.9}
-\contentsline {chapter}{Listings}{30}{section*.11}
-\contentsline {chapter}{\numberline {A}Anhang}{32}{appendix.A}
-\contentsline {chapter}{Danksagung}{33}{chapter*.15}
+\contentsline {subsection}{\numberline {3.1.2}Eigene Methode}{18}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Ergebnisse der eigene Hintergrundsubtraktion}{18}{subsection.3.1.3}
+\contentsline {section}{\numberline {3.2}Sch\"atzung der K\"orperhalterung mit Histogrammanalyse}{18}{section.3.2}
+\contentsline {section}{\numberline {3.3}Erkennung au\IeC {\ss }ergew\"ohnlicher Situation}{18}{section.3.3}
+\contentsline {chapter}{\numberline {4}Ergebnisse und Evaluation}{20}{chapter.4}
+\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{22}{chapter.5}
+\contentsline {chapter}{Literaturverzeichnis}{23}{chapter*.5}
+\contentsline {chapter}{Abk\"urzungsverzeichnis}{26}{chapter*.6}
+\contentsline {chapter}{Abbildungsverzeichnis}{28}{chapter*.7}
+\contentsline {chapter}{Tabellenverzeichnis}{29}{chapter*.8}
+\contentsline {chapter}{Liste der Algorithmen}{31}{section*.9}
+\contentsline {chapter}{Listings}{33}{section*.11}
+\contentsline {chapter}{\numberline {A}Anhang}{35}{appendix.A}
+\contentsline {chapter}{Danksagung}{36}{chapter*.15}

@@ -1,9 +1,17 @@
 \chapter{Eigenes Verfahren}\label{chp:EigVerfahren}
-Diese Arbeit besteht aus drei große Hauptschritte, nämlich Hintergrundsubtraktion, Schätzung der Körperhalterung mit Histogrammanalyse und Erkennung außergewöhnlicher Situation mit Fuzzylogik  
+Diese Arbeit besteht aus drei große Hauptschritte, nämlich Hintergrundsubtraktion, Schätzung der Körperhalterung mit Histogrammanalyse und Erkennung außergewöhnlicher Situation mit Fuzzylogik. Um mein eigenes Verfahren einfacher zu verstehen, stellt Die Abbildung \ref{fig:allgemein} allgemeinen Prozess  der drei Hauptschritte dar.
+
+\begin{figure}[htpb]			
+	\centering
+	\def\svgwidth{0.5\textwidth}
+	\import{./fig/}{allgemein.pdf_tex}
+	\caption{Drei Hauptschritte zur Erkennung von außergewöhnlichen Situation}
+	\label{fig:allgemein}
+\end{figure}
 
 \section{Hintergrundsubtraktion}\label{chp:BackgroundSubtraction}
 \subsection{Vergleichen verschiedener Methoden}
-In dieser Masterarbeit ist Hintergrundsubtraktion ein wichtiger Baustein. Ein großes Problem ist wie ein korrekter Hintergrund erstellt werden kann, damit man sich bewegtes Objekt robust erkennen kann. Für diese Arbeit wurden verschiedenen moderne Methoden (Gaussian Mixture Model, Kern Density Estimation und Vibe) ausprobiert und verglichen. Die alle genannte Methoden wurden schon in ~\ref{sec:Grundlage1} theoretisch beschrieben. In diesem Abschnitt geht es um Bewertungen von Hintergrundsubtraktionsverfahren. Bei \acs{GMM} wird eine Mischung von 5-Gaußschen Verteilung modelliert und eine Anzahl von 100 letzte Frames wird als "History"\ angewendet. Mit dem Lernrate $0.01$ funktioniert das \acs{GMM} Verfahren gut in unserem Test. Für das \acs{AGMM} nehmen wir auch die gleichen Parameters, um den Vergleich der Hintergrundsubtraktionsverfahren objektiv zu bewerten. Bei \acs{KDE} handelt es sich um eine Berechnung von Intensitätswerte für einen Pixel, deshalb wird nur ein Parameter von 100 als "History" wie bei \acs{AGMM} in diesem Fall eingesetzt. Wie in \cite{barnich2009vibe} schon gemeint, Vibe ist ein nicht-parametrisches Verfahren und weshalb kein Parameter wird hier gebraucht. 
+In dieser Masterarbeit ist Hintergrundsubtraktion ein wichtiger Baustein. Ein großes Problem ist wie ein korrekter Hintergrund erstellt werden kann, damit man sich bewegtes Objekt robust erkennen kann. Für diese Arbeit wurden verschiedenen moderne Methoden (Gaussian Mixture Model, Kern Density Estimation und Vibe) ausprobiert und verglichen. Die alle genannte Methoden wurden schon in ~\ref{sec:grunglagen_hintergrundsub} theoretisch beschrieben. In diesem Abschnitt geht es um Bewertungen von Hintergrundsubtraktionsverfahren. Bei \acs{GMM} wird eine Mischung von 5-Gaußschen Verteilung modelliert und eine Anzahl von 100 letzte Frames wird als "History"\ angewendet. Mit dem Lernrate $0.01$ funktioniert das \acs{GMM} Verfahren gut in unserem Test. Für das \acs{AGMM} nehmen wir auch die gleichen Parameters, um den Vergleich der Hintergrundsubtraktionsverfahren objektiv zu bewerten. Bei \acs{KDE} handelt es sich um eine Berechnung von Intensitätswerte für einen Pixel, deshalb wird nur ein Parameter von 100 als "History" wie bei \acs{AGMM} in diesem Fall eingesetzt. Wie in \cite{barnich2009vibe} schon gemeint, Vibe ist ein nicht-parametrisches Verfahren und weshalb kein Parameter wird hier gebraucht. 
 
 \begin{figure}[htpb]
 	\centering
@@ -36,11 +44,133 @@ Erosion wird in diesem Fall angewendet, um Rausch nach dem Hintergrundsubtraktio
 \end{figure}
 
 \subsection{Eine Verbesserung für Hintergrundsubtraktion}
-Im Allgemein wird jeder Pixel von aktuellem Bild erst berechnet, ob er zu Hintergrund oder Vordergrund gehört, und dann wird den Pixel wieder nach jedem Frame in Hintergrundmodell hinzugefügt. Das bedeutet, wenn ein Mensch sich bewegt von $A$ nach $B$ und auf $B$ so lang zum Stillstand kommt, wird der Mensch wieder in Hintergrund zugeordnet. Und das Problem muss unbedingt gelöst werden, weil die Arbeit um Erkennung einer außergewöhnlichen Situation geht, indem ein Unfall passieren kann und Person kann wahrscheinlich auf dem Boden lang liegen. Das Problem liegt an Aktualisierung des Hintergrundmodells, deshalb wird eine Methode in diese Stelle erstellt, um das Problem zu vermeiden. Das erste Frame wird als eine Hintergrundbild in Schwarzweiß abgelagert. Der Unterschied zwischen aktuellem Bild in Schwarzweiß und dem abgelagerten Hintergrundbild wird pixelweise gerechnet.
+Im Allgemein wird jeder Pixel von aktuellem Bild erst berechnet, ob er zu Hintergrund oder Vordergrund gehört, und dann wird den Pixel wieder nach jedem Frame in Hintergrundmodell hinzugefügt. Das bedeutet, wenn ein Mensch sich bewegt von $A$ nach $B$ und auf $B$ so lang zum Stillstand kommt, wird der Mensch wieder in Hintergrund zugeordnet. Und das Problem muss unbedingt gelöst werden, weil die Arbeit um Erkennung einer außergewöhnlichen Situation geht, indem ein Unfall passieren kann und Person kann wahrscheinlich auf dem Boden lang liegen. Das Problem liegt an der Aktualisierung des Hintergrundmodells, deshalb wird eine Methode in diese Stelle erstellt, um das Problem zu vermeiden (Abbildungen \ref{fig:mymethod1}, \ref{fig:mymethod2}, \ref{fig:mymethod3}). Bei Aktualisierung eines Hintergrundbildes soll nur die Pixel, die nicht zu Vordergrund zugeordnet sind, betrachtet werden. Das erste Frame wird als eine Hintergrundbild in Schwarzweiß abgelagert. Der Unterschied zwischen aktuellem Bild in Schwarzweiß und dem abgelagerten Hintergrundbild wird pixelweise gerechnet.  Anschließen bekommt man ein Bild, das Unterschied zwischen aktuellem Bild und Hintergrundbild  mit Werte von 0 bis 255 darstellt  (Abbildungen \ref{fig:mymethod1} c, \ref{fig:mymethod2} c, \ref{fig:mymethod3}c). Je geringer der Wert von einem Pixel im Bild ist, ,desto höher die Wahrscheinlichkeit, dass das Pixel zu Hintergrund gehört. Und umgekehrt je höher der Wert von einem Pixel im Bild ist, desto höher die Wahrscheinlichkeit, dass das Pixel zu Hintergrund gehört. Nach der Berechnung des Unterschiedsbild wird eine Schwellwert von $50$ angewendet um ein Binärbild zu erzeugen. Wenn ein Pixel ein Wert unter $50$ hat, wird das Pixel in Schwarz markiert und höher als $50$ dann wird das Pixel in Weiß markiert (Abbildungen \ref{fig:mymethod1} d, \ref{fig:mymethod2} d, \ref{fig:mymethod3}d) .  Bis jetzt ist ein Binärbild kreiert, das ein sich bewegende Objekt enthält.  Erosion und Dilatation sind hier noch mal angewendet um Qualität des Binärbildes zu verbessern  (Abbildungen \ref{fig:mymethod1} e, \ref{fig:mymethod2} e, \ref{fig:mymethod3}e). Wie in \ref{sec:grunglagen_hintergrundsub} schon gemeint, Hintergrundsubtraktion besteht aus drei Hauptschritte: Initialisierung des Hintergrundes, Erkennung des Vordergrundes und Aktualisierung des Hintergrundes. Bis jetzt sind zwei erste Schritte schon geschafft, und es fehlt nur noch den letzte Schritte.  Ein Begrenzungsbox (eng. Bounding box) soll in dieser Stelle erstellt, um sich bewegendes Objekt zu begrenzen und auch für die Erkennung der Körperhalterung in nächstem Abschnitt zu unterstützen. Zuerst wird Gruppen von Pixel, die kontinuierlich neben einander sind, markiert. OpenCV bietet eine Funktion an, die  \inlinecode{C++}{cv2.findContours()} heißt. Die Funktion \inlinecode{C++}{findContours} nimmt ein Binärbild als Eingabe und gibt Konturen von verbundenen Pixel als Ausgabe. Mit Hilfe von der Funktion  \inlinecode{C++}{cv.contourArea()} kann man einfach die  Begrenzungsboxen herausfinden  (Abbildungen \ref{fig:mymethod1} f, \ref{fig:mymethod2} f, \ref{fig:mymethod3}f). Nun ergibt es sich eine Begrenzungsbox, die sich bewegenden Objekte begrenzt. Nach Bewegung einer Person bekommt man eine Liste von Begrenzungsbox, die alle vergangene Positionen der Bewegung enthält und eine  Begrenzungsbox, die aktuelle Bewegung darstellt. Bei Aktualisierung des Hintergrundes wird das Hintergrundbild nur mit Teil(e) des aktuellem Bildes mit vergangen Begrenzungsboxen ersetzt, die nicht die aktuelle Bewegung überschnitt . Auf den Abbildungen   \ref{fig:mymethod1} h, \ref{fig:mymethod2} h, \ref{fig:mymethod3}h werden die Teil(e) des Bildes, die mit rot markiert sind, in Hintergrundbild kopiert. Die weiß markierte Bereiche auf Abbildungen \ref{fig:mymethod1} g, \ref{fig:mymethod2} g, \ref{fig:mymethod3}g werden noch nicht beobachtet soweit wenn die noch mit dem aktuelles Begrenzungsbox (grün markiert Box) überschneiden.
+\begin{figure}[htpb]
+	\centering
+	\def\svgwidth{1\textwidth}
+	\import{./fig/}{mymethode4edited.pdf_tex}
+	\caption{Frame-Nummer: 334. Die rot markierte Bereich von Hintergrundbildes wird in nächstem Frame aktualisiert.}
+	\label{fig:mymethod1}
+\end{figure}
+\begin{figure}[htpb]
+	\centering
+	\def\svgwidth{1\textwidth}
+	\import{./fig/}{mymethode3edited.pdf_tex}
+	\caption{Frame-Nummer: 335. Nach der Aktualisierung des Hintergrundbildes wird die alle rot Begrenzungsboxen gelöscht.}
+	\label{fig:mymethod2}
+\end{figure}
+\begin{figure}[htpb]			
+	\centering
+	\def\svgwidth{1\textwidth}
+	\import{./fig/}{mymethode2edited.pdf_tex}
+	\caption{Frame-Nummer: 403. Soweit die Person sich in der Szene bewegt, werden die vergangenen Boxen (weiß und rot) erstellt.}
+	\label{fig:mymethod3}
+\end{figure}
 
+Die obengenannte Methode haben zeit Vorteile. Der erste Vorteil ist Ermöglichen, das Problem zu lösen, wenn eine Person so lang nicht genug nach Bewegungen zum Still kommt, und die Person wird als Hintergrund betrachtet. Der zweite Vorteil ist Verarbeitungszeit, da bei andere Methode in \ref{sec:grunglagen_hintergrundsub} braucht man ein Liste von Hintergrundbilder, um ein Hintergrundmodell zu bauen. Aber mit der obengenannte Verbesserung braucht man nur Hintergrundbild und aktuelles Bild.\\
+Zwar funktioniert die Methode schon gut, aber man kann hier noch die Qualität von Silhouette verbessern. Man kann hier einfach bemerken, dass Silhouette von der gemeinte Methode zum Vergleich mit AGMM Verfahren noch schlecht ist. Hier kann man noch was verbessern, und das ist eine Kombination von AGMM und die obengenannt Methode. Die finale Verbesserung basiert auf die Hintergrundsubtraktion von AGMM und die Aktualisierung des Hintergrundes von meine eigene Methode. Das heißt, wenn eine Person sich bewegt in Szene bewegt, wird die Person mit einer Box markiert. Das Teil von Hintergrund, wo die Box stattfindet, wird nicht bei Aktualisierung von Hintergrund betrachtet. Der Unterschied bei Aktualisierung des Hintergrundbildes zwischen meine eigene Methode und  die Verbesserung durch AGMM ist:    
+\begin{itemize}
+	\item Eigene Methode: Durch eine Bewegung wird das Hintergrundbild nur an die vergangenen Begrenzungsboxen (weißen Boxen), die nicht mit aktueller Bewegung überschneidet, aktualisiert.
+	\item Verbesserung mit AGMM: Durch eine Bewegung wird das ganze Hintergrundbild außer dem Bereich, wo aktuelle Bewegung stattfindet, aktualisiert.
+\end{itemize}
+Diese finale Verbesserung verbessert die Qualität von Silhouette und deswegen erhöht auch die Genauigkeit der Schätzung der Körperhaltung, die in nächstem Abschnitt besprochen wird.  Allerdings, die Kombination von AGMM und meine eigene Methode hat einen Nachteil, dass die Laufzeit länger als erster Versuch mit eigene Methode. Die Laufzeit betragt vorher durchschnitt 45 Millisekunden für ein Bild und nachher gegen 100 Millisekunden, aber es ist noch akzeptierbar für eine Echtzeitanwendung.
 
+\begin{figure}[htpb]
+	\centering
+	\includegraphics[width=1\textwidth]{fig/dilatation.jpg}
+	\caption{Bilder zum Vergleichen von eigener Methode und Kombinationsmethode} 
+	\label{fig:compare}
+\end{figure}
 
 \subsection{Ergebnisse der eigene Hintergrundsubtraktion}
+Um Qualität von erstellte  Silhouette zu bewerten, wurde ``Mean Squared Error"\ und ``Structural Similarity Measure" zum Einsatz gebracht. Ein ``Groundtrue"-Bild wird manuell erstellt und mit den Silhouetten von zwei Verbesserungen verglichen.  Die Formel von ``Mean Squared Error"\ wird wie folgt beschrieben:\\
+
+\begin{equation}
+MSE = \frac{1}{m n } \sum \limits_{i=0}^{m -1} \sum \limits_{j=0}^{n -1} [ I(i, j) - K (i, j)]^2
+\end{equation}
+wobei $m$ und $n$ sind die Breite und Höhe des Bildes sind, und $MSE$ wird als durchschnittliche Summe von quadratischem Differenz von jeden Pixel berechnet. Je kleiner $MSE$ Wert ist, desto ähnlicher sind die zweit verglichen Bilder.  ``Structural Similarity Measure" wird in ~\cite{wang2004image} vorgestellt. Die menschliche ist visuelle Wahrnehmung stark angepasst, um strukturelle Informationen aus einer Szene zu extrahieren, deswegen ist``Structural Similarity Measure" für die Qualitätsbewertung eingeführt, der auf der Degradation von Strukturinformationen basiert und wie folgt berechnet ~\cite{wang2004image}:
+\begin{equation}
+SSIM (x, y) = \frac{(2\mu_x \mu_y + c_1)(2\sigma_{xy} + c_2)}{(\mu_x^2 + \mu_y^2 + x_1) ({\sigma_x}^2 + {\sigma_y}^2 + c_2)}
+\end{equation}
+wobei $x=\{x_i | 1, 2 \dots, N\}$ und $y=\{y_i|1, 2 \dots, N\}$ und sind Positionen des NxN Fensters in jedem Bild. $\mu_x$ und $\mu_y$ sind  die Mittelwerte der Pixelintensität in der x und y Richtung.  $\sigma_x$ und $\sigma_y$ sind Varianzen,  $\sigma_{xy}$ ist Kovarianz von $x$ und $y$. $C_1$ und $C_2$ sind zwei Konstante.  SSIM ist zwischen 0 und 1 beschränkt, und je höher das Wert von SSIM, desto ähnlicher sind die zwei Bilder.  
+
+
+\begin{table}[h!]
+	\begin{center}
+		\begin{tabular}{ c  c  c  c  }
+			\toprule
+			Original & Ground true & 1. Verbesserung & 2. Verbesserung \\ 
+			\cmidrule(r){1-1}\cmidrule(lr){2-2}\cmidrule(l){3-3} \cmidrule(l){4-4}
+			\raisebox{-\totalheight}{\includegraphics[width=0.25\textwidth]{fig/original1.png}}
+			& 
+			\raisebox{-\totalheight}{\includegraphics[width=0.25\textwidth]{fig/groundtrue1.png}}
+			& 
+			\raisebox{-\totalheight}{\includegraphics[width=0.25\textwidth]{fig/My1.png}}
+			&
+			\raisebox{-\totalheight}{\includegraphics[width=0.25\textwidth]{fig/MOG1.png}}
+			\\
+			\\
+			& & MSE:252,12 SSIM: 0,98 & MSE: 109,36 SSIM: 0,99\\
+			 \bottomrule
+
+			\raisebox{-\totalheight}{\includegraphics[width=0.25\textwidth]{fig/original2.png}}
+			& 
+			\raisebox{-\totalheight}{\includegraphics[width=0.25\textwidth]{fig/groundtrue2.png}}
+			& 
+			\raisebox{-\totalheight}{\includegraphics[width=0.25\textwidth]{fig/My2.png}}
+			&
+			\raisebox{-\totalheight}{\includegraphics[width=0.25\textwidth]{fig/MOG2.png}}
+			\\
+			\\
+			& & MSE:459,49 SSIM: 0,98 & MSE: 158,21 SSIM: 0,99\\
+			\bottomrule
+		
+			\raisebox{-\totalheight}{\includegraphics[width=0.25\textwidth]{fig/original3.png}}
+			& 
+			\raisebox{-\totalheight}{\includegraphics[width=0.25\textwidth]{fig/groundtrue3.png}}
+			& 
+			\raisebox{-\totalheight}{\includegraphics[width=0.25\textwidth]{fig/My3.png}}
+			&
+			\raisebox{-\totalheight}{\includegraphics[width=0.25\textwidth]{fig/MOG3.png}}
+			\\
+			\\
+			& & MSE:268,24 SSIM: 0,99 & MSE: 121,59 SSIM: 0,99\\
+			\bottomrule
+			
+			
+			\raisebox{-\totalheight}{\includegraphics[width=0.25\textwidth]{fig/original4.png}}
+			& 
+			\raisebox{-\totalheight}{\includegraphics[width=0.25\textwidth]{fig/groundtrue4.png}}
+			& 
+			\raisebox{-\totalheight}{\includegraphics[width=0.25\textwidth]{fig/My4.png}}
+			&
+			\raisebox{-\totalheight}{\includegraphics[width=0.25\textwidth]{fig/MOG4.png}}
+			\\
+			\\
+			& & MSE:479,95 SSIM: 0,97 & MSE: 111,75 SSIM: 0,99\\
+			\bottomrule
+			
+			\raisebox{-\totalheight}{\includegraphics[width=0.25\textwidth]{fig/original5.png}}
+			& 
+			\raisebox{-\totalheight}{\includegraphics[width=0.25\textwidth]{fig/groundtrue5.png}}
+			& 
+			\raisebox{-\totalheight}{\includegraphics[width=0.25\textwidth]{fig/My5.png}}
+			&
+			\raisebox{-\totalheight}{\includegraphics[width=0.25\textwidth]{fig/MOG5.png}}
+			\\
+			\\
+			& & MSE:182,61 SSIM: 0,99 & MSE: 54,42 SSIM: 1.0\\
+			\bottomrule
+
+
+		\end{tabular}
+	
+		\caption{my.Lboro Analysis}
+		\label{tbl:myLboro}
+	\end{center}
+\end{table}
+
+
 \section{Schätzung der Körperhalterung mit Histogrammanalyse}
 Im Abschnitt \ref{chp:BackgroundSubtraction} 
 \section{Erkennung außergewöhnlicher Situation}

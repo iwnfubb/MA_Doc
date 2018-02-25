@@ -1,0 +1,80 @@
+%% Creator: Inkscape 0.91_64bit, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'mymethode3edited.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{1465.48741618bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,1.41249945)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{mymethode3edited.pdf}}%
+    \put(-1.01122915,1.34124666){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{1.52637398\unitlength}\raggedright \end{minipage}}}%
+    \put(-0.22598478,1.38536151){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{2.08663265\unitlength}\raggedright \end{minipage}}}%
+    \put(-0.39803271,1.07214604){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.98817272\unitlength}\raggedright \end{minipage}}}%
+    \put(0.11425103,1.17195591){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.00661723\unitlength}\raggedright \end{minipage}}}%
+    \put(0.13971841,1.19842482){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{(a)}}}%
+    \put(0.5492985,1.1975666){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{(b)}}}%
+    \put(0.32862966,0.97096572){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{(c)}}}%
+    \put(0.32491963,0.72981535){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{(d)}}}%
+    \put(0.32640091,0.48073937){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{(e)}}}%
+    \put(0.33095964,0.24668608){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{(f)}}}%
+    \put(0.15295286,0.01485448){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{(g)}}}%
+    \put(0.52223899,0.01476012){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{(h)}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{mymethode3edited.pdf}}%
+    \put(0.35663669,1.18059511){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Subtraktion}}}%
+    \put(0.36305214,0.95643869){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Schwellwert}}}%
+    \put(0.36305214,0.70961686){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Erosion + Dilatation}}}%
+    \put(0.36422196,0.47137341){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Begrenzungsbox}}}%
+    \put(0.36968082,0.25106635){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{}}}%
+    \put(0.39775535,-0.01642151){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{}}}%
+    \put(0.81622864,0.81627989){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{}}}%
+    \put(0.79637696,0.70047841){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Aktualisierung}}}%
+    \put(-0.25536715,1.47269794){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{1.3694128\unitlength}\raggedright \end{minipage}}}%
+    \put(-0.01829341,1.42590707){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{1.07307057\unitlength}\raggedright \end{minipage}}}%
+    \put(-0.80126062,0.82386456){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.85471316\unitlength}\raggedright \end{minipage}}}%
+    \put(0.7936373,0.65958328){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{des}}}%
+    \put(0.79363733,0.62043132){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Hintergrundsbildes}}}%
+  \end{picture}%
+\endgroup%

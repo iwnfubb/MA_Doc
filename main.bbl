@@ -124,6 +124,12 @@
   Computer Vision and Pattern Recognition (Cat. No PR00149)} (1999), vol.~2,
   p.~252 Vol. 2.
 
+\bibitem[WBSS04]{wang2004image}
+\textsc{Wang Z., Bovik A.~C., Sheikh H.~R., Simoncelli E.~P.}:
+\newblock Image quality assessment: from error visibility to structural
+  similarity.
+\newblock \emph{IEEE transactions on image processing 13}, 4 (2004), 600--612.
+
 \bibitem[ZVDH06]{zivkovic2006efficient}
 \textsc{Zivkovic Z., Van Der~Heijden F.}:
 \newblock Efficient adaptive density estimation per image pixel for the task of

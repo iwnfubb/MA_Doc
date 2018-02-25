@@ -1,0 +1,77 @@
+%% Creator: Inkscape 0.91_64bit, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'mymethode2.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{1465.01093827bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,1.41295873)%
+    \put(-1.01333432,1.34271999){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{1.52687042\unitlength}\raggedright \end{minipage}}}%
+    \put(-0.22783455,1.38684919){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{2.0873113\unitlength}\raggedright \end{minipage}}}%
+    \put(-0.39993844,1.07353185){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.98849411\unitlength}\raggedright \end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{mymethode2.pdf}}%
+    \put(0.11251191,1.17337418){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.00661938\unitlength}\raggedright \end{minipage}}}%
+    \put(0.13798757,1.1998517){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{(a)}}}%
+    \put(0.54770091,1.1989932){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{(b)}}}%
+    \put(0.32696026,0.97231863){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{(c)}}}%
+    \put(0.32324905,0.73108982){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{(d)}}}%
+    \put(0.32473083,0.4819328){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{(e)}}}%
+    \put(0.32929104,0.24780338){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{(f)}}}%
+    \put(0.15122634,0.01589645){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{(g)}}}%
+    \put(0.52063257,0.01580206){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{(h)}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{mymethode2.pdf}}%
+    \put(0.35497641,1.18201619){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Subtraktion}}}%
+    \put(0.36139398,0.95778687){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Schwellwert}}}%
+    \put(0.36139394,0.71088476){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Erosion + Dilatation}}}%
+    \put(0.36256414,0.4725638){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Begrenzungsbox}}}%
+    \put(0.36802482,0.25218508){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{}}}%
+    \put(0.39610848,-0.01538971){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{}}}%
+    \put(0.81471784,0.81758249){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{}}}%
+    \put(0.7948597,0.70174334){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Aktualisierung}}}%
+    \put(0.79435029,0.66992944){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{des}}}%
+    \put(0.79357018,0.63950554){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Hintergrundsbildes}}}%
+  \end{picture}%
+\endgroup%

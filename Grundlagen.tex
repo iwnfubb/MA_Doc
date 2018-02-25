@@ -1,14 +1,14 @@
-\chapter{Grundlagen}\label{chp:Grundlageb}
+	\chapter{Grundlagen}\label{chp:Grundlageb}
 Im diesen Kapitel werden die theoretischen Grundlagen der Masterarbeit beschrieben, die zum Verständnis der nachfolgenden Kapitel notwendig sind. Zu Beginn wird ein Überblick der Hintergrundsubtraktion gegeben und aufgezeigt, welche Besonderheiten diese Arbeit auszeichnen. An schließend wird die Histogrammanalyse zur Erkennung der Körperhaltung erläutert. Zuletzt befasst der letzte Teil sich mit einem Überblick über das wichtiges Framework OpenCV, das für moderne Computer Vision entwickelt wird. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Hintergrundsubtraktion}\label{sec:Grundlage1}
+\section{Hintergrundsubtraktion}\label{sec:grunglagen_hintergrundsub}
 Die Hintergrundsubtraktion ist eine gebräuchliche und weit verwendete Technik unter Verwendung von statischen Kameras zum Erzeugen eines Binärbildes, das die Pixel enthält, die zu sich bewegenden Objekten in der Szene gehören. Wie der Name andeutet, berechnet Hintergrundsubtraktion die Vordergrundmaske, die eine Subtraktion zwischen dem aktuellen Bild und einem Hintergrundmodell durchführt, wobei der statische Teil der Szene oder allgemeiner alles, was angesichts der Merkmale der beobachtete Szene als Hintergrund betrachtet werden kann, enthalten ist.\\
 In der Arbeit \cite{benezeth2010comparative} wird eine vergleichende Studie verschiedener Hintergrundsubtraktionsverfahren nach dem Stand der Technik präsentiert. Dieses Verfahren wurde seit den 1990er umfassend untersucht und hauptsächlich für Videoüberwachungsanwendungen, da sie zuerst Personen, Fahrzeuge, Tiere usw. erkennen müssen, bevor komplexere Prozesse zur Einbruchserkennung, Verfolgung, Personenzählung \cite{aziz2011pedestrian} usw. ausgeführt werden. Viele Algorithmen wurden entworfen, um die Vordergrundobjekte vom Hintergrund einer Sequenz zu segmentieren und teilen im Allgemeinen das gleiche Schema:
 
 \begin{itemize}
 	\item Initialisierung des Hintergrundes: Ein Hintergrundmodell wird zuerst dank einer festen Anzahl von Frames zu bauen. Dieses Modell kann auf verschiedene Arten entworfen werden (statistisch, Fuzzy...)
-	\item Erkennung des Vordergrundes: In den nächsten Frames wird ein Vergleich zwischen dem aktuellen Frame und dem Hintergrundmodell durchgeführt. Diese Subtraktion führt zu Berechnung des Verdergrundes der Szene.
-	\item Initialisierung des Hintergrundes: Während dieses Erfassungsprozesses werden auch Bilder analysiert, um das im Initialisierungsschritt gelernte Hintergrundmodell in Bezug auf eine Lernrate zu aktualisieren. Ein Objekt, das sich nicht lange bewegt, sollte im Hintergrund integriert sein.
+	\item Erkennung des Vordergrundes: In den nächsten Frames wird ein Vergleich zwischen dem aktuellen Frame und dem Hintergrundmodell durchgeführt. Diese Subtraktion führt zu Berechnung des Vordergrundes der Szene.
+	\item Aktualisierung des Hintergrundes: Während dieses Erfassungsprozesses werden auch Bilder analysiert, um das im Initialisierungsschritt gelernte Hintergrundmodell in Bezug auf eine Lernrate zu aktualisieren. Ein Objekt, das sich nicht lange bewegt, sollte im Hintergrund integriert sein.
 \end{itemize}
 
 \begin{figure}[htpb]
@@ -134,7 +134,7 @@ Beispielweise gibt es ein Smart-Thermostat in einem Raum und der Thermostat soll
 OpenCV ist eine Open-Source-Computer-Vision-Bibliothek, die in C und C++ programmiert wird und unter Linux, Windows, MacOS läuft. OpenCV ist auch auf Schnittstelle für Java, Python, Ruby, Mathlab... entwickelt. OpenCV wurde für Recheneffizienz und mit einem starken Fokus auf Echtzeitanwendungen entwickelt. Diese Bibliothek enthält über 500 Funktionen, die viele Bereiche in der Vision einschließlich Bildverarbeitung, maschinelles Lernen, neuronale Netze... umfassen ~\cite{bradski2008learning}. Da die Arbeit um ein Echtzeitanwendung zur Erkennung der abnormalen Situationen geht, deswegen kommt OpenCV hier zum Einsatz.  
 
 \section{Bosch Innenkamera}
-Für diese Masterarbeit wurden die Videos mit eine Bosch Innenkamera aufgenommen. Die Bosch 360 Innenkamera kann in jede Richtung drehen und schauen. Die im Innenbereich angeschlossene Kamera umfasst Bewegungssensoren, eine Gegensprechanlage für Zwei-Wege-Audio und Infrarot-Nachtsicht, so dass Sie zu jeder Zeit über Ihr Haus schauen können. Wenn es etwas wahrnimmt, zeichnet es HD-Material auf dem lokalen Speicher auf und Sie können mit Ihrem Telefon Clips oder Live-Filmmaterial ansehen. 
+Für diese Masterarbeit wurden die Videos mit eine Bosch Innenkamera aufgenommen. Die Bosch 360 Innenkamera kann in jede Richtung drehen und schauen. Die im Innenbereich angeschlossene Kamera umfasst Bewegungssensoren, eine Gegensprechanlage für Zwei-Wege-Audio und Infrarot-Nachtsicht, so dass Sie zu jeder Zeit über Ihr Haus schauen können. Wenn es etwas wahrnimmt, zeichnet es HD-Material auf dem lokalen Speicher auf und Sie können mit Ihrem Telefon Clips oder Live-Filmmaterial ansehen.  Mit Hilfe von dieser Kamera kann man sich fern um die Alten kümmern, die allein lebenden sind.  Die Kamera hat zwei Vorteile, die man hier gut für diese Arbeit anwenden kann, nämlich die Fähigkeit,jede Richtung zu drehen und Infrarot-Nachtsicht aufzunehmen.  
 
 \begin{figure}[htpb]
 	\centering

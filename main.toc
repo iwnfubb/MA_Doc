@@ -26,8 +26,8 @@
 \contentsline {subsection}{\numberline {3.1.1}Vergleichen verschiedener Methoden}{14}{subsection.3.1.1}
 \contentsline {subsection}{\numberline {3.1.2}Eine Verbesserung f\"ur Hintergrundsubtraktion}{15}{subsection.3.1.2}
 \contentsline {subsection}{\numberline {3.1.3}Ergebnisse der eigene Hintergrundsubtraktion}{23}{subsection.3.1.3}
-\contentsline {section}{\numberline {3.2}Sch\"atzung der K\"orperhalterung mit Histogrammanalyse}{25}{section.3.2}
-\contentsline {section}{\numberline {3.3}Erkennung au\IeC {\ss }ergew\"ohnlicher Situation}{25}{section.3.3}
+\contentsline {section}{\numberline {3.2}Sch\"atzung der K\"orperhalterung mit Histogrammanalyse}{24}{section.3.2}
+\contentsline {section}{\numberline {3.3}Erkennung au\IeC {\ss }ergew\"ohnlicher Situation}{24}{section.3.3}
 \contentsline {chapter}{\numberline {4}Ergebnisse und Evaluation}{27}{chapter.4}
 \contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{29}{chapter.5}
 \contentsline {chapter}{Literaturverzeichnis}{30}{chapter*.5}

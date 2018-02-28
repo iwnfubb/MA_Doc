@@ -92,15 +92,14 @@ wobei $m$ und $n$ sind die Breite und Höhe des Bildes sind, und $MSE$ wird als d
 \begin{equation}
 SSIM (x, y) = \frac{(2\mu_x \mu_y + c_1)(2\sigma_{xy} + c_2)}{(\mu_x^2 + \mu_y^2 + x_1) ({\sigma_x}^2 + {\sigma_y}^2 + c_2)}
 \end{equation}
-wobei $x=\{x_i | 1, 2 \dots, N\}$ und $y=\{y_i|1, 2 \dots, N\}$ und sind Positionen des NxN Fensters in jedem Bild. $\mu_x$ und $\mu_y$ sind  die Mittelwerte der Pixelintensität in der x und y Richtung.  $\sigma_x$ und $\sigma_y$ sind Varianzen,  $\sigma_{xy}$ ist Kovarianz von $x$ und $y$. $C_1$ und $C_2$ sind zwei Konstante.  SSIM ist zwischen 0 und 1 beschränkt, und je höher das Wert von SSIM, desto ähnlicher sind die zwei Bilder.  
-
+wobei $x=\{x_i | 1, 2 \dots, N\}$ und $y=\{y_i|1, 2 \dots, N\}$ und sind Positionen des NxN Fensters in jedem Bild. $\mu_x$ und $\mu_y$ sind  die Mittelwerte der Pixelintensität in der x und y Richtung.  $\sigma_x$ und $\sigma_y$ sind Varianzen,  $\sigma_{xy}$ ist Kovarianz von $x$ und $y$. $C_1$ und $C_2$ sind zwei Konstante.  SSIM ist zwischen 0 und 1 beschränkt, und je höher das Wert von SSIM, desto ähnlicher sind die zwei Bilder. Tabelle \ref{tbl:comparesihoulette} zeigt uns den Unterschied zwischen den zeit Verbesserungen. Es ist deutlich, dass die zweite Verbesserung bessere Ergebnisse liefern kann,weil ``MSE" Werte kleiner sind, und das ``SSIM" Werte größer sind.
 
 \begin{table}[h!]
 	\begin{center}
 		\begin{tabular}{ c  c  c  c  }
 			\toprule
 			Original & Ground true & 1. Verbesserung & 2. Verbesserung \\ 
-			\cmidrule(r){1-1}\cmidrule(lr){2-2}\cmidrule(l){3-3} \cmidrule(l){4-4}
+			\bottomrule
 			\raisebox{-\totalheight}{\includegraphics[width=0.25\textwidth]{fig/original1.png}}
 			& 
 			\raisebox{-\totalheight}{\includegraphics[width=0.25\textwidth]{fig/groundtrue1.png}}
@@ -161,16 +160,12 @@ wobei $x=\{x_i | 1, 2 \dots, N\}$ und $y=\{y_i|1, 2 \dots, N\}$ und sind Positio
 			\\
 			& & MSE:182,61 SSIM: 0,99 & MSE: 54,42 SSIM: 1.0\\
 			\bottomrule
-
-
 		\end{tabular}
-	
-		\caption{my.Lboro Analysis}
-		\label{tbl:myLboro}
+		\caption{Qualität der Silhouette nach zweit Verbesserungen. Je kleiner das ``MSE" Wert desto besser ist das Ergebnis. Je größer das ``SSIM" Wert desto besser ist das Ergebnis.}
+		\label{tbl:comparesihoulette}
 	\end{center}
 \end{table}
 
-
 \section{Schätzung der Körperhalterung mit Histogrammanalyse}
-Im Abschnitt \ref{chp:BackgroundSubtraction} 
+Im Abschnitt \ref{chp:BackgroundSubtraction} wurde eine Silhouette von einer Person durch Hintergrundsubtraktion erstellt und in diesem Abschnitt wird der zweite Schritt von meiner Arbeit beschrieben. Es geht um Schätzung der Körperhaltung mit Hilfe von Histogrammanalyse. Wie es schon im Kapitel \ref{chp:Grundlageb} gemeint, die Schätzung der Körperhaltung in meiner Arbeit basiert auf die Forschung von ~\cite{haritaoglu1998ghost}. Nach der Erzeugung von einer Silhouette wird das Ergebnis zuerst auf 128 Pixel skaliert. Falls die Breite größer als Höhe des Bildes wird die Breite auf 128 Pixel skaliert und die Höher wird auch skaliert, sodass das Verhältnis zwischen Breite und Höhe nicht geändert wird. Nach der Skalierung werden die Histogramme von horizontale sowie vertikale Achse gerechnet.  Bei eine kürzere Ach von $x$ und $y$ wird die Histogramm in der Mitte von 128 Pixel lokalisiert und die überflüssige Positionen an der Histogramm werden mit Null erfüllt. Wie schon im Abschnitt \ref{sec:Histogrammanalyse} beschrieben, die berechnete Histogramme werden mit vordefiniert normalisierte Projektionshistogramme (siehe Abbildung \ref{fig:histogramm}) mit der Formel \ref{eq:loglikelyhood} verglichen. Das Ergebnis von Körperhaltung basiert auf die Ähnlichkeit zwischen die Histogramme mit Hilfe Loglikelihood-Funktion. 
 \section{Erkennung außergewöhnlicher Situation}

@@ -88,7 +88,7 @@ In \cite{barnich2009vibe} wurde ein Verfahren beschrieben, das ersten Ansatz von
  
 Im nächsten Kapitel wird ein Vergleich von dem vier oben genannte Verfahren und meine eigene Methode beschrieben.
 
-\section{Histogrammanalyse}
+\section{Histogrammanalyse}\label{sec:Histogrammanalyse}
 Ein Histogramm eines Bildes ist graphische Darstellung der Tonwertverteilung in einem digitalen Bild. Ein Histogramm zeichnet die Anzahl der Pixel für jeden Tonwert auf. Auf dem Gebiet der Computervision können Bildhistogramme nützliche Werkzeuge für $Thresholding$ sein. Da die in dem Graphen enthaltene Information eine Darstellung der Pixelverteilung als eine Funktion der Tonvariation ist, können sich Bildhistogramme auf Spitze und Täler analysieren lassen.\\
 Da eine unterschiedliche Körperhaltung ein unterschiedliches Muster von Projektionshistogramm aufweist, kann das Projektionshistogramm als eines der Merkmale verwendet werden, um unterschiedliche Körperhaltungen zu unterscheiden. Nach der Hintergrundsubtraktion wird eine Silhouette des Vordergrundes als ein Binärbild erstellt. Eine Körperhaltungsanalyse wird auf die Silhouette angewendet, um die Ähnlichkeiten der horizontalen und vertikalen Projektionshistogramme der erkannten Silhouette und der Haupthaltungen zu berechnen. Die Normalisierung des durchschnittlichen Histogramm erfolgt durch Skalierung der Silhouette in eine vertikale Länge unter Beibehaltung des ursprünglichen Seitenverhältnisses \cite{haritaoglu1998ghost}. Normalisierte horizontale und vertikale Projektionsvorlagen für jede Körperhalterung (nämlich: Stehen, Krabbeln, Legen und Sitzen) wurden experimentell unter Verwendung von 4500 Silhouette von 7 verschiedenen Personen berechnet (siehe Abbildung ~\ref{fig:histogramm}).   
 \begin{figure}[h]
@@ -99,7 +99,7 @@ Da eine unterschiedliche Körperhaltung ein unterschiedliches Muster von Projekti
 \end{figure}
 
 Diese Methode werden verwendet, um die Ähnlichkeit der gegebenen Körperhaltung mit einer der vier Haupthaltungen zu bestimmen. Die erstellte Silhouette durch Hintergrundsubtraktion wird mit den durchschnittlichen Projektionshistogramme verglichen, wobei die Summe der absoluten Differenz verwendet wird, um die ähnlichste Körperhaltung zu schätzen. Angenommen ist $S_i$ die Ähnlichkeit zwischen der erkannter Silhouette und i-ten Hauptkörper. Seien $H_i$ und $V_i$ die horizontalen und vertikalen durchschnittlichen Projektionshistogramme, $P$ und $R$ die horizontalen und vertikalen Histogramme der erkannten Silhouette. $S_i$ wird wie folgt berechnet: 
-\begin{equation}
+\begin{equation}\label{eq:loglikelyhood}
 S_i = -\log(\sum \limits_{h}^{128} \sum \limits_{v}^{128} |H_h^i - P_h| + |V_v^i - R_v|) 
 \end{equation}
 Die Körperhaltung, die das höchste Ähnlichkeitsmaß ergibt, wird als geschätzte Haltung genommen.  

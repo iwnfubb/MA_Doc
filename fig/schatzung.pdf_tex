@@ -1,0 +1,61 @@
+%% Creator: Inkscape 0.91_64bit, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'schatzung.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{1055.80732691bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.48143314)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{schatzung.pdf}}%
+    \put(0.08391545,0.44644873){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Binärbild mit Silhoulette}}}%
+    \put(0.06408011,0.2445436){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Subimage von Silhouelette}}}%
+    \put(-0.00297462,0.34750207){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Begrenzungsbox}}}%
+    \put(0.30058799,0.08916605){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Loglikelyhood}}}%
+    \put(0.39192289,0.01568698){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Körperhaltung}}}%
+    \put(0.57085055,0.24766277){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Normalisierte Projektsvorlage}}}%
+    \put(0.12399589,0.18063599){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Skaliert}}}%
+  \end{picture}%
+\endgroup%

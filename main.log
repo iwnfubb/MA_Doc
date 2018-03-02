@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.9)  28 FEB 2018 02:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.9)  2 MAR 2018 02:49
 entering extended mode
 **./main.tex
 (main.tex
@@ -1102,24 +1102,46 @@ Underfull \hbox (badness 2245) in paragraph at lines 164--164
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[23]) [24] [25] (Ergebnisse.tex [26 <./fig/original1.png> <./fig/groundtrue1.pn
-g> <./fig/My1.png> <./fig/MOG1.png> <./fig/original2.png> <./fig/groundtrue2.pn
-g> <./fig/My2.png> <./fig/MOG2.png> <./fig/original3.png> <./fig/groundtrue3.pn
-g> <./fig/My3.png> <./fig/MOG3.png> <./fig/original4.png> <./fig/groundtrue4.pn
-g> <./fig/My4.png> <./fig/MOG4.png> <./fig/original5.png> <./fig/groundtrue5.pn
-g> <./fig/My5.png> <./fig/MOG5.png>]
+(fig/schatzung.pdf_tex
+<./fig/schatzung.pdf, id=554, page=1, 1059.76665pt x 510.20676pt>
+File: ./fig/schatzung.pdf Graphic file (type pdf)
+
+<use ./fig/schatzung.pdf, page 1>
+Package pdftex.def Info: ./fig/schatzung.pdf, page1 used on input line 52.
+(pdftex.def)             Requested size: 376.42744pt x 181.22197pt.
+) [23] [24 <./fig/schatzung.pdf>]
+<fig/schatzungevaluation.png, id=576, 1806.75pt x 1016.79875pt>
+File: fig/schatzungevaluation.png Graphic file (type png)
+
+<use fig/schatzungevaluation.png>
+Package pdftex.def Info: fig/schatzungevaluation.png used on input line 183.
+(pdftex.def)             Requested size: 376.42744pt x 211.8429pt.
+
+<fig/schatzungevaluation2.png, id=577, 1806.75pt x 1016.79875pt>
+File: fig/schatzungevaluation2.png Graphic file (type png)
+
+<use fig/schatzungevaluation2.png>
+Package pdftex.def Info: fig/schatzungevaluation2.png used on input line 190.
+(pdftex.def)             Requested size: 376.42744pt x 211.8429pt.
+) [25 <./fig/schatzungevaluation.png>]
+[26 <./fig/schatzungevaluation2.png>] (Ergebnisse.tex [27 <./fig/original1.png>
+ <./fig/groundtrue1.png> <./fig/My1.png> <./fig/MOG1.png> <./fig/original2.png>
+ <./fig/groundtrue2.png> <./fig/My2.png> <./fig/MOG2.png> <./fig/original3.png>
+ <./fig/groundtrue3.png> <./fig/My3.png> <./fig/MOG3.png> <./fig/original4.png>
+ <./fig/groundtrue4.png> <./fig/My4.png> <./fig/MOG4.png> <./fig/original5.png>
+ <./fig/groundtrue5.png> <./fig/My5.png> <./fig/MOG5.png>]
 chapter 4.
-) [27
+) [28
 
-] [28] (ZusammenfassungAusblick.tex
+] [29] (ZusammenfassungAusblick.tex
 chapter 5.
-) [29
+) [30
 
-] (main.bbl [30
+] (main.bbl [31
 
-]) [31] [32] (Abkurzungen.tex) [33
+]) [32] [33] (Abkurzungen.tex) [34
 
-] [34] (main.lof
+] [35] (main.lof
 Overfull \hbox (51.53062pt too wide) in paragraph at lines 8--8
  [][] [][]\OT1/cmr/m/n/10.95 Normalisierte ho-ri-zon-ta-le und ver-ti-ka-le Pro
 -jek-ti-ons-vor-la-gen f[]ur je-de K[]orperhalterung 
@@ -1129,7 +1151,7 @@ Overfull \hbox (51.53062pt too wide) in paragraph at lines 8--8
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
- [35
+ [36
 
 ] (main.lot
 Overfull \hbox (17.22777pt too wide) in paragraph at lines 7--7
@@ -1141,15 +1163,15 @@ Overfull \hbox (17.22777pt too wide) in paragraph at lines 7--7
 \tf@lot=\write7
 \openout7 = `main.lot'.
 
- [36
+ [37
 
-] [37] (main.loa)
+] [38] (main.loa)
 \tf@loa=\write8
 \openout8 = `main.loa'.
 
- [38
+ [39
 
-] [39]
+] [40]
 
 Class scrreprt Warning: \float@listhead detected!
 (scrreprt)              Implementation of \float@listhead became
@@ -1168,15 +1190,15 @@ Class scrreprt Warning: \float@listhead detected!
 \tf@lol=\write9
 \openout9 = `main.lol'.
 
- [40
+ [41
 
-] [41] (Anhang.tex
+] [42] (Anhang.tex
 chapter A.
-) (Danksagung.tex [42
+) (Danksagung.tex [43
 
 ])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 58.
- [43
+ [44
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 58.
@@ -1188,10 +1210,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 58.
  ) 
 Here is how much of TeX's memory you used:
- 13376 strings out of 493634
- 205138 string characters out of 3143745
- 419995 words of memory out of 3000000
- 16339 multiletter control sequences out of 15000+200000
+ 13406 strings out of 493634
+ 205807 string characters out of 3143745
+ 420218 words of memory out of 3000000
+ 16360 multiletter control sequences out of 15000+200000
  11888 words of font info for 44 fonts, out of 3000000 for 9000
  1026 hyphenation exceptions out of 8191
  44i,15n,66p,8832b,1207s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1211,9 +1233,9 @@ onts/type1/public/amsfonts/cm/cmsy6.pfb><D:/Program Files/MiKTeX 2.9/fonts/type
 1/public/amsfonts/cm/cmsy8.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/
 amsfonts/cm/cmti10.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmtt10.pfb>
-Output written on main.pdf (54 pages, 8631436 bytes).
+Output written on main.pdf (55 pages, 8985709 bytes).
 PDF statistics:
- 776 PDF objects out of 1000 (max. 8388607)
- 145 named destinations out of 1000 (max. 500000)
- 466 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 803 PDF objects out of 1000 (max. 8388607)
+ 149 named destinations out of 1000 (max. 500000)
+ 481 words of extra memory for PDF output out of 10000 (max. 10000000)
 

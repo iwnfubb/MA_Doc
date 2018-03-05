@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.9)  2 MAR 2018 02:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.9)  5 MAR 2018 05:43
 entering extended mode
 **./main.tex
 (main.tex
@@ -640,7 +640,7 @@ LaTeX Info: Redefining \nameref on input line 115.
 \everyMPtoPDFconversion=\toks28
 )
 \c@lstlisting=\count144
- <fig/unilogo.pdf, id=143, 489.4512pt x 167.33328pt>
+ <fig/unilogo.pdf, id=147, 489.4512pt x 167.33328pt>
 File: fig/unilogo.pdf Graphic file (type pdf)
  <use fig/unilogo.pdf>
 Package pdftex.def Info: fig/unilogo.pdf used on input line 123.
@@ -754,7 +754,7 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 9.
 
-<fig/BS_Example.png, id=275, 356.0803pt x 188.20313pt>
+<fig/BS_Example.png, id=280, 356.0803pt x 188.20313pt>
 File: fig/BS_Example.png Graphic file (type png)
 
 <use fig/BS_Example.png>
@@ -793,7 +793,7 @@ red
 <to be read again> 
                    \relax 
 l.57 
-      [7] <fig/vibe.pdf, id=328, 544.84946pt x 388.5365pt>
+      [7] <fig/vibe.pdf, id=333, 544.84946pt x 388.5365pt>
 File: fig/vibe.pdf Graphic file (type pdf)
  <use fig/vibe.pdf>
 Package pdftex.def Info: fig/vibe.pdf used on input line 84.
@@ -808,7 +808,7 @@ ung von Ku-gel
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<fig/histogramm.pdf, id=333, 224.76166pt x 77.82076pt>
+<fig/histogramm.pdf, id=338, 224.76166pt x 77.82076pt>
 File: fig/histogramm.pdf Graphic file (type pdf)
 
 <use fig/histogramm.pdf>
@@ -824,21 +824,20 @@ Overfull \hbox (3.44162pt too wide) in paragraph at lines 112--113
  Zu-geh[]origkeitsfunktionen
  []
 
-<fig/fuzzy.png, id=381, 490.08093pt x 815.29594pt>
+<fig/fuzzy.png, id=388, 490.08093pt x 815.29594pt>
 File: fig/fuzzy.png Graphic file (type png)
  <use fig/fuzzy.png>
 Package pdftex.def Info: fig/fuzzy.png used on input line 118.
 (pdftex.def)             Requested size: 334.60571pt x 556.65807pt.
  [10]
-[11 <./fig/fuzzy.png>]
-<fig/BoschInnenkamera.jpg, id=397, 1027.84pt x 709.65125pt>
+<fig/BoschInnenkamera.jpg, id=399, 1027.84pt x 709.65125pt>
 File: fig/BoschInnenkamera.jpg Graphic file (type jpg)
 
 <use fig/BoschInnenkamera.jpg>
 Package pdftex.def Info: fig/BoschInnenkamera.jpg used on input line 141.
 (pdftex.def)             Requested size: 334.60571pt x 231.02374pt.
-) [12] [13 <./fig/BoschInnenkamera.jpg>]
-(EigenesVerfahren.tex
+) [11] [12 <./fig/fuzzy.png>] [13 <./fig/BoschInnenkamera.jpg>] (EigenesVerfahr
+en.tex
 chapter 3.
 
 Overfull \hbox (10.52876pt too wide) in paragraph at lines 2--3
@@ -847,7 +846,7 @@ e und Er-ken-nung au-er-gew[]ohnlicher
  []
 
 (fig/allgemein.pdf_tex
-<./fig/allgemein.pdf, id=410, page=1, 566.95015pt x 474.5973pt>
+<./fig/allgemein.pdf, id=417, page=1, 566.95015pt x 474.5973pt>
 File: ./fig/allgemein.pdf Graphic file (type pdf)
 
 <use ./fig/allgemein.pdf, page 1>
@@ -856,27 +855,27 @@ Package pdftex.def Info: ./fig/allgemein.pdf, page1 used on input line 52.
 ) [14
 
  <./fig/allgemein.pdf>]
-<fig/motiondetrection.png, id=426, 621.82312pt x 639.13782pt>
+<fig/motiondetrection.png, id=433, 621.82312pt x 639.13782pt>
 File: fig/motiondetrection.png Graphic file (type png)
 
 <use fig/motiondetrection.png>
 Package pdftex.def Info: fig/motiondetrection.png used on input line 18.
 (pdftex.def)             Requested size: 418.25555pt x 429.90729pt.
 
-<fig/erosion.jpg, id=431, 633.86812pt x 171.64125pt>
+<fig/erosion.jpg, id=438, 633.86812pt x 171.64125pt>
 File: fig/erosion.jpg Graphic file (type jpg)
  <use fig/erosion.jpg>
 Package pdftex.def Info: fig/erosion.jpg used on input line 26.
 (pdftex.def)             Requested size: 418.25555pt x 113.25998pt.
 
-<fig/dilatation.jpg, id=432, 633.86812pt x 170.88844pt>
+<fig/dilatation.jpg, id=439, 633.86812pt x 170.88844pt>
 File: fig/dilatation.jpg Graphic file (type jpg)
 
 <use fig/dilatation.jpg>
 Package pdftex.def Info: fig/dilatation.jpg used on input line 32.
 (pdftex.def)             Requested size: 418.25555pt x 112.76324pt.
 
-<fig/eroanddila.png, id=434, 284.56313pt x 597.73312pt>
+<fig/eroanddila.png, id=441, 284.56313pt x 597.73312pt>
 File: fig/eroanddila.png Graphic file (type png)
 
 <use fig/eroanddila.png>
@@ -886,8 +885,8 @@ Package pdftex.def Info: fig/eroanddila.png used on input line 41.
 
 LaTeX Warning: Float too large for page by 2.99734pt on input line 44.
 
-(fig/mymethode4edited.pdf_tex
-<./fig/mymethode4edited.pdf, id=457, page=1, 1472.32494pt x 2077.7625pt>
+[15] [16 <./fig/motiondetrection.png>] (fig/mymethode4edited.pdf_tex
+<./fig/mymethode4edited.pdf, id=477, page=1, 1472.32494pt x 2077.7625pt>
 File: ./fig/mymethode4edited.pdf Graphic file (type pdf)
 
 <use ./fig/mymethode4edited.pdf, page 1>
@@ -895,7 +894,7 @@ Package pdftex.def Info: ./fig/mymethode4edited.pdf, page1 used on input line 5
 2.
 (pdftex.def)             Requested size: 418.25555pt x 590.23453pt.
 
-<./fig/mymethode4edited.pdf, id=458, page=2, 1472.32494pt x 2077.7625pt>
+<./fig/mymethode4edited.pdf, id=478, page=2, 1472.32494pt x 2077.7625pt>
 File: ./fig/mymethode4edited.pdf Graphic file (type pdf)
 
 <use ./fig/mymethode4edited.pdf, page 2>
@@ -904,10 +903,10 @@ Package pdftex.def Info: ./fig/mymethode4edited.pdf, page2 used on input line 6
 (pdftex.def)             Requested size: 418.25555pt x 590.23453pt.
 )
 
-LaTeX Warning: Float too large for page by 32.64577pt on input line 54.
+LaTeX Warning: Float too large for page by 32.64577pt on input line 56.
 
 (fig/mymethode3edited.pdf_tex
-<./fig/mymethode3edited.pdf, id=459, page=1, 1470.983pt x 2077.76274pt>
+<./fig/mymethode3edited.pdf, id=479, page=1, 1470.983pt x 2077.76274pt>
 File: ./fig/mymethode3edited.pdf Graphic file (type pdf)
 
 <use ./fig/mymethode3edited.pdf, page 1>
@@ -915,7 +914,7 @@ Package pdftex.def Info: ./fig/mymethode3edited.pdf, page1 used on input line 5
 2.
 (pdftex.def)             Requested size: 418.25555pt x 590.77357pt.
 
-<./fig/mymethode3edited.pdf, id=460, page=2, 1470.983pt x 2077.76274pt>
+<./fig/mymethode3edited.pdf, id=480, page=2, 1470.983pt x 2077.76274pt>
 File: ./fig/mymethode3edited.pdf Graphic file (type pdf)
 
 <use ./fig/mymethode3edited.pdf, page 2>
@@ -924,10 +923,10 @@ Package pdftex.def Info: ./fig/mymethode3edited.pdf, page2 used on input line 6
 (pdftex.def)             Requested size: 418.25555pt x 590.77357pt.
 )
 
-LaTeX Warning: Float too large for page by 33.18825pt on input line 61.
+LaTeX Warning: Float too large for page by 33.18825pt on input line 63.
 
 (fig/mymethode2edited.pdf_tex
-<./fig/mymethode2edited.pdf, id=461, page=1, 1470.50453pt x 2077.76225pt>
+<./fig/mymethode2edited.pdf, id=481, page=1, 1470.50453pt x 2077.76225pt>
 File: ./fig/mymethode2edited.pdf Graphic file (type pdf)
 
 <use ./fig/mymethode2edited.pdf, page 1>
@@ -935,7 +934,7 @@ Package pdftex.def Info: ./fig/mymethode2edited.pdf, page1 used on input line 5
 5.
 (pdftex.def)             Requested size: 418.25555pt x 590.96365pt.
 
-<./fig/mymethode2edited.pdf, id=462, page=2, 1470.50453pt x 2077.76225pt>
+<./fig/mymethode2edited.pdf, id=482, page=2, 1470.50453pt x 2077.76225pt>
 File: ./fig/mymethode2edited.pdf Graphic file (type pdf)
 
 <use ./fig/mymethode2edited.pdf, page 2>
@@ -944,15 +943,10 @@ Package pdftex.def Info: ./fig/mymethode2edited.pdf, page2 used on input line 6
 (pdftex.def)             Requested size: 418.25555pt x 590.96365pt.
 )
 
-LaTeX Warning: Float too large for page by 33.37971pt on input line 68.
+LaTeX Warning: Float too large for page by 33.37971pt on input line 70.
 
-[15] [16 <./fig/motiondetrection.png>] [17 <./fig/erosion.jpg> <./fig/dilatatio
-n.jpg>] [18 <./fig/eroanddila.png>]
-File: fig/dilatation.jpg Graphic file (type jpg)
- <use fig/dilatation.jpg>
-Package pdftex.def Info: fig/dilatation.jpg used on input line 80.
-(pdftex.def)             Requested size: 418.25555pt x 112.76324pt.
- [19] [20 <./fig/mymethode4edited.pdf> <./fig/mymethode4edited.pdf
+[17 <./fig/erosion.jpg> <./fig/dilatation.jpg>] [18 <./fig/eroanddila.png>]
+[19] [20 <./fig/mymethode4edited.pdf> <./fig/mymethode4edited.pdf
 
 pdfTeX warning: pdflatex.exe (file ./fig/mymethode4edited.pdf): PDF inclusion: 
 multiple pdfs with page group included in a single page
@@ -965,136 +959,136 @@ multiple pdfs with page group included in a single page
 pdfTeX warning: pdflatex.exe (file ./fig/mymethode2edited.pdf): PDF inclusion: 
 multiple pdfs with page group included in a single page
 >]
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
 
  []
 
-<fig/original1.png, id=523, 481.8pt x 271.0125pt>
+<fig/original1.png, id=532, 481.8pt x 271.0125pt>
 File: fig/original1.png Graphic file (type png)
  <use fig/original1.png>
-Package pdftex.def Info: fig/original1.png used on input line 103.
+Package pdftex.def Info: fig/original1.png used on input line 99.
 (pdftex.def)             Requested size: 104.56389pt x 58.81654pt.
 
-<fig/groundtrue1.png, id=524, 481.8pt x 271.0125pt>
+<fig/groundtrue1.png, id=533, 481.8pt x 271.0125pt>
 File: fig/groundtrue1.png Graphic file (type png)
  <use fig/groundtrue1.png>
-Package pdftex.def Info: fig/groundtrue1.png used on input line 105.
+Package pdftex.def Info: fig/groundtrue1.png used on input line 101.
 (pdftex.def)             Requested size: 104.56389pt x 58.81654pt.
 
-<fig/My1.png, id=525, 481.8pt x 271.0125pt>
+<fig/My1.png, id=534, 481.8pt x 271.0125pt>
 File: fig/My1.png Graphic file (type png)
  <use fig/My1.png>
-Package pdftex.def Info: fig/My1.png used on input line 107.
+Package pdftex.def Info: fig/My1.png used on input line 103.
 (pdftex.def)             Requested size: 104.56389pt x 58.81654pt.
 
-<fig/MOG1.png, id=526, 481.8pt x 271.0125pt>
+<fig/MOG1.png, id=535, 481.8pt x 271.0125pt>
 File: fig/MOG1.png Graphic file (type png)
  <use fig/MOG1.png>
-Package pdftex.def Info: fig/MOG1.png used on input line 109.
+Package pdftex.def Info: fig/MOG1.png used on input line 105.
 (pdftex.def)             Requested size: 104.56389pt x 58.81654pt.
 
-<fig/original2.png, id=527, 481.8pt x 271.0125pt>
+<fig/original2.png, id=536, 481.8pt x 271.0125pt>
 File: fig/original2.png Graphic file (type png)
  <use fig/original2.png>
-Package pdftex.def Info: fig/original2.png used on input line 115.
+Package pdftex.def Info: fig/original2.png used on input line 111.
 (pdftex.def)             Requested size: 104.56389pt x 58.81654pt.
 
-<fig/groundtrue2.png, id=528, 481.8pt x 271.0125pt>
+<fig/groundtrue2.png, id=537, 481.8pt x 271.0125pt>
 File: fig/groundtrue2.png Graphic file (type png)
  <use fig/groundtrue2.png>
-Package pdftex.def Info: fig/groundtrue2.png used on input line 117.
+Package pdftex.def Info: fig/groundtrue2.png used on input line 113.
 (pdftex.def)             Requested size: 104.56389pt x 58.81654pt.
 
-<fig/My2.png, id=529, 481.8pt x 271.0125pt>
+<fig/My2.png, id=538, 481.8pt x 271.0125pt>
 File: fig/My2.png Graphic file (type png)
  <use fig/My2.png>
-Package pdftex.def Info: fig/My2.png used on input line 119.
+Package pdftex.def Info: fig/My2.png used on input line 115.
 (pdftex.def)             Requested size: 104.56389pt x 58.81654pt.
 
-<fig/MOG2.png, id=530, 481.8pt x 271.0125pt>
+<fig/MOG2.png, id=539, 481.8pt x 271.0125pt>
 File: fig/MOG2.png Graphic file (type png)
  <use fig/MOG2.png>
-Package pdftex.def Info: fig/MOG2.png used on input line 121.
+Package pdftex.def Info: fig/MOG2.png used on input line 117.
 (pdftex.def)             Requested size: 104.56389pt x 58.81654pt.
 
-<fig/original3.png, id=531, 481.8pt x 271.0125pt>
+<fig/original3.png, id=540, 481.8pt x 271.0125pt>
 File: fig/original3.png Graphic file (type png)
  <use fig/original3.png>
-Package pdftex.def Info: fig/original3.png used on input line 127.
+Package pdftex.def Info: fig/original3.png used on input line 123.
 (pdftex.def)             Requested size: 104.56389pt x 58.81654pt.
 
-<fig/groundtrue3.png, id=532, 481.8pt x 271.0125pt>
+<fig/groundtrue3.png, id=541, 481.8pt x 271.0125pt>
 File: fig/groundtrue3.png Graphic file (type png)
  <use fig/groundtrue3.png>
-Package pdftex.def Info: fig/groundtrue3.png used on input line 129.
+Package pdftex.def Info: fig/groundtrue3.png used on input line 125.
 (pdftex.def)             Requested size: 104.56389pt x 58.81654pt.
 
-<fig/My3.png, id=533, 481.8pt x 271.0125pt>
+<fig/My3.png, id=542, 481.8pt x 271.0125pt>
 File: fig/My3.png Graphic file (type png)
  <use fig/My3.png>
-Package pdftex.def Info: fig/My3.png used on input line 131.
+Package pdftex.def Info: fig/My3.png used on input line 127.
 (pdftex.def)             Requested size: 104.56389pt x 58.81654pt.
 
-<fig/MOG3.png, id=534, 481.8pt x 271.0125pt>
+<fig/MOG3.png, id=543, 481.8pt x 271.0125pt>
 File: fig/MOG3.png Graphic file (type png)
  <use fig/MOG3.png>
-Package pdftex.def Info: fig/MOG3.png used on input line 133.
+Package pdftex.def Info: fig/MOG3.png used on input line 129.
 (pdftex.def)             Requested size: 104.56389pt x 58.81654pt.
 
-<fig/original4.png, id=535, 481.8pt x 271.0125pt>
+<fig/original4.png, id=544, 481.8pt x 271.0125pt>
 File: fig/original4.png Graphic file (type png)
  <use fig/original4.png>
-Package pdftex.def Info: fig/original4.png used on input line 140.
+Package pdftex.def Info: fig/original4.png used on input line 136.
 (pdftex.def)             Requested size: 104.56389pt x 58.81654pt.
 
-<fig/groundtrue4.png, id=536, 481.8pt x 271.0125pt>
+<fig/groundtrue4.png, id=545, 481.8pt x 271.0125pt>
 File: fig/groundtrue4.png Graphic file (type png)
  <use fig/groundtrue4.png>
-Package pdftex.def Info: fig/groundtrue4.png used on input line 142.
+Package pdftex.def Info: fig/groundtrue4.png used on input line 138.
 (pdftex.def)             Requested size: 104.56389pt x 58.81654pt.
 
-<fig/My4.png, id=537, 481.8pt x 271.0125pt>
+<fig/My4.png, id=546, 481.8pt x 271.0125pt>
 File: fig/My4.png Graphic file (type png)
  <use fig/My4.png>
-Package pdftex.def Info: fig/My4.png used on input line 144.
+Package pdftex.def Info: fig/My4.png used on input line 140.
 (pdftex.def)             Requested size: 104.56389pt x 58.81654pt.
 
-<fig/MOG4.png, id=538, 481.8pt x 271.0125pt>
+<fig/MOG4.png, id=547, 481.8pt x 271.0125pt>
 File: fig/MOG4.png Graphic file (type png)
  <use fig/MOG4.png>
-Package pdftex.def Info: fig/MOG4.png used on input line 146.
+Package pdftex.def Info: fig/MOG4.png used on input line 142.
 (pdftex.def)             Requested size: 104.56389pt x 58.81654pt.
 
-<fig/original5.png, id=539, 481.8pt x 271.0125pt>
+<fig/original5.png, id=548, 481.8pt x 271.0125pt>
 File: fig/original5.png Graphic file (type png)
  <use fig/original5.png>
-Package pdftex.def Info: fig/original5.png used on input line 152.
+Package pdftex.def Info: fig/original5.png used on input line 148.
 (pdftex.def)             Requested size: 104.56389pt x 58.81654pt.
 
-<fig/groundtrue5.png, id=540, 481.8pt x 271.0125pt>
+<fig/groundtrue5.png, id=549, 481.8pt x 271.0125pt>
 File: fig/groundtrue5.png Graphic file (type png)
  <use fig/groundtrue5.png>
-Package pdftex.def Info: fig/groundtrue5.png used on input line 154.
+Package pdftex.def Info: fig/groundtrue5.png used on input line 150.
 (pdftex.def)             Requested size: 104.56389pt x 58.81654pt.
 
-<fig/My5.png, id=541, 481.8pt x 271.0125pt>
+<fig/My5.png, id=550, 481.8pt x 271.0125pt>
 File: fig/My5.png Graphic file (type png)
  <use fig/My5.png>
-Package pdftex.def Info: fig/My5.png used on input line 156.
+Package pdftex.def Info: fig/My5.png used on input line 152.
 (pdftex.def)             Requested size: 104.56389pt x 58.81654pt.
 
-<fig/MOG5.png, id=542, 481.8pt x 271.0125pt>
+<fig/MOG5.png, id=551, 481.8pt x 271.0125pt>
 File: fig/MOG5.png Graphic file (type png)
  <use fig/MOG5.png>
-Package pdftex.def Info: fig/MOG5.png used on input line 158.
+Package pdftex.def Info: fig/MOG5.png used on input line 154.
 (pdftex.def)             Requested size: 104.56389pt x 58.81654pt.
 
-Overfull \hbox (68.51831pt too wide) in paragraph at lines 99--164
+Overfull \hbox (68.51831pt too wide) in paragraph at lines 95--160
  [] 
  []
 
 
-Underfull \hbox (badness 2245) in paragraph at lines 164--164
+Underfull \hbox (badness 2245) in paragraph at lines 160--160
 [][][]\OT1/cmr/m/n/10.95 Qualit[]at der Sil-hou-et-te nach zweit Ver-bes-se-run
 -gen. Je klei-ner das
  []
@@ -1103,45 +1097,54 @@ Underfull \hbox (badness 2245) in paragraph at lines 164--164
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 (fig/schatzung.pdf_tex
-<./fig/schatzung.pdf, id=554, page=1, 1059.76665pt x 510.20676pt>
+<./fig/schatzung.pdf, id=563, page=1, 1059.76665pt x 510.20676pt>
 File: ./fig/schatzung.pdf Graphic file (type pdf)
 
 <use ./fig/schatzung.pdf, page 1>
 Package pdftex.def Info: ./fig/schatzung.pdf, page1 used on input line 52.
 (pdftex.def)             Requested size: 376.42744pt x 181.22197pt.
 ) [23] [24 <./fig/schatzung.pdf>]
-<fig/schatzungevaluation.png, id=576, 1806.75pt x 1016.79875pt>
+<fig/schatzungevaluation.png, id=586, 1835.85875pt x 1474.50874pt>
 File: fig/schatzungevaluation.png Graphic file (type png)
 
 <use fig/schatzungevaluation.png>
-Package pdftex.def Info: fig/schatzungevaluation.png used on input line 183.
-(pdftex.def)             Requested size: 376.42744pt x 211.8429pt.
+Package pdftex.def Info: fig/schatzungevaluation.png used on input line 179.
+(pdftex.def)             Requested size: 501.90538pt x 403.1175pt.
 
-<fig/schatzungevaluation2.png, id=577, 1806.75pt x 1016.79875pt>
+Overfull \hbox (83.64983pt too wide) in paragraph at lines 179--180
+ [][] 
+ []
+
+<fig/schatzungevaluation2.png, id=587, 1807.75375pt x 1473.505pt>
 File: fig/schatzungevaluation2.png Graphic file (type png)
 
 <use fig/schatzungevaluation2.png>
-Package pdftex.def Info: fig/schatzungevaluation2.png used on input line 190.
-(pdftex.def)             Requested size: 376.42744pt x 211.8429pt.
-) [25 <./fig/schatzungevaluation.png>]
-[26 <./fig/schatzungevaluation2.png>] (Ergebnisse.tex [27 <./fig/original1.png>
- <./fig/groundtrue1.png> <./fig/My1.png> <./fig/MOG1.png> <./fig/original2.png>
- <./fig/groundtrue2.png> <./fig/My2.png> <./fig/MOG2.png> <./fig/original3.png>
- <./fig/groundtrue3.png> <./fig/My3.png> <./fig/MOG3.png> <./fig/original4.png>
- <./fig/groundtrue4.png> <./fig/My4.png> <./fig/MOG4.png> <./fig/original5.png>
- <./fig/groundtrue5.png> <./fig/My5.png> <./fig/MOG5.png>]
-chapter 4.
-) [28
+Package pdftex.def Info: fig/schatzungevaluation2.png used on input line 186.
+(pdftex.def)             Requested size: 501.90538pt x 409.0936pt.
 
-] [29] (ZusammenfassungAusblick.tex
-chapter 5.
+Overfull \hbox (83.64983pt too wide) in paragraph at lines 186--187
+ [][] 
+ []
+
+) [25] [26 <./fig/schatzungevaluation.png>] [27 <./fig/schatzungevaluation2.png
+>] [28] (Ergebnisse.tex [29 <./fig/original1.png> <./fig/groundtrue1.png> <./fi
+g/My1.png> <./fig/MOG1.png> <./fig/original2.png> <./fig/groundtrue2.png> <./fi
+g/My2.png> <./fig/MOG2.png> <./fig/original3.png> <./fig/groundtrue3.png> <./fi
+g/My3.png> <./fig/MOG3.png> <./fig/original4.png> <./fig/groundtrue4.png> <./fi
+g/My4.png> <./fig/MOG4.png> <./fig/original5.png> <./fig/groundtrue5.png> <./fi
+g/My5.png> <./fig/MOG5.png>]
+chapter 4.
 ) [30
 
-] (main.bbl [31
+] [31] (ZusammenfassungAusblick.tex
+chapter 5.
+) [32
 
-]) [32] [33] (Abkurzungen.tex) [34
+] (main.bbl [33
 
-] [35] (main.lof
+]) [34] [35] (Abkurzungen.tex) [36
+
+] [37] (main.lof
 Overfull \hbox (51.53062pt too wide) in paragraph at lines 8--8
  [][] [][]\OT1/cmr/m/n/10.95 Normalisierte ho-ri-zon-ta-le und ver-ti-ka-le Pro
 -jek-ti-ons-vor-la-gen f[]ur je-de K[]orperhalterung 
@@ -1151,7 +1154,7 @@ Overfull \hbox (51.53062pt too wide) in paragraph at lines 8--8
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
- [36
+ [38
 
 ] (main.lot
 Overfull \hbox (17.22777pt too wide) in paragraph at lines 7--7
@@ -1163,15 +1166,15 @@ Overfull \hbox (17.22777pt too wide) in paragraph at lines 7--7
 \tf@lot=\write7
 \openout7 = `main.lot'.
 
- [37
+ [39
 
-] [38] (main.loa)
+] [40] (main.loa)
 \tf@loa=\write8
 \openout8 = `main.loa'.
 
- [39
+ [41
 
-] [40]
+] [42]
 
 Class scrreprt Warning: \float@listhead detected!
 (scrreprt)              Implementation of \float@listhead became
@@ -1190,15 +1193,15 @@ Class scrreprt Warning: \float@listhead detected!
 \tf@lol=\write9
 \openout9 = `main.lol'.
 
- [41
+ [43
 
-] [42] (Anhang.tex
+] [44] (Anhang.tex
 chapter A.
-) (Danksagung.tex [43
+) (Danksagung.tex [45
 
 ])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 58.
- [44
+ [46
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 58.
@@ -1206,14 +1209,14 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 58.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 58.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 58.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 40CFEC1F7A481D1C1BBA6450E6B3D8BD;2377.
+(rerunfilecheck)             Checksum: 1373CDBFA145531E01C28F2E77B8082C;2439.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 58.
  ) 
 Here is how much of TeX's memory you used:
- 13406 strings out of 493634
- 205807 string characters out of 3143745
- 420218 words of memory out of 3000000
- 16360 multiletter control sequences out of 15000+200000
+ 13416 strings out of 493634
+ 205939 string characters out of 3143745
+ 416240 words of memory out of 3000000
+ 16366 multiletter control sequences out of 15000+200000
  11888 words of font info for 44 fonts, out of 3000000 for 9000
  1026 hyphenation exceptions out of 8191
  44i,15n,66p,8832b,1207s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1233,9 +1236,9 @@ onts/type1/public/amsfonts/cm/cmsy6.pfb><D:/Program Files/MiKTeX 2.9/fonts/type
 1/public/amsfonts/cm/cmsy8.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/
 amsfonts/cm/cmti10.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmtt10.pfb>
-Output written on main.pdf (55 pages, 8985709 bytes).
+Output written on main.pdf (57 pages, 10963750 bytes).
 PDF statistics:
- 803 PDF objects out of 1000 (max. 8388607)
- 149 named destinations out of 1000 (max. 500000)
- 481 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 823 PDF objects out of 1000 (max. 8388607)
+ 153 named destinations out of 1000 (max. 500000)
+ 489 words of extra memory for PDF output out of 10000 (max. 10000000)
 

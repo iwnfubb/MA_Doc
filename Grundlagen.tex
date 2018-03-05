@@ -104,15 +104,15 @@ S_i = -\log(\sum \limits_{h}^{128} \sum \limits_{v}^{128} |H_h^i - P_h| + |V_v^i
 \end{equation}
 Die Körperhaltung, die das höchste Ähnlichkeitsmaß ergibt, wird als geschätzte Haltung genommen.  
 
-\section{Fuzzylogik}
-Mit Hilfe von Hintergrundsubtraktion und Histogrammanalyse wird erstmal nur eine sich bewegte Person erkannt, aber zum Unterschied zwischen täglichen Bewegungen und ungewöhnlichen Situationen kommt Fuzzylogik zum Einsatz. In Jahr 1971 wurde die erste Forschung über Fuzzy-Algebra beschrieben ~\cite{rosenfeld1971fuzzy}. Fuzzylogik geht um eine unscharfe logische Menge, wobei eine Fuzzymenge seinen Mitglieder ermöglicht, Mitgliedschaftsgrade zu haben. Wenn der Wert 1 an Objekten zugewiesen ist, die vollständig innerhalb der Menge liegen, und Objekten außerhalb der Menge eine 0 zugewiesen wird, hat jedes Objekt, das teilweise in der Menge ist, einen Wert zwischen 0 und 1. Der Prozess der Fuzzylogik wird wie folgt erläutert ~\cite{dingle2011artificial}:
+\section{Fuzzylogik}\label{sec:fuzzylogik}
+Mit Hilfe von Hintergrundsubtraktion und Histogrammanalyse wird erstmal nur eine sich bewegte Person erkannt, aber zum Unterschied zwischen täglichen Bewegungen und ungewöhnlichen Situationen kommt Fuzzylogik zum Einsatz. In Jahr 1971 wurde die erste Forschung über Fuzzy-Algebra beschrieben ~\cite{rosenfeld1971fuzzy}. Fuzzylogik geht um eine unscharfe logische Menge, wobei eine Fuzzymenge seinen Mitglieder ermöglicht, Mitgliedschaftsgrade zu haben. Wenn der Wert 1 an Objekten zugewiesen ist, die vollständig innerhalb der Menge liegen und Objekten außerhalb der Menge eine 0 zugewiesen wird, hat jedes Objekt, das teilweise in der Menge ist, einen Wert zwischen 0 und 1. Der Prozess der Fuzzylogik wird wie folgt erläutert ~\cite{dingle2011artificial}:
 \begin{itemize}
 \item Zuerst wird ein scharfer Menge von Eingabedaten gesammelt und unter Verwendung von Zugehörigkeitsfunktionen in einen Fuzzymenge umgewandelt.
 \item  Eine Schlussfolgerung wird basierend auf ein oder mehre ($IF-THEN$) Regeln getroffen.
 \item  Schließlich wird die Fuzzy-Ausgabe unter Verwendung der Zugehörigkeitsfunktionen in dem Defuzzifizierungsschritt auf eine scharfe Ausgabe abgebildet.
 \end{itemize}
 
-Beispielweise gibt es ein Smart-Thermostat in einem Raum und der Thermostat soll sich an der Raumtemperatur anpassen. Eine Fuzzylogik wird erstellt, wobei die Temperatur Eingabe ist und Einstellung des Thermostates is Ausgabe (siehe Abbildung ~\ref{fig:Fuzzy_Example}) und der Regel wird wie in Algorithmus ~\ref{algo:fuzzy} definiert: \\
+Beispielweise gibt es ein Smart-Thermostat in einem Raum und der Thermostat soll sich an der Raumtemperatur anpassen. Eine Fuzzylogik wird erstellt, wobei die Temperatur Eingabe ist und Einstellung des Thermostates is Ausgabe (siehe Abbildung ~\ref{fig:Fuzzy_Example}) und der Regel wird wie in Algorithmus ~\ref{algo:fuzzy} definiert. Die Temperatur wird als ``Low, Medium und High" klassifiziert. Wenn die Temperatur von $0$ bis  $20$ Grad ist, wird sie als ``Low" klassifiziert, von $10$ bis $20$ Grad als ``Medium" und von $20$ bis $40$ Grad als "High``.Bei Einstellung von Thermostat wird von $1$ bis $2$ als "Low`` definiert, von $1$ bis $4$ als ``Medium" und von $3$ nach $5$ als ``High". Zum Beispiel ist unsere Eingabe von Temperatur ist $23$ Grad und die befindet sich zwischen ``Medium" und ``High" wie in Abbildung  ~\ref{fig:Fuzzy_Example}. Nach dem Regel in Algorithmus ~\ref{algo:fuzzy} wird die Einstellung von dem Thermostat zwischen ``Low" und ``Medium" betrachtet und mit dem Methode ``Zentral von Gravitativ" soll die Einstellung von dem Thermostat bei $2.15$ liegen.\\
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=0.8\textwidth]{fig/fuzzy.png}

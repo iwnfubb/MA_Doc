@@ -5,21 +5,24 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Ein Beispiel f\"ur Hintergrundsubtraktion }}{6}{figure.2.1}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Klassifizierung von $p_t(x)$ basiert auf \"Uberschneidung von Kugel $S_R(p_t(x))$ mit Menge der Stichproben \cite {barnich2009vibe}.}}{9}{figure.2.2}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Normalisierte horizontale und vertikale Projektionsvorlagen f\"ur jede K\"orperhalterung \cite {haritaoglu1998ghost}.}}{9}{figure.2.3}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Normalisierte horizontale und vertikale Projektionsvorlagen f\"ur jede K\"orperhalterung \cite {haritaoglu1998ghost}.}}{10}{figure.2.3}
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Ein Beispiel f\"ur Fuzzylogik }}{12}{figure.2.4}
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Bosch 360 Grad Kamera (Quelle: www.bosch-smarthome.com) }}{13}{figure.2.5}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Drei Hauptschritte zur Erkennung von au\IeC {\ss }ergew\"ohnlichen Situation}}{14}{figure.3.1}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Vergleichen von verschiedene Techniken an Hintergrundsubtraktion (a) Weichzeichnen (b) GMM (c) AGMM. (d) KDE (e) Vibe}}{16}{figure.3.2}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Erosion}}{17}{figure.3.3}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Dilatation}}{17}{figure.3.4}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Ergebnis nach Erosion und Dilatation}}{18}{figure.3.5}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Frame-Nummer: 334. Die rot markierte Bereich von Hintergrundbildes wird in n\"achstem Frame aktualisiert.}}{20}{figure.3.6}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Frame-Nummer: 335. Nach der Aktualisierung des Hintergrundbildes wird die alle rot Begrenzungsboxen gel\"oscht.}}{21}{figure.3.7}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Frame-Nummer: 403. Soweit die Person sich in der Szene bewegt, werden die vergangenen Boxen (wei\IeC {\ss } und rot) erstellt.}}{22}{figure.3.8}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Zweiter Hauptschritt}}{24}{figure.3.9}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces \"Uberpr\"ufung der Sch\"atzung der K\"orperhaltung an Testvideo 1}}{26}{figure.3.10}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces \"Uberpr\"ufung der Sch\"atzung der K\"orperhaltung an Testvideo 2}}{27}{figure.3.11}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Erster Hauptschritt}}{15}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Vergleichen von verschiedene Techniken an Hintergrundsubtraktion (a) Weichzeichnen (b) GMM (c) AGMM. (d) KDE (e) Vibe}}{16}{figure.3.3}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Erosion}}{17}{figure.3.4}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Dilatation}}{17}{figure.3.5}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Ergebnis nach Erosion und Dilatation}}{18}{figure.3.6}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Frame-Nummer: 334. Die rot markierte Bereich von Hintergrundbildes wird in n\"achstem Frame aktualisiert.}}{20}{figure.3.7}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Frame-Nummer: 335. Nach der Aktualisierung des Hintergrundbildes wird die alle rot Begrenzungsboxen gel\"oscht.}}{21}{figure.3.8}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Frame-Nummer: 403. Soweit die Person sich in der Szene bewegt, werden die vergangenen Boxen (wei\IeC {\ss } und rot) erstellt.}}{22}{figure.3.9}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Zweiter Hauptschritt}}{25}{figure.3.10}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces \"Uberpr\"ufung der Sch\"atzung der K\"orperhaltung an Testvideo 1}}{26}{figure.3.11}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces \"Uberpr\"ufung der Sch\"atzung der K\"orperhaltung an Testvideo 2}}{27}{figure.3.12}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Dritter Hauptschritt}}{28}{figure.3.13}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Mitgliederfunktionen}}{30}{figure.3.14}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

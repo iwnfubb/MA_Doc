@@ -63,7 +63,7 @@
     \put(0.15295286,0.01485448){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{(g)}}}%
     \put(0.52223899,0.01476012){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{(h)}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{mymethode3edited.pdf}}%
-    \put(0.35663669,1.18059511){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Subtraktion}}}%
+    \put(0.35663669,1.18059511){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Absolute Subtraktion}}}%
     \put(0.36305214,0.95643869){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Schwellwert}}}%
     \put(0.36305214,0.70961686){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Erosion + Dilatation}}}%
     \put(0.36422196,0.47137341){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Begrenzungsbox}}}%

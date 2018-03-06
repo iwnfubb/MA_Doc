@@ -202,16 +202,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.175"
-     inkscape:cx="-989.57878"
-     inkscape:cy="498.5828"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="1457.0298"
+     inkscape:cy="1435.8077"
      inkscape:document-units="px"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:snap-others="false"
      inkscape:window-width="1920"
-     inkscape:window-height="1019"
-     inkscape:window-x="-8"
+     inkscape:window-height="1059"
+     inkscape:window-x="1912"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      fit-margin-top="0"
@@ -456,7 +456,7 @@
          sodipodi:role="line"
          id="tspan5616"
          x="-1404.6094"
-         y="27.453485">Subtraktion</tspan></text>
+         y="27.453485">Absolute Subtraktion</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -533,11 +533,7 @@
          sodipodi:role="line"
          x="-599.06708"
          y="906.95972"
-         id="tspan5646">Aktualisierung</tspan><tspan
-         sodipodi:role="line"
-         x="-599.06708"
-         y="956.95972"
-         id="tspan5680" /></text>
+         id="tspan5680">Aktualisierung</tspan></text>
     <flowRoot
        xml:space="preserve"
        id="flowRoot5648"

@@ -93,6 +93,14 @@
 \newblock In \emph{International Symposium on Visual Computing} (2005),
   Springer, pp.~337--346.
 
+\bibitem[Lü08]{bworld}
+\textsc{Lütkebohle I.}:
+\newblock {BWorld Robot Control Software}.
+\newblock
+  \url{http://aiweb.techfak.uni-bielefeld.de/content/bworld-robot-control-software/},
+  2008.
+\newblock [Online; accessed 19-July-2008].
+
 \bibitem[MPWSH16]{marki2016bilateral}
 \textsc{M{\"a}rki N., Perazzi F., Wang O., Sorkine-Hornung A.}:
 \newblock Bilateral space video segmentation.

@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{564.83204278bp}%
+    \setlength{\unitlength}{551.17954044bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,14 +48,14 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.83710588)%
+  \begin{picture}(1,0.91944503)%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{allgemein.pdf}}%
-    \put(0.37824437,0.80031397){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{EINGABE}}}%
-    \put(0.21232904,0.67952983){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Hintergrundsubtraktion}}}%
-    \put(0.36610416,0.56155777){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Sihoulette}}}%
-    \put(0.25191598,0.42540021){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Histogrammanalyse}}}%
-    \put(0.38229105,0.15402538){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Fuzzylogik}}}%
-    \put(0.14955561,0.29436992){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Schätzung der Körperhaltung}}}%
-    \put(-0.00417021,0.00883833){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Erkennung von außergewöhnlichen Situationen}}}%
+    \put(0.38880129,0.88265312){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{EINGABE}}}%
+    \put(0.20913814,0.75419248){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Hintergrundsubtraktion}}}%
+    \put(0.37362463,0.62153601){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Sihoulette}}}%
+    \put(0.2502507,0.47474351){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Histogrammanalyse}}}%
+    \put(0.13744234,0.32376435){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Schätzung der Körperhaltung}}}%
+    \put(-0.00417021,0.00883836){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Erkennung von außergewöhnlichen Situationen}}}%
+    \put(0.36927976,0.17265616){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Fuzzylogik}}}%
   \end{picture}%
 \endgroup%

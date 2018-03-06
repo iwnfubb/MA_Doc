@@ -50,26 +50,26 @@
   \makeatother%
   \begin{picture}(1,1.41295878)%
     \put(-1.01333438,1.34272004){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{1.52687051\unitlength}\raggedright \end{minipage}}}%
-    \put(-0.22783456,1.38684924){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{2.08731142\unitlength}\raggedright \end{minipage}}}%
+    \put(-0.22783457,1.38684924){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{2.08731142\unitlength}\raggedright \end{minipage}}}%
     \put(-0.39993847,1.0735319){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.98849417\unitlength}\raggedright \end{minipage}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{mymethode2edited.pdf}}%
     \put(0.11251192,1.17337423){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.00661938\unitlength}\raggedright \end{minipage}}}%
     \put(0.13798758,1.19985175){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{(a)}}}%
-    \put(0.54770095,1.19899324){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{(b)}}}%
-    \put(0.32696028,0.97231867){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{(c)}}}%
-    \put(0.32324907,0.73108987){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{(d)}}}%
+    \put(0.54770094,1.19899324){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{(b)}}}%
+    \put(0.32696027,0.97231867){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{(c)}}}%
+    \put(0.32324906,0.73108987){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{(d)}}}%
     \put(0.32473085,0.48193284){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{(e)}}}%
     \put(0.32929106,0.24780343){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{(f)}}}%
     \put(0.15122635,0.0158965){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{(g)}}}%
     \put(0.5206326,0.01580211){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{(h)}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{mymethode2edited.pdf}}%
-    \put(0.35497643,1.18201624){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Subtraktion}}}%
+    \put(0.35497643,1.18201624){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Absolute Subtraktion}}}%
     \put(0.361394,0.95778692){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Schwellwert}}}%
-    \put(0.36139397,0.71088481){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Erosion + Dilatation}}}%
-    \put(0.36256417,0.47256385){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Begrenzungsbox}}}%
+    \put(0.36139396,0.71088481){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Erosion + Dilatation}}}%
+    \put(0.36256416,0.47256385){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Begrenzungsbox}}}%
     \put(0.36802484,0.25218513){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{}}}%
-    \put(0.39610851,-0.01538966){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{}}}%
-    \put(0.81471789,0.81758254){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{}}}%
+    \put(0.3961085,-0.01538966){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{}}}%
+    \put(0.81471788,0.81758253){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{}}}%
     \put(0.79485975,0.70174339){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Aktualisierung}}}%
     \put(0.79435034,0.66992949){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{des}}}%
     \put(0.79357023,0.63950559){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Hintergrundsbildes}}}%

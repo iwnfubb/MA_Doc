@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.9)  7 MAR 2018 04:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.9)  7 MAR 2018 16:01
 entering extended mode
 **./main.tex
 (main.tex
@@ -1229,26 +1229,19 @@ Overfull \hbox (68.51831pt too wide) in paragraph at lines 103--170
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 (fig/schatzung.pdf_tex
-<./fig/schatzung.pdf, id=594, page=1, 1334.77945pt x 641.1833pt>
+<./fig/schatzung.pdf, id=594, page=1, 1334.27365pt x 940.7232pt>
 File: ./fig/schatzung.pdf Graphic file (type pdf)
 
 <use ./fig/schatzung.pdf, page 1>
 Package pdftex.def Info: ./fig/schatzung.pdf, page1 used on input line 52.
-(pdftex.def)             Requested size: 334.60571pt x 160.73569pt.
+(pdftex.def)             Requested size: 347.15286pt x 244.75452pt.
 
-<./fig/schatzung.pdf, id=595, page=2, 1334.77945pt x 641.1833pt>
+<./fig/schatzung.pdf, id=595, page=2, 1334.27365pt x 940.7232pt>
 File: ./fig/schatzung.pdf Graphic file (type pdf)
 
 <use ./fig/schatzung.pdf, page 2>
-Package pdftex.def Info: ./fig/schatzung.pdf, page2 used on input line 57.
-(pdftex.def)             Requested size: 334.60571pt x 160.73569pt.
-
-<./fig/schatzung.pdf, id=596, page=3, 1334.77945pt x 641.1833pt>
-File: ./fig/schatzung.pdf Graphic file (type pdf)
-
-<use ./fig/schatzung.pdf, page 3>
-Package pdftex.def Info: ./fig/schatzung.pdf, page3 used on input line 59.
-(pdftex.def)             Requested size: 334.60571pt x 160.73569pt.
+Package pdftex.def Info: ./fig/schatzung.pdf, page2 used on input line 62.
+(pdftex.def)             Requested size: 347.15286pt x 244.75452pt.
 ) [25]
 
 LaTeX Warning: Text page 26 contains only floats.
@@ -1262,7 +1255,7 @@ ng> <./fig/original2.png> <./fig/groundtrue2.png> <./fig/My2.png> <./fig/MOG2.p
 ng> <./fig/original3.png> <./fig/groundtrue3.png> <./fig/My3.png> <./fig/MOG3.p
 ng> <./fig/original4.png> <./fig/groundtrue4.png> <./fig/My4.png> <./fig/MOG4.p
 ng> <./fig/original5.png> <./fig/groundtrue5.png> <./fig/My5.png> <./fig/MOG5.p
-ng>] <fig/schatzungevaluation.png, id=623, 1835.85875pt x 1474.50874pt>
+ng>] <fig/schatzungevaluation.png, id=622, 1835.85875pt x 1474.50874pt>
 File: fig/schatzungevaluation.png Graphic file (type png)
 
 <use fig/schatzungevaluation.png>
@@ -1273,7 +1266,7 @@ Overfull \hbox (41.8281pt too wide) in paragraph at lines 187--188
  [][] 
  []
 
-<fig/schatzungevaluation2.png, id=624, 1807.75375pt x 1473.505pt>
+<fig/schatzungevaluation2.png, id=623, 1807.75375pt x 1473.505pt>
 File: fig/schatzungevaluation2.png Graphic file (type png)
 
 <use fig/schatzungevaluation2.png>
@@ -1294,10 +1287,6 @@ l.201
 
 pdfTeX warning: pdflatex.exe (file ./fig/schatzung.pdf): PDF inclusion: multipl
 e pdfs with page group included in a single page
-> <./fig/schatzung.pdf
-
-pdfTeX warning: pdflatex.exe (file ./fig/schatzung.pdf): PDF inclusion: multipl
-e pdfs with page group included in a single page
 >] [28pdfTeX warning (ext4): destination with the same identifier (name{figure.
 3.11}) has been already used, duplicate ignored
 
@@ -1312,7 +1301,7 @@ nored
                                                   \fi \fi 
 l.201 
        <./fig/schatzungevaluation2.png>] (fig/fuzzylogik.pdf_tex
-<./fig/fuzzylogik.pdf, id=645, page=1, 880.57106pt x 492.23627pt>
+<./fig/fuzzylogik.pdf, id=644, page=1, 880.57106pt x 492.23627pt>
 File: ./fig/fuzzylogik.pdf Graphic file (type pdf)
 
 <use ./fig/fuzzylogik.pdf, page 1>
@@ -1323,15 +1312,16 @@ Package pdftex.def Info: ./fig/fuzzylogik.pdf, page1 used on input line 52.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.219 \end{itemize}
-                    <./fig/fuzzylogik.pdf>]
+l.218 	\item D
+              ie Ausgabe ist als ``Status" genannt und mit Gauﬂschen Funktio...
+ <./fig/fuzzylogik.pdf>]
 
 LaTeX Warning: Reference `fuzzy_model' on page 31 undefined on input line 220.
 
 
 LaTeX Warning: Reference `fuzzy_model' on page 31 undefined on input line 220.
 
-<fig/fuzzyfunktion.png, id=662, 873.2625pt x 1484.54625pt>
+[31] <fig/fuzzyfunktion.png, id=668, 873.2625pt x 1484.54625pt>
 File: fig/fuzzyfunktion.png Graphic file (type png)
 
 <use fig/fuzzyfunktion.png>
@@ -1341,44 +1331,44 @@ Package pdftex.def Info: fig/fuzzyfunktion.png used on input line 246.
 
 LaTeX Warning: Float too large for page by 0.70226pt on input line 249.
 
-<fig/fuzzy1.png, id=663, 864.22874pt x 834.11626pt>
+<fig/fuzzy1.png, id=669, 864.22874pt x 834.11626pt>
 File: fig/fuzzy1.png Graphic file (type png)
  <use fig/fuzzy1.png>
 Package pdftex.def Info: fig/fuzzy1.png used on input line 253.
 (pdftex.def)             Requested size: 334.60571pt x 322.94943pt.
 
-<fig/fuzzy2.png, id=664, 869.49844pt x 793.46437pt>
+<fig/fuzzy2.png, id=670, 869.49844pt x 793.46437pt>
 File: fig/fuzzy2.png Graphic file (type png)
  <use fig/fuzzy2.png>
 Package pdftex.def Info: fig/fuzzy2.png used on input line 260.
 (pdftex.def)             Requested size: 334.60571pt x 305.34549pt.
 )
-[31] [32pdfTeX warning (ext4): destination with the same identifier (name{figur
-e.3.14}) has been already used, duplicate ignored
+[32pdfTeX warning (ext4): destination with the same identifier (name{algocf.2})
+ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.17 \newpage
-              <./fig/fuzzyfunktion.png>] [33pdfTeX warning (ext4): destination 
+             ] [33pdfTeX warning (ext4): destination with the same identifier (
+name{figure.3.14}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.17 \newpage
+              <./fig/fuzzyfunktion.png>] [34pdfTeX warning (ext4): destination 
 with the same identifier (name{figure.3.15}) has been already used, duplicate i
 gnored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.17 \newpage
-              <./fig/fuzzy1.png>] [34pdfTeX warning (ext4): destination with th
-e same identifier (name{algocf.2}) has been already used, duplicate ignored
+              <./fig/fuzzy1.png>] [35pdfTeX warning (ext4): destination with th
+e same identifier (name{figure.3.16}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.17 \newpage
-             pdfTeX warning (ext4): destination with the same identifier (name{
-figure.3.16}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.17 \newpage
-              <./fig/fuzzy2.png>] [35] [36] (Ergebnisse.tex
+              <./fig/fuzzy2.png>] [36] (Ergebnisse.tex
 chapter 4.
 ) [37
 
@@ -1463,10 +1453,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 58.
  ) 
 Here is how much of TeX's memory you used:
- 13558 strings out of 493634
- 208250 string characters out of 3143745
+ 13555 strings out of 493634
+ 208165 string characters out of 3143745
  418321 words of memory out of 3000000
- 16476 multiletter control sequences out of 15000+200000
+ 16473 multiletter control sequences out of 15000+200000
  11888 words of font info for 44 fonts, out of 3000000 for 9000
  1026 hyphenation exceptions out of 8191
  44i,15n,66p,8832b,1207s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1487,9 +1477,9 @@ MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><D:/Program Files/MiKTeX 2
 blic/amsfonts/cm/cmsy8.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmti10.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
 cmtt10.pfb>
-Output written on main.pdf (65 pages, 9772370 bytes).
+Output written on main.pdf (65 pages, 9771954 bytes).
 PDF statistics:
- 925 PDF objects out of 1000 (max. 8388607)
+ 924 PDF objects out of 1000 (max. 8388607)
  172 named destinations out of 1000 (max. 500000)
- 529 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 524 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{1329.79268232bp}%
+    \setlength{\unitlength}{1329.28886834bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,16 +48,17 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.4803665)%
+  \begin{picture}(1,0.70504518)%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{schatzung.pdf}}%
-    \put(0.08392247,0.44646169){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Binärbild mit Silhoulette}}}%
-    \put(0.06409182,0.24453967){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Subimage von Silhouelette}}}%
-    \put(-0.00297487,0.34750676){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Begrenzungsbox}}}%
-    \put(0.30061315,0.08914911){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Loglikelyhood}}}%
+    \put(0.07322175,0.67150653){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Binärbild mit Silhoulette}}}%
+    \put(0.05277475,0.46950798){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Subimage von Silhouelette}}}%
+    \put(-0.00297599,0.57251409){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Begrenzungsbox}}}%
+    \put(0.30072708,0.08880383){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Loglikelyhood}}}%
+    \put(0.39210424,0.01529077){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Körperhaltung}}}%
+    \put(0.5711147,0.24737389){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Normalisierte Projektsvorlage}}}%
+    \put(0.13355594,0.36172351){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Skaliert}}}%
+    \put(0.09129904,0.26765402){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Berechnen von vertikale}}}%
+    \put(0.04172998,0.23760841){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{und horizontale Histogrmamme}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{schatzung.pdf}}%
-    \put(0.39245324,0.0156639){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Körperhaltung}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=3]{schatzung.pdf}}%
-    \put(0.57081461,0.2476591){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Normalisierte Projektsvorlage}}}%
-    \put(0.12400627,0.1806267){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Skaliert}}}%
   \end{picture}%
 \endgroup%

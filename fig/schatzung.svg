@@ -80,6 +80,26 @@
        effect="spiro"
        id="path-effect4210"
        is_visible="true" />
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend-0"
+       style="overflow:visible"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         id="path4219-3"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4210-3"
+       is_visible="true" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -89,10 +109,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="567.13658"
-     inkscape:cy="481.68141"
+     inkscape:cx="932.26906"
+     inkscape:cy="614.81224"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer2"
      showgrid="false"
      inkscape:window-width="1920"
      inkscape:window-height="1019"
@@ -120,7 +140,15 @@
      id="layer2"
      inkscape:label="Layer 2"
      transform="translate(308.97095,143.65492)"
-     style="display:inline" />
+     style="display:inline">
+    <rect
+       style="display:inline;fill:#f1a94e;fill-opacity:1;stroke:none;stroke-width:1.25960863;stroke-miterlimit:4;stroke-dasharray:3.7788258, 1.2596086;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4167-4-7-3-1"
+       width="744.77466"
+       height="115.71912"
+       x="-259.21539"
+       y="158.3989" />
+  </g>
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
@@ -135,12 +163,12 @@
        x="635.00836"
        y="187.68626" />
     <rect
-       style="display:inline;fill:#f1a94e;fill-opacity:1;stroke:none;stroke-width:1.25960863;stroke-miterlimit:4;stroke-dasharray:3.7788258, 1.25960860000000000;stroke-dashoffset:0;stroke-opacity:1"
+       style="display:inline;fill:#f1a94e;fill-opacity:1;stroke:none;stroke-width:1.25960863;stroke-miterlimit:4;stroke-dasharray:3.7788258, 1.2596086;stroke-dashoffset:0;stroke-opacity:1"
        id="rect4167-4-7"
        width="717.63177"
        height="81.433403"
        x="-221.52551"
-       y="193.08458" />
+       y="-181.20114" />
     <rect
        style="display:inline;fill:#f1a94e;fill-opacity:1;stroke:none;stroke-width:1.25960863;stroke-miterlimit:4;stroke-dasharray:3.7788258, 1.25960860000000000;stroke-dashoffset:0;stroke-opacity:1"
        id="rect4167-4-7-5"
@@ -149,18 +177,18 @@
        x="163.55486"
        y="572.76666" />
     <rect
-       style="display:inline;fill:#f1a94e;fill-opacity:1;stroke:none;stroke-width:1.25960863;stroke-miterlimit:4;stroke-dasharray:3.7788258, 1.25960860000000000;stroke-dashoffset:0;stroke-opacity:1"
+       style="display:inline;fill:#f1a94e;fill-opacity:1;stroke:none;stroke-width:1.25960863;stroke-miterlimit:4;stroke-dasharray:3.7788258, 1.2596086;stroke-dashoffset:0;stroke-opacity:1"
        id="rect4167-4"
        width="717.63177"
        height="81.433403"
        x="-222.53717"
-       y="-143.02512" />
+       y="-517.31085" />
     <path
        style="display:inline;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.25960863px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
-       d="m 116.53408,-62.656458 0,255.520598"
+       d="m 116.53408,-436.94217 0,255.52059"
        id="path4208"
        inkscape:path-effect="#path-effect4210"
-       inkscape:original-d="m 116.53408,-62.656458 0,255.520598"
+       inkscape:original-d="m 116.53408,-436.94217 0,255.52059"
        inkscape:connector-curvature="0" />
     <path
        style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.57837474px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -180,35 +208,35 @@
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:50.38434219px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="-169.47159"
-       y="-87.296974"
+       y="-461.58267"
        id="text4136"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4138"
          x="-169.47159"
-         y="-87.296974">Binärbild mit Silhoulette</tspan></text>
+         y="-461.58267">Binärbild mit Silhoulette</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:50.38434219px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="-202.44545"
-       y="248.34607"
+       y="-125.93964"
        id="text4140"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4142"
          x="-202.44545"
-         y="248.34607">Subimage von Silhouelette</tspan></text>
+         y="-125.93964">Subimage von Silhouelette</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:50.38434219px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="-313.91589"
-       y="77.189964"
+       y="-297.09573"
        id="text4152"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4154"
          x="-313.91589"
-         y="77.189964">Begrenzungsbox</tspan></text>
+         y="-297.09573">Begrenzungsbox</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:50.38434219px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -245,13 +273,44 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:50.38434219px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="-102.84266"
-       y="354.58481"
+       x="-99.985519"
+       y="53.156239"
        id="text4799"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4801"
-         x="-102.84266"
-         y="354.58481">Skaliert</tspan></text>
+         x="-99.985519"
+         y="53.156239">Skaliert</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="-162.54097"
+       y="209.46313"
+       id="text4173"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4175"
+         x="-162.54097"
+         y="209.46313"
+         style="font-size:45px">Berechnen von vertikale</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="-244.90547"
+       y="259.38727"
+       id="text4177"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4179"
+         x="-244.90547"
+         y="259.38727"
+         style="font-size:45px">und horizontale Histogrmamme</tspan></text>
+    <path
+       style="display:inline;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.25960863px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend-0)"
+       d="m 112.45762,-99.790949 0,255.520589"
+       id="path4208-8"
+       inkscape:path-effect="#path-effect4210-3"
+       inkscape:original-d="m 112.45762,-99.790949 0,255.520589"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>

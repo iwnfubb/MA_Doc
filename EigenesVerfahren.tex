@@ -215,11 +215,31 @@ Zuerst müssen die Mitgliederfunktionen von Eingaben identifiziert werden, die si
 		f(a, b, mean) = \frac{1}{1 + |\frac{x - mean}{a}|^{2b}}
 	\end{equation} 
 	\item Normale Koordinaten im Raum sind die Positionen wo die Testperson normalerweise liegt, sitzt oder steht und die wird als Gaußschen Funktionen definiert, wobei Mittelwerte $x$ und $y$ Werte sind und Standardabweichung  $30$ beträgt.
+	\item Die Ausgabe ist als ``Status" genannt und mit Gaußschen Funktion mit  Standardabweichung $\sigma = 1$ Mittelwert bei $4$ für abnormale Situation und bei $6$ für normale. Die Mittelwerte hier in dieser Stelle  spielt keine wichtige Rolle. Die Mittelwerte nähert sich mit einander, um die Entscheidung für aktuelle Situation genauer zu sein. wenn die vorgegebene Mittelwerte zu weit aus einander sind, ist die Trennung von normale und abnormale Situation zu deutlich, deswegen ist Ergebnis von des Fuzzysystem ist nicht mehr zuverlässig.
 \end{itemize}  
+Zur Anwendung von (IF-ELSE) Regeln (Algorithmus \ref{fuzzy_model} ) sind Minimum als Aktivaktionsmethode und Maximum als Akkumulationsmethode eingesetzt. Die Regeln in Algorithmus \ref{fuzzy_model} kann wie folgt interpretiert werden:
+\begin{itemize}
+	\item Es ist schlecht, wenn die Person nicht in Sofa liegt.
+	\item Es ist gut, wenn die Person in Sofa liegt.
+	\item Es schlecht, wenn die Person am Tag liegt.
+	\item Es gut, wenn die Person am Tag steht.
+	 \item Es schlecht, wenn die Person am Tag sitzt oder beugt.
+\end{itemize}
 
-Das definierte Fuzzymodel wird wie in Abbildung  \ref{fig:fuzzyfunktion} dargestellt. Die oben genannte Parameters sind anhand des Raum so wie biologische Uhr von Testperson abhängig. Es gibt viele Methode mit maschinellem Lernen, die die Parameters von Mitgliederfunktion anpassen können. Die vorgeschlagene Lösung mit maschinellem Lernen ist außerhalb Bereich von dieser Arbeit, da die sehr zeitaufwendig ist und die Zeit für diese Arbeit reicht nicht aus. Die Diskussion über dritten Schritt wird  weiter hier vorgesetzt.
+Bei Defuzzifizierung zur Abbildung der Ausgabe in scharfe Menge wird Schwerpunktmethode angewendet.
+Das definierte Fuzzymodel wird wie in Abbildung  \ref{fig:fuzzyfunktion} dargestellt. Die oben genannte Parameters sind anhand des Raum so wie biologische Uhr von Testperson abhängig. Es gibt viele Methode mit maschinellem Lernen, die die Parameters von Mitgliederfunktion anpassen können. Die vorgeschlagene Lösung mit maschinellem Lernen ist außerhalb Bereich von dieser Arbeit, da die sehr zeitaufwendig ist und die Zeit für diese Arbeit reicht nicht aus. Die Diskussion über dritten Schritt wird  weiter hier vorgesetzt. 
 
-Beispielweise kann Position von dem Bett oder Sofa, wo die Testperson oft liegt, vordefiniert werden. Die Uhrzeit kann  auch nun in diesem Fall betrachtet werden. Wenn die Person im Bett am Nacht liegt,  wird es als ein normaler Fall angesehen. Durch Fuzzylogik wird es berechnet, wie hoch ist die Wahrscheinlichkeit, dass die aktuelle Situation normal ist. Für das Beispiel im Abbildung \ref{fig:Fuzzy_Example} sind Dreieckfunktionen angewendet, um die Definition von Fuzzylogik einfacher zu verstehen. In diesem letzten Schritt sind Gaußsche Funktionen benutzt, um die Anwendungsfälle zu realisieren. Es is angenommen, dass die Koordinaten von einem Sofa in Testraum $(574, 424)$ beträgt, die aktuelle Zeit 8 Uhr morgen ist und die Testperson liegt im Sofa (wie Abbildung \ref{fig:fuzzyfunktion}).  
+Beispielweise kann Position von dem Bett oder Sofa, wo die Testperson oft liegt, vordefiniert werden. Die Uhrzeit kann  auch nun in diesem Fall betrachtet werden. Wenn die Person im Bett am Nacht liegt,  wird es als ein normaler Fall angesehen. Durch Fuzzylogik wird es berechnet, wie hoch ist die Wahrscheinlichkeit, dass die aktuelle Situation normal ist. Für das Beispiel im Abbildung \ref{fig:Fuzzy_Example} sind Dreieckfunktionen angewendet, um die Definition von Fuzzylogik einfacher zu verstehen. Für die komplexer Anwendungsfälle sind Gaußsche Funktionen benutzt, um die Anwendungsfälle zu realisieren. Es is angenommen, dass die Koordinaten von einem Sofa in Testraum $(591, 441)$ beträgt, die aktuelle Zeit $8$ Uhr morgen ist und die Testperson liegt im Position (574, 424) (wie Abbildung \ref{fig:fuzzyfunktion}). Bei dem ersten Testfall ergibt sich die Unterscheidung für normale Situation $93,29\%$ und für eine außergewöhnliche Situation $26,59\%$ (Abbildung \ref{fig:fuzzy1}). Es ist klar in diesem Fall, weil anhand den Regeln in \ref{algo:fuzzy_modell} die Ausgabe ``good" auskommen soll. In Regeln \ref{algo:fuzzy_modell} gibt es einen gemischten Fall, wo die Person in Sofa am Tag liegt. Dieser Testfall kombiniert zweit Regeln, wobei es gut ist, wenn die Testperson in normale Position liegt und es ist schlecht wenn die Person am Tag liegt. Nach der Rechnen liefert es eine Wert von $71,6\%$ für normale Situation und $49,71\%$ für abnormale Situation (Abbildung \ref{fig:fuzzy2}). 
+
+\begin{algorithm}[htpb]
+	\caption{Regel für Raumtemperatur und Einstellung des Thermostates.	}
+	\label{algo:fuzzy_modell}
+	\If{(posture IS laying) AND (NOT xposition IS good) OR (NOT yposition IS good)}{status IS bad;}
+	\If{(posture IS laying) AND (xposition IS good) AND (yposition IS good)}{status IS good;}
+	\If{posture IS laying AND time IS day}{status IS bad;}
+	\If{posture IS standing AND time IS day}{status IS good;}
+	\If{(IF posture IS sitting OR posture IS bending) AND time IS night}{status IS bad;}
+\end{algorithm}
 
 \begin{figure}[htpb]
 	\centering
@@ -227,5 +247,21 @@ Beispielweise kann Position von dem Bett oder Sofa, wo die Testperson oft liegt,
 	\caption{Mitgliederfunktionen} 
 	\label{fig:fuzzyfunktion}
 \end{figure}
+
+\begin{figure}[htpb]
+	\centering
+	\includegraphics[width=0.8\textwidth]{fig/fuzzy1.png}
+	\caption{Testfall: Person liegt im Sofa in Nacht. Ergebnis: 93,29\% normal, 26,59\% abnormal} 
+	\label{fig:fuzzy1}
+\end{figure}
+
+\begin{figure}[htpb]
+	\centering
+	\includegraphics[width=0.8\textwidth]{fig/fuzzy2.png}
+	\caption{Testfall: Person liegt im Sofa am Tag. Ergebnis: 71,6\% normal, 49,71\% abnormal} 
+	\label{fig:fuzzy2}
+\end{figure}
+
+
  
 \section{Drehbare 360 Grad Kamera}	

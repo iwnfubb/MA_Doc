@@ -41,6 +41,18 @@
 \newblock \emph{IEEE Transactions on Image processing 20}, 6 (2011),
   1709--1724.
 
+\bibitem[CAF]{cingolanijfuzzylogic}
+\textsc{Cingolani P., Alcal{\'a}-Fdez J.}:
+\newblock jfuzzylogic: a java library to design fuzzy logic controllers
+  according to the standard for fuzzy control programming.
+
+\bibitem[CAF12]{cingolani2012jfuzzylogic}
+\textsc{Cingolani P., Alcala-Fdez J.}:
+\newblock jfuzzylogic: a robust and flexible fuzzy-logic inference system
+  language implementation.
+\newblock In \emph{Fuzzy Systems (FUZZ-IEEE), 2012 IEEE International
+  Conference on} (2012), IEEE, pp.~1--8.
+
 \bibitem[DG13]{duffner2013pixeltrack}
 \textsc{Duffner S., Garcia C.}:
 \newblock Pixeltrack: a fast adaptive algorithm for tracking non-rigid objects.

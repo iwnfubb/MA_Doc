@@ -20,24 +20,24 @@
 \contentsline {section}{\numberline {2.2}Histogrammanalyse}{9}{section.2.2}
 \contentsline {section}{\numberline {2.3}Fuzzylogik}{10}{section.2.3}
 \contentsline {section}{\numberline {2.4}OpenCV Framework}{11}{section.2.4}
-\contentsline {section}{\numberline {2.5}Bosch Innenkamera}{11}{section.2.5}
-\contentsline {chapter}{\numberline {3}Eigenes Verfahren}{14}{chapter.3}
-\contentsline {section}{\numberline {3.1}Hintergrundsubtraktion}{14}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Vergleichen verschiedener Methoden}{14}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Verbesserungen f\"ur Hintergrundsubtraktion}{17}{subsection.3.1.2}
-\contentsline {subsubsection}{\nonumberline Erste Verbesserung}{19}{section*.5}
-\contentsline {subsubsection}{\nonumberline Zweite Verbesserung}{19}{section*.6}
-\contentsline {subsection}{\numberline {3.1.3}Ergebnisse der eigene Hintergrundsubtraktion}{23}{subsection.3.1.3}
-\contentsline {section}{\numberline {3.2}Sch\"atzung der K\"orperhalterung mit Histogrammanalyse}{24}{section.3.2}
-\contentsline {section}{\numberline {3.3}Erkennung au\IeC {\ss }ergew\"ohnlicher Situation}{25}{section.3.3}
-\contentsline {section}{\numberline {3.4}Drehbare 360 Grad Kamera}{29}{section.3.4}
-\contentsline {chapter}{\numberline {4}Ergebnisse und Evaluation}{33}{chapter.4}
-\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{35}{chapter.5}
-\contentsline {chapter}{Literaturverzeichnis}{36}{chapter*.7}
-\contentsline {chapter}{Abk\"urzungsverzeichnis}{40}{chapter*.8}
-\contentsline {chapter}{Abbildungsverzeichnis}{42}{chapter*.9}
-\contentsline {chapter}{Tabellenverzeichnis}{43}{chapter*.10}
-\contentsline {chapter}{Liste der Algorithmen}{45}{section*.11}
-\contentsline {chapter}{Listings}{47}{section*.13}
-\contentsline {chapter}{\numberline {A}Anhang}{49}{appendix.A}
-\contentsline {chapter}{Danksagung}{50}{chapter*.17}
+\contentsline {section}{\numberline {2.5}Bosch Innenkamera}{13}{section.2.5}
+\contentsline {chapter}{\numberline {3}Eigenes Verfahren}{15}{chapter.3}
+\contentsline {section}{\numberline {3.1}Hintergrundsubtraktion}{15}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Vergleichen verschiedener Methoden}{15}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Verbesserungen f\"ur Hintergrundsubtraktion}{18}{subsection.3.1.2}
+\contentsline {subsubsection}{\nonumberline Erste Verbesserung}{20}{section*.5}
+\contentsline {subsubsection}{\nonumberline Zweite Verbesserung}{20}{section*.6}
+\contentsline {subsection}{\numberline {3.1.3}Ergebnisse der eigene Hintergrundsubtraktion}{24}{subsection.3.1.3}
+\contentsline {section}{\numberline {3.2}Sch\"atzung der K\"orperhalterung mit Histogrammanalyse}{25}{section.3.2}
+\contentsline {section}{\numberline {3.3}Erkennung au\IeC {\ss }ergew\"ohnlicher Situation}{27}{section.3.3}
+\contentsline {section}{\numberline {3.4}Drehbare 360 Grad Kamera}{35}{section.3.4}
+\contentsline {chapter}{\numberline {4}Ergebnisse und Evaluation}{37}{chapter.4}
+\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{39}{chapter.5}
+\contentsline {chapter}{Literaturverzeichnis}{40}{chapter*.7}
+\contentsline {chapter}{Abk\"urzungsverzeichnis}{44}{chapter*.8}
+\contentsline {chapter}{Abbildungsverzeichnis}{46}{chapter*.9}
+\contentsline {chapter}{Tabellenverzeichnis}{47}{chapter*.10}
+\contentsline {chapter}{Liste der Algorithmen}{49}{section*.11}
+\contentsline {chapter}{Listings}{51}{section*.13}
+\contentsline {chapter}{\numberline {A}Anhang}{53}{appendix.A}
+\contentsline {chapter}{Danksagung}{54}{chapter*.17}

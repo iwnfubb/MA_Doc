@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.9)  7 MAR 2018 16:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.9)  8 MAR 2018 20:20
 entering extended mode
 **./main.tex
 (main.tex
@@ -1229,20 +1229,47 @@ Overfull \hbox (68.51831pt too wide) in paragraph at lines 103--170
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 (fig/schatzung.pdf_tex
-<./fig/schatzung.pdf, id=594, page=1, 1334.27365pt x 940.7232pt>
+<./fig/schatzung.pdf, id=597, page=1, 1334.27365pt x 940.7232pt>
 File: ./fig/schatzung.pdf Graphic file (type pdf)
 
 <use ./fig/schatzung.pdf, page 1>
 Package pdftex.def Info: ./fig/schatzung.pdf, page1 used on input line 52.
 (pdftex.def)             Requested size: 347.15286pt x 244.75452pt.
 
-<./fig/schatzung.pdf, id=595, page=2, 1334.27365pt x 940.7232pt>
+<./fig/schatzung.pdf, id=598, page=2, 1334.27365pt x 940.7232pt>
 File: ./fig/schatzung.pdf Graphic file (type pdf)
 
 <use ./fig/schatzung.pdf, page 2>
 Package pdftex.def Info: ./fig/schatzung.pdf, page2 used on input line 62.
 (pdftex.def)             Requested size: 347.15286pt x 244.75452pt.
-) [25]
+)
+<fig/schatzung1.pdf, id=599, 2571.85574pt x 2437.77351pt>
+File: fig/schatzung1.pdf Graphic file (type pdf)
+
+<use fig/schatzung1.pdf>
+Package pdftex.def Info: fig/schatzung1.pdf used on input line 186.
+(pdftex.def)             Requested size: 418.25555pt x 396.44969pt.
+
+<fig/schatzung2.pdf, id=600, 2571.85574pt x 2437.77351pt>
+File: fig/schatzung2.pdf Graphic file (type pdf)
+
+<use fig/schatzung2.pdf>
+Package pdftex.def Info: fig/schatzung2.pdf used on input line 193.
+(pdftex.def)             Requested size: 418.25555pt x 396.44969pt.
+
+<fig/schatzung3.pdf, id=601, 2571.85574pt x 2437.77351pt>
+File: fig/schatzung3.pdf Graphic file (type pdf)
+
+<use fig/schatzung3.pdf>
+Package pdftex.def Info: fig/schatzung3.pdf used on input line 200.
+(pdftex.def)             Requested size: 418.25555pt x 396.44969pt.
+
+Overfull \hbox (25.96526pt too wide) in paragraph at lines 206--207
+[]\OT1/cmr/m/n/10.95 Jede K[]orperhaltung hat einen ein-deu-ti-gen Graph zum Ve
+r-gleich mit an-de-ren K[]orperhaltungen,
+ []
+
+[25]
 
 LaTeX Warning: Text page 26 contains only floats.
 
@@ -1255,25 +1282,25 @@ ng> <./fig/original2.png> <./fig/groundtrue2.png> <./fig/My2.png> <./fig/MOG2.p
 ng> <./fig/original3.png> <./fig/groundtrue3.png> <./fig/My3.png> <./fig/MOG3.p
 ng> <./fig/original4.png> <./fig/groundtrue4.png> <./fig/My4.png> <./fig/MOG4.p
 ng> <./fig/original5.png> <./fig/groundtrue5.png> <./fig/My5.png> <./fig/MOG5.p
-ng>] <fig/schatzungevaluation.png, id=622, 1835.85875pt x 1474.50874pt>
+ng>] <fig/schatzungevaluation.png, id=627, 1835.85875pt x 1474.50874pt>
 File: fig/schatzungevaluation.png Graphic file (type png)
 
 <use fig/schatzungevaluation.png>
-Package pdftex.def Info: fig/schatzungevaluation.png used on input line 187.
+Package pdftex.def Info: fig/schatzungevaluation.png used on input line 210.
 (pdftex.def)             Requested size: 460.08365pt x 369.52625pt.
 
-Overfull \hbox (41.8281pt too wide) in paragraph at lines 187--188
+Overfull \hbox (41.8281pt too wide) in paragraph at lines 210--211
  [][] 
  []
 
-<fig/schatzungevaluation2.png, id=623, 1807.75375pt x 1473.505pt>
+<fig/schatzungevaluation2.png, id=628, 1807.75375pt x 1473.505pt>
 File: fig/schatzungevaluation2.png Graphic file (type png)
 
 <use fig/schatzungevaluation2.png>
-Package pdftex.def Info: fig/schatzungevaluation2.png used on input line 194.
+Package pdftex.def Info: fig/schatzungevaluation2.png used on input line 217.
 (pdftex.def)             Requested size: 460.08365pt x 375.00809pt.
 
-Overfull \hbox (41.8281pt too wide) in paragraph at lines 194--195
+Overfull \hbox (41.8281pt too wide) in paragraph at lines 217--218
  [][] 
  []
 
@@ -1282,7 +1309,7 @@ Overfull \hbox (41.8281pt too wide) in paragraph at lines 194--195
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.201 
+l.224 
        <./fig/schatzung.pdf> <./fig/schatzung.pdf
 
 pdfTeX warning: pdflatex.exe (file ./fig/schatzung.pdf): PDF inclusion: multipl
@@ -1292,95 +1319,112 @@ e pdfs with page group included in a single page
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.201 
-       <./fig/schatzungevaluation.png>] [29pdfTeX warning (ext4): destination w
-ith the same identifier (name{figure.3.12}) has been already used, duplicate ig
+l.224 
+       <./fig/schatzung1.pdf>] [29pdfTeX warning (ext4): destination with the s
+ame identifier (name{figure.3.12}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.224 
+       <./fig/schatzung2.pdf>] [30pdfTeX warning (ext4): destination with the s
+ame identifier (name{figure.3.13}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.224 
+       <./fig/schatzung3.pdf>] [31pdfTeX warning (ext4): destination with the s
+ame identifier (name{figure.3.14}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.224 
+       <./fig/schatzungevaluation.png>] [32pdfTeX warning (ext4): destination w
+ith the same identifier (name{figure.3.15}) has been already used, duplicate ig
 nored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.201 
+l.224 
        <./fig/schatzungevaluation2.png>] (fig/fuzzylogik.pdf_tex
-<./fig/fuzzylogik.pdf, id=644, page=1, 880.57106pt x 492.23627pt>
+<./fig/fuzzylogik.pdf, id=738, page=1, 880.57106pt x 492.23627pt>
 File: ./fig/fuzzylogik.pdf Graphic file (type pdf)
 
 <use ./fig/fuzzylogik.pdf, page 1>
 Package pdftex.def Info: ./fig/fuzzylogik.pdf, page1 used on input line 52.
 (pdftex.def)             Requested size: 271.86356pt x 151.96826pt.
-) [30pdfTeX warning (ext4): destination with the same identifier (name{figure.3
-.13}) has been already used, duplicate ignored
+) [33pdfTeX warning (ext4): destination with the same identifier (name{figure.3
+.16}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.218 	\item D
-              ie Ausgabe ist als ``Status" genannt und mit Gauﬂschen Funktio...
- <./fig/fuzzylogik.pdf>]
+l.237 	\begin{equation}
+                        <./fig/fuzzylogik.pdf>]
 
-LaTeX Warning: Reference `fuzzy_model' on page 31 undefined on input line 220.
+LaTeX Warning: Reference `fuzzy_model' on page 34 undefined on input line 243.
 
 
-LaTeX Warning: Reference `fuzzy_model' on page 31 undefined on input line 220.
+LaTeX Warning: Reference `fuzzy_model' on page 34 undefined on input line 243.
 
-[31] <fig/fuzzyfunktion.png, id=668, 873.2625pt x 1484.54625pt>
+[34] <fig/fuzzyfunktion.png, id=760, 873.2625pt x 1484.54625pt>
 File: fig/fuzzyfunktion.png Graphic file (type png)
 
 <use fig/fuzzyfunktion.png>
-Package pdftex.def Info: fig/fuzzyfunktion.png used on input line 246.
+Package pdftex.def Info: fig/fuzzyfunktion.png used on input line 269.
 (pdftex.def)             Requested size: 334.60571pt x 568.82248pt.
 
 
-LaTeX Warning: Float too large for page by 0.70226pt on input line 249.
+LaTeX Warning: Float too large for page by 0.70226pt on input line 272.
 
-<fig/fuzzy1.png, id=669, 864.22874pt x 834.11626pt>
+<fig/fuzzy1.png, id=761, 864.22874pt x 834.11626pt>
 File: fig/fuzzy1.png Graphic file (type png)
  <use fig/fuzzy1.png>
-Package pdftex.def Info: fig/fuzzy1.png used on input line 253.
+Package pdftex.def Info: fig/fuzzy1.png used on input line 276.
 (pdftex.def)             Requested size: 334.60571pt x 322.94943pt.
 
-<fig/fuzzy2.png, id=670, 869.49844pt x 793.46437pt>
+<fig/fuzzy2.png, id=762, 869.49844pt x 793.46437pt>
 File: fig/fuzzy2.png Graphic file (type png)
  <use fig/fuzzy2.png>
-Package pdftex.def Info: fig/fuzzy2.png used on input line 260.
+Package pdftex.def Info: fig/fuzzy2.png used on input line 283.
 (pdftex.def)             Requested size: 334.60571pt x 305.34549pt.
 )
-[32pdfTeX warning (ext4): destination with the same identifier (name{algocf.2})
+[35pdfTeX warning (ext4): destination with the same identifier (name{algocf.2})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.17 \newpage
-             ] [33pdfTeX warning (ext4): destination with the same identifier (
-name{figure.3.14}) has been already used, duplicate ignored
+             ] [36pdfTeX warning (ext4): destination with the same identifier (
+name{figure.3.17}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.17 \newpage
-              <./fig/fuzzyfunktion.png>] [34pdfTeX warning (ext4): destination 
-with the same identifier (name{figure.3.15}) has been already used, duplicate i
+              <./fig/fuzzyfunktion.png>] [37pdfTeX warning (ext4): destination 
+with the same identifier (name{figure.3.18}) has been already used, duplicate i
 gnored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.17 \newpage
-              <./fig/fuzzy1.png>] [35pdfTeX warning (ext4): destination with th
-e same identifier (name{figure.3.16}) has been already used, duplicate ignored
+              <./fig/fuzzy1.png>] [38pdfTeX warning (ext4): destination with th
+e same identifier (name{figure.3.19}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.17 \newpage
-              <./fig/fuzzy2.png>] [36] (Ergebnisse.tex
+              <./fig/fuzzy2.png>] [39] (Ergebnisse.tex
 chapter 4.
-) [37
+) [40
 
-] [38] (ZusammenfassungAusblick.tex
+] [41] (ZusammenfassungAusblick.tex
 chapter 5.
-) [39
+) [42
 
-] (main.bbl [40
+] (main.bbl [43
 
-] [41]) [42] [43] (Abkurzungen.tex) [44
+] [44]) [45] [46] (Abkurzungen.tex) [47
 
-] [45] (main.lof
+] [48] (main.lof
 Overfull \hbox (51.53062pt too wide) in paragraph at lines 8--8
  [][] [][]\OT1/cmr/m/n/10.95 Normalisierte ho-ri-zon-ta-le und ver-ti-ka-le Pro
 -jek-ti-ons-vor-la-gen f[]ur je-de K[]orperhalterung 
@@ -1390,9 +1434,9 @@ Overfull \hbox (51.53062pt too wide) in paragraph at lines 8--8
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
- [46
+ [49
 
-] (main.lot
+] [50] (main.lot
 Overfull \hbox (17.22777pt too wide) in paragraph at lines 7--7
  [][] [][]\OT1/cmr/m/n/10.95 Qualit[]at der Sil-hou-et-te nach zweit Ver-bes-se
 -run-gen. Je klei-ner das ``MSE"Wert 
@@ -1402,15 +1446,15 @@ Overfull \hbox (17.22777pt too wide) in paragraph at lines 7--7
 \tf@lot=\write7
 \openout7 = `main.lot'.
 
- [47
+ [51
 
-] [48] (main.loa)
+] [52] (main.loa)
 \tf@loa=\write8
 \openout8 = `main.loa'.
 
- [49
+ [53
 
-] [50]
+] [54]
 
 Class scrreprt Warning: \float@listhead detected!
 (scrreprt)              Implementation of \float@listhead became
@@ -1429,15 +1473,15 @@ Class scrreprt Warning: \float@listhead detected!
 \tf@lol=\write9
 \openout9 = `main.lol'.
 
- [51
+ [55
 
-] [52] (Anhang.tex
+] [56] (Anhang.tex
 chapter A.
-) (Danksagung.tex [53
+) (Danksagung.tex [57
 
 ])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 58.
- [54
+ [58
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 58.
@@ -1453,10 +1497,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 58.
  ) 
 Here is how much of TeX's memory you used:
- 13555 strings out of 493634
- 208165 string characters out of 3143745
- 418321 words of memory out of 3000000
- 16473 multiletter control sequences out of 15000+200000
+ 13583 strings out of 493634
+ 208637 string characters out of 3143745
+ 418594 words of memory out of 3000000
+ 16491 multiletter control sequences out of 15000+200000
  11888 words of font info for 44 fonts, out of 3000000 for 9000
  1026 hyphenation exceptions out of 8191
  44i,15n,66p,8832b,1207s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1477,9 +1521,9 @@ MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><D:/Program Files/MiKTeX 2
 blic/amsfonts/cm/cmsy8.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmti10.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
 cmtt10.pfb>
-Output written on main.pdf (65 pages, 9771954 bytes).
+Output written on main.pdf (69 pages, 9926510 bytes).
 PDF statistics:
- 924 PDF objects out of 1000 (max. 8388607)
- 172 named destinations out of 1000 (max. 500000)
- 524 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1026 PDF objects out of 1200 (max. 8388607)
+ 179 named destinations out of 1000 (max. 500000)
+ 539 words of extra memory for PDF output out of 10000 (max. 10000000)
 

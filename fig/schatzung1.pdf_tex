@@ -1,0 +1,155 @@
+%% Creator: Inkscape 0.91_64bit, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'schatzung1.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{1770.80923967bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,1.00591297)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{schatzung1.pdf}}%
+    \put(0.05100629,0.47065266){\color[rgb]{0,0,0}\rotatebox{48.66362635}{\makebox(0,0)[lb]{\smash{1}}}}%
+    \put(0.19587875,0.46698305){\color[rgb]{0,0,0}\rotatebox{48.66362635}{\makebox(0,0)[lb]{\smash{128}}}}%
+    \put(0.04625485,0.47745943){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{0}}}%
+    \put(0.04170003,0.56769956){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{120}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{schatzung1.pdf}}%
+    \put(0.156534,0.72228687){\color[rgb]{0,0,0}\rotatebox{-90}{\makebox(0,0)[lb]{\smash{0}}}}%
+    \put(0.15672183,0.57804826){\color[rgb]{0,0,0}\rotatebox{-90}{\makebox(0,0)[lb]{\smash{128}}}}%
+    \put(0.1625274,0.72687247){\color[rgb]{0,0,0}\rotatebox{-90}{\makebox(0,0)[lb]{\smash{0}}}}%
+    \put(0.26703045,0.72935296){\color[rgb]{0,0,0}\rotatebox{-90}{\makebox(0,0)[lb]{\smash{40}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{schatzung1.pdf}}%
+    \put(0.40253612,0.68269657){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{0}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{schatzung1.pdf}}%
+    \put(0.39822321,0.71089657){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{20}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{schatzung1.pdf}}%
+    \put(0.3982204,0.73904316){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{40}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{schatzung1.pdf}}%
+    \put(0.3982204,0.76724588){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{60}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{schatzung1.pdf}}%
+    \put(0.3982204,0.79544588){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{80}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{schatzung1.pdf}}%
+    \put(0.3939075,0.82364571){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{100}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{schatzung1.pdf}}%
+    \put(0.3939075,0.85179229){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{120}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{schatzung1.pdf}}%
+    \put(0.3939075,0.87999502){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{140}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{schatzung1.pdf}}%
+    \put(0.40934611,0.67504482){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{0}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{schatzung1.pdf}}%
+    \put(0.44808904,0.67504482){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{20}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{schatzung1.pdf}}%
+    \put(0.4890419,0.67504482){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{40}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{schatzung1.pdf}}%
+    \put(0.52994128,0.67504482){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{60}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{schatzung1.pdf}}%
+    \put(0.57089415,0.67504482){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{80}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{schatzung1.pdf}}%
+    \put(0.60963429,0.67504482){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{100}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{schatzung1.pdf}}%
+    \put(0.65058995,0.67504482){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{120}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{schatzung1.pdf}}%
+    \put(0.37525955,0.75665216){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lb]{\smash{Number of Pixel}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=19]{schatzung1.pdf}}%
+    \put(0.44957265,0.88764404){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Normalized Horizontal Projection of Generic Postures\\ Standing}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=20]{schatzung1.pdf}}%
+    \put(0.60665296,0.86124854){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Cawl-Bend}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=21]{schatzung1.pdf}}%
+    \put(0.59975009,0.85359679){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Laying Down}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=22]{schatzung1.pdf}}%
+    \put(0.62303185,0.84594504){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Sitting}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=23]{schatzung1.pdf}}%
+    \put(0.73090228,0.68269657){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{0}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=24]{schatzung1.pdf}}%
+    \put(0.72658938,0.71559799){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{20}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=25]{schatzung1.pdf}}%
+    \put(0.72658938,0.7484431){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{40}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=26]{schatzung1.pdf}}%
+    \put(0.72658938,0.78134435){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{60}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=27]{schatzung1.pdf}}%
+    \put(0.72658938,0.81424576){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{80}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=28]{schatzung1.pdf}}%
+    \put(0.72227364,0.8470936){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{100}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=29]{schatzung1.pdf}}%
+    \put(0.72227364,0.87999502){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{120}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=30]{schatzung1.pdf}}%
+    \put(0.73771225,0.67504482){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{0}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=31]{schatzung1.pdf}}%
+    \put(0.77645521,0.67504482){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{20}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=32]{schatzung1.pdf}}%
+    \put(0.81740804,0.67504482){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{40}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=33]{schatzung1.pdf}}%
+    \put(0.85830745,0.67504482){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{60}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=34]{schatzung1.pdf}}%
+    \put(0.89926032,0.67504482){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{80}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=35]{schatzung1.pdf}}%
+    \put(0.93800043,0.67504482){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{100}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=36]{schatzung1.pdf}}%
+    \put(0.97895611,0.67504482){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{120}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=37]{schatzung1.pdf}}%
+    \put(0.70362571,0.75665216){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lb]{\smash{Number of Pixel}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=38]{schatzung1.pdf}}%
+    \put(0.78246286,0.88764404){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Normalized Vertical Projection of Generic Postures\\ Standing}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=39]{schatzung1.pdf}}%
+    \put(0.93501912,0.86124854){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Cawl-Bend}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=40]{schatzung1.pdf}}%
+    \put(0.92811625,0.85359679){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Laying Down}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=41]{schatzung1.pdf}}%
+    \put(0.95139801,0.84594504){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Sitting}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=42]{schatzung1.pdf}}%
+    \put(0.53852074,0.18341241){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{}}}%
+    \put(0.28481672,0.00462974){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Körperhaltung : Liegen}}}%
+    \put(-0.32905906,1.73242214){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{3.20180366\unitlength}\raggedright \end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=43]{schatzung1.pdf}}%
+    \put(0.1280881,0.79349898){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Skaliert}}}%
+    \put(0.06590426,0.4538794){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Vertikales Histogramm}}}%
+    \put(0.16991776,0.55955483){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Horizontales Histogramm}}}%
+    \put(0.41067487,0.31281276){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Likelihood-Funktion}}}%
+    \put(0.33224882,0.20262265){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Stehen: -3,3109}}}%
+    \put(0.33166649,0.18254295){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Liegen: -3,8708}}}%
+    \put(0.33166649,0.1620069){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Beugen: -3,5144}}}%
+    \put(0.33224882,0.14010175){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Sitzen: -3,5362}}}%
+    \put(0.33224882,0.22452785){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Score}}}%
+  \end{picture}%
+\endgroup%

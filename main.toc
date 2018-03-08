@@ -29,15 +29,15 @@
 \contentsline {subsubsection}{\nonumberline Zweite Verbesserung}{20}{section*.6}
 \contentsline {subsection}{\numberline {3.1.3}Ergebnisse der eigene Hintergrundsubtraktion}{24}{subsection.3.1.3}
 \contentsline {section}{\numberline {3.2}Sch\"atzung der K\"orperhalterung mit Histogrammanalyse}{25}{section.3.2}
-\contentsline {section}{\numberline {3.3}Erkennung au\IeC {\ss }ergew\"ohnlicher Situation}{27}{section.3.3}
-\contentsline {section}{\numberline {3.4}Drehbare 360 Grad Kamera}{32}{section.3.4}
-\contentsline {chapter}{\numberline {4}Ergebnisse und Evaluation}{37}{chapter.4}
-\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{39}{chapter.5}
-\contentsline {chapter}{Literaturverzeichnis}{40}{chapter*.7}
-\contentsline {chapter}{Abk\"urzungsverzeichnis}{44}{chapter*.8}
-\contentsline {chapter}{Abbildungsverzeichnis}{46}{chapter*.9}
-\contentsline {chapter}{Tabellenverzeichnis}{47}{chapter*.10}
-\contentsline {chapter}{Liste der Algorithmen}{49}{section*.11}
-\contentsline {chapter}{Listings}{51}{section*.13}
-\contentsline {chapter}{\numberline {A}Anhang}{53}{appendix.A}
-\contentsline {chapter}{Danksagung}{54}{chapter*.17}
+\contentsline {section}{\numberline {3.3}Erkennung au\IeC {\ss }ergew\"ohnlicher Situation}{33}{section.3.3}
+\contentsline {section}{\numberline {3.4}Drehbare 360 Grad Kamera}{35}{section.3.4}
+\contentsline {chapter}{\numberline {4}Ergebnisse und Evaluation}{40}{chapter.4}
+\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{42}{chapter.5}
+\contentsline {chapter}{Literaturverzeichnis}{43}{chapter*.7}
+\contentsline {chapter}{Abk\"urzungsverzeichnis}{47}{chapter*.8}
+\contentsline {chapter}{Abbildungsverzeichnis}{49}{chapter*.9}
+\contentsline {chapter}{Tabellenverzeichnis}{51}{chapter*.10}
+\contentsline {chapter}{Liste der Algorithmen}{53}{section*.11}
+\contentsline {chapter}{Listings}{55}{section*.13}
+\contentsline {chapter}{\numberline {A}Anhang}{57}{appendix.A}
+\contentsline {chapter}{Danksagung}{58}{chapter*.17}

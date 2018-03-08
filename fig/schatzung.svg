@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="469.12131mm"
-   height="225.35016mm"
-   viewBox="0 0 1662.2409 798.48481"
+   width="468.94357mm"
+   height="330.6264mm"
+   viewBox="0 0 1661.6111 1171.5109"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
@@ -108,11 +108,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="932.26906"
-     inkscape:cy="614.81224"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="1184.104"
+     inkscape:cy="657.08088"
      inkscape:document-units="px"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1920"
      inkscape:window-height="1019"
@@ -131,7 +131,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -139,24 +139,24 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="Layer 2"
-     transform="translate(308.97095,143.65492)"
+     transform="translate(308.97095,517.31085)"
      style="display:inline">
     <rect
        style="display:inline;fill:#f1a94e;fill-opacity:1;stroke:none;stroke-width:1.25960863;stroke-miterlimit:4;stroke-dasharray:3.7788258, 1.2596086;stroke-dashoffset:0;stroke-opacity:1"
        id="rect4167-4-7-3-1"
        width="744.77466"
        height="115.71912"
-       x="-259.21539"
+       x="-253.94189"
        y="158.3989" />
   </g>
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(308.97095,143.65492)"
+     transform="translate(308.97095,517.31085)"
      style="display:inline">
     <rect
-       style="display:inline;fill:#f1a94e;fill-opacity:1;stroke:none;stroke-width:1.25960863;stroke-miterlimit:4;stroke-dasharray:3.7788258, 1.25960860000000000;stroke-dashoffset:0;stroke-opacity:1"
+       style="display:inline;fill:#f1a94e;fill-opacity:1;stroke:none;stroke-width:1.25960863;stroke-miterlimit:4;stroke-dasharray:3.7788258, 1.2596086;stroke-dashoffset:0;stroke-opacity:1"
        id="rect4167-4-7-3"
        width="717.63177"
        height="81.433403"
@@ -167,10 +167,10 @@
        id="rect4167-4-7"
        width="717.63177"
        height="81.433403"
-       x="-221.52551"
+       x="-240.37045"
        y="-181.20114" />
     <rect
-       style="display:inline;fill:#f1a94e;fill-opacity:1;stroke:none;stroke-width:1.25960863;stroke-miterlimit:4;stroke-dasharray:3.7788258, 1.25960860000000000;stroke-dashoffset:0;stroke-opacity:1"
+       style="display:inline;fill:#f1a94e;fill-opacity:1;stroke:none;stroke-width:1.25960863;stroke-miterlimit:4;stroke-dasharray:3.7788258, 1.2596086;stroke-dashoffset:0;stroke-opacity:1"
        id="rect4167-4-7-5"
        width="717.63177"
        height="81.433403"
@@ -181,14 +181,14 @@
        id="rect4167-4"
        width="717.63177"
        height="81.433403"
-       x="-222.53717"
+       x="-240.37045"
        y="-517.31085" />
     <path
        style="display:inline;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.25960863px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
-       d="m 116.53408,-436.94217 0,255.52059"
+       d="m 118.44543,-436.94217 0,255.52059"
        id="path4208"
        inkscape:path-effect="#path-effect4210"
-       inkscape:original-d="m 116.53408,-436.94217 0,255.52059"
+       inkscape:original-d="m 118.44543,-436.94217 0,255.52059"
        inkscape:connector-curvature="0" />
     <path
        style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.57837474px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -207,24 +207,24 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:50.38434219px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="-169.47159"
+       x="-187.30487"
        y="-461.58267"
        id="text4136"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4138"
-         x="-169.47159"
+         x="-187.30487"
          y="-461.58267">Binärbild mit Silhoulette</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:50.38434219px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="-202.44545"
+       x="-221.27985"
        y="-125.93964"
        id="text4140"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4142"
-         x="-202.44545"
+         x="-221.27985"
          y="-125.93964">Subimage von Silhouelette</tspan></text>
     <text
        xml:space="preserve"
@@ -273,44 +273,44 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:50.38434219px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="-99.985519"
+       x="-87.052917"
        y="53.156239"
        id="text4799"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4801"
-         x="-99.985519"
+         x="-87.052917"
          y="53.156239">Skaliert</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="-162.54097"
+       x="-157.26746"
        y="209.46313"
        id="text4173"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4175"
-         x="-162.54097"
+         x="-157.26746"
          y="209.46313"
          style="font-size:45px">Berechnen von vertikale</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="-244.90547"
+       x="-239.63196"
        y="259.38727"
        id="text4177"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4179"
-         x="-244.90547"
+         x="-239.63196"
          y="259.38727"
          style="font-size:45px">und horizontale Histogrmamme</tspan></text>
     <path
        style="display:inline;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.25960863px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend-0)"
-       d="m 112.45762,-99.790949 0,255.520589"
+       d="m 118.44543,-99.790949 0,255.520589"
        id="path4208-8"
        inkscape:path-effect="#path-effect4210-3"
-       inkscape:original-d="m 112.45762,-99.790949 0,255.520589"
+       inkscape:original-d="m 118.44543,-99.790949 0,255.520589"
        inkscape:connector-curvature="0" />
   </g>
 </svg>

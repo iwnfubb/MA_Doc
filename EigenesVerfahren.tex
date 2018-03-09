@@ -285,6 +285,82 @@ Beispielweise kann Position von dem Bett oder Sofa, wo die Testperson oft liegt,
 	\label{fig:fuzzy2}
 \end{figure}
 
+Bis jetzt kann es geschafft werden, die außergewöhnliche Situationen zu erkennen. Die abnormale Situationen nicht nur in einem Frame sondern in einem Sequenz von mehreren Frames beachtet, damit das System bessere Entscheidung für eine abnormale Situation detektieren kann. Wenn es nur in einem Frame beachtet wird, wird das System sofort nach einem Frame alarmiert. Das System kann einen falschen Alarm ausgibt, wenn die Person beispielsweise auf dem Boden liegt, um seine raus-gefallen Münze unter dem Tisch zu erreichen. Um die Beachtung in mehreren Frames zu realisieren, wird ein Modell gebaut, wobei die Begrenzungsbox als eine Person markiert wird, und in einem Zeitraum betrachtet. Die bewegende Person wird als eine Begrenzungsbox in diesem Fall gebaut. Außerdem besteht eine Person noch aus eine maximale Motion als \inlinecode{C++}{movementMaximum} und minimale Motion als \inlinecode{C++}{monvementMinimum}. Die Begrenzungsbox wird anhand einer Motion von Frame by Frame markiert und die maximale Motion garantiert, dass die aktuelle Begrenzungsbox von gleicher Person von letztem Frame gehört. Das bedeutet, wenn eine Begrenzungsbox erneut detektiert, wird sie mit einer andere Begrenzungsbox in letztem Frame von einer Person verglichen. Wenn eine gleiche Person wie in letztem Frame identifiziert werden kann, wird die Begrenzungsbox von der Person aktualisiert. Es ist die gleiche Person von letztem Frame, wenn den folgenden Algorithmus \ref{algo:gleicheperson} erfüllt:\\
 
- 
+\begin{algorithm}[htpb]
+\caption{Bedingung zur Erkennung von gleicher Person}
+\label{algo:gleicheperson}	
+\begin{algorithmic}
+\IF {(Koordinaten neuer Box + \inlinecode{C++}{movementMaximum}) $\geq$  Koordinaten neuer Box $\AND$ (Koordinaten neuer Box - \inlinecode{C++}{movementMaximum}) $\leq$ Koordinaten neuer Box}
+	\STATE Person $\gets$ Neuer Box
+\ELSE 
+	\STATE Erstelle neuer Person
+\ENDIF
+\end{algorithmic}
+\end{algorithm}
+
+Die minimale Motion gewährleistet, dass die Person sich bewegt oder in einer selben Position bleibt und hilft uns bei Erkennung von abnormale Situation. Wenn eine Person in einer außergewöhnliche Position liegt und sich in einer selber Position nicht mehr bewegt, löst das System einen Alarm aus. Zur Berechnen, ob die Person sich in einer selben Position nicht bewegt, wird  \inlinecode{C++}{monvementMinimum} in dem Algorithmus benutzt:\\
+
+\begin{algorithm}[htpb]
+	\caption{Bedingung zur Erkennung von Bewegung einer Person}
+	\label{algo:gleicheposition}	
+	\begin{algorithmic}
+		\IF {$|$Koordinaten neuer Box  - Koordinaten  alter Box$|$ $\geq$ \inlinecode{C++}{monvementMinimum} $\OR$ 
+		$|$Breite neuer Box  - Breite alter Box$|$ $\geq$ \inlinecode{C++}{monvementMinimum} $\OR$
+		$|$Höhe neuer Box  - Höhe alter Box$|$ $\geq$ \inlinecode{C++}{monvementMinimum}
+	}
+		\STATE Person bewegt sich
+		\ELSE 
+		\STATE Person bewegt sich NICHT
+		\ENDIF
+	\end{algorithmic}
+\end{algorithm}
+
+Mit dem oben genannten Modell kann eine Person in einem Zeitraum verfolgt und dann kann das System die Notfälle besser betrachtet werden. Bis jetzt kann wird das System eine abnormale Situation mit folgenden Bedingungen erkennen:\\
+\begin{itemize}
+	\item Durch Hintergrundsubtraktion, Schätzung der Körperhaltung wird eine Person erkannt, wann er steht, liegt, beugt oder sitzt.
+	\item Durch Fuzzylogik kann das System bewerten, ob eine Person in einem normalen oder nicht normalen Ort liegt.
+	\item Durch oben genanntes Modell kann das System detektieren, dass eine Person in einem bestimmten Zeitraum sich bewegt oder nicht.
+\end{itemize}
+
+Nun können eine finale Kombination von oben gemeinte Bedingungen erstellt werden, damit ein komplettes System zur Erkennung von einer außergewöhnlichen Situation kreiert werden kann. Es handelt sich um einen Notfall genau dann, wenn eine Person in einem abnormalen Ort liegt , sich nicht mehr in einem Zeitraum nicht mehr bewegt. Algorithmus \ref{algo:finalAlgo} vervollständigt den Weg zur Erkennung der außergewöhnlicher Situation. Nach dem Laden ein neues Frame wird eine Silhouette durch Hintergrundsubtraktion erstellt. Die erstellte Silhouette wird als Eingabe von der Histogrammanalyse und die Ausgabe ist eine geschätzte Körperhaltung. Danach wird eine Fuzzylogik mit Begrenzungsbox der Silhouette, die geschätzte Körperhaltung  und die aktuelle Zeit als Eingaben erstellt und die Ausgabe davon ist die Wahrscheinlichkeit, dass eine Person unter der Bedingungen von Eingaben in eine normale oder abnormale Situation sich befindet. Durch die Begrenzungsbox von der Silhouette wird es berechnet, ob es sich um eine gleiche Person wie im letzten Frame handelt (Siehe Algorithmus \ref{algo:gleicheperson}). Wenn die gleiche Person detektiert, wird die Begrenzungsbox der Person mit der aktuelleren Begrenzungsbox ersetzt. Außerdem wird die Person überprüft, ob er liegt in einem abnormale Ort liegt und sich nicht bewegt (Siehe Algorithmus \ref{algo:gleicheposition} ). Wenn einer schlechten Fall erkannt, wird einen Zähler von der Person (``badcounter" genannt) sich erhöhen, sonst wird der Zähler zurückgesetzt. Am Ende wird die den Zähler der Person mit eine bestimmte Zeit verglichen. Wenn der Zähler größer als die vordefinierte Zeit ist, wird einer Alarm ausgelöst. 
+
+\begin{algorithm}[htpb]
+\caption{Finaler Algorithmus}
+\label{algo:finalAlgo}	
+\KwData{Aktuelles Frame}
+\KwResult{Erkennung von außergewöhnlicher Situation}
+\begin{algorithmic}
+\STATE $silhouette$ $\gets$ Hintergensubtraktion
+\STATE $koerperhaltung$ $\gets$ Histogrammanalyse ($silhouette$)
+\STATE $zustand$ $\gets$ Fuzzylogik ($begrenzungsbox$ $der$  $silhouette$ ,$ koerperhaltung$ ,$echte$ $zeit$)
+\COMMENT{Zustand hat zwei Werte ``gut"\ und ``schlecht", es sagt wie gut die Situation nach Fuzzymodell bewertet wird}
+
+\IF {Gleiche Person detektiert wird}
+\STATE Aktualisierung der Postion von der detektierter Person
+\STATE $person$ $\gets$ die detektierte Person
+	\IF{$person$ sich nicht bewegt $\AND$ $koerperhaltung$ = LIEGEN $\AND$ $zustand$ = SCHLECHT}
+	\STATE $person.badcounter$ ++
+	\ELSE
+	\STATE $person.badcounter$ $\gets$ 0
+	\ENDIF
+\ELSE
+\STATE Erstelle neue Person
+\STATE $person$ $\gets$ neue erstellte Person
+\ENDIF
+
+\IF{$person.badcounter$ $\geq$ bestimmte Zeit}
+\STATE Löse einen Alarm aus.
+\ENDIF
+
+\end{algorithmic}
+\end{algorithm}
+
+
+
+
+
+
+
 \section{Drehbare 360 Grad Kamera}	
+\section{Person weg}	

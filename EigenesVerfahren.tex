@@ -252,7 +252,7 @@ Zur Anwendung von (IF-ELSE) Regeln (Algorithmus \ref{fuzzy_model} ) sind Minimum
 Bei Defuzzifizierung zur Abbildung der Ausgabe in scharfe Menge wird Schwerpunktmethode angewendet.
 Das definierte Fuzzymodel wird wie in Abbildung  \ref{fig:fuzzyfunktion} dargestellt. Die oben genannte Parameters sind anhand des Raum so wie biologische Uhr von Testperson abhängig. Es gibt viele Methode mit maschinellem Lernen, die die Parameters von Mitgliederfunktion anpassen können. Die vorgeschlagene Lösung mit maschinellem Lernen ist außerhalb Bereich von dieser Arbeit, da die sehr zeitaufwendig ist und die Zeit für diese Arbeit reicht nicht aus. Die Diskussion über dritten Schritt wird  weiter hier vorgesetzt. 
 
-Beispielweise kann Position von dem Bett oder Sofa, wo die Testperson oft liegt, vordefiniert werden. Die Uhrzeit kann  auch nun in diesem Fall betrachtet werden. Wenn die Person im Bett am Nacht liegt,  wird es als ein normaler Fall angesehen. Durch Fuzzylogik wird es berechnet, wie hoch ist die Wahrscheinlichkeit, dass die aktuelle Situation normal ist. Für das Beispiel im Abbildung \ref{fig:Fuzzy_Example} sind Dreieckfunktionen angewendet, um die Definition von Fuzzylogik einfacher zu verstehen. Für die komplexer Anwendungsfälle sind Gaußsche Funktionen benutzt, um die Anwendungsfälle zu realisieren. Es is angenommen, dass die Koordinaten von einem Sofa in Testraum $(591, 441)$ beträgt, die aktuelle Zeit $8$ Uhr morgen ist und die Testperson liegt im Position (574, 424) (wie Abbildung \ref{fig:fuzzyfunktion}). Bei dem ersten Testfall ergibt sich die Unterscheidung für normale Situation $93,29\%$ und für eine außergewöhnliche Situation $26,59\%$ (Abbildung \ref{fig:fuzzy1}). Es ist klar in diesem Fall, weil anhand den Regeln in \ref{algo:fuzzy_modell} die Ausgabe ``good" auskommen soll. In Regeln \ref{algo:fuzzy_modell} gibt es einen gemischten Fall, wo die Person in Sofa am Tag liegt. Dieser Testfall kombiniert zweit Regeln, wobei es gut ist, wenn die Testperson in normale Position liegt und es ist schlecht wenn die Person am Tag liegt. Nach der Rechnen liefert es eine Wert von $71,6\%$ für normale Situation und $49,71\%$ für abnormale Situation (Abbildung \ref{fig:fuzzy2}). 
+Beispielweise kann Position von dem Bett oder Sofa, wo die Testperson oft liegt, vordefiniert werden. Die Uhrzeit kann  auch nun in diesem Fall betrachtet werden. Wenn die Person im Bett am Nacht liegt,  wird es als ein normaler Fall angesehen. Durch Fuzzylogik wird es berechnet, wie hoch ist die Wahrscheinlichkeit, dass die aktuelle Situation normal ist. Für das Beispiel im Abbildung \ref{fig:Fuzzy_Example} sind Dreieckfunktionen angewendet, um die Definition von Fuzzylogik einfacher zu verstehen. Für die komplexer Anwendungsfälle sind Gaußsche Funktionen benutzt, um die Anwendungsfälle zu realisieren. Es is angenommen, dass die Koordinaten von einem Sofa in Testraum $(591, 441)$ beträgt, die aktuelle Zeit $8$ Uhr morgen ist und die Testperson liegt im Position (574, 424) (wie Abbildung \ref{fig:fuzzyfunktion}). Bei dem ersten Testfall ergibt sich die Unterscheidung für normale Situation $93,29\%$ und für eine außergewöhnliche Situation $26,59\%$ (Abbildung \ref{fig:fuzzy1}). Es ist klar in diesem Fall, weil anhand den Regeln in \ref{algo:fuzzy_modell} die Ausgabe ``good" auskommen soll. In Regeln \ref{algo:fuzzy_modell} gibt es einen gemischten Fall, wo die Person in Sofa am Tag liegt. Dieser Testfall kombiniert zweit Regeln, wobei es gut ist, wenn die Testperson in normale Position liegt und es ist schlecht wenn die Person am Tag liegt. Nach der Rechnen liefert es eine Wert von $71,6\%$ für normale Situation und $49,71\%$ für abnormale Situation (Abbildung \ref{fig:fuzzy2}). Einer Situation wird genau dann als schlechten Fall betrachtet, wenn die ``bad" Wert $\geq 0,8$ und $\geq "good"\ Werte$ ist,und umgekehrt.
 
 \begin{algorithm}[htpb]
 	\caption{Regel für Raumtemperatur und Einstellung des Thermostates.	}
@@ -354,13 +354,38 @@ Nun können eine finale Kombination von oben gemeinte Bedingungen erstellt werden
 \ENDIF
 
 \end{algorithmic}
-\end{algorithm}
+\end{algorithm}	
+
+\section{Drehbare 360-Grad-Kamera}
+Ein Merkmal von der Bosch Innenkamera ist die Fähigkeit rund um 360 Grad zu drehen. Mit Hilfe Bewegungsmeldern kann die Kamera nach eine Bewegung im Raum immer verfolgen.  Es bringt einen großen Vorteil für meine Arbeit , da können die außergewöhnlichen Situationen im ganzen Raum betrachtet werden. Die Kamera muss nicht in einem Ecke gestellt werden, damit sie den Raum vollständig Video aufnehmen kann. Die Kamera kann auf eine beliebige Stelle hingestellt, zum Beispiel auf dem Tisch, oder Fensterbank, wo die Kamera mit Drehung alle Fälle beobachten kann. Wenn Kamera sich wegen einer Bewegung dreht, wird die Hintergrund komplett oder fast alles geändert und somit wird die Hintergrundsubtraktion nicht mehr funktioniert. Hier wird zuerst eine Hintergrundbild als ein Panoramabild bei Drehung der Kamera erzeugt aber ein Problem wird damit erstellt. Das Problem ist die Schwierigkeit bei Identifizierung der Position von dem aktuellen Bild auf dem Panoramahintergrundbild. Deshalb wird die Idee an die Seite verschoben und wird eine einfache Lösung an dieser Stelle angewendet. Zuerst wird eine Hintergrunddichte mit Hilfe von OpenCV Framework berechnet. Die Hintergrunddichte repräsentiert ein Proportion von dem Hintergrund aus dem Bild. Ein Schwellwert wird danach angewendet, um eine stärke Änderung bei der Drehung der Kamera zu detektieren. Angenommen ist die Hintergrunddichte von einem Frame \inlinecode{C++}{backgroundDensity}. Mit Hintergrundsubtraktion wird ein Binärbild erstellt, die verbundenen weißen Pixel im Binärbild wird zusammen als eine Region betrachtet. Die kreierten Regionen werden sich verbieten, solang bis keine weiße Pixel mehr vorhanden. Die acht Nachbarpixel werden als verbundenen Elemente betrachtet, das deutet, die Nachbarn von der Pixeln in eine Region werden auch zur Region gehören, wenn die weiß sind. Die zusammengefassten Regionen werden von $1$ nummeriert (Der Hintergrund hat einen Index von $0$) und jeweils mit einer entsprechen Begrenzungsbox markiert. Mit der Funktion \inlinecode{C++}{connectedComponentsWithStats()} in OpenCV wird die verbundenen Regionen zusammengefasst  und deren Fläche nicht nur als Begrenzungsbox sondern genau pixelweise berechnet. Nun kann ein Schwellwert weiter angewendet. Wenn die Hintergrunddichte \inlinecode{C++}{backgroundDensity} kleiner als $0.8$, geht es um eine stärke Änderung der  Hintergrundes. Mehrere Videos sind mit dem Programm getestet und betragt die Dichte des Hintergrundes durchschnittlich immer über $0,9$ bis $0,98$, deshalb ist der Schwellwert $0,8$ genommen. Anschließend wird eine Bedingung  \inlinecode{C++}{backgroundDensity} $\leq 0,8$, dann wird Hintergrundbild mit aktuellem Frame ersetzt. Das bedeutet auch die weiter Hauptschritte wird auch erneut berechnet. Nach dem Testen mit selbst aufgenommene Videos wird ein weiteres Problem entdeckt. Wenn nur die Bedingung {C++}{backgroundDensity} $\leq 0,8$ betrachtet wird, wird ein der letzten Bilder vor dem Stillstand der Kamera als Hintergrund sofort genommen, wenn die genannte Bedingung erfüllt. Es liefert keine gute Ergebnisse zurück. Um das Problem zu vermeiden wird ein Auslöser als {C++}{trigger} benutzt.  Wenn die Bedingung {C++}{backgroundDensity} $\leq 0,8$ erfüllt, wird der Auslöser angeschaltet und ein Zähler wird aktiviert. Nach einer Sekunde oder $30$ Bilder wird der Hintergrund erst ersetzt. Die Methode vermeidet das Problem und liefert Ergebnisse wie erwartet zurück.
+
+\begin{algorithm}[htpb]
+	\caption{Ersetzt Hintergrund}
+	\label{algo:newBG}	
+	\KwData{Binärbild aus Subtraktionsverfahrens}
+	\KwResult{Ersetzung des Hintergrundes }
+	\begin{algorithmic}
+		\STATE $binaerbild$
+		\STATE $region[] \gets connectedComponentsWithStats(binaerbild) $ 
+		\STATE $backgroundDensity \gets region[0] / imageSize $ 
+		\STATE $trigger \gets$ FALSE
+		
+		\IF  {$backgroundDensity \leq 0.8$}
+		\STATE $trigger \gets$ TRUE
+		\STATE $counter \gets 0$
+		\ENDIF
+		
+		\IF  {$trigger$}
+		\STATE $counter$++
+			\IF  {$counter \geq 30$ }
+			\STATE Ersetzung der Hintergrund mit dem aktuellem Bild. 
+			\STATE Erneure Person Modell
+			\ENDIF
+		\ENDIF
+		
+	\end{algorithmic}
+\end{algorithm}	
+ 
+\section{Abwesenheitsalarm}	
 
 
-
-
-
-
-
-\section{Drehbare 360 Grad Kamera}	
-\section{Person weg}	

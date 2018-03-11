@@ -31,14 +31,13 @@
 \contentsline {section}{\numberline {3.2}Sch\"atzung der K\"orperhalterung mit Histogrammanalyse}{25}{section.3.2}
 \contentsline {section}{\numberline {3.3}Erkennung au\IeC {\ss }ergew\"ohnlicher Situation}{33}{section.3.3}
 \contentsline {section}{\numberline {3.4}Drehbare 360-Grad-Kamera}{40}{section.3.4}
-\contentsline {section}{\numberline {3.5}Abwesenheitsalarm}{42}{section.3.5}
-\contentsline {chapter}{\numberline {4}Ergebnisse und Evaluation}{44}{chapter.4}
-\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{46}{chapter.5}
-\contentsline {chapter}{Literaturverzeichnis}{47}{chapter*.7}
-\contentsline {chapter}{Abk\"urzungsverzeichnis}{51}{chapter*.8}
-\contentsline {chapter}{Abbildungsverzeichnis}{53}{chapter*.9}
-\contentsline {chapter}{Tabellenverzeichnis}{55}{chapter*.10}
-\contentsline {chapter}{Liste der Algorithmen}{57}{section*.11}
-\contentsline {chapter}{Listings}{59}{section*.13}
-\contentsline {chapter}{\numberline {A}Anhang}{61}{appendix.A}
-\contentsline {chapter}{Danksagung}{62}{chapter*.17}
+\contentsline {chapter}{\numberline {4}Ergebnisse und Evaluation}{46}{chapter.4}
+\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{49}{chapter.5}
+\contentsline {chapter}{Literaturverzeichnis}{50}{chapter*.7}
+\contentsline {chapter}{Abk\"urzungsverzeichnis}{54}{chapter*.8}
+\contentsline {chapter}{Abbildungsverzeichnis}{56}{chapter*.9}
+\contentsline {chapter}{Tabellenverzeichnis}{58}{chapter*.10}
+\contentsline {chapter}{Liste der Algorithmen}{60}{section*.11}
+\contentsline {chapter}{Listings}{62}{section*.13}
+\contentsline {chapter}{\numberline {A}Anhang}{64}{appendix.A}
+\contentsline {chapter}{Danksagung}{65}{chapter*.17}

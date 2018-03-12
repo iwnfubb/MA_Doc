@@ -3,8 +3,7 @@ Diese Arbeit besteht aus drei große Hauptschritte, nämlich Hintergrundsubtraktio
 
 \begin{figure}[htpb]			
 	\centering
-	\def\svgwidth{0.5\textwidth}
-	\import{./fig/}{allgemein.pdf_tex}
+	\includegraphics[width=0.7\textwidth]{fig/allgemein.pdf}
 	\caption{Drei Hauptschritte zur Erkennung von außergewöhnlichen Situation}
 	\label{fig:allgemein}
 \end{figure}
@@ -13,8 +12,7 @@ Diese Arbeit besteht aus drei große Hauptschritte, nämlich Hintergrundsubtraktio
 \subsection{Vergleichen verschiedener Methoden}
 \begin{figure}[htpb]
 	\centering
-	\def\svgwidth{0.77\textwidth}
-	\import{./fig/}{bgsub.pdf_tex}
+	\includegraphics[width=1\textwidth]{fig/bgsub.pdf}
 	\caption{Erster Hauptschritt}
 	\label{fig:bgsub}
 \end{figure}
@@ -46,7 +44,7 @@ Erosion wird in diesem Fall angewendet, um Rausch nach dem Hintergrundsubtraktio
 
 \begin{figure}[htpb]
 	\centering
-	\includegraphics[width=0.65\textwidth]{fig/eroanddila.png}
+	\includegraphics[width=0.6\textwidth]{fig/eroanddila.pdf}
 	\caption{Ergebnis nach Erosion und Dilatation} 
 	\label{fig:eroanddila}
 \end{figure}
@@ -174,9 +172,8 @@ wobei $x=\{x_i | 1, 2 \dots, N\}$ und $y=\{y_i|1, 2 \dots, N\}$ und sind Positio
 Im Abschnitt \ref{chp:BackgroundSubtraction} wurde eine Silhouette von einer Person durch Hintergrundsubtraktion erstellt und in diesem Abschnitt wird der zweite Schritt von meiner Arbeit beschrieben. Es geht um Schätzung der Körperhaltung mit Hilfe von Histogrammanalyse. Wie es schon im Kapitel \ref{chp:Grundlageb} gemeint, die Schätzung der Körperhaltung in meiner Arbeit basiert auf die Forschung von ~\cite{haritaoglu1998ghost}. Nach der Hintergrundsubtraktion wird ein Binärbild kreiert, das Bild stellt  eine Bewegung in Szene dar. Die Bewegung wird durch eine Begrenzungsbox eingeschränkt ( (Abbildungen \ref{fig:mymethod1} f, \ref{fig:mymethod2} f, \ref{fig:mymethod3}f)). Mit Hilfe von dieser Begrenzungsboxen werden die Silhouette von dem ganzem Bild extrahieren und wird ein Subimage erschaffenen,wo nur die Silhouette enthält.  Nach der Erzeugung von dem Subimage wird das Ergebnis zuerst auf 128 Pixel skaliert. Falls die Breite größer als Höhe des Bildes wird die Breite auf 128 Pixel skaliert und die Höher wird auch skaliert, sodass das Verhältnis zwischen Breite und Höhe nicht geändert wird. Wenn die Höhe größer als Breite des Bildes wird die Höhe analog skaliert. Nach der Skalierung werden die Histogramme von horizontale sowie vertikale Achse gerechnet.  Bei eine kürzere Ach von $x$ und $y$ wird die Histogramm in der Mitte von 128 Pixel lokalisiert und die überflüssige Positionen an der Histogramm werden mit Null erfüllt. Wie schon im Abschnitt \ref{sec:Histogrammanalyse} beschrieben, die berechnete Histogramme werden mit vordefiniert normalisierte Projektionshistogramme (siehe Abbildung \ref{fig:histogramm}) mit der Formel \ref{eq:loglikelyhood} verglichen.  Je kleiner das Ergebnis von der Formel \ref{eq:loglikelyhood} ist, desto höher die Wahrscheinlichkeit, dass die Person die Körperhaltung hat.
 Das Ergebnis von Körperhaltung basiert auf die Ähnlichkeit zwischen den Histogramme mit Hilfe Loglikelihood-Funktion. Um den zweiten Hauptschritt, stellt die Abbildung \ref{fig:schatzung} konkret wie die Schätzung der Körperhaltung dar. Die Abbildungen \ref{fig:schatzung1}, \ref{fig:schatzung1} und \ref{fig:schatzung1} repräsentieren die Schätzung der Körperhaltung in graphische Beispiele, um den zweiten Schritt klarzustellen.
 \begin{figure}[htpb]
-	\centering
-	\def\svgwidth{0.83\textwidth}
-	\import{./fig/}{schatzung.pdf_tex}
+	\centering	
+	\includegraphics[width=0.95\textwidth]{fig/schatzung.pdf}
 	\caption{Zweiter Hauptschritt}
 	\label{fig:schatzung}
 \end{figure}
@@ -224,8 +221,7 @@ In Abschnitt \ref{chp:BackgroundSubtraction} und \ref{chp:schatzung} wird eine S
 
 \begin{figure}[htpb]
 	\centering
-	\def\svgwidth{0.65\textwidth}
-	\import{./fig/}{fuzzylogik.pdf_tex}
+	\includegraphics[width=0.85\textwidth]{fig/fuzzylogik.pdf}
 	\caption{Dritter Hauptschritt}
 	\label{fig:fuzzylogik}
 \end{figure}
@@ -400,5 +396,3 @@ Ein Merkmal von der Bosch Innenkamera ist die Fähigkeit rund um 360 Grad zu dreh
 	\caption{Linke Seite: Falsche Erkennung der Bewegung. Rechte Seite: Richtige Segmentierung} 
 	\label{fig:false2}
 \end{figure}
-
-

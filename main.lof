@@ -10,7 +10,7 @@
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Bosch 360 Grad Kamera (Quelle: www.bosch-smarthome.com) }}{15}{figure.2.5}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Drei Hauptschritte zur Erkennung von au\IeC {\ss }ergew\"ohnlichen Situation}}{17}{figure.3.1}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Erster Hauptschritt}}{18}{figure.3.2}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Erster Meilenstein}}{18}{figure.3.2}
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Vergleichen von verschiedene Techniken an Hintergrundsubtraktion (a) Weichzeichnen (b) AGMM (c)KNN. (d) KDE (e) Vibe}}{19}{figure.3.3}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Erosion}}{20}{figure.3.4}
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Dilatation}}{20}{figure.3.5}
@@ -18,13 +18,13 @@
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Frame-Nummer: 334. Die rot markierte Bereich von Hintergrundbildes wird in n\"achstem Frame aktualisiert.}}{24}{figure.3.7}
 \contentsline {figure}{\numberline {3.8}{\ignorespaces Frame-Nummer: 335. Nach der Aktualisierung des Hintergrundbildes wird die alle rot Begrenzungsboxen gel\"oscht.}}{25}{figure.3.8}
 \contentsline {figure}{\numberline {3.9}{\ignorespaces Frame-Nummer: 403. Soweit die Person sich in der Szene bewegt, werden die vergangenen Boxen (wei\IeC {\ss } und rot) erstellt.}}{26}{figure.3.9}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Zweiter Hauptschritt}}{29}{figure.3.10}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Zweiter Meilenstein}}{29}{figure.3.10}
 \contentsline {figure}{\numberline {3.11}{\ignorespaces Beispiel f\"ur Prozess von Sch\"atzung einer Silhouette bei Stehen}}{30}{figure.3.11}
 \contentsline {figure}{\numberline {3.12}{\ignorespaces Beispiel f\"ur Prozess von Sch\"atzung einer Silhouette bei Liegen}}{31}{figure.3.12}
 \contentsline {figure}{\numberline {3.13}{\ignorespaces Beispiel f\"ur Prozess von Sch\"atzung einer Silhouette bei Beugen}}{32}{figure.3.13}
 \contentsline {figure}{\numberline {3.14}{\ignorespaces \"Uberpr\"ufung der Sch\"atzung der K\"orperhaltung an Testvideo 1}}{33}{figure.3.14}
 \contentsline {figure}{\numberline {3.15}{\ignorespaces \"Uberpr\"ufung der Sch\"atzung der K\"orperhaltung an Testvideo 2}}{34}{figure.3.15}
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Dritter Hauptschritt}}{35}{figure.3.16}
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Dritter Meilenstein}}{35}{figure.3.16}
 \contentsline {figure}{\numberline {3.17}{\ignorespaces Mitgliederfunktionen}}{38}{figure.3.17}
 \contentsline {figure}{\numberline {3.18}{\ignorespaces Testfall: Person liegt im Sofa in Nacht. Ergebnis: 93,29\% normal, 26,59\% abnormal}}{39}{figure.3.18}
 \contentsline {figure}{\numberline {3.19}{\ignorespaces Testfall: Person liegt im Sofa am Tag. Ergebnis: 71,6\% normal, 49,71\% abnormal}}{40}{figure.3.19}

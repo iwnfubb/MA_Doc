@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.9)  13 MAR 2018 04:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.9)  13 MAR 2018 04:46
 entering extended mode
 **./main.tex
 (main.tex
@@ -897,9 +897,9 @@ l.14 \newpage
               <./fig/BoschInnenkamera.jpg>] [16] (EigenesVerfahren.tex
 chapter 3.
 
-Overfull \hbox (10.52876pt too wide) in paragraph at lines 2--3
-\OT1/cmr/m/n/10.95 Sch[]atzung der K[]orperhalterung mit Hi-sto-gram-m-ana-ly-s
-e und Er-ken-nung au-er-gew[]ohnlicher
+Overfull \hbox (20.08203pt too wide) in paragraph at lines 2--3
+\OT1/cmr/m/n/10.95 Diese Ar-beit be-steht aus drei groe Mei-len-stei-ne, n[]am
+lich Hin-ter-grund-sub-trak-ti-on, Sch[]atzung
  []
 
 <fig/allgemein.pdf, id=455, 553.24649pt x 508.67972pt>
@@ -1626,7 +1626,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 58.
 Here is how much of TeX's memory you used:
  13844 strings out of 493634
  211749 string characters out of 3143745
- 420573 words of memory out of 3000000
+ 420570 words of memory out of 3000000
  16675 multiletter control sequences out of 15000+200000
  12509 words of font info for 46 fonts, out of 3000000 for 9000
  1026 hyphenation exceptions out of 8191
@@ -1648,7 +1648,7 @@ MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><D:/Program Files/MiKTeX 2
 blic/amsfonts/cm/cmsy8.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmti10.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
 cmtt10.pfb>
-Output written on main.pdf (81 pages, 13216304 bytes).
+Output written on main.pdf (81 pages, 13216362 bytes).
 PDF statistics:
  1306 PDF objects out of 1440 (max. 8388607)
  252 named destinations out of 1000 (max. 500000)

@@ -8,9 +8,9 @@
 \BOOKMARK [2][-]{subsection.1.4.2}{K\366rperhaltungserkennung basiert auf Histogrammanalyse}{section.1.4}% 8
 \BOOKMARK [0][-]{chapter.2}{Grundlagen}{}% 9
 \BOOKMARK [1][-]{section.2.1}{Hintergrundsubtraktion}{chapter.2}% 10
-\BOOKMARK [2][-]{subsection.2.1.1}{Gau\337schen Mixture Modell}{section.2.1}% 11
-\BOOKMARK [2][-]{subsection.2.1.2}{Adaptive Gau\337schen Mixture Modell}{section.2.1}% 12
-\BOOKMARK [2][-]{subsection.2.1.3}{Kernel Density Estimation}{section.2.1}% 13
+\BOOKMARK [2][-]{subsection.2.1.1}{Adaptive Gau\337schen Mixture Modell}{section.2.1}% 11
+\BOOKMARK [2][-]{subsection.2.1.2}{Kernel Density Estimation}{section.2.1}% 12
+\BOOKMARK [2][-]{subsection.2.1.3}{K-n\344chster Nachbar}{section.2.1}% 13
 \BOOKMARK [2][-]{subsection.2.1.4}{Vibe}{section.2.1}% 14
 \BOOKMARK [1][-]{section.2.2}{Histogrammanalyse}{chapter.2}% 15
 \BOOKMARK [1][-]{section.2.3}{Fuzzylogik}{chapter.2}% 16

@@ -6,6 +6,11 @@
   people counting in crowded environments.
 \newblock In \emph{MVA} (2011), pp.~516--519.
 
+\bibitem[Bis95]{bishop1995neural}
+\textsc{Bishop C.~M.}:
+\newblock \emph{Neural networks for pattern recognition}.
+\newblock Oxford university press, 1995.
+
 \bibitem[BJEL10]{benezeth2010comparative}
 \textsc{Benezeth Y., Jodoin P.-M., Emile B., Laurent Rosenberger C.}:
 \newblock Comparative study of background subtraction algorithms.
@@ -26,6 +31,13 @@
 \textsc{Bay H., Tuytelaars T., Van~Gool L.}:
 \newblock Surf: Speeded up robust features.
 \newblock \emph{Computer vision--ECCV 2006} (2006), 404--417.
+
+\bibitem[Bun15]{generation65}
+\textsc{Bundesamt S.}:
+\newblock die generation 65+ in deutschland.
+\newblock
+  \url{https://www.destatis.de/DE/PresseService/Presse/Pressekonferenzen/2015/generation65/Pressebroschuere_generation65.pdf?__blob=publicationFile},
+  2015.
 
 \bibitem[BVD09]{barnich2009vibe}
 \textsc{Barnich O., Van~Droogenbroeck M.}:

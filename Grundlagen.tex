@@ -1,26 +1,26 @@
 	\chapter{Grundlagen}\label{chp:Grundlageb}
-Im diesen Kapitel werden die theoretischen Grundlagen der Masterarbeit beschrieben, die zum Verständnis der nachfolgenden Kapitel notwendig sind. Zu Beginn wird ein Überblick der Hintergrundsubtraktion gegeben und aufgezeigt, welche Besonderheiten diese Arbeit auszeichnen. An schließend wird die Histogrammanalyse zur Erkennung der Körperhaltung erläutert. Zuletzt befasst der letzte Teil sich mit einem Überblick über das wichtiges Framework OpenCV, das für moderne Computer Vision entwickelt wird. 
+Im diesen Kapitel werden die theoretischen Grundlagen der Masterarbeit beschrieben, die zum Verständnis der nachfolgenden Kapitel notwendig sind. Zu Beginn wird ein Überblick der Hintergrundsubtraktion gegeben und aufgezeigt, welche Besonderheiten diese Arbeit auszeichnen. Anschließend wird die Histogrammanalyse zur Erkennung der Körperhaltung erläutert. Dann befasst der letzte Teil sich mit einem Überblick über das wichtiges Framework OpenCV, das für moderne Computer Vision entwickelt wird. Am Ende befindet sich eine kurze Beschreibung von 360-Grad-Kamera
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Hintergrundsubtraktion}\label{sec:grunglagen_hintergrundsub}
-Die Hintergrundsubtraktion ist eine gebräuchliche und weit verwendete Technik unter Verwendung von statischen Kameras zum Erzeugen eines Binärbildes, das die Pixel enthält, die zu sich bewegenden Objekten in der Szene gehören. Wie der Name andeutet, berechnet Hintergrundsubtraktion die Vordergrundmaske, die eine Subtraktion zwischen dem aktuellen Bild und einem Hintergrundmodell durchführt, wobei der statische Teil der Szene oder allgemeiner alles, was angesichts der Merkmale der beobachtete Szene als Hintergrund betrachtet werden kann, enthalten ist.\\
+Hintergrundsubtraktion ist eine gebräuchliche und weit verwendete Technik unter Verwendung von statischen Kameras zum Erzeugen eines Binärbildes, das die Pixel enthält, die zu sich bewegenden Objekten in der Szene gehören. Wie der Name andeutet, berechnet Hintergrundsubtraktion die Vordergrundmaske, die eine Subtraktion zwischen dem aktuellen Bild und einem Hintergrundmodell durchführt, wobei der statische Teil der Szene oder allgemeiner alles, was angesichts der Merkmale der beobachtete Szene als Hintergrund betrachtet werden kann, enthalten ist.\\
 In der Arbeit \cite{benezeth2010comparative} wird eine vergleichende Studie verschiedener Hintergrundsubtraktionsverfahren nach dem Stand der Technik präsentiert. Dieses Verfahren wurde seit den 1990er umfassend untersucht und hauptsächlich für Videoüberwachungsanwendungen, da sie zuerst Personen, Fahrzeuge, Tiere usw. erkennen müssen, bevor komplexere Prozesse zur Einbruchserkennung, Verfolgung, Personenzählung \cite{aziz2011pedestrian} usw. ausgeführt werden. Viele Algorithmen wurden entworfen, um die Vordergrundobjekte vom Hintergrund einer Sequenz zu segmentieren und teilen im Allgemeinen das gleiche Schema:
 
 \begin{itemize}
-	\item Initialisierung des Hintergrundes: Ein Hintergrundmodell wird zuerst dank einer festen Anzahl von Frames zu bauen. Dieses Modell kann auf verschiedene Arten entworfen werden (statistisch, Fuzzy...)
+	\item Initialisierung des Hintergrundes: Ein Hintergrundmodell wird zuerst dank einer festen Anzahl von Frames aufgebaut. Dieses Modell kann auf verschiedene Arten entworfen werden (statistisch, Fuzzy...)
 	\item Erkennung des Vordergrundes: In den nächsten Frames wird ein Vergleich zwischen dem aktuellen Frame und dem Hintergrundmodell durchgeführt. Diese Subtraktion führt zu Berechnung des Vordergrundes der Szene.
 	\item Aktualisierung des Hintergrundes: Während dieses Erfassungsprozesses werden auch Bilder analysiert, um das im Initialisierungsschritt gelernte Hintergrundmodell in Bezug auf eine Lernrate zu aktualisieren. Ein Objekt, das sich nicht lange bewegt, sollte im Hintergrund integriert sein.
 \end{itemize}
 
 \begin{figure}[htpb]
 	\centering
-	\includegraphics[width=0.90\textwidth]{fig/BS_Example.png}
+	\includegraphics[width=1\textwidth]{fig/BS_Example.pdf}
 	\caption{Ein Beispiel für Hintergrundsubtraktion }
 	\label{fig:BS_Example}
 \end{figure}
-Im nächsten Teil werden verschiedene state-of-art Verfahren beschrieben, um dies Verfahren genauer zu verstehen, wie die Hintergrundsubtraktion funktionieren soll.
-\subsection{Gaußschen Mixture Modell}
-In \cite{kaewtrakulpong2002improved} ist das entwickelte Hintergrundmodell auf der Grundlage der Gauß'schen Mischung präsentiert, das ein meist gebräuchliche Weg ist. Es verwendet eine Methode, um jedes Hintergrundpixel durch eine Mischung von K-Gaußschen Verteilung (normalerweise K = 3 bis 5) zu modellieren. Die Gewichte der Mischung stellen die Zeitanteile dar, die diese Farbe in der Szene verbleiben. Die wahrscheinlichen Hintergrundfarben sind diejenigen, die länger und statischer bleiben \cite{kaewtrakulpong2002improved}.\\
-Jeder Pixel in der Szene wird durch eine Mischung von K-Gaußschen Verteilung modelliert. Die Wahrscheinlichkeit, dass ein bestimmter Pixel zum Zeitpunkt $N$ einen Wert von $\mathrm{x}_{n}$ hat, kann wie folgt geschrieben werden:\\
+Im nächsten Teil werden verschiedene häufige Verfahren beschrieben, um dies Verfahren genauer zu verstehen, wie die Hintergrundsubtraktion funktionieren soll.
+\subsection{Adaptive Gaußschen Mixture Modell}
+In \cite{kaewtrakulpong2002improved} ist das entwickelte Hintergrundmodell auf der Grundlage der Gauß'schen Mischung präsentiert, das ein meist gebräuchliche Weg ist. Es verwendet eine Methode, um jedes Hintergrundpixel durch eine Mischung von K-Gaußschen Verteilung (normalerweise K = 3 oder 5) zu modellieren. Die Gewichte der Mischung stellen die Zeitanteile dar, die diese Farbe in der Szene verbleiben. Die wahrscheinlichen Hintergrundfarben sind diejenigen, die länger und statischer bleiben \cite{kaewtrakulpong2002improved}.\\
+Jeder Pixel in der Szene wird durch eine Mischung von K-Gaußschen Verteilung modelliert. Die Wahrscheinlichkeit, dass ein bestimmter Pixel zum Zeitpunkt $n$ einen Wert von $\mathrm{x}_{n}$ hat, kann wie folgt geschrieben werden:\\
 \begin{equation}
 p(\mathrm{x}_{n}) = \sum \limits_{j=1}^K w_j \eta(\mathrm{x}_{n};\theta_j)
 \end{equation}
@@ -45,8 +45,6 @@ Und das Schwellwert $T$ ist Mindestanteil des Hintergrundmodells, nämlich ist $T
 \end{eqnarray}
 wobei $w_k$ die k-ten Gaußschen Komponente und $\frac{1}{\alpha}$ definiert die Zeitkonstante, die die Änderung bestimmt. Wenn keine der K-Verteilung mit diesem Pixelwert übereinstimmt, wird die unwahrscheinliche Komponente durch eine Verteilung mit dem aktuellen Wert als Mittelwert ersetzt.
 
-\subsection{Adaptive Gaußschen Mixture Modell}
-In \cite{zivkovic2006efficient} wurde eine interessante Erweiterung von \acs{GMM} vorgeschlagen. Normales \acs{GMM} wird mit eine bestimmte Anzahl von Gaußschen Modell, aber \acs{AGMM} wird automatisch die Anzahl der Gaußschen Variablen angepasst, die zur Modellierung eines gegebenen Pixels verwendet werden. Die Erweiterung reduziert die Speicheranforderung des Algorithmus, erhöht die Recheneffizienz und kann die Leistung verbessern, wenn der Hintergrund stark sich ändert.
 \subsection{Kernel Density Estimation}
 Ein Nachteil von \acs{GMM} ist, dieses Modell kann keine empfindliche Detektion erreichen, wenn der Hintergrund sehr hohe Frequenzvariation aufweist. Dieser Nachteil kann mit \acs{KDE} Modell , das in \cite{elgammal2000non} beschrieben wurde, gelöst werden.\\
 Sei $x_1, x_2,..., x_n$ eine aktuelle Stichprobe von Intensitätswerten für einen Pixel. Unter Verwendung dieses Stichprobe kann die Dichtefunktion, dass dieser Pixel einen Intensitätswert $x_t$ zur Zeit $t$ haben wird, unter Verwendung des Kernschätzers $K$ als nicht-parametrisch geschätzt werden \cite{elgammal2000non}.
@@ -67,7 +65,7 @@ Wenn wir unsere Kernschätzfunktion $K$ als Normalfunktion $N (0;\sigma)$ wählen,
 
 dann wird die Dichtefunktion wie folgt geschrieben:
 \begin{equation}
-P(x_t) = \frac{1}{N} \sum \limits_{i=1}^N \prod \limits_{j=1}^d \frac{1}{\sqrt{2\pi\sigma^2_j}} \mathrm{e} ^ {-\frac{1}{2} \frac{({x_t}_j - {x_i}_j)^2}{\sigma^2_j}}
+P(x_t) = \frac{1}{n} \sum \limits_{i=1}^N \prod \limits_{j=1}^d \frac{1}{\sqrt{2\pi\sigma^2_j}} \mathrm{e} ^ {-\frac{1}{2} \frac{({x_t}_j - {x_i}_j)^2}{\sigma^2_j}}
 \end{equation}
 Unter Verwendung dieser Wahrscheinlichkeitsschätzung wird der Pixel als ein Vordergrundpixel betrachtet, wenn $P(x_t)<T$, wobei $T$ ein globaler Schwellenwert über das gesamte Bild ist, der eingestellt werden kann, um einen gewünschten Prozentsatz von Falsch-Positiven zu erreichen.\\
 Angenommen $m$ ist Median von $|x_i - x_{i+1}|$ für jedes Paar $(x_i, x_{i+1})$ in der Stichprobe. Nach \cite{elgammal2000non} wird die Standardabweichung der erste Verteilung wie folgt geschätzt: 
@@ -75,6 +73,9 @@ Angenommen $m$ ist Median von $|x_i - x_{i+1}|$ für jedes Paar $(x_i, x_{i+1})$ 
 \sigma = \frac{m}{0,68 \sqrt{2}}
 \end{equation}
 Bei \acs{KDE} gibt es zwei Alternative für Update des Hintergrundes, nämlich ``Selective Update"\ und ``Blind Update". Die erste Alternative fügt neue Stichprobe in Modell hinzu, genau dann wenn es als Hintergrund klassifiziert ist. Die zweite Alternative fügt einfach neue Stichprobe in Modell hinzu.  Im Allgemein funktioniert \acs{KDE} draußen besser als \acs{GMM} Methode. Für meine Masterarbeit wurden mehre Methode ausprobiert, verglichen und ausgewertet, damit eine bessere Anwendung benutzt werden kann.  
+
+\subsection{K-nächster Nachbar}
+Diese Methode ist ein Verbesserung von \acs{KDE}. Feste Kerngröße in \acs{KDE} wird für jeden neuen Punkt $x_i$ angepasst. Anstatt Optimierung der Größe $D$ erhöht die Anpassung $D$, bis eine feste Menge von Daten $k$ abgedeckt ist. Auf diese Weise befindet sich große Kerne in den Gebieten mit einer kleinen Anzahl von Stichproben und kleineren Kernen in den dicht besiedelten Gebieten. Dennoch steht die Ballonschätzung in Beziehung mit der k-NN-Klassifikation. In ~\cite{zivkovic2006efficient} wird ein $k = [0.1n]$ gewählt, wobei $n$ die Zeit für Anpassung von dem Modell und $[n]$ Aufrunden von eine reale Zahl $n$ auf nächste natürliche Zahl ist.  Ein neuer Pixel $x_i$ passt zum Modell, wenn mehr als $k$ Punkte innerhalb $n$ Kernels vorhanden sind. Auf diesem Grund wird $k$ Nachbar als Schwellwert für diese Verbesserung genutzt und diese Methode wird auch als ``KNN" genannt. 
 
 \subsection{Vibe}
 In \cite{barnich2009vibe} wurde ein Verfahren beschrieben, das ersten Ansatz von zufälliger Aggregation in Hintergrundsubtraktion ist. Das Verfahren ist ``ViBe" genannt. Sei $p_t(x)$ ein Pixelwert $x$ in Zeit $t$. Bei \acs{GMM} oder \acs{KDE} Modell wird ein Pixelwert $p_t(x)$ als Hinter- oder Vordergrund klassifiziert, abhängig davon, wie der Pixel mit Dichtefunktion des Modells passt. In ``ViBe" wird aber eine Menge von Stichprobewerte als Pixelmodell benutzt. Um einen Wert $p_t(x)$ zu klassifizieren, wird der Wert mit seinen nächsten Werten in der Menge der Stichproben, in dem wie eine Kugel $S_R(p_t(x))$ mit Radius $R$ und Punkt $p_t(x)$ definiert wird. Ein Pixel ist genau dann als Background klassifiziert, wenn die Überschneidung $\sharp$ von Kugel $S_R(p_t(x))$ und Menge von Punkte ${p_1,p_2, ..., p_n}$ mehr als Schwellwert $\sharp_min$ ist (siehe Abbildung ~\ref{fig:vibe}).

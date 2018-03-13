@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.9)  13 MAR 2018 02:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.9)  13 MAR 2018 04:36
 entering extended mode
 **./main.tex
 (main.tex
@@ -851,33 +851,30 @@ ready used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.112 \item Z
-             uerst wird ein scharfer Menge von Eingabedaten gesammelt und un...
+l.113 \item Z
+             uerst wird eine scharfe Menge von Eingabedaten gesammelt und un...
  <./fig/histogramm.pdf>]
-Overfull \hbox (3.44162pt too wide) in paragraph at lines 120--127
+Overfull \hbox (3.44162pt too wide) in paragraph at lines 121--128
 []\OT1/cmr/m/n/10.95 Schlielich wird die Fuzzy-Ausgabe un-ter Ver-wen-dung der
  Zu-geh[]origkeitsfunktionen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--127
+Underfull \hbox (badness 10000) in paragraph at lines 121--128
 
  []
 
 <fig/fuzzy.png, id=417, 487.8225pt x 814.54312pt>
 File: fig/fuzzy.png Graphic file (type png)
  <use fig/fuzzy.png>
-Package pdftex.def Info: fig/fuzzy.png used on input line 131.
-(pdftex.def)             Requested size: 334.60571pt x 558.71684pt.
-
-
-LaTeX Warning: Float too large for page by 55.5166pt on input line 134.
-
-[12] <fig/BoschInnenkamera.jpg, id=432, 1027.84pt x 709.65125pt>
+Package pdftex.def Info: fig/fuzzy.png used on input line 132.
+(pdftex.def)             Requested size: 250.95587pt x 419.04073pt.
+ [12]
+<fig/BoschInnenkamera.jpg, id=432, 1027.84pt x 709.65125pt>
 File: fig/BoschInnenkamera.jpg Graphic file (type jpg)
 
 <use fig/BoschInnenkamera.jpg>
-Package pdftex.def Info: fig/BoschInnenkamera.jpg used on input line 151.
+Package pdftex.def Info: fig/BoschInnenkamera.jpg used on input line 152.
 (pdftex.def)             Requested size: 334.60571pt x 231.02374pt.
 ) [13pdfTeX warning (ext4): destination with the same identifier (name{algocf.1
 }) has been already used, duplicate ignored
@@ -1627,10 +1624,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 58.
  ) 
 Here is how much of TeX's memory you used:
- 13848 strings out of 493634
- 211809 string characters out of 3143745
+ 13844 strings out of 493634
+ 211749 string characters out of 3143745
  420573 words of memory out of 3000000
- 16679 multiletter control sequences out of 15000+200000
+ 16675 multiletter control sequences out of 15000+200000
  12509 words of font info for 46 fonts, out of 3000000 for 9000
  1026 hyphenation exceptions out of 8191
  44i,15n,66p,8832b,1606s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1651,7 +1648,7 @@ MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><D:/Program Files/MiKTeX 2
 blic/amsfonts/cm/cmsy8.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmti10.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
 cmtt10.pfb>
-Output written on main.pdf (81 pages, 13216753 bytes).
+Output written on main.pdf (81 pages, 13216304 bytes).
 PDF statistics:
  1306 PDF objects out of 1440 (max. 8388607)
  252 named destinations out of 1000 (max. 500000)

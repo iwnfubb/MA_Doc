@@ -1,7 +1,9 @@
 
 \begin{abstract}
-Bei meiner Masterarbeit geht es um eine Echtzeitanwendung zur Erkennung von außergewöhnlichen Situationen für alte Menschen, die allein lebend sind. Die Eingaben des Programms sind Bilder von einer Bosch 360-Grad-Kamera. Durch ein Verfahren von Hintergrundsubtraktion wird die Bewegung einer Person als eine schwarzweiße Bild erstellt. Nach der Segmentierung des Vordergrundes wird eine Silhouette der Person kreiert. Mit Hilfe von einer Histogramm Analyse auf Silhouette wird eine Körperhaltung der Person geschätzt. Die Körperhaltung kann Stehen, Liegen, Sitzen oder Beugen sein. Anhand Positionen wo die Person oft bewegt und wann sie steht, sitzt oder liegt... können außergewöhnlichen Situationen mithilfe Fuzzylogik erkannt werden. Die Bosch 360-Grad-Kamera hat eine großartige Fähigkeit, in die Richtung der Bewegung zu blicken. Das Feature wird auch in diesem Projekt genutzt, damit die außergewöhnliche Situation im ganzen Raum betrachtet werden kann.\\
-Nach vollständiger Optimierung und vielen Tests betrugt die Verarbeitungszeit für einen Durchgang 100 Millisekunden. Bei Segmentierung der Silhouette gibt das Programm fast genau Silhouette wie die Erwartung zurück. Die Schätzung einer Körperhaltung betrugt auch mehr als $80\%$ der Genauigkeit. Die Anwendung des Projektes liefert zuverlässige Ergebnisse mit alle richtigen Erkennung außergewöhnlicher Situation zurück.  
+In dieser Masterarbeit geht es um eine Echtzeitanwendung, die zur Erkennung von auÃŸergewÃ¶hnlichen Situationen wie z.B.: Das Umfallen einer Ã¤lteren Person.
+Die Anwendung wertet Bildmaterial aus, das mit einer 360Â° Kamera aufgenommen wird. Durch das Hintergrundsubtraktions-Verfahren wird die bewegte Person dann in ein SchwarzweiÃŸbild dargestellt. Die nach der Segmentierung des Vordergrunds erzeugte Silhouette, stellt die bewegte Person dar. Die KÃ¶rperhaltung einer Person wird mithilfe einer Histogrammanalyse aus der Silhouette geschÃ¤tzt. Die erkannten KÃ¶rperhaltungen sind z.B.: Liegend oder Stehend. Anhand von Positionen, wo sich die Person hÃ¤ufig aufhÃ¤lt oder bewegt, kÃ¶nnen dann auÃŸergewÃ¶hnliche Situationen mithilfe der Fuzzylogik erkannt werden. AuÃŸerdem ist die 360Â° Kamera mit einem Bewegungssensor ausgestattet und folgt Objekte, die sich bewegen.\\
+Das Segmentierungs-Verfahren der Silhouette liefert mit sehr geringen Abweichungen, das Ergebnis des \glqq{}Ground True\grqq{}.
+Die Genauigkeit der KÃ¶rperhaltungsschÃ¤tzung betrÃ¤gt $80\%$. Die Echtzeitanwendung liefert somit zuverlÃ¤ssige Ergebnisse aus der Erkennung von auÃŸergewÃ¶hnlichen Situationen.
 \end{abstract}
  
 \newpage\thispagestyle{empty}\hspace{1em}\newpage
@@ -9,7 +11,7 @@ Nach vollständiger Optimierung und vielen Tests betrugt die Verarbeitungszeit fü
 \begin{otherlanguage}{english}
 \begin{abstract}
 ...
-(exakte englische Übersetzung der deutschen Kurzfassung)
+(exakte englische Ãœbersetzung der deutschen Kurzfassung)
 \end{abstract}
 \end{otherlanguage} 
 

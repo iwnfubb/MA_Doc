@@ -1,48 +1,52 @@
 \chapter{Eigenes Verfahren}\label{chp:EigVerfahren}
 Diese Arbeit besteht aus drei große Meilensteine, nämlich Hintergrundsubtraktion, Schätzung der Körperhalterung mit Histogrammanalyse und Erkennung außergewöhnlicher Situation mit Fuzzylogik. Um mein eigenes Verfahren einfacher zu verstehen, stellt Die Abbildung \ref{fig:allgemein} allgemeinen Prozess  der drei Meilensteine dar, die in drei verschiedene Farben angemalt.
 
-\begin{figure}[htpb]			
+\begin{figure}[H]			
 	\centering
 	\includegraphics[width=0.7\textwidth]{fig/allgemein.pdf}
-	\caption{Drei Hauptschritte zur Erkennung von außergewöhnlichen Situation}
+	\caption{Drei Meilensteine zur Erkennung von außergewöhnlichen Situation}
 	\label{fig:allgemein}
 \end{figure}
 
 \section{Hintergrundsubtraktion}\label{chp:BackgroundSubtraction}
 \subsection{Vergleichen verschiedener Methoden}
-\begin{figure}[htpb]
+
+In dieser Masterarbeit ist Hintergrundsubtraktion ein wichtiger Baustein. Die Abbildung \ref{fig:bgsub} zeigt allgemeine Grundfunktion von der Hintergrundsubtraktion. Ein großes Problem ist wie ein korrekter Hintergrund erstellt werden kann, damit es ein sich bewegtes Objekt robust erkannt werden kann. 
+
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{fig/bgsub.pdf}
 	\caption{Erster Meilenstein}
 	\label{fig:bgsub}
 \end{figure}
 
-In dieser Masterarbeit ist Hintergrundsubtraktion ein wichtiger Baustein. Die Abbildung \ref{fig:bgsub} zeigt allgemeine Grundfunktion von der Hintergrundsubtraktion. Ein großes Problem ist wie ein korrekter Hintergrund erstellt werden kann, damit es ein sich bewegtes Objekt robust erkannt werden kann. Für diese Arbeit wurden verschiedenen moderne Methoden in \ref{sec:grunglagen_hintergrundsub} (Gaussian Mixture Model, K-nächste Nachbar, Kern Density Estimation und Vibe) ausprobiert und verglichen. Die alle genannte Methoden wurden schon in ~\ref{sec:grunglagen_hintergrundsub} theoretisch beschrieben. In diesem Abschnitt geht es um Bewertungen von Hintergrundsubtraktionsverfahren. Bei \acs{AGMM} wird eine Mischung von 5-Gaußschen Verteilung modelliert und eine Anzahl von 100 letzte Frames wird als "History"\ angewendet. Mit dem Lernrate $0.01$ funktioniert das \acs{AGMM} Verfahren gut in unserem Test. Für das \acs{KNN} nehmen wir auch die gleichen Parameters, um den Vergleich der Hintergrundsubtraktionsverfahren objektiv zu bewerten. Bei \acs{KDE} handelt es sich um eine Berechnung von Intensitätswerte für einen Pixel, deshalb wird nur ein Parameter von 100 als "History" wie bei \acs{AGMM} in diesem Fall eingesetzt. Wie in \cite{barnich2009vibe} schon gemeint, Vibe ist ein nicht-parametrisches Verfahren und weshalb kein Parameter wird hier gebraucht. 
 
-\begin{figure}[htpb]
+Für diese Arbeit wurden verschiedenen moderne Methoden in \ref{sec:grunglagen_hintergrundsub} (Gaussian Mixture Model, K-nächste Nachbar, Kern Density Estimation und Vibe) ausprobiert und verglichen. Die alle genannte Methoden wurden schon in ~\ref{sec:grunglagen_hintergrundsub} theoretisch beschrieben. In diesem Abschnitt geht es um Bewertungen von Hintergrundsubtraktionsverfahren. Bei \acs{AGMM} wird eine Mischung von 5-Gaußschen Verteilung modelliert und eine Anzahl von 100 letzten Frames wird als "History"\ angewendet. Mit dem Lernrate $0.01$ funktioniert das \acs{AGMM} Verfahren gut in unserem Test. Für das \acs{KNN} Verfahren wird auch die gleichen Parameter genommen, um den Vergleich der Hintergrundsubtraktionsverfahren objektiv zu bewerten. Bei \acs{KDE} handelt es sich um eine Berechnung von Intensitätswerte für einen Pixel, deshalb wird nur ein Parameter von 100 als "History" wie bei \acs{AGMM} in diesem Fall eingesetzt. Wie in \cite{barnich2009vibe} schon gemeint, Vibe ist ein nicht-parametrisches Verfahren und weshalb kein Parameter wird hier gebraucht. 
+
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{fig/motiondetrection.png}
 	\caption{Vergleichen von verschiedene Techniken an Hintergrundsubtraktion (a) Weichzeichnen (b) AGMM (c)KNN. (d) KDE (e) Vibe} 
 	\label{fig:compare_bgsubtraction}
 \end{figure}
 Aus dieser Grafik \ref{fig:compare_bgsubtraction} wird deutlich, dass  \acs{KNN} und  \acs{Vibe} ziemlich besser als die zweit andere. Hier ist kritisch anzumerken, dass  \acs{Vibe} und  \acs{KDE} längere Verarbeitungszeit als den Rest brauchen. Das erste Ziel der Arbeit ist die Untersuchung der Hintergrundsubtraktion, damit eine beste Silhouette erkannt werden kann. Anhand des Schaubildes kann es bemerkt werden, dass  \acs{KNN} ein guter Kandidat für Hintergrundsubtraktion ist. Viele Videos in verschieden Orte mit verschiedene Körperhaltung wurden für diese Arbeit aufgenommen, damit die Qualität der Software gut geprüft wird.  Anhand der Abbildung \ref{fig:compare_bgsubtraction} und Verarbeitungszeit wird deutlich, dass  \acs{KNN} vernünftige Methode für unser Ziel und deswegen wird  \acs{KNN} für diese Arbeit entschieden.\\
-Die oben genannte Hintergrundsubtraktionsverfahren basieren auf die Änderung des Intensitätswerten von jedem Pixel, deshalb liefern die Verfahren ein Schwarzweißbild mit viel Rausch zurück. Um die Rausch zu entfernen, wird Erosion und Dilatation zum Einsatz gebracht, die zwei Verfahren sind zwei grundlegende Operationen bei der morphologischen Bildverarbeitung, auf der alle anderen morphologischen Operationen basieren. Unter Erosion kann man verstehen ein Verfahren, das ein Bild mit einer einfachen, vordefinierten Form untersucht und daraus Schlussfolgerungen zieht, wie diese Form in die Formen im Bild verfehlt. Dilatation ist ein umgekehrtes Verfahren von Erosion, es versucht ein Bild zu erweitern mit passender Form von originalem Bild. Eingaben für die zwei Verfahren sind ein originales Bild $A$ und einen Filter $B$. Wenn das strukturierende Element $B$ ein Zentrum hat, kann die Erosion von A durch B als der Ort von Punkten verstanden werden, die durch das Zentrum von B erreicht werden, wenn B sich in A bewegt. Angenommen, dass der Ursprung $B$ in seiner Mitte ist, überlagert für jedes Pixel in $A$ der Ursprung von $B$, wenn $B$ vollständig in $A$ enthalten ist, wird das Pixel bei Erosion beibehalten, ansonsten gelöscht. Aber bei Dilatation überlagert jeder Pixel in $A$ der Ursprung von $B$ und der Pixel wird in der Erweiterung von $A$ und $B$ enthalten. Um die zwei Operationen besser zu verstehen, wurden zwei Beispiele für Erosion und Dilatation in Abbildungen \ref{fig:erosion} und \ref{fig:dilatation} dargestellt.
-\begin{figure}[htpb]
+Die oben genannten Hintergrundsubtraktionsverfahren basieren auf die Änderung der Intensitätswerten von jedem Pixel, deshalb liefern die Verfahren ein Schwarzweißbild mit viel Rausch zurück. Um die Rausch zu entfernen, wird Erosion und Dilatation zum Einsatz gebracht, die zwei Verfahren sind zwei grundlegende Operationen bei der morphologischen Bildverarbeitung, auf der alle anderen morphologischen Operationen basieren. Unter Erosion kann man verstehen ein Verfahren, das ein Bild mit einer einfachen, vordefinierten Form untersucht und daraus Schlussfolgerungen zieht, wie diese Form in die Formen im Bild verfehlt. Dilatation ist ein umgekehrtes Verfahren von Erosion, es versucht ein Bild zu erweitern mit passender Form von originalem Bild. Eingaben für die zwei Verfahren sind ein originales Bild $A$ und einen Filter $B$. Wenn das strukturierende Element $B$ ein Zentrum hat, kann die Erosion von A durch B als der Ort von Punkten verstanden werden, die durch das Zentrum von B erreicht werden, wenn B sich in A bewegt. Angenommen, dass der Ursprung $B$ in seiner Mitte ist, überlagert für jedes Pixel in $A$ der Ursprung von $B$, wenn $B$ vollständig in $A$ enthalten ist, wird das Pixel bei Erosion beibehalten, ansonsten gelöscht. Aber bei Dilatation überlagert jeder Pixel in $A$ der Ursprung von $B$ und der Pixel wird in der Erweiterung von $A$ und $B$ enthalten. Um die zwei Operationen besser zu verstehen, wurden zwei Beispiele für Erosion und Dilatation in Abbildungen \ref{fig:erosion} und \ref{fig:dilatation} dargestellt.
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{fig/erosion.jpg}
 	\caption{Erosion} 
 	\label{fig:erosion}
 \end{figure}
-\begin{figure}[htpb]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{fig/dilatation.jpg}
 	\caption{Dilatation} 
 	\label{fig:dilatation}
 \end{figure}
 
-Erosion wird in diesem Fall angewendet, um Rausch nach dem Hintergrundsubtraktion zu entfernen. Es folgt auch eine kleine Änderung an der Silhouette. Um die genannte Änderung zu vermeiden wird Dilatation hier genutzt. Die Abbildung \ref{fig:eroanddila} zeigt, dass nach Erosion unerwartete Rausch außer Silhouette entfernt ist und auch die Silhouette leicht geschädigt ist. Aber nach der Dilatation wird die Silhouette besser vervollständigt. 
+Erosion wird in diesem Fall angewendet, um Rausch nach der Hintergrundsubtraktion zu entfernen. Es folgt auch eine kleine Änderung an der Silhouette. Um die genannte Änderung zu vermeiden wird Dilatation hier genutzt. Die Abbildung \ref{fig:eroanddila} zeigt, dass nach Erosion unerwartete Rausch außer Silhouette entfernt ist und auch die Silhouette leicht geschädigt ist. Aber nach der Dilatation wird die Silhouette besser vervollständigt. 
 
-\begin{figure}[htpb]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\textwidth]{fig/eroanddila.pdf}
 	\caption{Ergebnis nach Erosion und Dilatation} 
@@ -52,38 +56,45 @@ Erosion wird in diesem Fall angewendet, um Rausch nach dem Hintergrundsubtraktio
 \subsection{Verbesserungen für Hintergrundsubtraktion}
 Im Allgemein wird jeder Pixel von aktuellem Bild erst berechnet, ob er zu Hintergrund oder Vordergrund gehört und dann wird den Pixel wieder nach jedem Frame in Hintergrundmodell hinzugefügt. Das bedeutet, wenn ein Mensch sich bewegt von $A$ nach $B$ und auf $B$ so lang zum Stillstand kommt, wird der Mensch wieder in Hintergrund zugeordnet. Und das Problem muss unbedingt gelöst werden, weil die Arbeit um Erkennung einer außergewöhnlichen Situation geht, indem ein Unfall passieren kann und Person kann wahrscheinlich auf dem Boden lang liegen. 
 \subsubsection{Erste Verbesserung}
-Das oben genannte Problem liegt an der Aktualisierung des Hintergrundmodells, deshalb wird eine Methode in diese Stelle erstellt, um das Problem zu vermeiden (Abbildungen \ref{fig:mymethod1}, \ref{fig:mymethod2}, \ref{fig:mymethod3}). Bei Aktualisierung eines Hintergrundbildes soll nur die Pixel, die nicht zu Vordergrund zugeordnet sind, betrachtet werden. Das erste Frame wird als eine Hintergrundbild in Schwarzweiß abgelagert. Der Unterschied zwischen aktuellem schwarzweißem Bild und dem abgelagerten Hintergrundbild wird pixelweise mit absoluter Subtraktion gerechnet.  Anschließen wird ein Bild erstellt, das Unterschied zwischen aktuellem Bild und Hintergrundbild  mit Werte von 0 bis 255 darstellt  (Abbildungen \ref{fig:mymethod1} c, \ref{fig:mymethod2} c, \ref{fig:mymethod3}c). Je geringer der Wert von einem Pixel im Bild ist, ,desto höher die Wahrscheinlichkeit, dass das Pixel zu Hintergrund gehört. Und umgekehrt je höher der Wert von einem Pixel im Bild ist, desto höher die Wahrscheinlichkeit, dass das Pixel zu Hintergrund gehört. Nach der Berechnung des Unterschiedsbild wird eine Schwellwert von $50$ angewendet um ein Binärbild zu erzeugen. Wenn ein Pixel ein Wert unter $50$ hat, wird das Pixel in Schwarz markiert und höher als $50$ dann wird das Pixel in Weiß markiert (Abbildungen \ref{fig:mymethod1} d, \ref{fig:mymethod2} d, \ref{fig:mymethod3}d) .  Bis jetzt ist ein Binärbild kreiert, das ein sich bewegende Objekt enthält.  Erosion und Dilatation sind hier noch mal angewendet um Qualität des Binärbildes zu verbessern  (Abbildungen \ref{fig:mymethod1} e, \ref{fig:mymethod2} e, \ref{fig:mymethod3}e). Wie in \ref{sec:grunglagen_hintergrundsub} schon gemeint, Hintergrundsubtraktion besteht aus drei Hauptschritte: Initialisierung des Hintergrundes, Erkennung des Vordergrundes und Aktualisierung des Hintergrundes. Bis jetzt sind zwei erste Schritte schon geschafft und es fehlt nur noch den letzte Schritte.  Ein Begrenzungsbox (eng. Bounding box) soll in dieser Stelle erstellt, um sich bewegendes Objekt zu begrenzen und auch für die Erkennung der Körperhalterung in nächstem Abschnitt zu unterstützen. Zuerst wird Gruppen von Pixel, die kontinuierlich neben einander sind, markiert. OpenCV bietet eine Funktion an, die  \inlinecode{C++}{cv2.findContours()} heißt. Die Funktion \inlinecode{C++}{findContours} nimmt ein Binärbild als Eingabe und gibt Konturen von verbundenen Pixel als Ausgabe. Mit Hilfe von der Funktion  \inlinecode{C++}{cv.contourArea()} kann es einfach die  Begrenzungsboxen herausgefunden werden (Abbildungen \ref{fig:mymethod1} f, \ref{fig:mymethod2} f, \ref{fig:mymethod3}f). Nun ergibt es sich eine Begrenzungsbox, die sich bewegenden Objekte begrenzt. Nach Bewegung einer Person wird eine Liste von Begrenzungsbox kreiert, die alle vergangene Positionen der Bewegung enthält und eine  Begrenzungsbox, die aktuelle Bewegung darstellt. Bei Aktualisierung des Hintergrundes wird das Hintergrundbild nur mit Teil(e) des aktuellem Bildes mit vergangen Begrenzungsboxen ersetzt, die nicht die aktuelle Bewegung überschnitt . Auf den Abbildungen   \ref{fig:mymethod1} h, \ref{fig:mymethod2} h, \ref{fig:mymethod3}h werden die Teil(e) des Bildes, die mit rot markiert sind, in Hintergrundbild kopiert. Die weiß markierte Bereiche auf Abbildungen \ref{fig:mymethod1} g, \ref{fig:mymethod2} g, \ref{fig:mymethod3}g werden noch nicht beobachtet soweit wenn die noch mit dem aktuelles Begrenzungsbox (grün markiert Box) überschneiden.
-\begin{figure}[htpb]
+Das oben genannte Problem liegt an der Aktualisierung des Hintergrundmodells, deshalb wird eine Methode in diese Stelle erstellt, um das Problem zu vermeiden (Abbildungen \ref{fig:mymethod1}, \ref{fig:mymethod2}, \ref{fig:mymethod3}). Bei Aktualisierung eines Hintergrundbildes soll nur die Pixel, die nicht zu Vordergrund zugeordnet sind, betrachtet werden. Das erste Frame wird als eine Hintergrundbild in Schwarzweiß abgelagert. Der Unterschied zwischen aktuellem schwarzweißem Bild und dem abgelagerten Hintergrundbild wird pixelweise mit absoluter Subtraktion gerechnet. Anschließend ergibt es sich ein Bild, das Unterschied zwischen aktuellem Bild und Hintergrundbild  mit Werte von 0 bis 255 darstellt  (Abbildungen \ref{fig:mymethod1} c, \ref{fig:mymethod2} c, \ref{fig:mymethod3}c). Je geringer der Wert von einem Pixel im Bild ist, ,desto höher die Wahrscheinlichkeit, dass der Pixel zu Hintergrund gehört. Und umgekehrt je höher der Wert von einem Pixel im Bild ist, desto höher die Wahrscheinlichkeit, dass das Pixel zu Hintergrund gehört. Nach der Berechnung des Unterschiedsbild wird eine Schwellwert von $50$ angewendet um ein Binärbild zu erzeugen. Wenn ein Pixel ein Wert unter $50$ hat, wird das Pixel in Schwarz markiert und höher als $50$ dann wird das Pixel in Weiß markiert (Abbildungen \ref{fig:mymethod1} d, \ref{fig:mymethod2} d, \ref{fig:mymethod3}d) .
+\\
+Bis jetzt ist ein Binärbild kreiert, das ein sich bewegende Objekt enthält.  Erosion und Dilatation sind hier noch mal angewendet um Qualität des Binärbildes zu verbessern  (Abbildungen \ref{fig:mymethod1} e, \ref{fig:mymethod2} e, \ref{fig:mymethod3}e). Wie in \ref{sec:grunglagen_hintergrundsub} schon gemeint, Hintergrundsubtraktion besteht aus drei Hauptschritte: Initialisierung des Hintergrundes, Erkennung des Vordergrundes und Aktualisierung des Hintergrundes. 
+\\
+Nun sind zwei erste Schritte schon geschafft und es fehlt nur noch den letzte Schritte.  Ein Begrenzungsbox (eng. Bounding box) soll in dieser Stelle erstellt, um sich bewegendes Objekt zu begrenzen und auch für die Erkennung der Körperhalterung in nächstem Abschnitt zu unterstützen. Zuerst wird Gruppen von Pixel, die kontinuierlich neben einander sind, markiert. \\
+OpenCV bietet eine Funktion an, die  \inlinecode{C++}{cv2.findContours()} heißt. Die Funktion \inlinecode{C++}{findContours} nimmt ein Binärbild als Eingabe und gibt Konturen von verbundenen Pixel als Ausgabe. Mit Hilfe von der Funktion  \inlinecode{C++}{cv.contourArea()} kann es einfach die  Begrenzungsboxen herausgefunden werden (Abbildungen \ref{fig:mymethod1} f, \ref{fig:mymethod2} f, \ref{fig:mymethod3}f). 
+\\
+Nun ergibt es sich eine Begrenzungsbox, die sich bewegenden Objekte begrenzt. Nach Bewegung einer Person wird eine Liste von Begrenzungsbox kreiert, die alle vergangene Positionen der Bewegung enthält und eine  Begrenzungsbox, die aktuelle Bewegung darstellt. Bei Aktualisierung des Hintergrundes wird das Hintergrundbild nur mit Teil(e) des aktuellem Bildes mit vergangen Begrenzungsboxen ersetzt, die nicht die aktuelle Bewegung überschnitt . Auf den Abbildungen   \ref{fig:mymethod1} h, \ref{fig:mymethod2} h, \ref{fig:mymethod3}h werden die Teil(e) des Bildes, die mit rot markiert sind, in Hintergrundbild kopiert. Die weiß markierte Bereiche auf Abbildungen \ref{fig:mymethod1} g, \ref{fig:mymethod2} g, \ref{fig:mymethod3}g werden noch nicht beobachtet soweit wenn die noch mit dem aktuelles Begrenzungsbox (grün markiert Box) überschneiden.
+\begin{figure}[H]
 	\centering
-	\def\svgwidth{1\textwidth}
+	\def\svgwidth{0.9\textwidth}
 	\import{./fig/}{mymethode4edited.pdf_tex}
-	\caption{Frame-Nummer: 334. Die rot markierte Bereich von Hintergrundbildes wird in nächstem Frame aktualisiert.}
+	\caption{Frame-Nummer: 334. Der rot markierte Bereich von Hintergrundbild wird in nächstem Frame aktualisiert.}
 	\label{fig:mymethod1}
 \end{figure}
-\begin{figure}[htpb]
+\begin{figure}[H]
 	\centering
-	\def\svgwidth{1\textwidth}
+	\def\svgwidth{0.9\textwidth}
 	\import{./fig/}{mymethode3edited.pdf_tex}
 	\caption{Frame-Nummer: 335. Nach der Aktualisierung des Hintergrundbildes wird die alle rot Begrenzungsboxen gelöscht.}
 	\label{fig:mymethod2}
 \end{figure}
-\begin{figure}[htpb]			
+\begin{figure}[H]			
 	\centering
-	\def\svgwidth{1\textwidth}
+	\def\svgwidth{0.9\textwidth}
 	\import{./fig/}{mymethode2edited.pdf_tex}
 	\caption{Frame-Nummer: 403. Soweit die Person sich in der Szene bewegt, werden die vergangenen Boxen (weiß und rot) erstellt.}
 	\label{fig:mymethod3}
 \end{figure}
 
 \subsubsection{Zweite Verbesserung}
-Die obengenannte Methode haben zeit Vorteile. Der erste Vorteil ist Ermöglichen, das Problem zu lösen, wenn eine Person so lang nicht genug nach Bewegungen zum Still kommt und die Person wird als Hintergrund betrachtet. Der zweite Vorteil ist Verarbeitungszeit, da bei andere Methode in \ref{sec:grunglagen_hintergrundsub} wird es ein Liste von Hintergrundbilder gebraucht, um ein Hintergrundmodell zu bauen. Aber mit der obengenannte Verbesserung sind nur Hintergrundbild und aktuelles Bild nötig.\\
+Die obengenannte Methode haben zwei Vorteile. Der erste Vorteil ist Ermöglichen, das Problem zu lösen, wenn eine Person so lang nicht genug nach Bewegungen zum Still kommt und die Person wird als Hintergrund betrachtet. Der zweite Vorteil ist Verarbeitungszeit, da bei anderer Methode in \ref{sec:grunglagen_hintergrundsub} wird es ein Liste von Hintergrundbildern gebraucht, um ein Hintergrundmodell zu bauen. Aber mit der obengenannten Verbesserung sind nur Hintergrundbild und aktuelles Bild nötig.\\
 Zwar funktioniert die Methode schon gut, aber es kann hier noch die Qualität von Silhouette verbessert werden. Man kann hier einfach bemerken, dass Silhouette von der gemeinte Methode zum Vergleich mit \acs{KNN} Verfahren noch schlecht ist. Die zweite Verbesserung ist eine Kombination von \acs{KNN} und die obengenannt Methode. Die finale Verbesserung basiert auf die Hintergrundsubtraktion von \acs{KNN} und die Aktualisierung des Hintergrundes von meine eigene Methode. Das heißt, wenn eine Person sich bewegt in Szene bewegt, wird die Person mit einer Box markiert. Das Teil von Hintergrund, wo die Box stattfindet, wird nicht bei Aktualisierung von Hintergrund betrachtet. Der Unterschied bei Aktualisierung des Hintergrundbildes zwischen meine eigene Methode und  die Verbesserung durch \acs{KNN} ist:    
 \begin{itemize}
 	\item Eigene Methode: Durch eine Bewegung wird das Hintergrundbild nur an die vergangenen Begrenzungsboxen (weißen Boxen), die nicht mit aktueller Bewegung überschneidet, aktualisiert.
 	\item Verbesserung mit \acs{KNN}: Durch eine Bewegung wird das ganze Hintergrundbild außer dem Bereich, wo aktuelle Bewegung stattfindet, aktualisiert.
 \end{itemize}
-Diese finale Verbesserung verbessert die Qualität von Silhouette und deswegen erhöht auch die Genauigkeit der Schätzung der Körperhaltung, die in nächstem Abschnitt besprochen wird.  Allerdings, die Kombination von \acs{KNN} und meine eigene Methode hat einen Nachteil, dass die Laufzeit länger als erster Versuch mit eigene Methode. Die Laufzeit betragt vorher durchschnitt 45 Millisekunden für ein Bild und nachher gegen 100 Millisekunden, aber es ist noch akzeptierbar für eine Echtzeitanwendung.
-
+Diese finale Verbesserung verbessert die Qualität von Silhouette und deswegen erhöht auch die Genauigkeit der Schätzung der Körperhaltung, die in nächstem Abschnitt besprochen wird.  Allerdings, die Kombination von \acs{KNN} und meine eigene Methode hat einen Nachteil, dass die Laufzeit länger als erster Versuch mit eigene Methode. Die Laufzeit betragt vorher durchschnittlich 45 Millisekunden für ein Bild und nachher gegen 100 Millisekunden, aber es ist noch akzeptierbar für eine Echtzeitanwendung.
+\newpage
 \subsection{Ergebnisse der eigene Hintergrundsubtraktion}
 Um Qualität von erstellte  Silhouette zu bewerten, wurde ``Mean Squared Error"\ und ``Structural Similarity Measure" zum Einsatz gebracht. Ein ``Groundtrue"-Bild wird manuell erstellt und mit den Silhouetten von zwei Verbesserungen verglichen.  Die Formel von ``Mean Squared Error"\ wird wie folgt beschrieben:\\
 
@@ -94,9 +105,9 @@ wobei $m$ und $n$ sind die Breite und Höhe des Bildes sind und $MSE$ wird als du
 \begin{equation}
 SSIM (x, y) = \frac{(2\mu_x \mu_y + c_1)(2\sigma_{xy} + c_2)}{(\mu_x^2 + \mu_y^2 + x_1) ({\sigma_x}^2 + {\sigma_y}^2 + c_2)}
 \end{equation}
-wobei $x=\{x_i | 1, 2 \dots, N\}$ und $y=\{y_i|1, 2 \dots, N\}$ und sind Positionen des NxN Fensters in jedem Bild. $\mu_x$ und $\mu_y$ sind  die Mittelwerte der Pixelintensität in der x und y Richtung.  $\sigma_x$ und $\sigma_y$ sind Varianzen,  $\sigma_{xy}$ ist Kovarianz von $x$ und $y$. $C_1$ und $C_2$ sind zwei Konstante.  SSIM ist zwischen 0 und 1 beschränkt und je höher das Wert von SSIM, desto ähnlicher sind die zwei Bilder. Tabelle \ref{tbl:comparesihoulette} zeigt uns den Unterschied zwischen den zeit Verbesserungen. Es ist deutlich, dass die zweite Verbesserung bessere Ergebnisse liefern kann,weil ``MSE" Werte kleiner sind und das ``SSIM" Werte größer sind.
+wobei $x=\{x_i | 1, 2 \dots, N\}$ und $y=\{y_i|1, 2 \dots, N\}$ und sind Positionen des NxN Fensters in jedem Bild. $\mu_x$ und $\mu_y$ sind  die Mittelwerte der Pixelintensität in der x und y Richtung.  $\sigma_x$ und $\sigma_y$ sind Varianzen,  $\sigma_{xy}$ ist Kovarianz von $x$ und $y$. $C_1$ und $C_2$ sind zwei Konstante.  SSIM ist zwischen 0 und 1 beschränkt und je höher das Wert von SSIM, desto ähnlicher sind die zwei Bilder. Tabelle \ref{tbl:comparesihoulette} zeigt uns den Unterschied zwischen den zeit Verbesserungen. Es ist deutlich, dass die zweite Verbesserung bessere Ergebnisse liefern kann, weil ``MSE" Werte kleiner sind und das ``SSIM" Werte größer sind.
 
-\begin{table}[h!]
+\begin{table}[H]
 	\begin{center}
 		\begin{tabular}{ c  c  c  c  }
 			\toprule
@@ -163,36 +174,36 @@ wobei $x=\{x_i | 1, 2 \dots, N\}$ und $y=\{y_i|1, 2 \dots, N\}$ und sind Positio
 			& & MSE:182,61 SSIM: 0,99 & MSE: 54,42 SSIM: 1.0\\
 			\bottomrule
 		\end{tabular}
-		\caption{Qualität der Silhouette nach zweit Verbesserungen. Je kleiner das ``MSE" Wert desto besser ist das Ergebnis. Je größer das ``SSIM" Wert desto besser ist das Ergebnis.}
+		\caption{Qualität der Silhouette nach zweiten Verbesserungen. Je kleiner das ``MSE" Wert desto besser ist das Ergebnis. Je größer das ``SSIM" Wert desto besser ist das Ergebnis.}
 		\label{tbl:comparesihoulette}
 	\end{center}
 \end{table}
 
 \section{Schätzung der Körperhalterung mit Histogrammanalyse}\label{chp:schatzung}
-Im Abschnitt \ref{chp:BackgroundSubtraction} wurde eine Silhouette von einer Person durch Hintergrundsubtraktion erstellt und in diesem Abschnitt wird der zweite Meilenstein von meiner Arbeit beschrieben. Es geht um Schätzung der Körperhaltung mit Hilfe von Histogrammanalyse. Wie es schon im Kapitel \ref{chp:Grundlageb} gemeint, die Schätzung der Körperhaltung in meiner Arbeit basiert auf die Forschung von ~\cite{haritaoglu1998ghost}. Nach der Hintergrundsubtraktion wird ein Binärbild kreiert, das Bild stellt  eine Bewegung in Szene dar. Die Bewegung wird durch eine Begrenzungsbox eingeschränkt ( (Abbildungen \ref{fig:mymethod1} f, \ref{fig:mymethod2} f, \ref{fig:mymethod3}f)). Mit Hilfe von dieser Begrenzungsboxen werden die Silhouette von dem ganzem Bild extrahieren und wird ein Subimage erschaffenen,wo nur die Silhouette enthält.  Nach der Erzeugung von dem Subimage wird das Ergebnis zuerst auf 128 Pixel skaliert. Falls die Breite größer als Höhe des Bildes wird die Breite auf 128 Pixel skaliert und die Höher wird auch skaliert, sodass das Verhältnis zwischen Breite und Höhe nicht geändert wird. Wenn die Höhe größer als Breite des Bildes wird die Höhe analog skaliert. Nach der Skalierung werden die Histogramme von horizontale sowie vertikale Achse gerechnet.  Bei eine kürzere Ach von $x$ und $y$ wird die Histogramm in der Mitte von 128 Pixel lokalisiert und die überflüssige Positionen an der Histogramm werden mit Null erfüllt. Wie schon im Abschnitt \ref{sec:Histogrammanalyse} beschrieben, die berechnete Histogramme werden mit vordefiniert normalisierte Projektionshistogramme (siehe Abbildung \ref{fig:histogramm}) mit der Formel \ref{eq:loglikelyhood} verglichen.  Je kleiner das Ergebnis von der Formel \ref{eq:loglikelyhood} ist, desto höher die Wahrscheinlichkeit, dass die Person die Körperhaltung hat.
+Im Abschnitt \ref{chp:BackgroundSubtraction} wurde eine Silhouette von einer Person durch Hintergrundsubtraktion erstellt und in diesem Abschnitt wird der zweite Meilenstein von meiner Arbeit beschrieben. Es geht um Schätzung der Körperhaltung mit Hilfe von Histogrammanalyse. Wie es schon im Kapitel \ref{chp:Grundlageb} gemeint, die Schätzung der Körperhaltung in meiner Arbeit basiert auf die Forschung von ~\cite{haritaoglu1998ghost}. Nach der Hintergrundsubtraktion wird ein Binärbild kreiert, das Bild stellt  eine Bewegung in Szene dar. Die Bewegung wird durch eine Begrenzungsbox eingeschränkt ( (Abbildungen \ref{fig:mymethod1} f, \ref{fig:mymethod2} f, \ref{fig:mymethod3}f)). Mit Hilfe von dieser Begrenzungsboxen werden die Silhouette von dem ganzem Bild extrahieren und wird ein Subimage erschaffenen, wo nur die Silhouette enthält.  Nach der Erzeugung von dem Subimage wird das Ergebnis zuerst auf 128 Pixel skaliert. Falls die Breite größer als Höhe des Bildes wird die Breite auf 128 Pixel skaliert und die Höher wird auch skaliert, sodass das Verhältnis zwischen Breite und Höhe nicht geändert wird. Wenn die Höhe größer als Breite des Bildes wird die Höhe analog skaliert. Nach der Skalierung werden die Histogramme von horizontale sowie vertikale Achse gerechnet.  Bei eine kürzere Ach von $x$ und $y$ wird die Histogramm in der Mitte von 128 Pixel lokalisiert und die überflüssige Positionen an der Histogramm werden mit Null erfüllt. Wie schon im Abschnitt \ref{sec:Histogrammanalyse} beschrieben, die berechnete Histogramme werden mit vordefiniert normalisierte Projektionshistogramme (siehe Abbildung \ref{fig:histogramm}) mit der Formel \ref{eq:loglikelyhood} verglichen.  Je kleiner das Ergebnis von der Formel \ref{eq:loglikelyhood} ist, desto höher die Wahrscheinlichkeit, dass die Person die Körperhaltung hat.
 Das Ergebnis von Körperhaltung basiert auf die Ähnlichkeit zwischen den Histogramme mit Hilfe Loglikelihood-Funktion. Um den zweiten Hauptschritt, stellt die Abbildung \ref{fig:schatzung} konkret wie die Schätzung der Körperhaltung dar. Die Abbildungen \ref{fig:schatzung1}, \ref{fig:schatzung1} und \ref{fig:schatzung1} repräsentieren die Schätzung der Körperhaltung in graphische Beispiele, um den zweiten Schritt klarzustellen.
-\begin{figure}[htpb]
+\begin{figure}[H]
 	\centering	
 	\includegraphics[width=0.95\textwidth]{fig/schatzung.pdf}
 	\caption{Zweiter Meilenstein}
 	\label{fig:schatzung}
 \end{figure}
 
-\begin{figure}[htpb]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{fig/schatzung1.pdf}
 	\caption{Beispiel für Prozess von Schätzung einer Silhouette bei Stehen}
 	\label{fig:schatzung1}
 \end{figure}
 
-\begin{figure}[htpb]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{fig/schatzung2.pdf}
 	\caption{Beispiel für Prozess von Schätzung einer Silhouette bei Liegen}
 	\label{fig:schatzung2}
 \end{figure}
 
-\begin{figure}[htpb]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{fig/schatzung3.pdf}
 	\caption{Beispiel für Prozess von Schätzung einer Silhouette bei Beugen}
@@ -200,16 +211,16 @@ Das Ergebnis von Körperhaltung basiert auf die Ähnlichkeit zwischen den Histogra
 \end{figure}
 
 
-Jede Körperhaltung hat einen eindeutigen Graph zum Vergleich mit anderen Körperhaltungen, deswegen ist das Ergebnis von der zweite Hauptschritt ist sehr zuverlässig. Um die Zuverlässigkeit von dieser Schritt zu überprüfen, wird Körperform im Testvideos Frame nach Frame markiert, wo die Testperson liegt, steht, sitzt, beugt... Und das ergibt schon die Ergebnisse von mehr als $70\%$ Genauigkeit.  Die graphische Darstellung in Abbildungen \ref{fig:schatzeva} und \ref{fig:schatzeva2} zeigt uns wie gut die Schätzung der Körperhaltung ist. Die Körperhaltung wird als Nummern zugeordnet, Null seht für Stehen, Eins steht für Liegen, Zwei steht für Beugen und Drei steht für Sitzen. Wenn die Schätzung der Körperhaltung besonders minus Eins sich ergibt, dann bedeutet das keine Bewegung mehr im Szene stattfindet. Die blaue Gerade ist manuelle Markierung in Testvideos und die gelbe Gerade ist das Ergebnis von unserem Programm. Anhand der graphische Darstellungen (Abbildung \ref{fig:schatzeva} und \ref{fig:schatzeva2}) kann es einfach bemerkt werden, dass in manche Stelle wird die Schätzung in eine andere Körperhaltung gesprungen ist und dann kam wieder in die richtige Position. Das Problem kann einfach mit Hilfe von Durchschnittswert in einem Zeitraum gelöst werden, dann kann ein noch besseres Ergebnis bekommen werden.  Beispielsweise wie in Abbildung \ref{fig:schatzeva2}) werden die Körperhaltung von Frame 700 bis 850 betrachtet, es gibt zwei Stellen wo die Körperhaltung von dem Zustand ``Stehen"\ auf ``Sitzen"\ oder ``Beugen"\ gesprungen. Nun kann es hier die letzte 10 Frames von der zweit falschen Stellen überprüft werden und die falsche Stelle korrigieren. Da der Fokus von meiner Arbeit ist nicht speziell an Erkennung der Körperhaltung, sondern an Erkennung der außergewöhnliche Situationen, deshalb ist das Problem mit dem Rausch im Graph akzeptierbar.
+Jede Körperhaltung hat einen eindeutigen Graph zum Vergleich mit anderen Körperhaltungen, deswegen ist das Ergebnis von der zweite Hauptschritt ist sehr zuverlässig. Um die Zuverlässigkeit von diesem Schritt zu überprüfen, wird Körperform im Testvideos Frame nach Frame markiert, wo die Testperson liegt, steht, sitzt, beugt... Und das ergibt schon die Ergebnisse von mehr als $70\%$ Genauigkeit.  Die graphische Darstellung in Abbildungen \ref{fig:schatzeva} und \ref{fig:schatzeva2} zeigt uns wie gut die Schätzung der Körperhaltung ist. Die Körperhaltung wird als Nummern zugeordnet, Null seht für Stehen, Eins steht für Liegen, Zwei steht für Beugen und Drei steht für Sitzen. Wenn die Schätzung der Körperhaltung besonders minus Eins sich ergibt, dann bedeutet, dass keine Bewegung mehr in der Szene stattfindet. Die blaue Gerade ist manuelle Markierung in Testvideos und die gelbe Gerade ist das Ergebnis von unserem Programm. Anhand der graphische Darstellungen (Abbildung \ref{fig:schatzeva} und \ref{fig:schatzeva2}) kann es einfach bemerkt werden, dass in manche Stelle wird die Schätzung in eine andere Körperhaltung gesprungen ist und dann kam wieder in die richtige Position. Das Problem kann einfach mit Hilfe von Durchschnittswert in einem Zeitraum gelöst werden, dann kann ein noch besseres Ergebnis bekommen werden.  Beispielsweise wie in Abbildung \ref{fig:schatzeva2}) werden die Körperhaltung von Frame 700 bis 850 betrachtet, es gibt zwei Stellen wo die Körperhaltung von dem Zustand ``Stehen"\ auf ``Sitzen"\ oder ``Beugen"\ gesprungen. Nun kann es hier die letzte 10 Frames von der zweit falschen Stellen überprüft werden und die falsche Stelle korrigieren. Da der Fokus von meiner Arbeit ist nicht speziell an Erkennung der Körperhaltung, sondern an Erkennung der außergewöhnlichen Situationen, deshalb ist das Problem mit dem Rausch im Graph akzeptierbar.
 			
-\begin{figure}[htpb]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=1.1\textwidth]{fig/schatzungevaluation.png}
 	\caption{Überprüfung der Schätzung der Körperhaltung an Testvideo 1} 
 	\label{fig:schatzeva}
 \end{figure}
 
-\begin{figure}[htpb]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=1.1\textwidth]{fig/schatzungevaluation2.png}
 	\caption{Überprüfung der Schätzung der Körperhaltung an Testvideo 2} 
@@ -217,9 +228,9 @@ Jede Körperhaltung hat einen eindeutigen Graph zum Vergleich mit anderen Körperh
 \end{figure}
 
 \section{Erkennung außergewöhnlicher Situation}
-In Abschnitt \ref{chp:BackgroundSubtraction} und \ref{chp:schatzung} wird eine Silhouette durch Bewegungen erstellt und eine Schätzung der Körperhaltung durch die erstelle Silhouette approximiert. Die Fragen nach Erkennung außergewöhnlicher Situationen kann nicht nur anhand einer Schätzung der Körperhaltung von einer Person beantwortet werden. Man muss auch an dieser Stelle berücksichtigen, dass es sich die normale Situationen mit außergewöhnlichen Fällen unterschieden werden kann. Wenn beispielsweise die Körperhaltung einer Person als ``Liegen"\ geschätzt ist, kann es sein ,dass die Person an einem Sofa oder Bett schläft. Zur Erkennung von außergewöhnlichen Situationen gab es eine paar Überlegungen. Zum Beispiel: es kann hier den Raum, wo die Kamera steht, ein 3D Modell restrukturiert werden. Diese Überlegung hat Vorteil, dass Positionen von Möbeln im Raum identifiziert werden kann, aber die Arbeit für Restrukturieren sehr zeitaufwendig ist und die Zeit für die Masterarbeit reicht nicht aus. Es gibt noch eine andere Technik zur Identifizierung der Positionen von Möbeln im Raum ist ``Bird Eye View". Die Technik  ist schon bei Automobile mit Rückfahrkamera angewendet. Der Nachteil von der Technik ist der Abstand zwischen der Kamera und dem Boden fest sein muss.  Auf dem Grund ist die Technik hier nicht anwendbar, weil die Kamera an einer beliebigen Position im Raum gestellt werden soll. Die beste Lösung ist die einfachste, die funktioniert. Um das genannte Problem bei Unterscheidung von normalen und abnormalen Situationen zu lösen, wird in diesem Hauptschritt eine logische Methode, die als Fuzzylogik bekannt ist, angewendet.  Wie in Abschnitt \ref{sec:fuzzylogik} schon erwähnt, geht Fuzzylogik um eine unscharfe logische Menge. Fuzzylogik besteht aus drei Schritte: Umwandlung von Eingaben in Fuzzymenge, Anwendung von vordefinierten (IF-ELSE) Regeln und Defuzzifizierung (Abbildung \ref{fig:fuzzylogik}).
+In Abschnitt \ref{chp:BackgroundSubtraction} und \ref{chp:schatzung} wird eine Silhouette durch Bewegungen erstellt und eine Schätzung der Körperhaltung durch die erstelle Silhouette approximiert. Die Fragen nach Erkennung außergewöhnlicher Situationen kann nicht nur anhand einer Schätzung der Körperhaltung von einer Person beantwortet werden. Man muss auch an dieser Stelle berücksichtigen, dass es sich die normale Situationen mit außergewöhnlichen Fällen unterschieden werden kann. Wenn beispielsweise die Körperhaltung einer Person als ``Liegen"\ geschätzt ist, kann es sein, dass die Person an einem Sofa oder Bett schläft. Zur Erkennung von außergewöhnlichen Situationen gab es eine paar Überlegungen. Zum Beispiel: es kann hier den Raum, wo die Kamera steht, ein 3D Modell restrukturiert werden. Diese Überlegung hat Vorteil, dass Positionen von Möbeln im Raum identifiziert werden kann, aber die Arbeit für Restrukturierung sehr zeitaufwendig ist und die Zeit für die Masterarbeit reicht nicht aus. Es gibt noch eine andere Technik zur Identifizierung der Positionen von Möbeln im Raum ist ``Bird Eye View". Die Technik  ist schon bei Automobilen mit Rückfahrkamera angewendet. Der Nachteil von der Technik ist der Abstand zwischen der Kamera und dem Boden fest sein muss.  Auf dem Grund ist die Technik hier nicht anwendbar, weil die Kamera an einer beliebigen Position im Raum gestellt werden soll. Die beste Lösung ist die einfachste, die funktioniert. Um das genannte Problem bei Unterscheidung von normalen und abnormalen Situationen zu lösen, wird in diesem Hauptschritt eine logische Methode, die als Fuzzylogik bekannt ist, angewendet.  Wie in Abschnitt \ref{sec:fuzzylogik} schon erwähnt, geht Fuzzylogik um eine unscharfe logische Menge. Fuzzylogik besteht aus drei Schritte: Umwandlung von Eingaben in Fuzzymenge, Anwendung von vordefinierten (IF-ELSE) Regeln und Defuzzifizierung (Abbildung \ref{fig:fuzzylogik}).
 
-\begin{figure}[htpb]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.85\textwidth]{fig/fuzzylogik.pdf}
 	\caption{Dritter Meilenstein}
@@ -234,7 +245,7 @@ Zuerst müssen die Mitgliederfunktionen von Eingaben identifiziert werden, die si
 		f(a, b, mean) = \frac{1}{1 + |\frac{x - mean}{a}|^{2b}}
 	\end{equation} 
 	\item Normale Koordinaten im Raum sind die Positionen wo die Testperson normalerweise liegt, sitzt oder steht und die wird als Gaußschen Funktionen definiert, wobei Mittelwerte $x$ und $y$ Werte sind und Standardabweichung  $30$ beträgt.
-	\item Die Ausgabe ist als ``Status" genannt und mit Gaußschen Funktion mit  Standardabweichung $\sigma = 1$ Mittelwert bei $4$ für abnormale Situation und bei $6$ für normale. Die Mittelwerte hier in dieser Stelle  spielt keine wichtige Rolle. Die Mittelwerte nähert sich mit einander, um die Entscheidung für aktuelle Situation genauer zu sein. wenn die vorgegebene Mittelwerte zu weit aus einander sind, ist die Trennung von normale und abnormale Situation zu deutlich, deswegen ist Ergebnis von des Fuzzysystem ist nicht mehr zuverlässig.
+	\item Die Ausgabe ist als ``Status" genannt und mit Gaußschen Funktion mit Standardabweichung $\sigma = 1$ Mittelwert bei $4$ für abnormale Situation und bei $6$ für normale. Die Mittelwerte hier in dieser Stelle  spielt keine wichtige Rolle. Die Mittelwerte nähern sich mit einander, um die Entscheidung für aktuelle Situation genauer zu sein. Wenn die vorgegebene Mittelwerte zu weit aus einander sind, ist die Trennung von normale und abnormale Situation zu deutlich, deswegen ist Ergebnis von des Fuzzysystem ist nicht mehr zuverlässig.
 \end{itemize}  
 Zur Anwendung von (IF-ELSE) Regeln (Algorithmus \ref{fuzzy_model} ) sind Minimum als Aktivaktionsmethode und Maximum als Akkumulationsmethode eingesetzt. Die Regeln in Algorithmus \ref{fuzzy_model} kann wie folgt interpretiert werden:
 \begin{itemize}
@@ -245,12 +256,11 @@ Zur Anwendung von (IF-ELSE) Regeln (Algorithmus \ref{fuzzy_model} ) sind Minimum
 	 \item Es schlecht, wenn die Person am Tag sitzt oder beugt.
 \end{itemize}
 
-Bei Defuzzifizierung zur Abbildung der Ausgabe in scharfe Menge wird Schwerpunktmethode angewendet.
-Das definierte Fuzzymodel wird wie in Abbildung  \ref{fig:fuzzyfunktion} dargestellt. Die oben genannte Parameters sind anhand des Raum so wie biologische Uhr von Testperson abhängig. Es gibt viele Methode mit maschinellem Lernen, die die Parameters von Mitgliederfunktion anpassen können. Die vorgeschlagene Lösung mit maschinellem Lernen ist außerhalb Bereich von dieser Arbeit, da die sehr zeitaufwendig ist und die Zeit für diese Arbeit reicht nicht aus. Die Diskussion über dritten Schritt wird  weiter hier vorgesetzt. 
+Bei Defuzzifizierung zur Abbildung der Ausgabe in scharfe Menge wird Schwerpunktmethode angewendet. Das definierte Fuzzymodel wird wie in Abbildung  \ref{fig:fuzzyfunktion} dargestellt. Die oben genannten Parameter sind anhand des Raum sowie biologische Uhr von Testperson abhängig. Es gibt viele Methode mit maschinellem Lernen, die die Parameter von Mitgliederfunktion anpassen können. Die vorgeschlagene Lösung mit maschinellem Lernen ist außerhalb Bereich von dieser Arbeit, da die sehr zeitaufwendig ist und die Zeit für diese Arbeit reicht nicht aus. Die Diskussion über dritten Schritt wird weiter hier vorgesetzt. 
 
-Beispielweise kann Position von dem Bett oder Sofa, wo die Testperson oft liegt, vordefiniert werden. Die Uhrzeit kann  auch nun in diesem Fall betrachtet werden. Wenn die Person im Bett am Nacht liegt,  wird es als ein normaler Fall angesehen. Durch Fuzzylogik wird es berechnet, wie hoch ist die Wahrscheinlichkeit, dass die aktuelle Situation normal ist. Für das Beispiel im Abbildung \ref{fig:Fuzzy_Example} sind Dreieckfunktionen angewendet, um die Definition von Fuzzylogik einfacher zu verstehen. Für die komplexer Anwendungsfälle sind Gaußsche Funktionen benutzt, um die Anwendungsfälle zu realisieren. Es is angenommen, dass die Koordinaten von einem Sofa in Testraum $(591, 441)$ beträgt, die aktuelle Zeit $8$ Uhr morgen ist und die Testperson liegt im Position (574, 424) (wie Abbildung \ref{fig:fuzzyfunktion}). Bei dem ersten Testfall ergibt sich die Unterscheidung für normale Situation $93,29\%$ und für eine außergewöhnliche Situation $26,59\%$ (Abbildung \ref{fig:fuzzy1}). Es ist klar in diesem Fall, weil anhand den Regeln in \ref{algo:fuzzy_modell} die Ausgabe ``good" auskommen soll. In Regeln \ref{algo:fuzzy_modell} gibt es einen gemischten Fall, wo die Person in Sofa am Tag liegt. Dieser Testfall kombiniert zweit Regeln, wobei es gut ist, wenn die Testperson in normale Position liegt und es ist schlecht wenn die Person am Tag liegt. Nach der Rechnen liefert es eine Wert von $71,6\%$ für normale Situation und $49,71\%$ für abnormale Situation (Abbildung \ref{fig:fuzzy2}). Einer Situation wird genau dann als schlechten Fall betrachtet, wenn die ``bad" Wert $\geq 0,8$ und $\geq "good"\ Werte$ ist,und umgekehrt.
+Beispielweise kann Position von dem Bett oder Sofa, wo die Testperson oft liegt, vordefiniert werden. Die Uhrzeit kann  auch nun in diesem Fall betrachtet werden. Wenn die Person im Bett am Nacht liegt,  wird es als ein normaler Fall angesehen. Durch Fuzzylogik wird es berechnet, wie hoch ist die Wahrscheinlichkeit, dass die aktuelle Situation normal ist. Für das Beispiel im Abbildung \ref{fig:Fuzzy_Example} sind Dreieckfunktionen angewendet, um die Definition von Fuzzylogik einfacher zu verstehen. Für die komplexen Anwendungsfälle sind Gaußsche Funktionen benutzt, um die Anwendungsfälle zu realisieren. Es ist angenommen, dass die Koordinaten von einem Sofa in Testraum $(591, 441)$ beträgt, die aktuelle Zeit $8$ Uhr morgen ist und die Testperson liegt im Position (574, 424) (wie Abbildung \ref{fig:fuzzyfunktion}). Bei dem ersten Testfall ergibt sich die Unterscheidung für normale Situation $93,29\%$ und für eine außergewöhnliche Situation $26,59\%$ (Abbildung \ref{fig:fuzzy1}). Es ist klar in diesem Fall, weil anhand den Regeln in \ref{algo:fuzzy_modell} die Ausgabe ``good" auskommen soll. In Regeln \ref{algo:fuzzy_modell} gibt es einen gemischten Fall, wo die Person in Sofa am Tag liegt. Dieser Testfall kombiniert zwei Regeln, wobei es gut ist, wenn die Testperson in normale Position liegt und es ist schlecht wenn die Person am Tag liegt. Nach der Rechnen liefert es eine Wert von $71,6\%$ für normale Situation und $49,71\%$ für abnormale Situation (Abbildung \ref{fig:fuzzy2}). Einer Situation wird genau dann als schlechten Fall betrachtet, wenn die ``bad" Wert $\geq 0,8$ und $\geq "good"\ Werte$ ist,und umgekehrt.
 
-\begin{algorithm}[htpb]
+\begin{algorithm}[H]
 	\caption{Regel für Raumtemperatur und Einstellung des Thermostates.	}
 	\label{algo:fuzzy_modell}
 	\If{(posture IS laying) AND (NOT xposition IS good) OR (NOT yposition IS good)}{status IS bad;}
@@ -260,30 +270,30 @@ Beispielweise kann Position von dem Bett oder Sofa, wo die Testperson oft liegt,
 	\If{(IF posture IS sitting OR posture IS bending) AND time IS night}{status IS bad;}
 \end{algorithm}
 
-\begin{figure}[htpb]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{fig/fuzzyfunktion.png}
 	\caption{Mitgliederfunktionen} 
 	\label{fig:fuzzyfunktion}
 \end{figure}
 
-\begin{figure}[htpb]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{fig/fuzzy1.png}
 	\caption{Testfall: Person liegt im Sofa in Nacht. Ergebnis: 93,29\% normal, 26,59\% abnormal} 
 	\label{fig:fuzzy1}
 \end{figure}
 
-\begin{figure}[htpb]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{fig/fuzzy2.png}
 	\caption{Testfall: Person liegt im Sofa am Tag. Ergebnis: 71,6\% normal, 49,71\% abnormal} 
 	\label{fig:fuzzy2}
 \end{figure}
 
-Bis jetzt kann es geschafft werden, die außergewöhnliche Situationen zu erkennen. Die abnormale Situationen nicht nur in einem Frame sondern in einem Sequenz von mehreren Frames beachtet, damit das System bessere Entscheidung für eine abnormale Situation detektieren kann. Wenn es nur in einem Frame beachtet wird, wird das System sofort nach einem Frame alarmiert. Das System kann einen falschen Alarm ausgibt, wenn die Person beispielsweise auf dem Boden liegt, um seine raus-gefallen Münze unter dem Tisch zu erreichen. Um die Beachtung in mehreren Frames zu realisieren, wird ein Modell gebaut, wobei die Begrenzungsbox als eine Person markiert wird, und in einem Zeitraum betrachtet. Die bewegende Person wird als eine Begrenzungsbox in diesem Fall gebaut. Außerdem besteht eine Person noch aus eine maximale Motion als \inlinecode{C++}{movementMaximum} und minimale Motion als \inlinecode{C++}{monvementMinimum}. Die Begrenzungsbox wird anhand einer Motion von Frame by Frame markiert und die maximale Motion garantiert, dass die aktuelle Begrenzungsbox von gleicher Person von letztem Frame gehört. Das bedeutet, wenn eine Begrenzungsbox erneut detektiert, wird sie mit einer andere Begrenzungsbox in letztem Frame von einer Person verglichen. Wenn eine gleiche Person wie in letztem Frame identifiziert werden kann, wird die Begrenzungsbox von der Person aktualisiert. Es ist die gleiche Person von letztem Frame, wenn den folgenden Algorithmus \ref{algo:gleicheperson} erfüllt:\\
+Bis jetzt kann es geschafft werden, die außergewöhnlichen Situationen zu erkennen. Die abnormalen Situationen nicht nur in einem Frame sondern in einer Sequenz von mehreren Frames beachtet, damit das System bessere Entscheidung für eine abnormale Situation detektieren kann. Wenn es nur in einem Frame beachtet wird, wird das System sofort nach einem Frame alarmiert. Das System kann einen falschen Alarm ausgibt, wenn die Person beispielsweise auf dem Boden liegt, um seine raus-gefallen Münze unter dem Tisch zu erreichen. Um die Beachtung in mehreren Frames zu realisieren, wird ein Modell gebaut, wobei die Begrenzungsbox als eine Person markiert wird, und in einem Zeitraum betrachtet. Die bewegende Person wird als eine Begrenzungsbox in diesem Fall gebaut. Außerdem besteht eine Person noch aus eine maximale Motion als \inlinecode{C++}{movementMaximum} und minimale Motion als \inlinecode{C++}{monvementMinimum}. Die Begrenzungsbox wird anhand einer Motion von Frame by Frame markiert und die maximale Motion garantiert, dass die aktuelle Begrenzungsbox von gleicher Person von letztem Frame gehört. Das bedeutet, wenn eine Begrenzungsbox erneut detektiert, wird sie mit einer andere Begrenzungsbox in letztem Frame von einer Person verglichen. Wenn eine gleiche Person wie in letztem Frame identifiziert werden kann, wird die Begrenzungsbox von der Person aktualisiert. Es ist die gleiche Person von letztem Frame, wenn den folgenden Algorithmus \ref{algo:gleicheperson} erfüllt:\\
 
-\begin{algorithm}[htpb]
+\begin{algorithm}[H]
 \caption{Bedingung zur Erkennung von gleicher Person}
 \label{algo:gleicheperson}	
 \begin{algorithmic}
@@ -295,9 +305,9 @@ Bis jetzt kann es geschafft werden, die außergewöhnliche Situationen zu erkennen
 \end{algorithmic}
 \end{algorithm}
 
-Die minimale Motion gewährleistet, dass die Person sich bewegt oder in einer selben Position bleibt und hilft uns bei Erkennung von abnormale Situation. Wenn eine Person in einer außergewöhnliche Position liegt und sich in einer selber Position nicht mehr bewegt, löst das System einen Alarm aus. Zur Berechnen, ob die Person sich in einer selben Position nicht bewegt, wird  \inlinecode{C++}{monvementMinimum} in dem Algorithmus benutzt:\\
+Die minimale Motion gewährleistet, dass die Person sich bewegt oder in einer selben Position bleibt und hilft uns bei Erkennung von abnormaler Situation. Wenn eine Person in einer außergewöhnliche Position liegt und sich in einer selber Position nicht mehr bewegt, löst das System einen Alarm aus. Zur Berechnen, ob die Person sich in einer selben Position nicht bewegt, wird \inlinecode{C++}{monvementMinimum} in dem Algorithmus benutzt:\\
 
-\begin{algorithm}[htpb]
+\begin{algorithm}[H]
 	\caption{Bedingung zur Erkennung von Bewegung einer Person}
 	\label{algo:gleicheposition}	
 	\begin{algorithmic}
@@ -319,9 +329,9 @@ Mit dem oben genannten Modell kann eine Person in einem Zeitraum verfolgt und da
 	\item Durch oben genanntes Modell kann das System detektieren, dass eine Person in einem bestimmten Zeitraum sich bewegt oder nicht.
 \end{itemize}
 
-Nun können eine finale Kombination von oben gemeinte Bedingungen erstellt werden, damit ein komplettes System zur Erkennung von einer außergewöhnlichen Situation kreiert werden kann. Es handelt sich um einen Notfall genau dann, wenn eine Person in einem abnormalen Ort liegt , sich nicht mehr in einem Zeitraum nicht mehr bewegt. Algorithmus \ref{algo:finalAlgo} vervollständigt den Weg zur Erkennung der außergewöhnlicher Situation. Nach dem Laden ein neues Frame wird eine Silhouette durch Hintergrundsubtraktion erstellt. Die erstellte Silhouette wird als Eingabe von der Histogrammanalyse und die Ausgabe ist eine geschätzte Körperhaltung. Danach wird eine Fuzzylogik mit Begrenzungsbox der Silhouette, die geschätzte Körperhaltung  und die aktuelle Zeit als Eingaben erstellt und die Ausgabe davon ist die Wahrscheinlichkeit, dass eine Person unter der Bedingungen von Eingaben in eine normale oder abnormale Situation sich befindet. Durch die Begrenzungsbox von der Silhouette wird es berechnet, ob es sich um eine gleiche Person wie im letzten Frame handelt (Siehe Algorithmus \ref{algo:gleicheperson}). Wenn die gleiche Person detektiert, wird die Begrenzungsbox der Person mit der aktuelleren Begrenzungsbox ersetzt. Außerdem wird die Person überprüft, ob er liegt in einem abnormale Ort liegt und sich nicht bewegt (Siehe Algorithmus \ref{algo:gleicheposition} ). Wenn einer schlechten Fall erkannt, wird einen Zähler von der Person (``badcounter" genannt) sich erhöhen, sonst wird der Zähler zurückgesetzt. Am Ende wird die den Zähler der Person mit eine bestimmte Zeit verglichen. Wenn der Zähler größer als die vordefinierte Zeit ist, wird einer Alarm ausgelöst. 
+Nun können eine finale Kombination von oben gemeinte Bedingungen erstellt werden, damit ein komplettes System zur Erkennung von einer außergewöhnlichen Situation kreiert werden kann. Es handelt sich um einen Notfall genau dann, wenn eine Person in einem abnormalen Ort liegt , sich nicht mehr in einem Zeitraum nicht mehr bewegt. Algorithmus \ref{algo:finalAlgo} vervollständigt den Weg zur Erkennung der außergewöhnlicher Situation. Nach dem Laden ein neues Frame wird eine Silhouette durch Hintergrundsubtraktion erstellt. Die erstellte Silhouette wird als Eingabe von der Histogrammanalyse und die Ausgabe ist eine geschätzte Körperhaltung. Danach wird eine Fuzzylogik mit Begrenzungsbox der Silhouette, die geschätzte Körperhaltung  und die aktuelle Zeit als Eingaben erstellt und die Ausgabe davon ist die Wahrscheinlichkeit, dass eine Person unter den Bedingungen von Eingaben in eine normale oder abnormale Situation sich befindet. Durch die Begrenzungsbox von der Silhouette wird es berechnet, ob es sich um eine gleiche Person wie im letzten Frame handelt (Siehe Algorithmus \ref{algo:gleicheperson}). Wenn die gleiche Person detektiert, wird die Begrenzungsbox der Person mit der aktuelleren Begrenzungsbox ersetzt. Außerdem wird die Person überprüft, ob er liegt in einem abnormale Ort liegt und sich nicht bewegt (Siehe Algorithmus \ref{algo:gleicheposition} ). Wenn einer schlechten Fall erkannt, wird einen Zähler von der Person (``badcounter" genannt) sich erhöhen, sonst wird der Zähler zurückgesetzt. Am Ende wird die den Zähler der Person mit eine bestimmte Zeit verglichen. Wenn der Zähler größer als die vordefinierte Zeit ist, wird ein Alarm ausgelöst. 
 
-\begin{algorithm}[htpb]
+\begin{algorithm}[H]
 \caption{Finaler Algorithmus}
 \label{algo:finalAlgo}	
 \KwData{Aktuelles Frame}
@@ -353,9 +363,13 @@ Nun können eine finale Kombination von oben gemeinte Bedingungen erstellt werden
 \end{algorithm}	
 
 \section{Drehbare 360-Grad-Kamera}
-Ein Merkmal von der Bosch Innenkamera ist die Fähigkeit rund um 360 Grad zu drehen. Mit Hilfe Bewegungsmeldern kann die Kamera nach eine Bewegung im Raum immer verfolgen.  Es bringt einen großen Vorteil für meine Arbeit , da können die außergewöhnlichen Situationen im ganzen Raum betrachtet werden. Zum Vergleich mit anderen normalen Kameras kann die Bosch Kamera in die Richtung der Bewegung hinblicken. Die Kamera muss nicht in einem Ecke gestellt werden, damit sie den Raum vollständig Video aufnehmen kann. Die Kamera kann auf eine beliebige Stelle hingestellt werden, zum Beispiel auf dem Tisch, oder Fensterbank, wo die Kamera mit Drehung alle Fälle beobachten kann. Wenn Kamera sich wegen einer Bewegung dreht, wird die Hintergrund komplett oder fast alles geändert und somit wird die Hintergrundsubtraktion nicht mehr funktioniert. Hier wird zuerst eine Hintergrundbild als ein Panoramabild bei Drehung der Kamera erzeugt aber ein Problem wird damit erstellt. Das Problem ist die Schwierigkeit bei Identifizierung der Position von dem aktuellen Bild auf dem Panoramahintergrundbild. Deshalb wird die Idee an die Seite verschoben und wird eine einfache Lösung an dieser Stelle angewendet. Zuerst wird eine Hintergrunddichte mit Hilfe von OpenCV Framework berechnet. Die Hintergrunddichte repräsentiert ein Proportion von dem Hintergrund aus dem Bild. Ein Schwellwert wird danach angewendet, um eine stärke Änderung bei der Drehung der Kamera zu detektieren. Angenommen ist die Hintergrunddichte von einem Frame \inlinecode{C++}{backgroundDensity}. Mit Hintergrundsubtraktion wird ein Binärbild erstellt, die verbundenen weißen Pixel im Binärbild wird zusammen als eine Region betrachtet. Die kreierten Regionen werden sich verbieten, solang bis keine weiße Pixel mehr vorhanden. Die acht Nachbarpixel werden als verbundenen Elemente betrachtet, das deutet, die Nachbarn von der Pixeln in eine Region werden auch zur Region gehören, wenn die weiß sind. Die zusammengefassten Regionen werden von $1$ nummeriert (Der Hintergrund hat einen Index von $0$) und jeweils mit einer entsprechen Begrenzungsbox markiert. Mit der Funktion \inlinecode{C++}{connectedComponentsWithStats()} in OpenCV wird die verbundenen Regionen zusammengefasst  und deren Fläche nicht nur als Begrenzungsbox sondern genau pixelweise berechnet. Nun kann ein Schwellwert weiter angewendet. Wenn die Hintergrunddichte \inlinecode{C++}{backgroundDensity} kleiner als $0.8$, geht es um eine stärke Änderung der  Hintergrundes. Mehrere Videos sind mit dem Programm getestet und betragt die Dichte des Hintergrundes durchschnittlich immer über $0,9$ bis $0,98$, deshalb ist der Schwellwert $0,8$ genommen. Anschließend wird eine Bedingung  \inlinecode{C++}{backgroundDensity} $\leq 0,8$, dann wird Hintergrundbild mit aktuellem Frame ersetzt. Das bedeutet auch die weiter Hauptschritte wird auch erneut berechnet. Nach dem Testen mit selbst aufgenommene Videos wird ein weiteres Problem entdeckt. Wenn nur die Bedingung {C++}{backgroundDensity} $\leq 0,8$ betrachtet wird, wird ein der letzten Bilder vor dem Stillstand der Kamera als Hintergrund sofort genommen, wenn die genannte Bedingung erfüllt. Es liefert keine gute Ergebnisse zurück. Um das Problem zu vermeiden wird ein Auslöser als {C++}{trigger} benutzt.  Wenn die Bedingung {C++}{backgroundDensity} $\leq 0,8$ erfüllt, wird der Auslöser angeschaltet und ein Zähler wird aktiviert. Nach einer Sekunde oder $30$ Bilder wird der Hintergrund erst ersetzt. Die Methode vermeidet das Problem und liefert gute Ergebnisse wie erwartet. In die Abbildungen \ref{fig:false1} und \ref{fig:false1} sind zwei Screenshots zum Vergleichen die zwei Aktualisierungsmethode von Hintergrund. Linke Seite von der Abbildungen sind die falsche Erkennungen, wenn die Hintergrundaktualisierung sofort nach der Erfüllung {C++}{backgroundDensity} $\leq 0,8$ aktiviert. Wenn die Bedingung erfüllt, dreht sich die Kamera noch einen kurzen Stuck bevor dem Standstil. Rechte Seite von den Abbildungen sind die Verbesserung mit einem Auslöser nach $30$ Bilder. Es ist leicht zu erkennen, dass die Segmentierung des Vordergrundes wieder richtig ist.
+Ein Merkmal von der Bosch Innenkamera ist die Fähigkeit rund um 360 Grad zu drehen. Mit Hilfe Bewegungsmeldern kann die Kamera nach eine Bewegung im Raum immer verfolgen.  Es bringt einen großen Vorteil für meine Arbeit, da können die außergewöhnlichen Situationen im ganzen Raum betrachtet werden. Zum Vergleich mit anderen normalen Kameras kann die Bosch Kamera in die Richtung der Bewegung hinblicken. Die Kamera muss nicht in einem Ecke gestellt werden, damit sie den Raum vollständig Video aufnehmen kann. Die Kamera kann auf eine beliebige Stelle hingestellt werden, zum Beispiel auf dem Tisch, oder Fensterbank, wo die Kamera mit Drehung alle Fälle beobachten kann. Wenn Kamera sich wegen einer Bewegung dreht, wird die Hintergrund komplett oder fast alles geändert und somit wird die Hintergrundsubtraktion nicht mehr funktioniert.\\
+In der ersten Überlegung wird zuerst eine Hintergrundbild als ein Panoramabild bei Drehung der Kamera erzeugt aber ein Problem wird damit erstellt. Das Problem ist die Schwierigkeit bei Identifizierung der Position von dem aktuellen Bild auf dem Panoramahintergrundbild. Deshalb wird die Idee an die Seite verschoben und wird eine einfache Lösung an dieser Stelle angewendet.\\
+Zuerst wird eine Hintergrunddichte mit Hilfe von OpenCV Framework berechnet. Die Hintergrunddichte repräsentiert eine Proportion von dem Hintergrund aus dem Bild. Ein Schwellwert wird danach angewendet, um eine stärke Änderung bei der Drehung der Kamera zu detektieren. Angenommen ist die Hintergrunddichte von einem Frame \inlinecode{C++}{backgroundDensity}. Mit Hintergrundsubtraktion wird ein Binärbild erstellt, die verbundenen weißen Pixel im Binärbild werden zusammen als eine Region betrachtet. Die kreierten Regionen werden sich verbieten, solang bis keine weiße Pixel mehr vorhanden. Die acht Nachbarpixel werden als verbundenen Elemente betrachtet, das deutet, die Nachbarn von der Pixeln in eine Region werden auch zur Region gehören, wenn die weiß sind. Die zusammengefassten Regionen werden von $1$ nummeriert (Der Hintergrund hat einen Index von $0$) und jeweils mit einer entsprechen Begrenzungsbox markiert. \\
+Mit der Funktion \inlinecode{C++}{connectedComponentsWithStats()} in OpenCV wird die verbundenen Regionen zusammengefasst  und deren Fläche nicht nur als Begrenzungsbox sondern genau pixelweise berechnet. Nun kann ein Schwellwert weiter angewendet. Wenn die Hintergrunddichte \inlinecode{C++}{backgroundDensity} kleiner als $0.8$, geht es um eine stärke Änderung der  Hintergrundes. Mehrere Videos sind mit dem Programm getestet und betragt die Dichte des Hintergrundes durchschnittlich immer über $0,9$ bis $0,98$, deshalb ist der Schwellwert $0,8$ genommen. Anschließend wird eine Bedingung  \inlinecode{C++}{backgroundDensity} $\leq 0,8$, dann wird Hintergrundbild mit aktuellem Frame ersetzt. Das bedeutet auch die weiter Hauptschritte wird auch erneut berechnet. Nach dem Testen mit selbst aufgenommenen Videos wird ein weiteres Problem entdeckt. 
+\\Wenn nur die Bedingung {C++}{backgroundDensity} $\leq 0,8$ betrachtet wird, wird ein der letzten Bilder vor dem Stillstand der Kamera als Hintergrund sofort genommen, wenn die genannte Bedingung erfüllt. Es liefert kein gutes Ergebnis zurück. Um das Problem zu vermeiden wird ein Auslöser als {C++}{trigger} benutzt.  Wenn die Bedingung {C++}{backgroundDensity} $\leq 0,8$ erfüllt, wird der Auslöser angeschaltet und ein Zähler wird aktiviert. Nach einer Sekunde oder $30$ Bilder wird der Hintergrund erst ersetzt. Die Methode vermeidet das Problem und liefert gute Ergebnisse wie erwartet. In die Abbildungen \ref{fig:false1} und \ref{fig:false1} sind zwei Screenshots zum Vergleichen die zwei Aktualisierungsmethode von Hintergrund. Linke Seite von der Abbildungen sind die falsche Erkennungen, wenn die Hintergrundaktualisierung sofort nach der Erfüllung {C++}{backgroundDensity} $\leq 0,8$ aktiviert. Wenn die Bedingung erfüllt, dreht sich die Kamera noch einen kurzen Stuck bevor dem Standstil. Rechte Seite von den Abbildungen sind die Verbesserung mit einem Auslöser nach $30$ Bilder. Es ist leicht zu erkennen, dass die Segmentierung des Vordergrundes wieder richtig ist.
 
-\begin{algorithm}[htpb]
+\begin{algorithm}[H]
 	\caption{Ersetzt Hintergrund}
 	\label{algo:newBG}	
 	\KwData{Binärbild aus Subtraktionsverfahrens}
@@ -383,14 +397,14 @@ Ein Merkmal von der Bosch Innenkamera ist die Fähigkeit rund um 360 Grad zu dreh
 \end{algorithm}	
 
 
-\begin{figure}[htpb]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{fig/false1.png}
 	\caption{Linke Seite: Falsche Erkennung der Bewegung. Rechte Seite: Richtige Segmentierung} 
 	\label{fig:false1}
 \end{figure}
 
-\begin{figure}[htpb]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{fig/false2.png}
 	\caption{Linke Seite: Falsche Erkennung der Bewegung. Rechte Seite: Richtige Segmentierung} 

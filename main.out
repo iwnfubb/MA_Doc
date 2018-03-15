@@ -5,7 +5,7 @@
 \BOOKMARK [1][-]{section.1.3}{Aufbau der Arbeit}{chapter.1}% 5
 \BOOKMARK [1][-]{section.1.4}{Verwandte Arbeiten}{chapter.1}% 6
 \BOOKMARK [2][-]{subsection.1.4.1}{Hintergrundsubtraktion}{section.1.4}% 7
-\BOOKMARK [2][-]{subsection.1.4.2}{K\366rperhaltungserkennung basiert auf Histogrammanalyse}{section.1.4}% 8
+\BOOKMARK [2][-]{subsection.1.4.2}{K\366rperhaltungserkennung basierend auf der Histogrammanalyse}{section.1.4}% 8
 \BOOKMARK [0][-]{chapter.2}{Grundlagen}{}% 9
 \BOOKMARK [1][-]{section.2.1}{Hintergrundsubtraktion}{chapter.2}% 10
 \BOOKMARK [2][-]{subsection.2.1.1}{Adaptive Gau\337schen Mixture Modell}{section.2.1}% 11
@@ -26,11 +26,11 @@
 \BOOKMARK [1][-]{section.3.4}{Drehbare 360-Grad-Kamera}{chapter.3}% 26
 \BOOKMARK [0][-]{chapter.4}{Ergebnisse und Evaluation}{}% 27
 \BOOKMARK [0][-]{chapter.5}{Zusammenfassung und Ausblick}{}% 28
-\BOOKMARK [0][-]{chapter*.7}{Literaturverzeichnis}{}% 29
-\BOOKMARK [0][-]{chapter*.8}{Abk\374rzungsverzeichnis}{}% 30
-\BOOKMARK [0][-]{chapter*.9}{Abbildungsverzeichnis}{}% 31
-\BOOKMARK [0][-]{chapter*.10}{Tabellenverzeichnis}{}% 32
-\BOOKMARK [0][-]{section*.11}{Liste der Algorithmen}{}% 33
-\BOOKMARK [0][-]{section*.13}{Listings}{}% 34
+\BOOKMARK [0][-]{chapter*.6}{Literaturverzeichnis}{}% 29
+\BOOKMARK [0][-]{chapter*.7}{Abk\374rzungsverzeichnis}{}% 30
+\BOOKMARK [0][-]{chapter*.8}{Abbildungsverzeichnis}{}% 31
+\BOOKMARK [0][-]{chapter*.9}{Tabellenverzeichnis}{}% 32
+\BOOKMARK [0][-]{section*.10}{Liste der Algorithmen}{}% 33
+\BOOKMARK [0][-]{section*.12}{Listings}{}% 34
 \BOOKMARK [0][-]{appendix.A}{Anhang}{}% 35
-\BOOKMARK [0][-]{chapter*.17}{Danksagung}{}% 36
+\BOOKMARK [0][-]{chapter*.16}{Danksagung}{}% 36

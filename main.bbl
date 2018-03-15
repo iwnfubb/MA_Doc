@@ -156,6 +156,12 @@
   Computer Vision and Pattern Recognition (Cat. No PR00149)} (1999), vol.~2,
   p.~252 Vol. 2.
 
+\bibitem[SV14]{sobral2014comprehensive}
+\textsc{Sobral A., Vacavant A.}:
+\newblock A comprehensive review of background subtraction algorithms evaluated
+  with synthetic and real videos.
+\newblock \emph{Computer Vision and Image Understanding 122} (2014), 4--21.
+
 \bibitem[WBSS04]{wang2004image}
 \textsc{Wang Z., Bovik A.~C., Sheikh H.~R., Simoncelli E.~P.}:
 \newblock Image quality assessment: from error visibility to structural

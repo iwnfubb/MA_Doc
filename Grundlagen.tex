@@ -3,36 +3,36 @@ Im diesen Kapitel werden die theoretischen Grundlagen, die diese Masterarbeit ei
 Weiter wird das OpenCV Framework, das für moderne Computer Vision entwickelt wurde, kurz beschrieben. Zuletzt wird auf die verwendete 360° Kamera eingegangen und gezeigt, wie diese zu verwenden ist.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Hintergrundsubtraktion}\label{sec:grunglagen_hintergrundsub}
-Hintergrundsubtraktion ist eine gebräuchliche und weit verwendete Technik unter Verwendung von statischen Kameras zum Erzeugen eines Binärbildes, das die Pixel enthält, die zu sich bewegenden Objekten in der Szene gehören. Wie der Name andeutet, berechnet die Hintergrundsubtraktion die Vordergrundmaske, die eine Subtraktion zwischen dem aktuellen Bild und einem Hintergrundmodell durchführt, wobei der statische Teil der Szene oder allgemeiner alles, was angesichts der Merkmale der beobachtete Szene als Hintergrund betrachtet werden kann, enthalten ist.\\
-In der Arbeit \cite{benezeth2010comparative} wird eine vergleichende Studie verschiedener Hintergrundsubtraktionsverfahren nach dem Stand der Technik präsentiert. Dieses Verfahren wurde seit den 1990er umfassend untersucht und hauptsächlich für Videoüberwachungsanwendungen, da sie zuerst Personen, Fahrzeuge, Tiere usw. erkennen müssen, bevor komplexere Prozesse zur Einbruchserkennung, Verfolgung, Personenzählung \cite{aziz2011pedestrian} usw. ausgeführt werden. Viele Algorithmen wurden entworfen, um die Vordergrundobjekte vom Hintergrund einer Sequenz zu segmentieren und teilen im Allgemeinen das gleiche Schema:
+Das Hintergrundsubtraktionsverfahren ist eine häufig verwendete Technik, die statische Kameras verwendet, um ein sich bewegtes Objekt aus dem Hintergrund zu extrahieren. Die Hintergrundsubtraktion erzeugt eine Binärbild, das die Pixel enthält, die zu den bewegenden Objekten in der Szene gehören. Wie der Name andeutet, wird die Vordergrundmaske durch die Hintergrundsubtraktion berechnet, was eine absolute Subtraktion zwischen dem aktuellen Bild und einem Hintergrundmodell durchführt. Der statische Teil der Szene oder allgemeiner alles, ist der, was angesichts der Merkmale der beobachteten Szene als Hintergrund betrachtet werden kann, enthalten ist.\\
+In der Arbeit \cite{benezeth2010comparative} wird eine vergleichende Studie verschiedener Hintergrundsubtraktionsverfahren nach dem Stand der Technik präsentiert. Dieses Verfahren wurde seit den 1990er umfassend untersucht und hauptsächlich für Videoüberwachungsanwendungen verwendet, da es zuerst Personen, Fahrzeuge, Tiere usw. erkennt, bevor komplexere Prozesse zur Einbruchserkennung, Verfolgung, Personenzählung \cite{aziz2011pedestrian}, usw. angewandt werden können. Viele Algorithmen wurden entworfen, um die Vordergrundobjekte vom Hintergrund einer Sequenz zu segmentieren und teilen im Allgemeinen das gleiche Prinzip wie bei \cite{sobral2014comprehensive}:
 \begin{itemize}
-	\item Initialisierung des Hintergrundes: Ein Hintergrundmodell wird zuerst dank einer festen Anzahl von Bildern aufgebaut. Dieses Modell kann auf verschiedene Arten entworfen werden (statistisch, Fuzzy...)
-	\item Erkennung des Vordergrundes: In den nächsten Bildern wird ein Vergleich zwischen dem aktuellen Bild und dem Hintergrundmodell durchgeführt. Diese Subtraktion führt zur Berechnung des Vordergrundes der Szene.
-	\item Aktualisierung des Hintergrundes: Während dieses Erfassungsprozesses werden auch Bilder analysiert, um das im Initialisierungsschritt gelernte Hintergrundmodell in Bezug auf eine Lernrate zu aktualisieren. Ein Objekt, das sich nicht lange bewegt, sollte im Hintergrund integriert bleiben.
+	\item \textbf{Initialisierung des Hintergrundes}: Das Hintergrundmodell wird zuerst nach einer festen Anzahl von Bildern aufgebaut. Es gibt verschiedene Methoden, wie dieses Modell aufgebaut werden kann z.B.: statistisch, Fuzzy.. .
+	\item \textbf{Erkennung des Vordergrundes}: Das neu aufgenommene Bild wird mit dem Hintergrundmodell absolut subtrahiert. Diese Subtraktion führt zur Berechnung des Vordergrundes der Szene, wodurch ein Binärbild entsteht. Weiße Pixel im Binärbild definieren den Vordergrund der Szene und schwarze Pixel den Hintergrund.
+	\item \textbf{Aktualisierung des Hintergrundmodells}: Wenn sich ein Objekt nicht mehr bewegt, soll es in den Hintergrund integriert werden. Das geschieht durch den ständigen Vergleich des aktuellen Bildes mit dem Hintergrundmodell.
 \end{itemize}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{fig/BS_Example.pdf}
-	\caption{Ein Beispiel für Hintergrundsubtraktion }
+	\caption{Ein Beispiel für die Hintergrundsubtraktion }
 	\label{fig:BS_Example}
 \end{figure}
-Im nächsten Teil werden verschiedene häufige Verfahren beschrieben, um dies Verfahren genauer zu verstehen, wie die Hintergrundsubtraktion funktionieren soll.
+Im nächsten Teil werden die häufig eingesetzte Techniken beschrieben, um eine Hintergrundsubtraktion durchzuführen.
 \subsection{Adaptive Gaußschen Mixture Modell}
-In \cite{kaewtrakulpong2002improved} ist das entwickelte Hintergrundmodell auf der Grundlage der Gaußschen Mischung präsentiert, die ein meist gebräuchlicher Weg ist. Es verwendet eine Methode, um jeden Hintergrundpixel durch eine Mischung von K-Gaußschen Verteilung (normalerweise K = 3 oder 5) zu modellieren. Die Gewichte der Mischung stellen die Zeitanteile, die diese Farbe in der Szene verbleiben, dar. Die wahrscheinlichen Hintergrundfarben sind diejenigen, die länger und statischer bleiben \cite{kaewtrakulpong2002improved}.\\
-Jeder Pixel in der Szene wird durch eine Mischung von K-Gaußschen Verteilung modelliert. Die Wahrscheinlichkeit, dass ein bestimmter Pixel zum Zeitpunkt $n$ einen Wert von $\mathrm{x}_{n}$ hat, kann wie folgt geschrieben werden:\\
+Die wissenschaftliche Arbeit \cite{kaewtrakulpong2002improved} entwickelte ein Hintergrundmodell auf Grundlage der Gaußschen Mischung. Diese Methode ist ein gängiges Verfahren zur Hintergrundsubtraktion. Es verwendet eine selektive Aktualisierungsmethode, um jeden Hintergrundpixel durch eine Mischung von K-Gaußschen Verteilungen (üblicherweise für K = 3 oder K = 5) zu modellieren \cite{kaewtrakulpong2002improved}. Verschiedene Gaußschen-Mischungen stellen die verschiedenen Farben dar. Die Gewichte der Gaußschen-Mischung repräsentieren die Zeitanteile einer Farbe in der Szene. Die Pixel, die länger unverändert bleiben, sind die wahrscheinlichen Hintergrundfarben. Jeder neue Pixel wird mit vorhandenen Modellkomponenten überprüft, ob der Pixelwert eine unveränderte Farbe darstellt. Jeder Pixel wird dann in die K-Gaußschen-Komponenten eingesetzt. Das Hintergrundmodell wird nur dann aktualisiert, falls der Pixel in eines der K-Gaußschen-Komponenten passt. Aktualisierst wird nur die Erste passende K-Gaußsche-Komponente.  Wenn es keine passende K-Gaußschen-Komponente gefunden wird, wird eine neue Komponente mit dem Pixelwert als Mittelwert gesetzt, eine große Kovarianz-Matrix und ein kleines Gewicht $w_k$ hinzugefügt. \\
+Jeder Pixel in der Szene wird durch eine Mischung von K-Gaußschen Verteilungen modelliert. Die Wahrscheinlichkeit, dass ein bestimmter Pixel zum Zeitpunkt $n$ einen Wert von $\mathrm{x}_{n}$ hat, kann wie folgt beschrieben werden\cite{kaewtrakulpong2002improved}:\\
 \begin{equation}
 p(\mathrm{x}_{n}) = \sum \limits_{j=1}^K w_j \eta(\mathrm{x}_{n};\theta_j)
 \end{equation}
-wobei $w_k$ Gewichtsparameter der k-ten Gauß-Komponente ist. $\eta(\mathrm{x}_{n};\theta_j)$ ist die Normalverteilung der k-ten Komponente, die wie folgt dargestellt wird \cite{kaewtrakulpong2002improved}:\\
+wobei $w_j$ der Gewichtsparameter der k-ten Gauß-Komponente ist. $\eta(\mathrm{x}_{n};\theta_j)$ ist die Normalverteilung der k-ten Komponente, die wie folgt dargestellt wird \cite{kaewtrakulpong2002improved}:\\
 \begin{equation}
 \eta(\mathrm{x};\theta_j) = \eta(x;\mu_k, \Sigma_k) = \frac{1}{(2\pi)^\frac{D}{2} |\Sigma_k|^\frac{1}{2}} \mathrm{e}^{-\frac{1}{2}(x-\mu_k)^T \Sigma_k^{-1}(x-\mu_k)}
 \end{equation}
-wobei $\mu_k$ der Durchschnitt ist. Außerdem ist $\Sigma_k =  \sigma^2_k I$ die Kovarianz der k-ten Komponente \cite{kaewtrakulpong2002improved}. Die K-Verteilungen sind auf der Grundlage des Fitnesswerts $\frac{w_k}{\sigma_k}$ geordnet und die ersten $B$-Verteilungen werden als ein Modell des Hintergrundes der Szene verwendet, wo $B$ wie folgt beschrieben werden:\\
+wobei $\mu_k$ der Mittelwert ist. Außerdem ist $\Sigma_k =  \sigma^2_k I$ die Kovarianz der k-ten Komponente \cite{kaewtrakulpong2002improved}. Die K-Verteilungen sind auf der Grundlage des Fitnesswerts $\frac{w_k}{\sigma_k}$ geordnet und die ersten $B$-Verteilungen werden als ein Modell des Hintergrundes der Szene verwendet, wo $B$ wie folgt beschrieben wird\cite{kaewtrakulpong2002improved}:\\
 \begin{equation}
 B = \underset{b}{\arg\min}(\sum \limits_{j=1}^b w_j > T) 
 \end{equation}
-Der Schwellwert $T$ ist der Mindestanteil des Hintergrundmodells und stellt die kleinste Wahrscheinlichkeit dar, sodass der Hintergrund in der Szene bleibt. Die Hintergrundsubtraktion wird durchgeführt, indem ein Vordergrundpixel jeden Pixel, der mehr als 2,5 Standardabweichungen von irgendeiner der B-Verteilung entfernt ist, markiert wird. Die erste Gauß-Komponente, die die oben genannte Bedingung erfüllt, wird durch die folgenden Aktualisierungsgleichungen aktualisiert \cite{kaewtrakulpong2002improved}:
+Der Schwellenwert $T$ ist der Mindestanteil des Hintergrundmodells und stellt die kleinste Wahrscheinlichkeit dar, sodass der Hintergrund in der Szene bleibt. Die Hintergrundsubtraktion in \cite{kaewtrakulpong2002improved} wird durchgeführt, indem die Vordergrundpixel die Pixel sind, die in einer der B-Verteilungen, eine Standardabweichung von mehr als $2,5$ aufweisen. Diese Pixel werden weiß gefärbt. Die erste Gauß-Komponente, die die oben genannte Bedingung erfüllt, wird durch die folgenden Aktualisierungsgleichungen aktualisiert \cite{kaewtrakulpong2002improved}:
 \begin{eqnarray}
 \hat{w}^{N+1}_k &=& (1-\alpha) \hat{w}^{N}_k + \alpha \hat{p} (w_k | \mathrm{x}_{N+1}) \\
 \hat{\mu}^{N+1}_k &=& (1-\alpha) \hat{\mu}^N_k + \rho\mathrm{x}_{N+1} \\
@@ -43,14 +43,14 @@ Der Schwellwert $T$ ist der Mindestanteil des Hintergrundmodells und stellt die 
 1, & \text{sonst}
 \end{array}\right.
 \end{eqnarray}
-wobei $w_k$ die k-te Gaußschen Komponente ist und $\frac{1}{\alpha}$ definiert die Zeitkonstante, die die Änderung bestimmt. Wenn keine der K-Verteilungen mit diesem Pixelwert übereinstimmt, wird die unwahrscheinliche Komponente durch eine Verteilung mit dem aktuellen Wert als Mittelwert ersetzt.
-\subsection{Kernel Density Estimation}
-Ein Nachteil von \acs{GMM} ist: Dieses Modell kann keine empfindliche Detektion erreichen, wenn der Hintergrund sehr hohe Frequenzvariation aufweist. Dieser Nachteil kann mit \acs{KDE} Modell, das in \cite{elgammal2000non} beschrieben wurde, gelöst werden.\\
-Sei $x_1, x_2,..., x_n$ eine aktuelle Stichprobe von Intensitätswerten für einen Pixel. Unter Verwendung dieser Stichprobe kann die Dichtefunktion von Wahrscheinlichkeit, dass dieser Pixel einen Intensitätswert $x_t$ in Zeit $t$ haben wird, unter Verwendung des Kernschätzers $K$ als nicht-parametrisch geschätzt werden \cite{elgammal2000non}.
+wobei $w_k$ die k-te Gaußschen Komponente ist und $\frac{1}{\alpha}$ definiert die Zeitkonstante, die die Änderung bestimmt. Wenn keine der K-Verteilungen mit diesem Pixelwert zusammenpasst, wird die unwahrscheinliche Komponente durch eine Verteilung mit dem aktuellen Wert als Mittelwert, einer großen Kovarianz-Matrix und einem kleinen Gewicht ersetzt \cite{kaewtrakulpong2002improved}.
+t\subsection{Kernel Density Estimation}
+Ein Kernel in diesem Bezug definiert ein Filter über verschiedene Bilder. Die Bilder sind hintereinander geordnet und repräsentieren ein Volumen. Der Kernel schneidet dann ein Volumen anhand des verwendeten Filters heraus. Ein Nachteil von \acs{GMM} ist: Dieses Modell kann keine empfindliche Detektion erreichen, wenn der Hintergrund sehr hohe Frequenzvariation aufweist. Dieser Nachteil kann mit dem \acs{KDE} Modell, das in \cite{elgammal2000non} beschrieben wurde, gelöst werden.\\
+Sei $x_1, x_2,..., x_n$ eine aktuelle Stichprobe von Intensitätswerten für einen Pixel. Unter Verwendung dieser Stichprobe kann die Dichtefunktion von Wahrscheinlichkeit, dass dieser Pixel einen Intensitätswert $x_t$ in Zeit $t$ hat, unter Verwendung des Kernschätzers $K$ als nicht-parametrisch geschätzt werden \cite{elgammal2000non}.
 \begin{equation}
 P(x_t) = \frac{1}{n} \sum \limits_{i=1}^N K (x_t - x_i) 
 \end{equation}
-Wenn die Kernschätzfunktion $K$ als Normalfunktion $N (0;\sigma)$ wobei $\sigma$ die Kernfunktionsbandbreite ist, gewählt wird. Wenn verschiedene Farbkanäle mit unterschiedlichen Kernel-Bandbreite $\sigma^2_j$ für den j-ten Farbkanal:
+Wenn die Kernel-Schätzfunktion $K$ als Normalfunktion $N (0;\sigma)$ gewählt wird, wobei $\sigma$ die Kernel-Funktionsbandbreite ist und verschiedene Farbkanäle mit unterschiedlichen Kernel-Bandbreiten $\sigma^2_j$ für den j-ten Farbkanal belegt werden
 
 \begin{gather}
 \sigma
@@ -61,51 +61,46 @@ Wenn die Kernschätzfunktion $K$ als Normalfunktion $N (0;\sigma)$ wobei $\sigma$
 0 & 0 & \sigma^2_3 \\
 \end{pmatrix}
 \end{gather}
-
 dann wird die Dichtefunktion wie folgt beschrieben:
 \begin{equation}
 P(x_t) = \frac{1}{n} \sum \limits_{i=1}^N \prod \limits_{j=1}^d \frac{1}{\sqrt{2\pi\sigma^2_j}} \mathrm{e} ^ {-\frac{1}{2} \frac{({x_t}_j - {x_i}_j)^2}{\sigma^2_j}}
 \end{equation}
-Bei  $P(x_t)<T$ Wahrscheinlichkeitsschätzung wird der Pixel als ein Vordergrundpixel betrachtet. In diesem Fall ist $T$ ein globaler Schwellenwert über das gesamte Bild, der so eingestellt werden kann, dass ein gewünschter Prozentsatz von Falsch-Positiven erreicht wird.\\
+Bei  $P(x_t)<T$ Wahrscheinlichkeitsschätzung wird der Pixel als ein Vordergrundpixel betrachtet. In diesem Fall ist $T$ ein globaler Schwellenwert über das gesamte Bild. $T$ kann so eingestellt werden, dass nur ein minimaler Prozentsatz von fehlerhaften Erkennungen erreicht wird.\\
 Angenommen ist $m$ Median von $|x_i - x_{i+1}|$ für jedes Paar $(x_i, x_{i+1})$ in der Stichprobe. Nach \cite{elgammal2000non} wird die Standardabweichung der ersten Verteilung wie folgt geschätzt: 
 \begin{equation}
 \sigma = \frac{m}{0,68 \sqrt{2}}
 \end{equation}
-Bei \acs{KDE} gibt es zwei Alternative für die Aktualisierung des Hintergrundes bzw. durch ``Selective Update"\ und ``Blind Update". Die erste Alternative fügt neue Stichprobe in das Modell hinzu, wenn es als Hintergrund klassifiziert ist. Die zweite Alternative fügt einfach neue Stichproben in das Modell hinzu, egal ob sie zum Hintergrund oder Vordergrund gehören. Im Allgemeinen funktioniert \acs{KDE} im Freien bzw. nicht in Gebäuden besser als die \acs{GMM} Methode.
+Bei \acs{KDE} gibt es zwei Alternativen für die Aktualisierung des Hintergrundes bzw. durch ``Selective Update"\ und ``Blind Update". Die erste Alternative fügt neue Stichproben in das Modell hinzu, wenn es als Hintergrund klassifiziert ist. Die zweite Alternative fügt einfach neue Stichproben in das Modell hinzu, egal ob sie zum Hintergrund oder Vordergrund gehören. Im Allgemeinen funktioniert \acs{KDE} im Freien bzw. nicht in Gebäuden, besser als die \acs{GMM} Methode.
 
 \subsection{K-nächster Nachbar}
-Diese Methode ist eine Verbesserung von \acs{KDE}. Feste Kerngröße $D$ in \acs{KDE} wird für jeden neuen Punkt $x_i$ angepasst. Anstatt Optimierung der Größe $D$ erhöht die Anpassung $D$, solang eine feste Menge von Daten $k$ abgedeckt ist. Auf diesem Weg befinden sich große Kerne in den Gebieten mit einer kleinen Anzahl von Stichproben und kleinere Kerne in den dicht besiedelten Gebieten. Dennoch steht die Schätzung in Beziehung mit der k-NN-Klassifikation. In ~\cite{zivkovic2006efficient} wird ein $k = [0.1n]$ gewählt, wobei $n$ die Zeit für Anpassung von dem Modell und $[n]$ steht für Aufrunden von eine reale Zahl $n$ auf nächste natürliche Zahl.  Ein neuer Pixel $x_i$ passt zum Modell, wenn mehr als $k$ Punkte innerhalb $n$ Kernels vorhanden sind. Auf diesem Grund wird $k$ Nachbar als Schwellwert für diese Verbesserung genutzt und diese Methode wird auch als ``KNN" genannt. 
+Diese Methode ist eine Verbesserung von der \acs{KDE} Methode und konkret in \cite{zivkovic2006efficient} als K-NN genannt. Feste Kernel-Größe $D$ in \acs{KDE} wird für jeden neuen Punkt $x_i$ angepasst. Anstatt der Optimierungen der Kernel-Größe $D$, erhöht diese Methode die Kernel-Größen $D$, solang eine feste Menge von Daten $k$ abgedeckt ist. 
+Mit der K-NN-Methode befinden sich große Kernels in den Gebieten mit einer kleinen Anzahl von Stichproben und kleinere Kernels in den dicht besiedelten Gebieten. Dennoch steht die Schätzung in Beziehung mit der K-NN-Klassifikation. In ~\cite{zivkovic2006efficient} wird ein $k = [0.1n]$ gewählt, wobei $n$ die Zeit für die Anpassung von dem Modell und $[n]$ steht für das Aufrunden von eine realen Zahl $n$ auf die nächste natürliche Zahl. Ein neuer Pixel $x_i$ passt zum Modell, wenn mehr als $k$ Punkte innerhalb von $n$ Kernels vorhanden sind. Auf diesem Grund wird der $k$-te Nachbar als Schwellenwert für diese Verbesserung verwendet. 
 
 \subsection{Vibe}
-In \cite{barnich2009vibe} wurde ein Verfahren beschrieben, das ersten Ansatz von zufälliger Aggregation in Hintergrundsubtraktion ist. Das Verfahren ist ``ViBe" genannt. Sei $p_t(x)$ ein Pixelwert $x$ in Zeit $t$. Bei \acs{GMM} oder \acs{KDE} Modell wird ein Pixelwert $p_t(x)$ als Hinter- oder Vordergrund klassifiziert, abhängig davon, wie der Pixel mit Dichtefunktion des Modells passt. In ``ViBe" wird aber eine Menge von Stichprobewerte als Pixelmodell benutzt. Um einen Wert $p_t(x)$ zu klassifizieren, wird der Wert mit seinen nächsten Werten in der Menge der Stichproben, in dem wie eine Kugel $S_R(p_t(x))$ mit Radius $R$ und Punkt $p_t(x)$ definiert wird. Ein Pixel ist genau dann als Background klassifiziert, wenn die Überschneidung $\sharp$ von Kugel $S_R(p_t(x))$ und Menge von Punkte ${p_1, p_2, ..., p_n}$ mehr als Schwellwert $\sharp_min$ ist (siehe Abbildung ~\ref{fig:vibe}).
-
+In \cite{barnich2009vibe} wurde ein Verfahren beschrieben, das der erste Ansatz von zufälliger Aggregation in der Hintergrundsubtraktion ist. Das Verfahren wird konkret ``ViBe" genannt. Sei $p_t(x)$ ein Pixelwert $x$ in der Zeit $t$. Bei \acs{GMM} oder \acs{KDE} Modell wird ein Pixelwert $p_t(x)$ als Hinter- oder Vordergrund klassifiziert, abhängig davon, wie der Pixel mit der Dichtefunktion des Modells passt. In ``ViBe" wird eine Menge von Stichprobenwerten als Pixelmodell verwendet. Um einen Wert $p_t(x)$ zu klassifizieren, wird der Wert mit seinen nächstliegenden Werten in der Menge der Stichproben verglichen, indem eine Kugel $S_R(p_t(x))$ mit Radius $R$ und Punkt $p_t(x)$ definiert wird. Ein Pixel ist genau dann als Hintergrund klassifiziert, wenn die Überschneidung $\sharp$ von der Kugel $S_R(p_t(x))$ und die Menge von Punkten ${p_1, p_2, ..., p_n}$ mehr als der Schwellenwert $\sharp\_min$ ist (siehe Abbildung ~\ref{fig:vibe}).
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.3\textwidth]{fig/vibe.pdf}
-	\caption{Klassifizierung von $p_t(x)$ basiert auf Überschneidung von Kugel $S_R(p_t(x))$ mit Menge der Stichproben \cite{barnich2009vibe}.}
+	\includegraphics[width=0.5\textwidth]{fig/vibe.pdf}
+	\caption{Die Klassifizierung von $p_t(x)$ basiert auf die Überschneidung von der Kugel $S_R(p_t(x))$ mit der Menge der Stichproben \cite{barnich2009vibe}.}
 	\label{fig:vibe}
 \end{figure}
- 
-Im nächsten Kapitel werden ein Vergleich von dem vier oben genannte Verfahren und meine eigene Methode beschrieben, damit Vorteile beziehungsweise Nachteile jeder Methode verdeutlicht werden.
-
+Im nächsten Kapitel werden die vier oben genannte Verfahren und meine eigene Methode verglichen. Es wird auch auf die verschiedenen Vor- und Nachteile verdeutlicht.
 \section{Histogrammanalyse}\label{sec:Histogrammanalyse}
-Ein Histogramm eines Bildes ist graphische Darstellung der Tonwertverteilung in einem digitalen Bild. Ein Histogramm zeichnet die Anzahl der Pixel für jeden Tonwert auf. Auf dem Gebiet der Computervision können Bildhistogramme nützliche Werkzeuge für $Schwellenwertbindung$ sein. Da die in dem Graphen enthaltene Information eine Darstellung der Pixelverteilung als eine Funktion der Tonvariation ist, können sich Bildhistogramme auf Spitze und Täler analysieren lassen.\\
-Weil eine unterschiedliche Körperhaltung ein unterschiedliches Muster von Projektionshistogramm aufweist, kann das Projektionshistogramm als eines der Merkmale verwendet werden, um unterschiedliche Körperhaltungen zu unterscheiden. Nach der Hintergrundsubtraktion wird eine Silhouette des Vordergrundes als ein Binärbild erstellt. Körperhaltungsanalyse wird auf die Silhouette angewendet, um die Ähnlichkeiten der horizontalen und vertikalen Projektionshistogramme der erkannten Silhouette und der Haupthaltungen zu berechnen. Die Normalisierung des durchschnittlichen Histogramms erfolgt durch Skalierung der Silhouette in eine vertikale Länge unter Beibehaltung des ursprünglichen Seitenverhältnisses \cite{haritaoglu1998ghost}. Normalisierte horizontale und vertikale Projektionsvorlagen für jede Körperhalterung (nämlich: Stehen, Beugen, Legen und Sitzen) wurden experimentell unter Verwendung von 4500 Silhouette von 7 verschiedenen Personen berechnet (siehe Abbildung ~\ref{fig:histogramm}).   
+Ein Histogramm eines Bilds stellt die Tonwertverteilung in einem digitalen Bild graphisch dar. Ein Bild-Histogramm zeichnet die Anzahl der Pixel für jeden Tonwert auf. Es bietet ein nützliches Werkzeug für die $Schwellenwertbindung$ auf dem Gebiet der Computervision an. Die graphische Darstellung von Histogrammen enthält Informationen über die Pixelverteilung als eine Funktion der Tonvariation, deswegen lassen sich Bild-Histogramme auf Hoch- und Tiefpunkte analysieren.\\ 
+Jede unterschiedliche Körperhaltung projektiert ein unterschiedliches Muster von Histogrammen, deswegen kann das Projektions-Histogramm als eins der Eigenschaften verwendet werden, um unterschiedliche Körperhaltung zu unterscheiden. Nach der Hintergrundsubtraktion wird eine Silhouette des Vordergrundes als Binärbild erstellt. Körper-haltungsanalyse wird auf die Silhouette angewendet, um die Ähnlichkeiten der horizontalen und vertikalen Projektions-Histogramme der erkannten Silhouette und der Haupthaltungen (Stehen, Beugen, Liegen und Sitzen) zu berechnen. Die Normalisierung des durchschnittlichen Histogramms erfolgt durch die Skalierung auf 128 Pixel der Silhouette indem sowohl Höhe und Breite skaliert werden, bis beide Größen kleiner oder gleich 128 Pixel aufweisen. Dabei wird das ursprünglichen Seitenverhältnis nicht verändert. \cite{haritaoglu1998ghost}. Normalisierte horizontale und vertikale Projektionsvorlagen für jede Körperhalterung wurden experimentell unter Verwendung von $4500$ Silhouette von $7$ verschiedenen Personen berechnet (siehe Abbildung ~\ref{fig:histogramm}).   
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{fig/histogramm.pdf}
 	\caption{Normalisierte horizontale und vertikale Projektionsvorlagen für jede Körperhalterung \cite{haritaoglu1998ghost}.}
 	\label{fig:histogramm}
 \end{figure}
-
-Diese Methode wird verwendet, um die Ähnlichkeit der gegebenen Körperhaltung mit einer der vier Haupthaltungen zu bestimmen. Die erstellte Silhouette durch Hintergrundsubtraktion wird mit den durchschnittlichen Projektionshistogrammen  verglichen, wobei die Summe der absoluten Differenz verwendet wird, um die ähnlichste Körperhaltung zu schätzen. Angenommen ist $S_i$ die Ähnlichkeit zwischen der erkannter Silhouette und i-ten Hauptkörper. Seien $H_i$ und $V_i$ die horizontalen und vertikalen durchschnittlichen Projektionshistogrammen , $P$ und $R$ die horizontalen und vertikalen Histogramme der erkannten Silhouette. $S_i$ wird wie folgt berechnet: 
+Die erstellte Silhouette durch die Hintergrundsubtraktion wird mit den durchschnittlichen Projektions-Histogrammen verglichen, wobei die Summe der absoluten Differenzen verwendet wird, um die ähnlichste Körperhaltung zu schätzen. Angenommen $S_i$ ist die Ähnlichkeit zwischen der erkannten Silhouette und der i-ten Körperhaltung. Seien $H_i$ und $V_i$ die horizontalen und vertikalen durchschnittlichen Projektions-Histogrammen. $P$ und $R$ die horizontalen und vertikalen Histogramme der erkannten Silhouette. $S_i$ wird dann wie folgt berechnet: 
 \begin{equation}\label{eq:loglikelyhood}
 S_i = -\log(\sum \limits_{h}^{128} \sum \limits_{v}^{128} |H_h^i - P_h| + |V_v^i - R_v|) 
 \end{equation}
 Die Körperhaltung, die das höchste Ähnlichkeitsmaß ergibt, wird als geschätzte Haltung genommen.  
-
 \section{Fuzzylogik}\label{sec:fuzzylogik}
-Mit Hilfe von Hintergrundsubtraktion und Histogrammanalyse wird erstmal nur eine sich bewegte Person erkannt, aber zum Unterschied zwischen täglichen Bewegungen und ungewöhnlichen Situationen kommt Fuzzylogik zum Einsatz. In Jahr 1971 wurde die erste Forschung über Fuzzy-Algebra beschrieben ~\cite{rosenfeld1971fuzzy}.\\
+Mit Hilfe von Hintergrundsubtraktion und Histogrammanalyse wird erstmal nur eine sich bewegte Person erkannt, aber zum Unterschied zwischen täglichen Bewegungen und ungewöhnlichen Situationen kommt Fuzzylogik zum Einsatz. In Jahr 1971 wurde die erste Forschung über Fuzzy-Algebra beschrieben \cite{rosenfeld1971fuzzy}.\\
 Nun stellt sich die Frage, warum Fuzzylogik in diesem Fall angewendet. Es gibt mehre Gründe für Benutzung der Fuzzylogik. Erster Grund ist, dass ein Fuzzysystem einfach kreiert, das mit jedem Satz von Eingabe-Ausgabe-Daten übereinstimmen. Außerdem sind die mathematischen Konzepte hinter dem Fuzzy-Denken sehr einfach und die Vorteile, die Fuzzylogik bringt, sind enorm und zuverlässig.\\
  Fuzzylogik geht um eine unscharfe logische Menge, wobei eine Fuzzymenge seinen Mitgliedern ermöglicht, Mitgliedschaftsgrade zu haben. Wenn der Wert 1 an Objekten zugewiesen ist, die vollständig innerhalb der Menge liegen und Objekten außerhalb der Menge eine 0 zugewiesen wird, hat jedes Objekt, das teilweise in der Menge ist, einen Wert zwischen 0 und 1. Der Prozess der Fuzzylogik wird wie folgt erläutert ~\cite{dingle2011artificial}:
 \begin{itemize}
@@ -144,11 +139,11 @@ Die Abbildung  \ref{fig:Fuzzy_Example} stellt diese drei Schritte von Fuzzylogik
 \section{OpenCV Framework}\label{sec:OpenCV}
 OpenCV steht für Open-Computer-Vision. Die Bibliothek wird in C und C++ programmiert und kann unter Linux, Windows, MacOS laufen. OpenCV ist auch auf Schnittstelle für Java, Python, Ruby, Mathlab... entwickelt. OpenCV wurde für Recheneffizienz und mit einem starken Fokus auf Echtzeitanwendungen entwickelt. Diese Bibliothek enthält über 500 Funktionen, die viele Bereiche in der Vision einschließlich Bildverarbeitung, maschinelles Lernen, neuronale Netze... umfassen ~\cite{bradski2008learning}. OpenCV vereinfacht den Bildverarbeitungsprozess mit vielen hilfreichen vordefinierten Funktionen. Da die Arbeit um ein Echtzeitanwendung zur Erkennung der abnormalen Situationen geht und es ist nötig, die Verarbeitungszeit schnell wie möglich zu laufen, deswegen wird OpenCV in diesem Projekt benutzt.  
 
-\section{Bosch Innenkamera}
+\section{360° Kamera}
 Ziel dieser Arbeit ist Erstellung einer Anwendung, die mit der Bosch Innen Kamera funktioniert. Die Testvideos wurden mit eine Bosch Innenkamera aufgenommen. Die Bosch 360 Innenkamera kann in jede Richtung drehen und schauen. Die Kamera besteht aus Bewegungssensoren, eine Gegensprechanlage für Zwei-Wege-Audio und Infrarot-Nachtsicht, so dass Sie zu jeder Zeit über Ihr Haus schauen können. Wenn es etwas wahrnimmt, zeichnet es HD-Material auf dem lokalen Speicher auf und Sie können mit Ihrem Telefon Clips oder Live-Filmmaterial ansehen.  Mit Hilfe von dieser Kamera kann man sich fern um die Alten oder Kinder kümmern. Außerdem kann die Innenkamera eine Push-Nachrichten ans Smartphone via eine kostenlose App schicken. Einfachsten Einrichtungsschritte hilft dem Benutzer schnell wie möglich die Kamera mit IP-Verbindung starten. Mit ein paar leichten Koppeln auf dem Kopf wird die Kamera sich in die Gehäuse versenkt, oder aus der Gehäuse ausdreht. Dank integrierten Bewegungsmeldern kann die Kamera eine Bewegung verfolgen und in die Richtung von der entdeckten Bewegung drehen. Das hilft meiner Arbeit bei Lokalisierung einem Personen im Raum. Die Kamera hat zwei Vorteile, die hier gut für diese Arbeit anwendet werden kann, nämlich die Fähigkeit, jede Richtung zu drehen und Infrarot-Nachtsicht aufzunehmen. Das bedeutet, es ist ermöglicht, die Person Tag und Nacht zu betrachten und die außergewöhnliche Situation genau pünktlich zu erkennen. 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{fig/BoschInnenkamera.jpg}
-	\caption{Bosch 360 Grad Kamera (Quelle: www.bosch-smarthome.com) } 
+	\caption{Bosch 360° Kamera (Quelle: www.bosch-smarthome.com) } 
 	\label{fig:BoschInnenCam}
 \end{figure}

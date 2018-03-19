@@ -44,16 +44,16 @@ Der Schwellenwert $T$ ist der Mindestanteil des Hintergrundmodells und stellt di
 \end{array}\right.
 \end{eqnarray}
 wobei $w_k$ die k-te Gaußschen Komponente ist und $\frac{1}{\alpha}$ definiert die Zeitkonstante, die die Änderung bestimmt. Wenn keine der K-Verteilungen mit diesem Pixelwert zusammenpasst, wird die unwahrscheinliche Komponente durch eine Verteilung mit dem aktuellen Wert als Mittelwert, einer großen Kovarianz-Matrix und einem kleinen Gewicht ersetzt \cite{kaewtrakulpong2002improved}.
-t\subsection{Kernel Density Estimation}
-Ein Kernel in diesem Bezug definiert ein Filter über verschiedene Bilder. Die Bilder sind hintereinander geordnet und repräsentieren ein Volumen. Der Kernel schneidet dann ein Volumen anhand des verwendeten Filters heraus. Ein Nachteil von \acs{GMM} ist: Dieses Modell kann keine empfindliche Detektion erreichen, wenn der Hintergrund sehr hohe Frequenzvariation aufweist. Dieser Nachteil kann mit dem \acs{KDE} Modell, das in \cite{elgammal2000non} beschrieben wurde, gelöst werden.\\
-Sei $x_1, x_2,..., x_n$ eine aktuelle Stichprobe von Intensitätswerten für einen Pixel. Unter Verwendung dieser Stichprobe kann die Dichtefunktion von Wahrscheinlichkeit, dass dieser Pixel einen Intensitätswert $x_t$ in Zeit $t$ hat, unter Verwendung des Kernschätzers $K$ als nicht-parametrisch geschätzt werden \cite{elgammal2000non}.
+\subsection{Kernel Density Estimation}
+Ein Nachteil von \acs{GMM} ist: Dieses Modell kann keine empfindliche Detektion erreichen, wenn der Hintergrund sehr hohe Frequenzvariation aufweist. Dieser Nachteil kann mit dem \acs{KDE} Modell, das in \cite{elgammal2000non} beschrieben wurde, gelöst werden.\\
+Sei $x_1, x_2,..., x_n$ eine aktuelle Stichprobe von Intensitätswerten für einen Pixel. Unter Verwendung dieser Stichprobe kann die Dichtefunktion von Wahrscheinlichkeit, dass dieser Pixel einen Intensitätswert $x_t$ in Zeit $t$ hat, unter Verwendung des Kernschätzers $K$ mit Brandbreite $D$ als nicht-parametrisch geschätzt werden \cite{elgammal2000non}.
 \begin{equation}
-P(x_t) = \frac{1}{n} \sum \limits_{i=1}^N K (x_t - x_i) 
+P(x_t) = \frac{1}{n} \sum \limits_{i=1}^n K_D (x_t - x_i) 
 \end{equation}
-Wenn die Kernel-Schätzfunktion $K$ als Normalfunktion $N (0;\sigma)$ gewählt wird, wobei $\sigma$ die Kernel-Funktionsbandbreite ist und verschiedene Farbkanäle mit unterschiedlichen Kernel-Bandbreiten $\sigma^2_j$ für den j-ten Farbkanal belegt werden
+Wenn die Kernel-Schätzfunktion $K$ als Normalfunktion $N (0;\sigma)$ gewählt wird, wobei $D$ die Kernel-Funktionsbandbreite ist und verschiedene Farbkanäle mit unterschiedlichen Kernel-Bandbreiten $\sigma^2_j$ für den j-ten Farbkanal belegt werden
 
 \begin{gather}
-\sigma
+D
 =
 \begin{pmatrix}
 \sigma^2_1 & 0 & 0 \\
@@ -68,7 +68,7 @@ P(x_t) = \frac{1}{n} \sum \limits_{i=1}^N \prod \limits_{j=1}^d \frac{1}{\sqrt{2
 Bei  $P(x_t)<T$ Wahrscheinlichkeitsschätzung wird der Pixel als ein Vordergrundpixel betrachtet. In diesem Fall ist $T$ ein globaler Schwellenwert über das gesamte Bild. $T$ kann so eingestellt werden, dass nur ein minimaler Prozentsatz von fehlerhaften Erkennungen erreicht wird.\\
 Angenommen ist $m$ Median von $|x_i - x_{i+1}|$ für jedes Paar $(x_i, x_{i+1})$ in der Stichprobe. Nach \cite{elgammal2000non} wird die Standardabweichung der ersten Verteilung wie folgt geschätzt: 
 \begin{equation}
-\sigma = \frac{m}{0,68 \sqrt{2}}
+D = \frac{m}{0,68 \sqrt{2}}
 \end{equation}
 Bei \acs{KDE} gibt es zwei Alternativen für die Aktualisierung des Hintergrundes bzw. durch ``Selective Update"\ und ``Blind Update". Die erste Alternative fügt neue Stichproben in das Modell hinzu, wenn es als Hintergrund klassifiziert ist. Die zweite Alternative fügt einfach neue Stichproben in das Modell hinzu, egal ob sie zum Hintergrund oder Vordergrund gehören. Im Allgemeinen funktioniert \acs{KDE} im Freien bzw. nicht in Gebäuden, besser als die \acs{GMM} Methode.
 

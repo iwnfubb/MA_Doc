@@ -33,13 +33,13 @@ Aus dieser Grafik \ref{fig:compare_bgsubtraction} wird deutlich, dass  \acs{KNN}
 Die oben genannten Hintergrundsubtraktionsverfahren basieren auf die Änderung der Intensitätswerten von jedem Pixel, deshalb liefern die Verfahren ein Schwarzweißbild mit viel Rausch zurück. Um die Rausch zu entfernen, wird Erosion und Dilatation zum Einsatz gebracht, die zwei Verfahren sind zwei grundlegende Operationen bei der morphologischen Bildverarbeitung, auf der alle anderen morphologischen Operationen basieren. Unter Erosion kann man verstehen ein Verfahren, das ein Bild mit einer einfachen, vordefinierten Form untersucht und daraus Schlussfolgerungen zieht, wie diese Form in die Formen im Bild verfehlt. Dilatation ist ein umgekehrtes Verfahren von Erosion, es versucht ein Bild zu erweitern mit passender Form von originalem Bild. Eingaben für die zwei Verfahren sind ein originales Bild $A$ und einen Filter $B$. Wenn das strukturierende Element $B$ ein Zentrum hat, kann die Erosion von A durch B als der Ort von Punkten verstanden werden, die durch das Zentrum von B erreicht werden, wenn B sich in A bewegt. Angenommen, dass der Ursprung $B$ in seiner Mitte ist, überlagert für jedes Pixel in $A$ der Ursprung von $B$, wenn $B$ vollständig in $A$ enthalten ist, wird das Pixel bei Erosion beibehalten, ansonsten gelöscht. Aber bei Dilatation überlagert jeder Pixel in $A$ der Ursprung von $B$ und der Pixel wird in der Erweiterung von $A$ und $B$ enthalten. Um die zwei Operationen besser zu verstehen, wurden zwei Beispiele für Erosion und Dilatation in Abbildungen \ref{fig:erosion} und \ref{fig:dilatation} dargestellt.
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{fig/erosion.jpg}
+	\includegraphics[width=0.8\textwidth]{fig/erosion.pdf}
 	\caption{Erosion} 
 	\label{fig:erosion}
 \end{figure}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{fig/dilatation.jpg}
+	\includegraphics[width=0.8\textwidth]{fig/dilatation.pdf}
 	\caption{Dilatation} 
 	\label{fig:dilatation}
 \end{figure}
@@ -66,22 +66,19 @@ OpenCV bietet eine Funktion an, die  \inlinecode{C++}{cv2.findContours()} heißt.
 Nun ergibt es sich eine Begrenzungsbox, die sich bewegenden Objekte begrenzt. Nach Bewegung einer Person wird eine Liste von Begrenzungsbox kreiert, die alle vergangene Positionen der Bewegung enthält und eine  Begrenzungsbox, die aktuelle Bewegung darstellt. Bei Aktualisierung des Hintergrundes wird das Hintergrundbild nur mit Teil(e) des aktuellem Bildes mit vergangen Begrenzungsboxen ersetzt, die nicht die aktuelle Bewegung überschnitt . Auf den Abbildungen   \ref{fig:mymethod1} h, \ref{fig:mymethod2} h, \ref{fig:mymethod3}h werden die Teil(e) des Bildes, die mit rot markiert sind, in Hintergrundbild kopiert. Die weiß markierte Bereiche auf Abbildungen \ref{fig:mymethod1} g, \ref{fig:mymethod2} g, \ref{fig:mymethod3}g werden noch nicht beobachtet soweit wenn die noch mit dem aktuelles Begrenzungsbox (grün markiert Box) überschneiden.
 \begin{figure}[H]
 	\centering
-	\def\svgwidth{0.9\textwidth}
-	\import{./fig/}{mymethode4edited.pdf_tex}
+	\includegraphics[width=0.9\textwidth]{fig/mymethode4edited.pdf}
 	\caption{Frame-Nummer: 334. Der rot markierte Bereich von Hintergrundbild wird in nächstem Frame aktualisiert.}
 	\label{fig:mymethod1}
 \end{figure}
 \begin{figure}[H]
 	\centering
-	\def\svgwidth{0.9\textwidth}
-	\import{./fig/}{mymethode3edited.pdf_tex}
+	\includegraphics[width=0.9\textwidth]{fig/mymethode3edited.pdf}
 	\caption{Frame-Nummer: 335. Nach der Aktualisierung des Hintergrundbildes wird die alle rot Begrenzungsboxen gelöscht.}
 	\label{fig:mymethod2}
 \end{figure}
 \begin{figure}[H]			
 	\centering
-	\def\svgwidth{0.9\textwidth}
-	\import{./fig/}{mymethode2edited.pdf_tex}
+	\includegraphics[width=0.9\textwidth]{fig/mymethode2edited.pdf}
 	\caption{Frame-Nummer: 403. Soweit die Person sich in der Szene bewegt, werden die vergangenen Boxen (weiß und rot) erstellt.}
 	\label{fig:mymethod3}
 \end{figure}

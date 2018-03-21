@@ -124,7 +124,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="139.83315"
+     inkscape:cx="-143.73828"
      inkscape:cy="425.46208"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -146,7 +146,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -220,7 +220,7 @@
          sodipodi:role="line"
          id="tspan6932"
          x="-89.033371"
-         y="605.48102">Binärbild mit Sihoullete</tspan></text>
+         y="605.48102">Binärbild mit Silhouette</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"

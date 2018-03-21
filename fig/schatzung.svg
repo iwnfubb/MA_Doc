@@ -108,9 +108,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.49497475"
-     inkscape:cx="783.07344"
-     inkscape:cy="657.08088"
+     inkscape:zoom="0.35"
+     inkscape:cx="1217.9259"
+     inkscape:cy="514.56601"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -131,7 +131,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -148,6 +148,13 @@
        height="115.71912"
        x="-253.94189"
        y="158.3989" />
+    <rect
+       style="display:inline;fill:#f1a94e;fill-opacity:1;stroke:none;stroke-width:1.25960863;stroke-miterlimit:4;stroke-dasharray:3.7788258, 1.2596086;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4167-4-7-3-1-4"
+       width="744.77466"
+       height="115.71912"
+       x="608.39465"
+       y="154.19762" />
   </g>
   <g
      inkscape:label="Layer 1"
@@ -156,28 +163,21 @@
      transform="translate(308.97095,517.31085)"
      style="display:inline">
     <rect
-       style="display:inline;fill:#f1a94e;fill-opacity:1;stroke:none;stroke-width:1.25960863;stroke-miterlimit:4;stroke-dasharray:3.7788258, 1.2596086;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect4167-4-7-3"
-       width="717.63177"
-       height="81.433403"
-       x="635.00836"
-       y="187.68626" />
-    <rect
-       style="display:inline;fill:#f1a94e;fill-opacity:1;stroke:none;stroke-width:1.25960863;stroke-miterlimit:4;stroke-dasharray:3.7788258, 1.2596086;stroke-dashoffset:0;stroke-opacity:1"
+       style="display:inline;fill:#f1a94e;fill-opacity:1;stroke:none;stroke-width:1.25960863;stroke-miterlimit:4;stroke-dasharray:3.7788258, 1.25960860000000000;stroke-dashoffset:0;stroke-opacity:1"
        id="rect4167-4-7"
        width="717.63177"
        height="81.433403"
        x="-240.37045"
        y="-181.20114" />
     <rect
-       style="display:inline;fill:#f1a94e;fill-opacity:1;stroke:none;stroke-width:1.25960863;stroke-miterlimit:4;stroke-dasharray:3.7788258, 1.2596086;stroke-dashoffset:0;stroke-opacity:1"
+       style="display:inline;fill:#f1a94e;fill-opacity:1;stroke:none;stroke-width:1.25960863;stroke-miterlimit:4;stroke-dasharray:3.7788258, 1.25960860000000000;stroke-dashoffset:0;stroke-opacity:1"
        id="rect4167-4-7-5"
        width="717.63177"
        height="81.433403"
        x="163.55486"
        y="572.76666" />
     <rect
-       style="display:inline;fill:#f1a94e;fill-opacity:1;stroke:none;stroke-width:1.25960863;stroke-miterlimit:4;stroke-dasharray:3.7788258, 1.2596086;stroke-dashoffset:0;stroke-opacity:1"
+       style="display:inline;fill:#f1a94e;fill-opacity:1;stroke:none;stroke-width:1.25960863;stroke-miterlimit:4;stroke-dasharray:3.7788258, 1.25960860000000000;stroke-dashoffset:0;stroke-opacity:1"
        id="rect4167-4"
        width="717.63177"
        height="81.433403"
@@ -206,30 +206,30 @@
        inkscape:connector-curvature="0" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:50.38434219px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="-187.30487"
+       style="font-style:normal;font-weight:normal;font-size:50.38434219px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;text-anchor:middle;text-align:center;"
+       x="106.51358"
        y="-461.58267"
        id="text4136"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4138"
          x="-187.30487"
-         y="-461.58267">Binärbild mit Silhoulette</tspan></text>
+         y="-461.58267">Binärbild mit Silhouette</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:50.38434219px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="-221.27985"
+       style="font-style:normal;font-weight:normal;font-size:50.38434219px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;text-anchor:middle;text-align:center;"
+       x="92.638214"
        y="-125.93964"
        id="text4140"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4142"
          x="-221.27985"
-         y="-125.93964">Subimage von Silhouelette</tspan></text>
+         y="-125.93964">Subimage von Silhouette</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:50.38434219px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="-313.91589"
+       style="font-style:normal;font-weight:normal;font-size:50.38434219px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;text-anchor:middle;text-align:center;"
+       x="-107.26137"
        y="-297.09573"
        id="text4152"
        sodipodi:linespacing="125%"><tspan
@@ -239,8 +239,8 @@
          y="-297.09573">Begrenzungsbox</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:50.38434219px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="190.7205"
+       style="font-style:normal;font-weight:normal;font-size:50.38434219px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;text-anchor:middle;text-align:center;"
+       x="358.81183"
        y="506.64261"
        id="text4156"
        sodipodi:linespacing="125%"><tspan
@@ -250,8 +250,8 @@
          y="506.64261">Loglikelyhood</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:50.38434219px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="342.5538"
+       style="font-style:normal;font-weight:normal;font-size:50.38434219px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;text-anchor:middle;text-align:center;"
+       x="516.59875"
        y="628.79272"
        id="text4160"
        sodipodi:linespacing="125%"><tspan
@@ -261,19 +261,20 @@
          y="628.79272">Körperhaltung</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:47.75480652px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="639.99957"
-       y="243.16083"
+       style="font-style:normal;font-weight:normal;font-size:44.11096191px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="979.77124"
+       y="207.67743"
        id="text4662"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
-         x="639.99957"
-         y="243.16083"
-         id="tspan4666">Normalisierte Projektsvorlage</tspan></text>
+         x="979.77124"
+         y="207.67743"
+         id="tspan6002"
+         style="font-size:45px">Normalisierte vertikale</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:50.38434219px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="-87.052917"
+       style="font-style:normal;font-weight:normal;font-size:50.38434219px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;text-anchor:middle;text-align:center;"
+       x="6.0277257"
        y="53.156239"
        id="text4799"
        sodipodi:linespacing="125%"><tspan
@@ -283,20 +284,20 @@
          y="53.156239">Skaliert</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="-157.26746"
-       y="209.46313"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="127.57507"
+       y="207.67743"
        id="text4173"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4175"
-         x="-157.26746"
-         y="209.46313"
-         style="font-size:45px">Berechnen von vertikale</tspan></text>
+         x="127.57507"
+         y="207.67743"
+         style="font-size:45px;text-align:center;text-anchor:middle">Berechnen von vertikalen</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="-239.63196"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;text-anchor:middle;text-align:center;"
+       x="120.91736"
        y="259.38727"
        id="text4177"
        sodipodi:linespacing="125%"><tspan
@@ -304,7 +305,7 @@
          id="tspan4179"
          x="-239.63196"
          y="259.38727"
-         style="font-size:45px">und horizontale Histogrmamme</tspan></text>
+         style="font-size:45px;text-anchor:middle;text-align:center;">und horizontalen Histogrammen</tspan></text>
     <path
        style="display:inline;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.25960863px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend-0)"
        d="m 118.44543,-99.790949 0,255.520589"
@@ -312,5 +313,17 @@
        inkscape:path-effect="#path-effect4210-3"
        inkscape:original-d="m 118.44543,-99.790949 0,255.520589"
        inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="621.02368"
+       y="259.38727"
+       id="text6006"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="621.02368"
+         y="259.38727"
+         id="tspan6010"
+         style="font-size:45px">und horizontale Projektvorlagen</tspan></text>
   </g>
 </svg>

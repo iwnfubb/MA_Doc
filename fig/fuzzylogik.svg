@@ -131,7 +131,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -198,57 +198,67 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="24.305244"
+       x="29.900248"
        y="118.07649"
        id="text4136"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4138"
-         x="24.305244"
+         x="29.900248"
          y="118.07649">(Körperhaltung, Zeit, Normale Positionen im Raum)</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="247.48885"
+       x="253.08385"
        y="256.64792"
        id="text4140"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4142"
-         x="247.48885"
+         x="253.08385"
          y="256.64792">Umwandlung in Fuzzymenge</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="205.62361"
+       x="211.21861"
        y="405.21933"
        id="text4144"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4146"
-         x="205.62361"
+         x="211.21861"
          y="405.21933">Anwendung von (IF-ELSE) Regeln</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="374.9693"
+       x="380.5643"
        y="546.64795"
        id="text4148"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4150"
-         x="374.9693"
+         x="380.5643"
          y="546.64795">Defuzzifizierung</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="-15.37249"
+       x="26.589701"
        y="692.36218"
        id="text4152"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
-         id="tspan4154"
-         x="-15.37249"
-         y="692.36218">Unterscheidung: normale oder abnormale Situation</tspan></text>
-  </g>
+         x="26.589701"
+         y="692.36218"
+         id="tspan6032">Unterscheidung: normale oder abnormale Situation</tspan></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot7643"
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:125%;letter-spacing:0px;word-spacing:0px"><flowRegion
+         id="flowRegion7645"><rect
+           id="rect7647"
+           width="1255.7142"
+           height="685.71429"
+           x="-121.42857"
+           y="-47.003387" /></flowRegion><flowPara
+         id="flowPara7649"></flowPara></flowRoot>  </g>
 </svg>

@@ -156,6 +156,11 @@
   Computer Vision and Pattern Recognition (Cat. No PR00149)} (1999), vol.~2,
   p.~252 Vol. 2.
 
+\bibitem[Sut]{suttonhistograms}
+\textsc{Sutton E.}:
+\newblock Histograms and the zone system.
+\newblock \emph{Illustrated Photography}.
+
 \bibitem[SV14]{sobral2014comprehensive}
 \textsc{Sobral A., Vacavant A.}:
 \newblock A comprehensive review of background subtraction algorithms evaluated

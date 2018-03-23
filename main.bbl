@@ -1,3 +1,4 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
 \begin{thebibliography}{\uppercase{MPWSH16}}
 
 \bibitem[AMFT11]{aziz2011pedestrian}
@@ -5,6 +6,13 @@
 \newblock Pedestrian head detection and tracking using skeleton graph for
   people counting in crowded environments.
 \newblock In \emph{MVA} (2011), pp.~516--519.
+
+\bibitem[ARK{\etalchar{*}}06]{alwan2006smart}
+\textsc{Alwan M., Rajendran P.~J., Kell S., Mack D., Dalal S., Wolfe M., Felder
+  R.}:
+\newblock A smart and passive floor-vibration based fall detector for elderly.
+\newblock In \emph{Information and Communication Technologies, 2006. ICTTA'06.
+  2nd} (2006), vol.~1, IEEE, pp.~1003--1007.
 
 \bibitem[Bis95]{bishop1995neural}
 \textsc{Bishop C.~M.}:
@@ -130,6 +138,12 @@
   2008.
 \newblock [Online; accessed 19-July-2008].
 
+\bibitem[LHS{\etalchar{*}}05]{lindemann2005evaluation}
+\textsc{Lindemann U., Hock A., Stuber M., Keck W., Becker C.}:
+\newblock Evaluation of a fall detector based on accelerometers: A pilot study.
+\newblock \emph{Medical and Biological engineering and computing 43}, 5 (2005),
+  548--551.
+
 \bibitem[MPWSH16]{marki2016bilateral}
 \textsc{M{\"a}rki N., Perazzi F., Wang O., Sorkine-Hornung A.}:
 \newblock Bilateral space video segmentation.
@@ -141,6 +155,14 @@
 \newblock Background subtraction techniques: a review.
 \newblock In \emph{Systems, man and cybernetics, 2004 IEEE international
   conference on} (2004), vol.~4, IEEE, pp.~3099--3104.
+
+\bibitem[PLSR08]{popescu2008acoustic}
+\textsc{Popescu M., Li Y., Skubic M., Rantz M.}:
+\newblock An acoustic fall detector system that uses sound height information
+  to reduce the false alarm rate.
+\newblock In \emph{Engineering in Medicine and Biology Society, 2008. EMBS
+  2008. 30th Annual International Conference of the IEEE} (2008), IEEE,
+  pp.~4628--4631.
 
 \bibitem[PS02]{power2002understanding}
 \textsc{Power P.~W., Schoonees J.~A.}:
@@ -177,6 +199,13 @@
 \newblock Image quality assessment: from error visibility to structural
   similarity.
 \newblock \emph{IEEE transactions on image processing 13}, 4 (2004), 600--612.
+
+\bibitem[YKE{\etalchar{*}}10]{yavuz2010smartphone}
+\textsc{Yavuz G., Kocak M., Ergun G., Alemdar H.~O., Yalcin H., Incel O.~D.,
+  Ersoy C.}:
+\newblock A smartphone based fall detector with online location support.
+\newblock In \emph{International Workshop on Sensing for App Phones; Zurich,
+  Switzerland} (2010), pp.~31--35.
 
 \bibitem[ZVDH06]{zivkovic2006efficient}
 \textsc{Zivkovic Z., Van Der~Heijden F.}:

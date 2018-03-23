@@ -3,37 +3,37 @@
 \select@language {ngerman}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Ein Beispiel f\"ur die Hintergrundsubtraktion }}{7}{figure.2.1}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Die Klassifizierung von $p_t(x)$ basiert auf die \"Uberschneidung der Kugel $S_R(p_t(x))$ mit der Menge der Stichproben \cite {barnich2009vibe}.}}{10}{figure.2.2}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Normalisierte horizontale und vertikale Referenz-Histogramme f\"ur jede K\"orperhalterung \cite {haritaoglu1998ghost}.}}{11}{figure.2.3}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Ein Beispiel f\"ur Fuzzylogik in drei Schritte. Oben: Die Temperatur von $23$ Grad wird durch Mitgliederfunktionen abgebildete. Mitte: Durch die (IF-ELSE) Regel in Algorithmus \ref {algo:fuzzy} wird eine Ausgabe als Fuzzymenge berechnet. Unten: Ein Schwerpunkt von der gerechneten Ausgabe wird in eine scharfe Ausgabe abgebildet und es ergibt sich 2.15 f\"ur das Thermostat.}}{14}{figure.2.4}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Bosch 360\IeC {\textdegree } Kamera (Quelle: www.bosch-smarthome.com) }}{16}{figure.2.5}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Ein Beispiel f\"ur die Hintergrundsubtraktion }}{8}{figure.2.1}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Die Klassifizierung von $p_t(x)$ basiert auf die \"Uberschneidung der Kugel $S_R(p_t(x))$ mit der Menge der Stichproben \cite {barnich2009vibe}.}}{11}{figure.2.2}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Normalisierte horizontale und vertikale Referenz-Histogramme f\"ur jede K\"orperhalterung \cite {haritaoglu1998ghost}.}}{12}{figure.2.3}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Ein Beispiel f\"ur die Fuzzylogik in drei Schritten. Oben: Die Temperatur von $23$ Grad wird durch Mitgliederfunktionen abgebildet. Mitte: Durch die (IF-ELSE) Regel in Algorithmus \ref {algo:fuzzy} wird eine Ausgabe als Fuzzymenge berechnet. Unten: Ein Schwerpunkt von der gerechneten Ausgabe wird in eine scharfe Ausgabe abgebildet und es ergibt sich der Wert 2.15 f\"ur das Thermostat.}}{15}{figure.2.4}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Bosch 360\IeC {\textdegree } Kamera (Quelle: www.bosch-smarthome.com) }}{17}{figure.2.5}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Drei Meilensteine zur Erkennung von au\IeC {\ss }ergew\"ohnlichen Situation}}{18}{figure.3.1}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Erster Meilenstein}}{19}{figure.3.2}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Vergleichen von verschiedene Techniken an Hintergrundsubtraktion (a) Weichzeichnen (b) AGMM (c)KNN. (d) KDE (e) Vibe}}{20}{figure.3.3}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Erosion}}{21}{figure.3.4}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Dilatation}}{22}{figure.3.5}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Ergebnis nach Erosion und Dilatation}}{23}{figure.3.6}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Frame-Nummer: 334. Der rot markierte Bereich von Hintergrundbild wird in n\"achstem Frame aktualisiert.}}{26}{figure.3.7}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Frame-Nummer: 335. Nach der Aktualisierung des Hintergrundbildes wird die alle rot Begrenzungsboxen gel\"oscht.}}{27}{figure.3.8}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Frame-Nummer: 403. Soweit die Person sich in der Szene bewegt, werden die vergangenen Boxen (wei\IeC {\ss } und rot) erstellt.}}{28}{figure.3.9}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Zweiter Meilenstein}}{33}{figure.3.10}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Beispiel f\"ur Prozess von Sch\"atzung einer Silhouette bei Stehen}}{34}{figure.3.11}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Beispiel f\"ur Prozess von Sch\"atzung einer Silhouette bei Liegen}}{35}{figure.3.12}
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Beispiel f\"ur Prozess von Sch\"atzung einer Silhouette bei Beugen}}{36}{figure.3.13}
-\contentsline {figure}{\numberline {3.14}{\ignorespaces \"Uberpr\"ufung der Sch\"atzung der K\"orperhaltung an Testvideo 1}}{37}{figure.3.14}
-\contentsline {figure}{\numberline {3.15}{\ignorespaces \"Uberpr\"ufung der Sch\"atzung der K\"orperhaltung an Testvideo 2}}{38}{figure.3.15}
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Dritter Meilenstein}}{39}{figure.3.16}
-\contentsline {figure}{\numberline {3.17}{\ignorespaces Mitgliederfunktionen}}{42}{figure.3.17}
-\contentsline {figure}{\numberline {3.18}{\ignorespaces Testfall: Person liegt im Sofa in Nacht. Ergebnis: 93,29\% normal, 26,59\% abnormal}}{43}{figure.3.18}
-\contentsline {figure}{\numberline {3.19}{\ignorespaces Testfall: Person liegt im Sofa am Tag. Ergebnis: 71,6\% normal, 49,71\% abnormal}}{44}{figure.3.19}
-\contentsline {figure}{\numberline {3.20}{\ignorespaces Linke Seite: Falsche Erkennung der Bewegung. Rechte Seite: Richtige Segmentierung}}{49}{figure.3.20}
-\contentsline {figure}{\numberline {3.21}{\ignorespaces Linke Seite: Falsche Erkennung der Bewegung. Rechte Seite: Richtige Segmentierung}}{50}{figure.3.21}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Drei Meilensteine zur Erkennung von au\IeC {\ss }ergew\"ohnlichen Situation}}{19}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Erster Meilenstein}}{20}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Vergleichen von verschiedene Techniken an Hintergrundsubtraktion (a) Weichzeichnen (b) AGMM (c)KNN. (d) KDE (e) Vibe}}{21}{figure.3.3}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Erosion}}{22}{figure.3.4}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Dilatation}}{23}{figure.3.5}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Ergebnis nach Erosion und Dilatation}}{24}{figure.3.6}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Frame-Nummer: 334. Der rot markierte Bereich von Hintergrundbild wird in n\"achstem Frame aktualisiert.}}{27}{figure.3.7}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Frame-Nummer: 335. Nach der Aktualisierung des Hintergrundbildes wird die alle rot Begrenzungsboxen gel\"oscht.}}{28}{figure.3.8}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Frame-Nummer: 403. Soweit die Person sich in der Szene bewegt, werden die vergangenen Boxen (wei\IeC {\ss } und rot) erstellt.}}{29}{figure.3.9}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Zweiter Meilenstein}}{34}{figure.3.10}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Beispiel f\"ur Prozess von Sch\"atzung einer Silhouette bei Stehen}}{35}{figure.3.11}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Beispiel f\"ur Prozess von Sch\"atzung einer Silhouette bei Liegen}}{36}{figure.3.12}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Beispiel f\"ur Prozess von Sch\"atzung einer Silhouette bei Beugen}}{37}{figure.3.13}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces \"Uberpr\"ufung der Sch\"atzung der K\"orperhaltung an Testvideo 1}}{38}{figure.3.14}
+\contentsline {figure}{\numberline {3.15}{\ignorespaces \"Uberpr\"ufung der Sch\"atzung der K\"orperhaltung an Testvideo 2}}{39}{figure.3.15}
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Dritter Meilenstein}}{40}{figure.3.16}
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Mitgliederfunktionen}}{43}{figure.3.17}
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Testfall: Person liegt im Sofa in Nacht. Ergebnis: 93,29\% normal, 26,59\% abnormal}}{44}{figure.3.18}
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Testfall: Person liegt im Sofa am Tag. Ergebnis: 71,6\% normal, 49,71\% abnormal}}{45}{figure.3.19}
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Linke Seite: Falsche Erkennung der Bewegung. Rechte Seite: Richtige Segmentierung}}{50}{figure.3.20}
+\contentsline {figure}{\numberline {3.21}{\ignorespaces Linke Seite: Falsche Erkennung der Bewegung. Rechte Seite: Richtige Segmentierung}}{51}{figure.3.21}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Laufzeit in 1000 Bilder}}{53}{figure.4.1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Test auf Videos}}{54}{figure.4.2}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces ROC}}{55}{figure.4.3}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Laufzeit in 1000 Bilder}}{54}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Test auf Videos}}{55}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces ROC}}{56}{figure.4.3}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Zusammenfassung des Programmaufbaus}}{58}{figure.5.1}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Zusammenfassung des Programmaufbaus}}{59}{figure.5.1}
 \addvspace {10\p@ }

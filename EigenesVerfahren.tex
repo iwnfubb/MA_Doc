@@ -1,25 +1,26 @@
 \chapter{Eigenes Verfahren}\label{chp:EigVerfahren}
-Diese Arbeit besteht aus drei große Meilensteine, nämlich Hintergrundsubtraktion, Schätzung der Körperhalterung mit Histogrammanalyse und Erkennung außergewöhnlicher Situation mit Fuzzylogik. Um mein eigenes Verfahren einfacher zu verstehen, stellt Die Abbildung \ref{fig:allgemein} allgemeinen Prozess  der drei Meilensteine dar, die in drei verschiedene Farben angemalt.
+Diese Arbeit besteht aus drei große Meilensteine, nämlich Hintergrundsubtraktion, Schätzung der Körperhalterung mit Histogrammanalyse und Erkennung außergewöhnlicher Situation mit Fuzzylogik. Um mein eigenes Verfahren einfacher zu verstehen, stellt Die Abbildung \ref{fig:allgemein} den allgemeinen Prozess der drei Meilensteine dar. Die in drei verschiedenen Farben gezeigt werden.\\
+Die Hintergrundsubtraktion wird mit Blau dargestellt. Die Eingabe für Hintergrundsubtraktion ist ein von der Kamera aufgenommenes Bild und die Ausgabe ist eine Silhouette einer Person. Der nächste Meilenstein ist die Histogrammanalyse, die mit Gelb gezeigt wird. Die Eingabe dieses Meilensteins ist die Silhouette des letztes Schritts und die Ausgabe ist eine Schätzung der Körperhaltung der Person. Der letzte Meilenstein ist die Fuzzylogik, die mit der roten Farbe vorgestellt wird. Die Eingaben der Fuzzylogik sind die Schätzung der Körperhaltung, die aktuelle Position der Person ud die aktuelle Zeit. Die Aufgabe der Fuzzylogik ist eine Entscheidung, ob es um eine außergewöhnliche Situation sich handelt.
 
 \begin{figure}[H]			
 	\centering
 	\includegraphics[width=0.7\textwidth]{fig/allgemein.pdf}
-	\caption{Drei Meilensteine zur Erkennung von außergewöhnlichen Situation}
+	\caption{Drei Meilensteine zur Erkennung von außergewöhnlichen Situation. Der Erster Meilenstein ist Hintergrundsubtraktion, die eine Silhouette einer Person ausgibt. Der nächste Meilenstein ist die Histogrammanalyse, deren Aufgabe ist die Schätzung eine Körperhaltung. Am Ende ist die Fuzzylogik, die eine Entscheidung ausgibt, ob eine außergewöhnliche Situation passiert.}
 	\label{fig:allgemein}
 \end{figure}
 
 \section{Hintergrundsubtraktion}\label{chp:BackgroundSubtraction}
-\subsection{Vergleichen verschiedener Methoden}
+\subsection{Vergleich verschiedener Methoden}
 
-In dieser Masterarbeit ist Hintergrundsubtraktion ein wichtiger Baustein. Die Abbildung \ref{fig:bgsub} zeigt allgemeine Grundfunktion von der Hintergrundsubtraktion. Ein großes Problem ist wie ein korrekter Hintergrund erstellt werden kann, damit es ein sich bewegtes Objekt robust erkannt werden kann. 
+In dieser Masterarbeit ist Hintergrundsubtraktion ein wichtiger Baustein. Die Abbildung \ref{fig:bgsub} zeigt allgemeine Grundfunktion von der Hintergrundsubtraktion. Ein großes Problem ist wie ein korrekter Hintergrund erstellt werden kann, damit ein sich bewegtes Objekt robust erkannt werden kann. 
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{fig/bgsub.pdf}
-	\caption{Erster Meilenstein}
+	\caption{Erster Meilenstein geht um das Hintergrundsubtraktion-Verfahren. Die Eingabe ist ein aktuelles Bild und die Ausgabe ist ein Binärbild mit der Silhouette. Bei Aktualisierung des Hintergrundmodells werden nur selektive Bereiche aktualisiert.}
 	\label{fig:bgsub}
 \end{figure}
-Für diese Arbeit wurden moderne Methoden in \ref{sec:grunglagen_hintergrundsub} (Gaussian Mixture Model, K-nächste Nachbar, Kern Density Estimation und Vibe) ausprobiert und verglichen. Die genannten Methoden wurden schon in \ref{sec:grunglagen_hintergrundsub} theoretisch beschrieben. In diesem Abschnitt geht es um Bewertungen von Hintergrundsubtraktionsverfahren. Bei \acs{AGMM} wird eine Mischung von 5-Gaußschen Verteilung modelliert und eine Anzahl von 100 letzten Frames wird als \grqq{}History\grqq{} angewendet. Mit dem Lernrate $0.01$ funktioniert das \acs{AGMM} Verfahren gut in dem Test. Für das \acs{KNN} Verfahren wird auch die gleichen Parameter genommen, um den Vergleich der Hintergrundsubtraktionsverfahren objektiv zu bewerten. Bei \acs{KDE} handelt es sich um eine Berechnung von Intensitätswerte für einen Pixel, deshalb wird nur ein Parameter von 100 als \grqq{}History\grqq{} wie bei \acs{AGMM} in diesem Fall eingesetzt. Wie in \cite{barnich2009vibe} schon gemeint, Vibe ist ein nicht-parametrisches Verfahren und weshalb kein Parameter wird hier gebraucht. 
+Für diese Arbeit wurden populäre Methoden aus Kapitel \ref{sec:grunglagen_hintergrundsub} (Gaussian Mixture Model, K-nächste Nachbar, Kern Density Estimation und Vibe) ausprobiert und verglichen. Alle genannten Methoden wurden schon in \ref{sec:grunglagen_hintergrundsub} theoretisch beschrieben. In diesem Abschnitt geht es um die Bewertungen der Hintergrundsubtraktionsverfahren für den gegebenen Anwendungsfall. Bei \acs{AGMM} wird eine Mischung von 5-Gaußschen Verteilungen für deas Hintergrundmodell verwendet und 100 letzten Frames werden als \grqq{}History\grqq{} des Hintergrundmodells angewendet. Mit einer Lernrate von $0.01$ funktioniert das \acs{AGMM} Verfahren gut in dem Test. Für das \acs{KNN} Verfahren wurden auch die gleichen Parameter genommen, um den Vergleich der Hintergrundsubtraktionsverfahren objektiv zu bewerten. Bei \acs{KDE} handelt es sich um eine Berechnung von Intensitätswerte für einen Pixel, deshalb wird nur ein Parameter von 100 als \grqq{}History\grqq{} (wie bei \acs{AGMM}) eingesetzt. Wie in \cite{barnich2009vibe} beschrieben, ist Vibe ein nicht-parametrisches Verfahren, deshalb musste kein Parameter konfiguriert werden.
 
 \begin{figure}[H]
 	\centering

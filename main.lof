@@ -11,25 +11,26 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Drei Meilensteine zur Erkennung von au\IeC {\ss }ergew\"ohnlichen Situation. Der Erster Meilenstein ist Hintergrundsubtraktion, die eine Silhouette einer Person ausgibt. Der n\"achste Meilenstein ist die Histogrammanalyse, deren Aufgabe ist die Sch\"atzung eine K\"orperhaltung. Am Ende ist die Fuzzylogik, die eine Entscheidung ausgibt, ob eine au\IeC {\ss }ergew\"ohnliche Situation passiert.}}{20}{figure.3.1}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Erster Meilenstein geht um das Hintergrundsubtraktion-Verfahren. Die Eingabe ist ein aktuelles Bild und die Ausgabe ist ein Bin\"arbild mit der Silhouette. Bei Aktualisierung des Hintergrundmodells werden nur selektive Bereiche aktualisiert.}}{21}{figure.3.2}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Vergleichen von verschiedene Techniken an Hintergrundsubtraktion (a) Weichzeichnen (b) AGMM (c)KNN. (d) KDE (e) Vibe}}{22}{figure.3.3}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Erosion}}{23}{figure.3.4}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Dilatation}}{24}{figure.3.5}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Ergebnis nach Erosion und Dilatation}}{25}{figure.3.6}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Frame-Nummer: 334. Der rot markierte Bereich von Hintergrundbild wird in n\"achstem Frame aktualisiert.}}{28}{figure.3.7}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Frame-Nummer: 335. Nach der Aktualisierung des Hintergrundbildes wird die alle rot Begrenzungsboxen gel\"oscht.}}{29}{figure.3.8}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Frame-Nummer: 403. Soweit die Person sich in der Szene bewegt, werden die vergangenen Boxen (wei\IeC {\ss } und rot) erstellt.}}{30}{figure.3.9}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Zweiter Meilenstein}}{35}{figure.3.10}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Beispiel f\"ur Prozess von Sch\"atzung einer Silhouette bei Stehen}}{36}{figure.3.11}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Beispiel f\"ur Prozess von Sch\"atzung einer Silhouette bei Liegen}}{37}{figure.3.12}
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Beispiel f\"ur Prozess von Sch\"atzung einer Silhouette bei Beugen}}{38}{figure.3.13}
-\contentsline {figure}{\numberline {3.14}{\ignorespaces \"Uberpr\"ufung der Sch\"atzung der K\"orperhaltung an Testvideo 1}}{39}{figure.3.14}
-\contentsline {figure}{\numberline {3.15}{\ignorespaces \"Uberpr\"ufung der Sch\"atzung der K\"orperhaltung an Testvideo 2}}{40}{figure.3.15}
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Dritter Meilenstein}}{41}{figure.3.16}
-\contentsline {figure}{\numberline {3.17}{\ignorespaces Mitgliederfunktionen}}{44}{figure.3.17}
-\contentsline {figure}{\numberline {3.18}{\ignorespaces Testfall: Person liegt im Sofa in Nacht. Ergebnis: 93,29\% normal, 26,59\% abnormal}}{45}{figure.3.18}
-\contentsline {figure}{\numberline {3.19}{\ignorespaces Testfall: Person liegt im Sofa am Tag. Ergebnis: 71,6\% normal, 49,71\% abnormal}}{46}{figure.3.19}
-\contentsline {figure}{\numberline {3.20}{\ignorespaces Linke Seite: Falsche Erkennung der Bewegung. Rechte Seite: Richtige Segmentierung}}{51}{figure.3.20}
-\contentsline {figure}{\numberline {3.21}{\ignorespaces Linke Seite: Falsche Erkennung der Bewegung. Rechte Seite: Richtige Segmentierung}}{52}{figure.3.21}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Vergleichen von verschiedene Techniken zum Hintergrundsubtraktion anhand eines Repr\"asentationsbeispiels (a) Weichzeichnen (b) AGMM (c) KNN (d) KDE (e) Vibe}}{22}{figure.3.3}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Die Verarbeitungszeit von KNN und Vibe werden verglichen. Es ist deutlich, dass KNN eine k\"urzere durchschnittliche Verarbeitungszeit (107ms) als Vibe (551ms) hat.}}{23}{figure.3.4}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Erosion}}{24}{figure.3.5}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Dilatation}}{24}{figure.3.6}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Ergebnis nach Erosion und Dilatation}}{25}{figure.3.7}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Frame-Nummer: 334. Der rot markierte Bereich von Hintergrundbild wird in n\"achstem Frame aktualisiert.}}{28}{figure.3.8}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Frame-Nummer: 335. Nach der Aktualisierung des Hintergrundbildes wird die alle rot Begrenzungsboxen gel\"oscht.}}{29}{figure.3.9}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Frame-Nummer: 403. Soweit die Person sich in der Szene bewegt, werden die vergangenen Boxen (wei\IeC {\ss } und rot) erstellt.}}{30}{figure.3.10}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Zweiter Meilenstein}}{35}{figure.3.11}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Beispiel f\"ur Prozess von Sch\"atzung einer Silhouette bei Stehen}}{36}{figure.3.12}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Beispiel f\"ur Prozess von Sch\"atzung einer Silhouette bei Liegen}}{37}{figure.3.13}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Beispiel f\"ur Prozess von Sch\"atzung einer Silhouette bei Beugen}}{38}{figure.3.14}
+\contentsline {figure}{\numberline {3.15}{\ignorespaces \"Uberpr\"ufung der Sch\"atzung der K\"orperhaltung an Testvideo 1}}{39}{figure.3.15}
+\contentsline {figure}{\numberline {3.16}{\ignorespaces \"Uberpr\"ufung der Sch\"atzung der K\"orperhaltung an Testvideo 2}}{40}{figure.3.16}
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Dritter Meilenstein}}{41}{figure.3.17}
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Mitgliederfunktionen}}{44}{figure.3.18}
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Testfall: Person liegt im Sofa in Nacht. Ergebnis: 93,29\% normal, 26,59\% abnormal}}{45}{figure.3.19}
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Testfall: Person liegt im Sofa am Tag. Ergebnis: 71,6\% normal, 49,71\% abnormal}}{46}{figure.3.20}
+\contentsline {figure}{\numberline {3.21}{\ignorespaces Linke Seite: Falsche Erkennung der Bewegung. Rechte Seite: Richtige Segmentierung}}{51}{figure.3.21}
+\contentsline {figure}{\numberline {3.22}{\ignorespaces Linke Seite: Falsche Erkennung der Bewegung. Rechte Seite: Richtige Segmentierung}}{52}{figure.3.22}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Laufzeit in 1000 Bilder}}{55}{figure.4.1}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Test auf Videos}}{56}{figure.4.2}

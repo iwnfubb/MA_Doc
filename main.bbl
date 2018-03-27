@@ -207,6 +207,11 @@
 \newblock In \emph{International Workshop on Sensing for App Phones; Zurich,
   Switzerland} (2010), pp.~31--35.
 
+\bibitem[Zam13]{zamperoni2013methoden}
+\textsc{Zamperoni P.}:
+\newblock \emph{Methoden der digitalen Bildsignalverarbeitung}.
+\newblock Springer-Verlag, 2013.
+
 \bibitem[ZVDH06]{zivkovic2006efficient}
 \textsc{Zivkovic Z., Van Der~Heijden F.}:
 \newblock Efficient adaptive density estimation per image pixel for the task of

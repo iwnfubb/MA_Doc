@@ -23,8 +23,8 @@
 \contentsline {figure}{\numberline {3.12}{\ignorespaces Beispiel f\"ur Prozess von Sch\"atzung einer Silhouette bei Stehen. Die Silhouette des Bin\"arbildes wird zuerst durch eine Begrenzungsbox extrahiert. Die vertikale und horizontale Histogramme der Silhouette werden dann berechnet und mit den entsprechenden Referenz.Histogrammen jeder generischen K\"orperhaltung verglichen. Die K\"orperhaltung, die nach dem Vergleichen einen gr\"o\IeC {\ss }ten Wert hat, ist f\"ur die Silhouette genommen.}}{37}{figure.3.12}
 \contentsline {figure}{\numberline {3.13}{\ignorespaces Beispiel f\"ur Prozess von Sch\"atzung einer Silhouette bei Liegen}}{38}{figure.3.13}
 \contentsline {figure}{\numberline {3.14}{\ignorespaces Beispiel f\"ur Prozess von Sch\"atzung einer Silhouette bei Beugen}}{39}{figure.3.14}
-\contentsline {figure}{\numberline {3.15}{\ignorespaces \"Uberpr\"ufung der Sch\"atzung der K\"orperhaltung an Testvideo 1}}{40}{figure.3.15}
-\contentsline {figure}{\numberline {3.16}{\ignorespaces \"Uberpr\"ufung der Sch\"atzung der K\"orperhaltung an Testvideo 2}}{41}{figure.3.16}
+\contentsline {figure}{\numberline {3.15}{\ignorespaces \"Uberpr\"ufung der Sch\"atzung der K\"orperhaltung an Testvideo \glqq {}fallen2.mp4\grqq {}. Die x-Achse stellt die Framenummer dar und die y-Achse ziegt die Indexen der K\"orperhaltung. Die blaue Gerade ist der Referenz-K\"orperhaltung und die gelbe Gerade ist die gesch\"atzte K\"orperhaltung. Die Sch\"atzung der K\"orperhaltung hat in diesem Beispiel ein Genauigkeit von $76,47\%$}}{40}{figure.3.15}
+\contentsline {figure}{\numberline {3.16}{\ignorespaces \"Uberpr\"ufung der Sch\"atzung der K\"orperhaltung an \glqq {}fallen2.mp4\grqq {}. Die Sch\"atzung der K\"orperhaltung hat in diesem Beispiel ein Genauigkeit von $71,93\%$}}{41}{figure.3.16}
 \contentsline {figure}{\numberline {3.17}{\ignorespaces Dritter Meilenstein}}{42}{figure.3.17}
 \contentsline {figure}{\numberline {3.18}{\ignorespaces Mitgliederfunktionen}}{45}{figure.3.18}
 \contentsline {figure}{\numberline {3.19}{\ignorespaces Testfall: Person liegt im Sofa in Nacht. Ergebnis: 93,29\% normal, 26,59\% abnormal}}{46}{figure.3.19}

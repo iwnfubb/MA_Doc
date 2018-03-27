@@ -105,10 +105,10 @@ Hier führt zu der Frage, warum bei der Aktualisierung des Hintergrundmodells die
 \end{figure}
 
 \subsubsection{Zweite Verbesserung (KNN-Plus-ASB)}
-Die erste Verbesserung hat zwei Vorteile. Der erste Vorteil ist, dass die Methode eine Lösung des Problems ist, wenn eine Person beispielsweise stillsteht. Nach einer bestimmter Zeit wird die Person in das Hintergrund integriert. Der zweite Vorteil ist eine Verbesserung der Verarbeitungszeit, da bei anderer Methode aus Kapitel \ref{sec:grunglagen_hintergrundsub} eine Liste von Hintergrundbildern gebraucht wird, um ein Hintergrundmodell zu bauen. Aber mit der obengenannten Verbesserung sind nur das Hintergrundbild und das aktuelle Bild nötig.\\
+Die ASB Methode hat zwei Vorteile. Der erste Vorteil ist, dass die Methode eine Lösung des Problems ist, wenn eine Person beispielsweise stillsteht. Nach einer bestimmter Zeit wird die Person in das Hintergrund integriert. Der zweite Vorteil ist eine Verbesserung der Verarbeitungszeit, da bei anderer Methode aus Kapitel \ref{sec:grunglagen_hintergrundsub} eine Liste von Hintergrundbildern gebraucht wird, um ein Hintergrundmodell zu bauen. Aber mit der obengenannten Verbesserung sind nur das Hintergrundbild und das aktuelle Bild nötig.\\
 Die erste Verbesserung hat auch einen Nachteil. Weil das Hintergrundmodell nur an Teile des aktuellen Bildes aktualisiert, wird kleine Änderung des Hintergrundbildes nicht betrachtet. Auf diesem Grund gibt es viel Rauschen an dem Binärbild nach der Hintergrundsubtraktion. Die zweite Verbesserung ist eine Kombination von \acs{KNN} und der ersten Verbesserung. Diese zweite Verbesserung basiert auf einer Kombination der Hintergrundsubtraktion von \acs{KNN} mit der Aktualisierungsvorschrift des Hintergrundes meiner eigenen Methode. Das heißt, wenn eine Person sich bewegt in Szene bewegt, wird die Person mit einer Box markiert. Das Teil von Hintergrund, wo die Box stattfindet, wird nicht bei Aktualisierung von Hintergrund betrachtet. Der Unterschied bei Aktualisierung des Hintergrundbildes zwischen meine eigene Methode und  die Verbesserung durch \acs{KNN} ist:    
 \begin{itemize}
-	\item Eigene Methode: Durch eine Bewegung wird das Hintergrundbild nur an die vergangenen Begrenzungsboxen (weißen Boxen in Abbildungen \ref{fig:mymethod1} g, \ref{fig:mymethod2} g, \ref{fig:mymethod3}g), die nicht mit aktueller Bewegung überschneiden, aktualisiert.
+	\item ASB Methode: Durch eine Bewegung wird das Hintergrundbild nur an die vergangenen Begrenzungsboxen (weißen Boxen in Abbildungen \ref{fig:mymethod1} g, \ref{fig:mymethod2} g, \ref{fig:mymethod3}g), die nicht mit aktueller Bewegung überschneiden, aktualisiert.
 	\item Verbesserung mit KNN-Plus-ASB: Ein Binärbild wird mit der \acs{KNN} Methode erstellt. Aus dem Binärbild wird eine Silhouette mit einer Begrenzungsbox beschränkt. Das ganze Hintergrundbild außer dem Bereich der Begrenzungsbox wird aktualisiert.
 	
 \end{itemize}
@@ -205,7 +205,7 @@ Um bei der Histogrammanalyse vergleichbare Ergebnisse für unterschiedlich große 
 \\
 
 
-Nach der Skalierung werden die Histogramme von horizontale sowie vertikale Achse gerechnet. Wenn die Höhe größer als die Breite des geschnitten Unterbild ist, wird das Unterbild auf 128 Pixel Höhe skaliert. Die Breite des skalierten Unterbildes in  diesem Fall ist kleiner als 128 Pixel. Auf diesem Grund ist das vertikale Histogramm des Unterbilder auch wenige als 128 Einheiten bei x-Achse. Dies vertikale Histogramm wird in de
+Nach der Skalierung werden die Histogramme von horizontale sowie vertikale Achse gerechnet. Wenn die Höhe größer als die Breite des geschnitten Unterbild ist, wird das Unterbild auf 128 Pixel Höhe skaliert. Die Breite des skalierten Unterbildes in  diesem Fall ist kleiner als 128 Pixel. Auf diesem Grund ist das vertikale Histogramm des Unterbilder auch kleiner als 128 Einheiten bei x-Achse. Dies vertikale Histogramm wird in de
 
 
 
@@ -215,14 +215,14 @@ Das Ergebnis von Körperhaltung basiert auf die Ähnlichkeit zwischen den Histogra
 \begin{figure}[H]
 	\centering	
 	\includegraphics[width=0.95\textwidth]{fig/schatzung.pdf}
-	\caption{Zweiter Meilenstein}
+	\caption{Der zweiten Meilenstein ist die Schätzung der Körperhaltung. Das Ausgabebinärbild des ersten Meilensteins wird mit einer Begrenzungsbox beschränkt, um ein Unterbild von der Silhouette zu erstellen. Das Unterbild wird dann skaliert und die vertikale und horizontale Histogramme des skalierten Unterbildes werden berechnet. Diese Histogramme werden mit den Referenz-Histogrammen, um die Körperhaltung auf dem Unterbild zu bestimmen.}
 	\label{fig:schatzung}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{fig/schatzung1.pdf}
-	\caption{Beispiel für Prozess von Schätzung einer Silhouette bei Stehen}
+	\caption{Beispiel für Prozess von Schätzung einer Silhouette bei Stehen. Die Silhouette des Binärbildes wird zuerst durch eine Begrenzungsbox extrahiert. Die vertikale und horizontale Histogramme der Silhouette werden dann berechnet und mit den entsprechenden Referenz.Histogrammen jeder generischen Körperhaltung verglichen. Die Körperhaltung, die nach dem Vergleichen einen größten Wert hat, ist für die Silhouette genommen.}
 	\label{fig:schatzung1}
 \end{figure}
 
@@ -241,7 +241,7 @@ Das Ergebnis von Körperhaltung basiert auf die Ähnlichkeit zwischen den Histogra
 \end{figure}
 
 
-Jede Körperhaltung hat einen eindeutigen Graph zum Vergleich mit anderen Körperhaltungen, deswegen ist das Ergebnis von der zweite Hauptschritt ist sehr zuverlässig. Um die Zuverlässigkeit von diesem Schritt zu überprüfen, wird Körperform im Testvideos Frame nach Frame markiert, wo die Testperson liegt, steht, sitzt, beugt... Und das ergibt schon die Ergebnisse von mehr als $70\%$ Genauigkeit.  Die graphische Darstellung in Abbildungen \ref{fig:schatzeva} und \ref{fig:schatzeva2} zeigt uns wie gut die Schätzung der Körperhaltung ist. Die Körperhaltung wird als Nummern zugeordnet, Null seht für Stehen, Eins steht für Liegen, Zwei steht für Beugen und Drei steht für Sitzen. Wenn die Schätzung der Körperhaltung besonders minus Eins sich ergibt, dann bedeutet, dass keine Bewegung mehr in der Szene stattfindet. Die blaue Gerade ist manuelle Markierung in Testvideos und die gelbe Gerade ist das Ergebnis von unserem Programm. Anhand der graphische Darstellungen (Abbildung \ref{fig:schatzeva} und \ref{fig:schatzeva2}) kann es einfach bemerkt werden, dass in manche Stelle wird die Schätzung in eine andere Körperhaltung gesprungen ist und dann kam wieder in die richtige Position. Das Problem kann einfach mit Hilfe von Durchschnittswert in einem Zeitraum gelöst werden, dann kann ein noch besseres Ergebnis bekommen werden.  Beispielsweise wie in Abbildung \ref{fig:schatzeva2}) werden die Körperhaltung von Frame 700 bis 850 betrachtet, es gibt zwei Stellen wo die Körperhaltung von dem Zustand \glqq{}Stehen\grqq{} auf \glqq{}Sitzen\grqq{} oder \glqq{}Beugen\grqq{} gesprungen. Nun kann es hier die letzte 10 Frames von der zweit falschen Stellen überprüft werden und die falsche Stelle korrigieren. Da der Fokus von meiner Arbeit ist nicht speziell an Erkennung der Körperhaltung, sondern an Erkennung der außergewöhnlichen Situationen, deshalb ist das Problem mit dem Rauschen im Graph akzeptierbar.
+Um die Zuverlässigkeit von diesem Schritt zu überprüfen, wird Körperhaltung im Testvideos Frame für Frame markiert, wo die Testperson liegt, steht, sitzt, beugt. Das ergibt schon die Ergebnisse von mehr als $70\%$ Genauigkeit.  Die graphische Darstellung in Abbildungen \ref{fig:schatzeva} und \ref{fig:schatzeva2} zeigt uns wie gut die Schätzung der Körperhaltung ist. Die Körperhaltung wird als Nummern zugeordnet, Null seht für Stehen, Eins steht für Liegen, Zwei steht für Beugen und Drei steht für Sitzen. Wenn die Schätzung der Körperhaltung besonders minus Eins sich ergibt, dann bedeutet, dass keine Bewegung mehr in der Szene stattfindet. Die blaue Gerade ist manuelle Markierung in Testvideos und die gelbe Gerade ist das Ergebnis von unserem Programm. Anhand der graphische Darstellungen (Abbildung \ref{fig:schatzeva} und \ref{fig:schatzeva2}) kann es einfach bemerkt werden, dass in manche Stelle wird die Schätzung in eine andere Körperhaltung gesprungen ist und dann kam wieder in die richtige Position. Das Problem kann einfach mit Hilfe von Durchschnittswert in einem Zeitraum gelöst werden, dann kann ein noch besseres Ergebnis bekommen werden.  Beispielsweise wie in Abbildung \ref{fig:schatzeva2}) werden die Körperhaltung von Frame 700 bis 850 betrachtet, es gibt zwei Stellen wo die Körperhaltung von dem Zustand \glqq{}Stehen\grqq{} auf \glqq{}Sitzen\grqq{} oder \glqq{}Beugen\grqq{} gesprungen. Nun kann es hier die letzte 10 Frames von der zweit falschen Stellen überprüft werden und die falsche Stelle korrigieren. Da der Fokus von meiner Arbeit ist nicht speziell an Erkennung der Körperhaltung, sondern an Erkennung der außergewöhnlichen Situationen, deshalb ist das Problem mit dem Rauschen im Graph akzeptierbar.
 			
 \begin{figure}[H]
 	\centering

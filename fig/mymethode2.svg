@@ -10,9 +10,9 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="516.8233mm"
+   width="526.64313mm"
    height="730.25mm"
-   viewBox="0 0 1831.2637 2587.5"
+   viewBox="0 0 1866.0584 2587.5"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
@@ -198,9 +198,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.24748737"
-     inkscape:cx="426.22459"
-     inkscape:cy="1198.5823"
+     inkscape:zoom="0.175"
+     inkscape:cx="480.77824"
+     inkscape:cy="1083.9972"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -222,7 +222,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -230,7 +230,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(140.37907,361.17749)">
+     transform="translate(175.17386,361.17749)">
     <flowRoot
        xml:space="preserve"
        id="flowRoot4177"
@@ -285,14 +285,14 @@
          id="flowPara4218" /></flowRoot>    <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="-210.54459"
-       y="-155.87007"
+       x="-177.68744"
+       y="-157.29865"
        id="text4220"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4222"
-         x="-210.54459"
-         y="-155.87007">(a)</tspan></text>
+         x="-177.68744"
+         y="-157.29865">(a)</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"

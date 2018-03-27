@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.9)  27 MAR 2018 04:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.9)  27 MAR 2018 11:13
 entering extended mode
 **./main.tex
 (main.tex
@@ -1219,12 +1219,12 @@ l.206
 2.png> <./fig/original3.png> <./fig/groundtrue3.png> <./fig/My3.png> <./fig/MOG
 3.png> <./fig/original4.png> <./fig/groundtrue4.png> <./fig/My4.png> <./fig/MOG
 4.png> <./fig/original5.png> <./fig/groundtrue5.png> <./fig/My5.png> <./fig/MOG
-5.png>] <fig/schatzung.pdf, id=777, 1334.27365pt x 940.7232pt>
+5.png>] <fig/schatzung.pdf, id=777, 1335.72353pt x 940.7232pt>
 File: fig/schatzung.pdf Graphic file (type pdf)
 
 <use fig/schatzung.pdf>
 Package pdftex.def Info: fig/schatzung.pdf used on input line 217.
-(pdftex.def)             Requested size: 397.34149pt x 280.13777pt.
+(pdftex.def)             Requested size: 397.34149pt x 279.83632pt.
  [35]
 <fig/schatzung1.pdf, id=786, 2571.85574pt x 2437.77351pt>
 File: fig/schatzung1.pdf Graphic file (type pdf)
@@ -1562,24 +1562,24 @@ lob = publicationFile$[],
 
 ] [69] (main.lof [70
 
-])
+] [71])
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
- [71]
-(main.lot)
+
+[72] (main.lot)
 \tf@lot=\write7
 \openout7 = `main.lot'.
 
- [72
+ [73
 
-] [73] (main.loa)
+] [74] (main.loa)
 \tf@loa=\write8
 \openout8 = `main.loa'.
 
- [74
+ [75
 
-] [75]
+] [76]
 
 Class scrreprt Warning: \float@listhead detected!
 (scrreprt)              Implementation of \float@listhead became
@@ -1598,15 +1598,15 @@ Class scrreprt Warning: \float@listhead detected!
 \tf@lol=\write9
 \openout9 = `main.lol'.
 
- [76
+ [77
 
-] [77] (Anhang.tex
+] [78] (Anhang.tex
 chapter A.
-) (Danksagung.tex [78
+) (Danksagung.tex [79
 
 ])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 58.
- [79
+ [80
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 58.
@@ -1622,9 +1622,9 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 58.
  ) 
 Here is how much of TeX's memory you used:
- 13863 strings out of 493634
- 211701 string characters out of 3143745
- 419701 words of memory out of 3000000
+ 13864 strings out of 493634
+ 211708 string characters out of 3143745
+ 420465 words of memory out of 3000000
  16682 multiletter control sequences out of 15000+200000
  15108 words of font info for 57 fonts, out of 3000000 for 9000
  1026 hyphenation exceptions out of 8191
@@ -1646,9 +1646,9 @@ MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><D:/Program Files/MiKTeX 2
 blic/amsfonts/cm/cmsy8.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmti10.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
 cmtt10.pfb>
-Output written on main.pdf (90 pages, 13341751 bytes).
+Output written on main.pdf (91 pages, 13352603 bytes).
 PDF statistics:
- 1451 PDF objects out of 1728 (max. 8388607)
- 270 named destinations out of 1000 (max. 500000)
+ 1474 PDF objects out of 1728 (max. 8388607)
+ 271 named destinations out of 1000 (max. 500000)
  557 words of extra memory for PDF output out of 10000 (max. 10000000)
 

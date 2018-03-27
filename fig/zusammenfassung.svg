@@ -14,7 +14,7 @@
    viewBox="0 0 928.44572 885.89365"
    id="svg5699"
    version="1.1"
-   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="zusammenfassung.svg">
   <defs
      id="defs5701">
@@ -665,14 +665,14 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="446.87869"
-     inkscape:cy="636.36999"
+     inkscape:zoom="1.4"
+     inkscape:cx="771.88579"
+     inkscape:cy="478.25052"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1920"
-     inkscape:window-height="1138"
+     inkscape:window-height="1059"
      inkscape:window-x="1912"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -699,7 +699,7 @@
      transform="translate(2298.7228,-129.59291)">
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.70435822;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker7732)"
-       d="m -2000.7143,522.00506 h 133.435"
+       d="m -2000.7143,522.00506 133.435,0"
        id="path6295"
        inkscape:path-effect="#path-effect6297"
        inkscape:original-d="m -2000.7143,522.00506 133.435,0"
@@ -717,7 +717,7 @@
        width="491.91507"
        height="359.58496"
        x="-1865.7371"
-       y="346.28021" />
+       y="343.42307" />
     <rect
        style="fill:none;fill-opacity:1;stroke:#e45641;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:3, 1;stroke-dashoffset:0;stroke-opacity:1"
        id="rect7431"
@@ -727,14 +727,14 @@
        y="732.14386" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.86345947;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Lend)"
-       d="m -2000.757,633.79959 h 99.8547 v 237.39764 h 35.4094"
+       d="m -2000.757,633.79959 99.8547,0 0,237.39764 35.4094,0"
        id="path7635"
        inkscape:path-effect="#path-effect7637"
        inkscape:original-d="m -2000.757,633.79959 99.8547,0 0,237.39764 35.4094,0"
        inkscape:connector-curvature="0" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.95261836px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker7681)"
-       d="m -2000.9685,418.76679 h 97.5103 V 226.9763 h 35.8493"
+       d="m -2000.9685,418.76679 97.5103,0 0,-191.79049 35.8493,0"
        id="path8029"
        inkscape:path-effect="#path-effect8031"
        inkscape:original-d="m -2000.9685,418.76679 97.5103,0 0,-191.79049 35.8493,0"
@@ -827,28 +827,28 @@
            inkscape:original-d="m 200.22491,203.79078 0,71.42857 395.71428,0 0,-75.71429"
            inkscape:path-effect="#path-effect6979-04"
            id="path6977"
-           d="m 200.22491,203.79078 v 71.42857 h 395.71428 v -75.71429"
+           d="m 200.22491,203.79078 0,71.42857 395.71428,0 0,-75.71429"
            style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
         <path
            inkscape:connector-curvature="0"
            inkscape:original-d="m 398.08205,275.21935 0,86.42857"
            inkscape:path-effect="#path-effect6987-4"
            id="path6985"
-           d="m 398.08205,275.21935 v 86.42857"
+           d="m 398.08205,275.21935 0,86.42857"
            style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)" />
         <path
            inkscape:connector-curvature="0"
            inkscape:original-d="m 595.93919,561.39791 0,-71.42856 -395.71429,0 0,75.71429"
            inkscape:path-effect="#path-effect6979-0-4"
            id="path6977-8"
-           d="M 595.93919,561.39791 V 489.96935 H 200.2249 v 75.71429"
+           d="m 595.93919,561.39791 0,-71.42856 -395.71429,0 0,75.71429"
            style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Lstart-4);marker-end:url(#marker7421)" />
         <path
            inkscape:connector-curvature="0"
            inkscape:original-d="m 398.08205,433.99551 0,55.79351"
            inkscape:path-effect="#path-effect6987-2-4"
            id="path6985-9"
-           d="m 398.08205,433.99551 v 55.79351"
+           d="m 398.08205,433.99551 0,55.79351"
            style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.80345798px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
         <path
            sodipodi:nodetypes="cccc"
@@ -856,7 +856,7 @@
            inkscape:original-d="m 814.671,593.91246 67.23679,0 0,-424.57973 -69.54901,0"
            inkscape:path-effect="#path-effect7501-7"
            id="path7499"
-           d="m 814.671,593.91246 h 67.23679 V 169.33273 h -69.54901"
+           d="m 814.671,593.91246 67.23679,0 0,-424.57973 -69.54901,0"
            style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.80811173px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker7509-3)" />
         <text
            id="text7555"
@@ -869,187 +869,6 @@
              id="tspan7557"
              sodipodi:role="line"
              style="font-size:40px;line-height:1.25">Aktualisierung</tspan></text>
-      </g>
-    </g>
-    <g
-       transform="matrix(0.36457967,0,0,-0.36457967,-1861.6916,696.91655)"
-       inkscape:label="schatzung"
-       id="g7432">
-      <g
-         id="g7434">
-        <path
-           inkscape:connector-curvature="0"
-           id="path7436"
-           style="fill:#f1a94e;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           d="m 44.023,396.642 595.82,0 0,-92.578 -595.82,0 0,92.578 z" />
-        <path
-           inkscape:connector-curvature="0"
-           id="path7438"
-           style="fill:#f1a94e;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           d="m 733.891,400.002 595.82,0 0,-92.574 -595.82,0 0,92.574 z" />
-        <path
-           inkscape:connector-curvature="0"
-           id="path7440"
-           style="fill:#f1a94e;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           d="m 54.879,668.322 574.105,0 0,-65.148 -574.105,0 0,65.148 z" />
-        <path
-           inkscape:connector-curvature="0"
-           id="path7442"
-           style="fill:#f1a94e;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           d="m 378.02,65.146 574.105,0 0,-65.145 -574.105,0 0,65.145 z" />
-        <path
-           inkscape:connector-curvature="0"
-           id="path7444"
-           style="fill:#f1a94e;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           d="m 54.879,937.209 574.105,0 0,-65.148 -574.105,0 0,65.148 z" />
-        <g
-           transform="matrix(1,0,0,-1,0,937.20868)"
-           id="g7446">
-          <path
-             inkscape:connector-curvature="0"
-             id="path7448"
-             style="fill:none;stroke:#000000;stroke-width:1.00768697;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-             d="m 341.934,64.297 0,204.414" />
-        </g>
-        <g
-           transform="matrix(0,1,1,0,0,937.20868)"
-           id="g7450">
-          <path
-             inkscape:connector-curvature="0"
-             id="path7452"
-             style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00768697;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-             d="m -258.633,341.934 4.028,-4.032 -14.106,4.032 14.106,4.031 -4.028,-4.031 z" />
-        </g>
-        <g
-           transform="matrix(1,0,0,-1,0,937.20868)"
-           id="g7454">
-          <path
-             inkscape:connector-curvature="0"
-             id="path7456"
-             style="fill:none;stroke:#000000;stroke-width:1.26269996;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-             d="m 336.004,633.418 0,108.711 724.574,0 0,-111.906" />
-        </g>
-        <g
-           transform="matrix(1,0,0,-1,0,937.20868)"
-           id="g7458">
-          <path
-             inkscape:connector-curvature="0"
-             id="path7460"
-             style="fill:none;stroke:#000000;stroke-width:0.86911601;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-             d="m 688.113,742.305 0,127.211" />
-        </g>
-        <g
-           transform="matrix(0,1,1,0,0,937.20868)"
-           id="g7462">
-          <path
-             inkscape:connector-curvature="0"
-             id="path7464"
-             style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.86911601;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-             d="m -860.824,688.113 3.476,-3.476 -12.168,3.476 12.168,3.477 -3.476,-3.477 z" />
-        </g>
-        <text
-           id="text7466"
-           style="font-variant:normal;font-weight:normal;line-height:0%;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,94.282245,892.62614)">
-          <tspan
-             id="tspan7468"
-             sodipodi:role="line"
-             y="0"
-             x="0 27.650927 38.816097 64.330727 88.998901 105.56528 131.12021 142.28539 153.45055 179.00549 191.78296 231.04243 242.20761 258.00815 270.78561 296.34055 307.50571 318.6709 344.18552 368.81339 394.328 419.11713 435.03857 450.83911"
-             style="font-size:40.30747223px;line-height:1.25">Binärbild mit Silhouette</tspan>
-          <tspan
-             id="tspan7470"
-             sodipodi:role="line"
-             y="268.51443"
-             x="-26.5305 -0.9755618 24.53907 50.094009 61.259178 100.51866 125.18683 150.74178 175.53087 188.30833 212.13005 236.75792 262.27255 275.17093 300.72589 311.89105 323.05621 348.57086 373.19873 398.71335 423.50244 439.30298 455.10352"
-             style="font-size:40.30747223px;line-height:1.25">Subimage von Silhouette</tspan>
-          <tspan
-             id="tspan7472"
-             sodipodi:role="line"
-             y="131.58955"
-             x="-100.8755 -73.224571 -48.435474 -22.880537 -7.1606226 17.628473 43.143105 64.264221 89.778854 115.41441 140.96935 161.92923 187.48418 210.8625"
-             style="font-size:40.30747223px;line-height:1.25">Begrenzungsbox</tspan>
-          <tspan
-             id="tspan7474"
-             sodipodi:role="line"
-             y="774.5802"
-             x="301.6626 323.38831 348.01617 373.57111 384.7363 395.90146 417.78842 442.57751 453.74268 477.56439 503.07904 527.70691 552.33478"
-             style="font-size:40.30747223px;line-height:1.25">Loglikelyhood</tspan>
-          <tspan
-             id="tspan7476"
-             sodipodi:role="line"
-             y="872.30035"
-             x="423.12924 447.59589 472.22375 488.7901 514.34503 539.13416 555.0556 580.57025 605.2384 616.40356 632.2041 657.71875 683.35431"
-             style="font-size:40.30747223px;line-height:1.25">Körperhaltung</tspan>
-        </text>
-        <text
-           id="text7478"
-           style="font-variant:normal;font-weight:normal;line-height:0%;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,825.68125,357.21806)">
-          <tspan
-             id="tspan7480"
-             sodipodi:role="line"
-             y="0"
-             x="0 26.927999 48.924 63.108002 98.171997 120.204 130.17599 140.14799 158.868 168.84 190.98 205.776 219.888 242.028 253.44 274.716 296.85599 311.76001 325.87201 335.84399 356.07599 378.108 388.07999"
-             style="font-size:36px;line-height:1.25">Normalisierte vertikale</tspan>
-        </text>
-        <text
-           id="text7482"
-           style="font-variant:normal;font-weight:normal;line-height:0%;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,175.7139,480.83501)">
-          <tspan
-             id="tspan7484"
-             sodipodi:role="line"
-             y="0"
-             x="0 25.554939 48.207741 72.875916 84.041084 95.206253 119.99535 136.56172"
-             style="font-size:40.30747223px;line-height:1.25">Skaliert</tspan>
-        </text>
-        <text
-           id="text7486"
-           style="font-variant:normal;font-weight:normal;line-height:0%;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,118.04932,357.21806)">
-          <tspan
-             id="tspan7488"
-             sodipodi:role="line"
-             y="0"
-             x="0 24.695999 46.835999 60.875999 83.015999 102.78 125.568 148.464 170.604 193.392 204.804 226.08 248.076 270.86401 282.276 303.552 325.69199 340.59601 354.70801 364.67999 384.948 406.98001 416.952 439.09201"
-             style="font-size:36px;line-height:1.25">Berechnen von vertikalen</tspan>
-          <tspan
-             id="tspan7490"
-             sodipodi:role="line"
-             y="41.367889"
-             x="-65.654282 -42.86628 -20.078279 2.7457199 14.15772 37.053719 59.049721 73.845718 83.817719 102.68172 124.67772 147.46571 161.57771 183.60973 193.58173 215.72173 238.61772 250.02972 277.06573 287.03772 305.75772 319.86972 341.86572 364.68973 379.48572 401.51773 436.58173 471.75372 493.89371"
-             style="font-size:36px;line-height:1.25">und horizontalen Histogrammen</tspan>
-        </text>
-        <g
-           transform="matrix(1,0,0,-1,0,937.20868)"
-           id="g7492">
-          <path
-             inkscape:connector-curvature="0"
-             id="path7494"
-             style="fill:none;stroke:#000000;stroke-width:1.00768697;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-             d="m 341.934,334.016 0,204.418" />
-        </g>
-        <g
-           transform="matrix(0,1,1,0,0,937.20868)"
-           id="g7496">
-          <path
-             inkscape:connector-curvature="0"
-             id="path7498"
-             style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00768697;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-             d="m -528.355,341.934 4.031,-4.032 -14.11,4.032 14.11,4.031 -4.031,-4.031 z" />
-        </g>
-        <text
-           id="text7500"
-           style="font-variant:normal;font-weight:normal;line-height:0%;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,743.99571,315.85018)">
-          <tspan
-             id="tspan7502"
-             sodipodi:role="line"
-             y="0"
-             x="0 22.788 45.576 68.400002 79.811996 102.708 124.704 139.5 149.472 168.336 190.332 213.12 227.23199 249.26401 259.23599 281.37601 292.78799 313.95599 328.03201 350.02802 360 382.14001 402.98401 417.09601 438.37201 460.36801 475.164 485.13599 507.168 529.992 552.13202"
-             style="font-size:36px;line-height:1.25">und horizontale Projektvorlagen</tspan>
-        </text>
       </g>
     </g>
     <g
@@ -1374,6 +1193,182 @@
              sodipodi:role="line"
              y="0"
              x="0 15.683526 32.951797 47.296486 61.641174 77.789192 85.275757 101.83363 118.85599 126.34255">Fuzzylogik</tspan>
+        </text>
+      </g>
+    </g>
+    <g
+       transform="matrix(0.36227083,0,0,-0.36227083,-1861.8602,690.52761)"
+       inkscape:label="schatzung"
+       id="g5107">
+      <g
+         id="g5109">
+        <path
+           inkscape:connector-curvature="0"
+           id="path5111"
+           style="fill:#f1a94e;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           d="m 45.043,396.642 595.82,0 0,-92.578 -595.82,0 0,92.578 z" />
+        <path
+           inkscape:connector-curvature="0"
+           id="path5113"
+           style="fill:#f1a94e;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           d="m 734.914,400.002 595.82,0 0,-92.574 -595.82,0 0,92.574 z" />
+        <path
+           inkscape:connector-curvature="0"
+           id="path5115"
+           style="fill:#f1a94e;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           d="m 55.902,668.322 574.105,0 0,-65.148 -574.105,0 0,65.148 z" />
+        <path
+           inkscape:connector-curvature="0"
+           id="path5117"
+           style="fill:#f1a94e;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           d="m 379.043,65.146 574.105,0 0,-65.145 -574.105,0 0,65.145 z" />
+        <path
+           inkscape:connector-curvature="0"
+           id="path5119"
+           style="fill:#f1a94e;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           d="m 55.902,937.209 574.105,0 0,-65.148 -574.105,0 0,65.148 z" />
+        <g
+           transform="matrix(1,0,0,-1,0,937.20868)"
+           id="g5121">
+          <path
+             inkscape:connector-curvature="0"
+             id="path5123"
+             style="fill:none;stroke:#000000;stroke-width:1.00768697;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 342.953,64.297 0,204.414" />
+        </g>
+        <g
+           transform="matrix(0,1,1,0,0,937.20868)"
+           id="g5125">
+          <path
+             inkscape:connector-curvature="0"
+             id="path5127"
+             style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00768697;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m -258.633,342.953 4.028,-4.031 -14.106,4.031 14.106,4.031 -4.028,-4.031 z" />
+        </g>
+        <g
+           transform="matrix(1,0,0,-1,0,937.20868)"
+           id="g5129">
+          <path
+             inkscape:connector-curvature="0"
+             id="path5131"
+             style="fill:none;stroke:#000000;stroke-width:1.26269996;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 337.023,633.418 0,108.711 724.579,0 0,-111.906" />
+        </g>
+        <g
+           transform="matrix(1,0,0,-1,0,937.20868)"
+           id="g5133">
+          <path
+             inkscape:connector-curvature="0"
+             id="path5135"
+             style="fill:none;stroke:#000000;stroke-width:0.86911601;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 689.133,742.305 0,127.211" />
+        </g>
+        <g
+           transform="matrix(0,1,1,0,0,937.20868)"
+           id="g5137">
+          <path
+             inkscape:connector-curvature="0"
+             id="path5139"
+             style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.86911601;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m -860.824,689.133 3.476,-3.477 -12.168,3.477 12.168,3.476 -3.476,-3.476 z" />
+        </g>
+        <text
+           id="text5141"
+           style="font-variant:normal;font-weight:normal;font-size:40.30747223px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           transform="matrix(1,0,0,-1,95.303317,892.62614)">
+          <tspan
+             id="tspan5143"
+             sodipodi:role="line"
+             y="0"
+             x="0 27.650927 38.816097 64.330727 88.998901 105.56528 131.12021 142.28539 153.45055 179.00549 191.78296 231.04243 242.20761 258.00815 270.78561 296.34055 307.50571 318.6709 344.18552 368.81339 394.328 419.11713 435.03857 450.83911">Binärbild mit Silhouette</tspan>
+          <tspan
+             id="tspan5145"
+             sodipodi:role="line"
+             y="268.51443"
+             x="-26.5305 -0.9755618 24.53907 50.094009 61.259178 100.51866 125.18683 150.74178 175.53087 188.30833 212.13005 236.75792 262.27255 275.17093 300.72589 311.89105 323.05621 348.57086 373.19873 398.71335 423.50244 439.30298 455.10352">Subimage von Silhouette</tspan>
+          <tspan
+             id="tspan5147"
+             sodipodi:role="line"
+             y="109.77027"
+             x="-74.421379 -48.987366 -25.165649 -9.365119 7.2012525 31.990349 55.328377 71.128906 82.294075 106.92194 132.43657 145.21405 184.47353 195.63869">Extraktion mit</tspan>
+          <tspan
+             id="tspan5149"
+             sodipodi:role="line"
+             y="160.15462"
+             x="-99.259293 -71.60836 -46.819267 -21.264328 -5.544414 19.244682 44.759312 65.880432 91.395058 117.03062 142.58556 163.54544 189.10037 212.47871">Begrenzungsbox</tspan>
+          <tspan
+             id="tspan5151"
+             sodipodi:role="line"
+             y="774.5802"
+             x="301.66254 323.38828 348.01614 373.57108 384.73624 395.90143 417.78839 442.57748 453.74265 477.56436 503.07898 527.70685 552.33472">Loglikelyhood</tspan>
+          <tspan
+             id="tspan5153"
+             sodipodi:role="line"
+             y="872.30035"
+             x="423.12921 447.59583 472.22369 488.79007 514.34503 539.13409 555.05554 580.57019 605.23834 616.40356 632.20404 657.71869 683.35425">Körperhaltung</tspan>
+        </text>
+        <text
+           id="text5155"
+           style="font-variant:normal;font-weight:normal;font-size:36px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           transform="matrix(1,0,0,-1,826.70232,357.21806)">
+          <tspan
+             id="tspan5157"
+             sodipodi:role="line"
+             y="0"
+             x="0 26.927999 48.924 63.108002 98.171997 120.204 130.17599 140.14799 158.868 168.84 190.98 205.776 219.888 253.548 274.82401 296.96399 311.76001 325.87201 335.84399 356.112 378.14401 388.116">Normalisiertevertikale</tspan>
+        </text>
+        <text
+           id="text5159"
+           style="font-variant:normal;font-weight:normal;font-size:40.30747223px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           transform="matrix(1,0,0,-1,117.98391,484.0675)">
+          <tspan
+             id="tspan5161"
+             sodipodi:role="line"
+             y="0"
+             x="0 25.554939 48.207741 72.875916 84.041084 95.206253 119.99535 136.56172 162.07635 187.7119">Skalierung</tspan>
+        </text>
+        <text
+           id="text5163"
+           style="font-variant:normal;font-weight:normal;font-size:36px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           transform="matrix(1,0,0,-1,119.07039,357.21806)">
+          <tspan
+             id="tspan5165"
+             sodipodi:role="line"
+             y="0"
+             x="0 24.695999 46.835999 60.875999 83.015999 102.78 125.568 148.464 170.604 193.392 204.804 226.08 248.076 270.86401 282.276 303.552 325.69199 340.59601 354.70801 364.67999 384.948 406.98001 416.952 439.09201">Berechnen von vertikalen</tspan>
+          <tspan
+             id="tspan5167"
+             sodipodi:role="line"
+             y="41.367889"
+             x="-65.654282 -42.86628 -20.078279 2.7457199 14.15772 37.053719 59.049721 73.845718 83.817719 102.68172 124.67772 147.46571 161.57771 183.60973 193.58173 215.72173 238.61772 250.02972 277.06573 287.03772 305.75772 319.86972 341.86572 364.68973 379.48572 401.51773 436.58173 471.75372 493.89371">und horizontalen Histogrammen</tspan>
+        </text>
+        <g
+           transform="matrix(1,0,0,-1,0,937.20868)"
+           id="g5169">
+          <path
+             inkscape:connector-curvature="0"
+             id="path5171"
+             style="fill:none;stroke:#000000;stroke-width:1.00768697;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 342.953,334.016 0,204.418" />
+        </g>
+        <g
+           transform="matrix(0,1,1,0,0,937.20868)"
+           id="g5173">
+          <path
+             inkscape:connector-curvature="0"
+             id="path5175"
+             style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00768697;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m -528.355,342.953 4.031,-4.031 -14.11,4.031 14.11,4.031 -4.031,-4.031 z" />
+        </g>
+        <text
+           id="text5177"
+           style="font-variant:normal;font-weight:normal;font-size:36px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           transform="matrix(1,0,0,-1,745.01678,315.85018)">
+          <tspan
+             id="tspan5179"
+             sodipodi:role="line"
+             y="0"
+             x="0 22.788 45.576 68.400002 79.811996 102.708 124.704 139.5 149.472 168.336 190.332 213.12 227.23199 249.26401 259.23599 281.37601 292.78799 313.95599 328.03201 350.02802 360 382.14001 402.98401 417.09601 438.37201 460.36801 475.164 485.13599 507.168 529.992 552.13202">und horizontale Projektvorlagen</tspan>
         </text>
       </g>
     </g>

@@ -10,9 +10,9 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="517.46301mm"
+   width="528.45471mm"
    height="730.25mm"
-   viewBox="0 0 1833.5304 2587.5"
+   viewBox="0 0 1872.4774 2587.5"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
@@ -199,7 +199,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.49497475"
-     inkscape:cx="662.17218"
+     inkscape:cx="701.11903"
      inkscape:cy="2305.6086"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
@@ -222,7 +222,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -231,7 +231,7 @@
      id="layer2"
      inkscape:label="Layer 2"
      style="display:inline"
-     transform="translate(4.9239197,9.2256975)">
+     transform="translate(43.870764,9.2256975)">
     <image
        y="-9.2256975"
        x="-4.9239197"
@@ -245,7 +245,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(2059.5888,404.68889)"
+     transform="translate(2098.5356,404.68889)"
      style="display:inline">
     <flowRoot
        xml:space="preserve"

@@ -20,7 +20,7 @@ In dieser Masterarbeit ist Hintergrundsubtraktion ein wichtiger Baustein. Die Ab
 	\caption{Erster Meilenstein geht um das Hintergrundsubtraktion-Verfahren. Die Eingabe ist ein aktuelles Bild und die Ausgabe ist ein Binärbild mit der Silhouette. Bei Aktualisierung des Hintergrundmodells werden nur selektive Bereiche aktualisiert.}
 	\label{fig:bgsub}
 \end{figure}
-Für diese Arbeit wurden populäre Methoden aus Kapitel \ref{sec:grunglagen_hintergrundsub} (Gaussian Mixture Model, K-nächste Nachbar, Kern Density Estimation und Vibe) ausprobiert und verglichen. Alle genannten Methoden wurden schon in \ref{sec:grunglagen_hintergrundsub} theoretisch beschrieben. In diesem Abschnitt geht es um die Bewertungen der Hintergrundsubtraktionsverfahren für den gegebenen Anwendungsfall. Bei \acs{AGMM} wird eine Mischung von 5 Gaußschen Verteilungen für deas Hintergrundmodell verwendet und 100 letzten Frames werden als \grqq{}History\grqq{} des Hintergrundmodells angewendet. Mit einer Lernrate von $0.01$ funktioniert das \acs{AGMM} Verfahren gut in dem Test. Für das \acs{KNN} Verfahren wurden auch die gleichen Parameter genommen, um den Vergleich der Hintergrundsubtraktionsverfahren objektiv zu bewerten. Bei \acs{KDE} handelt es sich um eine Berechnung von Intensitätswerte für einen Pixel, deshalb wird nur ein Parameter von 100 als \grqq{}History\grqq{} (wie bei \acs{AGMM}) eingesetzt. Wie in \cite{barnich2009vibe} beschrieben, ist Vibe ein nicht-parametrisches Verfahren, deshalb musste kein Parameter konfiguriert werden.
+Für diese Arbeit wurden populäre Methoden aus Kapitel \ref{sec:grunglagen_hintergrundsub} (Gaussian Mixture Model, K-nächste Nachbar, Kern Density Estimation und Vibe) ausprobiert und verglichen. Alle genannten Methoden wurden schon in \ref{sec:grunglagen_hintergrundsub} theoretisch beschrieben. In diesem Abschnitt geht es um die Bewertungen der Hintergrundsubtraktionsverfahren für den gegebenen Anwendungsfall. Bei \acs{AGMM} wird eine Mischung von 5 Gaußschen Verteilungen für deas Hintergrundmodell verwendet und 100 letzten Bildern werden als \grqq{}History\grqq{} des Hintergrundmodells angewendet. Mit einer Lernrate von $0.01$ funktioniert das \acs{AGMM} Verfahren gut in dem Test. Für das \acs{KNN} Verfahren wurden auch die gleichen Parameter genommen, um den Vergleich der Hintergrundsubtraktionsverfahren objektiv zu bewerten. Bei \acs{KDE} handelt es sich um eine Berechnung von Intensitätswerte für einen Pixel, deshalb wird nur ein Parameter von 100 als \grqq{}History\grqq{} (wie bei \acs{AGMM}) eingesetzt. Wie in \cite{barnich2009vibe} beschrieben, ist Vibe ein nicht-parametrisches Verfahren, deshalb musste kein Parameter konfiguriert werden.
 
 \begin{figure}[H]
 	\centering
@@ -74,7 +74,7 @@ Die Abbildung \ref{fig:eroanddila} zeigt, dass nach Erosion unerwartetes Rausche
 Im Allgemein wird für jedes Pixel vom aktuellen Bild zuerst berechnet, ob er zu Hintergrund oder Vordergrund gehört. Dann wird den Pixel wieder nach jedem Bild in Hintergrundmodell berücksichtigt. Das bedeutet, wenn ein Mensch sich von der Position $P_1$ nach $P_2$ bewegt und auf $P_2$ lange zum Stillstand kommt, wird der Mensch wieder den Hintergrund zugeordnet. Dies Problem muss unbedingt gelöst werden, weil die Arbeit zur Erkennung einer außergewöhnlichen Situation auch die Information einer Person, die sich nicht bewegt, benötigt, um einer eventuellen Unfall zu detektieren. Zum Beispiel passiert ein Unfall und die Person liegt lange auf dem Boden.
  
 \subsubsection{Erste Verbesserung (Aktualisierung der selektiven Begrenzungsboxen)}
-Das oben genannte Problem liegt an der Aktualisierung des Hintergrundmodells, deshalb wird eine Methode an dieser Stelle erstellt, um das Problem zu vermeiden (Abbildungen \ref{fig:mymethod1}, \ref{fig:mymethod2}, \ref{fig:mymethod3}). Die Methode ist \glqq{}Aktualisierung der selektiven Begrenzungsboxen\grqq{} (ASB) genannt. Bei Aktualisierung eines Hintergrundbildes soll nur die Pixel, die nicht zu Vordergrund zugeordnet sind, betrachtet werden. Das erste Frame wird in Grauwertbild mit der Originalgröße (1280x720) und dem Wertbereich $[0,255]$ konvertiert und als ein Hintergrundbild $H$ gespeichert. Der Unterschied zwischen dem aktuellen Grauwertbild $I$ und dem abgespeicherten Hintergrundbild $H$ wird pixelweise mit absoluter Subtraktion gerechnet. Anschließend ergibt es sich ein Bild $S$, das den Unterschied zwischen dem aktuellen Bild und dem Hintergrundbild  mit den Werten von 0 bis 255 darstellt  (siehe Abbildungen \ref{fig:mymethod1}c, \ref{fig:mymethod2}c, \ref{fig:mymethod3}c). Je geringer der Wert von einem Pixel auf dem Bild $S$ ist, desto höher die Wahrscheinlichkeit, dass der Pixel zum Hintergrund gehört. Und umgekehrt je höher der Wert von einem Pixel auf dem Bild $S$ ist, desto höher die Wahrscheinlichkeit, dass das Pixel zu Hintergrund gehört. Nach der Berechnung des Unterschiedsbild wird ein Schwellwert von $50$ angewendet, um ein Binärbild zu erzeugen. Wenn ein Pixel ein Wert unter $50$ hat, wird das Pixel in Schwarz markiert und höher als $50$ dann wird das Pixel in Weiß markiert (Abbildungen \ref{fig:mymethod1}d, \ref{fig:mymethod2}d, \ref{fig:mymethod3}d).
+Das oben genannte Problem liegt an der Aktualisierung des Hintergrundmodells, deshalb wird eine Methode an dieser Stelle erstellt, um das Problem zu vermeiden (Abbildungen \ref{fig:mymethod1}, \ref{fig:mymethod2}, \ref{fig:mymethod3}). Die Methode ist \glqq{}Aktualisierung der selektiven Begrenzungsboxen\grqq{} (ASB) genannt. Bei Aktualisierung eines Hintergrundbildes soll nur die Pixel, die nicht zu Vordergrund zugeordnet sind, betrachtet werden. Das erste Bild wird in Grauwertbild mit der Originalgröße (1280x720) und dem Wertbereich $[0,255]$ konvertiert und als ein Hintergrundbild $H$ gespeichert. Der Unterschied zwischen dem aktuellen Grauwertbild $I$ und dem abgespeicherten Hintergrundbild $H$ wird pixelweise mit absoluter Subtraktion gerechnet. Anschließend ergibt es sich ein Bild $S$, das den Unterschied zwischen dem aktuellen Bild und dem Hintergrundbild  mit den Werten von 0 bis 255 darstellt  (siehe Abbildungen \ref{fig:mymethod1}c, \ref{fig:mymethod2}c, \ref{fig:mymethod3}c). Je geringer der Wert von einem Pixel auf dem Bild $S$ ist, desto höher die Wahrscheinlichkeit, dass der Pixel zum Hintergrund gehört. Und umgekehrt je höher der Wert von einem Pixel auf dem Bild $S$ ist, desto höher die Wahrscheinlichkeit, dass das Pixel zu Hintergrund gehört. Nach der Berechnung des Unterschiedsbild wird ein Schwellwert von $50$ angewendet, um ein Binärbild zu erzeugen. Wenn ein Pixel ein Wert unter $50$ hat, wird das Pixel in Schwarz markiert und höher als $50$ dann wird das Pixel in Weiß markiert (Abbildungen \ref{fig:mymethod1}d, \ref{fig:mymethod2}d, \ref{fig:mymethod3}d).
 \\
 Bis jetzt ist ein Binärbild kreiert, das ein sich bewegende Objekt enthält.  Nun werden Erosion und Dilatation angewendet, um die Qualität des Binärbildes zu verbessern  (siehe Abbildungen \ref{fig:mymethod1}e, \ref{fig:mymethod2}e, \ref{fig:mymethod3}e). Wie im Abschnitt \ref{sec:grunglagen_hintergrundsub} schon erwähnt, besteht Hintergrundsubtraktion aus drei Hauptschritten: Initialisierung des Hintergrundes, Erkennung des Vordergrundes und Aktualisierung des Hintergrundes.\\
 
@@ -258,7 +258,7 @@ Um die Zuverlässigkeit von diesem Schritt zu überprüfen, wird die Körperhaltung 
 \end{figure}
 
 \section{Erkennung außergewöhnlicher Situation}
-Im Abschnitt \ref{chp:BackgroundSubtraction} und \ref{chp:schatzung} wird eine Silhouette durch Bewegungen erstellt und eine Schätzung der Körperhaltung durch die Histogrammanalyse berechnet. Zur Erkennung außergewöhnlicher Situationen werden noch die aktuelle Position der Person in einem bestimmten Zeitraum berücksichtigt werden. An dieser Stelle ist es benötigt, dass es sich die normale mit außergewöhnlichen Situationen unterschieden werden muss. Wenn beispielsweise die Körperhaltung einer Person als \glqq{}Liegen\grqq{} geschätzt ist, ist es möglich, dass die Person auf einem Sofa oder in einem Bett schläft. Wenn eine Person im Bett liegt, handelt es sich um eine normale Situation. Deswegen ist es wichtig zur Identifizierung der Positionen der Möbeln im Raum. Zur Erkennung außergewöhnlicher Situationen gab es ein paar Ideen. Zum Beispiel: Der Raum, indem die Kamera gestellt ist, ein 3D-Modell restrukturiert werden kann. Diese Idee hat einen Vorteil, dass die Positionen von Möbeln im Raum identifiziert werden können, um zu bestimmen, ob die Person im Bett oder auf der Boden liegt. Die Arbeit für Restrukturierung ist sehr zeitaufwendig und es ist nötig, für jeden neuen Raum ein 3D-Modell aufzubauen. Es gibt noch eine andere Technik zur Identifizierung der Positionen der Möbeln im Raum und die Methode ist als \glqq{}Bird Eye View\grqq{} genannt. Die Technik ist bei Automobilen mit Rückfahrkamera angewendet. Der Nachteil von der Technik ist: Der Abstand zwischen der Kamera und dem Boden muss festgestellt werden. Auf diesem Grund ist diese Technik für dies Projekt nicht anwendbar, weil die Kamera an einer beliebigen Position im Raum gestellt werden soll. Die beste Lösung ist die einfachste, die funktioniert. Um das genannte Problem bei Unterscheidung von normalen und abnormalen Situationen zu lösen, wird in diesem Meilenstein eine logische Methode, die als Fuzzylogik genannt ist, verwendet.  Wie in Abschnitt \ref{sec:fuzzylogik} schon erwähnt, geht Fuzzylogik um eine unscharfe logische Menge. Fuzzylogik besteht aus drei Schritte: Umwandlung von Eingaben in Fuzzymenge, Anwendung von vordefinierten (IF-ELSE) Regeln und Defuzzifizierung (siehe Abbildung \ref{fig:fuzzylogik}).
+Im Abschnitt \ref{chp:BackgroundSubtraction} und \ref{chp:schatzung} wird eine Silhouette durch Bewegungen erstellt und eine Schätzung der Körperhaltung durch die Histogrammanalyse berechnet. Zur Erkennung außergewöhnlicher Situationen wird noch die aktuelle Position der Person in einem bestimmten Zeitraum berücksichtigt werden. An dieser Stelle ist es benötigt, dass die Anwendung den Unterschied zwischen normalen Bewegungen im Alltag und außergewöhnlichen Situationen erkennen soll. Wenn beispielsweise die Körperhaltung einer Person als \glqq{}Liegend\grqq{} geschätzt ist, ist es möglich, dass die Person auf einem Sofa oder in einem Bett schläft. Wenn eine Person im Bett liegt, handelt es sich um eine normale Situation. Deswegen ist es wichtig zur Identifizierung der Positionen der Möbeln im Raum. Zur Erkennung außergewöhnlicher Situationen gab es ein paar Ideen. Zum Beispiel: Der Raum, indem die Kamera gestellt ist, ein 3D-Modell restrukturiert werden kann. Diese Idee hat einen Vorteil, dass die Positionen von Möbeln im Raum identifiziert werden können, um zu bestimmen, ob die Person im Bett oder auf der Boden liegt. Die Arbeit für Restrukturierung ist sehr zeitaufwendig und es ist nötig, für jeden neuen Raum ein 3D-Modell aufzubauen. Es gibt noch eine andere Technik zur Identifizierung der Positionen der Möbeln im Raum und die Methode ist als \glqq{}Bird Eye View\grqq{} genannt. Die Technik ist bei Automobilen mit Rückfahrkamera angewendet. Der Nachteil von der Technik ist: Der Abstand zwischen der Kamera und dem Boden muss festgestellt werden. Auf diesem Grund ist diese Technik für dies Projekt nicht anwendbar, weil die Kamera an einer beliebigen Position im Raum gestellt werden soll. Die beste Lösung ist die einfachste, die funktioniert. Um das genannte Problem bei Unterscheidung von normalen und abnormalen Situationen zu lösen, wird in diesem Meilenstein eine logische Methode, die als Fuzzylogik genannt ist, verwendet. Die Positionen der Möbeln im Raum sind auf dem Bild vordefiniert. Die Fuzzylogik berechnet durch die Positionen der Möbeln (zum Beispiel: Bett oder Sofa), aktuelle Körperhaltung und aktuelle Zeit dann die Wahrscheinlichkeit, dass eine außergewöhnliche Situation passiert. Wie in Abschnitt \ref{sec:fuzzylogik} schon erwähnt, geht Fuzzylogik um eine unscharfe logische Menge. Fuzzylogik besteht aus drei Schritte: Umwandlung von Eingaben in Fuzzymenge, Anwendung von vordefinierten (IF-ELSE) Regeln und Defuzzifizierung (siehe Abbildung \ref{fig:fuzzylogik}).
 
 \begin{figure}[H]
 	\centering
@@ -271,7 +271,7 @@ Zuerst müssen die Mitgliederfunktionen der Eingaben definiert werden und die sin
 
 \begin{itemize}
 	\item Die Körperhaltung besteht aus vier Zustände: Stehend (Index: 0), Liegend (Index: 1), Beugend (Index: 2), Sitzend (Index: 3) und die sind als Punkte im Fuzzymodel definiert.
-	\item Die Zeit besteht aus Tag und Nacht und ist mit glockenförmige Funktionen mit Parameter $a=6$, $b=10$ und $mean=14$ für Tag und $mean=2$ für Nacht definiert. Die glockenförmige Funktion kann wie folgt beschrieben\cite{rosenfeld1971fuzzy}:
+	\item Die Zeit besteht aus Tag und Nacht und ist mit glockenförmige Funktionen mit Parameter $a=6$, $b=10$ und $mean=14$ für Tag und $mean=2$ für Nacht definiert. Der Wertbereich für die Zeit ist ein Intervall [0, 24] für 24 Stunden am Tag. Die glockenförmige Funktion kann wie folgt beschrieben\cite{rosenfeld1971fuzzy}:
 	\begin{equation}
 		f(a, b, mean) = \frac{1}{1 + |\frac{x - mean}{a}|^{2b}}
 	\end{equation} 
@@ -279,7 +279,7 @@ Zuerst müssen die Mitgliederfunktionen der Eingaben definiert werden und die sin
 	\item Die Ausgabe ist als \glqq{}Status\grqq{} genannt. \glqq{}Status\grqq{} hat eine Gaußschen-Funktion mit Standardabweichung $\sigma = 1$ Mittelwert $\mu=4$ für abnormale und $\mu=6$ für normale Situation.
 \end{itemize}  
 
-Zur Anwendung von (IF-ELSE) Regeln (siehe Algorithmus \ref{algo:fuzzy_modell} ) sind Minimum als Aktivaktionsmethode und Maximum als Akkumulationsmethode eingesetzt. Die Regeln in Algorithmus \ref{algo:fuzzy_modell} kann wie folgt interpretiert werden:
+Die allen oben vordefinierten Methoden werden auf die Abbildung \ref{fig:fuzzyfunktion} graphisch dargestellt. Zur Anwendung von (IF-ELSE) Regeln (siehe Algorithmus \ref{algo:fuzzy_modell} ) sind Minimum als Aktivaktionsmethode und Maximum als Akkumulationsmethode eingesetzt. Die Regeln in Algorithmus \ref{algo:fuzzy_modell} kann wie folgt interpretiert werden:
 
 \begin{itemize}
 	\item Es ist schlecht, wenn die Person nicht in Sofa liegt.
@@ -289,9 +289,9 @@ Zur Anwendung von (IF-ELSE) Regeln (siehe Algorithmus \ref{algo:fuzzy_modell} ) 
 	 \item Es schlecht, wenn die Person am Tag sitzt oder beugt.
 \end{itemize}
 
-Bei Defuzzifizierung, die eine Abbildung der Ausgabe in scharfe Menge durchführt, wird die Schwerpunktmethode verwendet. Das definierte Fuzzymodel wird wie in Abbildung \ref{fig:fuzzyfunktion} dargestellt. Die oben vordefinierten Parameter können anhand des Raum, biologischer Uhr der Testperson angepasst werden.\\
+Bei Defuzzifizierung, die eine Abbildung der Ausgabe in scharfe Menge durchführt, wird die Schwerpunktmethode verwendet. Die oben vordefinierten Parameter können anhand des Raum, biologischer Uhr der Testperson angepasst werden.\\
 
-Die Fuzzylogik berechnet, wie hoch die Wahrscheinlichkeit ist, dass die aktuelle Situation um einen normalen Fall geht. Für das Beispiel im Abbildung \ref{fig:Fuzzy_Example} sind Dreieckfunktionen angewendet, um die Funktion der Fuzzylogik einfacher zu verstehen. Für die komplexeren Anwendungsfälle sind Gaußschen-Funktionen benutzt, um ein Demo zu realisieren. Es ist angenommen, dass die Koordinaten von einem Sofa in Testraum $(591, 441)$, die aktuelle Zeit $8$ Uhr morgen ist und die Testperson liegt im Position (574, 424) (siehe Abbildung \ref{fig:fuzzyfunktion}). In dem ersten Testfall ergibt sich die Unterscheidung für normale Situation $93,29\%$ und für eine außergewöhnliche Situation $26,59\%$ (Abbildung \ref{fig:fuzzy1}). Es ist klar in diesem Fall, weil anhand den Regeln in Algorithmus \ref{algo:fuzzy_modell} die Ausgabe der Fuzzylogik \glqq{}good\grqq{} auskommen soll. In Regeln \ref{algo:fuzzy_modell} gibt es einen gemischten Fall, wobei die Testperson an dem Sofa am Tag liegt. Dieser Testfall kombiniert zwei Regeln, wobei es gut ist, wenn die Testperson in normale Position liegt und es ist schlecht wenn die Person am Tag liegt. Nach der Rechnen liefert das Ergebnis einen Wert von $71,6\%$ für normale Situation und $49,71\%$ für abnormale Situation (Abbildung \ref{fig:fuzzy2}). Eine Situation wird genau dann als schlechten Situation betrachtet, wenn der Wert \glqq{}bad\grqq{} $\geq 0,8$ und $\geq$ den Wert \glqq{}good\grqq{} ist, sonst handelt es sich um eine normale Situation.
+Die Fuzzylogik berechnet, wie hoch die Wahrscheinlichkeit ist, dass die aktuelle Situation um einen normalen Fall geht. Für das Beispiel im Abbildung \ref{fig:Fuzzy_Example} sind Dreieckfunktionen angewendet, um die Funktion der Fuzzylogik einfacher zu verstehen. Für die komplexeren Anwendungsfälle sind Gaußschen-Funktionen benutzt, um ein Demo zu realisieren. Es ist angenommen, dass die Koordinaten von einem Sofa in Testraum $(591, 441)$, die aktuelle Zeit $0$ Uhr Nacht und $8$ Uhr Morgen sind und die Testperson liegt im Position (574, 424) (siehe Abbildung \ref{fig:fuzzyfunktion}). In dem ersten Testfall, indem die Testperson an dem Sofa in der Nacht liegt, ergibt sich die Unterscheidung für normale Situation ein Ergebnis von $93,29\%$ und für eine außergewöhnliche Situation ein Ergebnis von $26,59\%$ (Abbildung \ref{fig:fuzzy1}). Es ist klar, dass dies Fall eine normale Situation ist, weil anhand den Regeln in Algorithmus \ref{algo:fuzzy_modell} die Ausgabe der Fuzzylogik \glqq{}good\grqq{} auskommen soll. In Regeln \ref{algo:fuzzy_modell} gibt es einen gemischten Fall, wobei die Testperson an dem Sofa um $8$ Uhr Morgen liegt. Dieser Testfall kombiniert zwei Regeln, wobei es gut ist, wenn die Testperson in normale Position liegt und es ist schlecht wenn die Person am Tag liegt. Nach der Rechnen liefert das Ergebnis einen Wert von $71,6\%$ für normale Situation und $49,71\%$ für abnormale Situation (Abbildung \ref{fig:fuzzy2}). Eine Situation wird genau dann als schlechten Situation betrachtet, wenn der Wert \glqq{}bad\grqq{} $\geq 0,8$ und $\geq$ den Wert \glqq{}good\grqq{} ist, sonst handelt es sich um eine normale Situation.
 
 \begin{algorithm}[H]
 	\caption{Regel für Raumtemperatur und Einstellung des Thermostates.	}
@@ -306,39 +306,39 @@ Die Fuzzylogik berechnet, wie hoch die Wahrscheinlichkeit ist, dass die aktuelle
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{fig/fuzzyfunktion.png}
-	\caption{Mitgliederfunktionen} 
+	\caption{Die Mitgliederfunktionen der Körperhaltung, Zeit und aktuellen Position der Person. Der Eingabebereich der Zeit ist von 0 bis 24 beschränkt und die Eingabe der Position muss ein positiver Wert sein.} 
 	\label{fig:fuzzyfunktion}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{fig/fuzzy1.png}
-	\caption{Testfall: Person liegt im Sofa in Nacht. Ergebnis: 93,29\% normal, 26,59\% abnormal} 
+	\includegraphics[width=0.57\textwidth]{fig/fuzzy1.png}
+	\caption{Testfall: Person liegt im Sofa um 12 Uhr Nacht. Das Programm liefert ein Ergebnis von 93,29\% für normale und 26,59\% für abnormale Situation.} 
 	\label{fig:fuzzy1}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{fig/fuzzy2.png}
-	\caption{Testfall: Person liegt im Sofa am Tag. Ergebnis: 71,6\% normal, 49,71\% abnormal} 
+	\includegraphics[width=0.57\textwidth]{fig/fuzzy2.png}
+	\caption{Testfall: Person liegt im Sofa um 8 Uhr morgen. Das Programm liefert ein Ergebnis von 71,6\% für normale und 49,71\% für abnormale Situation.} 
 	\label{fig:fuzzy2}
 \end{figure}
 
-Bis jetzt kann es geschafft werden, die außergewöhnlichen Situationen zu erkennen. Die abnormalen Situationen nicht nur in einem Frame sondern in einer Sequenz von mehreren Frames beachtet, damit das System bessere Entscheidung für eine abnormale Situation detektieren kann. Wenn es nur in einem Frame beachtet wird, wird das System sofort nach einem Frame alarmiert. Das System kann einen falschen Alarm ausgibt, wenn die Person beispielsweise auf dem Boden liegt, um seine raus-gefallen Münze unter dem Tisch zu erreichen. Um die Beachtung in mehreren Frames zu realisieren, wird ein Modell gebaut, wobei die Begrenzungsbox als eine Person markiert wird, und in einem Zeitraum betrachtet. Die bewegende Person wird als eine Begrenzungsbox in diesem Fall gebaut. Außerdem besteht eine Person noch aus eine maximale Motion als \inlinecode{C++}{movementMaximum} und minimale Motion als \inlinecode{C++}{monvementMinimum}. Die Begrenzungsbox wird anhand einer Motion von Frame by Frame markiert und die maximale Motion garantiert, dass die aktuelle Begrenzungsbox von gleicher Person von letztem Frame gehört. Das bedeutet, wenn eine Begrenzungsbox erneut detektiert, wird sie mit einer andere Begrenzungsbox in letztem Frame von einer Person verglichen. Wenn eine gleiche Person wie in letztem Frame identifiziert werden kann, wird die Begrenzungsbox von der Person aktualisiert. Es ist die gleiche Person von letztem Frame, wenn den folgenden Algorithmus \ref{algo:gleicheperson} erfüllt:\\
+Bis jetzt können die außergewöhnlichen Situationen von normale Bewegungen im Alltag mit Hilfe von Fuzzylogik unterschieden werden. Die außergewöhnliche Situationen sollen nicht nur in einem Bild sondern in einer Sequenz von mehreren Bildern beachtet, damit das System bessere Entscheidung für eine abnormale Situation treffen kann. Wenn nur ein Bild beachtet würde, würde das System sofort nach einem Bild falsch alarmiert. Um die Beobachtung in mehreren Bildern zu realisieren, wird ein Modell gebaut, wobei die Person in einer Begrenzungsbox in einem Zeitraum betrachtet wird.  Das heißt, jede \inlinecode{C++}{Person}-Objekt besteht aus einer aktuellen Begrenzungsbox $B_{aktuell}$, die nach der Hintergrundsubtraktion erstellt ist. Nach jedem eingegangenen Bild wird die neue Begrenzungsbox $B_{neu}$ mit der aktuellen Begrenzungsbox $B_{aktuell}$ verglichen, um zu bestimmen, ob es sich um die selbe Person handelt und ob die Person sich bewegt. Eine globale Variable \inlinecode{C++}{movementMaximum} wird verwendet, um zu garantieren, dass  die neue Begrenzungsbox zu der gleichen Person von dem letzten Bild gehört. Der Abstand zwischen der aktuellen Begrenzungsbox $B_{aktuell}$ und  der neuen Begrenzungsbox $B_{neu}$ wird berechnet und mit der \inlinecode{C++}{movementMaximum} verglichen. Wenn dieser Abstand größer als \inlinecode{C++}{movementMaximum}, wird eine neue Person erstellt und wird die aktuelle Person ignoriert. Wenn dieser Abstand kleiner oder gleich  \inlinecode{C++}{movementMaximum}, wird die aktuelle Begrenzungsbox $B_{aktuell}$ der Person mit der neuen Begrenzungsbox $B_{neu}$ ersetzt (siehe Algorithmus \ref{algo:gleicheperson}).
 
 \begin{algorithm}[H]
 \caption{Bedingung zur Erkennung von gleicher Person}
 \label{algo:gleicheperson}	
 \begin{algorithmic}
-\IF {(Koordinaten neuer Box + \inlinecode{C++}{movementMaximum}) $\geq$  Koordinaten neuer Box $\AND$ (Koordinaten neuer Box - \inlinecode{C++}{movementMaximum}) $\leq$ Koordinaten neuer Box}
-	\STATE Person $\gets$ Neuer Box
+\IF { $|$ Koordinaten von $B_{aktuell}$ - Koordinaten von $B_{neu} | \leq$  \inlinecode{C++}{movementMaximum}}
+	\STATE $B_{aktuell}$ der Person $\gets$ $B_{neu}$
 \ELSE 
-	\STATE Erstelle neuer Person
+	\STATE Erstelle neue Person mit Begrenzungsbox $B_{neu}$
 \ENDIF
 \end{algorithmic}
 \end{algorithm}
 
-Die minimale Motion gewährleistet, dass die Person sich bewegt oder in einer selben Position bleibt und hilft uns bei Erkennung von abnormaler Situation. Wenn eine Person in einer außergewöhnliche Position liegt und sich in einer selber Position nicht mehr bewegt, löst das System einen Alarm aus. Zur Berechnen, ob die Person sich in einer selben Position nicht bewegt, wird \inlinecode{C++}{monvementMinimum} in dem Algorithmus benutzt:\\
+Die nächste globale Variable \inlinecode{C++}{movementMinimum} gewährleistet, ob die Person sich bewegt. Diese Variable hilft uns bei der Erkennung von außergewöhnlicher Situation, in der die Person liegt und sich nicht mehr bewegt. Wenn der Abstand zwischen der aktuellen Begrenzungsbox $B_{aktuell}$ und  der neuen Begrenzungsbox $B_{neu}$ kleiner als \inlinecode{C++}{movementMinimum}, bedeutet es, dass die Person sich nicht mehr bewegt und umgekehrt. Außerdem sind die Breite und Höhe von $B_{aktuell}$ und $B_{aktuell}$ auch verglichen, um zu bestimmen, dass es eine Änderung der Begrenzungsbox gibt, wenn sie trotzdem an einer gleichen Position bleibt. Um zu berechnen, ob die Person sich in einer gleichen Position nicht bewegt, wird \inlinecode{C++}{monvementMinimum} in dem Algorithmus benutzt:\\
 
 \begin{algorithm}[H]
 	\caption{Bedingung zur Erkennung von Bewegung einer Person}
@@ -355,30 +355,33 @@ Die minimale Motion gewährleistet, dass die Person sich bewegt oder in einer sel
 	\end{algorithmic}
 \end{algorithm}
 
-Mit dem oben genannten Modell kann eine Person in einem Zeitraum verfolgt und dann kann das System die Notfälle besser betrachtet werden. Bis jetzt kann wird das System eine abnormale Situation mit folgenden Bedingungen erkennen:\\
+Mit dem beschriebenen \inlinecode{C++}{Person}-Modell kann eine Person in einem Zeitraum betrachtet werden und dann kann das System die Notfälle besser bewerten. Bis jetzt kann das System eine außergewöhnliche Situation mit folgenden Bedingungen erkennen:\\
 \begin{itemize}
-	\item Durch Hintergrundsubtraktion, Schätzung der Körperhaltung wird eine Person erkannt, wann er steht, liegt, beugt oder sitzt.
+	\item Durch Hintergrundsubtraktion, Schätzung der Körperhaltung wird eine Person erkannt, ob er steht, liegt, beugt oder sitzt.
 	\item Durch Fuzzylogik kann das System bewerten, ob eine Person in einem normalen oder nicht normalen Ort liegt.
-	\item Durch oben genanntes Modell kann das System detektieren, dass eine Person in einem bestimmten Zeitraum sich bewegt oder nicht.
+	\item Durch das \inlinecode{C++}{Person}-Modell kann das System eine Person folgen und erkennen, dass eine Person in einem bestimmten Zeitraum sich bewegt oder nicht.
 \end{itemize}
 
-Nun können eine finale Kombination von oben gemeinte Bedingungen erstellt werden, damit ein komplettes System zur Erkennung von einer außergewöhnlichen Situation kreiert werden kann. Es handelt sich um einen Notfall genau dann, wenn eine Person in einem abnormalen Ort liegt , sich nicht mehr in einem Zeitraum nicht mehr bewegt. Algorithmus \ref{algo:finalAlgo} vervollständigt den Weg zur Erkennung der außergewöhnlicher Situation. Nach dem Laden ein neues Frame wird eine Silhouette durch Hintergrundsubtraktion erstellt. Die erstellte Silhouette wird als Eingabe von der Histogrammanalyse und die Ausgabe ist eine geschätzte Körperhaltung. Danach wird eine Fuzzylogik mit Begrenzungsbox der Silhouette, die geschätzte Körperhaltung  und die aktuelle Zeit als Eingaben erstellt und die Ausgabe davon ist die Wahrscheinlichkeit, dass eine Person unter den Bedingungen von Eingaben in eine normale oder abnormale Situation sich befindet. Durch die Begrenzungsbox von der Silhouette wird es berechnet, ob es sich um eine gleiche Person wie im letzten Frame handelt (Siehe Algorithmus \ref{algo:gleicheperson}). Wenn die gleiche Person detektiert, wird die Begrenzungsbox der Person mit der aktuelleren Begrenzungsbox ersetzt. Außerdem wird die Person überprüft, ob er liegt in einem abnormale Ort liegt und sich nicht bewegt (Siehe Algorithmus \ref{algo:gleicheposition} ). Wenn einer schlechten Fall erkannt, wird einen Zähler von der Person (\glqq{}badcounter\grqq{} genannt) sich erhöhen, sonst wird der Zähler zurückgesetzt. Am Ende wird die den Zähler der Person mit eine bestimmte Zeit verglichen. Wenn der Zähler größer als die vordefinierte Zeit ist, wird ein Alarm ausgelöst. 
+Nun kann eine kurze Zusammenfassung der oben gemeinten Bedingungen erläutert werden, damit ein komplettes System zur Erkennung einer außergewöhnlichen Situation erzeugt werden kann. Es handelt sich um einen Notfall genau dann, wenn eine Person in einem abnormalen Ort liegt und sich nicht mehr in einem Zeitraum nicht mehr bewegt. Der Algorithmus \ref{algo:finalAlgo} mach den Weg zur Erkennung der außergewöhnlicher Situation deutlich. Nach dem Aufnahme eines neuen Bild wird eine Silhouette durch Hintergrundsubtraktion erstellt. Die erstellte Silhouette ist die Eingabe der Histogrammanalyse und die Ausgabe der Histogrammanalyse ist eine geschätzte Körperhaltung. Danach wird eine Fuzzylogik mit der Eingaben: die Begrenzungsbox der Silhouette, die geschätzten Körperhaltung und die aktuellen Zeit erstellt. Die Ausgabe der Fuzzylogik ist die Wahrscheinlichkeit, dass eine Person in einer normale oder abnormale Situation ist. Durch die Begrenzungsbox der Silhouette wird es berechnet, ob es sich um eine gleiche Person wie auf letzten Bild handelt (siehe Algorithmus \ref{algo:gleicheperson}). Wenn die gleiche Person detektiert, wird die aktuellere Begrenzungsbox der Person $B_{aktuell}$ mit der neuen Begrenzungsbox $B_{neu}$ ersetzt. Außerdem wird die Person noch betrachtet, ob er liegt in einem abnormale Ort liegt und sich nicht bewegt (siehe Algorithmus \ref{algo:gleicheposition}). Wenn ein außergewöhnlicher Fall auf einem Bild erkannt, wird einen Zähler (\glqq{}badcounter\grqq{} genannt) sich erhöhen, sonst wird der Zähler zurückgesetzt. Am Ende wird der Zähler mit einer bestimmter Zeit-Variable verglichen. Wenn der Zähler größer als die vordefinierte Zeit ist, wird ein Alarm ausgelöst. 
 
 \begin{algorithm}[H]
-\caption{Finaler Algorithmus}
+\caption{Zusammengefasster Algorithmus}
 \label{algo:finalAlgo}	
-\KwData{Aktuelles Frame}
-\KwResult{Erkennung von außergewöhnlicher Situation}
+\KwData{b : Aktuelles Bild}
+\KwResult{Erkennung außergewöhnlicher Situation}
 \begin{algorithmic}
-\STATE $silhouette$ $\gets$ Hintergensubtraktion
-\STATE $koerperhaltung$ $\gets$ Histogrammanalyse ($silhouette$)
-\STATE $zustand$ $\gets$ Fuzzylogik ($begrenzungsbox$ $der$  $silhouette$ ,$ koerperhaltung$ ,$echte$ $zeit$)
+\STATE $s:silhouette$, $B_{neu}:begrenzungsbox$ $\gets$ Hintergensubtraktion($b$)
+\STATE $k:koerperhaltung$ $\gets$ Histogrammanalyse($s$)
+\STATE $t:zeit$ $\gets$ aktuelle Zeit
+\STATE $z:zustand$ $\gets$ Fuzzylogik($B_{neu}$, $ k$, $t$)
+\\
 \COMMENT{Zustand hat zwei Werte \glqq{}gut\grqq{} und \glqq{}schlecht\grqq{}, es sagt wie gut die Situation nach Fuzzymodell bewertet wird}
 
 \IF {Gleiche Person detektiert wird}
-\STATE Aktualisierung der Postion von der detektierter Person
 \STATE $person$ $\gets$ die detektierte Person
-	\IF{$person$ sich nicht bewegt $\AND$ $koerperhaltung$ = LIEGEN $\AND$ $zustand$ = SCHLECHT}
+\STATE Aktualisierung der Begrenzungsbox $B_{aktuell}$ der $person$
+
+	\IF{$person$ bewegt sich nicht $\AND$ $k$ = LIEGEN $\AND$ $z$ = SCHLECHT}
 	\STATE $person.badcounter$ ++
 	\ELSE
 	\STATE $person.badcounter$ $\gets$ 0
@@ -386,6 +389,7 @@ Nun können eine finale Kombination von oben gemeinte Bedingungen erstellt werden
 \ELSE
 \STATE Erstelle neue Person
 \STATE $person$ $\gets$ neue erstellte Person
+\STATE $B_{aktuell}$ der $person$ $\gets$  $B_{neu}$
 \ENDIF
 
 \IF{$person.badcounter$ $\geq$ bestimmte Zeit}
@@ -396,33 +400,32 @@ Nun können eine finale Kombination von oben gemeinte Bedingungen erstellt werden
 \end{algorithm}	
 
 \section{Drehbare 360-Grad-Kamera}
-Ein Merkmal von der Bosch Innenkamera ist die Fähigkeit rund um 360 Grad zu drehen. Mit Hilfe Bewegungsmeldern kann die Kamera nach eine Bewegung im Raum immer verfolgen.  Es bringt einen großen Vorteil für meine Arbeit, da können die außergewöhnlichen Situationen im ganzen Raum betrachtet werden. Zum Vergleich mit anderen normalen Kameras kann die Bosch Kamera in die Richtung der Bewegung hinblicken. Die Kamera muss nicht in einem Ecke gestellt werden, damit sie den Raum vollständig Video aufnehmen kann. Die Kamera kann auf eine beliebige Stelle hingestellt werden, zum Beispiel auf dem Tisch, oder Fensterbank, wo die Kamera mit Drehung alle Fälle beobachten kann. Wenn Kamera sich wegen einer Bewegung dreht, wird die Hintergrund komplett oder fast alles geändert und somit wird die Hintergrundsubtraktion nicht mehr funktioniert.\\
-In der ersten Überlegung wird zuerst eine Hintergrundbild als ein Panoramabild bei Drehung der Kamera erzeugt aber ein Problem wird damit erstellt. Das Problem ist die Schwierigkeit bei Identifizierung der Position von dem aktuellen Bild auf dem Panoramahintergrundbild. Deshalb wird die Idee an die Seite verschoben und wird eine einfache Lösung an dieser Stelle angewendet.\\
-Zuerst wird eine Hintergrunddichte mit Hilfe von OpenCV Framework berechnet. Die Hintergrunddichte repräsentiert eine Proportion von dem Hintergrund aus dem Bild. Ein Schwellwert wird danach angewendet, um eine stärke Änderung bei der Drehung der Kamera zu detektieren. Angenommen ist die Hintergrunddichte von einem Frame \inlinecode{C++}{backgroundDensity}. Mit Hintergrundsubtraktion wird ein Binärbild erstellt, die verbundenen weißen Pixel im Binärbild werden zusammen als eine Region betrachtet. Die kreierten Regionen werden sich verbieten, solang bis keine weiße Pixel mehr vorhanden. Die acht Nachbarpixel werden als verbundenen Elemente betrachtet, das deutet, die Nachbarn von der Pixeln in eine Region werden auch zur Region gehören, wenn die weiß sind. Die zusammengefassten Regionen werden von $1$ nummeriert (Der Hintergrund hat einen Index von $0$) und jeweils mit einer entsprechen Begrenzungsbox markiert. \\
-Mit der Funktion \inlinecode{C++}{connectedComponentsWithStats()} in OpenCV wird die verbundenen Regionen zusammengefasst  und deren Fläche nicht nur als Begrenzungsbox sondern genau pixelweise berechnet. Nun kann ein Schwellwert weiter angewendet. Wenn die Hintergrunddichte \inlinecode{C++}{backgroundDensity} kleiner als $0.8$, geht es um eine stärke Änderung der  Hintergrundes. Mehrere Videos sind mit dem Programm getestet und betragt die Dichte des Hintergrundes durchschnittlich immer über $0,9$ bis $0,98$, deshalb ist der Schwellwert $0,8$ genommen. Anschließend wird eine Bedingung  \inlinecode{C++}{backgroundDensity} $\leq 0,8$, dann wird Hintergrundbild mit aktuellem Frame ersetzt. Das bedeutet auch die weiter Hauptschritte wird auch erneut berechnet. Nach dem Testen mit selbst aufgenommenen Videos wird ein weiteres Problem entdeckt. 
-\\Wenn nur die Bedingung {C++}{backgroundDensity} $\leq 0,8$ betrachtet wird, wird ein der letzten Bilder vor dem Stillstand der Kamera als Hintergrund sofort genommen, wenn die genannte Bedingung erfüllt. Es liefert kein gutes Ergebnis zurück. Um das Problem zu vermeiden wird ein Auslöser als {C++}{trigger} benutzt.  Wenn die Bedingung {C++}{backgroundDensity} $\leq 0,8$ erfüllt, wird der Auslöser angeschaltet und ein Zähler wird aktiviert. Nach einer Sekunde oder $30$ Bilder wird der Hintergrund erst ersetzt. Die Methode vermeidet das Problem und liefert gute Ergebnisse wie erwartet. In die Abbildungen \ref{fig:false1} und \ref{fig:false1} sind zwei Screenshots zum Vergleichen die zwei Aktualisierungsmethode von Hintergrund. Linke Seite von der Abbildungen sind die falsche Erkennungen, wenn die Hintergrundaktualisierung sofort nach der Erfüllung {C++}{backgroundDensity} $\leq 0,8$ aktiviert. Wenn die Bedingung erfüllt, dreht sich die Kamera noch einen kurzen Stuck bevor dem Standstil. Rechte Seite von den Abbildungen sind die Verbesserung mit einem Auslöser nach $30$ Bilder. Es ist leicht zu erkennen, dass die Segmentierung des Vordergrundes wieder richtig ist.
+Eine Eigenschaft der Bosch Innenkamera ist die Fähigkeit, rund um 360° zu drehen. Mit Hilfe von Bewegungsmeldern kann die Kamera nach eine Bewegung im Raum immer folgen.  Es bringt einen großen Vorteil für diese Arbeit, da können die außergewöhnlichen Situationen im ganzen Raum betrachtet werden. Zum Vergleich mit anderen normalen Kameras kann diese Kamera in die Richtung jeder Bewegung hinblicken. Die Kamera muss nicht in einem Ecke gestellt werden, damit sie den Raum vollständig aufnehmen kann. Die Kamera kann auf eine beliebige Stelle hingestellt werden, zum Beispiel auf dem Tisch, oder Fensterbank, darauf die Kamera mit Drehung alle Fälle beobachten kann. Wenn Kamera sich wegen einer Bewegung dreht, wird der Hintergrund komplett oder fast alles geändert und somit wird die Hintergrundsubtraktion nicht mehr funktionieren.\\
+Um das Problem mit der Hintergrundsubtraktion bei Drehung der Kamera zu lösen, wird zuerst eine Hintergrunddichte mit Hilfe von OpenCV Framework berechnet. Die Hintergrunddichte repräsentiert eine Proportion des Hintergrundes auf dem Bild. Ein Schwellwert wird danach verwendet, um eine stärke Änderung des Hintergrundes bei der Drehung der Kamera zu detektieren. Angenommen ist die Hintergrunddichte von einem Bild \inlinecode{C++}{backgroundDensity}. Nach der Hintergrundsubtraktion wird ein Binärbild erstellt, auf dem die verbundenen weißen Pixel in eine Region zusammengefasst werden. Die erstellte Regionen werden sich verbreiten, solang kein weißes Pixel mehr vorhanden ist. Die acht Nachbarpixel jedes Pixels werden als verbundenen Elemente betrachtet. Das heißt, dass die Nachbarn eines Pixels in einer Region auch zur Region gehören, wenn die weiß sind. Die zusammengefassten Regionen werden von $1$ bis $n$ nummeriert (Der Hintergrund hat einen Index von $0$).\\
+Mit der Funktion \inlinecode{C++}{connectedComponentsWithStats()} in OpenCV werden die verbundenen Regionen zusammengefasst und deren Fläche genau pixelweise berechnet. Wenn die Hintergrunddichte \inlinecode{C++}{backgroundDensity} kleiner als einen Schwellenwert $0.8$ ist, geht es um eine stärke Änderung des Hintergrundes. Die selbst aufgenommenen Testvideos sind mit dem Programm getestet und betragt die Dichte des Hintergrundes durchschnittlich immer über $0,8$, deshalb ist der Schwellwert $0,8$ für diesen Anwendungsfall genommen. Wenn die Bedingung  \inlinecode{C++}{backgroundDensity} $\leq 0,8$ erfüllt wird, wird das Hintergrundbild mit aktuellem Bild ersetzt. Das bedeutet, die weitere Meilensteine werden auch erneut berechnet. Nach dem Testen mit selbst aufgenommenen Videos wird ein weiteres Problem bei Drehung der Kamera entdeckt.\\
+Wenn nur die Bedingung \inlinecode{C++}{backgroundDensity} $\leq 0,8$ betrachtet wird, wird ein der letzten Bildern vor dem Stillstand der Kamera als Hintergrund sofort genommen. Ein falsches Hintergrundmodell wird erstellt, trotzdem ist die genante Bedingung für die Variable \inlinecode{C++}{backgroundDensity} erfüllt. Das Programm liefert kein gutes Ergebnis, weil die Hintergrundsubtraktion ein falsches Hintergrundmodell hat. Um das Problem zu vermeiden, wird ein Auslöser \inlinecode{C++}{trigger} benutzt.  Wenn die Bedingung \inlinecode{C++}{backgroundDensity} $\leq 0,8$ erfüllt, wird der Auslöser angeschaltet und ein Zähler wird aktiviert. Nach einer Sekunde oder $30$ Bilder wird der Hintergrund erst ersetzt. Die Methode vermeidet das Problem und liefert gute Ergebnisse bei Drehung der Kamera wie bei der statischen Kamera erwartet. In die Abbildungen \ref{fig:false1} und \ref{fig:false1} sind zwei Screenshots zum Vergleichen die zwei Aktualisierungsmethode von Hintergrund. Die linke Seite der Abbildungen sind die falsche Erkennungen, wenn die Hintergrundersetzung sofort nach der Erfüllung \inlinecode{C++}{backgroundDensity} $\leq 0,8$ aktiviert wird. Wenn die Bedingung erfüllt, dreht sich die Kamera noch einen kurzen Stuck vor dem Standstil. Die rechte Seite der Abbildungen sind die Verbesserung mit einem Auslöser \inlinecode{C++}{trigger} nach $30$ Bilder. Der Algorithmus \ref{algo:newBG} macht die Hintergrundersetzung für die 360° Kamera deutlich.
+
 
 \begin{algorithm}[H]
-	\caption{Ersetzt Hintergrund}
+	\caption{Ersetzung des Hintergrundbildes bei Drehung der Kamera}
 	\label{algo:newBG}	
-	\KwData{Binärbild aus Subtraktionsverfahrens}
-	\KwResult{Ersetzung des Hintergrundes }
+	\KwData{$binaerbild \gets$ Binärbild aus Subtraktionsverfahrens}
+	\KwResult{Ersetzung des Hintergrundbildes }
 	\begin{algorithmic}
-		\STATE $binaerbild$
-		\STATE $region[] \gets connectedComponentsWithStats(binaerbild) $ 
-		\STATE $backgroundDensity \gets region[0] / imageSize $ 
-		\STATE $trigger \gets$ FALSE
+		\STATE $region[~] \gets$ \inlinecode{C++}{connectedComponentsWithStats}$(binaerbild)$ 
+		\STATE  \inlinecode{C++}{backgroundDensity} $\gets region[0] / Bildgroeße$
+		\STATE  \inlinecode{C++}{trigger} $\gets$ FALSE
 		
-		\IF  {$backgroundDensity \leq 0.8$}
-		\STATE $trigger \gets$ TRUE
+		\IF  {\inlinecode{C++}{backgroundDensity} $ \leq 0.8$}
+		\STATE \inlinecode{C++}{trigger} $\gets$ TRUE
 		\STATE $counter \gets 0$
 		\ENDIF
 		
-		\IF  {$trigger$}
+		\IF  {\inlinecode{C++}{trigger}}
 		\STATE $counter$++
 			\IF  {$counter \geq 30$ }
-			\STATE Ersetzung der Hintergrund mit dem aktuellem Bild. 
-			\STATE Erneure Person Modell
+			\STATE Ersetzung des Hintergrundbildes mit dem aktuellen Bild. 
+			\STATE Erneure \inlinecode{C++}{Person}-Modell
 			\ENDIF
 		\ENDIF
 		
@@ -433,13 +436,13 @@ Mit der Funktion \inlinecode{C++}{connectedComponentsWithStats()} in OpenCV wird
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{fig/false1.png}
-	\caption{Linke Seite: Falsche Erkennung der Bewegung. Rechte Seite: Richtige Segmentierung} 
+	\caption{Linke Seite: eine falsche Erkennung der Bewegung passiert, wenn das Hintergrundbild vor dem Stillstand der Kamera ersetzt wird. Rechte Seite: eine richtige Erkennung nach der Drehung der Kamera.} 
 	\label{fig:false1}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{fig/false2.png}
-	\caption{Linke Seite: Falsche Erkennung der Bewegung. Rechte Seite: Richtige Segmentierung} 
+	\caption{Linke Seite: eine weitere falsche Erkennung der Bewegung. Rechte Seite: ein richtige Erkennung der Bewegung.} 
 	\label{fig:false2}
 \end{figure}

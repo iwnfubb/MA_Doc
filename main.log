@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.25)  29 MAR 2018 15:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.25)  29 MAR 2018 15:45
 entering extended mode
 **./main.tex
 (main.tex
@@ -1340,19 +1340,21 @@ ame identifier (name{figure.3.14}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.245 			
           <./fig/schatzung3.pdf>]
-<fig/schatzungevaluation.png, id=893, 1835.85875pt x 1474.50874pt>
-File: fig/schatzungevaluation.png Graphic file (type png)
-<use fig/schatzungevaluation.png>
-Package pdftex.def Info: fig/schatzungevaluation.png  used on input line 248. o
+<fig/schatzungevaluation.pdf, id=893, pagebox=cropbox, 1376.38986pt x 1105.2248
+1pt>
+File: fig/schatzungevaluation.pdf Graphic file (type pdf)
+<use fig/schatzungevaluation.pdf>
+Package pdftex.def Info: fig/schatzungevaluation.pdf  used on input line 248. o
 n input line 248.
-Package pdftex.def Info: Requested size: 418.25555pt x 335.9125pt on input line
- 248.
-<fig/schatzungevaluation2.png, id=894, 1807.75375pt x 1473.505pt>
-File: fig/schatzungevaluation2.png Graphic file (type png)
-<use fig/schatzungevaluation2.png>
-Package pdftex.def Info: fig/schatzungevaluation2.png  used on input line 255. 
+Package pdftex.def Info: Requested size: 418.25555pt x 335.85355pt on input lin
+e 248.
+<fig/schatzungevaluation2.pdf, id=894, pagebox=cropbox, 1355.58104pt x 1104.498
+84pt>
+File: fig/schatzungevaluation2.pdf Graphic file (type pdf)
+<use fig/schatzungevaluation2.pdf>
+Package pdftex.def Info: fig/schatzungevaluation2.pdf  used on input line 255. 
 on input line 255.
-Package pdftex.def Info: Requested size: 418.25555pt x 340.92258pt on input lin
+Package pdftex.def Info: Requested size: 418.25555pt x 340.77318pt on input lin
 e 255.
  [40pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
 15}) has been already used, duplicate ignored
@@ -1360,15 +1362,15 @@ e 255.
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.259 
-       <./fig/schatzungevaluation.png>] [41pdfTeX warning (ext4): destination w
+       <./fig/schatzungevaluation.pdf>] [41pdfTeX warning (ext4): destination w
 ith the same identifier (name{figure.3.16}) has been already used, duplicate ig
 nored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.262 
-       <./fig/schatzungevaluation2.png>]
-<fig/fuzzylogik.pdf, id=909, pagebox=cropbox, 880.57106pt x 492.23627pt>
+       <./fig/schatzungevaluation2.pdf>]
+<fig/fuzzylogik.pdf, id=975, pagebox=cropbox, 880.57106pt x 492.23627pt>
 File: fig/fuzzylogik.pdf Graphic file (type pdf)
 <use fig/fuzzylogik.pdf>
 Package pdftex.def Info: fig/fuzzylogik.pdf  used on input line 265. on input l
@@ -1387,7 +1389,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 292--293
  []
 
 [43]
-<fig/fuzzyfunktion.png, id=948, 873.2625pt x 1484.54625pt>
+<fig/fuzzyfunktion.png, id=1014, 873.2625pt x 1484.54625pt>
 File: fig/fuzzyfunktion.png Graphic file (type png)
 <use fig/fuzzyfunktion.png>
 Package pdftex.def Info: fig/fuzzyfunktion.png  used on input line 308. on inpu
@@ -1411,14 +1413,14 @@ Overfull \vbox (24.82222pt too high) has occurred while \output is active []
                                                   \fi \fi 
 l.312 
        <./fig/fuzzyfunktion.png>]
-<fig/fuzzy1.png, id=961, 864.22874pt x 834.11626pt>
+<fig/fuzzy1.png, id=1027, 864.22874pt x 834.11626pt>
 File: fig/fuzzy1.png Graphic file (type png)
 <use fig/fuzzy1.png>
 Package pdftex.def Info: fig/fuzzy1.png  used on input line 315. on input line 
 315.
 Package pdftex.def Info: Requested size: 238.40872pt x 230.10179pt on input lin
 e 315.
-<fig/fuzzy2.png, id=962, 869.49844pt x 793.46437pt>
+<fig/fuzzy2.png, id=1028, 869.49844pt x 793.46437pt>
 File: fig/fuzzy2.png Graphic file (type png)
 <use fig/fuzzy2.png>
 Package pdftex.def Info: fig/fuzzy2.png  used on input line 322. on input line 
@@ -1478,7 +1480,7 @@ l.407
 
 LaTeX Warning: Command \ss invalid in math mode on input line 416.
 
-<fig/false1.png, id=1022, 988.44281pt x 861.2175pt>
+<fig/false1.png, id=1088, 988.44281pt x 861.2175pt>
 File: fig/false1.png Graphic file (type png)
 <use fig/false1.png>
 Package pdftex.def Info: fig/false1.png  used on input line 438. on input line 
@@ -1492,7 +1494,7 @@ f.6}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.442 
       ]
-<fig/false2.png, id=1049, 993.7125pt x 876.27374pt>
+<fig/false2.png, id=1115, 993.7125pt x 876.27374pt>
 File: fig/false2.png Graphic file (type png)
 <use fig/false2.png>
 Package pdftex.def Info: fig/false2.png  used on input line 445. on input line 
@@ -1523,7 +1525,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
-<fig/laufzeit.pdf, id=1066, pagebox=cropbox, 2796.42177pt x 1811.26186pt>
+<fig/laufzeit.pdf, id=1132, pagebox=cropbox, 2796.42177pt x 1811.26186pt>
 File: fig/laufzeit.pdf Graphic file (type pdf)
 <use fig/laufzeit.pdf>
 Package pdftex.def Info: fig/laufzeit.pdf  used on input line 8. on input line 
@@ -1533,7 +1535,7 @@ Package pdftex.def Info: Requested size: 418.25555pt x 270.9037pt on input line
 [55
 
 ]
-<fig/alarmevaluation.pdf, id=1074, pagebox=cropbox, 1428.83812pt x 1421.31pt>
+<fig/alarmevaluation.pdf, id=1140, pagebox=cropbox, 1428.83812pt x 1421.31pt>
 File: fig/alarmevaluation.pdf Graphic file (type pdf)
 <use fig/alarmevaluation.pdf>
 Package pdftex.def Info: fig/alarmevaluation.pdf  used on input line 17. on inp
@@ -1547,7 +1549,7 @@ e 17.
                                                   \fi \fi 
 l.21 
       <./fig/laufzeit.pdf>]
-<fig/ROC.pdf, id=1090, pagebox=cropbox, 1957.26692pt x 1037.55635pt>
+<fig/ROC.pdf, id=1156, pagebox=cropbox, 1957.26692pt x 1037.55635pt>
 File: fig/ROC.pdf Graphic file (type pdf)
 <use fig/ROC.pdf>
 Package pdftex.def Info: fig/ROC.pdf  used on input line 24. on input line 24.
@@ -1581,7 +1583,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--3
 [60
 
 ]
-<fig/zusammenfassung.pdf, id=1133, pagebox=cropbox, 746.7704pt x 711.37259pt>
+<fig/zusammenfassung.pdf, id=1199, pagebox=cropbox, 746.7704pt x 711.37259pt>
 File: fig/zusammenfassung.pdf Graphic file (type pdf)
 <use fig/zusammenfassung.pdf>
 Package pdftex.def Info: fig/zusammenfassung.pdf  used on input line 13. on inp
@@ -1616,7 +1618,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--20
                                                   \fi \fi 
 l.20 
       <./fig/zusammenfassung.pdf>]
-<fig/tarnung.png, id=1166, 962.09438pt x 551.81157pt>
+<fig/tarnung.png, id=1232, 962.09438pt x 551.81157pt>
 File: fig/tarnung.png Graphic file (type png)
 <use fig/tarnung.png>
 Package pdftex.def Info: fig/tarnung.png  used on input line 23. on input line 
@@ -1721,8 +1723,8 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 58.
  ) 
 Here is how much of TeX's memory you used:
  14098 strings out of 493312
- 217119 string characters out of 3138893
- 425607 words of memory out of 3000000
+ 217167 string characters out of 3138893
+ 425608 words of memory out of 3000000
  17059 multiletter control sequences out of 15000+200000
  15108 words of font info for 57 fonts, out of 3000000 for 9000
  1142 hyphenation exceptions out of 8191
@@ -1744,9 +1746,9 @@ MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program Files/MiKTeX 2
 blic/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
 cmtt10.pfb>
-Output written on main.pdf (93 pages, 13987498 bytes).
+Output written on main.pdf (93 pages, 56797748 bytes).
 PDF statistics:
- 1503 PDF objects out of 1728 (max. 8388607)
+ 1569 PDF objects out of 1728 (max. 8388607)
  275 named destinations out of 1000 (max. 500000)
  562 words of extra memory for PDF output out of 10000 (max. 10000000)
 

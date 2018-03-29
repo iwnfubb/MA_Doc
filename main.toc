@@ -33,11 +33,11 @@
 \contentsline {section}{\numberline {3.4}Drehbare 360-Grad-Kamera}{49}{section.3.4}
 \contentsline {chapter}{\numberline {4}Ergebnisse und Evaluation}{55}{chapter.4}
 \contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{60}{chapter.5}
-\contentsline {chapter}{Literaturverzeichnis}{63}{chapter*.6}
-\contentsline {chapter}{Abk\"urzungsverzeichnis}{68}{chapter*.7}
-\contentsline {chapter}{Abbildungsverzeichnis}{70}{chapter*.8}
-\contentsline {chapter}{Tabellenverzeichnis}{73}{chapter*.9}
-\contentsline {chapter}{Liste der Algorithmen}{75}{section*.10}
-\contentsline {chapter}{Listings}{77}{section*.12}
-\contentsline {chapter}{\numberline {A}Anhang}{79}{appendix.A}
-\contentsline {chapter}{Danksagung}{80}{chapter*.16}
+\contentsline {chapter}{Literaturverzeichnis}{65}{chapter*.6}
+\contentsline {chapter}{Abk\"urzungsverzeichnis}{70}{chapter*.7}
+\contentsline {chapter}{Abbildungsverzeichnis}{72}{chapter*.8}
+\contentsline {chapter}{Tabellenverzeichnis}{75}{chapter*.9}
+\contentsline {chapter}{Liste der Algorithmen}{77}{section*.10}
+\contentsline {chapter}{Listings}{79}{section*.12}
+\contentsline {chapter}{\numberline {A}Anhang}{81}{appendix.A}
+\contentsline {chapter}{Danksagung}{82}{chapter*.16}

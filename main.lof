@@ -36,5 +36,6 @@
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Die Ergebnisse aus der selbst aufgenommen Testvideos. Alle au\IeC {\ss }ergew\"ohnliche Situationen wurden mit der Anwendung richtig erkennen, }}{57}{figure.4.2}
 \contentsline {figure}{\numberline {4.3}{\ignorespaces ROC-Kurze zur Bewertung des Programms.}}{58}{figure.4.3}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Zusammenfassung des Programmaufbaus}}{61}{figure.5.1}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Zusammenfassung des Programmaufbaus. Die drei wichtige Meilenstein werden zum Verst\"andnis mit drei verschiedenen Farben dargestellt.}}{62}{figure.5.1}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Beispiele f\"ur die falsche Extraktion der Silhouette bei de Tarnungen. Auf den oberen Bildern ist die Testperson an einen schwarzen Kamin vorbei gegangen. In diesem Fall wurde die Person immer noch richtig erkannt. Auf dem unteren Bildern lief die Testperson an einen schwarzen Bildschirm vorbei. In diesem Fall wurde die Silhouette halbiert und es folgte eine falsche Erkennung der Testperson.}}{63}{figure.5.2}
 \addvspace {10\p@ }

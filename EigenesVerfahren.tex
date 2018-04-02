@@ -27,53 +27,43 @@ In der folgenden Abbildung werden die Vergleiche der vier Verfahren veranschauli
 	\caption{Vergleiche von 1. AGMM 2. KNN 3. KDE 4. Vibe} 
 	\label{fig:compare_bgsubtraction}
 \end{figure}
-Aus der obigen Grafik wird deutlich, dass sich in den Verfahren AGMM und KNN viel Rausch im Resultat der Hintergrundsubstraktion befindet. Die Resultate sind daher als schlecht zu bewerten. Die Verfahren KDE und Vibe liefern sehr gut Resultate bzw. eine Silhouette ohne Rausch, jedoch benötigt das Vibe-Verfahren deutlich mehr Zeit. Somit ist das Verfahren KNN, verglichen mit den anderen, das Verfahren, dass eine klare Silhouette ohne Rausch in bester Zeit liefert. 
- Anhand des Schaubildes ist das \acs{KNN}-Verfahren ein geeigneter Kandidat für die Echtzeitanwendung. Nun muss noch geprüft werden, ob sich das Verfahren für bis zu 15 Frames einsetzten lässt. Aus dem Test war nur zu erkennen, dass es in erster Linie ein valides Resultat liefert. Zweitrangig wurden die Verfahren nach der Zeit bewertet. Aus dem Test ist nicht ganz ersichtlich, ob sich das Verfahren denn im Dauerbetrieb anwenden lässt. Um das zu prüfen, wurde ein 
- 
- Viele Videos in verschiedenen Räumen mit verschiedene Körperhaltung wurden für diese Arbeit aufgenommen, damit die Qualität der Software gut geprüft wird.  Anhand der Abbildung \ref{fig:compare_bgsubtraction} und Verarbeitungszeit wird deutlich, dass  \acs{KNN} vernünftige Methode für unser Ziel und deswegen wird  \acs{KNN} für diese Arbeit entschieden.
-Nach sorgfältiger qualitativer Begutachtung der Ergebnisse der Verfahren KNN, Vibe, AGMM, KDE... auf dem Videomaterial habe ich mich für dir Verwendung von KNN entscheiden, weil KNN und Vibe bessere Silhouetten liefern können und KNN kürzere Verarbeitungszeit als Vibe hat. Beispielweise zeigt die Abbildung \ref{fig:vibeknn} die Verarbeitungszeit von KNN und Vibe an einem Testvideo von 1116 Bildern.\\
-
+Aus der obigen Grafik wird deutlich, dass sich in den Verfahren AGMM und KNN viel Rausch im Resultat der Hintergrundsubtraktion befindet. Die Resultate sind daher als schlecht zu bewerten. Die Verfahren KDE und Vibe liefern sehr gut Resultate bzw. eine Silhouette mit weniger Rausch, jedoch benötigt das Vibe-Verfahren deutlich mehr Zeit. Somit ist das Verfahren KNN, verglichen mit den anderen, das Verfahren, dass eine klare Silhouette mit weniger Rausch in kürzester Zeit liefert. 
+Anhand des Schaubildes ist das \acs{KNN}-Verfahren ein geeigneter Kandidat für die Echtzeitanwendung. Nun muss noch geprüft werden, ob sich das Verfahren für bis zu 15 Frames einsetzten lässt. Aus dem Test war nur zu erkennen, dass es in erster Linie ein valides Resultat liefert. Zweitrangig wurden die Verfahren nach der Zeit bewertet. Aus dem Test ist nicht ganz ersichtlich, ob sich das Verfahren denn im Dauerbetrieb anwenden lässt. Um das zu prüfen, wurden viele Testvideos mit Tageslicht und andere abends mit häuslicher Beleuchtung aufgenommen und analysiert. Ziel ist es, dass die Echtzeitanwendung stabile Resultate bei allen Beleuchtungen liefert.
+Anhand der Abbildung \ref{fig:compare_bgsubtraction} wird klar, dass das KNN-Verfahren bei allen Testvideos zuverlässige Resultate und bei gleicher Zeit liefert.
+%neue Grafik
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{fig/knnvibe.pdf}
 	\caption{Die Verarbeitungszeit von KNN und Vibe werden verglichen. Es ist deutlich, dass KNN eine kürzere durchschnittliche Verarbeitungszeit (107ms) als Vibe (551ms) hat.} 
 	\label{fig:vibeknn}
 \end{figure}
-
-Die oben genannten Hintergrundsubtraktionsverfahren basieren auf der Änderung der Intensitätswerten jedes Pixel, deshalb liefern die Verfahren ein Binärbild mit viel Rauschen zurück. Um das Rauschen zu entfernen, werden Erosion und Dilatation zum Einsatz gebracht, die zwei Verfahren sind zwei grundlegende Operationen bei der morphologischen Bildverarbeitung, auf der alle anderen morphologischen Operationen basieren. Die Kombination von der zweit Methoden ist \glqq{}Öffnung\grqq{} (eng. Opening) Methode genannt\cite{zamperoni2013methoden}.\\
-
-Erosion ist ein Verfahren, dass ein Bild mit einem einfachen, vordefinierten Filter untersucht und daraus Schlussfolgerungen zieht, wie dieser Filter in die Formen im Bild passt. Wenn ein Pixel und seine Nachbarpixel vollständig von dem Filter überlagert werden, wird das Pixel behaltet, sonst wird das Pixel gelöscht. Angenommen ist $A$ ein Binärbild und $B$ ein Filter mit einem Zentrum in der Mittel von $B$. Wenn $B$ sich in $A$ bewegt, überlagert für jedes Pixel in $A$ der Ursprung von $B$. Wenn $B$ vollständig in $A$ enthalten ist, wird das Pixel bei Erosion beibehalten, ansonsten gelöscht\cite{zamperoni2013methoden}.\\
-
-Dilatation ist ein gegenteiliges Verfahren zur Erosion, es versucht die Form eines Bildes zu vergrößern. Wenn $B$ sich in $A$ bewegt, überlagert für jedes Pixel in $A$ der Ursprung von $B$ wie Erosion. Die alle Pixel in $A$, die vollständig von $B$ überlagert sind, werden beibehalten oder markiert\cite{zamperoni2013methoden}.\\
-
-Um die zwei Operationen besser zu verstehen, wurden zwei Beispiele für Erosion und Dilatation in Abbildungen \ref{fig:erosion} und \ref{fig:dilatation} dargestellt.
+Die oben genannten Hintergrundsubtraktionsverfahren basieren auf der Änderung der Intensitätswerten jedes Pixel, deshalb liefern die Verfahren ein Binärbild mit Rausch zurück. Um das Rauschen zu entfernen, kommen Erosion und Dilatation zum Einsatz. Die zwei Verfahren sind die grundlegenden Operationen bei der morphologischen Bildverarbeitung, auf der alle anderen morphologischen Operationen basieren. Um das Rauschen zu entfernen, wird das Verfahren Öffnung verwendet. Der Begriff Öffnung bedeutet eine Schachtelung von den Verfahren Erosion und Dilatation hintereinander.
+Die Erosion ist ein Verfahren, dass ein Bild mit einem vordefinierten Filter untersucht und daraus Schlussfolgerungen zieht, wie dieser Filter in die Formen im Bild passt. Wenn ein Pixel und seine Nachbarpixel vollständig von dem Filter überlagert werden, wird das Pixel nicht verändert, sonst wird das Pixel gelöscht. Gelöscht wird indem das Pixel schwarz wird. Angenommen ist $A$ ein Binärbild und $B$ ein Filter mit einem Zentrum in der Mittel von $B$. Wenn $B$ sich in $A$ bewegt, überlagert für jedes Pixel in $A$ der Ursprung von $B$. Wenn $B$ vollständig in $A$ enthalten ist, wird das Pixel bei der Erosion beibehalten, ansonsten gelöscht\cite{zamperoni2013methoden}.\\
+Die folgende Grafik veranschaulicht die Erosion.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{fig/erosion.pdf}
-	\caption{Ein Beispiel für Erosion mit einem 3x3 Filter. Die Form des Bildes wird nach Erosion verkleinert.} 
+	\caption{Die Erosion mit einem 3x3 Filter} 
 	\label{fig:erosion}
 \end{figure}
+Die Dilatation ist ein gegenteiliges Verfahren zur Erosion, es versucht die Form eines Bildes zu vergrößern. Wenn $B$ sich in $A$ bewegt, überlagert für jedes Pixel in $A$ der Ursprung von $B$. Alle Pixel in $A$, die vollständig von $B$ überlagert sind, werden beibehalten oder markiert \cite{zamperoni2013methoden}.\\
+Die folgende Grafik veranschaulicht die Dilatation.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{fig/dilatation.pdf}
-	\caption{Ein Beispiel für Dilatation mit einem 3x3 Filter. Die Form des Bildes wird nach Dilatation vergrößert.} 
+	\caption{Die Dilatation mit einem 3x3 Filter} 
 	\label{fig:dilatation}
 \end{figure}
-
-Erosion wird in diesem Fall angewendet, um das Rauschen nach der Hintergrundsubtraktion zu entfernen. Es folgt eine Verkleinerung der Silhouette. Um die Verkleinerung zu vermeiden wird Dilatation hier genutzt. Nach der \grqq{}Öffnung\grq{} Methode wird eine Silhouette ohne Rauschen in einem Binärbild erstellt. Die Abbildung \ref{fig:eroanddila} zeigt, dass nach Erosion die Silhouette kleiner wird. Um dies zu kompensieren, wird eine Dilatation verwendet.
-
+Um den Rausch aus der Silhouette zu entfernen wird das Öffnen-Verfahren angewandt. Auf die Silhouette wird zuerst eine Erosion durchgeführt und anschließend eine Dilatation. Durch diese Maßnahme wird die Silhouette zuerst scharfer bzw. alle Punkte, die nicht zur Person auf der Silhouette gehören, gelöscht. Allerdings kann es passieren, dass die Punkte die zur Person gehören etwas undichter werden. Um diesen Fehler zu verbessern und die Silhouette wieder auf die original Größe zurück zu bekommen, wird die Dilatation angewandt. So bleibt am Ende die Silhouette gleich große, jedoch ohne Rausch.
 Die Abbildung \ref{fig:eroanddila} zeigt, dass nach Erosion unerwartetes Rauschen außer Silhouette entfernt ist und auch die Silhouette leicht geschädigt ist. 
-
-
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\textwidth]{fig/eroanddila.pdf}
-	\caption{Ein Beispiel für Erosion und Dilatation. Nach der Erosion das unerwartetes Rauschen außer der Silhouette entfernt ist. Außerdem wird die Silhouette verkleinert. Nach der Dilatation wird die Silhouette wie die originale Form vervollständigt.} 
+	\caption{Ein Beispiel für die Öffnung (Erosion und Dilatation)}
 	\label{fig:eroanddila}
 \end{figure}
-
-\subsection{Verbesserungen für Hintergrundsubtraktion}
-Im Allgemein wird für jedes Pixel vom aktuellen Bild zuerst berechnet, ob er zu Hintergrund oder Vordergrund gehört. Dann wird den Pixel wieder nach jedem Bild in Hintergrundmodell berücksichtigt. Das bedeutet, wenn ein Mensch sich von der Position $P_1$ nach $P_2$ bewegt und auf $P_2$ lange zum Stillstand kommt, wird der Mensch wieder den Hintergrund zugeordnet. Dies Problem muss unbedingt gelöst werden, weil die Arbeit zur Erkennung einer außergewöhnlichen Situation auch die Information einer Person, die sich nicht bewegt, benötigt, um einer eventuellen Unfall zu detektieren. Zum Beispiel passiert ein Unfall und die Person liegt lange auf dem Boden.
+\subsection{Erweiterungen für die Hintergrundsubtraktion}
+Im Allgemeinen wird für jedes Pixel des aktuellen Bilds geschaut, ob es dem Hintergrund zugehörig ist. Das funktioniert wie beschrieben sehr zuverlässig. Nun wird folgende Situation betrachtet: Eine Person befindet sich eine gewisse Zeit im Raum und bewegt sich nicht. Durch die Ständige Aktualisierung des Hintergrundmodells wird der Person Fehlerhaft als Hintergrund erkannt und verschwindet in das Hintergrundmodell. So kommt die Aufgabe dieser Echtzeitanwendung nicht zum Einsatz, weil bei einer Außergewöhnlichen Situation muss sich eine Person eine gewisse Zeit nicht mehr bewegen bzw. auf dem Boden liegen. Aber dieser Fall wird nie auftreten. Auch Situationen wo die Person zum Beispiel auf dem Sofa liegt und TV sieht, befindet sich die Person nicht in Gefahr und auch nicht im Hintergrund.  zuerst berechnet, ob er zu Hintergrund oder Vordergrund gehört. Dann wird den Pixel wieder nach jedem Bild in Hintergrundmodell berücksichtigt. Das bedeutet, wenn ein Mensch sich von der Position $P_1$ nach $P_2$ bewegt und auf $P_2$ lange zum Stillstand kommt, wird der Mensch wieder den Hintergrund zugeordnet. Dies Problem muss unbedingt gelöst werden, weil die Arbeit zur Erkennung einer außergewöhnlichen Situation auch die Information einer Person, die sich nicht bewegt, benötigt, um einer eventuellen Unfall zu detektieren. Zum Beispiel passiert ein Unfall und die Person liegt lange auf dem Boden.
  
 \subsubsection{Erste Verbesserung (Aktualisierung der selektiven Begrenzungsboxen)}
 Das oben genannte Problem liegt an der Aktualisierung des Hintergrundmodells, deshalb wird eine Methode an dieser Stelle erstellt, um das Problem zu vermeiden (Abbildungen \ref{fig:mymethod1}, \ref{fig:mymethod2}, \ref{fig:mymethod3}). Die Methode ist \glqq{}Aktualisierung der selektiven Begrenzungsboxen\grqq{} (ASB) genannt. Bei Aktualisierung eines Hintergrundbildes soll nur die Pixel, die nicht zu Vordergrund zugeordnet sind, betrachtet werden. Das erste Bild wird in Grauwertbild mit der Originalgröße (1280x720) und dem Wertbereich $[0,255]$ konvertiert und als ein Hintergrundbild $H$ gespeichert. Der Unterschied zwischen dem aktuellen Grauwertbild $I$ und dem abgespeicherten Hintergrundbild $H$ wird pixelweise mit absoluter Subtraktion gerechnet. Anschließend ergibt es sich ein Bild $S$, das den Unterschied zwischen dem aktuellen Bild und dem Hintergrundbild  mit den Werten von 0 bis 255 darstellt  (siehe Abbildungen \ref{fig:mymethod1}c, \ref{fig:mymethod2}c, \ref{fig:mymethod3}c). Je geringer der Wert von einem Pixel auf dem Bild $S$ ist, desto höher die Wahrscheinlichkeit, dass der Pixel zum Hintergrund gehört. Und umgekehrt je höher der Wert von einem Pixel auf dem Bild $S$ ist, desto höher die Wahrscheinlichkeit, dass das Pixel zu Hintergrund gehört. Nach der Berechnung des Unterschiedsbild wird ein Schwellwert von $50$ angewendet, um ein Binärbild zu erzeugen. Wenn ein Pixel ein Wert unter $50$ hat, wird das Pixel in Schwarz markiert und höher als $50$ dann wird das Pixel in Weiß markiert (Abbildungen \ref{fig:mymethod1}d, \ref{fig:mymethod2}d, \ref{fig:mymethod3}d).
@@ -268,13 +258,13 @@ Zuerst müssen die Mitgliederfunktionen der Eingaben definiert werden und die sin
 	\item Die Körperhaltung besteht aus vier Zuständen: Stehend (Index: 0), Liegend (Index: 1), Beugend (Index: 2), Sitzend (Index: 3). Diese sind als Punkte im Fuzzymodel definiert.
 	\item Die Zeit besteht aus Tag und Nacht und ist mit glockenförmige Funktionen mit Parametern $a=6$, $b=10$ mit $mean=14$ für Tag und $mean=2$ für Nacht definiert. Der Wertbereich für die Zeit ist ein Intervall $[0, 24]$ für $24$ Stunden am Tag. Diese Funktion kann wie folgt beschrieben werden\cite{rosenfeld1971fuzzy}:
 	\begin{equation}
-		f(a, b, mean) = \frac{1}{1 + |\frac{x - mean}{a}|^{2b}}
+	f(a, b, mean) = \frac{1}{1 + |\frac{x - mean}{a}|^{2b}}
 	\end{equation} 
 	\item Die normalen Koordinaten im Raum sind die Positionen, an denen die Testperson normalerweise liegt, sitzt oder steht und wird mit Gaußschen-Funktionen definiert, wobei die Mittelwerte der Funktion $xy$-Koordinaten sind und die Standardabweichung $\sigma = 30$ beträgt.
-	\item Die Ausgabe wird als \glqq{}Status\grqq{} genannt. Der \glqq{}Status\grqq{} hat eine Gaußsche-Funktion mit Standardabweichung $\sigma = 1$ Mittelwert $\mu=4$ für abnormale und $\mu=6$ für normale Situationen.
+	\item Die Ausgabe wird als \glqq{}Status\grqq{} genannt und besteht aus den Komponenten \glqq{}good\grqq{} und \glqq{}bad\grqq{}, welche als Fuzzymenge zusammengeführt werden. \glqq{}good\grqq{} steht dabei für die Wahrscheinlichkeit, dass es sich um eine normale Situation und \glqq{}bad\grqq{} gibt die Wahrscheinlichkeit an, dass es sich um eine außergewöhnliche Situation handelt. Der \glqq{}Status\grqq{} besitzt damit zwei Gaußsche-Funktionen mit je Standardabweichung $\sigma = 1$ mit Mittelwert $\mu=4$ für abnormale und $\mu=6$ für normale Situationen.
 \end{itemize}  
 
-Die oben vordefinierten Mitgliederfunktionen werden in der Abbildung \ref{fig:fuzzyfunktion} graphisch dargestellt. Zur Anwendung von (IF-ELSE) Regeln (siehe Algorithmus \ref{algo:fuzzy_modell}) wird das Minimum als Aktivierungsmethode und das Maximum als Akkumulationsmethode eingesetzt. Die Regeln im Algorithmus \ref{algo:fuzzy_modell} kann wie folgt interpretiert werden:
+Die oben vordefinierten Mitgliederfunktionen werden in der Abbildung \ref{fig:fuzzyfunktion} graphisch dargestellt. Zur Anwendung von (IF-ELSE) Regeln (siehe Algorithmus \ref{algo:fuzzy_modell}) wird das Minimum als Aktivations-Methode und das Maximum als Akkumulations-Methode eingesetzt. Die Regeln im Algorithmus \ref{algo:fuzzy_modell} kann wie folgt interpretiert werden:
 
 \begin{itemize}
 	\item Es ist schlecht, wenn die Person nicht auf dem Sofa liegt.
@@ -286,112 +276,116 @@ Die oben vordefinierten Mitgliederfunktionen werden in der Abbildung \ref{fig:fu
 
 Bei Defuzzifizierung, die eine Abbildung der Ausgabe in scharfe Mengen durchführt, wird die Schwerpunktmethode verwendet. Die oben vordefinierten Parameter können anhand des Raums und biologischer Uhr der Testperson angepasst werden.\\
 
-Die Fuzzylogik berechnet, wie hoch die Wahrscheinlichkeit ist, dass die aktuelle Situation sich um eine normale Situation handelt. Für das Beispiel in Abbildung \ref{fig:Fuzzy_Example} wurde Dreieckfunktionen angewendet, um die Funktion der Fuzzylogik einfacher zu verstehen. Für die komplexeren Anwendungsfälle sind Gaußsche-Funktionen benutzt, um ein Demo zu realisieren. Es wurde angenommen, dass die Koordinaten von einem Sofa in Testraum $(591, 441)$, die aktuelle Zeit $0$ Uhr nachts und $8$ Uhr morgens sind und dass die Testperson an der Position (574, 424) liegt (siehe Abbildung \ref{fig:fuzzyfunktion}). In dem ersten Testfall, indem die Testperson nachts auf dem Sofa lag, ergab sich die Wahrscheinlichkeit $93,29\%$, dass es sich um eine normale Situation gehandelt hat. Für eine außergewöhnliche Situation wurde eine Wahrscheinlichkeit von $26,59\%$ berechnet (Abbildung \ref{fig:fuzzy1}). In Regeln \ref{algo:fuzzy_modell} gibt es einen gemischten Fall, wobei die Testperson an dem Sofa um $8$ Uhr Morgen liegt. Dieser Testfall kombiniert zwei Regeln, wobei es gut ist, wenn die Testperson in normale Position liegt und es ist schlecht wenn die Person am Tag liegt. Nach der Rechnen liefert das Ergebnis einen Wert von $71,6\%$ für normale Situation und $49,71\%$ für abnormale Situation (Abbildung \ref{fig:fuzzy2}). Eine Situation wird genau dann als schlechten Situation betrachtet, wenn der Wert \glqq{}bad\grqq{} $\geq 0,8$ und $\geq$ den Wert \glqq{}good\grqq{} ist, sonst handelt es sich um eine normale Situation.
+Die Fuzzylogik berechnet, wie hoch die Wahrscheinlichkeit ist, dass sich die aktuelle Situation um eine normale Situation handelt. Für das Beispiel in Abbildung \ref{fig:Fuzzy_Example} wurden Dreieckfunktionen angewendet, um die Funktion der Fuzzylogik einfacher zu verstehen. Für die komplexeren Anwendungsfälle wurden Gaußsche-Funktionen benutzt, um eine Demo-Software zu realisieren. Es wurde angenommen, dass die Koordinaten von einem Sofa in Testraum $(591, 441)$, die aktuelle Zeit $0$ Uhr nachts und $8$ Uhr morgens sind und dass die Testperson an der Position (574, 424) liegt (siehe Abbildung \ref{fig:fuzzyfunktion}). In dem ersten Testfall, indem die Testperson nachts auf dem Sofa lag, ergab sich die Wahrscheinlichkeit $good=93,29\%$, dass es sich um eine normale Situation handelt. Für eine außergewöhnliche Situation wurde eine Wahrscheinlichkeit von $bad=26,59\%$ berechnet (Abbildung \ref{fig:fuzzy1}). In Regeln \ref{algo:fuzzy_modell} gibt es einen gemischten Fall, wobei die Testperson auf dem Sofa um $8$ Uhr Morgen liegt. Hier ist es gut, wenn die Person auf dem Sofa und nicht auf dem Boden liegt und schlecht, dass die Person morgens auf dem Sofa liegt. Dafür ergab die Rechnung eine Wahrscheinlichkeit von $good=71,6\%$ für eine normale Situation und $bad=49,71\%$ für eine abnormale Situation (Abbildung \ref{fig:fuzzy2}). Eine Situation wird genau dann als schlechte Situation klassifiziert, wenn gilt: $bad \geq 80\%$ und $bad > good$. Diese Bedingungen können wie folgt definiert werden:
+\begin{eqnarray}
+\texttt{Situation schlecht} &\Leftrightarrow& bad \geq 80\% \wedge bad > good \\
+\texttt{Situation gut} &\Leftrightarrow& bad < 80\% \vee bad <= good
+\end{eqnarray}
 
 \begin{algorithm}[H]
-	\caption{Regel für Raumtemperatur und Einstellung des Thermostates.	}
+	\caption{Regeln für die Auswertung einer Situation}
 	\label{algo:fuzzy_modell}
 	\If{(posture IS laying) AND (NOT xposition IS good) OR (NOT yposition IS good)}{status IS bad;}
 	\If{(posture IS laying) AND (xposition IS good) AND (yposition IS good)}{status IS good;}
-	\If{posture IS laying AND time IS day}{status IS bad;}
-	\If{posture IS standing AND time IS day}{status IS good;}
-	\If{(IF posture IS sitting OR posture IS bending) AND time IS night}{status IS bad;}
+	\If{(posture IS laying) AND (time IS day)}{status IS bad;}
+	\If{(posture IS standing) AND (time IS day)}{status IS good;}
+	\If{((IF posture IS sitting) OR (posture IS bending)) AND (time IS night)}{status IS bad;}
 \end{algorithm}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{fig/fuzzyfunktion.png}
-	\caption{Die Mitgliederfunktionen der Körperhaltung, Zeit und aktuellen Position der Person. Der Eingabebereich der Zeit ist von 0 bis 24 beschränkt und die Eingabe der Position muss ein positiver Wert sein.} 
+	\caption{Die Mitgliederfunktionen der Körperhaltung, Zeit und aktuelle Position der Person. Der Eingabebereich der Zeit ist von 0 bis 24 Uhr beschränkt und die Eingabe der Position muss ein positiver Wert sein.} 
 	\label{fig:fuzzyfunktion}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.57\textwidth]{fig/fuzzy1.png}
-	\caption{Testfall: Person liegt im Sofa um 12 Uhr Nacht. Das Programm liefert ein Ergebnis von 93,29\% für normale und 26,59\% für abnormale Situation.} 
+	\caption{Testfall: Person liegt auf dem Sofa um 12 Uhr nachts. Das Programm liefert ein Ergebnis von 93,29\% für normale und 26,59\% für abnormale Situation.} 
 	\label{fig:fuzzy1}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.57\textwidth]{fig/fuzzy2.png}
-	\caption{Testfall: Person liegt im Sofa um 8 Uhr morgen. Das Programm liefert ein Ergebnis von 71,6\% für normale und 49,71\% für abnormale Situation.} 
+	\caption{Testfall: Person liegt auf dem Sofa um 8 Uhr morgens. Das Programm liefert ein Ergebnis von 71,6\% für normale und 49,71\% für abnormale Situation.} 
 	\label{fig:fuzzy2}
 \end{figure}
 
-Bis jetzt können die außergewöhnlichen Situationen von normale Bewegungen im Alltag mit Hilfe von Fuzzylogik unterschieden werden. Die außergewöhnliche Situationen sollen nicht nur in einem Bild sondern in einer Sequenz von mehreren Bildern beachtet, damit das System bessere Entscheidung für eine abnormale Situation treffen kann. Wenn nur ein Bild beachtet würde, würde das System sofort nach einem Bild falsch alarmiert. Um die Beobachtung in mehreren Bildern zu realisieren, wird ein Modell gebaut, wobei die Person in einer Begrenzungsbox in einem Zeitraum betrachtet wird.  Das heißt, jede \inlinecode{C++}{Person}-Objekt besteht aus einer aktuellen Begrenzungsbox $B_{aktuell}$, die nach der Hintergrundsubtraktion erstellt ist. Nach jedem eingegangenen Bild wird die neue Begrenzungsbox $B_{neu}$ mit der aktuellen Begrenzungsbox $B_{aktuell}$ verglichen, um zu bestimmen, ob es sich um die selbe Person handelt und ob die Person sich bewegt. Eine globale Variable \inlinecode{C++}{movementMaximum} wird verwendet, um zu garantieren, dass  die neue Begrenzungsbox zu der gleichen Person von dem letzten Bild gehört. Der Abstand zwischen der aktuellen Begrenzungsbox $B_{aktuell}$ und  der neuen Begrenzungsbox $B_{neu}$ wird berechnet und mit der \inlinecode{C++}{movementMaximum} verglichen. Wenn dieser Abstand größer als \inlinecode{C++}{movementMaximum} ist, wird eine neue Person erstellt und wird die aktuelle Person ignoriert. Wenn dieser Abstand kleiner oder gleich  \inlinecode{C++}{movementMaximum} ist, wird die aktuelle Begrenzungsbox $B_{aktuell}$ der Person mit der neuen Begrenzungsbox $B_{neu}$ ersetzt (siehe Algorithmus \ref{algo:gleicheperson}).
+Bis jetzt können die außergewöhnlichen Situationen von normalen Bewegungen im Alltag mit Hilfe von Fuzzylogik unterschieden werden. Die außergewöhnlichen Situationen sollen nicht nur in einem Bild sondern in einer Sequenz von mehreren Bildern beachtet werden, damit das System bessere Entscheidungen für eine abnormale Situation treffen kann. Wenn immer nur ein Bild beachtet wird, könnte eine falsch klassifizierte Situation in nur einem Bild bereits einen Alarm auslösen. Um die Beobachtung in mehreren Bildern zu realisieren, wird ein Modell gebaut, wobei die Person in einer Begrenzungsbox in einem Zeitraum betrachtet wird. Das heißt, jedes \inlinecode{C++}{Personen}-Objekt besteht aus einer aktuellen Begrenzungsbox $B_{current}$, die nach der Hintergrundsubtraktion erstellt wird. Nach jedem eingegangenen Bild wird die neue Begrenzungsbox $B_{new}$ mit der aktuellen Begrenzungsbox $B_{current}$ verglichen, um zu bestimmen, ob es sich um die selbe Person handelt und ob die Person sich bewegt hat. Eine globale Variable \inlinecode{C++}{movementMaximum} gibt die maximale zulässige Geschwindigkeit an, mit der sich eine Person bewegen kann. Der Abstand zwischen $B_{current}$ und $B_{new}$ wird berechnet und mit der \inlinecode{C++}{movementMaximum} verglichen. Wenn dieser Abstand größer als \inlinecode{C++}{movementMaximum} ist, wird eine neue Person erstellt und die aktuelle Person ignoriert. Wenn dieser Abstand kleiner oder gleich  \inlinecode{C++}{movementMaximum} ist, wird $B_{current}$ der Person mit $B_{new}$ ersetzt (siehe Algorithmus \ref{algo:gleicheperson}).
 
 \begin{algorithm}[H]
-\caption{Bedingung zur Erkennung von gleicher Person}
-\label{algo:gleicheperson}	
-\begin{algorithmic}
-\IF { $|$ Koordinaten von $B_{aktuell}$ - Koordinaten von $B_{neu} | \leq$  \inlinecode{C++}{movementMaximum}}
-	\STATE $B_{aktuell}$ der Person $\gets$ $B_{neu}$
-\ELSE 
-	\STATE Erstelle neue Person mit Begrenzungsbox $B_{neu}$
-\ENDIF
-\end{algorithmic}
+	\caption{Aktualisierung der Begrenzungsbox}
+	\label{algo:gleicheperson}	
+	\begin{algorithmic}
+		\IF {$dist(B_{current}, B_{new}) \leq$  \inlinecode{C++}{movementMaximum}}
+		\STATE $B_{current} \gets B_{new}$
+		\ELSE 
+		\STATE Create new bounding box $B_{new}$ for new person
+		\ENDIF
+	\end{algorithmic}
 \end{algorithm}
 
-Die nächste globale Variable \inlinecode{C++}{movementMinimum} gewährleistet, ob die Person sich bewegt. Diese Variable hilft uns bei der Erkennung von außergewöhnlicher Situation, in der die Person liegt und sich nicht mehr bewegt. Wenn der Abstand zwischen der aktuellen Begrenzungsbox $B_{aktuell}$ und  der neuen Begrenzungsbox $B_{neu}$ kleiner als \inlinecode{C++}{movementMinimum}, bedeutet es, dass die Person sich nicht mehr bewegt und umgekehrt. Außerdem sind die Breite und Höhe von $B_{aktuell}$ und $B_{aktuell}$ auch verglichen, um zu bestimmen, dass es eine Änderung der Begrenzungsbox gibt, wenn sie trotzdem an einer gleichen Position bleibt. Um zu berechnen, ob die Person sich in einer gleichen Position nicht bewegt, wird \inlinecode{C++}{monvementMinimum} in dem Algorithmus benutzt:\\
+Mit der weiteren globalen Variable \inlinecode{C++}{movementMinimum} wird überprüft, ob sich  die Person bewegt. Diese Variable hilft bei der Erkennung von außergewöhnlichen Situationen, in denen die Person zum Beispiel liegt und sich nicht mehr bewegt. Wenn der Abstand zwischen der aktuellen Begrenzungsbox $B_{current}$ und  der neuen Begrenzungsbox $B_{new}$ kleiner als \inlinecode{C++}{movementMinimum} ist, bedeutet es, dass die Person sich nicht mehr bewegt. Dazu werden Breite und Höhe von $B_{current}$ und $B_{new}$ verglichen, um zu bestimmen, ob es eine Änderung der Begrenzungsbox gibt (siehe \ref{algo:gleicheposition}).\\
 
 \begin{algorithm}[H]
 	\caption{Bedingung zur Erkennung von Bewegung einer Person}
 	\label{algo:gleicheposition}	
 	\begin{algorithmic}
-		\IF {$|$Koordinaten neuer Box  - Koordinaten  alter Box$|$ $\geq$ \inlinecode{C++}{monvementMinimum} $\OR$ 
-		$|$Breite neuer Box  - Breite alter Box$|$ $\geq$ \inlinecode{C++}{monvementMinimum} $\OR$
-		$|$Höhe neuer Box  - Höhe alter Box$|$ $\geq$ \inlinecode{C++}{monvementMinimum}
-	}
-		\STATE Person bewegt sich
+		\IF {$dist(B_{current}, B_{new}) \geq$ \inlinecode{C++}{monvementMinimum}\\
+			$\OR$ $|width(B_{current})  - width(B_{new})|$ $\geq$ \inlinecode{C++}{monvementMinimum}\\
+			$\OR$ $|heigth(B_{current})  - heigth(B_{new})|$ $\geq$ \inlinecode{C++}{monvementMinimum}
+		}
+		\STATE Person IS moving
 		\ELSE 
-		\STATE Person bewegt sich NICHT
+		\STATE Person IS NOT moving
 		\ENDIF
 	\end{algorithmic}
 \end{algorithm}
 
-Mit dem beschriebenen \inlinecode{C++}{Person}-Modell kann eine Person in einem Zeitraum betrachtet werden und dann kann das System die Notfälle besser bewerten. Bis jetzt kann das System eine außergewöhnliche Situation mit folgenden Bedingungen erkennen:\\
+Bis jetzt kann das System eine außergewöhnliche Situation mit folgenden Bedingungen erkennen:\\
 \begin{itemize}
-	\item Durch Hintergrundsubtraktion, Schätzung der Körperhaltung wird eine Person erkannt, ob er steht, liegt, beugt oder sitzt.
-	\item Durch Fuzzylogik kann das System bewerten, ob eine Person in einem normalen oder nicht normalen Ort liegt.
-	\item Durch das \inlinecode{C++}{Person}-Modell kann das System eine Person folgen und erkennen, dass eine Person in einem bestimmten Zeitraum sich bewegt oder nicht.
+	\item Durch Hintergrundsubtraktion und Schätzung der Körperhaltung wird eine Person erkannt, ob sie steht, liegt, sich beugt oder sitzt.
+	\item Mit Hilfe von Fuzzylogik kann das System bewerten, ob eine Person in einem normalen oder nicht normalen Ort (z.B. Boden) liegt.
+	\item Das System kann einer Person folgen und erkennen, ob sie sich bewegt.
 \end{itemize}
-
-Nun kann eine kurze Zusammenfassung der oben gemeinten Bedingungen erläutert werden, damit ein komplettes System zur Erkennung einer außergewöhnlichen Situation erzeugt werden kann. Es handelt sich um einen Notfall genau dann, wenn eine Person in einem abnormalen Ort liegt und sich nicht mehr in einem Zeitraum nicht mehr bewegt. Der Algorithmus \ref{algo:finalAlgo} mach den Weg zur Erkennung der außergewöhnlicher Situation deutlich. Nach dem Aufnahme eines neuen Bild wird eine Silhouette durch Hintergrundsubtraktion erstellt. Die erstellte Silhouette ist die Eingabe der Histogrammanalyse und die Ausgabe der Histogrammanalyse ist eine geschätzte Körperhaltung. Danach wird eine Fuzzylogik mit der Eingaben: die Begrenzungsbox der Silhouette, die geschätzten Körperhaltung und die aktuellen Zeit erstellt. Die Ausgabe der Fuzzylogik ist die Wahrscheinlichkeit, dass eine Person in einer normale oder abnormale Situation ist. Durch die Begrenzungsbox der Silhouette wird es berechnet, ob es sich um eine gleiche Person wie auf letzten Bild handelt (siehe Algorithmus \ref{algo:gleicheperson}). Wenn die gleiche Person detektiert, wird die aktuellere Begrenzungsbox der Person $B_{aktuell}$ mit der neuen Begrenzungsbox $B_{neu}$ ersetzt. Außerdem wird die Person noch betrachtet, ob er liegt in einem abnormale Ort liegt und sich nicht bewegt (siehe Algorithmus \ref{algo:gleicheposition}). Wenn ein außergewöhnlicher Fall auf einem Bild erkannt, wird einen Zähler (\glqq{}badcounter\grqq{} genannt) sich erhöhen, sonst wird der Zähler zurückgesetzt. Am Ende wird der Zähler mit einer bestimmter Zeit-Variable verglichen. Wenn der Zähler größer als die vordefinierte Zeit ist, wird ein Alarm ausgelöst. 
+Ziel des gesamten Systems ist die Erkennung von außergewöhnlichen Situationen. Dabei wird wie folgt vorgegangen: Es wird mit Hilfe von Hintergrundsubtraktion eine Silhouette aus jedem Frame der Kamera und die dazugehörige Begrenzungsbox berechnet. Danach wird eine Histogrammanalyse auf die erzeugte Silhouette vorgenommen. Diese Analyse liefert bereits eine geschätzte Körperhaltung für die Person auf dem Bild. Anschließend entscheidet die Fuzzylogik, ob es sich ob eine außergewöhnliche Situation handelt. Dabei betrachtet die Fuzzylogik die aktuelle Zeit, Ort der Person im Raum und seine berechnete Körperhaltung. Weiterhin werden mehrere Frames beobachtet. Falls 30 aufeinander folgende Frames einer außergewöhnlichen Situation zugeordnet werden, wobei sich die beobachtete Person nicht ändert, handelt es sich um einen Notfall. Dazu wird für jede erkannte Person ein Zähler \glqq{}badcounter\grqq{} zugeordnet. Dieser Zähler speichert die Anzahl auf wie viele aufeinander folgende Frames sich die jeweilige Person in einer außergewöhnliche Situation befand. Der folgende Algorithmus \ref{algo:finalAlgo} beschreibt das genannte Verfahren.
 
 \begin{algorithm}[H]
-\caption{Zusammengefasster Algorithmus}
-\label{algo:finalAlgo}	
-\KwData{b : Aktuelles Bild}
-\KwResult{Erkennung außergewöhnlicher Situation}
-\begin{algorithmic}
-\STATE $s:silhouette$, $B_{neu}:begrenzungsbox$ $\gets$ Hintergensubtraktion($b$)
-\STATE $k:koerperhaltung$ $\gets$ Histogrammanalyse($s$)
-\STATE $t:zeit$ $\gets$ aktuelle Zeit
-\STATE $z:zustand$ $\gets$ Fuzzylogik($B_{neu}$, $ k$, $t$)
-\\
-\COMMENT{Zustand hat zwei Werte \glqq{}gut\grqq{} und \glqq{}schlecht\grqq{}, es sagt wie gut die Situation nach Fuzzymodell bewertet wird}
-
-\IF {Gleiche Person detektiert wird}
-\STATE $person$ $\gets$ die detektierte Person
-\STATE Aktualisierung der Begrenzungsbox $B_{aktuell}$ der $person$
-
-	\IF{$person$ bewegt sich nicht $\AND$ $k$ = LIEGEN $\AND$ $z$ = SCHLECHT}
-	\STATE $person.badcounter$ ++
-	\ELSE
-	\STATE $person.badcounter$ $\gets$ 0
-	\ENDIF
-\ELSE
-\STATE Erstelle neue Person
-\STATE $person$ $\gets$ neue erstellte Person
-\STATE $B_{aktuell}$ der $person$ $\gets$  $B_{neu}$
-\ENDIF
-
-\IF{$person.badcounter$ $\geq$ bestimmte Zeit}
-\STATE Löse einen Alarm aus.
-\ENDIF
-
-\end{algorithmic}
+	\caption{Erkennung von außergewöhnlichen Situationen}
+	\label{algo:finalAlgo}
+	\KwData{b : input image}
+	\KwResult{Situation: normal or not normal}
+	\Parameter{$bad\_frames\_limit \gets 30$}
+	\begin{algorithmic}
+		
+		\STATE $s:silhouette$, $B_{new}:boundingbox$ $\gets$ Backgroundsubtraction($b$)
+		\STATE $k:posture$ $\gets$ Histogrammanalysis($s$)
+		\STATE $t:time$ $\gets$ current time
+		\STATE $z:state$ $\gets$ Fuzzylogic($B_{new}$, $ k$, $t$)
+		\\
+		\COMMENT{state hat die zwei Komponenten: \glqq{}good\grqq{} und \glqq{}bad\grqq{}. Jede mit einer berechneten Wahrscheinlichkeit}
+		
+		\IF {Same person is detected}
+		\STATE $p:Person$ $\gets$ detected person
+		\STATE Update boundingbox $B_{current}$ of $p$
+		
+		\IF{$p$ IS NOT moving $\AND$ $k$ = LAYING $\AND$ $z$ = BAD}
+		\STATE $p.badcounter$ ++
+		\ELSE
+		\STATE $p.badcounter$ $\gets$ 0
+		\ENDIF
+		\ELSE
+		\STATE $p:Person$ $\gets$ new Person
+		\STATE $B_{current}$ of $p$ $\gets$  $B_{new}$
+		\ENDIF
+		
+		\IF{$p.badcounter$ $\geq$ $bad\_frames\_limit$}
+		\STATE Trigger alarm
+		\ENDIF
+		
+	\end{algorithmic}
 \end{algorithm}	
 
 \section{Drehbare 360-Grad-Kamera}

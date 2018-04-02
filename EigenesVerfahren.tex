@@ -71,8 +71,8 @@ Die folgende Grafik veranschaulicht die Dilatation.
 	\caption{Die Dilatation mit einem 3x3 Filter} 
 	\label{fig:dilatation}
 \end{figure}
-Um den Rausch aus der Silhouette zu entfernen wird das Öffnen-Verfahren angewandt. Auf die Silhouette wird zuerst eine Erosion durchgeführt und anschließend eine Dilatation. Durch diese Maßnahme wird die Silhouette zuerst scharfer bzw. alle Punkte, die nicht zur Person auf der Silhouette gehören, gelöscht. Allerdings kann es passieren, dass die Punkte die zur Person gehören etwas undichter werden. Um diesen Fehler zu verbessern und die Silhouette wieder auf die original Größe zurück zu bekommen, wird die Dilatation angewandt. So bleibt am Ende die Silhouette gleich große, jedoch ohne Rausch.
-Die Abbildung \ref{fig:eroanddila} zeigt, dass nach Erosion unerwartetes Rauschen außer Silhouette entfernt ist und auch die Silhouette leicht geschädigt ist. 
+Um den Rausch aus der Silhouette zu entfernen wird das Öffnen-Verfahren angewandt. Auf die Silhouette wird zuerst eine Erosion durchgeführt und anschließend eine Dilatation. Durch diese Maßnahme wird die Silhouette zuerst scharfer bzw. alle Punkte, die nicht zur Person auf der Silhouette gehören, gelöscht. Allerdings kann es passieren, dass die Punkte die zur Person gehören etwas undichter werden. Um diesen Fehler zu verbessern und die Silhouette wieder auf die original Größe zurück zu bekommen, wird die Dilatation angewandt. So bleibt am Ende die Silhouette gleich große, jedoch ohne Rausch.\\
+Die Abbildung \ref{fig:eroanddila} zeigt, dass nach Erosion unerwartetes Rauschen außer Silhouette entfernt ist und auch die Silhouette kleiner wird. Um dies zu kompensieren wird eine Dilatation verwendet. 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\textwidth]{fig/eroanddila.pdf}

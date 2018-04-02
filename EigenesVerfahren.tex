@@ -21,15 +21,32 @@ Die Abbildung \ref{fig:bgsub} zeigt allgemein die Grundfunktion der Hintergrunds
 Es existieren mehrere Verfahren, um eine Hintergrundsubtraktion durchzuführen.
 Um ein für diese Arbeit geeignetes Verfahren zu finden, wurden zuerst mehrere Verfahren verglichen.  Im Abschnitt \ref{sec:grunglagen_hintergrundsub} (Gaussian Mixture Model, K-nächste Nachbar, Kernel Density Estimation und Vibe) wurden die bekanntesten Verfahren theoretisch beschrieben. Hier werden die einzelnen Verfahren so geprüft, um herauszufinden, ob sie für den Echtzeiteinsatz geeignet sind oder doch nicht. Die für diese Arbeit eingesetzte Kamera nimmt bis zu 15 Frames die Sekunde auf. Des weiteren beträgt die hier verwendete Rechenleistung 13.75 GFlops. Ziel ist es, ein Verfahren auszuwählen, dass 15 Frames pro Sekunde mit der eingesetzten Rechenleistung abarbeiten kann. Die Rechenleistung gilt nicht als besonders Leistungsfähig. Bei \acs{AGMM} wird eine Mischung von 5 Gaußschen Verteilungen für das Hintergrundmodell verwendet und die Historie des Hintergrundmodells auf 100 Bilder limitiert. Die Lernrate wird auf $0.01$ gesetzt. Für das \acs{KNN} Verfahren wurden auch die Parameter mit den gleichen Werten belegt, um den Vergleich der Hintergrundsubtraktionsverfahren objektiv bewerten zu können. Bei \acs{KDE} handelt es sich um eine Berechnung von Intensitätswerten für jeden Pixel, daher wird nur der Parameter der \grqq{}Historie\grqq{} (wie bei \acs{AGMM}) belegt. Wie in \cite{barnich2009vibe} beschrieben, ist Vibe ein nicht-parametrisches Verfahren, deshalb musste kein Parameter konfiguriert werden.
 In der folgenden Abbildung werden die Vergleiche der vier Verfahren veranschaulicht.
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=1\textwidth]{fig/motiondetrection.png}
-	\caption{Vergleiche von 1. AGMM 2. KNN 3. KDE 4. Vibe} 
-	\label{fig:compare_bgsubtraction}
-\end{figure}
+
+\begin{table}[H]
+	\begin{center}
+		\begin{tabular}{ | c  | c  | }
+			\hline
+			\raisebox{-\totalheight}{\includegraphics[width=0.5\textwidth]{fig/motiondetrection_AGMM.png}}
+			& 
+			\raisebox{-\totalheight}{\includegraphics[width=0.5\textwidth]{fig/motiondetrection_KNN.png}}
+			\\
+			1. AGMM & 2. KNN\\
+			\hline
+			
+			\raisebox{-\totalheight}{\includegraphics[width=0.5\textwidth]{fig/motiondetrection_KDE.png}}
+			& 
+			\raisebox{-\totalheight}{\includegraphics[width=0.5\textwidth]{fig/motiondetrection_Vibe.png}}
+			\\
+			3. KDE & 4. Vibe\\
+			\hline
+		\end{tabular}
+		\caption{Vergleiche von 1. AGMM 2. KNN 3. KDE 4. Vibe}
+		\label{fig:compare_bgsubtraction}
+	\end{center}
+\end{table}
 Aus der obigen Grafik wird deutlich, dass sich in den Verfahren AGMM und KNN viel Rausch im Resultat der Hintergrundsubtraktion befindet. Die Resultate sind daher als schlecht zu bewerten. Die Verfahren KDE und Vibe liefern sehr gut Resultate bzw. eine Silhouette mit weniger Rausch, jedoch benötigt das Vibe-Verfahren deutlich mehr Zeit. Somit ist das Verfahren KNN, verglichen mit den anderen, das Verfahren, dass eine klare Silhouette mit weniger Rausch in kürzester Zeit liefert. 
 Anhand des Schaubildes ist das \acs{KNN}-Verfahren ein geeigneter Kandidat für die Echtzeitanwendung. Nun muss noch geprüft werden, ob sich das Verfahren für bis zu 15 Frames einsetzten lässt. Aus dem Test war nur zu erkennen, dass es in erster Linie ein valides Resultat liefert. Zweitrangig wurden die Verfahren nach der Zeit bewertet. Aus dem Test ist nicht ganz ersichtlich, ob sich das Verfahren denn im Dauerbetrieb anwenden lässt. Um das zu prüfen, wurden viele Testvideos mit Tageslicht und andere abends mit häuslicher Beleuchtung aufgenommen und analysiert. Ziel ist es, dass die Echtzeitanwendung stabile Resultate bei allen Beleuchtungen liefert.
-Anhand der Abbildung \ref{fig:compare_bgsubtraction} wird klar, dass das KNN-Verfahren bei allen Testvideos zuverlässige Resultate und bei gleicher Zeit liefert.
+Anhand der Tabelle \ref{fig:compare_bgsubtraction} wird klar, dass das KNN-Verfahren bei allen Testvideos zuverlässige Resultate und bei gleicher Zeit liefert.
 %neue Grafik
 \begin{figure}[H]
 	\centering
@@ -193,8 +210,13 @@ wobei $x=\{x_i | 1, 2 \dots, N\}$ und $y=\{y_i|1, 2 \dots, N\}$ die Positionen d
 
 \section{Schätzung der Körperhalterung mittels Histogrammanalyse}\label{chp:schatzung}
 Im Abschnitt \ref{chp:BackgroundSubtraction} wurde eine Silhouette von einer Person durch Hintergrundsubtraktion erstellt. In diesem Abschnitt wird der zweite Meilenstein dieser Arbeit beschrieben. Es geht um die Schätzung der Körperhaltung mit Hilfe von Histogrammanalyse. Wie schon im Kapitel \ref{chp:Grundlageb} beschrieben, basiert die Schätzung der Körperhaltung auf die Forschung von Haritaoglu, Hatwood und Davis in \cite{haritaoglu1998ghost}. Die Histogrammanalyse zur Schätzung der Körperhaltung in dem sogenannten \glqq{}Ghost\grqq{}-System in \cite{haritaoglu1998ghost} wird hier angewendet. Nach der Hintergrundsubtraktion wird ein Binärbild erzeugt, welches eine Bewegung in der Szene darstellt. Die Bewegung wird durch eine Begrenzungsbox eingeschränkt (siehe Abbildungen \ref{fig:mymethod1}f, \ref{fig:mymethod2}f, \ref{fig:mymethod3}f). Mit Hilfe von dieser Begrenzungsboxen werden die Silhouetten aus dem Bild extrahiert und es wird ein Unterbild erstellt, das nur die Silhouette enthält.
-Um bei der Histogrammanalyse vergleichbare Ergebnisse für unterschiedlich große Silhouetten zu bekommen, muss eine Skalierung vorgenommen werden. Nach der Erzeugung von dem Unterbild wird das Ergebnis zuerst auf 128 Pixel skaliert. Dabei wird das Verhältnis von Höhe und Breite nicht verändert. Falls das skalierte Bild auf einer Achse kleiner als 128 Pixel geworden ist, dann wird der Rest der verbliebenen Pixel mit Nullen aufgefüllt, wobei das skalierte Bild in der Mitte bleibt. Das Unterbild wird also immer auf beiden Achsen zentriert mit dem Referenz-Histogramm verglichen.\\
-
+Um bei der Histogrammanalyse vergleichbare Ergebnisse für unterschiedlich große Silhouetten zu bekommen, muss eine Skalierung vorgenommen werden. Nach der Erzeugung von dem Unterbild wird das Ergebnis zuerst auf 128 Pixel skaliert. Dabei wird das Verhältnis von Höhe und Breite nicht verändert. Falls das skalierte Bild auf einer Achse kleiner als 128 Pixel geworden ist, dann wird der Rest der verbliebenen Pixel mit Nullen aufgefüllt, wobei das skalierte Bild in der Mitte bleibt (siehe Abbildung \ref{fig:histogramverschiebung}). Das Unterbild wird also immer auf beiden Achsen zentriert mit dem Referenz-Histogramm verglichen.\\
+\begin{figure}[H]
+	\centering	
+	\includegraphics[width=1\textwidth]{fig/histogramverschiebung.pdf}
+	\caption{Wenn die Länge eines Histogramms kleiner als 128 Pixel ist, wird das Histogramm auf einem 128 Pixel lang Histogramm abgebildet. Die Werte des originalen Histogramms werden in der Mitte des neuen Histogramm zentriert.}
+	\label{fig:histogramverschiebung}
+\end{figure}
 
 Wie schon im Abschnitt \ref{sec:Histogrammanalyse} beschrieben, können mit der Formel \ref{eq:loglikelyhood} die berechneten Histogramme mit den vordefinierten normalisierten Referenz-Histogrammen (siehe Abbildung \ref{fig:histogramm}) verglichen werden. Je größer das Ergebnis aus der Formel \ref{eq:loglikelyhood} ist, desto höher ist die Wahrscheinlichkeit, dass die Person die betrachtete Körperhaltung annimmt. Die Abbildung \ref{fig:schatzung} zeigt, wie sich aus dem zweiten Meilenstein die Schätzung der Körperhaltung zu Stande kommt. Die Abbildungen \ref{fig:schatzung1}, \ref{fig:schatzung2} und \ref{fig:schatzung3} repräsentieren die Schätzung der Körperhaltung in graphische Beispiele, um den zweiten Schritt klarzustellen.
 \begin{figure}[H]

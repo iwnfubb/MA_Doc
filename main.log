@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.9)  2 APR 2018 17:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.9)  3 APR 2018 23:47
 entering extended mode
 **./main.tex
 (main.tex
@@ -1015,191 +1015,196 @@ le pdfs with page group included in a single page
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.84 
-      <./fig/eroanddila.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 86--89
-
- []
-
-[26]
-Underfull \hbox (badness 10000) in paragraph at lines 90--91
-
- []
-
-
-Overfull \hbox (10.61063pt too wide) in paragraph at lines 92--93
-\OT1/cmr/m/n/10.95 CV bie-tet ei-ne Funk-ti-on an, die [][][][][][] heit. Die 
-Funk-ti-on [][][][][][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 92--93
-
- []
-
-<fig/mymethode4edited.pdf, id=645, 1503.59924pt x 2077.7625pt>
+l.84 \subsubsection
+                   {Erste Verbesserung: Aktualisierung der selektiven Begren...
+ <./fig/eroanddila.pdf>]
+<fig/mymethode4edited.pdf, id=614, 1503.59924pt x 2077.7625pt>
 File: fig/mymethode4edited.pdf Graphic file (type pdf)
 
 <use fig/mymethode4edited.pdf>
-Package pdftex.def Info: fig/mymethode4edited.pdf used on input line 98.
+Package pdftex.def Info: fig/mymethode4edited.pdf used on input line 88.
 (pdftex.def)             Requested size: 376.42744pt x 520.16855pt.
 
-<fig/mymethode3edited.pdf, id=646, 1504.42264pt x 2077.76274pt>
+<fig/mymethode3edited.pdf, id=615, 1504.42264pt x 2077.76274pt>
 File: fig/mymethode3edited.pdf Graphic file (type pdf)
 
 <use fig/mymethode3edited.pdf>
-Package pdftex.def Info: fig/mymethode3edited.pdf used on input line 104.
+Package pdftex.def Info: fig/mymethode3edited.pdf used on input line 94.
 (pdftex.def)             Requested size: 376.42744pt x 519.88327pt.
- [27]
-<fig/mymethode2edited.pdf, id=652, 1498.88387pt x 2077.76225pt>
+ [26]
+<fig/mymethode2edited.pdf, id=625, 1498.88387pt x 2077.76225pt>
 File: fig/mymethode2edited.pdf Graphic file (type pdf)
 
 <use fig/mymethode2edited.pdf>
-Package pdftex.def Info: fig/mymethode2edited.pdf used on input line 110.
+Package pdftex.def Info: fig/mymethode2edited.pdf used on input line 100.
 (pdftex.def)             Requested size: 376.42744pt x 521.7854pt.
- [28pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
-7}) has been already used, duplicate ignored
+
+Underfull \hbox (badness 1264) in paragraph at lines 102--102
+\OT1/cmr/m/n/10.95 bo-xen, die sich nicht mit der ak-tu-el-len Be-gren-zungs-bo
+x $\OML/cmm/m/it/10.95 B[]$
+ []
+
+[27pdfTeX warning (ext4): destination with the same identifier (name{figure.3.7
+}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.114 \end{figure}
-                   <./fig/mymethode4edited.pdf>] [29pdfTeX warning (ext4): dest
+l.104 \end{figure}
+                   <./fig/mymethode4edited.pdf>] [28pdfTeX warning (ext4): dest
 ination with the same identifier (name{figure.3.8}) has been already used, dupl
 icate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.115 
-       <./fig/mymethode3edited.pdf>]
+l.105 B
+       ei der Aktualisierung eines Hintergrundbildes, wo noch kein Hintergru...
+ <./fig/mymethode3edited.pdf>]
 Overfull \vbox (4.98515pt too high) has occurred while \output is active []
 
 
-[30pdfTeX warning (ext4): destination with the same identifier (name{figure.3.9
+[29pdfTeX warning (ext4): destination with the same identifier (name{figure.3.9
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.115 
-       <./fig/mymethode2edited.pdf>] [31]
+l.105 B
+       ei der Aktualisierung eines Hintergrundbildes, wo noch kein Hintergru...
+ <./fig/mymethode2edited.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 105--109
+
+ []
+
+
+Overfull \hbox (10.61063pt too wide) in paragraph at lines 110--111
+\OT1/cmr/m/n/10.95 CV bie-tet ei-ne Funk-ti-on an, die [][][][][][] heit. Die 
+Funk-ti-on [][][][][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
+
+ []
+
+[30] [31]
 Underfull \hbox (badness 10000) in paragraph at lines 128--129
 
  []
 
-<fig/original1.png, id=713, 481.8pt x 271.0125pt>
+<fig/original1.png, id=712, 481.8pt x 271.0125pt>
 File: fig/original1.png Graphic file (type png)
  <use fig/original1.png>
 Package pdftex.def Info: fig/original1.png used on input line 145.
 (pdftex.def)             Requested size: 104.56389pt x 58.81654pt.
 
-<fig/groundtrue1.png, id=714, 481.8pt x 271.0125pt>
+<fig/groundtrue1.png, id=713, 481.8pt x 271.0125pt>
 File: fig/groundtrue1.png Graphic file (type png)
  <use fig/groundtrue1.png>
 Package pdftex.def Info: fig/groundtrue1.png used on input line 147.
 (pdftex.def)             Requested size: 104.56389pt x 58.81654pt.
 
-<fig/My1.png, id=715, 481.8pt x 271.0125pt>
+<fig/My1.png, id=714, 481.8pt x 271.0125pt>
 File: fig/My1.png Graphic file (type png)
  <use fig/My1.png>
 Package pdftex.def Info: fig/My1.png used on input line 149.
 (pdftex.def)             Requested size: 104.56389pt x 58.81654pt.
 
-<fig/MOG1.png, id=716, 481.8pt x 271.0125pt>
+<fig/MOG1.png, id=715, 481.8pt x 271.0125pt>
 File: fig/MOG1.png Graphic file (type png)
  <use fig/MOG1.png>
 Package pdftex.def Info: fig/MOG1.png used on input line 151.
 (pdftex.def)             Requested size: 104.56389pt x 58.81654pt.
 
-<fig/original2.png, id=717, 481.8pt x 271.0125pt>
+<fig/original2.png, id=716, 481.8pt x 271.0125pt>
 File: fig/original2.png Graphic file (type png)
  <use fig/original2.png>
 Package pdftex.def Info: fig/original2.png used on input line 157.
 (pdftex.def)             Requested size: 104.56389pt x 58.81654pt.
 
-<fig/groundtrue2.png, id=718, 481.8pt x 271.0125pt>
+<fig/groundtrue2.png, id=717, 481.8pt x 271.0125pt>
 File: fig/groundtrue2.png Graphic file (type png)
  <use fig/groundtrue2.png>
 Package pdftex.def Info: fig/groundtrue2.png used on input line 159.
 (pdftex.def)             Requested size: 104.56389pt x 58.81654pt.
 
-<fig/My2.png, id=719, 481.8pt x 271.0125pt>
+<fig/My2.png, id=718, 481.8pt x 271.0125pt>
 File: fig/My2.png Graphic file (type png)
  <use fig/My2.png>
 Package pdftex.def Info: fig/My2.png used on input line 161.
 (pdftex.def)             Requested size: 104.56389pt x 58.81654pt.
 
-<fig/MOG2.png, id=720, 481.8pt x 271.0125pt>
+<fig/MOG2.png, id=719, 481.8pt x 271.0125pt>
 File: fig/MOG2.png Graphic file (type png)
  <use fig/MOG2.png>
 Package pdftex.def Info: fig/MOG2.png used on input line 163.
 (pdftex.def)             Requested size: 104.56389pt x 58.81654pt.
 
-<fig/original3.png, id=721, 481.8pt x 271.0125pt>
+<fig/original3.png, id=720, 481.8pt x 271.0125pt>
 File: fig/original3.png Graphic file (type png)
  <use fig/original3.png>
 Package pdftex.def Info: fig/original3.png used on input line 169.
 (pdftex.def)             Requested size: 104.56389pt x 58.81654pt.
 
-<fig/groundtrue3.png, id=722, 481.8pt x 271.0125pt>
+<fig/groundtrue3.png, id=721, 481.8pt x 271.0125pt>
 File: fig/groundtrue3.png Graphic file (type png)
  <use fig/groundtrue3.png>
 Package pdftex.def Info: fig/groundtrue3.png used on input line 171.
 (pdftex.def)             Requested size: 104.56389pt x 58.81654pt.
 
-<fig/My3.png, id=723, 481.8pt x 271.0125pt>
+<fig/My3.png, id=722, 481.8pt x 271.0125pt>
 File: fig/My3.png Graphic file (type png)
  <use fig/My3.png>
 Package pdftex.def Info: fig/My3.png used on input line 173.
 (pdftex.def)             Requested size: 104.56389pt x 58.81654pt.
 
-<fig/MOG3.png, id=724, 481.8pt x 271.0125pt>
+<fig/MOG3.png, id=723, 481.8pt x 271.0125pt>
 File: fig/MOG3.png Graphic file (type png)
  <use fig/MOG3.png>
 Package pdftex.def Info: fig/MOG3.png used on input line 175.
 (pdftex.def)             Requested size: 104.56389pt x 58.81654pt.
 
-<fig/original4.png, id=725, 481.8pt x 271.0125pt>
+<fig/original4.png, id=724, 481.8pt x 271.0125pt>
 File: fig/original4.png Graphic file (type png)
  <use fig/original4.png>
 Package pdftex.def Info: fig/original4.png used on input line 182.
 (pdftex.def)             Requested size: 104.56389pt x 58.81654pt.
 
-<fig/groundtrue4.png, id=726, 481.8pt x 271.0125pt>
+<fig/groundtrue4.png, id=725, 481.8pt x 271.0125pt>
 File: fig/groundtrue4.png Graphic file (type png)
  <use fig/groundtrue4.png>
 Package pdftex.def Info: fig/groundtrue4.png used on input line 184.
 (pdftex.def)             Requested size: 104.56389pt x 58.81654pt.
 
-<fig/My4.png, id=727, 481.8pt x 271.0125pt>
+<fig/My4.png, id=726, 481.8pt x 271.0125pt>
 File: fig/My4.png Graphic file (type png)
  <use fig/My4.png>
 Package pdftex.def Info: fig/My4.png used on input line 186.
 (pdftex.def)             Requested size: 104.56389pt x 58.81654pt.
 
-<fig/MOG4.png, id=728, 481.8pt x 271.0125pt>
+<fig/MOG4.png, id=727, 481.8pt x 271.0125pt>
 File: fig/MOG4.png Graphic file (type png)
  <use fig/MOG4.png>
 Package pdftex.def Info: fig/MOG4.png used on input line 188.
 (pdftex.def)             Requested size: 104.56389pt x 58.81654pt.
 
-<fig/original5.png, id=729, 481.8pt x 271.0125pt>
+<fig/original5.png, id=728, 481.8pt x 271.0125pt>
 File: fig/original5.png Graphic file (type png)
  <use fig/original5.png>
 Package pdftex.def Info: fig/original5.png used on input line 194.
 (pdftex.def)             Requested size: 104.56389pt x 58.81654pt.
 
-<fig/groundtrue5.png, id=730, 481.8pt x 271.0125pt>
+<fig/groundtrue5.png, id=729, 481.8pt x 271.0125pt>
 File: fig/groundtrue5.png Graphic file (type png)
  <use fig/groundtrue5.png>
 Package pdftex.def Info: fig/groundtrue5.png used on input line 196.
 (pdftex.def)             Requested size: 104.56389pt x 58.81654pt.
 
-<fig/My5.png, id=731, 481.8pt x 271.0125pt>
+<fig/My5.png, id=730, 481.8pt x 271.0125pt>
 File: fig/My5.png Graphic file (type png)
  <use fig/My5.png>
 Package pdftex.def Info: fig/My5.png used on input line 198.
 (pdftex.def)             Requested size: 104.56389pt x 58.81654pt.
 
-<fig/MOG5.png, id=732, 481.8pt x 271.0125pt>
+<fig/MOG5.png, id=731, 481.8pt x 271.0125pt>
 File: fig/MOG5.png Graphic file (type png)
  <use fig/MOG5.png>
 Package pdftex.def Info: fig/MOG5.png used on input line 200.
@@ -1209,7 +1214,7 @@ Overfull \hbox (68.51831pt too wide) in paragraph at lines 141--206
  [] 
  []
 
-[32] <fig/histogramverschiebung.pdf, id=751, 803.54886pt x 292.44858pt>
+[32] <fig/histogramverschiebung.pdf, id=750, 803.54886pt x 292.44858pt>
 File: fig/histogramverschiebung.pdf Graphic file (type pdf)
 
 <use fig/histogramverschiebung.pdf>
@@ -1231,7 +1236,7 @@ l.219 \end{figure}
 > <./fig/MOG2.png> <./fig/original3.png> <./fig/groundtrue3.png> <./fig/My3.png
 > <./fig/MOG3.png> <./fig/original4.png> <./fig/groundtrue4.png> <./fig/My4.png
 > <./fig/MOG4.png> <./fig/original5.png> <./fig/groundtrue5.png> <./fig/My5.png
-> <./fig/MOG5.png>] <fig/schatzung.pdf, id=771, 1335.72353pt x 940.7232pt>
+> <./fig/MOG5.png>] <fig/schatzung.pdf, id=770, 1335.72353pt x 940.7232pt>
 File: fig/schatzung.pdf Graphic file (type pdf)
 
 <use fig/schatzung.pdf>
@@ -1244,7 +1249,7 @@ Package pdftex.def Info: fig/schatzung.pdf used on input line 224.
                                                   \fi \fi 
 l.227 \end{figure}
                    <./fig/histogramverschiebung.pdf>]
-<fig/schatzung1.pdf, id=791, 2571.85574pt x 2437.77351pt>
+<fig/schatzung1.pdf, id=790, 2571.85574pt x 2437.77351pt>
 File: fig/schatzung1.pdf Graphic file (type pdf)
 
 <use fig/schatzung1.pdf>
@@ -1257,7 +1262,7 @@ Package pdftex.def Info: fig/schatzung1.pdf used on input line 231.
                                                   \fi \fi 
 l.235 
        <./fig/schatzung.pdf>]
-<fig/schatzung2.pdf, id=808, 2571.85574pt x 2437.77351pt>
+<fig/schatzung2.pdf, id=807, 2571.85574pt x 2437.77351pt>
 File: fig/schatzung2.pdf Graphic file (type pdf)
 
 <use fig/schatzung2.pdf>
@@ -1270,7 +1275,7 @@ Package pdftex.def Info: fig/schatzung2.pdf used on input line 238.
                                                   \fi \fi 
 l.242 
        <./fig/schatzung1.pdf>]
-<fig/schatzung3.pdf, id=837, 2571.85574pt x 2437.77351pt>
+<fig/schatzung3.pdf, id=836, 2571.85574pt x 2437.77351pt>
 File: fig/schatzung3.pdf Graphic file (type pdf)
 
 <use fig/schatzung3.pdf>
@@ -1289,14 +1294,14 @@ ame identifier (name{figure.3.14}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.252 
        <./fig/schatzung3.pdf>]
-<fig/schatzungevaluation.pdf, id=902, 1376.38986pt x 1105.22481pt>
+<fig/schatzungevaluation.pdf, id=901, 1376.38986pt x 1105.22481pt>
 File: fig/schatzungevaluation.pdf Graphic file (type pdf)
 
 <use fig/schatzungevaluation.pdf>
 Package pdftex.def Info: fig/schatzungevaluation.pdf used on input line 255.
 (pdftex.def)             Requested size: 418.25555pt x 335.85355pt.
 
-<fig/schatzungevaluation2.pdf, id=903, 1355.58104pt x 1104.49884pt>
+<fig/schatzungevaluation2.pdf, id=902, 1355.58104pt x 1104.49884pt>
 File: fig/schatzungevaluation2.pdf Graphic file (type pdf)
 
 <use fig/schatzungevaluation2.pdf>
@@ -1316,7 +1321,7 @@ nored
                                                   \fi \fi 
 l.269 
        <./fig/schatzungevaluation2.pdf>]
-<fig/fuzzylogik.pdf, id=984, 880.57106pt x 492.23627pt>
+<fig/fuzzylogik.pdf, id=983, 880.57106pt x 492.23627pt>
 File: fig/fuzzylogik.pdf Graphic file (type pdf)
 
 <use fig/fuzzylogik.pdf>
@@ -1334,7 +1339,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 299--300
 
  []
 
-[42] <fig/fuzzyfunktion.png, id=1021, 873.2625pt x 1484.54625pt>
+[42] <fig/fuzzyfunktion.png, id=1020, 873.2625pt x 1484.54625pt>
 File: fig/fuzzyfunktion.png Graphic file (type png)
 
 <use fig/fuzzyfunktion.png>
@@ -1357,13 +1362,13 @@ Overfull \vbox (24.82222pt too high) has occurred while \output is active []
                                                   \fi \fi 
 l.323 
        <./fig/fuzzyfunktion.png>]
-<fig/fuzzy1.png, id=1036, 864.22874pt x 834.11626pt>
+<fig/fuzzy1.png, id=1035, 864.22874pt x 834.11626pt>
 File: fig/fuzzy1.png Graphic file (type png)
  <use fig/fuzzy1.png>
 Package pdftex.def Info: fig/fuzzy1.png used on input line 326.
 (pdftex.def)             Requested size: 238.40872pt x 230.10179pt.
 
-<fig/fuzzy2.png, id=1037, 869.49844pt x 793.46437pt>
+<fig/fuzzy2.png, id=1036, 869.49844pt x 793.46437pt>
 File: fig/fuzzy2.png Graphic file (type png)
  <use fig/fuzzy2.png>
 Package pdftex.def Info: fig/fuzzy2.png used on input line 333.
@@ -1410,19 +1415,15 @@ ocf.5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.418 
-      ]
-
-LaTeX Warning: Command \ss invalid in math mode on input line 427.
-
-<fig/false1.png, id=1095, 988.44281pt x 861.2175pt>
+l.419 
+      ] <fig/false1.png, id=1094, 988.44281pt x 861.2175pt>
 File: fig/false1.png Graphic file (type png)
- <use fig/false1.png>
+
+<use fig/false1.png>
 Package pdftex.def Info: fig/false1.png used on input line 449.
 (pdftex.def)             Requested size: 418.25555pt x 364.41595pt.
-
-[49] [50pdfTeX warning (ext4): destination with the same identifier (name{algoc
-f.6}) has been already used, duplicate ignored
+ [49] [50pdfTeX warning (ext4): destination with the same identifier (name{algo
+cf.6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -1457,7 +1458,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
-<fig/laufzeit.pdf, id=1139, 2796.42177pt x 1811.26186pt>
+<fig/laufzeit.pdf, id=1138, 2796.42177pt x 1811.26186pt>
 File: fig/laufzeit.pdf Graphic file (type pdf)
 
 <use fig/laufzeit.pdf>
@@ -1466,7 +1467,7 @@ Package pdftex.def Info: fig/laufzeit.pdf used on input line 8.
  [54
 
 ]
-<fig/alarmevaluation.pdf, id=1147, 1428.83812pt x 1421.31pt>
+<fig/alarmevaluation.pdf, id=1146, 1428.83812pt x 1421.31pt>
 File: fig/alarmevaluation.pdf Graphic file (type pdf)
 
 <use fig/alarmevaluation.pdf>
@@ -1479,7 +1480,7 @@ Package pdftex.def Info: fig/alarmevaluation.pdf used on input line 17.
                                                   \fi \fi 
 l.21 
       <./fig/laufzeit.pdf>]
-<fig/ROC.pdf, id=1162, 1957.26692pt x 1037.55635pt>
+<fig/ROC.pdf, id=1161, 1957.26692pt x 1037.55635pt>
 File: fig/ROC.pdf Graphic file (type pdf)
  <use fig/ROC.pdf>
 Package pdftex.def Info: fig/ROC.pdf used on input line 24.
@@ -1516,7 +1517,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--14
 
  []
 
-<fig/zusammenfassung.pdf, id=1207, 746.7704pt x 711.37259pt>
+<fig/zusammenfassung.pdf, id=1206, 746.7704pt x 711.37259pt>
 File: fig/zusammenfassung.pdf Graphic file (type pdf)
 
 <use fig/zusammenfassung.pdf>
@@ -1550,7 +1551,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--25
                                                   \fi \fi 
 l.25 
       <./fig/zusammenfassung.pdf>]
-<fig/tarnung.png, id=1241, 962.09438pt x 551.81157pt>
+<fig/tarnung.png, id=1240, 962.09438pt x 551.81157pt>
 File: fig/tarnung.png Graphic file (type png)
  <use fig/tarnung.png>
 Package pdftex.def Info: fig/tarnung.png used on input line 28.
@@ -1584,7 +1585,13 @@ lob = publicationFile$[],
 
 ] [65] [66]) [67] [68] (Abkurzungen.tex) [69
 
-] [70] (main.lof [71
+] [70] (main.lof
+Overfull \hbox (9.71434pt too wide) in paragraph at lines 20--20
+ \OT1/cmr/m/n/10.95 xen, die sich nicht mit der ak-tu-el-len Be-gren-zungs-box 
+$\OML/cmm/m/it/10.95 B[]$ []\OT1/cmr/m/n/10.95 uberschneiden, 
+ []
+
+[71
 
 ]
 Overfull \hbox (8.17471pt too wide) in paragraph at lines 26--26
@@ -1655,11 +1662,11 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 58.
 Here is how much of TeX's memory you used:
  13912 strings out of 493634
  212768 string characters out of 3143745
- 422526 words of memory out of 3000000
+ 421497 words of memory out of 3000000
  16717 multiletter control sequences out of 15000+200000
  15444 words of font info for 59 fonts, out of 3000000 for 9000
  1026 hyphenation exceptions out of 8191
- 44i,15n,66p,8832b,1789s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,15n,66p,8832b,1679s stack positions out of 5000i,500n,10000p,200000b,50000s
 <D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><D:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><D:/Program Files/MiK
@@ -1677,9 +1684,9 @@ MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><D:/Program Files/MiKTeX 2
 blic/amsfonts/cm/cmsy8.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmti10.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
 cmtt10.pfb>
-Output written on main.pdf (92 pages, 56484424 bytes).
+Output written on main.pdf (92 pages, 56472853 bytes).
 PDF statistics:
- 1572 PDF objects out of 1728 (max. 8388607)
+ 1570 PDF objects out of 1728 (max. 8388607)
  278 named destinations out of 1000 (max. 500000)
  582 words of extra memory for PDF output out of 10000 (max. 10000000)
 

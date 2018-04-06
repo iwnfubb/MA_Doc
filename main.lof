@@ -26,16 +26,17 @@
 \contentsline {figure}{\numberline {3.15}{\ignorespaces \"Uberpr\"ufung der Sch\"atzung der K\"orperhaltung am Testvideo \glqq {}fallen2.mp4\grqq {}. Die x-Achse stellt die Framenummer dar und die y-Achse ziegt die Indexe der K\"orperhaltung. Die blaue Gerade ist die Referenz-K\"orperhaltung und die gelbe Gerade ist die gesch\"atzte K\"orperhaltung. Die Sch\"atzung der K\"orperhaltung hat in diesem Beispiel eine Genauigkeit von $76,47\%$}}{39}{figure.3.15}
 \contentsline {figure}{\numberline {3.16}{\ignorespaces \"Uberpr\"ufung der Sch\"atzung der K\"orperhaltung an \glqq {}fallen2.mp4\grqq {}. Die Sch\"atzung der K\"orperhaltung hat in diesem Beispiel eine Genauigkeit von $71,93\%$}}{40}{figure.3.16}
 \contentsline {figure}{\numberline {3.17}{\ignorespaces Dritter Meilenstein}}{41}{figure.3.17}
-\contentsline {figure}{\numberline {3.18}{\ignorespaces Die Mitgliederfunktionen der K\"orperhaltung, Zeit und aktuelle Position der Person. Der Eingabebereich der Zeit ist von 0 bis 24 Uhr beschr\"ankt und die Eingabe der Position muss ein positiver Wert sein.}}{44}{figure.3.18}
-\contentsline {figure}{\numberline {3.19}{\ignorespaces Testfall: Person liegt auf dem Sofa um 12 Uhr nachts. Das Programm liefert ein Ergebnis von 93,29\% f\"ur normale und 26,59\% f\"ur abnormale Situation.}}{45}{figure.3.19}
-\contentsline {figure}{\numberline {3.20}{\ignorespaces Testfall: Person liegt auf dem Sofa um 8 Uhr morgens. Das Programm liefert ein Ergebnis von 71,6\% f\"ur normale und 49,71\% f\"ur abnormale Situation.}}{45}{figure.3.20}
-\contentsline {figure}{\numberline {3.21}{\ignorespaces Linke Seite: falsche Erkennung der Bewegung passiert, wenn das Hintergrundbild vor dem Stillstand der Kamera ersetzt wird. Rechte Seite: richtige Erkennung nach Drehung der Kamera.}}{51}{figure.3.21}
-\contentsline {figure}{\numberline {3.22}{\ignorespaces Linke Seite: eine weitere falsche Erkennung der Bewegung. Rechte Seite: ein richtige Erkennung der Bewegung.}}{52}{figure.3.22}
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Dritter Meilenstein}}{42}{figure.3.18}
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Die Mitgliederfunktionen der K\"orperhaltung, Zeit und aktuelle Position der Person. Der Eingabebereich der Zeit ist von 0 bis 24 Uhr beschr\"ankt und die Eingabe der Position muss ein positiver Wert sein.}}{45}{figure.3.19}
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Testfall: Person liegt auf dem Sofa um 12 Uhr nachts. Das Programm liefert ein Ergebnis von 93,29\% f\"ur normale und 26,59\% f\"ur abnormale Situation.}}{46}{figure.3.20}
+\contentsline {figure}{\numberline {3.21}{\ignorespaces Testfall: Person liegt auf dem Sofa um 8 Uhr morgens. Das Programm liefert ein Ergebnis von 71,6\% f\"ur normale und 49,71\% f\"ur abnormale Situation.}}{46}{figure.3.21}
+\contentsline {figure}{\numberline {3.22}{\ignorespaces Linke Seite: falsche Erkennung der Bewegung passiert, wenn das Hintergrundbild vor dem Stillstand der Kamera ersetzt wird. Rechte Seite: richtige Erkennung nach Drehung der Kamera.}}{52}{figure.3.22}
+\contentsline {figure}{\numberline {3.23}{\ignorespaces Linke Seite: eine weitere falsche Erkennung der Bewegung. Rechte Seite: ein richtige Erkennung der Bewegung.}}{53}{figure.3.23}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Gemessene Laufzeiten von 1000 Bildern}}{55}{figure.4.1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Richtige Zuordnungen (blau) und berechnete Zuordnung (gelb) der Bilder grafisch dargestellt}}{56}{figure.4.2}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces ROC-Kurze zur Bewertung des Programms.}}{57}{figure.4.3}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Gemessene Laufzeiten von 1000 Bildern}}{56}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Richtige Zuordnungen (blau) und berechnete Zuordnung (gelb) der Bilder grafisch dargestellt}}{57}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces ROC-Kurze zur Bewertung des Programms.}}{58}{figure.4.3}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Zusammenfassung des Programmaufbaus. Die drei wichtige Meilenstein werden zum Verst\"andnis mit drei verschiedenen Farben dargestellt.}}{62}{figure.5.1}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Beispiele f\"ur die falsche Extraktion der Silhouette bei den Tarnungen. Auf den oberen Bildern ist die Testperson an einen schwarzen Kamin vorbei gegangen. In diesem Fall wurde die Person immer noch richtig erkannt. Auf dem unteren Bildern lief die Testperson an einen schwarzen Bildschirm vorbei. In diesem Fall wurde die Silhouette halbiert und es folgte eine falsche Erkennung der Testperson.}}{63}{figure.5.2}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Zusammenfassung des Programmaufbaus. Die drei wichtige Meilenstein werden zum Verst\"andnis mit drei verschiedenen Farben dargestellt.}}{63}{figure.5.1}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Beispiele f\"ur die falsche Extraktion der Silhouette bei den Tarnungen. Auf den oberen Bildern ist die Testperson an einen schwarzen Kamin vorbei gegangen. In diesem Fall wurde die Person immer noch richtig erkannt. Auf dem unteren Bildern lief die Testperson an einen schwarzen Bildschirm vorbei. In diesem Fall wurde die Silhouette halbiert und es folgte eine falsche Erkennung der Testperson.}}{64}{figure.5.2}
 \addvspace {10\p@ }

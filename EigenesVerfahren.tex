@@ -265,7 +265,16 @@ Um die Zuverlässigkeit von diesem Verfahren zu überprüfen, wird die Körperhaltun
 \end{figure}
 
 \section{Erkennung außergewöhnlicher Situationen}
-Im Abschnitt \ref{chp:BackgroundSubtraction} und \ref{chp:schatzung} wird eine Silhouette durch Bewegungen erstellt und eine Schätzung der Körperhaltung durch die Histogrammanalyse berechnet. Zur Erkennung außergewöhnlicher Situationen wird noch die aktuelle Position der Person in einem bestimmten Zeitraum berücksichtigt. An dieser Stelle ist es wichtig, dass die Anwendung den Unterschied zwischen normalen Bewegungen im Alltag und außergewöhnlichen Situationen erkennt. Wenn beispielsweise die Körperhaltung einer Person als \glqq{}Liegend\grqq{} geschätzt wird, kann es sein, dass die Person auf einem Sofa oder in einem Bett schläft. Wenn die Person im Bett liegt, handelt es sich um eine normale Situation. Deswegen müssen die Positionen von Möbel und anderen Gegenständen bereits bekannt sein. Zur Erkennung dieser Positionen sind drei Ansätze in Betracht gezogen worden. Der erste Ansatz erfordert ein vorhandenes 3D-Modell des Raums, welches durch eine Kamera konstruiert werden kann. Diese Idee hat den Vorteil, dass die Positionen von Möbeln im Raum direkt identifiziert werden können und damit schnell festgestellt wird, ob sich eine Person auf dem Boden oder im Bett liegt. Die Arbeit für die Erstellung des 3D-Modells ist sehr zeitaufwendig und es ist nötig, für jeden neuen Raum ein neues 3D-Modell zu berechnen. Es gibt noch eine andere Techniken zur Identifizierung der Positionen von Möbel im Raum. Der zweite Ansatz betrachtet die \glqq{}Bird Eye View\grqq{} Methode. Diese Technik wird bei Automobilen mit Rückfahrkamera angewendet. Der Nachteil ist: Der Abstand zwischen der Kamera und dem Boden muss festgelegt sein. Aus diesem Grund ist diese Methode für dieses Projekt nicht anwendbar, weil die Kamera an einer beliebigen Position im Raum aufgestellt werden kann. Um das Problem der Unterscheidung von normalen und abnormalen Situationen zu lösen, wird eine logische Methode, die als Fuzzylogik genannt wird, verwendet. Dies ist der dritte Ansatz, der auch in diesem Meilenstein befolgt wurde. Die Positionen der Möbeln im Raum sind auf dem Bild zunächst vordefiniert. Die Fuzzylogik berechnet durch die Positionen der Möbel (zum Beispiel: Boden), die aktuelle Körperhaltung und Zeitpunkt. Dann wird die Wahrscheinlichkeit ausgerechnet, ob es sich um eine außergewöhnliche Situation handelt. Wie in Abschnitt \ref{sec:fuzzylogik} schon erwähnt, handelt sich die Fuzzylogik um eine unscharfe logische Menge. Die Fuzzylogik besteht aus drei Schritten: Umwandlung von Eingaben in Fuzzymengen, Anwendung von vordefinierten (IF-ELSE) Regeln und Defuzzifizierung (siehe Abbildung \ref{fig:fuzzylogik}).
+Im Abschnitt \ref{chp:BackgroundSubtraction} und \ref{chp:schatzung} wird eine Silhouette durch Bewegungen erstellt und eine Schätzung der Körperhaltung durch die Histogrammanalyse berechnet. Zur Erkennung außergewöhnlicher Situationen wird noch die aktuelle Position der Person in einem bestimmten Zeitraum berücksichtigt. An dieser Stelle ist es wichtig, dass die Anwendung den Unterschied zwischen normalen Bewegungen im Alltag und außergewöhnlichen Situationen erkennt. Wenn beispielsweise die Körperhaltung einer Person als \glqq{}Liegend\grqq{} geschätzt wird, kann es sein, dass die Person auf einem Sofa oder in einem Bett schläft. Wenn die Person im Bett liegt, handelt es sich um eine normale Situation. Deswegen ist es wichtig die Positionen der Möbeln im Raum zu identifizieren. Zur Erkennung dieser Positionen sind vier Ansätze in Betracht gezogen worden. Der erste Ansatz erfordert ein vorhandenes 3D-Modell des Raums, welches durch eine Kamera konstruiert werden kann. Diese Idee hat den Vorteil, dass die Positionen von Möbeln im Raum direkt identifiziert werden können und damit schnell festgestellt wird, ob sich eine Person auf dem Boden oder im Bett liegt. Die Arbeit für die Erstellung des 3D-Modells ist sehr zeitaufwendig und es ist nötig, für jeden neuen Raum ein neues 3D-Modell zu berechnen. Es gibt noch eine andere Techniken zur Identifizierung der Positionen von Möbel im Raum. Der zweite Ansatz betrachtet die \glqq{}Bird Eye View\grqq{}(BEV) Methode. Diese Technik wird bei Automobilen mit Rückfahrkamera angewendet. Der Nachteil ist: BEV braucht exakt eine exakt kalibrierte Kamera und alle Parameter des Kameramodells müssen bekannt sein, damit eine Transformation gemacht werden kann. Außerdem ist ein 2D-Modell der Wohnung benötigt, damit die Möbel in BEV erkannt werden können. Aus diesem Grund ist diese Methode für dieses Projekt nicht anwendbar, weil die Kamera an einer beliebigen Position im Raum aufgestellt werden kann. Der dritte Ansatz ist die neuronale Netze. Diese Methode ist häufig im Bereich von Objekterkennungen angewendet. Um die Objekte richtig zu erkennen, brauchen die neuronale Netze riesige Daten von Objekte. Die neuronale Netze werden anhand der Größe der Datenmenge bei dem Trainieren verbessert. In diesem Projekt wird ein vor-trainiertes Netz zur Erkennung der Möbeln angewendet. Das vor-trainiertes Netz kann ein Sofa mit einer Wahrscheinlichkeit von $28,80\%$ und einen Stuhl mit einer Wahrscheinlichkeit von $25,76\%$ erkennen (siehe Abbildung \ref{fig:nn}). Außerdem ist der Boden auch als ein Sofa, die Testperson als eine Katze falsch klassifiziert. Dies neuronale Netz kann mit mehrere Bilder weiter trainiert, um ein bessere Ergebnis zu liefern. Das Trainieren eines neuronalen Netzes ist aufwendig und benötigt eine große Menge von Bildern. Die sind zwei Beschränkungen dieses Ansatzes. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\textwidth]{fig/neurolnet.png}
+	\caption{Dritter Meilenstein}
+	\label{fig:nn}
+\end{figure}
+
+Um das Problem der Unterscheidung von normalen und abnormalen Situationen zu lösen, wird eine logische Methode, die als Fuzzylogik genannt wird, verwendet. Dies ist der vierte Ansatz, der auch in diesem Meilenstein befolgt wurde. Die Positionen der Möbeln im Raum sind auf dem Bild von Benutzern zunächst vordefiniert. Die Fuzzylogik berechnet durch die Positionen der Möbel (zum Beispiel: Boden), die aktuelle Körperhaltung und die aktuelle Zeit. Dann wird die Wahrscheinlichkeit ausgerechnet, ob es sich um eine außergewöhnliche Situation handelt. Wie in Abschnitt \ref{sec:fuzzylogik} schon erwähnt, besteht die Fuzzylogik aus drei Schritten: Umwandlung von Eingaben in Fuzzymengen, Anwendung von vordefinierten (IF-ELSE) Regeln und Defuzzifizierung (siehe Abbildung \ref{fig:fuzzylogik}).
 
 \begin{figure}[H]
 	\centering
@@ -277,28 +286,28 @@ Im Abschnitt \ref{chp:BackgroundSubtraction} und \ref{chp:schatzung} wird eine S
 Zuerst müssen die Mitgliederfunktionen der Eingaben definiert werden und die sind wie folgt beschrieben:
 
 \begin{itemize}
-	\item Die Körperhaltung besteht aus vier Zuständen: Stehend (Index: 0), Liegend (Index: 1), Beugend (Index: 2), Sitzend (Index: 3). Diese sind als Punkte im Fuzzymodel definiert.
-	\item Die Zeit besteht aus Tag und Nacht und ist mit glockenförmige Funktionen mit Parametern $a=6$, $b=10$ mit $mean=14$ für Tag und $mean=2$ für Nacht definiert. Der Wertbereich für die Zeit ist ein Intervall $[0, 24]$ für $24$ Stunden am Tag. Diese Funktion kann wie folgt beschrieben werden\cite{rosenfeld1971fuzzy}:
+	\item Die Körperhaltung besteht aus vier Zuständen: Stehend (Index: 0), Liegend (Index: 1), Beugend (Index: 2), Sitzend (Index: 3). Diese sind als Punkte im Fuzzymodel definiert (siehe Abbildung \ref{fig:fuzzyfunktion}a).
+	\item Die Zeit besteht aus Tag und Nacht und ist mit glockenförmige Funktionen mit Parametern $a=6$, $b=10$ mit $mean=14$ für Tag und $mean=2$ für Nacht definiert (siehe Abbildung \ref{fig:fuzzyfunktion}b). Der Wertbereich für die Zeit ist ein Intervall $[0, 24]$ für $24$ Stunden am Tag. Diese Funktion kann wie folgt beschrieben werden\cite{rosenfeld1971fuzzy}:
 	\begin{equation}
 	f(a, b, mean) = \frac{1}{1 + |\frac{x - mean}{a}|^{2b}}
 	\end{equation} 
-	\item Die normalen Koordinaten im Raum sind die Positionen, an denen die Testperson normalerweise liegt, sitzt oder steht und wird mit Gaußschen-Funktionen definiert, wobei die Mittelwerte der Funktion $xy$-Koordinaten sind und die Standardabweichung $\sigma = 30$ beträgt.
-	\item Die Ausgabe wird als \glqq{}Status\grqq{} genannt und besteht aus den Komponenten \glqq{}good\grqq{} und \glqq{}bad\grqq{}, welche als Fuzzymenge zusammengeführt werden. \glqq{}good\grqq{} steht dabei für die Wahrscheinlichkeit, dass es sich um eine normale Situation und \glqq{}bad\grqq{} gibt die Wahrscheinlichkeit an, dass es sich um eine außergewöhnliche Situation handelt. Der \glqq{}Status\grqq{} besitzt damit zwei Gaußsche-Funktionen mit je Standardabweichung $\sigma = 1$ mit Mittelwert $\mu=4$ für abnormale und $\mu=6$ für normale Situationen.
+	\item Die normalen Koordinaten im Raum sind die Positionen, an denen die Testperson normalerweise liegt, sitzt oder steht. Diese wird mit Gaußschen-Funktionen definiert, wobei die Mittelwerte der Funktion $xy$-Koordinaten sind und die Standardabweichung $\sigma = 30$ Pixel beträgt (siehe Abbildungen \ref{fig:fuzzyfunktion}c und \ref{fig:fuzzyfunktion}d). Dies entspricht der Größe eines 1,5m lang Sofas mit einem Abstand 3m von der Kamera. 
+	\item Die Ausgabe ist der \glqq{}Status\grqq{}. Dieser besteht aus den Komponenten \glqq{}good\grqq{} und \glqq{}bad\grqq{}, welche als Fuzzymenge zusammengeführt werden. Die Komponente \glqq{}good\grqq{} steht dabei für die Wahrscheinlichkeit, dass es sich um eine normale Situation und \glqq{}bad\grqq{} gibt die Wahrscheinlichkeit an, dass es sich um eine außergewöhnliche Situation handelt. Der \glqq{}Status\grqq{} besitzt damit zwei Gaußsche-Funktionen mit je Standardabweichung $\sigma = 1$ mit Mittelwert $\mu=4$ für abnormale und $\mu=6$ für normale Situationen (siehe Abbildungen \ref{fig:fuzzy1}, \ref{fig:fuzzy2}).
 \end{itemize}  
 
-Die oben vordefinierten Mitgliederfunktionen werden in der Abbildung \ref{fig:fuzzyfunktion} graphisch dargestellt. Zur Anwendung von (IF-ELSE) Regeln (siehe Algorithmus \ref{algo:fuzzy_modell}) wird das Minimum als Aktivations-Methode und das Maximum als Akkumulations-Methode eingesetzt. Die Regeln im Algorithmus \ref{algo:fuzzy_modell} kann wie folgt interpretiert werden:
+Die oben vordefinierten Mitgliederfunktionen werden in der Abbildung \ref{fig:fuzzyfunktion} graphisch dargestellt. Zur Anwendung von (IF-ELSE) Regeln (siehe Algorithmus \ref{algo:fuzzy_modell}) wird das Minimum als Aktivations-Methode und das Maximum als Akkumulations-Methode eingesetzt. Die Regeln im Algorithmus \ref{algo:fuzzy_modell} können wie folgt interpretiert werden:
 
 \begin{itemize}
-	\item Es ist schlecht, wenn die Person nicht auf dem Sofa liegt.
-	\item Es ist gut, wenn die Person auf dem Sofa liegt.
-	\item Es ist schlecht, wenn die Person am Tag liegt.
-	\item Es ist gut, wenn die Person am Tag steht.
-	\item Es schlecht, wenn die Person am Tag sitzt oder sich beugt.
+	\item Es ist \glqq{}bad\grqq{}, wenn die Person nicht auf dem Sofa liegt.
+	\item Es ist \glqq{}good\grqq{}, wenn die Person auf dem Sofa liegt.
+	\item Es ist \glqq{}bad\grqq{}, wenn die Person am Tag liegt.
+	\item Es ist \glqq{}good\grqq{}, wenn die Person am Tag steht.
+	\item Es \glqq{}bad\grqq{}, wenn die Person am Tag sitzt oder sich beugt.
 \end{itemize}
 
-Bei Defuzzifizierung, die eine Abbildung der Ausgabe in scharfe Mengen durchführt, wird die Schwerpunktmethode verwendet. Die oben vordefinierten Parameter können anhand des Raums und biologischer Uhr der Testperson angepasst werden.\\
+Bei Defuzzifizierung, die eine Abbildung der Ausgabe in eine scharfe Mengen durchführt, wird die Schwerpunktmethode verwendet. Die oben vordefinierten Parameter können anhand des Raums und biologischer Uhr der Testperson angepasst werden. Zum Beispiel gibt es in einem Raum nicht nur ein Sofa sondern auch ein Bett, dann müssen die Koordinaten des Bettes noch definiert werden. Das hilft dem Programm zu erkennen, ob eine Person im Bett und nicht auf dem Boden ist. Die Anpassung der Parameter kann durch maschinelles Lernen nach dem Gebrauch des Benutzers verbessert werden.\\
 
-Die Fuzzylogik berechnet, wie hoch die Wahrscheinlichkeit ist, dass sich die aktuelle Situation um eine normale Situation handelt. Für das Beispiel in Abbildung \ref{fig:Fuzzy_Example} wurden Dreieckfunktionen angewendet, um die Funktion der Fuzzylogik einfacher zu verstehen. Für die komplexeren Anwendungsfälle wurden Gaußsche-Funktionen benutzt, um eine Demo-Software zu realisieren. Es wurde angenommen, dass die Koordinaten von einem Sofa in Testraum $(591, 441)$, die aktuelle Zeit $0$ Uhr nachts und $8$ Uhr morgens sind und dass die Testperson an der Position (574, 424) liegt (siehe Abbildung \ref{fig:fuzzyfunktion}). In dem ersten Testfall, indem die Testperson nachts auf dem Sofa lag, ergab sich die Wahrscheinlichkeit $good=93,29\%$, dass es sich um eine normale Situation handelt. Für eine außergewöhnliche Situation wurde eine Wahrscheinlichkeit von $bad=26,59\%$ berechnet (Abbildung \ref{fig:fuzzy1}). In Regeln \ref{algo:fuzzy_modell} gibt es einen gemischten Fall, wobei die Testperson auf dem Sofa um $8$ Uhr Morgen liegt. Hier ist es gut, wenn die Person auf dem Sofa und nicht auf dem Boden liegt und schlecht, dass die Person morgens auf dem Sofa liegt. Dafür ergab die Rechnung eine Wahrscheinlichkeit von $good=71,6\%$ für eine normale Situation und $bad=49,71\%$ für eine abnormale Situation (Abbildung \ref{fig:fuzzy2}). Eine Situation wird genau dann als schlechte Situation klassifiziert, wenn gilt: $bad \geq 80\%$ und $bad > good$. Diese Bedingungen können wie folgt definiert werden:
+Die Fuzzylogik berechnet, wie hoch die Wahrscheinlichkeit ist, dass sich die aktuelle Situation um eine normale Situation handelt. Für komplexe Anwendungsfälle wurden Gaußsche-Funktionen benutzt, um eine Demo-Software zu realisieren. Es wurde angenommen, dass die Koordinaten von einem Sofa im Raum $(591, 441)$, die aktuelle Zeit $0$ Uhr nachts und $8$ Uhr morgens sind und dass die Testperson an der Position (574, 424) liegt (Wie in die Fuzzymenge in Abbildung \ref{fig:fuzzyfunktion} eingetragen). In dem ersten Testfall, indem die Testperson nachts auf dem Sofa lag, ergab sich die Wahrscheinlichkeit $good=93,29\%$, dass es sich um eine normale Situation handelt. Für eine außergewöhnliche Situation wurde eine Wahrscheinlichkeit von $bad=26,59\%$ berechnet (Abbildung \ref{fig:fuzzy1}). In Regeln \ref{algo:fuzzy_modell} gibt es einen gemischten Fall, wobei die Testperson auf dem Sofa um $8$ Uhr Morgen liegt. Hier ist es gut, wenn die Person auf dem Sofa und nicht auf dem Boden liegt und schlecht, dass die Person morgens auf dem Sofa liegt. Dafür ergab die Rechnung eine Wahrscheinlichkeit von $good=71,6\%$ für eine normale Situation und $bad=49,71\%$ für eine abnormale Situation (Abbildung \ref{fig:fuzzy2}). Eine Situation wird genau dann als schlechte Situation klassifiziert, wenn gilt: $bad \geq 80\%$ und $bad > good$. Diese Bedingungen können wie folgt definiert werden:
 \begin{eqnarray}
 \texttt{Situation schlecht} &\Leftrightarrow& bad \geq 80\% \wedge bad > good \\
 \texttt{Situation gut} &\Leftrightarrow& bad < 80\% \vee bad <= good
@@ -316,7 +325,7 @@ Die Fuzzylogik berechnet, wie hoch die Wahrscheinlichkeit ist, dass sich die akt
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{fig/fuzzyfunktion.png}
+	\includegraphics[width=0.8\textwidth]{fig/fuzzyfunktion.pdf}
 	\caption{Die Mitgliederfunktionen der Körperhaltung, Zeit und aktuelle Position der Person. Der Eingabebereich der Zeit ist von 0 bis 24 Uhr beschränkt und die Eingabe der Position muss ein positiver Wert sein.} 
 	\label{fig:fuzzyfunktion}
 \end{figure}
@@ -324,14 +333,14 @@ Die Fuzzylogik berechnet, wie hoch die Wahrscheinlichkeit ist, dass sich die akt
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.57\textwidth]{fig/fuzzy1.png}
-	\caption{Testfall: Person liegt auf dem Sofa um 12 Uhr nachts. Das Programm liefert ein Ergebnis von 93,29\% für normale und 26,59\% für abnormale Situation.} 
+	\caption{Testfall: Person liegt auf dem Sofa um 12 Uhr Nachts. Das Programm liefert ein Ergebnis von 93,29\% für normale und 26,59\% für abnormale Situation.} 
 	\label{fig:fuzzy1}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.57\textwidth]{fig/fuzzy2.png}
-	\caption{Testfall: Person liegt auf dem Sofa um 8 Uhr morgens. Das Programm liefert ein Ergebnis von 71,6\% für normale und 49,71\% für abnormale Situation.} 
+	\caption{Testfall: Person liegt auf dem Sofa um 8 Uhr Morgens. Das Programm liefert ein Ergebnis von 71,6\% für normale und 49,71\% für abnormale Situation.} 
 	\label{fig:fuzzy2}
 \end{figure}
 

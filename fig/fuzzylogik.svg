@@ -14,7 +14,7 @@
    viewBox="0 0 1096.6015 612.99661"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
    sodipodi:docname="fuzzylogik.svg">
   <defs
      id="defs4">
@@ -108,7 +108,7 @@
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1920"
-     inkscape:window-height="1059"
+     inkscape:window-height="1138"
      inkscape:window-x="1912"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -121,7 +121,8 @@
     <sodipodi:guide
        position="1164.7531,-75.965421"
        orientation="1,0"
-       id="guide4195" />
+       id="guide4195"
+       inkscape:locked="false" />
   </sodipodi:namedview>
   <metadata
      id="metadata7">
@@ -163,28 +164,28 @@
        y="500.90616" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.99999988;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.5999999;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
-       d="m 536.40485,129.25394 0,77.14286"
+       d="M 536.40485,129.25394 V 206.3968"
        id="path4197"
        inkscape:path-effect="#path-effect4199"
        inkscape:original-d="m 536.40485,129.25394 0,77.14286"
        inkscape:connector-curvature="0" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.97628403;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.5999999;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Lend-2)"
-       d="m 536.40485,280.61671 0,73.52723"
+       d="m 536.40485,280.61671 v 73.52723"
        id="path4197-7"
        inkscape:path-effect="#path-effect4199-8"
        inkscape:original-d="m 536.40485,280.61671 0,73.52723"
        inkscape:connector-curvature="0" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.95584971;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.5999999;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Lend-7)"
-       d="m 536.40485,428.36084 0,70.48148"
+       d="m 536.40485,428.36084 v 70.48148"
        id="path4197-5"
        inkscape:path-effect="#path-effect4199-3"
        inkscape:original-d="m 536.40485,428.36084 0,70.48148"
        inkscape:connector-curvature="0" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.99999988;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.5999999;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Lend-3)"
-       d="m 536.40485,572.56009 0,77.14285"
+       d="m 536.40485,572.56009 v 77.14285"
        id="path4197-4"
        inkscape:path-effect="#path-effect4199-0"
        inkscape:original-d="m 536.40485,572.56009 0,77.14285"
@@ -197,68 +198,69 @@
      transform="translate(11.895927,-87.685867)">
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="29.900248"
        y="118.07649"
-       id="text4136"
-       sodipodi:linespacing="125%"><tspan
+       id="text4136"><tspan
          sodipodi:role="line"
          id="tspan4138"
          x="29.900248"
-         y="118.07649">(Körperhaltung, Zeit, Normale Positionen im Raum)</tspan></text>
+         y="118.07649"
+         style="font-size:40px;line-height:1.25">(Körperhaltung, Zeit, normale Positionen im Raum)</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="253.08385"
        y="256.64792"
-       id="text4140"
-       sodipodi:linespacing="125%"><tspan
+       id="text4140"><tspan
          sodipodi:role="line"
          id="tspan4142"
          x="253.08385"
-         y="256.64792">Umwandlung in Fuzzymenge</tspan></text>
+         y="256.64792"
+         style="font-size:40px;line-height:1.25">Umwandlung in Fuzzymenge</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="211.21861"
        y="405.21933"
-       id="text4144"
-       sodipodi:linespacing="125%"><tspan
+       id="text4144"><tspan
          sodipodi:role="line"
          id="tspan4146"
          x="211.21861"
-         y="405.21933">Anwendung von (IF-ELSE) Regeln</tspan></text>
+         y="405.21933"
+         style="font-size:40px;line-height:1.25">Anwendung von (IF-ELSE) Regeln</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="380.5643"
        y="546.64795"
-       id="text4148"
-       sodipodi:linespacing="125%"><tspan
+       id="text4148"><tspan
          sodipodi:role="line"
          id="tspan4150"
          x="380.5643"
-         y="546.64795">Defuzzifizierung</tspan></text>
+         y="546.64795"
+         style="font-size:40px;line-height:1.25">Defuzzifizierung</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="26.589701"
        y="692.36218"
-       id="text4152"
-       sodipodi:linespacing="125%"><tspan
+       id="text4152"><tspan
          sodipodi:role="line"
          x="26.589701"
          y="692.36218"
-         id="tspan6032">Unterscheidung: normale oder abnormale Situation</tspan></text>
+         id="tspan6032"
+         style="font-size:40px;line-height:1.25">Unterscheidung: normale oder abnormale Situation</tspan></text>
     <flowRoot
        xml:space="preserve"
        id="flowRoot7643"
-       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:125%;letter-spacing:0px;word-spacing:0px"><flowRegion
+       style="font-style:normal;font-weight:normal;line-height:0.01%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"><flowRegion
          id="flowRegion7645"><rect
            id="rect7647"
            width="1255.7142"
            height="685.71429"
            x="-121.42857"
            y="-47.003387" /></flowRegion><flowPara
-         id="flowPara7649"></flowPara></flowRoot>  </g>
+         id="flowPara7649"
+         style="font-size:40px;line-height:1.25"> </flowPara></flowRoot>  </g>
 </svg>

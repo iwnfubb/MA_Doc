@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.25)  6 APR 2018 15:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.25)  6 APR 2018 16:27
 entering extended mode
 **./main.tex
 (main.tex
@@ -1430,12 +1430,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 308--309
  []
 
 [43]
-<fig/fuzzyfunktion.pdf, id=1027, pagebox=cropbox, 920.92476pt x 1484.54625pt>
+<fig/fuzzyfunktion.pdf, id=1027, pagebox=cropbox, 914.01509pt x 1484.54625pt>
 File: fig/fuzzyfunktion.pdf Graphic file (type pdf)
 <use fig/fuzzyfunktion.pdf>
 Package pdftex.def Info: fig/fuzzyfunktion.pdf  used on input line 328. on inpu
 t line 328.
-Package pdftex.def Info: Requested size: 334.60571pt x 539.39711pt on input lin
+Package pdftex.def Info: Requested size: 334.60571pt x 543.47453pt on input lin
 e 328.
  [44pdfTeX warning (ext4): destination with the same identifier (name{algocf.2}
 ) has been already used, duplicate ignored
@@ -1444,20 +1444,23 @@ e 328.
                                                   \fi \fi 
 l.332 
       ]
-<fig/fuzzy1.png, id=1035, 864.22874pt x 834.11626pt>
+Overfull \vbox (26.67429pt too high) has occurred while \output is active []
+
+
+[45pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1
+9}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.332 
+       <./fig/fuzzyfunktion.pdf>]
+<fig/fuzzy1.png, id=1049, 864.22874pt x 834.11626pt>
 File: fig/fuzzy1.png Graphic file (type png)
 <use fig/fuzzy1.png>
 Package pdftex.def Info: fig/fuzzy1.png  used on input line 335. on input line 
 335.
 Package pdftex.def Info: Requested size: 238.40872pt x 230.10179pt on input lin
 e 335.
- [45pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
-19}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.339 
-       <./fig/fuzzyfunktion.pdf>]
 <fig/fuzzy2.png, id=1050, 869.49844pt x 793.46437pt>
 File: fig/fuzzy2.png Graphic file (type png)
 <use fig/fuzzy2.png>
@@ -1757,7 +1760,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 58.
 Here is how much of TeX's memory you used:
  14140 strings out of 493312
  218195 string characters out of 3138893
- 424148 words of memory out of 3000000
+ 424251 words of memory out of 3000000
  17089 multiletter control sequences out of 15000+200000
  15444 words of font info for 59 fonts, out of 3000000 for 9000
  1142 hyphenation exceptions out of 8191
@@ -1779,9 +1782,9 @@ MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program Files/MiKTeX 2
 blic/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
 cmtt10.pfb>
-Output written on main.pdf (94 pages, 58690550 bytes).
+Output written on main.pdf (94 pages, 58698446 bytes).
 PDF statistics:
- 1595 PDF objects out of 1728 (max. 8388607)
+ 1597 PDF objects out of 1728 (max. 8388607)
  281 named destinations out of 1000 (max. 500000)
  587 words of extra memory for PDF output out of 10000 (max. 10000000)
 

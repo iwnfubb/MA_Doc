@@ -1,27 +1,67 @@
 \chapter{Ergebnisse und Evaluation}
-Das Ergebnis der fertigen Anwendung hat die Erwartungen des Ziels (siehe Abschnitt \ref{chp:Ziele}) erfüllt. Die Systemqualität erhört sich durch eine Reihe von einigen Verbesserungen deutlich. Um das Programm zu testen, wird die Arbeit mit $36$ Videos durchgeführt. Die Videos haben eine Framerate von 10 Frames pro Sekunde und die Auflösung von 1080x720. Um multiperspektivische Ergebnisse zu bekommen, werden die Testvideos in verschiedenen Räumen aufgenommen. Die Testvideos wurden eine nach einander ohne Pause getestet, deswegen verändern sich der Hintergrund bei Abwechslung der Videos auch ganz stark wie bei Drehung der Kamera. Auf diesem Grund wird eine Abwechslung des Testvideos auch als eine Drehung der Kamera betrachtet. Im Allgemein kann das Programm die außergewöhnliche Situation einer Person genau erkennen und das Ziel der Arbeit erfüllen. Zur Visualisierung wird eine außergewöhnliche Situation mit einer gekreuzten Begrenzungsbox markiert, in der die Testperson ist. Die alle Testvideos wurden annotiert, in welchem Zeitraum eine außergewöhnliche Situation passiert ist. Das Programm kann alle außergewöhnlichen Situationen erkennen, in den die Testperson auf dem Boden liegt und sich nicht mehr in 15 Bilder bewegt. Die außergewöhnlichen Situationen wurden genau dann annotiert, wenn die Testperson anfängt, auf dem Boden zu liegen. Das Programm wird hier betrachtet, ob es die außergewöhnliche in einem Zeitraum statt Zeitpunkt richtig erkennen kann. Zum Beispiel wird eine abnormale Situation von Bild 100 bis 200 annotiert und unser System markiert diese Situation von Bild 120 bis 210. Dann ist das nicht 100\% richtig, aber die Erkennung von der abnormalen Situation von Bild 100 bis 200 ist akzeptierbar.\\
-
-Für Messung der Laufzeit wurden die Tests auf einem Rechner Intel-Core i5 2.60 GHz ausgeführt. Die Laufzeit wird mehrmals gemessen und für jedes Bild braucht das System eine durchschnittliche Zeit von 109 Millisekunden. Das bedeutet in eine Sekunde kann das System 10 Bilder mit Auflösung von 1280x720 Pixel bearbeiten. Damit wird auch unser zweites Ziel realisiert und das Programm ist eine Echtzeitanwendung zur Erkennung der außergewöhnlichen Situation. Die Abbildung \ref{fig:laufzeit} stellt eine Laufzeit von 1000 Bildern in graphisch dar.\\
+Die festgelegten Ziele in Abschnitt \ref{chp:Ziele} wurden in der fertig entwickelten Anwendung vollständig erreicht. Um die Qualität der Software zu überprüfen, wurden eine Reihe von selbst erstellten Testvideos als Eingabe verwendet. Diese Videos wurden bei Bosch in zwei dafür vorgesehenen Räumen gedreht. Um das entwickelte Programm zu testen, wurden in den Videos einige Szenarien von Personen in verschiedenen Situationen simuliert. Dabei sollte die Software erkennen, ob es sich um eine normale oder außergewöhnliche Situation handelt. In einigen Videos haben sich Personen auf den Boden gelegt und sich dann nicht mehr bewegt. In anderen Videos haben sich Menschen auf ein Sofa gesetzt und sind danach darauf eingeschlafen. Dabei wurden die Situation bei Tag und Nacht durchgespielt und bei variierenden Anzahl an Personen im Raum. Dabei konnten die Menschen das Zimmer verlassen und wieder hineinkommen, um zu überprüfen, ob sie erneut von der Software erkannt werden. Das Programm hat in allen Fällen gute Ergebnisse geliefert. Die Software konnte dabei nicht jeden Frame der Kamera richtig klassifizieren. Dennoch wurden alle außergewöhnlichen Situationen erkannt. Das folgt daraus, dass die außergewöhnlichen Situationen erst nach $30$ hintereinander folgenden Frames mit der Klassifizierung \glqq{}$bad$\grqq{} erkannt werden. Es gab somit bei manchen Situationen eine kleine Verzögerung, bis diese richtig klassifiziert wurden. Auch die Kamera wurde an verschiedenen Orten im Raum positioniert, um die Arbeitsweise der Hintergrundsubtraktion zu untersuchen.\\
+Die verwendete Kamera  hat eine Auflösung von 1080x720 Pixel und eine Frame-Rate von 15 FPS. Um einer Echtzeitanwendung gerecht zu werden, muss die Software damit mindestens 15 Bilder pro Sekunde klassifizieren und berechnen können. Dazu wurden einige Tests durchgeführt, um die Geschwindigkeit der Berechnung zu bestimmen. Es stellte sich heraus, dass das Programm durchschnittlich 62 Millisekunden pro Bild braucht, um dieses der zugehörigen Klasse zuzuordnen und kann somit 16 Frames jede Sekunde klassifizieren. Diese und die folgenden Tests wurden alle auf einem Rechner mit einem Intel i5 3,20 GHz Prozessor und 16 GB RAM.
+In der folgenden Abbildung \ref{fig:laufzeit} wurde eine Laufzeitmessung mit 1000 Frames durchgeführt. Dabei wurde auf der X-Achse die Nummer des Bildes und auf der Y-Achse die dazugehörige Laufzeit abgetragen. Die rote Linie stellt die durchschnittliche Laufzeit dar.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{fig/laufzeit.pdf}
-	\caption{Laufzeit des Programms mit 1000 Bilder} 
+	\caption{Gemessene Laufzeiten von 1000 Bildern} 
 	\label{fig:laufzeit}
 \end{figure}
 
-Für die Visualisierung der Ergebnisse wurden die Ergebnisse der verschiedenen Testvideos mit eine Abwechslung zwischen normalen und abnormalen Situationen analysiert und mit Graphik gezeigt. Auf der Abbildung \ref{fig:alarm} wurden die Ergebnisse des Programms mit den annotierten Musterergebnissen verglichen. Die gelbe Gerade gehört zu den erzeugten Ergebnisse und die blaue Gerade ist unser Referenz-Wert. Bei \glqq{}0\grqq{} bedeutet ein Auslösen des Alarms, wobei es eine außergewöhnliche Situation erkannt ist. Bei \glqq{}1\grqq{} wird nichts passiert, denn keine abnormale Situation erkannt ist. Unsere Ergebnisse sind nicht $100\%$ richtig Bild für Bild, weil das Programm die außergewöhnliche Situationen erst erkennt, nachdem die Person in einem bestimmten Zeitraum liegt. Trotzdem kann das Programm schon die abnormale Ereignisse richtig erkennen, wenn eine Person auf dem Boden liegt und dann sich nicht mehr bewegt. Die Ergebnisse liefert positive Werte zurück und die Anzahl der richtigen Erkennungen betragen immer höher als $80\%$ der gesamten Bilder. Um das Programm zu bewerten, stellt die Abbildung \ref{fig:roc} eine ROC-Kurve von den Tests dar.
+In Abbildung \ref{fig:alarm} wurden drei Videos mit dem Programm untersucht. Die normalen und außergewöhnlichen Situationen in diesen Videos sind bereits bekannt. Die Software wurde zum analysieren der Frames verwendet und anschließend die Klassifikationen des Programms mit den bereits bekannten Zuordnungen der Bilder verglichen. Die X-Achse nummeriert die Frames und die Y-Achse stellt die Zuordnung des Bildes dar. bei $y=1$ handelt es sich um eine normale Situation und bei $y=0$ um eine außergewöhnliche Situation. Die blaue Kurve stellt dabei die richtige bzw. bereits bekannte Zuordnung und die gelbe Kurve die berechnete Klassifikation dar.\\
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{fig/alarmevaluation.pdf}
-	\caption{Die Ergebnisse aus der selbst aufgenommen Testvideos. Alle außergewöhnliche Situationen wurden mit der Anwendung richtig erkennen, } 
+	\caption{Richtige Zuordnungen (blau) und berechnete Zuordnung (gelb) der Bilder grafisch dargestellt} 
 	\label{fig:alarm}
 \end{figure}
 
+Nicht alle Frames wurden durch das Programm richtig klassifiziert. Dennoch wurden mehr als $80\%$ der Bilder richtig zugeordnet. Die Erkennung außergewöhnlicher Situationen hängt dabei nicht von den einzelnen Frames ab. Eine solche Situation wird erst dann erkannt, wenn $30$ Frames hintereinander als außergewöhnlich klassifiziert werden. Daher konnte die Software, trotz kleinen Verzögerungen, alle außergewöhnlichen Situationen erkennen.\\
+Um eine bessere Übersicht über die Zielgenauigkeit des Programms zu schaffen, wurde eine ROC-Kurve (siehe Abbildung \ref{fig:roc}) des verwendeten Algorithmus aufgestellt.
+
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1.1\textwidth]{fig/ROC.pdf}
+	\includegraphics[width=1\textwidth]{fig/ROC2.pdf}
 	\caption{ROC-Kurze zur Bewertung des Programms.} 
 	\label{fig:roc}
 \end{figure}
+
+\begin{table}[H]
+	\centering
+
+ \begin{tabular}[H]{|c|c|cc|cc|c|}
+ 	\hline 
+	\multicolumn{2}{|c|}{\multirow{ 2}{*}{}} & \multicolumn{5}{c|}{abnormale Situation}\\
+	\cline{3-7}
+	\multicolumn{2}{|c|}{}& TNR & FNR & TPR & FPR & ACC\\
+	\hline
+	
+	\multirow{ 2}{*}{\rotatebox[origin=c]{90}{{ Video 1 }}} & ASB & 0,869 & 0,037 & 0,962 & 0,0085 & 0,927\\
+	
+	& KNN-Plus-ASB & 0,762 & 0,11 & 0,889 & 0,053 & 0,917\\
+	
+	& 854x450 & 0,762 & 0,014 & 0,985 & 0,217 & 0,846\\
+	
+	\hline
+	
+	\multicolumn{7}{|c|}{}\\
+	\hline
+	\multirow{ 2}{*}{\rotatebox[origin=c]{90}{{ Video 2 }}} & ASB & 0,748 & 0,030 & 0,993 & 0,128 & 0,888\\
+
+	& KNN-Plus-ASB & 0,763 & 0,024 & 0,998 & 0,111 & 0,903\\
+
+	& 854x450 & 0,755 & 0,033 & 0,988 & 0,116 & 0,896\\
+	\hline
+	\multicolumn{7}{|c|}{}\\
+	\hline
+	\multirow{ 2}{*}{\rotatebox[origin=c]{90}{{ Video 3 }}} & ASB & 0,805 & 0,058 & 0,763 & 0,080 & 0,795\\
+	
+	& KNN-Plus-ASB & 0,956 & 0,029 & 0,881 & 0,014 & 0,938\\
+	
+	& 854x450 & 0,913 & 0,021 & 0,911 & 0,033 & 0,918\\
+	\hline
+\end{tabular}
+\end{table}

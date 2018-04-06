@@ -32,10 +32,10 @@
 \contentsline {figure}{\numberline {3.21}{\ignorespaces Linke Seite: falsche Erkennung der Bewegung passiert, wenn das Hintergrundbild vor dem Stillstand der Kamera ersetzt wird. Rechte Seite: richtige Erkennung nach Drehung der Kamera.}}{51}{figure.3.21}
 \contentsline {figure}{\numberline {3.22}{\ignorespaces Linke Seite: eine weitere falsche Erkennung der Bewegung. Rechte Seite: ein richtige Erkennung der Bewegung.}}{52}{figure.3.22}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Laufzeit des Programms mit 1000 Bilder}}{55}{figure.4.1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Die Ergebnisse aus der selbst aufgenommen Testvideos. Alle au\IeC {\ss }ergew\"ohnliche Situationen wurden mit der Anwendung richtig erkennen, }}{56}{figure.4.2}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Gemessene Laufzeiten von 1000 Bildern}}{55}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Richtige Zuordnungen (blau) und berechnete Zuordnung (gelb) der Bilder grafisch dargestellt}}{56}{figure.4.2}
 \contentsline {figure}{\numberline {4.3}{\ignorespaces ROC-Kurze zur Bewertung des Programms.}}{57}{figure.4.3}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Zusammenfassung des Programmaufbaus. Die drei wichtige Meilenstein werden zum Verst\"andnis mit drei verschiedenen Farben dargestellt.}}{61}{figure.5.1}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Beispiele f\"ur die falsche Extraktion der Silhouette bei den Tarnungen. Auf den oberen Bildern ist die Testperson an einen schwarzen Kamin vorbei gegangen. In diesem Fall wurde die Person immer noch richtig erkannt. Auf dem unteren Bildern lief die Testperson an einen schwarzen Bildschirm vorbei. In diesem Fall wurde die Silhouette halbiert und es folgte eine falsche Erkennung der Testperson.}}{62}{figure.5.2}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Zusammenfassung des Programmaufbaus. Die drei wichtige Meilenstein werden zum Verst\"andnis mit drei verschiedenen Farben dargestellt.}}{62}{figure.5.1}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Beispiele f\"ur die falsche Extraktion der Silhouette bei den Tarnungen. Auf den oberen Bildern ist die Testperson an einen schwarzen Kamin vorbei gegangen. In diesem Fall wurde die Person immer noch richtig erkannt. Auf dem unteren Bildern lief die Testperson an einen schwarzen Bildschirm vorbei. In diesem Fall wurde die Silhouette halbiert und es folgte eine falsche Erkennung der Testperson.}}{63}{figure.5.2}
 \addvspace {10\p@ }

@@ -32,12 +32,12 @@
 \contentsline {section}{\numberline {3.3}Erkennung au\IeC {\ss }ergew\"ohnlicher Situationen}{40}{section.3.3}
 \contentsline {section}{\numberline {3.4}Drehbare 360-Grad-Kamera}{48}{section.3.4}
 \contentsline {chapter}{\numberline {4}Ergebnisse und Evaluation}{54}{chapter.4}
-\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{59}{chapter.5}
-\contentsline {chapter}{Literaturverzeichnis}{64}{chapter*.9}
-\contentsline {chapter}{Abk\"urzungsverzeichnis}{69}{chapter*.10}
-\contentsline {chapter}{Abbildungsverzeichnis}{71}{chapter*.11}
-\contentsline {chapter}{Tabellenverzeichnis}{74}{chapter*.12}
-\contentsline {chapter}{Liste der Algorithmen}{76}{section*.13}
-\contentsline {chapter}{Listings}{78}{section*.15}
-\contentsline {chapter}{\numberline {A}Anhang}{80}{appendix.A}
-\contentsline {chapter}{Danksagung}{81}{chapter*.19}
+\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{60}{chapter.5}
+\contentsline {chapter}{Literaturverzeichnis}{65}{chapter*.9}
+\contentsline {chapter}{Abk\"urzungsverzeichnis}{70}{chapter*.10}
+\contentsline {chapter}{Abbildungsverzeichnis}{72}{chapter*.11}
+\contentsline {chapter}{Tabellenverzeichnis}{75}{chapter*.12}
+\contentsline {chapter}{Liste der Algorithmen}{77}{section*.13}
+\contentsline {chapter}{Listings}{79}{section*.15}
+\contentsline {chapter}{\numberline {A}Anhang}{81}{appendix.A}
+\contentsline {chapter}{Danksagung}{82}{chapter*.19}

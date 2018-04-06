@@ -180,83 +180,84 @@
 \newlabel{fig:mymethod3}{{3.9}{29}{Video:\glqq {}fallen.mp4\grqq {}. Frame-Nummer: 403. Die Liste der Begrenzungsboxen, die sich nicht mit der aktuellen Begrenzungsbox $B_{current}$ überschneiden, werden mit den weißen Rechtecken dargestellt. Die Liste der Begrenzungsboxen, die sich mit der aktuellen Begrenzungsbox $B_{current}$ überschneiden, werden mit den roten Rechtecken dargestellt}{figure.3.9}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\nonumberline Zweite Verbesserung (KNN-Plus-ASB)}{31}{section*.5}}
 \acronymused{KNN}
-\acronymused{KNN}
-\acronymused{KNN}
-\acronymused{KNN}
-\acronymused{KNN}
 \citation{kapadia2017mathematical}
 \citation{wang2004image}
 \citation{wang2004image}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.3}Ergebnisse der eigene Hintergrundsubtraktion}{32}{subsection.3.1.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.3}Ergebnisse der Verbesserungen am Hintergrundsubtraktion-Verfahren}{32}{subsection.3.1.3}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.2}{\ignorespaces Vergleiche von ASB und KNN-Plus-ASB. Je kleiner der \glqq {}MSE\grqq {} Wert ist, desto besser ist das Ergebnis. Je gr\"o\IeC {\ss }er der \glqq {}SSIM\grqq {} Wert ist, desto besser ist das Ergebnis.}}{33}{table.3.2}}
+\newlabel{tbl:comparesihoulette}{{3.2}{33}{Vergleiche von ASB und KNN-Plus-ASB. Je kleiner der \glqq {}MSE\grqq {} Wert ist, desto besser ist das Ergebnis. Je größer der \glqq {}SSIM\grqq {} Wert ist, desto besser ist das Ergebnis}{table.3.2}{}}
 \citation{haritaoglu1998ghost}
 \citation{haritaoglu1998ghost}
-\@writefile{lot}{\contentsline {table}{\numberline {3.2}{\ignorespaces Qualit\"at der Silhouette zum Vergleichen von ASB und KNN-Plus-ASB. Je kleiner der \glqq {}MSE\grqq {} Wert desto besser ist das Ergebnis. Je gr\"o\IeC {\ss }er der \glqq {}SSIM\grqq {} Wert desto besser ist das Ergebnis.}}{33}{table.3.2}}
-\newlabel{tbl:comparesihoulette}{{3.2}{33}{Qualität der Silhouette zum Vergleichen von ASB und KNN-Plus-ASB. Je kleiner der \glqq {}MSE\grqq {} Wert desto besser ist das Ergebnis. Je größer der \glqq {}SSIM\grqq {} Wert desto besser ist das Ergebnis}{table.3.2}{}}
+\acronymused{KNN}
+\acronymused{ASB}
 \@writefile{toc}{\contentsline {section}{\numberline {3.2}Sch\"atzung der K\"orperhalterung mittels Histogrammanalyse}{34}{section.3.2}}
 \newlabel{chp:schatzung}{{3.2}{34}{Schätzung der Körperhalterung mittels Histogrammanalyse}{section.3.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.10}{\ignorespaces Wenn die L\"ange eines Histogramms kleiner als 128 Pixel ist, wird das Histogramm auf einem 128 Pixel lang Histogramm abgebildet. Die Werte des originalen Histogramms werden in der Mitte des neuen Histogramm zentriert.}}{34}{figure.3.10}}
-\newlabel{fig:histogramverschiebung}{{3.10}{34}{Wenn die Länge eines Histogramms kleiner als 128 Pixel ist, wird das Histogramm auf einem 128 Pixel lang Histogramm abgebildet. Die Werte des originalen Histogramms werden in der Mitte des neuen Histogramm zentriert}{figure.3.10}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.11}{\ignorespaces Der zweite Meilenstein ist die Sch\"atzung der K\"orperhaltung. Das Ausgabebin\"arbild des ersten Meilensteins wird mit einer Begrenzungsbox beschr\"ankt, um ein Unterbild von der Silhouette zu erstellen. Das Unterbild wird dann skaliert und die vertikalen und horizontalen Histogramme des skalierten Unterbildes werden berechnet. Diese Histogramme werden mit den Referenz-Histogrammen verglichen, um die K\"orperhaltung auf dem Unterbild zu bestimmen.}}{35}{figure.3.11}}
-\newlabel{fig:schatzung}{{3.11}{35}{Der zweite Meilenstein ist die Schätzung der Körperhaltung. Das Ausgabebinärbild des ersten Meilensteins wird mit einer Begrenzungsbox beschränkt, um ein Unterbild von der Silhouette zu erstellen. Das Unterbild wird dann skaliert und die vertikalen und horizontalen Histogramme des skalierten Unterbildes werden berechnet. Diese Histogramme werden mit den Referenz-Histogrammen verglichen, um die Körperhaltung auf dem Unterbild zu bestimmen}{figure.3.11}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.12}{\ignorespaces Ein Beispiel f\"ur einen Prozess von Sch\"atzung einer Silhouette beim Stehen. Die Silhouette des Bin\"arbildes wird zuerst durch eine Begrenzungsbox extrahiert. Die vertikalen und horizontalen Histogramme der Silhouette werden dann berechnet und mit den entsprechenden Referenz-Histogrammen jeder generischen K\"orperhaltung verglichen. Die K\"orperhaltung, die nach dem Vergleich den gr\"o\IeC {\ss }ten Wert hat, wird f\"ur die Silhouette genommen.}}{36}{figure.3.12}}
-\newlabel{fig:schatzung1}{{3.12}{36}{Ein Beispiel für einen Prozess von Schätzung einer Silhouette beim Stehen. Die Silhouette des Binärbildes wird zuerst durch eine Begrenzungsbox extrahiert. Die vertikalen und horizontalen Histogramme der Silhouette werden dann berechnet und mit den entsprechenden Referenz-Histogrammen jeder generischen Körperhaltung verglichen. Die Körperhaltung, die nach dem Vergleich den größten Wert hat, wird für die Silhouette genommen}{figure.3.12}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.13}{\ignorespaces Beispiel f\"ur einen Prozess von Sch\"atzung einer Silhouette beim Liegen.}}{37}{figure.3.13}}
-\newlabel{fig:schatzung2}{{3.13}{37}{Beispiel für einen Prozess von Schätzung einer Silhouette beim Liegen}{figure.3.13}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.14}{\ignorespaces Beispiel f\"ur einen Prozess von Sch\"atzung einer Silhouette bei Beugen.}}{38}{figure.3.14}}
-\newlabel{fig:schatzung3}{{3.14}{38}{Beispiel für einen Prozess von Schätzung einer Silhouette bei Beugen}{figure.3.14}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.15}{\ignorespaces \"Uberpr\"ufung der Sch\"atzung der K\"orperhaltung am Testvideo \glqq {}fallen2.mp4\grqq {}. Die x-Achse stellt die Framenummer dar und die y-Achse ziegt die Indexe der K\"orperhaltung. Die blaue Gerade ist die Referenz-K\"orperhaltung und die gelbe Gerade ist die gesch\"atzte K\"orperhaltung. Die Sch\"atzung der K\"orperhaltung hat in diesem Beispiel eine Genauigkeit von $76,47\%$}}{39}{figure.3.15}}
-\newlabel{fig:schatzeva}{{3.15}{39}{Überprüfung der Schätzung der Körperhaltung am Testvideo \glqq {}fallen2.mp4\grqq {}. Die x-Achse stellt die Framenummer dar und die y-Achse ziegt die Indexe der Körperhaltung. Die blaue Gerade ist die Referenz-Körperhaltung und die gelbe Gerade ist die geschätzte Körperhaltung. Die Schätzung der Körperhaltung hat in diesem Beispiel eine Genauigkeit von $76,47\%$}{figure.3.15}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.16}{\ignorespaces \"Uberpr\"ufung der Sch\"atzung der K\"orperhaltung an \glqq {}fallen2.mp4\grqq {}. Die Sch\"atzung der K\"orperhaltung hat in diesem Beispiel eine Genauigkeit von $71,93\%$}}{40}{figure.3.16}}
-\newlabel{fig:schatzeva2}{{3.16}{40}{Überprüfung der Schätzung der Körperhaltung an \glqq {}fallen2.mp4\grqq {}. Die Schätzung der Körperhaltung hat in diesem Beispiel eine Genauigkeit von $71,93\%$}{figure.3.16}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}Erkennung au\IeC {\ss }ergew\"ohnlicher Situationen}{40}{section.3.3}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.17}{\ignorespaces Dritter Meilenstein}}{41}{figure.3.17}}
-\newlabel{fig:nn}{{3.17}{41}{Dritter Meilenstein}{figure.3.17}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.10}{\ignorespaces Wenn die L\"ange eines Histogramms kleiner als 128 Pixel ist, wird das Histogramm auf einem 128 Pixel lang Histogramm abgebildet. Die Werte des originalen Histogramms werden in der Mitte des neuen Histogramm zentriert.}}{35}{figure.3.10}}
+\newlabel{fig:histogramverschiebung}{{3.10}{35}{Wenn die Länge eines Histogramms kleiner als 128 Pixel ist, wird das Histogramm auf einem 128 Pixel lang Histogramm abgebildet. Die Werte des originalen Histogramms werden in der Mitte des neuen Histogramm zentriert}{figure.3.10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.11}{\ignorespaces Der zweite Meilenstein ist die Sch\"atzung der K\"orperhaltung. Das Ausgabebin\"arbild des ersten Meilensteins wird mit einer Begrenzungsbox beschr\"ankt, um ein Unterbild von der Silhouette zu erstellen. Das Unterbild wird dann skaliert und die vertikalen und horizontalen Histogramme des skalierten Unterbildes werden berechnet. Diese Histogramme werden mit den Referenz-Histogrammen verglichen, um die K\"orperhaltung auf dem Unterbild zu bestimmen.}}{36}{figure.3.11}}
+\newlabel{fig:schatzung}{{3.11}{36}{Der zweite Meilenstein ist die Schätzung der Körperhaltung. Das Ausgabebinärbild des ersten Meilensteins wird mit einer Begrenzungsbox beschränkt, um ein Unterbild von der Silhouette zu erstellen. Das Unterbild wird dann skaliert und die vertikalen und horizontalen Histogramme des skalierten Unterbildes werden berechnet. Diese Histogramme werden mit den Referenz-Histogrammen verglichen, um die Körperhaltung auf dem Unterbild zu bestimmen}{figure.3.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.12}{\ignorespaces Ein Beispiel f\"ur einen Prozess von Sch\"atzung einer Silhouette beim Stehen. Die Silhouette des Bin\"arbildes wird zuerst durch eine Begrenzungsbox extrahiert. Die vertikalen und horizontalen Histogramme der Silhouette werden dann berechnet und mit den entsprechenden Referenz-Histogrammen jeder generischen K\"orperhaltung verglichen. Die K\"orperhaltung, die nach dem Vergleich den gr\"o\IeC {\ss }ten Wert hat, wird f\"ur die Silhouette genommen.}}{37}{figure.3.12}}
+\newlabel{fig:schatzung1}{{3.12}{37}{Ein Beispiel für einen Prozess von Schätzung einer Silhouette beim Stehen. Die Silhouette des Binärbildes wird zuerst durch eine Begrenzungsbox extrahiert. Die vertikalen und horizontalen Histogramme der Silhouette werden dann berechnet und mit den entsprechenden Referenz-Histogrammen jeder generischen Körperhaltung verglichen. Die Körperhaltung, die nach dem Vergleich den größten Wert hat, wird für die Silhouette genommen}{figure.3.12}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.13}{\ignorespaces Beispiel f\"ur einen Prozess von Sch\"atzung einer Silhouette beim Liegen.}}{38}{figure.3.13}}
+\newlabel{fig:schatzung2}{{3.13}{38}{Beispiel für einen Prozess von Schätzung einer Silhouette beim Liegen}{figure.3.13}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.14}{\ignorespaces Beispiel f\"ur einen Prozess von Sch\"atzung einer Silhouette bei Beugen.}}{39}{figure.3.14}}
+\newlabel{fig:schatzung3}{{3.14}{39}{Beispiel für einen Prozess von Schätzung einer Silhouette bei Beugen}{figure.3.14}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.15}{\ignorespaces \"Uberpr\"ufung der Sch\"atzung der K\"orperhaltung am Testvideo \glqq {}fallen2.mp4\grqq {}. Die x-Achse stellt die Framenummer dar und die y-Achse ziegt die Indexe der K\"orperhaltung. Die blaue Gerade ist die Referenz-K\"orperhaltung und die gelbe Gerade ist die gesch\"atzte K\"orperhaltung. Die Sch\"atzung der K\"orperhaltung hat in diesem Beispiel eine Genauigkeit von $76,47\%$}}{40}{figure.3.15}}
+\newlabel{fig:schatzeva}{{3.15}{40}{Überprüfung der Schätzung der Körperhaltung am Testvideo \glqq {}fallen2.mp4\grqq {}. Die x-Achse stellt die Framenummer dar und die y-Achse ziegt die Indexe der Körperhaltung. Die blaue Gerade ist die Referenz-Körperhaltung und die gelbe Gerade ist die geschätzte Körperhaltung. Die Schätzung der Körperhaltung hat in diesem Beispiel eine Genauigkeit von $76,47\%$}{figure.3.15}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.16}{\ignorespaces \"Uberpr\"ufung der Sch\"atzung der K\"orperhaltung an \glqq {}fallen2.mp4\grqq {}. Die Sch\"atzung der K\"orperhaltung hat in diesem Beispiel eine Genauigkeit von $71,93\%$}}{41}{figure.3.16}}
+\newlabel{fig:schatzeva2}{{3.16}{41}{Überprüfung der Schätzung der Körperhaltung an \glqq {}fallen2.mp4\grqq {}. Die Schätzung der Körperhaltung hat in diesem Beispiel eine Genauigkeit von $71,93\%$}{figure.3.16}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Erkennung au\IeC {\ss }ergew\"ohnlicher Situationen}{41}{section.3.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.17}{\ignorespaces Dritter Meilenstein}}{42}{figure.3.17}}
+\newlabel{fig:nn}{{3.17}{42}{Dritter Meilenstein}{figure.3.17}{}}
 \citation{rosenfeld1971fuzzy}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.18}{\ignorespaces Dritter Meilenstein}}{42}{figure.3.18}}
-\newlabel{fig:fuzzylogik}{{3.18}{42}{Dritter Meilenstein}{figure.3.18}{}}
-\@writefile{loa}{\contentsline {algocf}{\numberline {2}{\ignorespaces Regeln f\"ur die Auswertung einer Situation}}{44}{algocf.2}}
-\newlabel{algo:fuzzy_modell}{{2}{44}{Erkennung außergewöhnlicher Situationen}{algocf.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.19}{\ignorespaces Die Mitgliederfunktionen der K\"orperhaltung, Zeit und aktuelle Position der Person. Der Eingabebereich der Zeit ist von 0 bis 24 Uhr beschr\"ankt und die Eingabe der Position muss ein positiver Wert sein. Diese Abbildung stellt ein Beispiel dar, wobei eine Person um 8 Uhr auf dem Sofa (x=574, y=424) liegt.}}{45}{figure.3.19}}
-\newlabel{fig:fuzzyfunktion}{{3.19}{45}{Die Mitgliederfunktionen der Körperhaltung, Zeit und aktuelle Position der Person. Der Eingabebereich der Zeit ist von 0 bis 24 Uhr beschränkt und die Eingabe der Position muss ein positiver Wert sein. Diese Abbildung stellt ein Beispiel dar, wobei eine Person um 8 Uhr auf dem Sofa (x=574, y=424) liegt}{figure.3.19}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.20}{\ignorespaces Testfall: Person liegt auf dem Sofa um 12 Uhr Nachts. Das Programm liefert ein Ergebnis von 93,29\% f\"ur normale und 26,59\% f\"ur abnormale Situation.}}{46}{figure.3.20}}
-\newlabel{fig:fuzzy1}{{3.20}{46}{Testfall: Person liegt auf dem Sofa um 12 Uhr Nachts. Das Programm liefert ein Ergebnis von 93,29\% für normale und 26,59\% für abnormale Situation}{figure.3.20}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.21}{\ignorespaces Testfall: Person liegt auf dem Sofa um 8 Uhr Morgens. Das Programm liefert ein Ergebnis von 71,6\% f\"ur normale und 49,71\% f\"ur abnormale Situation.}}{46}{figure.3.21}}
-\newlabel{fig:fuzzy2}{{3.21}{46}{Testfall: Person liegt auf dem Sofa um 8 Uhr Morgens. Das Programm liefert ein Ergebnis von 71,6\% für normale und 49,71\% für abnormale Situation}{figure.3.21}{}}
-\@writefile{loa}{\contentsline {algocf}{\numberline {3}{\ignorespaces Aktualisierung der Begrenzungsbox}}{47}{algocf.3}}
-\newlabel{algo:gleicheperson}{{3}{47}{Erkennung außergewöhnlicher Situationen}{algocf.3}{}}
-\@writefile{loa}{\contentsline {algocf}{\numberline {4}{\ignorespaces Bedingung zur Erkennung von Bewegung einer Person}}{47}{algocf.4}}
-\newlabel{algo:gleicheposition}{{4}{47}{Erkennung außergewöhnlicher Situationen}{algocf.4}{}}
-\@writefile{loa}{\contentsline {algocf}{\numberline {5}{\ignorespaces Erkennung von au\IeC {\ss }ergew\"ohnlichen Situationen}}{49}{algocf.5}}
-\newlabel{algo:finalAlgo}{{5}{49}{Erkennung außergewöhnlicher Situationen}{algocf.5}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.4}Drehbare 360-Grad-Kamera}{49}{section.3.4}}
-\@writefile{loa}{\contentsline {algocf}{\numberline {6}{\ignorespaces Ersetzung des Hintergrundbilds bei Drehung der Kamera}}{51}{algocf.6}}
-\newlabel{algo:newBG}{{6}{51}{Drehbare 360-Grad-Kamera}{algocf.6}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.22}{\ignorespaces Linke Seite: falsche Erkennung der Bewegung passiert, wenn das Hintergrundbild vor dem Stillstand der Kamera ersetzt wird. Rechte Seite: richtige Erkennung nach Drehung der Kamera.}}{52}{figure.3.22}}
-\newlabel{fig:false1}{{3.22}{52}{Linke Seite: falsche Erkennung der Bewegung passiert, wenn das Hintergrundbild vor dem Stillstand der Kamera ersetzt wird. Rechte Seite: richtige Erkennung nach Drehung der Kamera}{figure.3.22}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.23}{\ignorespaces Linke Seite: eine weitere falsche Erkennung der Bewegung. Rechte Seite: ein richtige Erkennung der Bewegung.}}{53}{figure.3.23}}
-\newlabel{fig:false2}{{3.23}{53}{Linke Seite: eine weitere falsche Erkennung der Bewegung. Rechte Seite: ein richtige Erkennung der Bewegung}{figure.3.23}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}Ergebnisse und Evaluation}{55}{chapter.4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.18}{\ignorespaces Dritter Meilenstein}}{43}{figure.3.18}}
+\newlabel{fig:fuzzylogik}{{3.18}{43}{Dritter Meilenstein}{figure.3.18}{}}
+\@writefile{loa}{\contentsline {algocf}{\numberline {2}{\ignorespaces Regeln f\"ur die Auswertung einer Situation}}{45}{algocf.2}}
+\newlabel{algo:fuzzy_modell}{{2}{45}{Erkennung außergewöhnlicher Situationen}{algocf.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.19}{\ignorespaces Die Mitgliederfunktionen der K\"orperhaltung, Zeit und aktuelle Position der Person. Der Eingabebereich der Zeit ist von 0 bis 24 Uhr beschr\"ankt und die Eingabe der Position muss ein positiver Wert sein. Diese Abbildung stellt ein Beispiel dar, wobei eine Person um 8 Uhr auf dem Sofa (x=574, y=424) liegt.}}{46}{figure.3.19}}
+\newlabel{fig:fuzzyfunktion}{{3.19}{46}{Die Mitgliederfunktionen der Körperhaltung, Zeit und aktuelle Position der Person. Der Eingabebereich der Zeit ist von 0 bis 24 Uhr beschränkt und die Eingabe der Position muss ein positiver Wert sein. Diese Abbildung stellt ein Beispiel dar, wobei eine Person um 8 Uhr auf dem Sofa (x=574, y=424) liegt}{figure.3.19}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.20}{\ignorespaces Testfall: Person liegt auf dem Sofa um 12 Uhr Nachts. Das Programm liefert ein Ergebnis von 93,29\% f\"ur normale und 26,59\% f\"ur abnormale Situation.}}{47}{figure.3.20}}
+\newlabel{fig:fuzzy1}{{3.20}{47}{Testfall: Person liegt auf dem Sofa um 12 Uhr Nachts. Das Programm liefert ein Ergebnis von 93,29\% für normale und 26,59\% für abnormale Situation}{figure.3.20}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.21}{\ignorespaces Testfall: Person liegt auf dem Sofa um 8 Uhr Morgens. Das Programm liefert ein Ergebnis von 71,6\% f\"ur normale und 49,71\% f\"ur abnormale Situation.}}{47}{figure.3.21}}
+\newlabel{fig:fuzzy2}{{3.21}{47}{Testfall: Person liegt auf dem Sofa um 8 Uhr Morgens. Das Programm liefert ein Ergebnis von 71,6\% für normale und 49,71\% für abnormale Situation}{figure.3.21}{}}
+\@writefile{loa}{\contentsline {algocf}{\numberline {3}{\ignorespaces Aktualisierung der Begrenzungsbox}}{48}{algocf.3}}
+\newlabel{algo:gleicheperson}{{3}{48}{Erkennung außergewöhnlicher Situationen}{algocf.3}{}}
+\@writefile{loa}{\contentsline {algocf}{\numberline {4}{\ignorespaces Bedingung zur Erkennung von Bewegung einer Person}}{48}{algocf.4}}
+\newlabel{algo:gleicheposition}{{4}{48}{Erkennung außergewöhnlicher Situationen}{algocf.4}{}}
+\@writefile{loa}{\contentsline {algocf}{\numberline {5}{\ignorespaces Erkennung von au\IeC {\ss }ergew\"ohnlichen Situationen}}{50}{algocf.5}}
+\newlabel{algo:finalAlgo}{{5}{50}{Erkennung außergewöhnlicher Situationen}{algocf.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}Drehbare 360-Grad-Kamera}{50}{section.3.4}}
+\@writefile{loa}{\contentsline {algocf}{\numberline {6}{\ignorespaces Ersetzung des Hintergrundbilds bei Drehung der Kamera}}{52}{algocf.6}}
+\newlabel{algo:newBG}{{6}{52}{Drehbare 360-Grad-Kamera}{algocf.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.22}{\ignorespaces Linke Seite: falsche Erkennung der Bewegung passiert, wenn das Hintergrundbild vor dem Stillstand der Kamera ersetzt wird. Rechte Seite: richtige Erkennung nach Drehung der Kamera.}}{53}{figure.3.22}}
+\newlabel{fig:false1}{{3.22}{53}{Linke Seite: falsche Erkennung der Bewegung passiert, wenn das Hintergrundbild vor dem Stillstand der Kamera ersetzt wird. Rechte Seite: richtige Erkennung nach Drehung der Kamera}{figure.3.22}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.23}{\ignorespaces Linke Seite: eine weitere falsche Erkennung der Bewegung. Rechte Seite: ein richtige Erkennung der Bewegung.}}{54}{figure.3.23}}
+\newlabel{fig:false2}{{3.23}{54}{Linke Seite: eine weitere falsche Erkennung der Bewegung. Rechte Seite: ein richtige Erkennung der Bewegung}{figure.3.23}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Ergebnisse und Evaluation}{56}{chapter.4}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{lol}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Gemessene Laufzeiten von 1000 Bildern}}{56}{figure.4.1}}
-\newlabel{fig:laufzeit}{{4.1}{56}{Gemessene Laufzeiten von 1000 Bildern}{figure.4.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Richtige Zuordnungen (blau) und berechnete Zuordnung (gelb) der Bilder grafisch dargestellt}}{57}{figure.4.2}}
-\newlabel{fig:alarm}{{4.2}{57}{Richtige Zuordnungen (blau) und berechnete Zuordnung (gelb) der Bilder grafisch dargestellt}{figure.4.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces ROC-Kurze zur Bewertung des Programms.}}{58}{figure.4.3}}
-\newlabel{fig:roc}{{4.3}{58}{ROC-Kurze zur Bewertung des Programms}{figure.4.3}{}}
+\newlabel{chp:ergebnisse}{{4}{56}{Ergebnisse und Evaluation}{chapter.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Gemessene Laufzeiten von 1000 Bildern}}{57}{figure.4.1}}
+\newlabel{fig:laufzeit}{{4.1}{57}{Gemessene Laufzeiten von 1000 Bildern}{figure.4.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Richtige Zuordnungen (blau) und berechnete Zuordnung (gelb) der Bilder grafisch dargestellt}}{58}{figure.4.2}}
+\newlabel{fig:alarm}{{4.2}{58}{Richtige Zuordnungen (blau) und berechnete Zuordnung (gelb) der Bilder grafisch dargestellt}{figure.4.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces ROC-Kurze zur Bewertung des Programms.}}{59}{figure.4.3}}
+\newlabel{fig:roc}{{4.3}{59}{ROC-Kurze zur Bewertung des Programms}{figure.4.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces Auswertung der verschiedenen Methoden mit ohne Skalierung des Bilds}}{60}{table.4.1}}
+\newlabel{tbl:auswertung}{{4.1}{60}{Auswertung der verschiedenen Methoden mit ohne Skalierung des Bilds}{table.4.1}{}}
 \citation{zivkovic2006efficient}
 \citation{haritaoglu1998ghost}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{61}{chapter.5}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{62}{chapter.5}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{lol}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces Zusammenfassung des Programmaufbaus. Die drei wichtige Meilenstein werden zum Verst\"andnis mit drei verschiedenen Farben dargestellt.}}{63}{figure.5.1}}
-\newlabel{fig:zusammenfassung}{{5.1}{63}{Zusammenfassung des Programmaufbaus. Die drei wichtige Meilenstein werden zum Verständnis mit drei verschiedenen Farben dargestellt}{figure.5.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces Beispiele f\"ur die falsche Extraktion der Silhouette bei den Tarnungen. Auf den oberen Bildern ist die Testperson an einen schwarzen Kamin vorbei gegangen. In diesem Fall wurde die Person immer noch richtig erkannt. Auf dem unteren Bildern lief die Testperson an einen schwarzen Bildschirm vorbei. In diesem Fall wurde die Silhouette halbiert und es folgte eine falsche Erkennung der Testperson.}}{64}{figure.5.2}}
-\newlabel{fig:tarnung}{{5.2}{64}{Beispiele für die falsche Extraktion der Silhouette bei den Tarnungen. Auf den oberen Bildern ist die Testperson an einen schwarzen Kamin vorbei gegangen. In diesem Fall wurde die Person immer noch richtig erkannt. Auf dem unteren Bildern lief die Testperson an einen schwarzen Bildschirm vorbei. In diesem Fall wurde die Silhouette halbiert und es folgte eine falsche Erkennung der Testperson}{figure.5.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces Zusammenfassung des Programmaufbaus. Die drei wichtige Meilenstein werden zum Verst\"andnis mit drei verschiedenen Farben dargestellt.}}{64}{figure.5.1}}
+\newlabel{fig:zusammenfassung}{{5.1}{64}{Zusammenfassung des Programmaufbaus. Die drei wichtige Meilenstein werden zum Verständnis mit drei verschiedenen Farben dargestellt}{figure.5.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces Beispiele f\"ur die falsche Extraktion der Silhouette bei den Tarnungen. Auf den oberen Bildern ist die Testperson an einen schwarzen Kamin vorbei gegangen. In diesem Fall wurde die Person immer noch richtig erkannt. Auf dem unteren Bildern lief die Testperson an einen schwarzen Bildschirm vorbei. In diesem Fall wurde die Silhouette halbiert und es folgte eine falsche Erkennung der Testperson.}}{65}{figure.5.2}}
+\newlabel{fig:tarnung}{{5.2}{65}{Beispiele für die falsche Extraktion der Silhouette bei den Tarnungen. Auf den oberen Bildern ist die Testperson an einen schwarzen Kamin vorbei gegangen. In diesem Fall wurde die Person immer noch richtig erkannt. Auf dem unteren Bildern lief die Testperson an einen schwarzen Bildschirm vorbei. In diesem Fall wurde die Silhouette halbiert und es folgte eine falsche Erkennung der Testperson}{figure.5.2}{}}
 \citation{*}
 \bibdata{Literaturverzeichnis}
 \bibcite{aziz2011pedestrian}{AMFT11}
@@ -270,7 +271,7 @@
 \bibcite{barnich2009vibe}{BVD09}
 \bibcite{barnich2011vibe}{BVD11}
 \bibcite{cingolanijfuzzylogic}{CAF}
-\@writefile{toc}{\contentsline {chapter}{Literaturverzeichnis}{66}{chapter*.9}}
+\@writefile{toc}{\contentsline {chapter}{Literaturverzeichnis}{67}{chapter*.9}}
 \bibcite{cingolani2012jfuzzylogic}{CAF12}
 \bibcite{duffner2013pixeltrack}{DG13}
 \bibcite{dingle2011artificial}{Din11}
@@ -304,22 +305,22 @@
 \newacro{AGMM}[\AC@hyperlink{AGMM}{AGMM}]{Adaptive Gau\IeC {\ss }schen Mixture Modell}
 \newacro{Vibe}[\AC@hyperlink{Vibe}{Vibe}]{Vibe}
 \newacro{KNN}[\AC@hyperlink{KNN}{KNN}]{K-n\"achste Nachbar}
-\@writefile{toc}{\contentsline {chapter}{Abk\"urzungsverzeichnis}{71}{chapter*.10}}
+\@writefile{toc}{\contentsline {chapter}{Abk\"urzungsverzeichnis}{72}{chapter*.10}}
 \citation{barnich2009vibe}
 \citation{haritaoglu1998ghost}
-\@writefile{toc}{\contentsline {chapter}{Abbildungsverzeichnis}{73}{chapter*.11}}
-\@writefile{toc}{\contentsline {chapter}{Tabellenverzeichnis}{76}{chapter*.12}}
-\@writefile{toc}{\contentsline {chapter}{Liste der Algorithmen}{78}{section*.13}}
-\@writefile{toc}{\contentsline {chapter}{Listings}{80}{section*.15}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {A}Anhang}{82}{appendix.A}}
+\@writefile{toc}{\contentsline {chapter}{Abbildungsverzeichnis}{74}{chapter*.11}}
+\@writefile{toc}{\contentsline {chapter}{Tabellenverzeichnis}{77}{chapter*.12}}
+\@writefile{toc}{\contentsline {chapter}{Liste der Algorithmen}{79}{section*.13}}
+\@writefile{toc}{\contentsline {chapter}{Listings}{81}{section*.15}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {A}Anhang}{83}{appendix.A}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{lol}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
-\newlabel{chp:AnhangA}{{A}{82}{Anhang}{appendix.A}{}}
-\newlabel{sec:AnhangA1}{{A}{82}{Thema 1}{section*.17}{}}
-\newlabel{sec:AnhangA2}{{A}{82}{Thema 2}{section*.18}{}}
-\@writefile{toc}{\contentsline {chapter}{Danksagung}{83}{chapter*.19}}
+\newlabel{chp:AnhangA}{{A}{83}{Anhang}{appendix.A}{}}
+\newlabel{sec:AnhangA1}{{A}{83}{Thema 1}{section*.17}{}}
+\newlabel{sec:AnhangA2}{{A}{83}{Thema 2}{section*.18}{}}
+\@writefile{toc}{\contentsline {chapter}{Danksagung}{84}{chapter*.19}}
 \global\csname @altsecnumformattrue\endcsname
 \global\@namedef{scr@dte@chapter@lastmaxnumwidth}{18.05513pt}
 \global\@namedef{scr@dte@section@lastmaxnumwidth}{21.4133pt}

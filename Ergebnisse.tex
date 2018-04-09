@@ -1,6 +1,6 @@
 \chapter{Ergebnisse und Evaluation}\label{chp:ergebnisse}
 Die festgelegten Ziele in Abschnitt \ref{chp:Ziele} wurden in der fertig entwickelten Anwendung vollständig erreicht. Um die Qualität der Software zu überprüfen, wurden eine Reihe von selbst erstellten Testvideos als Eingabe verwendet. Diese Videos wurden bei Bosch in zwei dafür vorgesehenen Räumen gedreht. Um das entwickelte Programm zu testen, wurden in den Videos einige Szenarien von Personen in verschiedenen Situationen simuliert. Dabei sollte die Software erkennen, ob es sich um eine normale oder außergewöhnliche Situation handelt. In einigen Videos haben sich Personen auf den Boden gelegt und sich dann nicht mehr bewegt. In anderen Videos haben sich Menschen auf ein Sofa gesetzt und sind danach darauf eingeschlafen. Dabei wurden die Situation bei Tag und Nacht durchgespielt und bei variierenden Anzahl an Personen im Raum. Dabei konnten die Menschen das Zimmer verlassen und wieder hineinkommen, um zu überprüfen, ob sie erneut von der Software erkannt werden. Das Programm hat in allen Fällen gute Ergebnisse geliefert. Die Software konnte dabei nicht jeden Frame der Kamera richtig klassifizieren. Dennoch wurden alle außergewöhnlichen Situationen erkannt. Das folgt daraus, dass die außergewöhnlichen Situationen erst nach $30$ hintereinander folgenden Frames mit der Klassifizierung \glqq{}$bad$\grqq{} erkannt werden. Es gab somit bei manchen Situationen eine kleine Verzögerung, bis diese richtig klassifiziert wurden. Auch die Kamera wurde an verschiedenen Orten im Raum positioniert, um die Arbeitsweise der Hintergrundsubtraktion zu untersuchen.\\
-Die verwendete Kamera  hat eine Auflösung von 1080x720 Pixel und eine Frame-Rate von 15 FPS. Um einer Echtzeitanwendung gerecht zu werden, muss die Software damit mindestens 15 Bilder pro Sekunde klassifizieren und berechnen können. Dazu wurden einige Tests durchgeführt, um die Geschwindigkeit der Berechnung zu bestimmen. Es stellte sich heraus, dass das Programm durchschnittlich 62 Millisekunden pro Bild braucht, um dieses der zugehörigen Klasse zuzuordnen und kann somit 16 Frames jede Sekunde klassifizieren. Diese und die folgenden Tests wurden alle auf einem Rechner mit einem Intel i5 3,20 GHz Prozessor und 16 GB RAM.
+Die verwendete Kamera  hat eine Auflösung von 1080x720 Pixel und eine Frame-Rate von 15 FPS. Um einer Echtzeitanwendung gerecht zu werden, muss die Software damit mindestens 15 Bilder pro Sekunde klassifizieren und berechnen können. Dazu wurden einige Tests durchgeführt, um die Geschwindigkeit der Berechnung zu bestimmen. Es stellte sich heraus, dass das Programm durchschnittlich 59 Millisekunden pro Bild braucht, um dieses der zugehörigen Klasse zuzuordnen und kann somit 16 Frames jede Sekunde klassifizieren. Diese und die folgenden Tests wurden alle auf einem Rechner mit einem Intel i5 3,20 GHz Prozessor und 16 GB RAM.
 In der folgenden Abbildung \ref{fig:laufzeit} wurde eine Laufzeitmessung mit 1000 Frames durchgeführt. Dabei wurde auf der X-Achse die Nummer des Bildes und auf der Y-Achse die dazugehörige Laufzeit abgetragen. Die rote Linie stellt die durchschnittliche Laufzeit dar.
 
 \begin{figure}[H]
@@ -14,7 +14,7 @@ In Abbildung \ref{fig:alarm} wurden drei Videos mit dem Programm untersucht. Die
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{fig/alarmevaluation.pdf}
+	\includegraphics[width=0.9\textwidth]{fig/alarmevaluation2.png}
 	\caption{Richtige Zuordnungen (blau) und berechnete Zuordnung (gelb) der Bilder grafisch dargestellt} 
 	\label{fig:alarm}
 \end{figure}
@@ -56,7 +56,7 @@ Während der Entwicklung der Software wurden zwei signifikante Methoden implement
 		\hline
 		\multirow{ 2}{*}{\rotatebox[origin=c]{90}{{ Video 2 }}} & ASB & 0,748 & 0,030 & 0,993 & 0,128 & 0,888\\
 		
-		& KNN-Plus-ASB & 0,763 & 0,024 & 0,998 & 0,111 & 0,903\\
+		& KNN-Plus-ASB & 0,763 & 0,024 & 0,996 & 0,111 & 0,903\\
 		
 		& 854x450 & 0,755 & 0,033 & 0,988 & 0,116 & 0,896\\
 		\hline

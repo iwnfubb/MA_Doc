@@ -30,7 +30,7 @@
 \contentsline {subsection}{\numberline {3.1.3}Ergebnisse der Verbesserungen am Hintergrundsubtraktion-Verfahren}{32}{subsection.3.1.3}
 \contentsline {section}{\numberline {3.2}Sch\"atzung der K\"orperhalterung mittels Histogrammanalyse}{34}{section.3.2}
 \contentsline {section}{\numberline {3.3}Erkennung au\IeC {\ss }ergew\"ohnlicher Situationen}{41}{section.3.3}
-\contentsline {section}{\numberline {3.4}Drehbare 360-Grad-Kamera}{50}{section.3.4}
+\contentsline {section}{\numberline {3.4}Anpassung des Verfahrens auf nicht-statische Kameras}{50}{section.3.4}
 \contentsline {chapter}{\numberline {4}Ergebnisse und Evaluation}{56}{chapter.4}
 \contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{62}{chapter.5}
 \contentsline {chapter}{Literaturverzeichnis}{67}{chapter*.9}

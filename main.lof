@@ -11,7 +11,7 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Die drei Meilensteine zur Erkennung von au\IeC {\ss }ergew\"ohnlichen Situation}}{20}{figure.3.1}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Veranschaulichung des Hintergrundsubtraktion-Verfahren}}{21}{figure.3.2}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Die Verarbeitungszeit von KNN und Vibe werden verglichen. Es ist deutlich, dass KNN eine k\"urzere durchschnittliche Verarbeitungszeit (107ms) als Vibe (551ms) hat.}}{23}{figure.3.3}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Die Verarbeitungszeit von KNN und Vibe werden verglichen. Es ist deutlich, dass KNN eine k\"urzere durchschnittliche Verarbeitungszeit (42ms) als Vibe (165ms) hat.}}{23}{figure.3.3}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Die Erosion mit einem 3x3 Filter}}{24}{figure.3.4}
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Die Dilatation mit einem 3x3 Filter}}{24}{figure.3.5}
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Ein Beispiel f\"ur die \"Offnung (Erosion und Dilatation)}}{25}{figure.3.6}

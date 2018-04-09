@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.9)  10 APR 2018 01:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.9)  10 APR 2018 01:43
 entering extended mode
 **./main.tex
 (main.tex
@@ -1485,11 +1485,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--14
 
  []
 
-<fig/alarmevaluation2.png, id=1292, 532.99126pt x 820.56563pt>
-File: fig/alarmevaluation2.png Graphic file (type png)
+<fig/alarmevaluation2.pdf, id=1292, 532.99126pt x 820.56563pt>
+File: fig/alarmevaluation2.pdf Graphic file (type pdf)
 
-<use fig/alarmevaluation2.png>
-Package pdftex.def Info: fig/alarmevaluation2.png used on input line 17.
+<use fig/alarmevaluation2.pdf>
+Package pdftex.def Info: fig/alarmevaluation2.pdf used on input line 17.
 (pdftex.def)             Requested size: 376.42744pt x 579.5506pt.
  [57pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
 1}) has been already used, duplicate ignored
@@ -1507,8 +1507,8 @@ Overfull \vbox (21.95033pt too high) has occurred while \output is active []
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.21 
-      <./fig/alarmevaluation2.png>]
-<fig/ROC2.pdf, id=1359, 305.8578pt x 273.15509pt>
+      <./fig/alarmevaluation2.pdf>]
+<fig/ROC2.pdf, id=1369, 305.8578pt x 273.15509pt>
 File: fig/ROC2.pdf Graphic file (type pdf)
  <use fig/ROC2.pdf>
 Package pdftex.def Info: fig/ROC2.pdf used on input line 27.
@@ -1551,7 +1551,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--14
 
  []
 
-<fig/zusammenfassung.pdf, id=1400, 746.7704pt x 711.37259pt>
+<fig/zusammenfassung.pdf, id=1410, 746.7704pt x 711.37259pt>
 File: fig/zusammenfassung.pdf Graphic file (type pdf)
 
 <use fig/zusammenfassung.pdf>
@@ -1585,7 +1585,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--25
                                                   \fi \fi 
 l.25 
       <./fig/zusammenfassung.pdf>]
-<fig/tarnung.png, id=1434, 962.09438pt x 551.81157pt>
+<fig/tarnung.png, id=1444, 962.09438pt x 551.81157pt>
 File: fig/tarnung.png Graphic file (type png)
  <use fig/tarnung.png>
 Package pdftex.def Info: fig/tarnung.png used on input line 28.
@@ -1712,9 +1712,9 @@ MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><D:/Program Files/MiKTeX 2
 blic/amsfonts/cm/cmsy8.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmti10.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
 cmtt10.pfb>
-Output written on main.pdf (95 pages, 60206530 bytes).
+Output written on main.pdf (95 pages, 60214572 bytes).
 PDF statistics:
- 1768 PDF objects out of 2073 (max. 8388607)
+ 1778 PDF objects out of 2073 (max. 8388607)
  283 named destinations out of 1000 (max. 500000)
  587 words of extra memory for PDF output out of 10000 (max. 10000000)
 

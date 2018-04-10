@@ -3,29 +3,29 @@
 \select@language {ngerman}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Ein Beispiel f\"ur die Hintergrundsubtraktion }}{8}{figure.2.1}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Ein Beispiel f\"ur die Hintergrundsubtraktion. }}{8}{figure.2.1}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Die Klassifizierung von $p_t(x)$ basiert auf die \"Uberschneidung der Kugel $S_R(p_t(x))$ mit der Menge der Stichproben \cite {barnich2009vibe}.}}{11}{figure.2.2}
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Normalisierte horizontale und vertikale Referenz-Histogramme f\"ur jede K\"orperhalterung \cite {haritaoglu1998ghost}.}}{12}{figure.2.3}
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Ein Beispiel f\"ur die Fuzzylogik in drei Schritten. Oben: Die Temperatur von $23$ Grad wird durch Mitgliederfunktionen abgebildet. Mitte: Durch die (IF-ELSE) Regel in Algorithmus \ref {algo:fuzzy} wird eine Ausgabe als Fuzzymenge berechnet. Unten: Ein Schwerpunkt von der gerechneten Ausgabe wird in eine scharfe Ausgabe abgebildet und es ergibt sich der Wert 2.15 f\"ur das Thermostat.}}{15}{figure.2.4}
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Bosch 360\IeC {\textdegree } Kamera (Quelle: www.bosch-smarthome.com) }}{17}{figure.2.5}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Die drei Meilensteine zur Erkennung von au\IeC {\ss }ergew\"ohnlichen Situation}}{20}{figure.3.1}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Veranschaulichung des Hintergrundsubtraktion-Verfahren}}{21}{figure.3.2}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Die drei Meilensteine zur Erkennung von au\IeC {\ss }ergew\"ohnlichen Situation.}}{20}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Veranschaulichung des Hintergrundsubtraktion-Verfahren.}}{21}{figure.3.2}
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Die Verarbeitungszeit von KNN und Vibe werden verglichen. Es ist deutlich, dass KNN eine k\"urzere durchschnittliche Verarbeitungszeit (42ms) als Vibe (165ms) hat.}}{23}{figure.3.3}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Die Erosion mit einem 3x3 Filter}}{24}{figure.3.4}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Die Dilatation mit einem 3x3 Filter}}{24}{figure.3.5}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Ein Beispiel f\"ur die \"Offnung (Erosion und Dilatation)}}{25}{figure.3.6}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Die Erosion mit einem 3x3 Filter.}}{24}{figure.3.4}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Die Dilatation mit einem 3x3 Filter.}}{24}{figure.3.5}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Ein Beispiel f\"ur die \"Offnung (Erosion und Dilatation).}}{25}{figure.3.6}
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Video: \glqq {}fallen.mp4\grqq {}. Frame-Nummer: 334. Die Begrenzungsbox $B_i$, die mit einem roten Rechteck markiert ist, \"uberschneidet sich mit der aktuellen Begrenzungsbox $B_{current}$, die gr\"un markiert ist. Das Unterbild in dem roten Rechteck wird auf dem Hintergrundbild aktualisiert.}}{27}{figure.3.7}
 \contentsline {figure}{\numberline {3.8}{\ignorespaces Video: \glqq {}fallen.mp4\grqq {}. Frame-Nummer: 335. Nach der Aktualisierung des Hintergrundbildes wird die alte Begrenzungsbox $B_i$ gel\"oscht.}}{28}{figure.3.8}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Video:\glqq {}fallen.mp4\grqq {}. Frame-Nummer: 403. Die Liste der Begrenzungsboxen, die sich nicht mit der aktuellen Begrenzungsbox $B_{current}$ \"uberschneiden, werden mit den wei\IeC {\ss }en Rechtecken dargestellt. Die Liste der Begrenzungsboxen, die sich mit der aktuellen Begrenzungsbox $B_{current}$ \"uberschneiden, werden mit den roten Rechtecken dargestellt }}{29}{figure.3.9}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Video:\glqq {}fallen.mp4\grqq {}. Frame-Nummer: 403. Die Liste der Begrenzungsboxen, die sich nicht mit der aktuellen Begrenzungsbox $B_{current}$ \"uberschneiden, werden mit den wei\IeC {\ss }en Rechtecken dargestellt. Die Liste der Begrenzungsboxen, die sich mit der aktuellen Begrenzungsbox $B_{current}$ \"uberschneiden, werden mit den roten Rechtecken dargestellt. }}{29}{figure.3.9}
 \contentsline {figure}{\numberline {3.10}{\ignorespaces Wenn die L\"ange eines Histogramms kleiner als 128 Pixel ist, wird das Histogramm auf einem 128 Pixel lang Histogramm abgebildet. Die Werte des originalen Histogramms werden in der Mitte des neuen Histogramm zentriert.}}{35}{figure.3.10}
 \contentsline {figure}{\numberline {3.11}{\ignorespaces Der zweite Meilenstein ist die Sch\"atzung der K\"orperhaltung. Das Ausgabebin\"arbild des ersten Meilensteins wird mit einer Begrenzungsbox beschr\"ankt, um ein Unterbild von der Silhouette zu erstellen. Das Unterbild wird dann skaliert und die vertikalen und horizontalen Histogramme des skalierten Unterbildes werden berechnet. Diese Histogramme werden mit den Referenz-Histogrammen verglichen, um die K\"orperhaltung auf dem Unterbild zu bestimmen.}}{36}{figure.3.11}
 \contentsline {figure}{\numberline {3.12}{\ignorespaces Ein Beispiel f\"ur einen Prozess von Sch\"atzung einer Silhouette beim Stehen. Die Silhouette des Bin\"arbildes wird zuerst durch eine Begrenzungsbox extrahiert. Die vertikalen und horizontalen Histogramme der Silhouette werden dann berechnet und mit den entsprechenden Referenz-Histogrammen jeder generischen K\"orperhaltung verglichen. Die K\"orperhaltung, die nach dem Vergleich den gr\"o\IeC {\ss }ten Wert hat, wird f\"ur die Silhouette genommen.}}{37}{figure.3.12}
 \contentsline {figure}{\numberline {3.13}{\ignorespaces Beispiel f\"ur einen Prozess von Sch\"atzung einer Silhouette beim Liegen.}}{38}{figure.3.13}
 \contentsline {figure}{\numberline {3.14}{\ignorespaces Beispiel f\"ur einen Prozess von Sch\"atzung einer Silhouette bei Beugen.}}{39}{figure.3.14}
-\contentsline {figure}{\numberline {3.15}{\ignorespaces \"Uberpr\"ufung der Sch\"atzung der K\"orperhaltung am Testvideo \glqq {}fallen2.mp4\grqq {}. Die x-Achse stellt die Framenummer dar und die y-Achse ziegt die Indexe der K\"orperhaltung. Die blaue Gerade ist die Referenz-K\"orperhaltung und die gelbe Gerade ist die gesch\"atzte K\"orperhaltung. Die Sch\"atzung der K\"orperhaltung hat in diesem Beispiel eine Genauigkeit von $76,47\%$}}{40}{figure.3.15}
-\contentsline {figure}{\numberline {3.16}{\ignorespaces \"Uberpr\"ufung der Sch\"atzung der K\"orperhaltung an \glqq {}fallen2.mp4\grqq {}. Die Sch\"atzung der K\"orperhaltung hat in diesem Beispiel eine Genauigkeit von $71,93\%$}}{41}{figure.3.16}
-\contentsline {figure}{\numberline {3.17}{\ignorespaces Dritter Meilenstein}}{42}{figure.3.17}
+\contentsline {figure}{\numberline {3.15}{\ignorespaces \"Uberpr\"ufung der Sch\"atzung der K\"orperhaltung am Testvideo \glqq {}fallen2.mp4\grqq {}. Die x-Achse stellt die Framenummer dar und die y-Achse ziegt die Indexe der K\"orperhaltung. Die blaue Gerade ist die Referenz-K\"orperhaltung und die gelbe Gerade ist die gesch\"atzte K\"orperhaltung. Die Sch\"atzung der K\"orperhaltung hat in diesem Beispiel eine Genauigkeit von 76,47\%.}}{40}{figure.3.15}
+\contentsline {figure}{\numberline {3.16}{\ignorespaces \"Uberpr\"ufung der Sch\"atzung der K\"orperhaltung an \glqq {}fallen2.mp4\grqq {}. Die Sch\"atzung der K\"orperhaltung hat in diesem Beispiel eine Genauigkeit von 71,93\%.}}{41}{figure.3.16}
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Objekterkennung mit einem neuronalen Netz.}}{42}{figure.3.17}
 \contentsline {figure}{\numberline {3.18}{\ignorespaces Dritter Meilenstein}}{43}{figure.3.18}
 \contentsline {figure}{\numberline {3.19}{\ignorespaces Die Mitgliederfunktionen der K\"orperhaltung, Zeit und aktuelle Position der Person. Der Eingabebereich der Zeit ist von 0 bis 24 Uhr beschr\"ankt und die Eingabe der Position muss ein positiver Wert sein. Diese Abbildung stellt ein Beispiel dar, wobei eine Person um 8 Uhr auf dem Sofa (x=574, y=424) liegt.}}{46}{figure.3.19}
 \contentsline {figure}{\numberline {3.20}{\ignorespaces Testfall: Person liegt auf dem Sofa um 12 Uhr Nachts. Das Programm liefert ein Ergebnis von 93,29\% f\"ur normale und 26,59\% f\"ur abnormale Situation.}}{47}{figure.3.20}
@@ -33,10 +33,12 @@
 \contentsline {figure}{\numberline {3.22}{\ignorespaces Linke Seite: falsche Erkennung der Bewegung passiert, wenn das Hintergrundbild vor dem Stillstand der Kamera ersetzt wird. Rechte Seite: richtige Erkennung nach Drehung der Kamera.}}{53}{figure.3.22}
 \contentsline {figure}{\numberline {3.23}{\ignorespaces Linke Seite: eine weitere falsche Erkennung der Bewegung. Rechte Seite: ein richtige Erkennung der Bewegung.}}{54}{figure.3.23}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Gemessene Laufzeiten von 1000 Bildern}}{57}{figure.4.1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Richtige Zuordnungen (blau) und berechnete Zuordnung (gelb) der Bilder grafisch dargestellt}}{58}{figure.4.2}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces ROC-Kurze zur Bewertung des Programms.}}{59}{figure.4.3}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces ROC-Kurve zur Bewertung des Programms mit den zweit Parameter $t=1$ und $t=30$.}}{57}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Gemessene Laufzeiten von 1000 Bildern.}}{58}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Gemessene Laufzeiten des Programm mit ASB, KNN-Plus-ASB und Skalierung des Eingabebildes.}}{58}{figure.4.3}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Richtige Zuordnungen (blau) und berechnete Zuordnung (gelb) der Bilder grafisch dargestellt.}}{59}{figure.4.4}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces ROC-Kurze zur Bewertung des Programms.}}{60}{figure.4.5}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Zusammenfassung des Programmaufbaus. Die drei wichtige Meilenstein werden zum Verst\"andnis mit drei verschiedenen Farben dargestellt.}}{64}{figure.5.1}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Beispiele f\"ur die falsche Extraktion der Silhouette bei den Tarnungen. Auf den oberen Bildern ist die Testperson an einen schwarzen Kamin vorbei gegangen. In diesem Fall wurde die Person immer noch richtig erkannt. Auf dem unteren Bildern lief die Testperson an einen schwarzen Bildschirm vorbei. In diesem Fall wurde die Silhouette halbiert und es folgte eine falsche Erkennung der Testperson.}}{65}{figure.5.2}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Zusammenfassung des Programmaufbaus. Die drei wichtige Meilenstein werden zum Verst\"andnis mit drei verschiedenen Farben dargestellt.}}{65}{figure.5.1}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Beispiele f\"ur die falsche Extraktion der Silhouette bei den Tarnungen. Auf den oberen Bildern ist die Testperson an einen schwarzen Kamin vorbei gegangen. In diesem Fall wurde die Person immer noch richtig erkannt. Auf dem unteren Bildern lief die Testperson an einen schwarzen Bildschirm vorbei. In diesem Fall wurde die Silhouette halbiert und es folgte eine falsche Erkennung der Testperson.}}{66}{figure.5.2}
 \addvspace {10\p@ }

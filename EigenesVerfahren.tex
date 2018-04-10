@@ -4,7 +4,7 @@ Die hier verwendeten Testvideos haben eine Auflösung von 1280x720 Pixel und werd
 \begin{figure}[H]			
 	\centering
 	\includegraphics[width=0.7\textwidth]{fig/allgemein.pdf}
-	\caption{Die drei Meilensteine zur Erkennung von außergewöhnlichen Situation}
+	\caption{Die drei Meilensteine zur Erkennung von außergewöhnlichen Situation.}
 	\label{fig:allgemein}
 \end{figure}
 
@@ -15,7 +15,7 @@ Die Abbildung \ref{fig:bgsub} zeigt allgemein die Grundfunktion der Hintergrunds
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{fig/bgsub.pdf}
-	\caption{Veranschaulichung des Hintergrundsubtraktion-Verfahren}
+	\caption{Veranschaulichung des Hintergrundsubtraktion-Verfahren.}
 	\label{fig:bgsub}
 \end{figure}
 Es existieren mehrere Verfahren, um eine Hintergrundsubtraktion durchzuführen.
@@ -46,8 +46,8 @@ In der folgenden Abbildung werden die Vergleiche der vier Verfahren veranschauli
 \end{table}
 Aus der obigen Grafik wird deutlich, dass sich in den Verfahren AGMM und KNN viel Rausch im Resultat der Hintergrundsubtraktion befindet. Die Resultate sind daher als schlecht zu bewerten. Die Verfahren KDE und Vibe liefern sehr gut Resultate bzw. eine Silhouette mit weniger Rausch, jedoch benötigt das Vibe-Verfahren deutlich mehr Zeit. Somit ist das Verfahren KNN, verglichen mit den anderen, das Verfahren, dass eine klare Silhouette mit weniger Rausch in kürzester Zeit liefert. 
 Anhand des Schaubildes ist das \acs{KNN}-Verfahren ein geeigneter Kandidat für die Echtzeitanwendung. Nun muss noch geprüft werden, ob sich das Verfahren für bis zu 15 Frames einsetzten lässt. Aus dem Test war nur zu erkennen, dass es in erster Linie ein valides Resultat liefert. Zweitrangig wurden die Verfahren nach der Zeit bewertet. Aus dem Test ist nicht ganz ersichtlich, ob sich das Verfahren denn im Dauerbetrieb anwenden lässt. Um das zu prüfen, wurden viele Testvideos mit Tageslicht und andere abends mit häuslicher Beleuchtung aufgenommen und analysiert. Ziel ist es, dass die Echtzeitanwendung stabile Resultate bei allen Beleuchtungen liefert.
-Anhand der Tabelle \ref{fig:compare_bgsubtraction} wird klar, dass das KNN-Verfahren bei allen Testvideos zuverlässige Resultate und bei gleicher Zeit liefert.
-%neue Grafik
+Anhand der Tabelle \ref{fig:compare_bgsubtraction} wird klar, dass das KNN-Verfahren bei allen Testvideos zuverlässige Resultate und bei gleicher Zeit liefert. Die Abbildung \ref{fig:vibeknn} stellt die Laufzeit von KNN und Vibe auf einem Rechner mit einem Intel i5 3,20 GHz Prozessor dar.
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{fig/knn_vs_vibe.pdf}
@@ -55,12 +55,11 @@ Anhand der Tabelle \ref{fig:compare_bgsubtraction} wird klar, dass das KNN-Verfa
 	\label{fig:vibeknn}
 \end{figure}
 Die oben genannten Hintergrundsubtraktionsverfahren basieren auf der Änderung der Intensitätswerten jedes Pixel, deshalb liefern die Verfahren ein Binärbild mit Rausch zurück. Um das Rauschen zu entfernen, kommen Erosion und Dilatation zum Einsatz. Die zwei Verfahren sind die grundlegenden Operationen bei der morphologischen Bildverarbeitung, auf der alle anderen morphologischen Operationen basieren. Um das Rauschen zu entfernen, wird das Verfahren Öffnung verwendet. Der Begriff Öffnung bedeutet eine Schachtelung von den Verfahren Erosion und Dilatation hintereinander.
-Die Erosion ist ein Verfahren, dass ein Bild mit einem vordefinierten Filter untersucht und daraus Schlussfolgerungen zieht, wie dieser Filter in die Formen im Bild passt. Wenn ein Pixel und seine Nachbarpixel vollständig von dem Filter überlagert werden, wird das Pixel nicht verändert, sonst wird das Pixel gelöscht. Gelöscht wird indem das Pixel schwarz wird. Angenommen ist $A$ ein Binärbild und $B$ ein Filter mit einem Zentrum in der Mittel von $B$. Wenn $B$ sich in $A$ bewegt, überlagert für jedes Pixel in $A$ der Ursprung von $B$. Wenn $B$ vollständig in $A$ enthalten ist, wird das Pixel bei der Erosion beibehalten, ansonsten gelöscht\cite{zamperoni2013methoden}.\\
-Die folgende Grafik veranschaulicht die Erosion.
+Die Erosion ist ein Verfahren, dass ein Bild mit einem vordefinierten Filter untersucht und daraus Schlussfolgerungen zieht, wie dieser Filter in die Formen im Bild passt. Wenn ein Pixel und seine Nachbarpixel vollständig von dem Filter überlagert werden, wird das Pixel nicht verändert, sonst wird das Pixel gelöscht. Gelöscht wird indem das Pixel schwarz wird. Angenommen ist $A$ ein Binärbild und $B$ ein Filter mit einem Zentrum in der Mittel von $B$. Wenn $B$ sich in $A$ bewegt, überlagert für jedes Pixel in $A$ der Ursprung von $B$. Wenn $B$ vollständig in $A$ enthalten ist, wird das Pixel bei der Erosion beibehalten, ansonsten gelöscht\cite{zamperoni2013methoden}. Die folgende Grafik veranschaulicht die Erosion.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{fig/erosion.pdf}
-	\caption{Die Erosion mit einem 3x3 Filter} 
+	\caption{Die Erosion mit einem 3x3 Filter.} 
 	\label{fig:erosion}
 \end{figure}
 Die Dilatation ist ein gegenteiliges Verfahren zur Erosion, es versucht die Form eines Bildes zu vergrößern. Wenn $B$ sich in $A$ bewegt, überlagert für jedes Pixel in $A$ der Ursprung von $B$. Alle Pixel in $A$, die vollständig von $B$ überlagert sind, werden beibehalten oder markiert \cite{zamperoni2013methoden}.\\
@@ -68,7 +67,7 @@ Die folgende Grafik veranschaulicht die Dilatation.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{fig/dilatation.pdf}
-	\caption{Die Dilatation mit einem 3x3 Filter} 
+	\caption{Die Dilatation mit einem 3x3 Filter.} 
 	\label{fig:dilatation}
 \end{figure}
 Um den Rausch aus der Silhouette zu entfernen wird das Öffnen-Verfahren angewandt. Auf die Silhouette wird zuerst eine Erosion durchgeführt und anschließend eine Dilatation. Durch diese Maßnahme wird die Silhouette zuerst scharfer bzw. alle Punkte, die nicht zur Person auf der Silhouette gehören, gelöscht. Allerdings kann es passieren, dass die Punkte die zur Person gehören etwas undichter werden. Um diesen Fehler zu verbessern und die Silhouette wieder auf die original Größe zurück zu bekommen, wird die Dilatation angewendet. So bleibt am Ende die Silhouette gleich große und ohne Rausch.\\
@@ -76,7 +75,7 @@ Die Abbildung \ref{fig:eroanddila} zeigt, dass nach Erosion unerwartetes Rausche
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\textwidth]{fig/eroanddila.pdf}
-	\caption{Ein Beispiel für die Öffnung (Erosion und Dilatation)}
+	\caption{Ein Beispiel für die Öffnung (Erosion und Dilatation).}
 	\label{fig:eroanddila}
 \end{figure}
 \subsection{Erweiterungen für die Hintergrundsubtraktion}
@@ -98,7 +97,7 @@ Um das oben genannte Problem zu lösen, wo eine sich nicht bewegende Person in da
 \begin{figure}[H]			
 	\centering
 	\includegraphics[width=0.9\textwidth]{fig/mymethode2edited.pdf}
-	\caption{Video:\glqq{}fallen.mp4\grqq{}. Frame-Nummer: 403. Die Liste der Begrenzungsboxen, die sich nicht mit der aktuellen Begrenzungsbox $B_{current}$ überschneiden, werden mit den weißen Rechtecken dargestellt. Die Liste der Begrenzungsboxen, die sich mit der aktuellen Begrenzungsbox $B_{current}$  überschneiden, werden mit den roten Rechtecken dargestellt 
+	\caption{Video:\glqq{}fallen.mp4\grqq{}. Frame-Nummer: 403. Die Liste der Begrenzungsboxen, die sich nicht mit der aktuellen Begrenzungsbox $B_{current}$ überschneiden, werden mit den weißen Rechtecken dargestellt. Die Liste der Begrenzungsboxen, die sich mit der aktuellen Begrenzungsbox $B_{current}$  überschneiden, werden mit den roten Rechtecken dargestellt. 
 	}
 	\label{fig:mymethod3}
 \end{figure}
@@ -241,24 +240,24 @@ Um die Zuverlässigkeit von diesem Verfahren zu überprüfen, wird die Körperhaltun
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{fig/schatzungevaluation.pdf}
-	\caption{Überprüfung der Schätzung der Körperhaltung am Testvideo \glqq{}fallen2.mp4\grqq{}. Die x-Achse stellt die Framenummer dar und die y-Achse ziegt die Indexe der Körperhaltung. Die blaue Gerade ist die Referenz-Körperhaltung und die gelbe Gerade ist die geschätzte Körperhaltung. Die Schätzung der Körperhaltung hat in diesem Beispiel eine Genauigkeit von $76,47\%$} 
+	\caption{Überprüfung der Schätzung der Körperhaltung am Testvideo \glqq{}fallen2.mp4\grqq{}. Die x-Achse stellt die Framenummer dar und die y-Achse ziegt die Indexe der Körperhaltung. Die blaue Gerade ist die Referenz-Körperhaltung und die gelbe Gerade ist die geschätzte Körperhaltung. Die Schätzung der Körperhaltung hat in diesem Beispiel eine Genauigkeit von 76,47\%.} 
 	\label{fig:schatzeva}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{fig/schatzungevaluation2.pdf}
-	\caption{Überprüfung der Schätzung der Körperhaltung an \glqq{}fallen2.mp4\grqq{}. Die Schätzung der Körperhaltung hat in diesem Beispiel eine Genauigkeit von $71,93\%$} 
+	\caption{Überprüfung der Schätzung der Körperhaltung an \glqq{}fallen2.mp4\grqq{}. Die Schätzung der Körperhaltung hat in diesem Beispiel eine Genauigkeit von 71,93\%.} 
 	\label{fig:schatzeva2}
 \end{figure}
 
 \section{Erkennung außergewöhnlicher Situationen}
-Im Abschnitt \ref{chp:BackgroundSubtraction} und \ref{chp:schatzung} wird eine Silhouette durch Bewegungen erstellt und eine Schätzung der Körperhaltung durch die Histogrammanalyse berechnet. Zur Erkennung außergewöhnlicher Situationen wird noch die aktuelle Position der Person in einem bestimmten Zeitraum berücksichtigt. An dieser Stelle ist es wichtig, dass die Anwendung den Unterschied zwischen normalen Bewegungen im Alltag und außergewöhnlichen Situationen erkennt. Wenn beispielsweise die Körperhaltung einer Person als \glqq{}Liegend\grqq{} geschätzt wird, kann es sein, dass die Person auf einem Sofa oder in einem Bett schläft. Wenn die Person im Bett liegt, handelt es sich um eine normale Situation. Deswegen ist es wichtig die Positionen der Möbeln im Raum zu identifizieren. Zur Erkennung dieser Positionen sind vier Ansätze in Betracht gezogen worden. Der erste Ansatz erfordert ein vorhandenes 3D-Modell des Raums, welches durch eine Kamera konstruiert werden kann. Diese Idee hat den Vorteil, dass die Positionen von Möbeln im Raum direkt identifiziert werden können und damit schnell festgestellt wird, ob sich eine Person auf dem Boden oder im Bett liegt. Die Arbeit für die Erstellung des 3D-Modells ist sehr zeitaufwendig und es ist nötig, für jeden neuen Raum ein neues 3D-Modell zu berechnen. Es gibt noch eine andere Techniken zur Identifizierung der Positionen von Möbel im Raum. Der zweite Ansatz betrachtet die \glqq{}Bird Eye View\grqq{}(BEV) Methode. Diese Technik wird bei Automobilen mit Rückfahrkamera angewendet. Der Nachteil ist: BEV braucht exakt eine exakt kalibrierte Kamera und alle Parameter des Kameramodells müssen bekannt sein, damit eine Transformation gemacht werden kann. Außerdem ist ein 2D-Modell der Wohnung benötigt, damit die Möbel in BEV erkannt werden können. Aus diesem Grund ist diese Methode für dieses Projekt nicht anwendbar, weil die Kamera an einer beliebigen Position im Raum aufgestellt werden kann. Der dritte Ansatz ist die neuronale Netze. Diese Methode ist häufig im Bereich von Objekterkennungen angewendet. Um die Objekte richtig zu erkennen, brauchen die neuronale Netze riesige Daten von Objekte. Die neuronale Netze werden anhand der Größe der Datenmenge bei dem Trainieren verbessert. In diesem Projekt wird ein vor-trainiertes Netz zur Erkennung der Möbeln angewendet. Das vor-trainiertes Netz kann ein Sofa mit einer Wahrscheinlichkeit von $28,80\%$ und einen Stuhl mit einer Wahrscheinlichkeit von $25,76\%$ erkennen (siehe Abbildung \ref{fig:nn}). Außerdem ist der Boden auch als ein Sofa, die Testperson als eine Katze falsch klassifiziert. Dies neuronale Netz kann mit mehrere Bilder weiter trainiert, um ein bessere Ergebnis zu liefern. Das Trainieren eines neuronalen Netzes ist aufwendig und benötigt eine große Menge von Bildern. Die sind zwei Beschränkungen dieses Ansatzes. 
+Im Abschnitt \ref{chp:BackgroundSubtraction} und \ref{chp:schatzung} wird eine Silhouette durch Bewegungen erstellt und eine Schätzung der Körperhaltung durch die Histogrammanalyse berechnet. Zur Erkennung außergewöhnlicher Situationen wird noch die aktuelle Position der Person in einem bestimmten Zeitraum berücksichtigt. An dieser Stelle ist es wichtig, dass die Anwendung den Unterschied zwischen normalen Bewegungen im Alltag und außergewöhnlichen Situationen erkennt. Wenn beispielsweise die Körperhaltung einer Person als \glqq{}Liegend\grqq{} geschätzt wird, kann es sein, dass die Person auf einem Sofa oder in einem Bett schläft. Wenn die Person im Bett liegt, handelt es sich um eine normale Situation. Deswegen ist es wichtig die Positionen der Möbeln im Raum zu identifizieren. Zur Erkennung dieser Positionen sind vier Ansätze in Betracht gezogen worden. Der erste Ansatz erfordert ein vorhandenes 3D-Modell des Raums, welches durch eine Kamera konstruiert werden kann. Diese Idee hat den Vorteil, dass die Positionen von Möbeln im Raum direkt identifiziert werden können und damit schnell festgestellt wird, ob sich eine Person auf dem Boden oder im Bett liegt. Die Arbeit für die Erstellung des 3D-Modells ist sehr zeitaufwendig und es ist nötig, für jeden neuen Raum ein neues 3D-Modell zu berechnen. Es gibt noch eine andere Techniken zur Identifizierung der Positionen von Möbel im Raum. Der zweite Ansatz betrachtet die \glqq{}Bird Eye View\grqq{}(BEV) Methode. Diese Technik wird bei Automobilen mit Rückfahrkamera angewendet. Der Nachteil ist: BEV braucht exakt eine exakt kalibrierte Kamera und alle Parameter des Kameramodells müssen bekannt sein, damit eine Transformation gemacht werden kann. Außerdem ist ein 2D-Modell der Wohnung benötigt, damit die Möbel in BEV erkannt werden können. Aus diesem Grund ist diese Methode für dieses Projekt nicht anwendbar, weil die Kamera an einer beliebigen Position im Raum aufgestellt werden kann. Der dritte Ansatz ist die neuronale Netze. Diese Methode ist häufig im Bereich von Objekterkennungen angewendet. Um die Objekte richtig zu erkennen, brauchen die neuronale Netze riesige Daten von Objekte. Die neuronale Netze werden anhand der Größe der Datenmenge bei dem Trainieren verbessert. In diesem Projekt wird ein vor-trainiertes Netz zur Erkennung der Möbeln angewendet. Das vor-trainiertes Netz kann ein Sofa mit einer Wahrscheinlichkeit von 28,80\% und einen Stuhl mit einer Wahrscheinlichkeit von 25,76\% erkennen (siehe Abbildung \ref{fig:nn}). Außerdem ist der Boden auch als ein Sofa, die Testperson als eine Katze falsch klassifiziert. Dies neuronale Netz kann mit mehrere Bilder weiter trainiert, um ein bessere Ergebnis zu liefern. Das Trainieren eines neuronalen Netzes ist aufwendig und benötigt eine große Menge von Bildern. Die sind zwei Beschränkungen dieses Ansatzes. 
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.95\textwidth]{fig/neurolnet.png}
-	\caption{Dritter Meilenstein}
+	\caption{Objekterkennung mit einem neuronalen Netz.}
 	\label{fig:nn}
 \end{figure}
 
@@ -279,7 +278,7 @@ Zuerst müssen die Mitgliederfunktionen der Eingaben definiert werden und die sin
 	\begin{equation}
 	f(a, b, mean) = \frac{1}{1 + |\frac{x - mean}{a}|^{2b}}
 	\end{equation} 
-	\item Die normalen Koordinaten im Raum sind die Positionen, an denen die Testperson normalerweise liegt, sitzt oder steht. Diese wird mit Gaußschen-Funktionen definiert, wobei die Mittelwerte der Funktion $xy$-Koordinaten sind und die Standardabweichung $\sigma = 30$ Pixel beträgt (siehe Abbildungen \ref{fig:fuzzyfunktion}c und \ref{fig:fuzzyfunktion}d). Dies entspricht der Größe eines 1,5m lang Sofas mit einem Abstand 3m von der Kamera. 
+	\item Die normalen Koordinaten im Raum sind die Positionen, an denen die Testperson normalerweise liegt, sitzt oder steht. Diese wird mit Gaußschen-Funktionen definiert, wobei die Mittelwerte der Funktion $xy$-Koordinaten sind und die Standardabweichung $\sigma = 30$ Pixel beträgt (siehe Abbildungen \ref{fig:fuzzyfunktion}c und \ref{fig:fuzzyfunktion}d). Dies entspricht der Größe eines 1,5m lang Sofas mit einem Abstand 3m von der Kamera. Der Wertbereich für die x-Koordinate ist ein Intervall [0, Breite des Bildes] und für y-Koordinate ist ein Intervall [0, Höhe des Bildes].
 	\item Die Ausgabe ist der \glqq{}Status\grqq{}. Dieser besteht aus den Komponenten \glqq{}good\grqq{} und \glqq{}bad\grqq{}, welche als Fuzzymenge zusammengeführt werden. Die Komponente \glqq{}good\grqq{} steht dabei für die Wahrscheinlichkeit, dass es sich um eine normale Situation und \glqq{}bad\grqq{} gibt die Wahrscheinlichkeit an, dass es sich um eine außergewöhnliche Situation handelt. Der \glqq{}Status\grqq{} besitzt damit zwei Gaußsche-Funktionen mit je Standardabweichung $\sigma = 1$ mit Mittelwert $\mu=4$ für abnormale und $\mu=6$ für normale Situationen (siehe Abbildungen \ref{fig:fuzzy1}, \ref{fig:fuzzy2}).
 \end{itemize}  
 
@@ -295,7 +294,7 @@ Die oben vordefinierten Mitgliederfunktionen werden in der Abbildung \ref{fig:fu
 
 Bei Defuzzifizierung, die eine Abbildung der Ausgabe in eine scharfe Mengen durchführt, wird die Schwerpunktmethode verwendet. Die oben vordefinierten Parameter können anhand des Raums und biologischer Uhr der Testperson angepasst werden. Zum Beispiel gibt es in einem Raum nicht nur ein Sofa sondern auch ein Bett, dann müssen die Koordinaten des Bettes noch definiert werden. Das hilft dem Programm zu erkennen, ob eine Person im Bett und nicht auf dem Boden ist. Die Anpassung der Parameter kann durch maschinelles Lernen nach dem Gebrauch des Benutzers verbessert werden.\\
 
-Die Fuzzylogik berechnet, wie hoch die Wahrscheinlichkeit ist, dass sich die aktuelle Situation um eine normale Situation handelt. Für komplexe Anwendungsfälle wurden Gaußsche-Funktionen benutzt, um eine Demo-Software zu realisieren. Es wurde angenommen, dass die Koordinaten von einem Sofa im Raum $(591, 441)$, die aktuelle Zeit $0$ Uhr nachts und $8$ Uhr morgens sind und dass die Testperson an der Position (574, 424) liegt (Wie in die Fuzzymenge in Abbildung \ref{fig:fuzzyfunktion} eingetragen). In dem ersten Testfall, indem die Testperson nachts auf dem Sofa lag, ergab sich die Wahrscheinlichkeit $good=93,29\%$, dass es sich um eine normale Situation handelt. Für eine außergewöhnliche Situation wurde eine Wahrscheinlichkeit von $bad=26,59\%$ berechnet (Abbildung \ref{fig:fuzzy1}). In Regeln \ref{algo:fuzzy_modell} gibt es einen gemischten Fall, wobei die Testperson auf dem Sofa um $8$ Uhr Morgen liegt. Hier ist es gut, wenn die Person auf dem Sofa und nicht auf dem Boden liegt und schlecht, dass die Person morgens auf dem Sofa liegt. Dafür ergab die Rechnung eine Wahrscheinlichkeit von $good=71,6\%$ für eine normale Situation und $bad=49,71\%$ für eine abnormale Situation (Abbildung \ref{fig:fuzzy2}). Eine Situation wird genau dann als schlechte Situation klassifiziert, wenn gilt: $bad \geq 80\%$ und $bad > good$. Diese Bedingungen können wie folgt definiert werden:
+Die Fuzzylogik berechnet, wie hoch die Wahrscheinlichkeit ist, dass sich die aktuelle Situation um eine normale Situation handelt. Für komplexe Anwendungsfälle wurden Gaußsche-Funktionen benutzt, um eine Demo-Software zu realisieren. Es wurde angenommen, dass die Koordinaten von einem Sofa im Raum $(591, 441)$, die aktuelle Zeit $0$ Uhr nachts und $8$ Uhr morgens sind und dass die Testperson an der Position (574, 424) liegt (Wie in die Fuzzymenge in Abbildung \ref{fig:fuzzyfunktion} eingetragen). In dem ersten Testfall, indem die Testperson nachts auf dem Sofa lag, ergab sich die Wahrscheinlichkeit $good$=93,29\%, dass es sich um eine normale Situation handelt. Für eine außergewöhnliche Situation wurde eine Wahrscheinlichkeit von $bad$=26,59\% berechnet (Abbildung \ref{fig:fuzzy1}). In Regeln \ref{algo:fuzzy_modell} gibt es einen gemischten Fall, wobei die Testperson auf dem Sofa um $8$ Uhr Morgen liegt. Hier ist es gut, wenn die Person auf dem Sofa und nicht auf dem Boden liegt und schlecht, dass die Person morgens auf dem Sofa liegt. Dafür ergab die Rechnung eine Wahrscheinlichkeit von $good$=71,6\% für eine normale Situation und $bad$=49,71\% für eine abnormale Situation (Abbildung \ref{fig:fuzzy2}). Eine Situation wird genau dann als schlechte Situation klassifiziert, wenn gilt: $bad \geq 80\%$ und $bad > good$. Diese Bedingungen können wie folgt definiert werden:
 \begin{eqnarray}
 \texttt{Situation schlecht} &\Leftrightarrow& bad \geq 80\% \wedge bad > good \\
 \texttt{Situation gut} &\Leftrightarrow& bad < 80\% \vee bad <= good

@@ -1,21 +1,38 @@
 \chapter{Ergebnisse und Evaluation}\label{chp:ergebnisse}
-Die festgelegten Ziele in Abschnitt \ref{chp:Ziele} wurden in der fertig entwickelten Anwendung vollständig erreicht. Um die Qualität der Software zu überprüfen, wurden eine Reihe von selbst erstellten Testvideos als Eingabe verwendet. Diese Videos wurden bei Bosch in zwei dafür vorgesehenen Räumen gedreht. Um das entwickelte Programm zu testen, wurden in den Videos einige Szenarien von Personen in verschiedenen Situationen simuliert. Dabei sollte die Software erkennen, ob es sich um eine normale oder außergewöhnliche Situation handelt. In einigen Videos haben sich Personen auf den Boden gelegt und sich dann nicht mehr bewegt. In anderen Videos haben sich Menschen auf ein Sofa gesetzt und sind danach darauf eingeschlafen. Dabei wurden die Situation bei Tag und Nacht durchgespielt und bei variierenden Anzahl an Personen im Raum. Dabei konnten die Menschen das Zimmer verlassen und wieder hineinkommen, um zu überprüfen, ob sie erneut von der Software erkannt werden. Das Programm hat in allen Fällen gute Ergebnisse geliefert. Die Software konnte dabei nicht jeden Frame der Kamera richtig klassifizieren. Dennoch wurden alle außergewöhnlichen Situationen erkannt. Das folgt daraus, dass die außergewöhnlichen Situationen erst nach $30$ hintereinander folgenden Frames mit der Klassifizierung \glqq{}$bad$\grqq{} erkannt werden. Es gab somit bei manchen Situationen eine kleine Verzögerung, bis diese richtig klassifiziert wurden. Auch die Kamera wurde an verschiedenen Orten im Raum positioniert, um die Arbeitsweise der Hintergrundsubtraktion zu untersuchen.\\
+Die festgelegten Ziele in Abschnitt \ref{chp:Ziele} wurden in der fertig entwickelten Anwendung vollständig erreicht. Um die Qualität der Software zu überprüfen, wurden eine Reihe von selbst erstellten Testvideos als Eingabe verwendet. Diese Videos wurden bei Bosch in zwei dafür vorgesehenen Räumen gedreht. Um das entwickelte Programm zu testen, wurden in den Videos einige Szenarien von Personen in verschiedenen Situationen simuliert. Die außergewöhnliche Situationen sind von $30\%$ bis $40\%$ in den Testvideos vorhanden. Dabei sollte die Software erkennen, ob es sich um eine normale oder außergewöhnliche Situation handelt. In einigen Videos haben sich Personen auf den Boden gelegt und sich dann nicht mehr in $t=30$ Frames bewegt und diese Situation soll als einen Unfall erkannt werden. In anderen Videos haben sich Menschen auf ein Sofa gesetzt und sind danach darauf eingeschlafen. Dabei wurden die Situation bei Tag und Nacht durchgespielt und bei variierenden Anzahl an Personen im Raum. Dabei konnten die Menschen das Zimmer verlassen und wieder hineinkommen, um zu überprüfen, ob sie erneut von der Software erkannt werden. Das Programm hat in allen Fällen gute Ergebnisse geliefert. Die Software konnte dabei nicht jeden Frame der Kamera richtig klassifizieren. Dennoch wurden alle außergewöhnlichen Situationen erkannt. Das folgt daraus, dass die außergewöhnlichen Situationen erst nach $t=30$ hintereinander folgenden Frames mit der Klassifizierung \glqq{}$bad$\grqq{} erkannt werden. Es gab somit bei manchen Situationen eine kleine Verzögerung, bis diese richtig klassifiziert wurden. Das Programm wird mit dem Parameter $t=1$ und $t=30$ ausgeführt. $t=1$ bedeutet, wenn eine außergewöhnliche Situation auf einem Bild erkannt wird, wird sofort ein Alarm ausgelöst.  $t=30$ heißt, wenn eine außergewöhnliche Situation in $30$ hintereinander folgenden Frames passiert, wird der Alarm erst ausgelöst. Die Abbildung \ref{fig:zeitlichroc} zeigt die ROC-Kurve zur Bewertung des Programms mit den zweit Parameter $t=1$ und $t=30$. Auch die Kamera wurde an verschiedenen Orten im Raum positioniert, um die Arbeitsweise der Hintergrundsubtraktion zu untersuchen.\\
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{fig/zeitlichroc.pdf}
+	\caption{ROC-Kurve zur Bewertung des Programms mit den zweit Parameter $t=1$ und $t=30$.} 
+	\label{fig:zeitlichroc}
+\end{figure}
+
 Die verwendete Kamera  hat eine Auflösung von 1080x720 Pixel und eine Frame-Rate von 15 FPS. Um einer Echtzeitanwendung gerecht zu werden, muss die Software damit mindestens 15 Bilder pro Sekunde klassifizieren und berechnen können. Dazu wurden einige Tests durchgeführt, um die Geschwindigkeit der Berechnung zu bestimmen. Es stellte sich heraus, dass das Programm durchschnittlich 59 Millisekunden pro Bild braucht, um dieses der zugehörigen Klasse zuzuordnen und kann somit 16 Frames jede Sekunde klassifizieren. Diese und die folgenden Tests wurden alle auf einem Rechner mit einem Intel i5 3,20 GHz Prozessor und 16 GB RAM.
 In der folgenden Abbildung \ref{fig:laufzeit} wurde eine Laufzeitmessung mit 1000 Frames durchgeführt. Dabei wurde auf der X-Achse die Nummer des Bildes und auf der Y-Achse die dazugehörige Laufzeit abgetragen. Die rote Linie stellt die durchschnittliche Laufzeit dar.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{fig/laufzeit.pdf}
-	\caption{Gemessene Laufzeiten von 1000 Bildern} 
+	\caption{Gemessene Laufzeiten von 1000 Bildern.} 
 	\label{fig:laufzeit}
+\end{figure}
+
+Die Anwendung wird sowohl mit ASB Methode als auch mit KNN-Plus-ASB Methode getestet. Außerdem wird eine Skalierung des Eingabebildes auf 854x450 Pixel durch KNN-Plus-ASB Methode angewendet, um das Programm zu bewerten. Die Abbildung \ref{fig:laufzeit3} stellt die durchschnittliche Laufzeit des Programms mit den ASB, KNN-Plus-ASB und Skalierung des Eingabebildes dar. Mit ASB braucht das Programm 22 Millisekunden und mit KNN-Plus-ASB sind 59 Millisekunden benötigt, um ein Bild zu verarbeiten. Mit einer Skalierung des Eingabebildes auf 854x450 Pixel wird das Verhältnis von der Breite und Höhe des Bildes nicht geändert und die durchschnittlichen Laufzeiten betrugen 29 Millisekunden.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\textwidth]{fig/laufzeit3.pdf}
+	\caption{Gemessene Laufzeiten des Programm mit ASB, KNN-Plus-ASB und Skalierung des Eingabebildes.} 
+	\label{fig:laufzeit3}
 \end{figure}
 
 In Abbildung \ref{fig:alarm} wurden drei Videos mit dem Programm untersucht. Die normalen und außergewöhnlichen Situationen in diesen Videos sind bereits bekannt. Die Software wurde zum analysieren der Frames verwendet und anschließend die Klassifikationen des Programms mit den bereits bekannten Zuordnungen der Bilder verglichen. Die X-Achse nummeriert die Frames und die Y-Achse stellt die Zuordnung des Bildes dar. bei $y=1$ handelt es sich um eine normale Situation und bei $y=0$ um eine außergewöhnliche Situation. Die blaue Kurve stellt dabei die richtige bzw. bereits bekannte Zuordnung und die gelbe Kurve die berechnete Klassifikation dar.\\
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.9\textwidth]{fig/alarmevaluation2.pdf}
-	\caption{Richtige Zuordnungen (blau) und berechnete Zuordnung (gelb) der Bilder grafisch dargestellt} 
+	\includegraphics[width=0.65\textwidth]{fig/alarmevaluation2.pdf}
+	\caption{Richtige Zuordnungen (blau) und berechnete Zuordnung (gelb) der Bilder grafisch dargestellt.} 
 	\label{fig:alarm}
 \end{figure}
 
@@ -24,7 +41,7 @@ Um eine bessere Übersicht über die Zielgenauigkeit des Programms zu schaffen, wu
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{fig/ROC2.pdf}
+	\includegraphics[width=1\textwidth]{fig/roc3.pdf}
 	\caption{ROC-Kurze zur Bewertung des Programms.} 
 	\label{fig:roc}
 \end{figure}
@@ -69,7 +86,7 @@ Während der Entwicklung der Software wurden zwei signifikante Methoden implement
 		& 854x450 & 0,913 & 0,021 & 0,911 & 0,033 & 0,918\\
 		\hline
 	\end{tabular}
-	\caption{Auswertung der verschiedenen Methoden mit ohne Skalierung des Bilds}
+	\caption{Auswertung der verschiedenen Methoden mit ohne Skalierung des Bilds.}
 	\label{tbl:auswertung}
 \end{table}
 

@@ -32,12 +32,12 @@
 \contentsline {section}{\numberline {3.3}Erkennung au\IeC {\ss }ergew\"ohnlicher Situationen}{41}{section.3.3}
 \contentsline {section}{\numberline {3.4}Anpassung des Verfahrens auf nicht-statische Kameras}{50}{section.3.4}
 \contentsline {chapter}{\numberline {4}Ergebnisse und Evaluation}{56}{chapter.4}
-\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{62}{chapter.5}
-\contentsline {chapter}{Literaturverzeichnis}{67}{chapter*.9}
-\contentsline {chapter}{Abk\"urzungsverzeichnis}{72}{chapter*.10}
-\contentsline {chapter}{Abbildungsverzeichnis}{74}{chapter*.11}
-\contentsline {chapter}{Tabellenverzeichnis}{77}{chapter*.12}
-\contentsline {chapter}{Liste der Algorithmen}{79}{section*.13}
-\contentsline {chapter}{Listings}{81}{section*.15}
-\contentsline {chapter}{\numberline {A}Anhang}{83}{appendix.A}
-\contentsline {chapter}{Danksagung}{84}{chapter*.19}
+\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{63}{chapter.5}
+\contentsline {chapter}{Literaturverzeichnis}{68}{chapter*.6}
+\contentsline {chapter}{Abk\"urzungsverzeichnis}{73}{chapter*.7}
+\contentsline {chapter}{Abbildungsverzeichnis}{75}{chapter*.8}
+\contentsline {chapter}{Tabellenverzeichnis}{78}{chapter*.9}
+\contentsline {chapter}{Liste der Algorithmen}{80}{section*.10}
+\contentsline {chapter}{Listings}{82}{section*.12}
+\contentsline {chapter}{\numberline {A}Anhang}{84}{appendix.A}
+\contentsline {chapter}{Danksagung}{85}{chapter*.16}

@@ -3,15 +3,18 @@ In diesem Projekt handelt es sich um eine Anwendung, die außergewöhnliche Situat
 
 Ziel dieses Projekt ist die Entwicklung eine Anwendung, das Videos einer 360° Kamera von Bosch verarbeitet. Das Programm soll eine Bewegung von einer Person erkennen, analysiert und Informationen geben, ob die Person in einer außergewöhnlichen Situation ist. Um eine abnormale Situation handelt es sich beispielsweise, wenn eine Person für längere Zeit an einem Ort liegt. Um dieses Ziel zu realisieren, wurde das Programm aus drei großen Meilensteinen gebaut (Abbildung \ref{fig:zusammenfassung}).
 
-\subsubsection*{Erster Meilenstein: Hintergrundsubtraktion}
+\begin{itemize}
+	
+\item{Erster Meilenstein:}
 Der erste Meilenstein ist die Hintergrundsubtraktion. In diesem Schritt wird ein Bild als die Eingabe mit einem Hintergrundbild verglichen. Der Unterschied zwischen Eingabebild und Hintergrundbild wird zuerst berechnet und ein Binärbild des Vordergrundes wird danach zurückgeliefert. Das Binärbild stellt eine Silhouette der Person ohne den Hintergrund dar. Das normale Hintergrundsubtraktion-Verfahren hat einen Nachteil, wenn die Person lange sich nicht mehr bewegt, wird die Person in das Hintergrund integriert. Deswegen kann diese Anwendung nicht mehr erkennen, wenn die Person nach einem Unfall sich nicht mehr bewegt. Eine eigene Methode wird in diesem Projekt entwickelt. Die Methode aktualisiert nicht das ganze Hintergrundbild, sondern nur die Begrenzungsboxen, die vergangene Silhouetten enthalten, auf dem Hintergrundbild werden aktualisiert. Diese Methode ist \glqq{}Aktualisierung der selektiven Begrenzungsboxen\grqq{} (ASB) genannt. Obwohl diese Methode eine nicht bewegende Person erkennen kann, ergibt sich das Binärbild dieser Methode einige Rauschen.	Eine eigene Methode der Hintergrundsubtraktion wird erweitert. Diese Erweiterung ist eine Kombination von der ASB-Methode und der KNN-Methode in der Arbeit \cite{zivkovic2006efficient} von Zivkovic. Diese Erweiterung ist \glqq{}KNN-Plus-ASB\grqq{} genannt. Bei Aktualisierung des Hintergrundmodells wird das Unterbild des Hintergrundbildes, auf dem es eine Bewegung gibt, nicht betrachtet. Diese Methode kann eine Person erkennen, obwohl die Person sich nicht in der Szene weiter bewegt. Zum Vergleichen mit der ASB-Methode liefert KNN-Plus-ASB bessere Silhouetten in dieser Anwendungsfall. 
 
-\subsubsection*{Zweiter Meilenstein: Schätzung der Körperhaltung}
+\item{Zweiter Meilenstein:}
 In dem zweiten Schritt wird die beschränkte Silhouette von dem letzten Schritt weiter analysiert, um die Körperhaltung der Person zu erkennen. Die Silhouette wird zuerst von der Breite oder Höhe auf 128 Pixel skaliert. Aus dem skalierten Bild werden vertikale und horizontale Histogramme gerechnet. Die Histogramme werden weiter mit Referenz-Histogrammen, die aus 4500 Silhouetten von 7 verschiedenen Personen mit 4 Körperhaltungen (Liegen, Stehen, Beugen, Sitzen) berechnet wurden \cite{haritaoglu1998ghost}, verglichen. Nach dem Vergleichen wird die Körperhaltung mit  einem maximalen Wert von Loglikelihood-Funktion ausgewertet.
 
-\subsubsection*{Dritter Meilenstein: Fuzzylogik}
+\item{Dritter Meilenstein:}
 In letztem Schritt wird eine Fuzzylogik angewendet. Diese Methode berechnet einfach wie hoch die Wahrscheinlichkeit ist, dass eine Person unter bestimmten Bedingungen in einer abnormalen Situation ist. Mit Hilfe von der Begrenzungsbox der Silhouette wird ein \inlinecode{C++}{Person}-Objekt aufgebaut, damit die Kamera die gleiche Person in der Szene folgen kann. Die Bedingung für einen abnormalen Fall ist: Wenn eine Person auf dem Boden in einem vordefinierten Zeitraum (für Testen sind 30 Bildern genommen, aber das Parameter kann für spezielle Fälle modifiziert werden) liegt und sich nicht mehr bewegt.\\
 
+\end{itemize}
 Ein Feature der Bosch-360-Grad Kamera ist die Fähigkeit, in die Richtigen der Bewegung zu orientieren. Nach der Drehung der Kamera wird das ganze Hintergrundmodell neu aktualisiert, um die Erkennung der Bewegung durch die Hintergrundsubtraktion richtig zu machen. Dies liefert nach Rotation des Kamerakopfes gleichbleibende Ergebnisse wie beim Stillstand der Kamera.\\
 \begin{figure}[H]
 	\centering

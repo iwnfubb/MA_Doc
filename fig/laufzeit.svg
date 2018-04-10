@@ -13,9 +13,9 @@
    version="1.1"
    inkscape:version="0.91 r13725"
    xml:space="preserve"
-   width="564.125"
-   height="289.75"
-   viewBox="0 0 564.12499 289.74999"
+   width="544.8255"
+   height="256.2926"
+   viewBox="0 0 544.82549 256.29259"
    sodipodi:docname="laufzeit.svg"><metadata
      id="metadata11385"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
@@ -328,8 +328,8 @@
      id="namedview11381"
      showgrid="false"
      inkscape:zoom="1.2685458"
-     inkscape:cx="372.94293"
-     inkscape:cy="306.38772"
+     inkscape:cx="368.54843"
+     inkscape:cy="218.16221"
      inkscape:window-x="1912"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -341,11 +341,7 @@
      id="g11387"
      inkscape:groupmode="layer"
      inkscape:label="laufzeit"
-     transform="matrix(1.25,0,0,-1.25,-98.361229,962.4)"><path
-       d="m 78.688983,538.12 451.299997,0 0,231.8 -451.299997,0 0,-231.8 z"
-       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none"
-       id="path11389"
-       inkscape:connector-curvature="0" /><path
+     transform="matrix(1.25,0,0,-1.25,-102.75573,948.91696)"><path
        d="m 121.73,601.56 390.57,0 M 121.73,618 512.3,618 m -390.57,16.44 390.57,0 m -390.57,16.44 390.57,0 m -390.57,16.32 390.57,0 m -390.57,16.44 390.57,0 m -390.57,16.44 390.57,0 m -390.57,16.32 390.57,0 m -390.57,16.43 390.57,0"
        style="fill:none;stroke:#d9d9d9;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
        id="path11391"
@@ -538,7 +534,7 @@
              sodipodi:role="line"
              id="tspan11971">Laufzeit</tspan></text>
 </g></g><path
-       style="fill:none;fill-rule:evenodd;stroke:#fe0000;stroke-width:0.4;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       style="fill:none;fill-rule:evenodd;stroke:#fe0000;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 121.57273,632.7165 390.68358,0"
        id="path12523"
        inkscape:connector-curvature="0" /></g></svg>

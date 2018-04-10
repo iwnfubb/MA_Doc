@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.9)  10 APR 2018 01:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.9)  10 APR 2018 02:33
 entering extended mode
 **./main.tex
 (main.tex
@@ -1301,19 +1301,19 @@ ame identifier (name{figure.3.14}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.240 
        <./fig/schatzung3.pdf>]
-<fig/schatzungevaluation.pdf, id=983, 1376.38986pt x 1105.22481pt>
+<fig/schatzungevaluation.pdf, id=983, 1468.14917pt x 1178.90646pt>
 File: fig/schatzungevaluation.pdf Graphic file (type pdf)
 
 <use fig/schatzungevaluation.pdf>
 Package pdftex.def Info: fig/schatzungevaluation.pdf used on input line 243.
-(pdftex.def)             Requested size: 418.25555pt x 335.85355pt.
+(pdftex.def)             Requested size: 418.25555pt x 335.84792pt.
 
-<fig/schatzungevaluation2.pdf, id=984, 1355.58104pt x 1104.49884pt>
+<fig/schatzungevaluation2.pdf, id=984, 1445.9531pt x 1178.13208pt>
 File: fig/schatzungevaluation2.pdf Graphic file (type pdf)
 
 <use fig/schatzungevaluation2.pdf>
 Package pdftex.def Info: fig/schatzungevaluation2.pdf used on input line 250.
-(pdftex.def)             Requested size: 418.25555pt x 340.77318pt.
+(pdftex.def)             Requested size: 418.25555pt x 340.78667pt.
  [40pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
 15}) has been already used, duplicate ignored
 
@@ -1712,7 +1712,7 @@ MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><D:/Program Files/MiKTeX 2
 blic/amsfonts/cm/cmsy8.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmti10.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
 cmtt10.pfb>
-Output written on main.pdf (95 pages, 60214572 bytes).
+Output written on main.pdf (95 pages, 60218796 bytes).
 PDF statistics:
  1778 PDF objects out of 2073 (max. 8388607)
  283 named destinations out of 1000 (max. 500000)

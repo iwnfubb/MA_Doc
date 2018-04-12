@@ -306,7 +306,7 @@ Die Fuzzylogik berechnet, wie hoch die Wahrscheinlichkeit ist, dass sich die akt
 \begin{algorithm}[H]
 	\caption{Regeln für die Auswertung einer Situation}
 	\label{algo:fuzzy_modell}
-	\If{(posture IS laying) AND (NOT xposition IS good) OR (NOT yposition IS good)}{status IS bad;}
+	\If{(posture IS laying) AND ((NOT xposition IS good) OR (NOT yposition IS good))}{status IS bad;}
 	\If{(posture IS laying) AND (xposition IS good) AND (yposition IS good)}{status IS good;}
 	\If{(posture IS laying) AND (time IS day)}{status IS bad;}
 	\If{(posture IS standing) AND (time IS day)}{status IS good;}

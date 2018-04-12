@@ -4,9 +4,9 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Vergleiche von 1. AGMM 2. KNN 3. KDE 4. Vibe}}{20}{table.3.1}
-\contentsline {table}{\numberline {3.2}{\ignorespaces Vergleiche von ASB und KNN-Plus-ASB. Je kleiner der \glqq {}MSE\grqq {} Wert ist, desto besser ist das Ergebnis. Je gr\"o\IeC {\ss }er der \glqq {}SSIM\grqq {} Wert ist, desto besser ist das Ergebnis.}}{31}{table.3.2}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Vergleiche von 1. AGMM 2. KNN 3. KDE 4. Vibe}}{19}{table.3.1}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Vergleiche von ASB und KNN-Plus-ASB. Je kleiner der \glqq {}MSE\grqq {} Wert ist, desto besser ist das Ergebnis. Je gr\"o\IeC {\ss }er der \glqq {}SSIM\grqq {} Wert ist, desto besser ist das Ergebnis.}}{30}{table.3.2}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Auswertung der verschiedenen Methoden mit ohne Skalierung des Bilds.}}{58}{table.4.1}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Auswertung der verschiedenen Methoden mit ohne Skalierung des Bilds.}}{57}{table.4.1}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

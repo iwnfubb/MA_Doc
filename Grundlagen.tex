@@ -11,7 +11,7 @@ In der Arbeit \cite{benezeth2010comparative} wird eine vergleichende Studie vers
 	\item \textbf{Aktualisierung des Hintergrundmodells}: Während dieses Aktualisierungsprozesses werden auch Bilder analysiert, um das Hintergrundmodell regelmäßig zu aktualisieren. Die Pixel, die sich längere Zeit nicht geändert haben, sollte Hintergrundpixel sein. Hier wird eine Art von Historie verwaltet. Aktualisierungen löschen nicht zwingend die vorhanden Bildern des Hintergrundmodells. Es werden neue Bilder hinzugefügt. Die Historie hat eine definierte maximal Größe. Die am ältesten vorhanden Bilder des Hintergrundmodells werden gelöscht, wenn die maximal Größe der Historie erreicht wurde, um Platz für Aktualisierungen zu schaffen.
 \end{itemize}
 
-\begin{figure}[H]
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=1\textwidth]{fig/BS_Example.pdf}
 	\caption{Ein Beispiel für die Hintergrundsubtraktion. }
@@ -79,7 +79,7 @@ Mit der K-NN-Methode befinden sich große Kerne in den Gebieten mit einer kleinen
 
 \subsection{Vibe}
 In \cite{barnich2009vibe} wird ein Verfahren beschrieben, welches eine zufällige Aggregation der Hintergrundsubtraktion verwendet. Das Verfahren wird \glqq{}ViBe\grqq{} genannt. Sei $p_t(x)$ ein Pixelwert $x$ zur Zeit $t$. Beim \acs{GMM}- oder \acs{KDE}-Modell wird ein Pixelwert $p_t(x)$ als Hinter- oder Vordergrund klassifiziert, abhängig davon, wie des Pixel mit der Dichtefunktion des Modells passt. In \glqq{}ViBe\grqq{} wird eine Menge von Stichprobenwerten als Pixelmodell verwendet. Um einen Wert $p_t(x)$ zu klassifizieren, wird der Wert mit seinen nächstliegenden Werten in der Menge der Stichproben verglichen, indem eine Kugel $S_R(p_t(x))$ mit Radius $R$ und Punkt $p_t(x)$ definiert wird. Ein Pixel ist genau dann als Hintergrund klassifiziert, wenn die Überschneidung $\sharp$ von der Kugel $S_R(p_t(x))$ und die Menge von Punkten ${p_1, p_2, ..., p_n}$ mehr als der Schwellenwert $\sharp_{min}$ ist (siehe Abbildung ~\ref{fig:vibe}).
-\begin{figure}[H]
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=0.5\textwidth]{fig/vibe.pdf}
 	\caption{Die Klassifizierung von $p_t(x)$ basiert auf die Überschneidung der Kugel $S_R(p_t(x))$ mit der Menge der Stichproben \cite{barnich2009vibe}.}
@@ -89,7 +89,7 @@ Im nächsten Kapitel wird ein Vergleich der vier oben genannten Verfahren und mei
 \section{Histogrammanalyse}\label{sec:Histogrammanalyse}
 Ein Histogramm eines Bilds stellt die Tonwertverteilung in einem digitalen Bild graphisch dar. Ein Bildhistogramm zeichnet die Anzahl der Pixel für jeden Tonwert auf. Es bietet ein nützliches Werkzeug für die $Schwellwertbildung$ auf dem Gebiet der Computervision an. Die graphische Darstellung von Histogrammen enthält Informationen über die Pixelverteilung als eine Funktion der Tonvariation, deswegen lassen sich Bild-Histogramme auf Hoch- und Tiefpunkte analysieren \cite{suttonhistograms}.\\ 
 Jede Körperhaltung erzeugt ein unterschiedliches Muster von Histogrammen, deswegen kann das Projektions-Histogramm als eins der Eigenschaften verwendet werden, um unterschiedliche Körperhaltung zu unterscheiden. Nach der Hintergrundsubtraktion wird eine Silhouette des Vordergrundes als Binärbild erstellt. Eine Körperhaltungsanalyse wird auf die Silhouette angewendet, um die Ähnlichkeiten der horizontalen und vertikalen Projektions-Histogramme der erkannten Silhouette und der Haupthaltungen (Stehen, Beugen, Liegen und Sitzen) zu berechnen. Die Normalisierung des durchschnittlichen Histogramms erfolgt durch die Skalierung auf 128 Pixel der Silhouette indem sowohl Höhe und Breite skaliert werden, bis beide Größen kleiner oder gleich 128 Pixel aufweisen. Dabei wird das ursprünglichen Seitenverhältnis nicht verändert. \cite{haritaoglu1998ghost}. Normalisierte horizontale und vertikale Referenz-Histogramme für jede Körperhalterung wurden experimentell unter Verwendung von $4500$ Silhouetten von $7$ verschiedenen Personen berechnet \cite{haritaoglu1998ghost} (siehe Abbildung ~\ref{fig:histogramm}).   
-\begin{figure}[H]
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=1\textwidth]{fig/histogramm.pdf}
 	\caption{Normalisierte horizontale und vertikale Referenz-Histogramme für jede Körperhaltung \cite{haritaoglu1998ghost}.}
@@ -141,11 +141,12 @@ Die Abbildung \ref{fig:Fuzzy_Example} stellt diese drei Schritte der Fuzzylogik 
 Die Berechnung und graphische Darstellung der Fuzzylogik in dieser Arbeit werden mit der Open-Source-Bibliothek \glqq{}jFuzzyLogic\grqq{} realisiert.
 \section{OpenCV Framework}\label{sec:OpenCV}
 OpenCV steht für Open-Computer-Vision. Die Bibliothek ist in C und C++ programmiert und kann auf vielen Betriebsystemen verwendet werden. OpenCV kann auch mithilfe von Java, Python, Ruby, Mathlab... verwendet werden. OpenCV wurde mit Fokus auf Recheneffizienz entwickelt, um Echtzeitanwendungen zu unterstützen. Diese Bibliothek enthält über 500 Funktionen, die viele Bereiche der Bildverarbeitung einschließlich maschinellem Lernen, neuronaler Netze, usw. umfassen\cite{bradski2008learning}. OpenCV vereinfacht den Bildverarbeitungsprozess mit vielen hilfreichen vordefinierten Funktionen. Da es sich in dieser Arbeit um ein Echtzeitanwendung handelt, wird auf OpenCV gesetzt, um die Verarbeitungszeit gering zu halten.
+
 \section{360° Kamera}
 Ziel dieser Arbeit war es, eine Echtzeitanwendung zu entwickeln die mit der Bosch Smart Home Innenkamera funktioniert. Die Testvideos in dieser Arbeit wurden mit dieser Kamera aufgenommen. Die Bosch 360° Innenkamera kann sich in jede Richtung (360°) drehen. Die Kamera verfügt über Bewegungssensoren, eine Gegensprechanlage für Zwei-Wege-Audio und Infrarot-Nachtsicht-Funktion. Sie zeichnet Bild-Material in HD-Qualität auf. Das Bild-Material kann auf PC bzw. externen Speicher kopiert werden. Die Innenkamera verfügt über verschiedene Schnittstellen wie zum Beispiel WLAN. Die Internetverbindung wird von der Kamera genutzt, um Push-Nachrichten an ein Smartphone zu schicken. Dank der integrierten Bewegungsmelder kann die Kamera einer Bewegung folgen bzw. sich automatisch drehen, um das bewegte Objekt im Bild zu halten. Dies ist in dieser Arbeit sehr hilfreich.
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{fig/BoschInnenkamera.jpg}
+	\includegraphics[width=0.5\textwidth]{fig/BoschInnenkamera.jpg}
 	\caption{Bosch 360° Kamera (Quelle: www.bosch-smarthome.com) } 
 	\label{fig:BoschInnenCam}
 \end{figure}

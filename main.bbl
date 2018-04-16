@@ -130,19 +130,19 @@
 \newblock In \emph{International Symposium on Visual Computing} (2005),
   Springer, pp.~337--346.
 
-\bibitem[LÃ¼08]{bworld}
-\textsc{LÃ¼tkebohle I.}:
-\newblock {BWorld Robot Control Software}.
-\newblock
-  \url{http://aiweb.techfak.uni-bielefeld.de/content/bworld-robot-control-software/},
-  2008.
-\newblock [Online; accessed 19-July-2008].
-
 \bibitem[LHS{\etalchar{*}}05]{lindemann2005evaluation}
 \textsc{Lindemann U., Hock A., Stuber M., Keck W., Becker C.}:
 \newblock Evaluation of a fall detector based on accelerometers: A pilot study.
 \newblock \emph{Medical and Biological engineering and computing 43}, 5 (2005),
   548--551.
+
+\bibitem[Lüt08]{bworld}
+\textsc{Lütkebohle I.}:
+\newblock {BWorld Robot Control Software}.
+\newblock
+  \url{http://aiweb.techfak.uni-bielefeld.de/content/bworld-robot-control-software/},
+  2008.
+\newblock [Online; accessed 19-July-2008].
 
 \bibitem[MPWSH16]{marki2016bilateral}
 \textsc{M{\"a}rki N., Perazzi F., Wang O., Sorkine-Hornung A.}:

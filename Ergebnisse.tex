@@ -20,7 +20,7 @@ Die Anwendung wird sowohl mit ASB Methode als auch mit KNN-Plus-ASB Methode gete
 	\label{fig:laufzeit3}
 \end{figure}
 
-In Abbildung \ref{fig:alarm} wurden drei Videos mit dem Programm untersucht. Die normalen und außergewöhnlichen Situationen in diesen Videos sind bereits bekannt. Die Software wurde zum analysieren der Frames verwendet und anschließend die Klassifikationen des Programms mit den bereits bekannten Zuordnungen der Bilder verglichen. Die X-Achse nummeriert die Frames und die Y-Achse stellt die Zuordnung des Bildes dar. Bei $y=1$ handelt es sich um eine normale Situation und bei $y=0$ um eine außergewöhnliche Situation. Die blaue Kurve stellt dabei die richtige bzw. bereits bekannte Zuordnung und die gelbe Kurve die berechnete Klassifikation dar.\\
+In Abbildung \ref{fig:alarm} wurden drei Videos (Testvideo1.mp4,Testvideo2.mp4, Testvideo3.mp4) mit dem Programm untersucht. Die normalen und außergewöhnlichen Situationen in diesen Videos sind bereits bekannt. Die Software wurde zum analysieren der Frames verwendet und anschließend die Klassifikationen des Programms mit den bereits bekannten Zuordnungen der Bilder verglichen. Die X-Achse nummeriert die Frames und die Y-Achse stellt die Zuordnung des Bildes dar. Bei $y=1$ handelt es sich um eine normale Situation und bei $y=0$ um eine außergewöhnliche Situation. Die blaue Kurve stellt dabei die richtige bzw. bereits bekannte Zuordnung und die gelbe Kurve die berechnete Klassifikation dar.\\
 
 \begin{figure}[H]
 	\centering
@@ -34,7 +34,7 @@ Um eine bessere Übersicht über die Zielgenauigkeit des Programms zu schaffen, wu
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{fig/finalROC.pdf}
+	\includegraphics[width=0.8\textwidth]{fig/finalROC.pdf}
 	\caption{ROC-Kurze zur Bewertung des Programms.} 
 	\label{fig:roc}
 \end{figure}
@@ -47,43 +47,25 @@ Während der Entwicklung der Software wurden zwei signifikante Methoden implement
 	\centering
 	
 	
-	\begin{tabular}[H]{|c|c|cc|cc|c|}
+	\begin{tabular}[H]{|c|cc|cc|c|}
 		\hline 
-		\multicolumn{2}{|c|}{\multirow{ 2}{*}{}} & \multicolumn{5}{c|}{abnormale Situation}\\
-		\cline{3-7}
-		\multicolumn{2}{|c|}{}& TNR & FNR & TPR & FPR & ACC\\
+		{\multirow{ 2}{*}{}} & \multicolumn{5}{c|}{abnormale Situation}\\
+		\cline{2-6}
+		& TPR & FPR & TNR & FNR & ACC\\
 		\hline
 		
-		\multirow{ 2}{*}{\rotatebox[origin=c]{90}{{ Video 1 }}} & ASB & 0,869 & 0,037 & 0,962 & 0,0085 & 0,927\\
+		ASB & 0,697 & 0,222 & 0,777 & 0,302 & 0,754\\
 		
-		& KNN-Plus-ASB & 0,762 & 0,11 & 0,889 & 0,053 & 0,917\\
+		KNN-Plus-ASB 1280x720& 0,815 & 0,088 & 0,911 & 0,184 & 0,883\\
 		
-		& 854x450 & 0,762 & 0,014 & 0,985 & 0,217 & 0,846\\
-		
-		\hline
-		
-		\multicolumn{7}{|c|}{}\\
-		\hline
-		\multirow{ 2}{*}{\rotatebox[origin=c]{90}{{ Video 2 }}} & ASB & 0,748 & 0,030 & 0,993 & 0,128 & 0,888\\
-		
-		& KNN-Plus-ASB & 0,763 & 0,024 & 0,996 & 0,111 & 0,903\\
-		
-		& 854x450 & 0,755 & 0,033 & 0,988 & 0,116 & 0,896\\
-		\hline
-		\multicolumn{7}{|c|}{}\\
-		\hline
-		\multirow{ 2}{*}{\rotatebox[origin=c]{90}{{ Video 3 }}} & ASB & 0,805 & 0,058 & 0,763 & 0,080 & 0,795\\
-		
-		& KNN-Plus-ASB & 0,956 & 0,029 & 0,881 & 0,014 & 0,938\\
-		
-		& 854x450 & 0,913 & 0,021 & 0,911 & 0,033 & 0,918\\
+		KNN-Plus-ASB 854x450 & 0,796 & 0,117 & 0,882 & 0,203 & 0,856\\
 		\hline
 	\end{tabular}
-	\caption{Auswertung der verschiedenen Methoden mit ohne Skalierung des Bilds.}
+	\caption{Auswertung der verschiedenen Methoden mit und ohne Skalierung des Bilds.}
 	\label{tbl:auswertung}
 \end{table}
 
-In Tabelle \ref{tbl:auswertung} sind die Auswertungen von Video 1, Video 2 und Video 3 zu sehen, die als Eingabe für die entwickelte Software dienten. Dabei stehen TNR für \glqq{}True Negative Rate\grqq{}, FNR für \glqq{}False Negative Rate\grqq{}, TPR für \glqq{}True Positive Rate\grqq{}, FPR für \glqq{}False Positive Rate\grqq{} und ACC für \glqq{}Accuracy\grqq{}.\\
+In Tabelle \ref{tbl:auswertung} sind die Auswertungen der Testvideos zu sehen, die als Eingabe für die entwickelte Software dienten. Dabei stehen TNR für \glqq{}True Negative Rate\grqq{}, FNR für \glqq{}False Negative Rate\grqq{}, TPR für \glqq{}True Positive Rate\grqq{}, FPR für \glqq{}False Positive Rate\grqq{} und ACC für \glqq{}Accuracy\grqq{}.\\
 Die Ergebnisse des Programm werden in Abbildung \ref{fig:result} dargestellt. Das Programm kann eine Person am Tag und in der Nacht erkennen (Siehe Abbildungen \ref{fig:result}a, \ref{fig:result}b). Außerdem kann die Kamera in verschiedenen Positionen im Raum aufgestellt werden. Das beeinflusst die Erkennung von außergewöhnlichen Situationen nicht (Siehe Abbildungen \ref{fig:result}c, \ref{fig:result}d). Weiterhin spielt die Körpergröße eine Person keine Rolle (Siehe Abbildungen \ref{fig:result}e, \ref{fig:result}f). In Abbildung \ref{fig:result}g lag die Person auf dem Boden und ein Alarm wird ausgelöst. In der Abbildung \ref{fig:result}h lag die Person auf einem Sofa und das Programm hat die Situation als normalen Fall erkannt.
 
 \begin{figure}[H]

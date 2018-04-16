@@ -1,15 +1,11 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: main.aux
 The style file: eg-alpha.bst
 Database file #1: Literaturverzeichnis.bib
-Repeated entry---line 12 of file Literaturverzeichnis.bib
- : @article{lindemann2005evaluation
- :                                 ,
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 96 of file Literaturverzeichnis.bib
+I was expecting a `,' or a `}'---line 85 of file Literaturverzeichnis.bib
  :  
  :  booktitle={International Journal of Computational Intelligence Systems},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Warning--empty journal in cingolanijfuzzylogic
 Warning--empty year in suttonhistograms
-(There were 2 error messages)
+(There was 1 error message)

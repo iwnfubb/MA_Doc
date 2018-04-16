@@ -15,7 +15,7 @@
    viewBox="0 0 1866.6051 2587.4998"
    id="svg2"
    version="1.1"
-   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="mymethode2edited.svg">
   <defs
      id="defs4">
@@ -198,15 +198,15 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="347.70805"
-     inkscape:cy="2009.8633"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="679.61124"
+     inkscape:cy="817.92228"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:snap-others="false"
      inkscape:window-width="1920"
-     inkscape:window-height="1138"
+     inkscape:window-height="1059"
      inkscape:window-x="1912"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -375,57 +375,59 @@
          y="2012.3179"
          style="font-size:40px;line-height:1.25">(h)</tspan></text>
     <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 173.74624,-8.2979679 V 22.006608 l 680.33774,2.525381 V -6.2776634"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 173.74624,-8.2979679 0,30.3045759 680.33774,2.525381 0,-30.8096524"
        id="path4262"
        inkscape:path-effect="#path-effect4264"
        inkscape:original-d="m 173.74624,-8.2979679 0,30.3045759 680.33774,2.525381 0,-30.8096524"
        inkscape:connector-curvature="0" />
     <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
-       d="M 502.04582,22.511684 V 72.514235"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend);stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 502.04582,22.511684 0,50.002551"
        id="path4270"
        inkscape:path-effect="#path-effect4272"
        inkscape:original-d="m 502.04582,22.511684 0,50.002551"
        inkscape:connector-curvature="0" />
     <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker4636)"
-       d="M 514.28571,409.50506 V 510.93363"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker4636);stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 514.28571,409.50506 0,101.42857"
        id="path4626"
        inkscape:path-effect="#path-effect4628"
        inkscape:original-d="m 514.28571,409.50506 0,101.42857"
        inkscape:connector-curvature="0" />
     <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.07340515px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker4636-4)"
-       d="M 512.85714,849.30934 V 966.17519"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker4636-4);stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 512.85714,849.30934 0,116.86585"
        id="path4626-8"
        inkscape:path-effect="#path-effect4628-9"
        inkscape:original-d="m 512.85714,849.30934 0,116.86585"
        inkscape:connector-curvature="0" />
     <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.92076135px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker4636-5)"
-       d="m 515.71429,1305.0236 v 85.9913"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker4636-5);stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 515.71429,1305.0236 0,85.9913"
        id="path4626-82"
        inkscape:path-effect="#path-effect4628-0"
        inkscape:original-d="m 515.71429,1305.0236 0,85.9913"
        inkscape:connector-curvature="0" />
     <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker5314)"
-       d="m 515,1733.7908 v 57.8571 H 160 v 25"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.60669672;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker5314)"
+       d="m 515.01473,1734.472 0,37.2509 -355.84097,0 -3.03046,42.3601"
        id="path5304"
        inkscape:path-effect="#path-effect5306"
-       inkscape:original-d="m 515,1733.7908 0,57.8571 -355,0 0,25"
-       inkscape:connector-curvature="0" />
+       inkscape:original-d="m 515.01473,1734.472 0,37.2509 -355.84097,0 -3.03046,42.3601"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
     <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.0030607px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker5382)"
-       d="m 510.13627,1791.5604 h 347.42489 v 27.5035"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.60669672;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker5382)"
+       d="m 510.13948,1771.6666 348.24792,0 0,42.9617"
        id="path5372"
        inkscape:path-effect="#path-effect5374"
-       inkscape:original-d="m 510.13627,1791.5604 347.42489,0 0,27.5035"
-       inkscape:connector-curvature="0" />
+       inkscape:original-d="m 510.13948,1771.6666 348.24792,0 0,42.9617"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
     <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker5544)"
-       d="m 1143.4927,1989.7838 h 137.3807 V -175.98329 h -145.4619"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker5544);stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 1143.4927,1989.7838 137.3807,0 0,-2165.76709 -145.4619,0"
        id="path5534"
        inkscape:path-effect="#path-effect5536"
        inkscape:original-d="m 1143.4927,1989.7838 137.3807,0 0,-2165.76709 -145.4619,0"

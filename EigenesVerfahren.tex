@@ -51,8 +51,8 @@ Aus der Tabelle \ref{fig:compare_bgsubtraction} mit vier Abbildungen ist zu sehe
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{fig/knn_vs_vibe_edit.pdf}
-	\caption{Die Verarbeitungszeit von KNN und Vibe werden verglichen. Es ist deutlich, dass KNN eine kürzere durchschnittliche Verarbeitungszeit (42ms) als Vibe (165ms) hat.} 
+	\includegraphics[width=1\textwidth]{fig/knn_vs_vibe.pdf}
+	\caption{Die Verarbeitungszeit von KNN und Vibe werden verglichen. Es ist deutlich, dass KNN eine kürzere durchschnittliche Verarbeitungszeit (47ms) als Vibe (201ms) hat.} 
 	\label{fig:vibeknn}
 \end{figure}
 
@@ -83,24 +83,24 @@ Die Abbildung \ref{fig:eroanddila} zeigt, dass nach Erosion unerwartetes Rausche
 \end{figure}
 \subsection{Erweiterungen für die Hintergrundsubtraktion}
 Im Allgemeinen wird für jedes Pixel des aktuellen Bilds geschaut, ob es dem Hintergrund zugehörig ist. Das funktioniert wie beschrieben sehr zuverlässig. Nun wird folgende Situation betrachtet: Eine Person befindet sich eine gewisse Zeit im Raum und bewegt sich nicht. Durch die ständige Aktualisierung des Hintergrundmodells wird die Person fehlerhaft als Hintergrund erkannt und verschwindet in das Hintergrundmodell. So kommt die Aufgabe dieser Echtzeitanwendung nicht zum Einsatz, weil sich bei einer außergewöhnlichen Situation eine Person eine gewisse Zeit nicht mehr bewegt bzw. auf dem Boden liegt. Aber dieser Fall wird nie auftreten. Auch Situationen, in denen die Person zum Beispiel auf dem Sofa liegt und TV sieht, befindet sich die Person nicht in Gefahr und auch nicht im Hintergrund. 
-\subsubsection{Erste Verbesserung: Aktualisierung der selektiven Begrenzungsboxen}
+\subsubsection{Erste Verbesserung: Aktualisierung der selektiven Begrenzungsboxen (ASB)}
 Um das oben genannte Problem zu lösen, wo eine sich nicht bewegende Person in das Hintergrundmodell integriert wird, obwohl die Person im Vordergrund bleiben soll, wurde ein eigenes Verfahren entwickelt. Dieses Verfahren erstellt bei der Verarbeitung der Frames Begrenzungsboxen in Form von Rechtecken zur bewegten Person. Diese Begrenzungsboxen sind minimal bzw. umhüllen die Person mit den kleinstmöglichen Flächen. Das heißt, auch wenn die Person sich lange nicht bewegt, bleibt sie ein Objekt, dass sich bewegt und wird nicht in das Hintergrundmodell integriert. Das geschieht durch eine geführte Liste der Begrenzungsboxen. Diese Liste hat die gleiche Länge wie die gesetzte Historie des Hintergrundsubtraktionsverfahren. So wird bei jedem zu verarbeitenden Frame eine Begrenzungsbox aus der Silhouette erstellt und mit der Liste aus vorherigen Begrenzungsboxen verglichen. Falls die neue Begrenzungsbox mit den vorherigen Begrenzungsboxen keine Überschneidungen hat, werden diese Begrenzungsboxen in das Hintergrundmodell hinzugefügt und aus der Liste entfernt. Die neue Begrenzungsbox wird immer der Liste hinzugefügt, egal ob es Überschneidungen gibt oder nicht. So können Personen, die sich im Raum befinden und sich dann auf das Sofa legen, im Vordergrund bleiben, bis sie die Szene verlassen. Wie das modifizierte Hintergrundsubtraktionsverfahren, genannt \glqq{}Aktualisierung der selektiven Begrenzungsboxen\grqq{} (ASB), arbeitet, zeigen folgende Grafiken \ref{fig:mymethod1}, \ref{fig:mymethod2}, \ref{fig:mymethod3}.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.9\textwidth]{fig/mymethode4edited.pdf}
-	\caption{Video: \glqq{}fallen.mp4\grqq{}. Frame-Nummer: 334. Die Begrenzungsbox $B_i$, die mit einem roten Rechteck markiert ist, überschneidet sich mit der aktuellen Begrenzungsbox $B_{current}$, die grün markiert ist. Das Unterbild in dem roten Rechteck wird auf dem Hintergrundbild aktualisiert.}
+	\caption{Video: \glqq{}Testvideo3.mp4\grqq{}. Frame-Nummer: 334. Die Begrenzungsbox $B_i$, die mit einem roten Rechteck markiert ist, überschneidet sich mit der aktuellen Begrenzungsbox $B_{current}$, die grün markiert ist. Das Unterbild in dem roten Rechteck wird auf dem Hintergrundbild aktualisiert.}
 	\label{fig:mymethod1}
 \end{figure}
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.9\textwidth]{fig/mymethode3edited.pdf}
-	\caption{Video: \glqq{}fallen.mp4\grqq{}. Frame-Nummer: 335. Nach der Aktualisierung des Hintergrundbildes wird die alte Begrenzungsbox $B_i$ gelöscht.}
+	\caption{Video: \glqq{}Testvideo3.mp4\grqq{}. Frame-Nummer: 335. Nach der Aktualisierung des Hintergrundbildes wird die alte Begrenzungsbox $B_i$ gelöscht.}
 	\label{fig:mymethod2}
 \end{figure}
 \begin{figure}[H]			
 	\centering
 	\includegraphics[width=0.9\textwidth]{fig/mymethode2edited.pdf}
-	\caption{Video:\glqq{}fallen.mp4\grqq{}. Frame-Nummer: 403. Die Liste der Begrenzungsboxen, die sich nicht mit der aktuellen Begrenzungsbox $B_{current}$ überschneiden, werden mit den weißen Rechtecken dargestellt. Die Liste der Begrenzungsboxen, die sich mit der aktuellen Begrenzungsbox $B_{current}$  überschneiden, werden mit den roten Rechtecken dargestellt. 
+	\caption{Video:\glqq{}Testvideo3.mp4\grqq{}. Frame-Nummer: 403. Die Liste der Begrenzungsboxen, die sich nicht mit der aktuellen Begrenzungsbox $B_{current}$ überschneiden, werden mit den weißen Rechtecken dargestellt. Die Liste der Begrenzungsboxen, die sich mit der aktuellen Begrenzungsbox $B_{current}$  überschneiden, werden mit den roten Rechtecken dargestellt. 
 	}
 	\label{fig:mymethod3}
 \end{figure}
@@ -200,9 +200,9 @@ Diese KNN-Plus-ASB verbessert die Qualität der Silhouette und erhöht auch die Ge
 Zuletzt kommt noch eine kurz Laufzeitanalyse, um sicherzustellen, dass die Verbesserungen einsetzbar sind und nicht zu hohe Rechenzeit benötigen. Aus der Abbildung \ref{fig:asb_vs_knn} ist zu entnehmen, dass die Verbesserung ABS eine Laufzeit von 22 ms aufweist, wobei KNN-Plus-ASB 49 ms benötigt.
 \begin{figure}[H]
 	\centering	
-	\includegraphics[width=1\textwidth]{fig/knn_vs_vibe_edit.pdf}
-	\caption{Laufzeitanalyse von ASB und KNN-Plus-ASB}
-	\label{fig:knn_vs_vibe}
+	\includegraphics[width=1\textwidth]{fig/knn_vs_asb.pdf}
+	\caption{Die Verarbeitungszeit von KNN-Plus-ASB und ASB werden verglichen. Es ist deutlich, dass ASB eine kürzere durchschnittliche Verarbeitungszeit (22ms) als KNN-Plus-ASB (49ms) hat.}
+	\label{fig:asb_vs_knn}
 \end{figure}
 
 \section{Schätzung der Körperhaltung mittels Histogrammanalyse}\label{chp:schatzung}
@@ -250,18 +250,18 @@ Um die Zuverlässigkeit von diesem Verfahren zu überprüfen, wird die Körperhaltun
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{fig/schatzungevaluation.pdf}
-	\caption{Überprüfung der Schätzung der Körperhaltung am Testvideo \glqq{}fallen2.mp4\grqq{}. Die x-Achse stellt die Framenummer dar und die y-Achse zeigt die Indexe der Körperhaltung. Die blaue Gerade ist die Referenz-Körperhaltung und die gelbe Gerade ist die geschätzte Körperhaltung. Die Schätzung der Körperhaltung hat in diesem Beispiel eine Genauigkeit von 76,47\%.} 
+	\caption{Überprüfung der Schätzung der Körperhaltung am Testvideo \glqq{}Testvideo1.mp4\grqq{}. Die x-Achse stellt die Framenummer dar und die y-Achse zeigt die Indexe der Körperhaltung. Die blaue Gerade ist die Referenz-Körperhaltung und die gelbe Gerade ist die geschätzte Körperhaltung. Die Schätzung der Körperhaltung hat in diesem Beispiel eine Genauigkeit von 76,47\%.} 
 	\label{fig:schatzeva}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{fig/schatzungevaluation2.pdf}
-	\caption{Überprüfung der Schätzung der Körperhaltung an \glqq{}fallen2.mp4\grqq{}. Die Schätzung der Körperhaltung hat in diesem Beispiel eine Genauigkeit von 71,93\%.} 
+	\caption{Überprüfung der Schätzung der Körperhaltung an \glqq{}Testvideo4.mp4\grqq{}. Die Schätzung der Körperhaltung hat in diesem Beispiel eine Genauigkeit von 71,93\%.} 
 	\label{fig:schatzeva2}
 \end{figure}
 
-\section{Erkennung außergewöhnlicher Situationen}
+\section{Erkennung außergewöhnlicher Situationen}\label{chp:erkennung}
 Im Abschnitt \ref{chp:BackgroundSubtraction} und \ref{chp:schatzung} wird eine Silhouette durch Bewegungen erstellt und eine Schätzung der Körperhaltung durch die Histogrammanalyse berechnet. Zur Erkennung außergewöhnlicher Situationen wird noch die aktuelle Position der Person in einem bestimmten Zeitraum berücksichtigt. An dieser Stelle ist es wichtig, dass die Anwendung den Unterschied zwischen normalen Bewegungen im Alltag und außergewöhnlichen Situationen erkennt. Wenn beispielsweise die Körperhaltung einer Person als \glqq{}Liegend\grqq{} geschätzt wird, kann es sein, dass die Person auf einem Sofa oder in einem Bett schläft. Wenn die Person im Bett liegt, handelt es sich um eine normale Situation. Deswegen ist es wichtig, die Positionen der Möbel im Raum zu identifizieren. Zur Erkennung dieser Positionen sind vier Ansätze in Betracht gezogen worden. Der erste Ansatz erfordert ein vorhandenes 3D-Modell des Raums, welches durch eine Kamera konstruiert werden kann. Diese Idee hat den Vorteil, dass die Positionen von Möbeln im Raum direkt identifiziert werden können und damit schnell festgestellt wird, ob sich eine Person auf dem Boden oder im Bett befindet. Die Arbeit für die Erstellung des 3D-Modells ist sehr zeitaufwendig und es ist nötig, für jeden neuen Raum ein neues 3D-Modell zu berechnen. Es gibt noch eine andere Techniken zur Identifizierung der Positionen von Möbeln im Raum. Der zweite Ansatz betrachtet die \glqq{}Bird Eye View\grqq{}(BEV) Methode. Diese Technik wird bei Automobilen mit Rückfahrkamera angewendet. Der Nachteil ist: BEV braucht exakt eine exakt kalibrierte Kamera und alle Parameter des Kameramodells müssen bekannt sein, damit eine Transformation gemacht werden kann. Außerdem ist ein 2D-Modell der Wohnung benötigt, damit die Möbel in BEV erkannt werden können. Aus diesem Grund ist diese Methode für dieses Projekt nicht anwendbar, weil die Kamera an einer beliebigen Position im Raum aufgestellt werden kann. Der dritte Ansatz beschäftigt sich mit neuronalen Netzen. Diese Methode ist häufig im Bereich von Objekterkennungen angewendet. Um die Objekte richtig zu erkennen, brauchen die neuronalen Netze riesige Daten von Objekten. Die neuronalen Netze werden anhand der Größe der Datenmenge beim Training verbessert. In diesem Projekt wird ein vor-trainiertes Netz zur Erkennung der Möbel angewendet. Das vor-trainierte Netz kann ein Sofa mit einer Wahrscheinlichkeit von 28,80\% und einen Stuhl mit einer Wahrscheinlichkeit von 25,76\% erkennen (siehe Abbildung \ref{fig:nn}). Außerdem ist der Boden auch als ein Sofa, die Testperson als eine Katze falsch klassifiziert. Dieses neuronale Netz kann mit mehreren Bildern weiter trainiert werden, um ein besseres Ergebnis zu liefern. Um das vor-trainiertes Netz zu verbessern, benötigt es eine große Menge von Bildern und das ist aufwendig.
 \begin{figure}[H]
 	\centering

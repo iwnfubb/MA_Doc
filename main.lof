@@ -6,7 +6,7 @@
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Ein Beispiel f\"ur die Hintergrundsubtraktion. }}{7}{figure.2.1}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Die Klassifizierung von $p_t(x)$ basiert auf die \"Uberschneidung der Kugel $S_R(p_t(x))$ mit der Menge der Stichproben \cite {barnich2009vibe}.}}{10}{figure.2.2}
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Normalisierte horizontale und vertikale Referenz-Histogramme f\"ur jede K\"orperhaltung \cite {haritaoglu1998ghost}.}}{11}{figure.2.3}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Ein Beispiel f\"ur die Fuzzylogik in drei Schritten. Oben: Die Temperatur von $23$ Grad wird durch Mitgliederfunktionen abgebildet. Mitte: Durch die (IF-ELSE) Regel in Algorithmus \ref {algo:fuzzy} wird eine Ausgabe als Fuzzymenge berechnet. Unten: Ein Schwerpunkt von der gerechneten Ausgabe wird in eine scharfe Ausgabe abgebildet und es ergibt sich der Wert 2.15 f\"ur das Thermostat.}}{14}{figure.2.4}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Ein Beispiel f\"ur die Fuzzylogik in drei Schritten. Oben: Die Temperatur von $23$ Grad wird durch Mitgliederfunktionen abgebildet. Mitte: Durch die (IF-ELSE) Regel in Algorithmus \ref {algo:fuzzy} wird eine Ausgabe als Fuzzymenge berechnet. Unten: Ein Schwerpunkt von der gerechneten Ausgabe wird in eine scharfe Ausgabe abgebildet und es ergibt sich der Wert 2,15 f\"ur das Thermostat.}}{14}{figure.2.4}
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Bosch 360\IeC {\textdegree } Kamera (Quelle: www.bosch-smarthome.com) }}{16}{figure.2.5}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Die drei Meilensteine zur Erkennung von au\IeC {\ss }ergew\"ohnlichen Situation.}}{17}{figure.3.1}

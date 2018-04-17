@@ -115,7 +115,7 @@ Da das Hintergrundmodell nur an Teile des aktuellen Bildes aktualisiert wird, we
 Die beiden genannten Verbesserungen werden im nächsten Abschnitt verglichen.
 \newpage
 \subsection{Ergebnisse der Verbesserungen am Hintergrundsubtraktion-Verfahren}
-Um die Qualität der Silhouette bewerten zu können, wird die Silhouette mit dem Ground-Truth verglichen, was eine Silhouette ohne Rausch bildet. Das Ground-Truth-Modell wurde manuell erstellt, um sicherzustellen, dass sich kein Rausch in der Silhouette befindet. Um die Vergleiche durchzuführen, werden die Methoden \glqq{}Mean Squared Error\grqq{} und \glqq{}Structural Similarity Measure\grqq{} verwendet. Der erste Vergleich ist die (ASB-Methode). Der zweite Vergleich die KNN-Plus-ASB-Methode. 
+Um die Qualität der Silhouette bewerten zu können, wird die Silhouette mit dem Ground-Truth verglichen, was eine Silhouette ohne Rausch bildet. Das Ground-Truth-Modell wurde manuell erstellt, um sicherzustellen, dass sich kein Rausch in der Silhouette befindet. Um die Vergleiche durchzuführen, werden die Methoden \glqq{}Mean Squared Error\grqq{} und \glqq{}Structural Similarity Measure\grqq{} verwendet. Der erste Vergleich ist die ASB-Methode. Der zweite Vergleich die KNN-Plus-ASB-Methode. 
 Die Formel von \glqq{}Mean Squared Error\grqq{} wird wie folgt beschrieben\cite{kapadia2017mathematical}:\\
 \begin{equation}
 MSE = \frac{1}{m n } \sum \limits_{i=0}^{m -1} \sum \limits_{j=0}^{n -1} [ I(i, j) - K (i, j)]^2
@@ -197,11 +197,11 @@ wobei $x=\{x_i | 1, 2 \dots, N\}$ und $y=\{y_i|1, 2 \dots, N\}$ die Positionen d
 	\end{center}
 \end{table}
 Diese KNN-Plus-ASB verbessert die Qualität der Silhouette und erhöht auch die Genauigkeit der Schätzung der Körperhaltung, die in nächstem Abschnitt besprochen wird. Allerdings hat die Kombination von \acs{KNN} und \acs{ASB} einen Nachteil, dass die Laufzeit sich etwas erhöht, im Vergleich zu der ersten Methode.
-Zuletzt kommt noch eine kurz Laufzeitanalyse, um sicherzustellen, dass die Verbesserungen einsetzbar sind und nicht zu hohe Rechenzeit benötigen. Aus der Abbildung \ref{fig:asb_vs_knn} ist zu entnehmen, dass die Verbesserung ABS eine Laufzeit von 22 ms aufweist, wobei KNN-Plus-ASB 49 ms benötigt.
+Zuletzt kommt noch eine kurz Laufzeitanalyse, um sicherzustellen, dass die Verbesserungen einsetzbar sind und nicht zu hohe Rechenzeit benötigen. Aus der Abbildung \ref{fig:asb_vs_knn} ist zu entnehmen, dass die Verbesserung ABS eine Laufzeit von 17 ms aufweist, wobei KNN-Plus-ASB 49 ms benötigt.
 \begin{figure}[H]
 	\centering	
 	\includegraphics[width=1\textwidth]{fig/knn_vs_asb.pdf}
-	\caption{Die Verarbeitungszeit von KNN-Plus-ASB und ASB werden verglichen. Es ist deutlich, dass ASB eine kürzere durchschnittliche Verarbeitungszeit (22ms) als KNN-Plus-ASB (49ms) hat.}
+	\caption{Die Verarbeitungszeit von KNN-Plus-ASB und ASB werden verglichen. Es ist deutlich, dass ASB eine kürzere durchschnittliche Verarbeitungszeit (17ms) als KNN-Plus-ASB (49ms) hat.}
 	\label{fig:asb_vs_knn}
 \end{figure}
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.25)  17 APR 2018 11:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.25)  17 APR 2018 14:48
 entering extended mode
 **./main.tex
 (main.tex
@@ -1164,439 +1164,436 @@ Overfull \vbox (4.98515pt too high) has occurred while \output is active []
                                                   \fi \fi 
 l.107 B
        ei der Aktualisierung eines Hintergrundbildes, wo noch kein Hintergru...
- <./fig/mymethode2edited.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 107--112
-
- []
-
-[27] [28]
+ <./fig/mymethode2edited.pdf>] [27]
 Underfull \hbox (badness 10000) in paragraph at lines 118--120
 
  []
 
-<fig/original1.png, id=745, 481.8pt x 271.0125pt>
+[28]
+<fig/knn_vs_asb.pdf, id=751, pagebox=cropbox, 496.1424pt x 195.28638pt>
+File: fig/knn_vs_asb.pdf Graphic file (type pdf)
+<use fig/knn_vs_asb.pdf>
+Package pdftex.def Info: fig/knn_vs_asb.pdf  used on input line 132. on input l
+ine 132.
+Package pdftex.def Info: Requested size: 418.25555pt x 164.63242pt on input lin
+e 132.
+<fig/original1.png, id=752, 481.8pt x 271.0125pt>
 File: fig/original1.png Graphic file (type png)
 <use fig/original1.png>
-Package pdftex.def Info: fig/original1.png  used on input line 134. on input li
-ne 134.
+Package pdftex.def Info: fig/original1.png  used on input line 143. on input li
+ne 143.
 Package pdftex.def Info: Requested size: 104.56389pt x 58.81654pt on input line
- 134.
-<fig/groundtrue1.png, id=746, 481.8pt x 271.0125pt>
+ 143.
+<fig/groundtrue1.png, id=753, 481.8pt x 271.0125pt>
 File: fig/groundtrue1.png Graphic file (type png)
 <use fig/groundtrue1.png>
-Package pdftex.def Info: fig/groundtrue1.png  used on input line 136. on input 
-line 136.
+Package pdftex.def Info: fig/groundtrue1.png  used on input line 145. on input 
+line 145.
 Package pdftex.def Info: Requested size: 104.56389pt x 58.81654pt on input line
- 136.
-<fig/My1.png, id=747, 481.8pt x 271.0125pt>
+ 145.
+<fig/My1.png, id=754, 481.8pt x 271.0125pt>
 File: fig/My1.png Graphic file (type png)
 <use fig/My1.png>
-Package pdftex.def Info: fig/My1.png  used on input line 138. on input line 138
+Package pdftex.def Info: fig/My1.png  used on input line 147. on input line 147
 .
 Package pdftex.def Info: Requested size: 104.56389pt x 58.81654pt on input line
- 138.
-<fig/MOG1.png, id=748, 481.8pt x 271.0125pt>
+ 147.
+<fig/MOG1.png, id=755, 481.8pt x 271.0125pt>
 File: fig/MOG1.png Graphic file (type png)
 <use fig/MOG1.png>
-Package pdftex.def Info: fig/MOG1.png  used on input line 140. on input line 14
-0.
-Package pdftex.def Info: Requested size: 104.56389pt x 58.81654pt on input line
- 140.
-<fig/original2.png, id=749, 481.8pt x 271.0125pt>
-File: fig/original2.png Graphic file (type png)
-<use fig/original2.png>
-Package pdftex.def Info: fig/original2.png  used on input line 146. on input li
-ne 146.
-Package pdftex.def Info: Requested size: 104.56389pt x 58.81654pt on input line
- 146.
-<fig/groundtrue2.png, id=750, 481.8pt x 271.0125pt>
-File: fig/groundtrue2.png Graphic file (type png)
-<use fig/groundtrue2.png>
-Package pdftex.def Info: fig/groundtrue2.png  used on input line 148. on input 
-line 148.
-Package pdftex.def Info: Requested size: 104.56389pt x 58.81654pt on input line
- 148.
-<fig/My2.png, id=751, 481.8pt x 271.0125pt>
-File: fig/My2.png Graphic file (type png)
-<use fig/My2.png>
-Package pdftex.def Info: fig/My2.png  used on input line 150. on input line 150
-.
-Package pdftex.def Info: Requested size: 104.56389pt x 58.81654pt on input line
- 150.
-<fig/MOG2.png, id=752, 481.8pt x 271.0125pt>
-File: fig/MOG2.png Graphic file (type png)
-<use fig/MOG2.png>
-Package pdftex.def Info: fig/MOG2.png  used on input line 152. on input line 15
-2.
-Package pdftex.def Info: Requested size: 104.56389pt x 58.81654pt on input line
- 152.
-<fig/original3.png, id=753, 481.8pt x 271.0125pt>
-File: fig/original3.png Graphic file (type png)
-<use fig/original3.png>
-Package pdftex.def Info: fig/original3.png  used on input line 158. on input li
-ne 158.
-Package pdftex.def Info: Requested size: 104.56389pt x 58.81654pt on input line
- 158.
-<fig/groundtrue3.png, id=754, 481.8pt x 271.0125pt>
-File: fig/groundtrue3.png Graphic file (type png)
-<use fig/groundtrue3.png>
-Package pdftex.def Info: fig/groundtrue3.png  used on input line 160. on input 
-line 160.
-Package pdftex.def Info: Requested size: 104.56389pt x 58.81654pt on input line
- 160.
-<fig/My3.png, id=755, 481.8pt x 271.0125pt>
-File: fig/My3.png Graphic file (type png)
-<use fig/My3.png>
-Package pdftex.def Info: fig/My3.png  used on input line 162. on input line 162
-.
-Package pdftex.def Info: Requested size: 104.56389pt x 58.81654pt on input line
- 162.
-<fig/MOG3.png, id=756, 481.8pt x 271.0125pt>
-File: fig/MOG3.png Graphic file (type png)
-<use fig/MOG3.png>
-Package pdftex.def Info: fig/MOG3.png  used on input line 164. on input line 16
-4.
-Package pdftex.def Info: Requested size: 104.56389pt x 58.81654pt on input line
- 164.
-<fig/original4.png, id=757, 481.8pt x 271.0125pt>
-File: fig/original4.png Graphic file (type png)
-<use fig/original4.png>
-Package pdftex.def Info: fig/original4.png  used on input line 171. on input li
-ne 171.
-Package pdftex.def Info: Requested size: 104.56389pt x 58.81654pt on input line
- 171.
-<fig/groundtrue4.png, id=758, 481.8pt x 271.0125pt>
-File: fig/groundtrue4.png Graphic file (type png)
-<use fig/groundtrue4.png>
-Package pdftex.def Info: fig/groundtrue4.png  used on input line 173. on input 
-line 173.
-Package pdftex.def Info: Requested size: 104.56389pt x 58.81654pt on input line
- 173.
-<fig/My4.png, id=759, 481.8pt x 271.0125pt>
-File: fig/My4.png Graphic file (type png)
-<use fig/My4.png>
-Package pdftex.def Info: fig/My4.png  used on input line 175. on input line 175
-.
-Package pdftex.def Info: Requested size: 104.56389pt x 58.81654pt on input line
- 175.
-<fig/MOG4.png, id=760, 481.8pt x 271.0125pt>
-File: fig/MOG4.png Graphic file (type png)
-<use fig/MOG4.png>
-Package pdftex.def Info: fig/MOG4.png  used on input line 177. on input line 17
-7.
-Package pdftex.def Info: Requested size: 104.56389pt x 58.81654pt on input line
- 177.
-<fig/original5.png, id=761, 481.8pt x 271.0125pt>
-File: fig/original5.png Graphic file (type png)
-<use fig/original5.png>
-Package pdftex.def Info: fig/original5.png  used on input line 183. on input li
-ne 183.
-Package pdftex.def Info: Requested size: 104.56389pt x 58.81654pt on input line
- 183.
-<fig/groundtrue5.png, id=762, 481.8pt x 271.0125pt>
-File: fig/groundtrue5.png Graphic file (type png)
-<use fig/groundtrue5.png>
-Package pdftex.def Info: fig/groundtrue5.png  used on input line 185. on input 
-line 185.
-Package pdftex.def Info: Requested size: 104.56389pt x 58.81654pt on input line
- 185.
-<fig/My5.png, id=763, 481.8pt x 271.0125pt>
-File: fig/My5.png Graphic file (type png)
-<use fig/My5.png>
-Package pdftex.def Info: fig/My5.png  used on input line 187. on input line 187
-.
-Package pdftex.def Info: Requested size: 104.56389pt x 58.81654pt on input line
- 187.
-<fig/MOG5.png, id=764, 481.8pt x 271.0125pt>
-File: fig/MOG5.png Graphic file (type png)
-<use fig/MOG5.png>
-Package pdftex.def Info: fig/MOG5.png  used on input line 189. on input line 18
+Package pdftex.def Info: fig/MOG1.png  used on input line 149. on input line 14
 9.
 Package pdftex.def Info: Requested size: 104.56389pt x 58.81654pt on input line
- 189.
+ 149.
+<fig/original2.png, id=756, 481.8pt x 271.0125pt>
+File: fig/original2.png Graphic file (type png)
+<use fig/original2.png>
+Package pdftex.def Info: fig/original2.png  used on input line 155. on input li
+ne 155.
+Package pdftex.def Info: Requested size: 104.56389pt x 58.81654pt on input line
+ 155.
+<fig/groundtrue2.png, id=757, 481.8pt x 271.0125pt>
+File: fig/groundtrue2.png Graphic file (type png)
+<use fig/groundtrue2.png>
+Package pdftex.def Info: fig/groundtrue2.png  used on input line 157. on input 
+line 157.
+Package pdftex.def Info: Requested size: 104.56389pt x 58.81654pt on input line
+ 157.
+<fig/My2.png, id=758, 481.8pt x 271.0125pt>
+File: fig/My2.png Graphic file (type png)
+<use fig/My2.png>
+Package pdftex.def Info: fig/My2.png  used on input line 159. on input line 159
+.
+Package pdftex.def Info: Requested size: 104.56389pt x 58.81654pt on input line
+ 159.
+<fig/MOG2.png, id=759, 481.8pt x 271.0125pt>
+File: fig/MOG2.png Graphic file (type png)
+<use fig/MOG2.png>
+Package pdftex.def Info: fig/MOG2.png  used on input line 161. on input line 16
+1.
+Package pdftex.def Info: Requested size: 104.56389pt x 58.81654pt on input line
+ 161.
+<fig/original3.png, id=760, 481.8pt x 271.0125pt>
+File: fig/original3.png Graphic file (type png)
+<use fig/original3.png>
+Package pdftex.def Info: fig/original3.png  used on input line 167. on input li
+ne 167.
+Package pdftex.def Info: Requested size: 104.56389pt x 58.81654pt on input line
+ 167.
+<fig/groundtrue3.png, id=761, 481.8pt x 271.0125pt>
+File: fig/groundtrue3.png Graphic file (type png)
+<use fig/groundtrue3.png>
+Package pdftex.def Info: fig/groundtrue3.png  used on input line 169. on input 
+line 169.
+Package pdftex.def Info: Requested size: 104.56389pt x 58.81654pt on input line
+ 169.
+<fig/My3.png, id=762, 481.8pt x 271.0125pt>
+File: fig/My3.png Graphic file (type png)
+<use fig/My3.png>
+Package pdftex.def Info: fig/My3.png  used on input line 171. on input line 171
+.
+Package pdftex.def Info: Requested size: 104.56389pt x 58.81654pt on input line
+ 171.
+<fig/MOG3.png, id=763, 481.8pt x 271.0125pt>
+File: fig/MOG3.png Graphic file (type png)
+<use fig/MOG3.png>
+Package pdftex.def Info: fig/MOG3.png  used on input line 173. on input line 17
+3.
+Package pdftex.def Info: Requested size: 104.56389pt x 58.81654pt on input line
+ 173.
+<fig/original4.png, id=764, 481.8pt x 271.0125pt>
+File: fig/original4.png Graphic file (type png)
+<use fig/original4.png>
+Package pdftex.def Info: fig/original4.png  used on input line 180. on input li
+ne 180.
+Package pdftex.def Info: Requested size: 104.56389pt x 58.81654pt on input line
+ 180.
+<fig/groundtrue4.png, id=765, 481.8pt x 271.0125pt>
+File: fig/groundtrue4.png Graphic file (type png)
+<use fig/groundtrue4.png>
+Package pdftex.def Info: fig/groundtrue4.png  used on input line 182. on input 
+line 182.
+Package pdftex.def Info: Requested size: 104.56389pt x 58.81654pt on input line
+ 182.
+<fig/My4.png, id=766, 481.8pt x 271.0125pt>
+File: fig/My4.png Graphic file (type png)
+<use fig/My4.png>
+Package pdftex.def Info: fig/My4.png  used on input line 184. on input line 184
+.
+Package pdftex.def Info: Requested size: 104.56389pt x 58.81654pt on input line
+ 184.
+<fig/MOG4.png, id=767, 481.8pt x 271.0125pt>
+File: fig/MOG4.png Graphic file (type png)
+<use fig/MOG4.png>
+Package pdftex.def Info: fig/MOG4.png  used on input line 186. on input line 18
+6.
+Package pdftex.def Info: Requested size: 104.56389pt x 58.81654pt on input line
+ 186.
+<fig/original5.png, id=768, 481.8pt x 271.0125pt>
+File: fig/original5.png Graphic file (type png)
+<use fig/original5.png>
+Package pdftex.def Info: fig/original5.png  used on input line 192. on input li
+ne 192.
+Package pdftex.def Info: Requested size: 104.56389pt x 58.81654pt on input line
+ 192.
+<fig/groundtrue5.png, id=769, 481.8pt x 271.0125pt>
+File: fig/groundtrue5.png Graphic file (type png)
+<use fig/groundtrue5.png>
+Package pdftex.def Info: fig/groundtrue5.png  used on input line 194. on input 
+line 194.
+Package pdftex.def Info: Requested size: 104.56389pt x 58.81654pt on input line
+ 194.
+<fig/My5.png, id=770, 481.8pt x 271.0125pt>
+File: fig/My5.png Graphic file (type png)
+<use fig/My5.png>
+Package pdftex.def Info: fig/My5.png  used on input line 196. on input line 196
+.
+Package pdftex.def Info: Requested size: 104.56389pt x 58.81654pt on input line
+ 196.
+<fig/MOG5.png, id=771, 481.8pt x 271.0125pt>
+File: fig/MOG5.png Graphic file (type png)
+<use fig/MOG5.png>
+Package pdftex.def Info: fig/MOG5.png  used on input line 198. on input line 19
+8.
+Package pdftex.def Info: Requested size: 104.56389pt x 58.81654pt on input line
+ 198.
 
-Overfull \hbox (68.51831pt too wide) in paragraph at lines 130--195
+Overfull \hbox (68.51831pt too wide) in paragraph at lines 139--204
  [] 
  []
 
-[29]
-<fig/knn_vs_asb.pdf, id=777, pagebox=cropbox, 496.1424pt x 195.28638pt>
-File: fig/knn_vs_asb.pdf Graphic file (type pdf)
-<use fig/knn_vs_asb.pdf>
-Package pdftex.def Info: fig/knn_vs_asb.pdf  used on input line 203. on input l
-ine 203.
-Package pdftex.def Info: Requested size: 418.25555pt x 164.63242pt on input lin
-e 203.
- [30pdfTeX warning (ext4): destination with the same identifier (name{table.3.2
-}) has been already used, duplicate ignored
+[29pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1
+0}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.206 \end{figure}
+l.208 
+       <./fig/knn_vs_asb.pdf>]
+<fig/histogramverschiebung.pdf, id=856, pagebox=cropbox, 803.54886pt x 292.4485
+8pt>
+File: fig/histogramverschiebung.pdf Graphic file (type pdf)
+<use fig/histogramverschiebung.pdf>
+Package pdftex.def Info: fig/histogramverschiebung.pdf  used on input line 214.
+ on input line 214.
+Package pdftex.def Info: Requested size: 418.25555pt x 152.22139pt on input lin
+e 214.
+
+Underfull \hbox (badness 10000) in paragraph at lines 210--217
+
+ []
+
+[30pdfTeX warning (ext4): destination with the same identifier (name{table.3.2}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.217 \end{figure}
                    <./fig/original1.png> <./fig/groundtrue1.png> <./fig/My1.png
 > <./fig/MOG1.png> <./fig/original2.png> <./fig/groundtrue2.png> <./fig/My2.png
 > <./fig/MOG2.png> <./fig/original3.png> <./fig/groundtrue3.png> <./fig/My3.png
 > <./fig/MOG3.png> <./fig/original4.png> <./fig/groundtrue4.png> <./fig/My4.png
 > <./fig/MOG4.png> <./fig/original5.png> <./fig/groundtrue5.png> <./fig/My5.png
 > <./fig/MOG5.png>]
-<fig/histogramverschiebung.pdf, id=797, pagebox=cropbox, 803.54886pt x 292.4485
-8pt>
-File: fig/histogramverschiebung.pdf Graphic file (type pdf)
-<use fig/histogramverschiebung.pdf>
-Package pdftex.def Info: fig/histogramverschiebung.pdf  used on input line 213.
- on input line 213.
-Package pdftex.def Info: Requested size: 418.25555pt x 152.22139pt on input lin
-e 213.
-
-Underfull \hbox (badness 10000) in paragraph at lines 209--216
-
- []
-
-[31pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1
-0}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.216 \end{figure}
-                   <./fig/knn_vs_asb.pdf>]
-<fig/schatzung.pdf, id=881, pagebox=cropbox, 1335.72353pt x 940.7232pt>
+<fig/schatzung.pdf, id=876, pagebox=cropbox, 1335.72353pt x 940.7232pt>
 File: fig/schatzung.pdf Graphic file (type pdf)
 <use fig/schatzung.pdf>
-Package pdftex.def Info: fig/schatzung.pdf  used on input line 221. on input li
-ne 221.
+Package pdftex.def Info: fig/schatzung.pdf  used on input line 222. on input li
+ne 222.
 Package pdftex.def Info: Requested size: 397.34149pt x 279.83632pt on input lin
-e 221.
- [32pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+e 222.
+ [31pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
 11}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.225 
-       <./fig/histogramverschiebung.pdf>]
-<fig/schatzung1.pdf, id=905, pagebox=cropbox, 2571.85574pt x 2437.77351pt>
+l.225 \end{figure}
+                   <./fig/histogramverschiebung.pdf>]
+<fig/schatzung1.pdf, id=897, pagebox=cropbox, 2571.85574pt x 2437.77351pt>
 File: fig/schatzung1.pdf Graphic file (type pdf)
 <use fig/schatzung1.pdf>
-Package pdftex.def Info: fig/schatzung1.pdf  used on input line 228. on input l
-ine 228.
+Package pdftex.def Info: fig/schatzung1.pdf  used on input line 229. on input l
+ine 229.
 Package pdftex.def Info: Requested size: 418.25555pt x 396.44969pt on input lin
-e 228.
- [33pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+e 229.
+ [32pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
 12}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.232 
+l.233 
        <./fig/schatzung.pdf>]
-<fig/schatzung2.pdf, id=918, pagebox=cropbox, 2571.85574pt x 2437.77351pt>
+<fig/schatzung2.pdf, id=914, pagebox=cropbox, 2571.85574pt x 2437.77351pt>
 File: fig/schatzung2.pdf Graphic file (type pdf)
 <use fig/schatzung2.pdf>
-Package pdftex.def Info: fig/schatzung2.pdf  used on input line 235. on input l
-ine 235.
+Package pdftex.def Info: fig/schatzung2.pdf  used on input line 236. on input l
+ine 236.
 Package pdftex.def Info: Requested size: 418.25555pt x 396.44969pt on input lin
-e 235.
- [34pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+e 236.
+ [33pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
 13}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.239 
+l.240 
        <./fig/schatzung1.pdf>]
-<fig/schatzung3.pdf, id=947, pagebox=cropbox, 2571.85574pt x 2437.77351pt>
+<fig/schatzung3.pdf, id=943, pagebox=cropbox, 2571.85574pt x 2437.77351pt>
 File: fig/schatzung3.pdf Graphic file (type pdf)
 <use fig/schatzung3.pdf>
-Package pdftex.def Info: fig/schatzung3.pdf  used on input line 242. on input l
-ine 242.
+Package pdftex.def Info: fig/schatzung3.pdf  used on input line 243. on input l
+ine 243.
 Package pdftex.def Info: Requested size: 418.25555pt x 396.44969pt on input lin
-e 242.
- [35pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+e 243.
+ [34pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
 14}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.246 
-       <./fig/schatzung2.pdf>] [36pdfTeX warning (ext4): destination with the s
+l.247 
+       <./fig/schatzung2.pdf>] [35pdfTeX warning (ext4): destination with the s
 ame identifier (name{figure.3.15}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.249 
+l.250 
        <./fig/schatzung3.pdf>]
-<fig/schatzungevaluation.pdf, id=1011, pagebox=cropbox, 1468.14917pt x 1178.906
+<fig/schatzungevaluation.pdf, id=1007, pagebox=cropbox, 1468.14917pt x 1178.906
 46pt>
 File: fig/schatzungevaluation.pdf Graphic file (type pdf)
 <use fig/schatzungevaluation.pdf>
-Package pdftex.def Info: fig/schatzungevaluation.pdf  used on input line 252. o
-n input line 252.
+Package pdftex.def Info: fig/schatzungevaluation.pdf  used on input line 253. o
+n input line 253.
 Package pdftex.def Info: Requested size: 418.25555pt x 335.84792pt on input lin
-e 252.
-<fig/schatzungevaluation2.pdf, id=1012, pagebox=cropbox, 1445.9531pt x 1178.132
+e 253.
+<fig/schatzungevaluation2.pdf, id=1008, pagebox=cropbox, 1445.9531pt x 1178.132
 08pt>
 File: fig/schatzungevaluation2.pdf Graphic file (type pdf)
 <use fig/schatzungevaluation2.pdf>
-Package pdftex.def Info: fig/schatzungevaluation2.pdf  used on input line 259. 
-on input line 259.
+Package pdftex.def Info: fig/schatzungevaluation2.pdf  used on input line 260. 
+on input line 260.
 Package pdftex.def Info: Requested size: 418.25555pt x 340.78667pt on input lin
-e 259.
- [37pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+e 260.
+ [36pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
 16}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.263 
-       <./fig/schatzungevaluation.pdf>] [38pdfTeX warning (ext4): destination w
+l.264 
+       <./fig/schatzungevaluation.pdf>] [37pdfTeX warning (ext4): destination w
 ith the same identifier (name{figure.3.17}) has been already used, duplicate ig
 nored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.264 \newpage
+l.265 \newpage
                <./fig/schatzungevaluation2.pdf>]
-<fig/neurolnet.png, id=1093, 1443.89438pt x 816.04875pt>
+<fig/neurolnet.png, id=1089, 1443.89438pt x 816.04875pt>
 File: fig/neurolnet.png Graphic file (type png)
 <use fig/neurolnet.png>
-Package pdftex.def Info: fig/neurolnet.png  used on input line 269. on input li
-ne 269.
-Package pdftex.def Info: Requested size: 397.34149pt x 224.5573pt on input line
- 269.
- [39]
-<fig/fuzzylogik.pdf, id=1101, pagebox=cropbox, 880.57106pt x 492.23627pt>
+Package pdftex.def Info: fig/neurolnet.png  used on input line 270. on input li
+ne 270.
+Package pdftex.def Info: Requested size: 376.42744pt x 212.74046pt on input lin
+e 270.
+ [38]
+<fig/fuzzylogik.pdf, id=1097, pagebox=cropbox, 880.57106pt x 492.23627pt>
 File: fig/fuzzylogik.pdf Graphic file (type pdf)
 <use fig/fuzzylogik.pdf>
-Package pdftex.def Info: fig/fuzzylogik.pdf  used on input line 277. on input l
-ine 277.
-Package pdftex.def Info: Requested size: 292.7776pt x 163.66273pt on input line
- 277.
- [40pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+Package pdftex.def Info: fig/fuzzylogik.pdf  used on input line 278. on input l
+ine 278.
+Package pdftex.def Info: Requested size: 250.95587pt x 140.28128pt on input lin
+e 278.
+ [39pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
 18}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.283 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-3.19}) has been already used, duplicate ignored
+l.287 	\item D
+              ie Zeit besteht aus Tag und Nacht und ist mit glockenförmigen ...
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.19})
+ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.283 
-       <./fig/neurolnet.png> <./fig/fuzzylogik.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 304--305
+l.287 	\item D
+              ie Zeit besteht aus Tag und Nacht und ist mit glockenförmigen ...
+ <./fig/neurolnet.png> <./fig/fuzzylogik.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 305--306
 
  []
 
-[41]
-<fig/fuzzyfunktion.pdf, id=1138, pagebox=cropbox, 913.83234pt x 1580.34679pt>
+[40]
+<fig/fuzzyfunktion.pdf, id=1134, pagebox=cropbox, 913.83234pt x 1580.34679pt>
 File: fig/fuzzyfunktion.pdf Graphic file (type pdf)
 <use fig/fuzzyfunktion.pdf>
-Package pdftex.def Info: fig/fuzzyfunktion.pdf  used on input line 324. on inpu
-t line 324.
+Package pdftex.def Info: fig/fuzzyfunktion.pdf  used on input line 325. on inpu
+t line 325.
 Package pdftex.def Info: Requested size: 313.69167pt x 542.49535pt on input lin
-e 324.
- [42] [43pdfTeX warning (ext4): destination with the same identifier (name{algo
-cf.2}) has been already used, duplicate ignored
+e 325.
+ [41pdfTeX warning (ext4): destination with the same identifier (name{algocf.2}
+) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.328 
+l.329 
       ]
 Overfull \vbox (25.6951pt too high) has occurred while \output is active []
 
 
-[44pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2
+[42pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2
 0}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.328 
+l.329 
        <./fig/fuzzyfunktion.pdf>]
-<fig/fuzzy1.pdf, id=1172, pagebox=cropbox, 889.0408pt x 834.11626pt>
+<fig/fuzzy1.pdf, id=1163, pagebox=cropbox, 889.0408pt x 834.11626pt>
 File: fig/fuzzy1.pdf Graphic file (type pdf)
 <use fig/fuzzy1.pdf>
-Package pdftex.def Info: fig/fuzzy1.pdf  used on input line 331. on input line 
-331.
+Package pdftex.def Info: fig/fuzzy1.pdf  used on input line 332. on input line 
+332.
 Package pdftex.def Info: Requested size: 246.76924pt x 231.51454pt on input lin
-e 331.
-<fig/fuzzy2.pdf, id=1173, pagebox=cropbox, 894.03873pt x 834.88506pt>
+e 332.
+<fig/fuzzy2.pdf, id=1164, pagebox=cropbox, 894.03873pt x 834.88506pt>
 File: fig/fuzzy2.pdf Graphic file (type pdf)
 <use fig/fuzzy2.pdf>
-Package pdftex.def Info: fig/fuzzy2.pdf  used on input line 338. on input line 
-338.
+Package pdftex.def Info: fig/fuzzy2.pdf  used on input line 339. on input line 
+339.
 Package pdftex.def Info: Requested size: 246.76924pt x 230.44127pt on input lin
-e 338.
- [45pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+e 339.
+ [43pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
 21}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.344 
+l.345 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 3.22}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.344 
+l.345 
        <./fig/fuzzy1.pdf> <./fig/fuzzy2.pdf
 
 pdfTeX warning: pdflatex.exe (file ./fig/fuzzy2.pdf): PDF inclusion: multiple p
 dfs with page group included in a single page
 >]
-Underfull \hbox (badness 10000) in paragraph at lines 357--358
+Underfull \hbox (badness 10000) in paragraph at lines 358--359
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 374--376
+Underfull \hbox (badness 10000) in paragraph at lines 375--377
 
  []
 
-[46pdfTeX warning (ext4): destination with the same identifier (name{algocf.3})
+[44pdfTeX warning (ext4): destination with the same identifier (name{algocf.3})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.376 	\item D
+l.377 	\item D
               urch Hintergrundsubtraktion und Schätzung der Körperhaltung wi...
 pdfTeX warning (ext4): destination with the same identifier (name{algocf.4}) ha
 s been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.376 	\item D
+l.377 	\item D
               urch Hintergrundsubtraktion und Schätzung der Körperhaltung wi...
-] [47] [48pdfTeX warning (ext4): destination with the same identifier (name{alg
+] [45] [46pdfTeX warning (ext4): destination with the same identifier (name{alg
 ocf.5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.424 
-      ]
-<fig/false1.pdf, id=1252, pagebox=cropbox, 1227.27441pt x 882.74796pt>
+l.448 \end{algorithm}
+                     	]
+<fig/false1.pdf, id=1244, pagebox=cropbox, 1227.27441pt x 882.74796pt>
 File: fig/false1.pdf Graphic file (type pdf)
 <use fig/false1.pdf>
-Package pdftex.def Info: fig/false1.pdf  used on input line 454. on input line 
-454.
+Package pdftex.def Info: fig/false1.pdf  used on input line 453. on input line 
+453.
 Package pdftex.def Info: Requested size: 418.25555pt x 300.84422pt on input lin
-e 454.
- [49] [50pdfTeX warning (ext4): destination with the same identifier (name{algo
+e 453.
+ [47] [48pdfTeX warning (ext4): destination with the same identifier (name{algo
 cf.6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.458 
+l.457 
       ]
-<fig/false2.pdf, id=1280, pagebox=cropbox, 1227.27441pt x 882.74796pt>
+<fig/false2.pdf, id=1271, pagebox=cropbox, 1227.27441pt x 882.74796pt>
 File: fig/false2.pdf Graphic file (type pdf)
 <use fig/false2.pdf>
-Package pdftex.def Info: fig/false2.pdf  used on input line 461. on input line 
-461.
+Package pdftex.def Info: fig/false2.pdf  used on input line 460. on input line 
+460.
 Package pdftex.def Info: Requested size: 418.25555pt x 300.84422pt on input lin
-e 461.
-) [51pdfTeX warning (ext4): destination with the same identifier (name{figure.3
+e 460.
+) [49pdfTeX warning (ext4): destination with the same identifier (name{figure.3
 .23}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.15 \newpage
-              <./fig/false1.pdf>] [52pdfTeX warning (ext4): destination with th
+              <./fig/false1.pdf>] [50pdfTeX warning (ext4): destination with th
 e same identifier (name{figure.3.24}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1609,17 +1606,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--3
 
  []
 
-<fig/laufzeit.pdf, id=1313, pagebox=cropbox, 453.74518pt x 192.24321pt>
+<fig/laufzeit.pdf, id=1305, pagebox=cropbox, 453.74518pt x 192.24321pt>
 File: fig/laufzeit.pdf Graphic file (type pdf)
 <use fig/laufzeit.pdf>
 Package pdftex.def Info: fig/laufzeit.pdf  used on input line 9. on input line 
 9.
 Package pdftex.def Info: Requested size: 418.25555pt x 177.21497pt on input lin
 e 9.
-[53
+[51
 
 ]
-<fig/laufzeit3.pdf, id=1320, pagebox=cropbox, 349.305pt x 231.6655pt>
+<fig/laufzeit3.pdf, id=1312, pagebox=cropbox, 349.305pt x 231.6655pt>
 File: fig/laufzeit3.pdf Graphic file (type pdf)
 <use fig/laufzeit3.pdf>
 Package pdftex.def Info: fig/laufzeit3.pdf  used on input line 18. on input lin
@@ -1637,7 +1634,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--24
 
  []
 
-[54pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1
+[52pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1654,7 +1651,7 @@ l.24
 pdfTeX warning: pdflatex.exe (file ./fig/laufzeit3.pdf): PDF inclusion: multipl
 e pdfs with page group included in a single page
 >]
-<fig/alarmevaluation2.pdf, id=1457, pagebox=cropbox, 532.99126pt x 820.56563pt>
+<fig/alarmevaluation2.pdf, id=1449, pagebox=cropbox, 532.99126pt x 820.56563pt>
 
 File: fig/alarmevaluation2.pdf Graphic file (type pdf)
 <use fig/alarmevaluation2.pdf>
@@ -1662,41 +1659,41 @@ Package pdftex.def Info: fig/alarmevaluation2.pdf  used on input line 27. on in
 put line 27.
 Package pdftex.def Info: Requested size: 271.86356pt x 418.55806pt on input lin
 e 27.
- [55pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+ [53pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
 3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.34 
       <./fig/alarmevaluation2.pdf>]
-<fig/finalROC.pdf, id=1474, pagebox=cropbox, 423.29662pt x 272.01855pt>
+<fig/finalROC.pdf, id=1465, pagebox=cropbox, 423.29662pt x 272.01855pt>
 File: fig/finalROC.pdf Graphic file (type pdf)
 <use fig/finalROC.pdf>
 Package pdftex.def Info: fig/finalROC.pdf  used on input line 37. on input line
  37.
 Package pdftex.def Info: Requested size: 334.60571pt x 215.02927pt on input lin
 e 37.
- [56pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+ [54pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
 4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.67 
       <./fig/finalROC.pdf>]
-<fig/result.pdf, id=1574, pagebox=cropbox, 990.70125pt x 1253.34668pt>
+<fig/result.pdf, id=1565, pagebox=cropbox, 990.70125pt x 1253.34668pt>
 File: fig/result.pdf Graphic file (type pdf)
 <use fig/result.pdf>
 Package pdftex.def Info: fig/result.pdf  used on input line 73. on input line 7
 3.
 Package pdftex.def Info: Requested size: 418.25555pt x 529.13683pt on input lin
 e 73.
-) [57pdfTeX warning (ext4): destination with the same identifier (name{table.4.
+) [55pdfTeX warning (ext4): destination with the same identifier (name{table.4.
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.17 \newpage
-             ] [58pdfTeX warning (ext4): destination with the same identifier (
+             ] [56pdfTeX warning (ext4): destination with the same identifier (
 name{figure.4.5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1709,14 +1706,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--3
 
  []
 
-[59
+[57
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 14--16
 
  []
 
-<fig/zusammenfassung.pdf, id=1603, pagebox=cropbox, 746.7704pt x 711.37259pt>
+<fig/zusammenfassung.pdf, id=1595, pagebox=cropbox, 746.7704pt x 711.37259pt>
 File: fig/zusammenfassung.pdf Graphic file (type pdf)
 <use fig/zusammenfassung.pdf>
 Package pdftex.def Info: fig/zusammenfassung.pdf  used on input line 21. on inp
@@ -1728,7 +1725,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--24
 
  []
 
-[60]
+[58]
 Overfull \hbox (1.46455pt too wide) in paragraph at lines 25--26
 \OT1/cmr/m/n/10.95 Das Pro-gramm kann al-le au-er-gew[]ohnlichen Si-tua-tio-ne
 n rich-tig er-ken-nen und die K[]orper-
@@ -1744,27 +1741,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--28
 
  []
 
-[61pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1
+[59pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.28 
       <./fig/zusammenfassung.pdf>]
-<fig/tarnung.png, id=1636, 962.09438pt x 551.81157pt>
+<fig/tarnung.png, id=1627, 962.09438pt x 551.81157pt>
 File: fig/tarnung.png Graphic file (type png)
 <use fig/tarnung.png>
 Package pdftex.def Info: fig/tarnung.png  used on input line 31. on input line 
 31.
 Package pdftex.def Info: Requested size: 418.25555pt x 239.89296pt on input lin
 e 31.
-) [62pdfTeX warning (ext4): destination with the same identifier (name{figure.5
+) [60pdfTeX warning (ext4): destination with the same identifier (name{figure.5
 .2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.19 
-      <./fig/tarnung.png>] (main.bbl [63]
+      <./fig/tarnung.png>] (main.bbl [61]
 Underfull \hbox (badness 4144) in paragraph at lines 44--49
 []\OT1/cmr/m/sc/10.95 Bundesamt S.\OT1/cmr/m/n/10.95 :  die ge-ne-ra-ti-on 65+ 
 in deutsch-land.  []$https :
@@ -1782,9 +1779,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--49
 ob = publicationFile$[],
  []
 
-[64
+[62
 
-] [65] [66]) [67] (Abkurzungen.tex) [68
+] [63] [64]) [65] (Abkurzungen.tex) [66
 
 pdfTeX warning (ext4): destination with the same identifier (name{ASB}) has bee
 n already used, duplicate ignored
@@ -1804,7 +1801,7 @@ Overfull \hbox (21.27267pt too wide) in paragraph at lines 20--20
 ox $\OML/cmm/m/it/10.95 B[]$ []\OT1/cmr/m/n/10.95 uberschneiden, 
  []
 
-[69
+[67
 
 ]
 Overfull \hbox (24.40616pt too wide) in paragraph at lines 24--24
@@ -1812,21 +1809,21 @@ Overfull \hbox (24.40616pt too wide) in paragraph at lines 24--24
 chen. Die K[]orperhaltung, 
  []
 
-[70])
+[68])
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
- [71] (main.lot)
+ [69] (main.lot)
 \tf@lot=\write7
 \openout7 = `main.lot'.
 
- [72
+ [70
 
 ] (main.loa)
 \tf@loa=\write8
 \openout8 = `main.loa'.
 
- [73
+ [71
 
 ] (Anhang.tex
 chapter A.
@@ -1860,11 +1857,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--35
 []\OT1/cmtt/m/n/10.95 Daten zur Erstellung der
  []
 
-) (Danksagung.tex [74
+) (Danksagung.tex [72
 
 ])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 46.
- [75
+ [73
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 46.
@@ -1876,9 +1873,9 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 46.
  ) 
 Here is how much of TeX's memory you used:
- 14683 strings out of 493312
- 225292 string characters out of 3138893
- 435019 words of memory out of 3000000
+ 14681 strings out of 493312
+ 225278 string characters out of 3138893
+ 440019 words of memory out of 3000000
  17631 multiletter control sequences out of 15000+200000
  15444 words of font info for 59 fonts, out of 3000000 for 9000
  1142 hyphenation exceptions out of 8191
@@ -1900,9 +1897,9 @@ MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program Files/MiKTeX 2
 blic/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
 cmtt10.pfb>
-Output written on main.pdf (81 pages, 62312884 bytes).
+Output written on main.pdf (79 pages, 62311015 bytes).
 PDF statistics:
- 1948 PDF objects out of 2073 (max. 8388607)
- 269 named destinations out of 1000 (max. 500000)
+ 1940 PDF objects out of 2073 (max. 8388607)
+ 267 named destinations out of 1000 (max. 500000)
  594 words of extra memory for PDF output out of 10000 (max. 10000000)
 
